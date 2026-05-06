@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultats - PharmaGeno</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1100px; margin: 30px auto; padding: 20px; }
+        h1, h2 { color: #2E5F8A; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { background: #2E5F8A; color: white; padding: 10px; text-align: left; }
+        td { padding: 8px 10px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f5f9ff; }
+        .badge { padding: 3px 8px; border-radius: 10px; font-size: 12px; background: #d4edda; color: #155724; }
+        .stats { display: flex; gap: 20px; margin: 20px 0; }
+        .stat-box { background: #f5f9ff; padding: 15px 25px; border-radius: 8px; border-left: 4px solid #2E5F8A; }
+        .stat-box h3 { margin: 0; font-size: 28px; color: #2E5F8A; }
+        .stat-box p { margin: 5px 0 0 0; color: #777; }
+        .search-box { background: #f5f9ff; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #ddd; }
+        .search-box input { padding: 10px; width: 300px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; }
+        .search-box button { background: #2E5F8A; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; }
+        .result-danger { background: #f8d7da; border-left: 5px solid #dc3545; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .result-warning { background: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .result-safe { background: #d4edda; border-left: 5px solid #28a745; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        a { color: #2E5F8A; }
+    </style>
+</head>
+<body>
+    <h1>Résultats d'analyse</h1>
+    <p>Fichier analysé : <strong>{{ filename }}</strong></p>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>{{ n_variants }}</h3>
+            <p>Variants détectés</p>
+        </div>
+        <div class="stat-box">
+            <h3>{{ n_results }}</h3>
+            <p>Recommandations</p>
+        </div>
+    </div>
+
+    <h2>Vérifier un médicament</h2>
+    <div class="search-box">
+        <p>Saisissez le médicament que vous souhaitez prescrire :</p>
+        <form action="/search_drug" method="POST">
+            <input type="hidden" name="vcf_filename" value="{{ filename }}">
+            <input type="text" name="drug_query" placeholder="ex: clopidogrel, efavirenz..." value="{{ drug_search or '' }}">
+            <button type="submit">Vérifier</button>
+        </form>
+
+        {% if drug_result %}
+        <div class="result-{{ drug_result.status }}" style="margin-top:15px;">
+            <strong>{{ drug_result.message }}</strong>
+            {% if drug_result.details %}
+            <table style="margin-top:10px;">
+                <tr>
+                    <th>Gène</th>
+                    <th>rsID</th>
+                    <th>Génotype</th>
+                    <th>Phénotype</th>
+                    <th>Source</th>
+                </tr>
+                {% for d in drug_result.details %}
+                <tr>
+                    <td><strong>{{ d.gene }}</strong></td>
+                    <td>{{ d.rsid }}</td>
+                    <td>{{ d.genotype }}</td>
+                    <td>{{ d.phenotype }}</td>
+                    <td><span class="badge">{{ d.source }}</span></td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+
+    <h2>Variants avec mutations</h2>
+    <table>
+        <tr>
+            <th>Gène</th><th>rsID</th><th>Génotype</th><th>Chromosome</th><th>Position</th>
+        </tr>
+        {% for v in variants %}
+        <tr>
+            <td><strong>{{ v.gene }}</strong></td>
+            <td>{{ v.rsid }}</td>
+            <td>{{ v.genotype }}</td>
+            <td>{{ v.chromosome }}</td>
+            <td>{{ v.position }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Toutes les recommandations</h2>
+    <table>
+        <tr>
+            <th>Gène</th><th>rsID</th><th>Médicament</th><th>Phénotype</th><th>Source</th>
+        </tr>
+        {% for r in results %}
+        <tr>
+            <td><strong>{{ r.gene }}</strong></td>
+            <td>{{ r.rsid }}</td>
+            <td>{{ r.drug }}</td>
+            <td>{{ r.phenotype }}</td>
+            <td><span class="badge">{{ r.source }}</span></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">← Analyser un autre fichier</a>
+</body>
+</html>

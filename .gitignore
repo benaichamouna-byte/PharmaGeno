@@ -1,0 +1,8 @@
+app/uploads/
+data/*.vcf.gz
+data/mother*.vcf
+data/*.bin
+data/sequence*.bin
+__pycache__/
+*.pyc
+app/uploads/

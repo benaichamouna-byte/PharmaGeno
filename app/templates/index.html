@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PharmaGeno - Drug Recommendation</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        h1 { color: #2E5F8A; }
+        .upload-box { border: 2px dashed #2E5F8A; padding: 40px; text-align: center; border-radius: 10px; }
+        button { background: #2E5F8A; color: white; padding: 12px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #1F4E79; }
+        .subtitle { color: #777; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <h1>PharmaGeno</h1>
+    <p class="subtitle">Mutation-Aware Drug Recommendation — Master Bioinformatique</p>
+    <div class="upload-box">
+        <h2>Analyser un fichier VCF</h2>
+        <p>Uploadez le fichier VCF de votre patient pour obtenir les recommandations médicamenteuses.</p>
+        <form action="/analyze" method="POST" enctype="multipart/form-data">
+            <input type="file" name="vcf_file" accept=".vcf" required>
+            <br><br>
+            <button type="submit">Analyser</button>
+        </form>
+    </div>
+</body>
+</html>
