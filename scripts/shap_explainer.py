@@ -60,7 +60,6 @@ plt.close()
 print("Graphique sauvegardé : shap_summary.png")
 
 print("\nConclusion SHAP :")
-print("Le gène est la feature la plus importante pour prédire le phénotype.")
-print("Le médicament joue un rôle secondaire.")
-print("Cela confirme que la pharmacogénomique est principalement génotype-dépendante.")
-
+print("Le médicament est la feature la plus importante (SHAP ≈ 0.16)")
+print("Le gène joue un rôle secondaire (SHAP ≈ 0.08)")
+print("Cela reflète l'organisation des données PharmGKB par médicament.")
