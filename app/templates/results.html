@@ -38,6 +38,13 @@
 </head>
 <body>
     <h1>PharmaGeno — Résultats</h1>
+    <form action="/download_pdf" method="POST" style="margin: 15px 0;">
+        <input type="hidden" name="vcf_filename" value="{{ filename }}">
+        <input type="hidden" name="drug_search" value="{{ drug_search or '' }}">
+        <button type="submit" style="background: #2E5F8A; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+            📄 Télécharger le rapport PDF
+        </button>
+    </form>
     <p>Fichier : <strong>{{ filename }}</strong></p>
 
     <div class="stats">
