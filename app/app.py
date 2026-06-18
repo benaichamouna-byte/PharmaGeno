@@ -98,7 +98,10 @@ def search_drug():
     match = match.drop_duplicates(subset=['gene', 'rsid', 'phenotype'])
 
     ml_predictions = []
+    genes_with_drug = match['gene'].unique().tolist() if not match.empty else []
     for _, variant in variants_df.iterrows():
+        if variant['gene'] not in genes_with_drug:
+            continue
         pred = predict_phenotype(
             variant['gene'], drug_query, variant['rsid'],
             variant['genotype'], rf, columns, classes)
