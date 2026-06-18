@@ -6,6 +6,7 @@ import os
 sys.path.append('/home/mouna/projet_memoire/scripts')
 from vcf_parser import parse_vcf
 from drug_recommender import load_pharmgkb, load_clinical_variants, load_guidelines, get_recommendations
+from predict_phenotype import load_rf_model, predict_phenotype, find_best_column
 
 app = Flask(__name__)
 UPLOAD_FOLDER = '/home/mouna/projet_memoire/app/uploads'
@@ -14,6 +15,21 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 PHARMGKB_FILE = '/home/mouna/projet_memoire/data/var_drug_ann.tsv'
 CLINICAL_FILE = '/home/mouna/projet_memoire/data/clinicalVariants.tsv'
 JSON_DIR      = '/home/mouna/projet_memoire/data'
+
+rf, columns, classes = load_rf_model()
+
+def predict_best_for_variant(gene, rsid, genotype, drug_matches):
+    drug_matches = [d for d in drug_matches if d != 'Aucune recommandation trouvée']
+    best_pred = None
+    for drug in (drug_matches[:5] if drug_matches else ['']):
+        pred = predict_phenotype(gene, drug, rsid, genotype, rf, columns, classes)
+        if best_pred is None or pred['confidence'] > best_pred['confidence']:
+            best_pred = pred
+            best_pred['drug_used'] = drug if drug else 'aucun'
+    best_pred['gene']     = gene
+    best_pred['rsid']     = rsid
+    best_pred['genotype'] = genotype
+    return best_pred
 
 @app.route('/', methods=['GET'])
 def index():
@@ -26,6 +42,7 @@ def analyze():
     file = request.files['vcf_file']
     if file.filename == '':
         return redirect(url_for('index'))
+
     filepath = os.path.join(UPLOAD_FOLDER, file.filename)
     file.save(filepath)
 
@@ -37,8 +54,18 @@ def analyze():
     results_df  = results_df.drop_duplicates(subset=['gene', 'rsid', 'drug', 'phenotype'])
     results_df  = results_df.sort_values(['gene', 'drug'])
 
-    # Liste unique des médicaments pour la recherche
-    drugs_list = sorted(results_df[results_df['drug'] != 'Aucune recommandation trouvée']['drug'].unique().tolist())
+    drugs_list = sorted(results_df[
+        results_df['drug'] != 'Aucune recommandation trouvée'
+    ]['drug'].unique().tolist())
+
+    predictions = []
+    for _, variant in variants_df.iterrows():
+        gene     = variant['gene']
+        rsid     = variant['rsid']
+        genotype = variant['genotype']
+        drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
+        pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
+        predictions.append(pred)
 
     variants = variants_df.to_dict('records')
     results  = results_df.to_dict('records')
@@ -47,6 +74,7 @@ def analyze():
                            filename=file.filename,
                            variants=variants,
                            results=results,
+                           predictions=predictions,
                            drugs_list=drugs_list,
                            n_variants=len(variants_df),
                            n_results=len(results_df),
@@ -66,42 +94,66 @@ def search_drug():
     results_df  = get_recommendations(variants_df, pharmgkb_df, clinical_df, guidelines)
     results_df  = results_df.drop_duplicates(subset=['gene', 'rsid', 'drug', 'phenotype'])
 
-    # Chercher le médicament
     match = results_df[results_df['drug'].str.lower().str.contains(drug_query, na=False)]
+    match = match.drop_duplicates(subset=['gene', 'rsid', 'phenotype'])
+
+    ml_predictions = []
+    for _, variant in variants_df.iterrows():
+        pred = predict_phenotype(
+            variant['gene'], drug_query, variant['rsid'],
+            variant['genotype'], rf, columns, classes)
+        pred['gene']     = variant['gene']
+        pred['rsid']     = variant['rsid']
+        pred['genotype'] = variant['genotype']
+        ml_predictions.append(pred)
 
     if match.empty:
         drug_result = {
-            'status': 'safe',
+            'status':  'safe',
             'message': f'Aucune interaction pharmacogénomique connue pour {drug_query}.',
-            'details': []
+            'details': [],
+            'ml_predictions': ml_predictions
         }
     else:
-        # Vérifier le type de phénotype
         phenotypes = match['phenotype'].tolist()
         if any(p in ['Toxicity', 'Dosage'] for p in phenotypes):
-            status = 'danger'
+            status  = 'danger'
             message = f'⚠️ ATTENTION — Interaction détectée pour {drug_query}'
         elif any(p in ['Efficacy'] for p in phenotypes):
-            status = 'warning'
+            status  = 'warning'
             message = f'⚠️ Efficacité potentiellement réduite pour {drug_query}'
         else:
-            status = 'warning'
+            status  = 'warning'
             message = f'Information pharmacogénomique disponible pour {drug_query}'
 
         drug_result = {
-            'status': status,
+            'status':  status,
             'message': message,
-            'details': match[['gene', 'rsid', 'genotype', 'phenotype', 'source']].to_dict('records')
+            'details': match[['gene', 'rsid', 'genotype', 'phenotype', 'source']].to_dict('records'),
+            'ml_predictions': ml_predictions
         }
 
-    drugs_list = sorted(results_df[results_df['drug'] != 'Aucune recommandation trouvée']['drug'].unique().tolist())
-    variants   = variants_df.to_dict('records')
-    results    = results_df.sort_values(['gene', 'drug']).to_dict('records')
+    drugs_list = sorted(results_df[
+        results_df['drug'] != 'Aucune recommandation trouvée'
+    ]['drug'].unique().tolist())
+
+    predictions = []
+    for _, variant in variants_df.iterrows():
+        gene     = variant['gene']
+        rsid     = variant['rsid']
+        genotype = variant['genotype']
+        drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
+        pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
+        predictions.append(pred)
+
+    variants = variants_df.to_dict('records')
+    results  = results_df.sort_values(['gene', 'drug']).to_dict('records')
 
     return render_template('results.html',
                            filename=vcf_filename,
                            variants=variants,
                            results=results,
+                           predictions=predictions,
                            drugs_list=drugs_list,
                            n_variants=len(variants_df),
                            n_results=len(results_df),
