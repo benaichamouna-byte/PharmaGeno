@@ -6,7 +6,7 @@ import os
 sys.path.append('/home/mouna/projet_memoire/scripts')
 from vcf_parser import parse_vcf
 from drug_recommender import load_pharmgkb, load_clinical_variants, load_guidelines, get_recommendations
-from predict_phenotype import load_rf_model, predict_phenotype, find_best_column
+from predict_phenotype import load_rf_model, load_dl_model, predict_phenotype, find_best_column
 from generate_report import generate_pdf_report
 from flask import send_file
 
@@ -19,18 +19,20 @@ CLINICAL_FILE = '/home/mouna/projet_memoire/data/clinicalVariants.tsv'
 JSON_DIR      = '/home/mouna/projet_memoire/data'
 
 rf, columns, classes = load_rf_model()
-
+dl_model, dl_columns, dl_classes = load_dl_model()
 def predict_best_for_variant(gene, rsid, genotype, drug_matches):
     drug_matches = [d for d in drug_matches if d != 'Aucune recommandation trouvée']
     best_pred = None
     for drug in (drug_matches[:5] if drug_matches else ['']):
-        pred = predict_phenotype(gene, drug, rsid, genotype, rf, columns, classes)
+        pred = predict_phenotype(gene, drug, rsid, genotype, rf, columns, classes,
+                                  dl_model, dl_columns, dl_classes)
         if best_pred is None or pred['confidence'] > best_pred['confidence']:
             best_pred = pred
             best_pred['drug_used'] = drug if drug else 'aucun'
     best_pred['gene']     = gene
     best_pred['rsid']     = rsid
     best_pred['genotype'] = genotype
+    return best_pred
     return best_pred
 
 @app.route('/', methods=['GET'])
@@ -106,7 +108,8 @@ def search_drug():
             continue
         pred = predict_phenotype(
             variant['gene'], drug_query, variant['rsid'],
-            variant['genotype'], rf, columns, classes)
+            variant['genotype'], rf, columns, classes,
+            dl_model, dl_columns, dl_classes)
         pred['gene']     = variant['gene']
         pred['rsid']     = variant['rsid']
         pred['genotype'] = variant['genotype']

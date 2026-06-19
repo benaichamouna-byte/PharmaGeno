@@ -41,7 +41,7 @@ def generate_pdf_report(filename, variants, predictions, results, drug_search=No
     story.append(Spacer(1, 18))
 
     # Prédictions ML
-    story.append(Paragraph("Prédictions du modèle (Random Forest v3 — 89.4%)", styles['Heading2']))
+    story.append(Paragraph("Prédictions du modèle — Vote majoritaire DL v5 + RF v3", styles['Heading2']))
     pred_data = [['Gène', 'rsID', 'Phénotype prédit', 'Confiance', 'Niveau']]
     for p in predictions:
         pred_data.append([p['gene'], p['rsid'], p['phenotype'],
