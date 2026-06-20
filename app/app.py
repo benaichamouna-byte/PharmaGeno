@@ -51,6 +51,18 @@ def analyze():
     file.save(filepath)
 
     variants_df = parse_vcf(filepath)
+    if len(variants_df) == 0:
+        return render_template('results.html',
+                               filename=file.filename,
+                               variants=[],
+                               results=[],
+                               predictions=[],
+                               drugs_list=[],
+                               n_variants=0,
+                               n_results=0,
+                               drug_search=None,
+                               drug_result=None,
+                               no_mutation=True)
     pharmgkb_df = load_pharmgkb(PHARMGKB_FILE)
     clinical_df = load_clinical_variants(CLINICAL_FILE)
     guidelines  = load_guidelines(JSON_DIR)

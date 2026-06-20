@@ -51,6 +51,13 @@
         <div class="stat-box"><h3>{{ n_variants }}</h3><p>Variants détectés</p></div>
         <div class="stat-box"><h3>{{ n_results }}</h3><p>Recommandations</p></div>
     </div>
+    {% if no_mutation %}
+    <div class="result-safe" style="margin: 20px 0;">
+        <strong>✅ Aucune mutation pharmacogénomique détectée chez ce patient.</strong><br>
+        Tous les variants analysés présentent un génotype de référence (0/0).
+        Aucune adaptation thérapeutique liée aux gènes testés n'est nécessaire sur cette base.
+    </div>
+    {% endif %}
 
     <!-- PRÉDICTIONS ML -->
     <h2>Prédictions du modèle — Vote majoritaire DL v5 + RF v3</h2>
