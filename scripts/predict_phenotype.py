@@ -87,6 +87,15 @@ def predict_dl(gene, drug, rsid, genotype_str, model, columns, classes):
 
 def predict_phenotype(gene, drug, rsid, genotype_str, rf, columns, classes,
                        dl_model=None, dl_columns=None, dl_classes=None):
+    gene_known = find_best_column('gene', gene, columns) is not None
+    if not gene_known:
+        return {
+            'phenotype': 'Non determine',
+            'confidence': 0,
+            'color': 'unknown',
+            'level': 'Gene non reconnu par le modele',
+            'gene_recognized': False
+        }
     phenotype_rf, confidence_rf = predict_rf(gene, drug, rsid, genotype_str, rf, columns, classes)
 
     if dl_model is not None:
