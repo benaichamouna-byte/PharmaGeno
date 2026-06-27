@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##source=PharmaGeno_synthetic_test
+##contig=<ID=chr1>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	PATIENT
+chr1	97915614	rs3918290	C	T	.	PASS	PX=DPYD	GT	1/1
