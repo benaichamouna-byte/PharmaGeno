@@ -11,7 +11,7 @@ def parse_vcf(vcf_file):
             if line.startswith('#'):
                 continue
             cols = line.strip().split('\t')
-            if len(cols) < 9:
+            if len(cols) < 8:
                 continue
             chrom    = cols[0]
             pos      = cols[1]
@@ -19,11 +19,24 @@ def parse_vcf(vcf_file):
             ref      = cols[3]
             alt      = cols[4]
             info     = cols[7]
-            genotype = cols[9]
+            # Gérer VCF avec ou sans génotype
+            if len(cols) > 9:
+                genotype = cols[9]
+            else:
+                genotype = '1/1'  # VCF sans génotype = variant présent
             gene = None
             for field in info.split(';'):
                 if field.startswith('PX='):
-                    gene = field.replace('PX=', '')
+                   gene = field.replace('PX=', '')
+                   break
+                elif field.startswith('GENE='):
+                    gene = field.replace('GENE=', '')
+                    break
+                elif field.startswith('ANN='):
+                    ann = field.replace('ANN=', '')
+                    parts = ann.split('|')
+                    if len(parts) > 3:
+                       gene = parts[3]
                     break
             if gene is None:
                 continue
