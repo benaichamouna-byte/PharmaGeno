@@ -122,6 +122,85 @@
 </div>
 
 <!-- RECOMMANDATIONS CPIC PAR GÈNE -->
+
+<!-- LÉGENDE NIVEAUX ET ACTIONS -->
+<div style="background:white; border-radius:10px; padding:20px 25px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,.07);">
+    <div style="font-size:15px; font-weight:bold; color:#2E5F8A; margin-bottom:14px;">
+        📖 Comment lire ce rapport
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+
+        <!-- NIVEAUX DE PREUVE -->
+        <div>
+            <div style="font-size:13px; font-weight:bold; color:#555; text-transform:uppercase; letter-spacing:.5px; margin-bottom:10px;">
+                Niveau de preuve scientifique (CPIC)
+            </div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+                <div style="display:flex; align-items:center; gap:12px; padding:10px 14px; background:#eafaf1; border-radius:8px; border-left:4px solid #1e8449;">
+                    <span style="background:#1e8449; color:white; padding:3px 10px; border-radius:10px; font-weight:bold; font-size:13px; white-space:nowrap;">Niveau A</span>
+                    <span style="font-size:13px; color:#2c3e50;">
+                        <strong>Recommandation forte.</strong> Des dizaines d'études concordantes confirment cette interaction. À suivre impérativement.
+                    </span>
+                </div>
+                <div style="display:flex; align-items:center; gap:12px; padding:10px 14px; background:#eaf4fb; border-radius:8px; border-left:4px solid #2980b9;">
+                    <span style="background:#2980b9; color:white; padding:3px 10px; border-radius:10px; font-weight:bold; font-size:13px; white-space:nowrap;">Niveau B</span>
+                    <span style="font-size:13px; color:#2c3e50;">
+                        <strong>Recommandation modérée.</strong> Preuves existantes mais moins nombreuses. Adapter selon le contexte clinique du patient.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div>
+            <div style="font-size:13px; font-weight:bold; color:#555; text-transform:uppercase; letter-spacing:.5px; margin-bottom:10px;">
+                Actions recommandées
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px; font-size:13px;">
+                <div style="padding:8px 12px; background:#fdecea; border-radius:6px; border-left:3px solid #c0392b;">
+                    <strong>⛔ Éviter</strong> — Ce médicament est inefficace ou dangereux pour ce patient. Choisir une alternative.
+                </div>
+                <div style="padding:8px 12px; background:#fff8e6; border-radius:6px; border-left:3px solid #f39c12;">
+                    <strong>⚠️ Réduire / Augmenter la dose</strong> — Le métabolisme de ce patient nécessite un ajustement posologique.
+                </div>
+                <div style="padding:8px 12px; background:#fff8e6; border-radius:6px; border-left:3px solid #d35400;">
+                    <strong>↪️ Considérer une alternative</strong> — Ce médicament peut être utilisé mais une alternative est préférable.
+                </div>
+                <div style="padding:8px 12px; background:#eafaf1; border-radius:6px; border-left:3px solid #27ae60;">
+                    <strong>✅ Dose standard</strong> — Ce médicament est approprié pour ce patient aux doses habituelles.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PHÉNOTYPES -->
+    <div style="margin-top:16px;">
+        <div style="font-size:13px; font-weight:bold; color:#555; text-transform:uppercase; letter-spacing:.5px; margin-bottom:10px;">
+            Phénotypes métaboliques — signification clinique
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; font-size:12px; text-align:center;">
+            <div style="padding:10px 8px; background:#fdecea; border-radius:8px; border-top:4px solid #c0392b;">
+                <div style="font-weight:bold; color:#c0392b; margin-bottom:4px;">Poor Metabolizer</div>
+                <div style="color:#555;">L'enzyme fonctionne très peu ou pas. Le médicament s'accumule → risque de toxicité.</div>
+            </div>
+            <div style="padding:10px 8px; background:#fff8e6; border-radius:8px; border-top:4px solid #f39c12;">
+                <div style="font-weight:bold; color:#f39c12; margin-bottom:4px;">Intermediate Metabolizer</div>
+                <div style="color:#555;">L'enzyme fonctionne à environ 50%. Accumulation partielle → surveillance nécessaire.</div>
+            </div>
+            <div style="padding:10px 8px; background:#eafaf1; border-radius:8px; border-top:4px solid #27ae60;">
+                <div style="font-weight:bold; color:#27ae60; margin-bottom:4px;">Normal Metabolizer</div>
+                <div style="color:#555;">L'enzyme fonctionne normalement. Doses standard appropriées.</div>
+            </div>
+            <div style="padding:10px 8px; background:#f3e5f5; border-radius:8px; border-top:4px solid #8e44ad;">
+                <div style="font-weight:bold; color:#8e44ad; margin-bottom:4px;">Ultrarapid Metabolizer</div>
+                <div style="color:#555;">L'enzyme fonctionne trop vite. Le médicament est éliminé avant d'agir → risque d'inefficacité.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <h2 class="section-title">🔬 Recommandations par gène</h2>
 
 {% for gene, data in cpic_by_gene.items() %}
@@ -207,12 +286,15 @@
     {% set drugs_avoid = [] %}
     {% set drugs_reduce = [] %}
     {% set drugs_safe = [] %}
+    {% set drugs_consider = [] %}
     {% for gene, data in cpic_by_gene.items() %}
         {% for r in data.recommendations %}
             {% if 'viter' in r.recommendation %}
                 {% if r.drug not in drugs_avoid %}{% set _ = drugs_avoid.append(r.drug) %}{% endif %}
-            {% elif 'duire' in r.recommendation or 'ugmenter' in r.recommendation or 'onsid' in r.recommendation %}
+            {% elif 'duire' in r.recommendation or 'ugmenter' in r.recommendation %}
                 {% if r.drug not in drugs_reduce %}{% set _ = drugs_reduce.append(r.drug) %}{% endif %}
+            {% elif 'onsid' in r.recommendation %}
+                {% if r.drug not in drugs_consider %}{% set _ = drugs_consider.append(r.drug) %}{% endif %}
             {% else %}
                 {% if r.drug not in drugs_safe %}{% set _ = drugs_safe.append(r.drug) %}{% endif %}
             {% endif %}
@@ -221,18 +303,29 @@
 
     {% if drugs_avoid %}
     <div class="concl-block concl-danger">
-        ⛔ <strong>Médicaments à éviter :</strong> {{ drugs_avoid | join(', ') }}
+        ⛔ <strong>Médicaments à éviter</strong> — inefficaces ou dangereux pour ce patient :
+        <strong>{{ drugs_avoid | join(', ') }}</strong>
+        — Choisir une alternative avant toute prescription.
     </div>
     {% endif %}
     {% if drugs_reduce %}
     <div class="concl-block concl-caution">
-        ⚠️ <strong>Médicaments nécessitant un ajustement ou une surveillance :</strong>
-        {{ drugs_reduce | join(', ') }}
+        ⚠️ <strong>Médicaments nécessitant un ajustement de dose</strong> :
+        <strong>{{ drugs_reduce | join(', ') }}</strong>
+        — Adapter la posologie avant prescription.
+    </div>
+    {% endif %}
+    {% if drugs_consider %}
+    <div class="concl-block" style="background:#fff3e0; border-left:4px solid #d35400; padding:10px 15px; border-radius:8px; margin:8px 0; font-size:14px;">
+        ↪️ <strong>Médicaments pour lesquels une alternative est préférable</strong> :
+        <strong>{{ drugs_consider | join(', ') }}</strong>
+        — Utilisation possible mais envisager un autre médicament.
     </div>
     {% endif %}
     {% if drugs_safe %}
     <div class="concl-block concl-safe">
-        ✅ <strong>Médicaments à dose standard :</strong> {{ drugs_safe | join(', ') }}
+        ✅ <strong>Médicaments à dose standard</strong> — appropriés pour ce patient :
+        <strong>{{ drugs_safe | join(', ') }}</strong>
     </div>
     {% endif %}
 

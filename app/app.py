@@ -76,8 +76,22 @@ def analyze():
         results_df['drug'] != 'Aucune recommandation trouvée'
     ]['drug'].unique().tolist())
 
+    SEVERITY = {
+        'Poor Metabolizer': 3,
+        'Intermediate Metabolizer': 2,
+        'Normal Metabolizer': 1,
+        'Ultrarapid Metabolizer': 2
+    }
+    PHENOTYPE_MAP = {
+        'Efficacy':   'Poor Metabolizer',
+        'Dosage':     'Intermediate Metabolizer',
+        'Metabolism': 'Normal Metabolizer',
+        'Toxicity':   'Poor Metabolizer'
+    }
+
     predictions = []
-    cpic_by_gene = {}
+    preds_by_gene = {}  # collecte toutes les prédictions par gène
+
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
         rsid     = variant['rsid']
@@ -85,13 +99,22 @@ def analyze():
         drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
         pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
         predictions.append(pred)
-        # CPIC recommendations par gène (une seule fois par gène)
-        if gene not in cpic_by_gene:
-            cpic_phenotype, cpic_recs = get_cpic_recs(gene, pred['phenotype'])
-            cpic_by_gene[gene] = {
-                'phenotype': cpic_phenotype,
-                'recommendations': cpic_recs
-            }
+        if gene not in preds_by_gene:
+            preds_by_gene[gene] = []
+        preds_by_gene[gene].append(pred)
+
+    # Phénotype final = le plus sévère parmi tous les variants du gène
+    cpic_by_gene = {}
+    for gene, gene_preds in preds_by_gene.items():
+        cpic_phenotypes = [PHENOTYPE_MAP.get(p['phenotype'], 'Normal Metabolizer')
+                           for p in gene_preds]
+        worst = max(cpic_phenotypes, key=lambda p: SEVERITY.get(p, 1))
+        cpic_phenotype, cpic_recs = get_cpic_recs(gene, 
+            [k for k,v in PHENOTYPE_MAP.items() if v == worst][0])
+        cpic_by_gene[gene] = {
+            'phenotype': cpic_phenotype,
+            'recommendations': cpic_recs
+        }
 
     variants = variants_df.to_dict('records')
     results  = results_df.to_dict('records')
@@ -112,6 +135,24 @@ def analyze():
 @app.route('/search_drug', methods=['POST'])
 def search_drug():
     drug_query   = request.form.get('drug_query', '').lower().strip()
+
+    # Normalisation des noms de médicaments (français -> anglais PharmGKB)
+    DRUG_NORMALIZE = {
+        'warfarine': 'warfarin',
+        'warfarin':  'warfarin',
+        'aspirine':  'aspirin',
+        'méthadone': 'methadone',
+        'méthotrexate': 'methotrexate',
+        'fluorouracile': 'fluorouracil',
+        'capécitabine': 'capecitabine',
+        'tamoxifène': 'tamoxifen',
+        'codéine': 'codeine',
+        'tramadol': 'tramadol',
+        'clopidogrel': 'clopidogrel',
+        'oméprazole': 'omeprazole',
+        'efavirenz': 'efavirenz',
+    }
+    drug_query = DRUG_NORMALIZE.get(drug_query, drug_query)
     vcf_filename = request.form.get('vcf_filename', '')
     filepath     = os.path.join(UPLOAD_FOLDER, vcf_filename)
 
@@ -139,10 +180,25 @@ def search_drug():
         pred['genotype'] = variant['genotype']
         ml_predictions.append(pred)
 
+    # Vérifier si le médicament existe dans PharmGKB tous gènes confondus
+    pharmgkb_df = load_pharmgkb(PHARMGKB_FILE)
+    drug_in_pharmgkb = pharmgkb_df[
+        pharmgkb_df['Drug(s)'].str.lower().str.contains(drug_query, na=False)
+    ]
+
     if match.empty:
+        if drug_in_pharmgkb.empty:
+            safe_msg = (f'Le médicament "{drug_query}" n\'est pas référencé '
+                        f'dans la base PharmGKB. Aucune donnée pharmacogénomique disponible.')
+        else:
+            genes_concerned = drug_in_pharmgkb['Gene'].dropna().unique().tolist()
+            safe_msg = (f'Aucun variant détecté chez ce patient pour les gènes impliqués '
+                        f'dans le métabolisme de {drug_query} '
+                        f'({", ".join(genes_concerned[:5])}). '
+                        f'Dose standard applicable.')
         drug_result = {
             'status':  'safe',
-            'message': f'Aucune interaction pharmacogénomique connue pour {drug_query}.',
+            'message': safe_msg,
             'details': [],
             'ml_predictions': ml_predictions
         }
@@ -169,8 +225,22 @@ def search_drug():
         results_df['drug'] != 'Aucune recommandation trouvée'
     ]['drug'].unique().tolist())
 
+    SEVERITY = {
+        'Poor Metabolizer': 3,
+        'Intermediate Metabolizer': 2,
+        'Normal Metabolizer': 1,
+        'Ultrarapid Metabolizer': 2
+    }
+    PHENOTYPE_MAP = {
+        'Efficacy':   'Poor Metabolizer',
+        'Dosage':     'Intermediate Metabolizer',
+        'Metabolism': 'Normal Metabolizer',
+        'Toxicity':   'Poor Metabolizer'
+    }
+
     predictions = []
-    cpic_by_gene = {}
+    preds_by_gene = {}  # collecte toutes les prédictions par gène
+
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
         rsid     = variant['rsid']
@@ -178,13 +248,22 @@ def search_drug():
         drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
         pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
         predictions.append(pred)
-        # CPIC recommendations par gène (une seule fois par gène)
-        if gene not in cpic_by_gene:
-            cpic_phenotype, cpic_recs = get_cpic_recs(gene, pred['phenotype'])
-            cpic_by_gene[gene] = {
-                'phenotype': cpic_phenotype,
-                'recommendations': cpic_recs
-            }
+        if gene not in preds_by_gene:
+            preds_by_gene[gene] = []
+        preds_by_gene[gene].append(pred)
+
+    # Phénotype final = le plus sévère parmi tous les variants du gène
+    cpic_by_gene = {}
+    for gene, gene_preds in preds_by_gene.items():
+        cpic_phenotypes = [PHENOTYPE_MAP.get(p['phenotype'], 'Normal Metabolizer')
+                           for p in gene_preds]
+        worst = max(cpic_phenotypes, key=lambda p: SEVERITY.get(p, 1))
+        cpic_phenotype, cpic_recs = get_cpic_recs(gene, 
+            [k for k,v in PHENOTYPE_MAP.items() if v == worst][0])
+        cpic_by_gene[gene] = {
+            'phenotype': cpic_phenotype,
+            'recommendations': cpic_recs
+        }
 
     variants = variants_df.to_dict('records')
     results  = results_df.sort_values(['gene', 'drug']).to_dict('records')
@@ -215,8 +294,22 @@ def download_pdf():
     results_df  = results_df.drop_duplicates(subset=['gene', 'rsid', 'drug', 'phenotype'])
     results_df  = results_df.sort_values(['gene', 'drug'])
 
+    SEVERITY = {
+        'Poor Metabolizer': 3,
+        'Intermediate Metabolizer': 2,
+        'Normal Metabolizer': 1,
+        'Ultrarapid Metabolizer': 2
+    }
+    PHENOTYPE_MAP = {
+        'Efficacy':   'Poor Metabolizer',
+        'Dosage':     'Intermediate Metabolizer',
+        'Metabolism': 'Normal Metabolizer',
+        'Toxicity':   'Poor Metabolizer'
+    }
+
     predictions = []
-    cpic_by_gene = {}
+    preds_by_gene = {}  # collecte toutes les prédictions par gène
+
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
         rsid     = variant['rsid']
@@ -224,13 +317,22 @@ def download_pdf():
         drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
         pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
         predictions.append(pred)
-        # CPIC recommendations par gène (une seule fois par gène)
-        if gene not in cpic_by_gene:
-            cpic_phenotype, cpic_recs = get_cpic_recs(gene, pred['phenotype'])
-            cpic_by_gene[gene] = {
-                'phenotype': cpic_phenotype,
-                'recommendations': cpic_recs
-            }
+        if gene not in preds_by_gene:
+            preds_by_gene[gene] = []
+        preds_by_gene[gene].append(pred)
+
+    # Phénotype final = le plus sévère parmi tous les variants du gène
+    cpic_by_gene = {}
+    for gene, gene_preds in preds_by_gene.items():
+        cpic_phenotypes = [PHENOTYPE_MAP.get(p['phenotype'], 'Normal Metabolizer')
+                           for p in gene_preds]
+        worst = max(cpic_phenotypes, key=lambda p: SEVERITY.get(p, 1))
+        cpic_phenotype, cpic_recs = get_cpic_recs(gene, 
+            [k for k,v in PHENOTYPE_MAP.items() if v == worst][0])
+        cpic_by_gene[gene] = {
+            'phenotype': cpic_phenotype,
+            'recommendations': cpic_recs
+        }
 
     variants = variants_df.to_dict('records')
     results  = results_df.to_dict('records')
