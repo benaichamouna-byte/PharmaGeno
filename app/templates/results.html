@@ -2,187 +2,367 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Résultats - PharmaGeno</title>
+    <title>Rapport Pharmacogénomique — PharmaGeno</title>
     <style>
-        
-        body { font-family: Arial, sans-serif; max-width: 1100px; margin: 30px auto; padding: 20px; }
-        h1, h2 { color: #2E5F8A; }
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th { background: #2E5F8A; color: white; padding: 10px; text-align: left; }
-        td { padding: 8px 10px; border-bottom: 1px solid #ddd; }
-        tr:hover { background: #f5f9ff; }
-        .badge { padding: 3px 8px; border-radius: 10px; font-size: 12px; background: #d4edda; color: #155724; }
-        .stats { display: flex; gap: 20px; margin: 20px 0; }
-        .stat-box { background: #f5f9ff; padding: 15px 25px; border-radius: 8px; border-left: 4px solid #2E5F8A; }
-        .stat-box h3 { margin: 0; font-size: 28px; color: #2E5F8A; }
-        .stat-box p { margin: 5px 0 0 0; color: #777; }
-        .search-box { background: #f5f9ff; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #ddd; }
-        .search-box input { padding: 10px; width: 300px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; }
-        .search-box button { background: #2E5F8A; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-        .result-danger  { background: #f8d7da; border-left: 5px solid #dc3545; padding: 15px; border-radius: 8px; margin: 15px 0; }
-        .result-warning { background: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; border-radius: 8px; margin: 15px 0; }
-        .result-safe    { background: #d4edda; border-left: 5px solid #28a745; padding: 15px; border-radius: 8px; margin: 15px 0; }
-        .confidence-green  { color: #155724; font-weight: bold; }
-        .confidence-orange { color: #d4ac0d; font-weight: bold; }
-        .confidence-red    { color: #e74c3c; font-weight: bold; }
-        .confidence-unknown { color: #7f8c8d; font-style: italic; }
-        .ml-box { background: #f0f7ff; border-left: 4px solid #2E5F8A; padding: 15px; border-radius: 8px; margin: 20px 0; }
-        a { color: #2E5F8A; }
-        .gene-card { border: 1px solid #ddd; border-radius: 8px; margin: 10px 0; }
-        .gene-header { background: #f5f9ff; padding: 12px 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border-radius: 8px; }
-        .gene-header:hover { background: #e8f0fe; }
-        .gene-name { font-weight: bold; color: #2E5F8A; font-size: 16px; }
-        .gene-count { color: #777; font-size: 14px; }
-        .toggle-icon { color: #2E5F8A; font-size: 18px; }
-        .gene-details { padding: 10px; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 950px; margin: 30px auto; padding: 20px; color: #2c3e50; background: #f4f6f8; }
+
+        .header { background: #2E5F8A; color: white; padding: 22px 30px; border-radius: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { margin: 0; font-size: 20px; }
+        .header p  { margin: 4px 0 0 0; opacity: .82; font-size: 13px; }
+        .header-right { text-align: right; font-size: 13px; opacity: .85; }
+
+        .summary { background: white; border-left: 5px solid #2E5F8A; border-radius: 0 10px 10px 0; padding: 16px 22px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,.06); }
+        .summary h3 { margin: 0 0 8px 0; color: #2E5F8A; font-size: 15px; }
+        .summary p  { margin: 0; font-size: 14px; line-height: 1.6; }
+
+        .actions { margin-bottom: 20px; display: flex; gap: 12px; align-items: center; }
+        .btn-pdf { background: #2E5F8A; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .btn-pdf:hover { background: #1a4a7a; }
+
+        h2.section-title { color: #2E5F8A; font-size: 17px; margin: 24px 0 12px 0; }
+
+        /* GENE CARDS */
+        .gene-card { background: white; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,.07); overflow: hidden; }
+        .gene-header { padding: 16px 22px; display: flex; justify-content: space-between; align-items: center; }
+        .gene-header.poor         { background: #fdecea; border-left: 6px solid #c0392b; }
+        .gene-header.intermediate { background: #fff8e6; border-left: 6px solid #f39c12; }
+        .gene-header.normal       { background: #eafaf1; border-left: 6px solid #27ae60; }
+        .gene-header.ultrarapid   { background: #f3e5f5; border-left: 6px solid #8e44ad; }
+        .gene-title    { font-size: 17px; font-weight: bold; }
+        .gene-subtitle { font-size: 12px; color: #666; margin-top: 3px; }
+        .badge { padding: 5px 14px; border-radius: 15px; font-weight: bold; font-size: 13px; }
+        .badge.poor         { background: #c0392b; color: white; }
+        .badge.intermediate { background: #f39c12; color: white; }
+        .badge.normal       { background: #27ae60; color: white; }
+        .badge.ultrarapid   { background: #8e44ad; color: white; }
+        .pheno-explain { padding: 10px 22px; background: #fafafa; border-bottom: 1px solid #eee; font-size: 13px; color: #555; font-style: italic; }
+
+        /* DRUG TABLE */
+        .drug-table { width: 100%; border-collapse: collapse; }
+        .drug-table th { background: #f0f4f8; padding: 10px 15px; text-align: left; font-size: 12px; color: #555; text-transform: uppercase; letter-spacing: .5px; border-bottom: 2px solid #ddd; }
+        .drug-table td { padding: 11px 15px; border-bottom: 1px solid #f0f0f0; font-size: 14px; vertical-align: middle; }
+        .drug-table tr:last-child td { border-bottom: none; }
+        .drug-name { font-weight: bold; color: #2c3e50; text-transform: capitalize; }
+        .action-avoid    { color: #c0392b; font-weight: bold; }
+        .action-reduce   { color: #e67e22; font-weight: bold; }
+        .action-increase { color: #8e44ad; font-weight: bold; }
+        .action-consider { color: #d35400; font-weight: bold; }
+        .action-standard { color: #27ae60; }
+        .alt-box  { background: #eaf4fb; border-radius: 5px; padding: 3px 10px; font-size: 12px; color: #2471a3; display: inline-block; margin-top: 3px; }
+        .level-a  { background: #1e8449; color: white; padding: 3px 9px; border-radius: 10px; font-size: 12px; font-weight: bold; }
+        .level-b  { background: #2980b9; color: white; padding: 3px 9px; border-radius: 10px; font-size: 12px; font-weight: bold; }
+        .ref-text { font-size: 11px; color: #999; }
+
+        /* CONCLUSION */
+        .conclusion { background: white; border: 2px solid #2E5F8A; border-radius: 10px; padding: 22px 28px; margin: 22px 0; box-shadow: 0 2px 6px rgba(0,0,0,.07); }
+        .conclusion h3 { color: #2E5F8A; margin: 0 0 14px 0; font-size: 16px; }
+        .concl-block { padding: 10px 15px; border-radius: 8px; margin: 8px 0; font-size: 14px; }
+        .concl-danger  { background: #fdecea; border-left: 4px solid #c0392b; }
+        .concl-caution { background: #fff8e6; border-left: 4px solid #f39c12; }
+        .concl-safe    { background: #eafaf1; border-left: 4px solid #27ae60; }
+
+        /* SEARCH */
+        .search-section { background: white; padding: 20px 25px; border-radius: 10px; margin: 22px 0; box-shadow: 0 2px 6px rgba(0,0,0,.07); }
+        .search-section h3 { color: #2E5F8A; margin-top: 0; font-size: 15px; }
+        .drug-btn { padding: 6px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; transition: all .2s; }
+        .drug-btn:hover { opacity: .8; }
+        .search-input { padding: 9px 14px; width: 300px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
+        .search-btn { background: #2E5F8A; color: white; padding: 9px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; margin-left: 8px; }
+        .result-danger  { background: #fdecea; border-left: 5px solid #dc3545; padding: 14px 18px; border-radius: 0 8px 8px 0; margin-top: 14px; }
+        .result-warning { background: #fff8e6; border-left: 5px solid #f39c12; padding: 14px 18px; border-radius: 0 8px 8px 0; margin-top: 14px; }
+        .result-safe    { background: #eafaf1; border-left: 5px solid #27ae60; padding: 14px 18px; border-radius: 0 8px 8px 0; margin-top: 14px; }
+
+        /* TECH DETAILS */
+        .tech-toggle { background: #f0f4f8; border: 1px solid #ddd; padding: 10px 18px; border-radius: 8px; cursor: pointer; color: #666; font-size: 13px; width: 100%; text-align: left; margin-top: 20px; }
+        .tech-content { display: none; padding: 20px; background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px; }
+        table.tech { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+        table.tech th { background: #2E5F8A; color: white; padding: 8px 12px; text-align: left; }
+        table.tech td { padding: 7px 12px; border-bottom: 1px solid #eee; }
+        table.tech tr:nth-child(even) td { background: #f8f9fa; }
+
+        .footer-note { font-size: 11px; color: #aaa; margin-top: 25px; text-align: center; font-style: italic; }
+        @media print { .search-section, .tech-toggle, .tech-content, .actions { display: none !important; } }
     </style>
 </head>
 <body>
-    <h1>PharmaGeno — Résultats</h1>
-    <form action="/download_pdf" method="POST" style="margin: 15px 0;">
+
+<!-- EN-TÊTE -->
+<div class="header">
+    <div>
+        <h1>🧬 Rapport Pharmacogénomique — PharmaGeno</h1>
+        <p>Analyse du profil génétique du patient pour l'aide à la prescription médicamenteuse</p>
+    </div>
+    <div class="header-right">
+        <div>📄 {{ filename }}</div>
+        <div>{{ n_variants }} variant(s) analysé(s)</div>
+    </div>
+</div>
+
+<!-- RÉSUMÉ -->
+<div class="summary">
+    <h3>📋 Résumé clinique</h3>
+    <p>
+        Ce patient présente des variants génétiques dans
+        <strong>{{ cpic_by_gene | length }} gène(s)</strong> :
+        <strong>{{ cpic_by_gene.keys() | join(', ') }}</strong>.
+        Les recommandations ci-dessous sont basées sur les guidelines CPIC et doivent être interprétées
+        en complément du tableau clinique du patient.
+    </p>
+</div>
+
+<!-- ACTIONS -->
+<div class="actions">
+    <form action="/download_pdf" method="POST" style="display:inline;">
         <input type="hidden" name="vcf_filename" value="{{ filename }}">
         <input type="hidden" name="drug_search" value="{{ drug_search or '' }}">
-        <button type="submit" style="background: #2E5F8A; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
-            📄 Télécharger le rapport PDF
-        </button>
+        <button type="submit" class="btn-pdf">📄 Télécharger le rapport PDF</button>
     </form>
-    <p>Fichier : <strong>{{ filename }}</strong></p>
+    <a href="/" style="font-size:13px; color:#666;">← Analyser un autre patient</a>
+</div>
 
-    <div class="stats">
-        <div class="stat-box"><h3>{{ n_variants }}</h3><p>Variants détectés</p></div>
-        <div class="stat-box"><h3>{{ n_results }}</h3><p>Recommandations</p></div>
-    </div>
-    {% if no_mutation %}
-    <div class="result-safe" style="margin: 20px 0;">
-        <strong>✅ Aucune mutation pharmacogénomique détectée chez ce patient.</strong><br>
-        Tous les variants analysés présentent un génotype de référence (0/0).
-        Aucune adaptation thérapeutique liée aux gènes testés n'est nécessaire sur cette base.
-    </div>
-    {% endif %}
+<!-- RECOMMANDATIONS CPIC PAR GÈNE -->
+<h2 class="section-title">🔬 Recommandations par gène</h2>
 
-    <!-- PRÉDICTIONS ML -->
-    <h2>Prédictions du modèle — Vote majoritaire DL v5 + RF v3</h2>
-    <div class="ml-box">
-        <table>
-            <tr>
-                <th>Gène</th><th>rsID</th><th>Génotype</th>
-                <th>Phénotype prédit</th><th>Confiance</th><th>Niveau</th>
-            </tr>
-            {% for p in predictions %}
-            <tr>
-                <td><strong>{{ p.gene }}</strong></td>
-                <td>{{ p.rsid }}</td>
-                <td>{{ p.genotype }}</td>
-                <td>{{ p.phenotype }}</td>
-                <td class="confidence-{{ p.color }}">{{ p.confidence }}%</td>
-                <td><span class="badge">{{ p.level }}</span></td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
+{% for gene, data in cpic_by_gene.items() %}
+{% if 'Poor' in data.phenotype %}{% set pc = 'poor' %}
+{% elif 'Intermediate' in data.phenotype %}{% set pc = 'intermediate' %}
+{% elif 'Ultrarapid' in data.phenotype %}{% set pc = 'ultrarapid' %}
+{% else %}{% set pc = 'normal' %}{% endif %}
 
-    <!-- RECHERCHE PAR MÉDICAMENT -->
-    <h2>Vérifier un médicament</h2>
-    <div class="search-box">
-        <form action="/search_drug" method="POST">
-            <input type="hidden" name="vcf_filename" value="{{ filename }}">
-            <input type="text" name="drug_query" placeholder="ex: clopidogrel, efavirenz..." value="{{ drug_search or '' }}">
-            <button type="submit">Vérifier</button>
-        </form>
-
-        {% if drug_result %}
-        <div class="result-{{ drug_result.status }}" style="margin-top:15px;">
-            <strong>{{ drug_result.message }}</strong>
-            {% if drug_result.ml_predictions %}
-            <p><strong>Prédictions ML pour ce médicament :</strong></p>
-            <table>
-                <tr><th>Gène</th><th>Phénotype prédit</th><th>Confiance</th></tr>
-                {% for p in drug_result.ml_predictions %}
-                <tr>
-                    <td>{{ p.gene }}</td>
-                    <td>{{ p.phenotype }}</td>
-                    <td class="confidence-{{ p.color }}">{{ p.confidence }}%</td>
-                </tr>
-                {% endfor %}
-            </table>
-            {% endif %}
-            {% if drug_result.details %}
-            <p><strong>Sources PharmGKB :</strong></p>
-            <table>
-                <tr><th>Gène</th><th>rsID</th><th>Phénotype</th><th>Source</th></tr>
-                {% for d in drug_result.details %}
-                <tr>
-                    <td>{{ d.gene }}</td><td>{{ d.rsid }}</td>
-                    <td>{{ d.phenotype }}</td>
-                    <td><span class="badge">{{ d.source }}</span></td>
-                </tr>
-                {% endfor %}
-            </table>
-            {% endif %}
+<div class="gene-card">
+    <div class="gene-header {{ pc }}">
+        <div>
+            <div class="gene-title">{{ gene }}</div>
+            <div class="gene-subtitle">Enzyme impliquée dans le métabolisme de plusieurs médicaments</div>
         </div>
+        <span class="badge {{ pc }}">{{ data.phenotype }}</span>
+    </div>
+
+    <div class="pheno-explain">
+        {% if pc == 'poor' %}
+        ⚠️ Ce patient <strong>métabolise lentement</strong> les médicaments traités par {{ gene }}.
+        Risque d'accumulation et de toxicité avec les doses standard.
+        {% elif pc == 'intermediate' %}
+        ℹ️ Ce patient <strong>métabolise modérément</strong> les médicaments traités par {{ gene }}.
+        Une surveillance est recommandée selon les médicaments.
+        {% elif pc == 'ultrarapid' %}
+        ⚠️ Ce patient <strong>métabolise très rapidement</strong> les médicaments traités par {{ gene }}.
+        Risque de sous-dosage et d'inefficacité thérapeutique.
+        {% else %}
+        ✅ Ce patient présente un <strong>métabolisme normal</strong> pour {{ gene }}.
+        Les doses standard sont généralement appropriées.
         {% endif %}
     </div>
 
-    <!-- VARIANTS -->
-    <h2>Variants avec mutations</h2>
-    <table>
+    {% if data.recommendations %}
+    <table class="drug-table">
+        <tr>
+            <th style="width:14%;">Médicament</th>
+            <th style="width:36%;">Action recommandée</th>
+            <th style="width:22%;">Alternative proposée</th>
+            <th style="width:8%;">Niveau</th>
+            <th style="width:20%;">Source</th>
+        </tr>
+        {% for r in data.recommendations %}
+        <tr>
+            <td><span class="drug-name">{{ r.drug }}</span></td>
+            <td>
+                {% if 'viter' in r.recommendation %}
+                <span class="action-avoid">⛔ {{ r.recommendation }}</span>
+                {% elif 'duire' in r.recommendation %}
+                <span class="action-reduce">⚠️ {{ r.recommendation }}</span>
+                {% elif 'ugmenter' in r.recommendation %}
+                <span class="action-increase">⬆️ {{ r.recommendation }}</span>
+                {% elif 'onsid' in r.recommendation %}
+                <span class="action-consider">↪️ {{ r.recommendation }}</span>
+                {% else %}
+                <span class="action-standard">✅ {{ r.recommendation }}</span>
+                {% endif %}
+            </td>
+            <td>
+                {% if r.alternative %}
+                <span class="alt-box">💊 {{ r.alternative }}</span>
+                {% else %}—{% endif %}
+            </td>
+            <td style="text-align:center;">
+                {% if r.level == 'A' %}<span class="level-a">A</span>
+                {% else %}<span class="level-b">B</span>{% endif %}
+            </td>
+            <td><span class="ref-text">{{ r.reference }}</span></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <div style="padding:15px 20px; color:#888; font-style:italic;">
+        Aucune règle CPIC disponible pour ce gène dans la base actuelle.
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+
+<!-- CONCLUSION CLINIQUE -->
+<div class="conclusion">
+    <h3>📌 Conclusion clinique</h3>
+    {% set drugs_avoid = [] %}
+    {% set drugs_reduce = [] %}
+    {% set drugs_safe = [] %}
+    {% for gene, data in cpic_by_gene.items() %}
+        {% for r in data.recommendations %}
+            {% if 'viter' in r.recommendation %}
+                {% if r.drug not in drugs_avoid %}{% set _ = drugs_avoid.append(r.drug) %}{% endif %}
+            {% elif 'duire' in r.recommendation or 'ugmenter' in r.recommendation or 'onsid' in r.recommendation %}
+                {% if r.drug not in drugs_reduce %}{% set _ = drugs_reduce.append(r.drug) %}{% endif %}
+            {% else %}
+                {% if r.drug not in drugs_safe %}{% set _ = drugs_safe.append(r.drug) %}{% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+    {% if drugs_avoid %}
+    <div class="concl-block concl-danger">
+        ⛔ <strong>Médicaments à éviter :</strong> {{ drugs_avoid | join(', ') }}
+    </div>
+    {% endif %}
+    {% if drugs_reduce %}
+    <div class="concl-block concl-caution">
+        ⚠️ <strong>Médicaments nécessitant un ajustement ou une surveillance :</strong>
+        {{ drugs_reduce | join(', ') }}
+    </div>
+    {% endif %}
+    {% if drugs_safe %}
+    <div class="concl-block concl-safe">
+        ✅ <strong>Médicaments à dose standard :</strong> {{ drugs_safe | join(', ') }}
+    </div>
+    {% endif %}
+
+    <p style="margin:14px 0 0 0; font-size:13px; color:#777; font-style:italic;">
+        Ce rapport est un outil d'aide à la décision. Il ne remplace pas le jugement clinique du médecin prescripteur.
+        Niveau CPIC — A : recommandation forte &nbsp;|&nbsp; B : recommandation modérée.
+    </p>
+</div>
+
+<!-- RECHERCHE PAR MÉDICAMENT -->
+<div class="search-section">
+    <h3>🔍 Vérifier un médicament avant prescription</h3>
+    <p style="font-size:13px; color:#666; margin:-8px 0 14px 0;">
+        Cliquez sur un médicament ou saisissez son nom pour vérifier sa compatibilité avec ce profil génétique.
+    </p>
+
+    <!-- BOUTONS CLIQUABLES -->
+    {% if covered_drugs %}
+    <div style="margin-bottom:14px;">
+        <div style="font-size:12px; color:#888; margin-bottom:8px; font-weight:bold; text-transform:uppercase; letter-spacing:.5px;">
+            Médicaments couverts par les guidelines CPIC :
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        {% for drug, info in covered_drugs.items() | sort %}
+            <form action="/search_drug" method="POST" style="display:inline;">
+                <input type="hidden" name="vcf_filename" value="{{ filename }}">
+                <input type="hidden" name="drug_query" value="{{ drug }}">
+                <button type="submit" class="drug-btn" style="
+                    border: 2px solid {{ '#2E5F8A' if info.level == 'A' else '#7fb3d3' }};
+                    background: {{ '#eaf2fb' if info.level == 'A' else '#f4f9fd' }};
+                    color: {{ '#1a4a7a' if info.level == 'A' else '#4a7fa0' }};
+                    font-weight: {{ 'bold' if info.level == 'A' else 'normal' }};">
+                    💊 {{ drug | capitalize }}
+                    <span style="font-size:10px; background:{{ '#2E5F8A' if info.level == 'A' else '#7fb3d3' }}; color:white; border-radius:8px; padding:1px 6px; margin-left:4px;">{{ info.level }}</span>
+                </button>
+            </form>
+        {% endfor %}
+        </div>
+        <div style="font-size:11px; color:#aaa; margin-top:8px;">
+            Bordure foncée = Niveau A (recommandation forte) · Bordure claire = Niveau B
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- SAISIE LIBRE -->
+    <form action="/search_drug" method="POST" style="display:flex; gap:8px; align-items:center;">
+        <input type="hidden" name="vcf_filename" value="{{ filename }}">
+        <input class="search-input" type="text" name="drug_query"
+               list="drugs_list"
+               placeholder="ou saisissez un autre médicament..."
+               value="{{ drug_search or '' }}">
+        <datalist id="drugs_list">
+            {% if covered_drugs %}{% for drug in covered_drugs.keys() | sort %}
+            <option value="{{ drug }}">{% endfor %}{% endif %}
+        </datalist>
+        <button type="submit" class="search-btn">Vérifier</button>
+    </form>
+
+    {% if drug_result %}
+    <div class="result-{{ drug_result.status }}">
+        <strong>{{ drug_result.message }}</strong>
+        {% if drug_result.ml_predictions %}
+        <table class="tech" style="margin-top:10px;">
+            <tr><th>Gène</th><th>Phénotype ML</th><th>Confiance</th></tr>
+            {% for p in drug_result.ml_predictions %}
+            <tr><td>{{ p.gene }}</td><td>{{ p.phenotype }}</td><td>{{ p.confidence }}%</td></tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+        {% if drug_result.details %}
+        <table class="tech" style="margin-top:10px;">
+            <tr><th>Gène</th><th>Phénotype</th><th>Source</th></tr>
+            {% for d in drug_result.details %}
+            <tr><td>{{ d.gene }}</td><td>{{ d.phenotype }}</td><td>{{ d.source }}</td></tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+<!-- DÉTAILS TECHNIQUES -->
+<button class="tech-toggle" onclick="var t=document.getElementById('tech'); t.style.display=t.style.display==='none'?'block':'none';">
+    🔧 Afficher les détails techniques (variants, prédictions ML, modèles)
+</button>
+<div class="tech-content" id="tech">
+    <p style="color:#888; font-size:12px; margin-top:0;">
+        Ces informations sont destinées aux bioinformaticiens. Elles ne sont pas nécessaires pour la prescription.
+    </p>
+
+    <strong>Variants détectés dans le VCF</strong>
+    <table class="tech">
         <tr><th>Gène</th><th>rsID</th><th>Génotype</th><th>Chromosome</th><th>Position</th></tr>
         {% for v in variants %}
         <tr>
-            <td><strong>{{ v.gene }}</strong></td>
-            <td>{{ v.rsid }}</td><td>{{ v.genotype }}</td>
+            <td>{{ v.gene }}</td><td>{{ v.rsid }}</td><td>{{ v.genotype }}</td>
             <td>{{ v.chromosome }}</td><td>{{ v.position }}</td>
         </tr>
         {% endfor %}
     </table>
 
-    <!-- RECOMMANDATIONS -->
-    <h2>Recommandations PharmGKB + CPIC + DPWG</h2>
+    <strong style="display:block; margin-top:16px;">Vote majoritaire DL v5 (88%) + RF v3 (89.4%)</strong>
+    <table class="tech">
+        <tr><th>Gène</th><th>rsID</th><th>Catégorie ML</th><th>Confiance moy.</th><th>Accord DL/RF</th></tr>
+        {% for p in predictions %}
+        <tr>
+            <td>{{ p.gene }}</td><td>{{ p.rsid }}</td><td>{{ p.phenotype }}</td>
+            <td style="color:{{ '#c0392b' if p.confidence < 50 else ('#e67e22' if p.confidence < 70 else '#27ae60') }};">
+                {{ p.confidence }}%
+            </td>
+            <td>{{ p.level }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 
-{% set genes = results | groupby('gene') %}
-{% for gene, gene_results in genes %}
-<div class="gene-card">
-    <div class="gene-header" onclick="toggleGene('{{ gene }}')">
-        <span class="gene-name">{{ gene }}</span>
-        <span class="gene-count">{{ gene_results | list | length }} recommandations</span>
-        <span class="toggle-icon" id="icon-{{ gene }}">▼</span>
-    </div>
-    <div class="gene-details" id="details-{{ gene }}" style="display:none;">
-        <table>
-            <tr>
-                <th>rsID</th>
-                <th>Médicament</th>
-                <th>Phénotype</th>
-                <th>Source</th>
-            </tr>
-            {% for r in gene_results %}
-            <tr>
-                <td>{{ r.rsid }}</td>
-                <td>{{ r.drug }}</td>
-                <td>{{ r.phenotype }}</td>
-                <td><span class="badge">{{ r.source }}</span></td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
+    <strong style="display:block; margin-top:16px;">Correspondance catégories ML → phénotypes CPIC</strong>
+    <table class="tech">
+        <tr><th>Catégorie ML</th><th>Phénotype CPIC</th><th>Justification</th></tr>
+        <tr><td>Efficacy</td><td>Poor Metabolizer</td><td>Distribution dominante dans PharmGKB</td></tr>
+        <tr><td>Dosage</td><td>Intermediate Metabolizer</td><td>Ajustement de dose requis</td></tr>
+        <tr><td>Metabolism</td><td>Normal Metabolizer</td><td>Métabolisme standard</td></tr>
+        <tr><td>Toxicity</td><td>Poor Metabolizer</td><td>Accumulation → toxicité</td></tr>
+    </table>
 </div>
-{% endfor %}
 
-<script>
-function toggleGene(gene) {
-    var details = document.getElementById('details-' + gene);
-    var icon    = document.getElementById('icon-' + gene);
-    if (details.style.display === 'none') {
-        details.style.display = 'block';
-        icon.textContent = '▲';
-    } else {
-        details.style.display = 'none';
-        icon.textContent = '▼';
-    }
-}
-</script>
+<div class="footer-note">
+    PharmaGeno — Projet de mémoire Master Bioinformatique | Encadrant : Pr. Kais Ghedira<br>
+    Sources : CPIC (cpicpgx.org) · PharmGKB · DPWG
+</div>
 
-
-    <br><a href="/">← Analyser un autre fichier</a>
+<script>document.getElementById('tech').style.display = 'none';</script>
 </body>
 </html>

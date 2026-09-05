@@ -7,6 +7,7 @@ sys.path.append('/home/mouna/projet_memoire/scripts')
 from vcf_parser import parse_vcf
 from drug_recommender import load_pharmgkb, load_clinical_variants, load_guidelines, get_recommendations
 from predict_phenotype import load_rf_model, load_dl_model, predict_phenotype, find_best_column
+from cpic_rules import get_recommendations as get_cpic_recs, get_all_covered_drugs
 from generate_report import generate_pdf_report
 from flask import send_file
 
@@ -20,6 +21,7 @@ JSON_DIR      = '/home/mouna/projet_memoire/data'
 
 rf, columns, classes = load_rf_model()
 dl_model, dl_columns, dl_classes = load_dl_model()
+covered_drugs = get_all_covered_drugs()
 def predict_best_for_variant(gene, rsid, genotype, drug_matches):
     drug_matches = [d for d in drug_matches if d != 'Aucune recommandation trouvée']
     best_pred = None
@@ -75,6 +77,7 @@ def analyze():
     ]['drug'].unique().tolist())
 
     predictions = []
+    cpic_by_gene = {}
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
         rsid     = variant['rsid']
@@ -82,6 +85,13 @@ def analyze():
         drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
         pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
         predictions.append(pred)
+        # CPIC recommendations par gène (une seule fois par gène)
+        if gene not in cpic_by_gene:
+            cpic_phenotype, cpic_recs = get_cpic_recs(gene, pred['phenotype'])
+            cpic_by_gene[gene] = {
+                'phenotype': cpic_phenotype,
+                'recommendations': cpic_recs
+            }
 
     variants = variants_df.to_dict('records')
     results  = results_df.to_dict('records')
@@ -95,7 +105,9 @@ def analyze():
                            n_variants=len(variants_df),
                            n_results=len(results_df),
                            drug_search=None,
-                           drug_result=None)
+                           drug_result=None,
+                           cpic_by_gene=cpic_by_gene,
+                           covered_drugs=covered_drugs)
 
 @app.route('/search_drug', methods=['POST'])
 def search_drug():
@@ -158,6 +170,7 @@ def search_drug():
     ]['drug'].unique().tolist())
 
     predictions = []
+    cpic_by_gene = {}
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
         rsid     = variant['rsid']
@@ -165,6 +178,13 @@ def search_drug():
         drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
         pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
         predictions.append(pred)
+        # CPIC recommendations par gène (une seule fois par gène)
+        if gene not in cpic_by_gene:
+            cpic_phenotype, cpic_recs = get_cpic_recs(gene, pred['phenotype'])
+            cpic_by_gene[gene] = {
+                'phenotype': cpic_phenotype,
+                'recommendations': cpic_recs
+            }
 
     variants = variants_df.to_dict('records')
     results  = results_df.sort_values(['gene', 'drug']).to_dict('records')
@@ -178,7 +198,9 @@ def search_drug():
                            n_variants=len(variants_df),
                            n_results=len(results_df),
                            drug_search=drug_query,
-                           drug_result=drug_result)
+                           drug_result=drug_result,
+                           cpic_by_gene=cpic_by_gene,
+                           covered_drugs=covered_drugs)
 @app.route('/download_pdf', methods=['POST'])
 def download_pdf():
     vcf_filename = request.form.get('vcf_filename', '')
@@ -194,6 +216,7 @@ def download_pdf():
     results_df  = results_df.sort_values(['gene', 'drug'])
 
     predictions = []
+    cpic_by_gene = {}
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
         rsid     = variant['rsid']
@@ -201,6 +224,13 @@ def download_pdf():
         drug_matches = results_df[results_df['rsid'] == rsid]['drug'].tolist()
         pred = predict_best_for_variant(gene, rsid, genotype, drug_matches)
         predictions.append(pred)
+        # CPIC recommendations par gène (une seule fois par gène)
+        if gene not in cpic_by_gene:
+            cpic_phenotype, cpic_recs = get_cpic_recs(gene, pred['phenotype'])
+            cpic_by_gene[gene] = {
+                'phenotype': cpic_phenotype,
+                'recommendations': cpic_recs
+            }
 
     variants = variants_df.to_dict('records')
     results  = results_df.to_dict('records')
@@ -223,3 +253,8 @@ def download_pdf():
                       download_name=f'rapport_pharmageno_{vcf_filename}.pdf')
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
+
+# Import CPIC rules
+import sys
+sys.path.insert(0, '/home/mouna/projet_memoire/scripts')
+from cpic_rules import get_recommendations as get_cpic_recs, get_all_covered_drugs
