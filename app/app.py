@@ -191,11 +191,17 @@ def search_drug():
             safe_msg = (f'Le médicament "{drug_query}" n\'est pas référencé '
                         f'dans la base PharmGKB. Aucune donnée pharmacogénomique disponible.')
         else:
-            genes_concerned = drug_in_pharmgkb['Gene'].dropna().unique().tolist()
-            safe_msg = (f'Aucun variant détecté chez ce patient pour les gènes impliqués '
-                        f'dans le métabolisme de {drug_query} '
-                        f'({", ".join(genes_concerned[:5])}). '
-                        f'Dose standard applicable.')
+            # Filtrer uniquement les gènes pharmacogénomiques connus
+            KNOWN_PGENES = ['CYP2C19','CYP2B6','CYP2D6','CYP2C9','CYP3A4','CYP3A5',
+                           'VKORC1','TPMT','DPYD','SLCO1B1','UGT1A1','G6PD','IFNL3',
+                           'CYP1A2','CYP2C8','NUDT15','RYR1','CACNA1S','G6PD','MT-RNR1']
+            all_genes = drug_in_pharmgkb['Gene'].dropna().unique().tolist()
+            pgenes = [g for g in all_genes if g in KNOWN_PGENES]
+            genes_display = pgenes if pgenes else all_genes[:3]
+            safe_msg = (f'Aucun variant détecté chez ce patient pour '
+                        f'{", ".join(genes_display)} — '
+                        f'gène(s) impliqué(s) dans le métabolisme de {drug_query}. '
+                        f'Dose standard applicable pour ce patient.')
         drug_result = {
             'status':  'safe',
             'message': safe_msg,
