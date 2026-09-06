@@ -102,6 +102,12 @@
 <!-- RÉSUMÉ -->
 <div class="summary">
     <h3>📋 Résumé clinique</h3>
+    {% if no_mutation %}
+    <p>
+        <strong style="color:#27ae60;">Aucune mutation pharmacogénomique détectée</strong>
+        dans ce fichier VCF. Les doses standard sont applicables pour tous les médicaments.
+    </p>
+    {% else %}
     <p>
         Ce patient présente des variants génétiques dans
         <strong>{{ cpic_by_gene | length }} gène(s)</strong> :
@@ -109,8 +115,31 @@
         Les recommandations ci-dessous sont basées sur les guidelines CPIC et doivent être interprétées
         en complément du tableau clinique du patient.
     </p>
+    {% endif %}
 </div>
 
+{% if no_mutation %}
+<div style="background:white; border:2px solid #27ae60; border-radius:10px; padding:40px; text-align:center; margin:20px 0; box-shadow:0 2px 6px rgba(0,0,0,.07);">
+    <div style="font-size:60px; margin-bottom:15px;">✅</div>
+    <h2 style="color:#27ae60; margin:0 0 12px 0; font-size:22px;">Aucune mutation pharmacogénomique détectée</h2>
+    <p style="color:#555; font-size:15px; margin:0 0 10px 0;">
+        Ce patient ne présente aucun variant dans les gènes pharmacogénomiques analysés.
+    </p>
+    <p style="color:#2c3e50; font-size:16px; font-weight:bold; margin:10px 0;">
+        Les doses standard sont applicables pour tous les médicaments.
+    </p>
+    <div style="margin-top:15px; padding:12px 20px; background:#f0fdf4; border-radius:8px; display:inline-block;">
+        <p style="color:#888; font-size:13px; margin:0; font-style:italic;">
+            Gènes analysés : CYP2C19 · CYP2B6 · CYP2D6 · CYP2C9 · VKORC1 · DPYD · TPMT · SLCO1B1
+        </p>
+    </div>
+    <div style="margin-top:20px;">
+        <a href="/" style="background:#2E5F8A; color:white; padding:10px 24px; border-radius:6px; text-decoration:none; font-size:14px;">
+            ← Analyser un autre patient
+        </a>
+    </div>
+</div>
+{% else %}
 <!-- ACTIONS -->
 <div class="actions">
     <form action="/download_pdf" method="POST" style="display:inline;">
@@ -451,6 +480,7 @@
     </table>
 </div>
 
+{% endif %}
 <div class="footer-note">
     PharmaGeno — Projet de mémoire Master Bioinformatique | Encadrant : Pr. Kais Ghedira<br>
     Sources : CPIC (cpicpgx.org) · PharmGKB · DPWG

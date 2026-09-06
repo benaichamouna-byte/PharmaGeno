@@ -64,6 +64,8 @@ def analyze():
                                n_results=0,
                                drug_search=None,
                                drug_result=None,
+                               cpic_by_gene={},
+                               covered_drugs=covered_drugs,
                                no_mutation=True)
     pharmgkb_df = load_pharmgkb(PHARMGKB_FILE)
     clinical_df = load_clinical_variants(CLINICAL_FILE)
@@ -90,7 +92,8 @@ def analyze():
     }
 
     predictions = []
-    preds_by_gene = {}  # collecte toutes les prédictions par gène
+    preds_by_gene = {}
+    cpic_by_gene = {}   # initialisé ici pour le cas VCF vide
 
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
@@ -245,7 +248,8 @@ def search_drug():
     }
 
     predictions = []
-    preds_by_gene = {}  # collecte toutes les prédictions par gène
+    preds_by_gene = {}
+    cpic_by_gene = {}   # initialisé ici pour le cas VCF vide
 
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
@@ -314,7 +318,8 @@ def download_pdf():
     }
 
     predictions = []
-    preds_by_gene = {}  # collecte toutes les prédictions par gène
+    preds_by_gene = {}
+    cpic_by_gene = {}   # initialisé ici pour le cas VCF vide
 
     for _, variant in variants_df.iterrows():
         gene     = variant['gene']
