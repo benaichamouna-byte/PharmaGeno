@@ -1,0 +1,64 @@
+CYP2C19,CYP2D6,CYP2C9,CYP2B6,DPYD,TPMT,NUDT15,SLCO1B1,UGT1A1,VKORC1,G6PD,HLA-B,RYR1,drug,action,gene,phenotype
+0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,clopidogrel,EVITER,CYP2C19,Poor Metabolizer
+0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,omeprazole,ADAPTER_DOSE,CYP2C19,Poor Metabolizer
+0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,citalopram,ADAPTER_DOSE,CYP2C19,Poor Metabolizer
+0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,sertraline,ADAPTER_DOSE,CYP2C19,Poor Metabolizer
+0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,voriconazole,ADAPTER_DOSE,CYP2C19,Poor Metabolizer
+0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,clopidogrel,ADAPTER_DOSE,CYP2C19,Intermediate Metabolizer
+0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,omeprazole,SURVEILLER,CYP2C19,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,clopidogrel,STANDARD,CYP2C19,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,omeprazole,STANDARD,CYP2C19,Normal Metabolizer
+2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,omeprazole,ADAPTER_DOSE,CYP2C19,Ultrarapid Metabolizer
+1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,codeine,EVITER,CYP2D6,Poor Metabolizer
+1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,tramadol,EVITER,CYP2D6,Poor Metabolizer
+1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,tamoxifen,EVITER,CYP2D6,Poor Metabolizer
+1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,risperidone,ADAPTER_DOSE,CYP2D6,Poor Metabolizer
+1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,codeine,ADAPTER_DOSE,CYP2D6,Intermediate Metabolizer
+1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,tramadol,ADAPTER_DOSE,CYP2D6,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,codeine,STANDARD,CYP2D6,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,tramadol,STANDARD,CYP2D6,Normal Metabolizer
+1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,codeine,EVITER,CYP2D6,Ultrarapid Metabolizer
+1.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,tramadol,EVITER,CYP2D6,Ultrarapid Metabolizer
+1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,warfarin,ADAPTER_DOSE,CYP2C9,Poor Metabolizer
+1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,ibuprofen,ADAPTER_DOSE,CYP2C9,Poor Metabolizer
+1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,warfarin,ADAPTER_DOSE,CYP2C9,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,warfarin,STANDARD,CYP2C9,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,ibuprofen,STANDARD,CYP2C9,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,warfarin,ADAPTER_DOSE,VKORC1,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,warfarin,STANDARD,VKORC1,Normal Metabolizer
+1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,fluorouracil,EVITER,DPYD,Poor Metabolizer
+1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,capecitabine,EVITER,DPYD,Poor Metabolizer
+1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,fluorouracil,ADAPTER_DOSE,DPYD,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,capecitabine,ADAPTER_DOSE,DPYD,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,fluorouracil,STANDARD,DPYD,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,capecitabine,STANDARD,DPYD,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,azathioprine,EVITER,TPMT,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,mercaptopurine,EVITER,TPMT,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,azathioprine,ADAPTER_DOSE,TPMT,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,azathioprine,STANDARD,TPMT,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,simvastatin,EVITER,SLCO1B1,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,atorvastatin,ADAPTER_DOSE,SLCO1B1,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,simvastatin,ADAPTER_DOSE,SLCO1B1,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,simvastatin,STANDARD,SLCO1B1,Normal Metabolizer
+1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,efavirenz,ADAPTER_DOSE,CYP2B6,Poor Metabolizer
+1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,methadone,ADAPTER_DOSE,CYP2B6,Poor Metabolizer
+1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,efavirenz,SURVEILLER,CYP2B6,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,efavirenz,STANDARD,CYP2B6,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,irinotecan,EVITER,UGT1A1,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,irinotecan,ADAPTER_DOSE,UGT1A1,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,irinotecan,STANDARD,UGT1A1,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,abacavir,EVITER,HLA-B,Positive
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,carbamazepine,EVITER,HLA-B,Positive
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,abacavir,STANDARD,HLA-B,Negative
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,carbamazepine,STANDARD,HLA-B,Negative
+1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,azathioprine,EVITER,NUDT15,Poor Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,azathioprine,ADAPTER_DOSE,NUDT15,Intermediate Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,azathioprine,STANDARD,NUDT15,Normal Metabolizer
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,rasburicase,EVITER,G6PD,Deficient
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,1.0,primaquine,EVITER,G6PD,Deficient
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,rasburicase,STANDARD,G6PD,Normal
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,primaquine,STANDARD,G6PD,Normal
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,desflurane,EVITER,RYR1,Positive
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,sevoflurane,EVITER,RYR1,Positive
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,desflurane,STANDARD,RYR1,Negative
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,sevoflurane,STANDARD,RYR1,Negative
