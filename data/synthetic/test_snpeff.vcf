@@ -1,0 +1,7 @@
+##fileformat=VCFv4.1
+##SnpEffVersion=4.3
+##INFO=<ID=ANN,Number=.,Type=String,Description="Annotation">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+chr19	41006936	rs3745274	G	T	60	PASS	ANN=T|missense_variant|MODERATE|CYP2B6|CYP2B6|transcript|NM_000767.4|protein_coding|4/9|c.516G>T|p.Gln172His|516|516|172|Q/H|gHc/gTc||	GT	0/1
+chr10	96741053	rs1799853	C	T	55	PASS	ANN=T|missense_variant|MODERATE|CYP2C9|CYP2C9|transcript|NM_000771.3|protein_coding|3/9|c.430C>T|p.Arg144Cys|430|430|144|R/C|cGt/cTt||	GT	0/1
+chr16	31102321	rs9923231	G	A	50	PASS	ANN=A|regulatory_region_variant|MODIFIER|VKORC1|VKORC1|transcript|||||||||||	GT	0/1

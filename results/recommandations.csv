@@ -1,0 +1,137 @@
+gene,rsid,genotype,drug,phenotype,level_of_evidence,source
+CYP2C19,rs12769205,1/1,Aucune recommandation trouvée,-,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,"aspirin, clopidogrel",Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,"clopidogrel, prasugrel, ticagrelor",Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,"Dosage, Efficacy",-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,"Dosage, Efficacy",-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,voriconazole,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,"Efficacy, Other",-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,diazepam,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,valproic acid,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,nelfinavir,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel thiol metabolite H4,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,cyclophosphamide,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,cyclophosphamide,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,"aspirin, clopidogrel",Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,"aspirin, clopidogrel",Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,citalopram,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,citalopram,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,phenytoin,"Other, Metabolism/PK",-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,valproic acid,"Dosage, Metabolism/PK",-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,"cyclophosphamide, doxorubicin",Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Efficacy,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,clopidogrel,Metabolism/PK,-,CPIC + DPWG
+CYP2C19,rs4244285,1/1,"cyclophosphamide, docetaxel, doxorubicin",Efficacy,-,CPIC + DPWG
+CYP2C19,rs3758581,1/1,Aucune recommandation trouvée,-,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,levonorgestrel,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,"Dosage, Metabolism/PK",-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,cyclophosphamide,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,bupropion,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,methadone,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,"efavirenz, non-nucleoside reverse transcriptase inhibitors",Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,methadone,Dosage,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,"3,4-methylenedioxymethamphetamine",Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,cyclophosphamide,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,imatinib,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,S-methadone,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,propofol,Dosage,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,tramadol,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,imatinib,Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,methadone,"Dosage, Metabolism/PK",-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,methadone,Dosage,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,"Toxicity, Metabolism/PK",-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,"Toxicity, Metabolism/PK",-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,"Toxicity, Metabolism/PK",-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,nevirapine,"Toxicity, Metabolism/PK",-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,"artemether, lumefantrine",Efficacy,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,levomethadone,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs3745274,0/1,bupropion,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,"efavirenz, lamivudine, tenofovir",Efficacy,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,cyclophosphamide,Efficacy,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,bupropion,Efficacy,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,methadone,Dosage,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,propofol,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,efavirenz,Metabolism/PK,-,CPIC + DPWG
+CYP2B6,rs2279343,0/1,methadone,Dosage,-,CPIC + DPWG

@@ -1,0 +1,2 @@
+model,accuracy,n_train,n_test,n_classes
+Deep Learning,0.44779771615008157,4901,1226,19

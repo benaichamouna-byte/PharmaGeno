@@ -6,3 +6,5 @@ data/sequence*.bin
 __pycache__/
 *.pyc
 app/uploads/
+data/external/clinvar_summary.txt
+data/external/clinvar_summary.txt.gz

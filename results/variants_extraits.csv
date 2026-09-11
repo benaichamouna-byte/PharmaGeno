@@ -1,0 +1,4 @@
+chromosome,position,rsid,gene,ref,alt,genotype
+chr10,96741053,rs1799853,CYP2C9,C,T,0/1
+chr10,96741053,rs1057910,CYP2C9,A,C,0/1
+chr16,31102321,rs9923231,VKORC1,G,A,0/1
