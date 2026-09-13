@@ -233,9 +233,9 @@
 <h2 class="section-title">🔬 Recommandations par gène</h2>
 
 {% for gene, data in cpic_by_gene.items() %}
-{% if 'Poor' in data.phenotype %}{% set pc = 'poor' %}
-{% elif 'Intermediate' in data.phenotype %}{% set pc = 'intermediate' %}
-{% elif 'Ultrarapid' in data.phenotype %}{% set pc = 'ultrarapid' %}
+{% if data.action == 'EVITER' %}{% set pc = 'poor' %}
+{% elif data.action == 'ADAPTER_DOSE' %}{% set pc = 'intermediate' %}
+{% elif data.action == 'SURVEILLER' %}{% set pc = 'intermediate' %}
 {% else %}{% set pc = 'normal' %}{% endif %}
 
 <div class="gene-card">
@@ -244,66 +244,61 @@
             <div class="gene-title">{{ gene }}</div>
             <div class="gene-subtitle">Enzyme impliquée dans le métabolisme de plusieurs médicaments</div>
         </div>
-        <span class="badge {{ pc }}">{{ data.phenotype }}</span>
+        <span class="badge {{ pc }}">{{ data.icon }} {{ data.action }}</span>
     </div>
 
     <div class="pheno-explain">
-        {% if pc == 'poor' %}
-        ⚠️ Ce patient <strong>métabolise lentement</strong> les médicaments traités par {{ gene }}.
-        Risque d'accumulation et de toxicité avec les doses standard.
-        {% elif pc == 'intermediate' %}
-        ℹ️ Ce patient <strong>métabolise modérément</strong> les médicaments traités par {{ gene }}.
-        Une surveillance est recommandée selon les médicaments.
-        {% elif pc == 'ultrarapid' %}
-        ⚠️ Ce patient <strong>métabolise très rapidement</strong> les médicaments traités par {{ gene }}.
-        Risque de sous-dosage et d'inefficacité thérapeutique.
+        {% if data.action == 'EVITER' %}
+        ⛔ Action recommandée pour {{ gene }} : <strong>éviter certains médicaments</strong>. Risque de toxicité ou d'inefficacité.
+        {% elif data.action == 'ADAPTER_DOSE' %}
+        ⚠️ Action recommandée pour {{ gene }} : <strong>adapter la dose</strong>. Ajustement posologique nécessaire.
+        {% elif data.action == 'SURVEILLER' %}
+        👁️ Action recommandée pour {{ gene }} : <strong>surveillance renforcée</strong>. Utilisation possible avec vigilance.
         {% else %}
-        ✅ Ce patient présente un <strong>métabolisme normal</strong> pour {{ gene }}.
-        Les doses standard sont généralement appropriées.
+        ✅ Action recommandée pour {{ gene }} : <strong>dose standard applicable</strong>.
         {% endif %}
     </div>
 
     {% if data.recommendations %}
     <table class="drug-table">
         <tr>
-            <th style="width:14%;">Médicament</th>
-            <th style="width:36%;">Action recommandée</th>
-            <th style="width:22%;">Alternative proposée</th>
-            <th style="width:8%;">Niveau</th>
-            <th style="width:20%;">Source</th>
+            <th style="width:25%;">Médicament</th>
+            <th style="width:40%;">Action recommandée</th>
+            <th style="width:20%;">Confiance</th>
+            <th style="width:15%;">Statut</th>
         </tr>
         {% for r in data.recommendations %}
         <tr>
             <td><span class="drug-name">{{ r.drug }}</span></td>
             <td>
-                {% if 'viter' in r.recommendation %}
-                <span class="action-avoid">⛔ {{ r.recommendation }}</span>
-                {% elif 'duire' in r.recommendation %}
-                <span class="action-reduce">⚠️ {{ r.recommendation }}</span>
-                {% elif 'ugmenter' in r.recommendation %}
-                <span class="action-increase">⬆️ {{ r.recommendation }}</span>
-                {% elif 'onsid' in r.recommendation %}
-                <span class="action-consider">↪️ {{ r.recommendation }}</span>
+                {% if r.action == 'EVITER' %}
+                <span class="action-avoid">⛔ {{ r.label }}</span>
+                {% elif r.action == 'ADAPTER_DOSE' %}
+                <span class="action-reduce">⚠️ {{ r.label }}</span>
+                {% elif r.action == 'SURVEILLER' %}
+                <span class="action-consider">👁️ {{ r.label }}</span>
                 {% else %}
-                <span class="action-standard">✅ {{ r.recommendation }}</span>
+                <span class="action-standard">✅ {{ r.label }}</span>
                 {% endif %}
             </td>
             <td>
-                {% if r.alternative %}
-                <span class="alt-box">💊 {{ r.alternative }}</span>
-                {% else %}—{% endif %}
+                <span style="font-weight:bold; color:{{ '#c0392b' if r.confidence < 50 else ('#e67e22' if r.confidence < 70 else '#27ae60') }};">
+                    {{ r.confidence }}%
+                </span>
             </td>
-            <td style="text-align:center;">
-                {% if r.level == 'A' %}<span class="level-a">A</span>
-                {% else %}<span class="level-b">B</span>{% endif %}
+            <td>
+                <span style="padding:3px 8px; border-radius:10px; font-size:12px; font-weight:bold;
+                    background:{{ '#fdecea' if r.action == 'EVITER' else ('#fff8e6' if r.action == 'ADAPTER_DOSE' else ('#eafaf1' if r.action == 'STANDARD' else '#eaf4fb')) }};
+                    color:{{ '#c0392b' if r.action == 'EVITER' else ('#e67e22' if r.action == 'ADAPTER_DOSE' else ('#27ae60' if r.action == 'STANDARD' else '#2471a3')) }};">
+                    {{ r.action }}
+                </span>
             </td>
-            <td><span class="ref-text">{{ r.reference }}</span></td>
         </tr>
         {% endfor %}
     </table>
     {% else %}
     <div style="padding:15px 20px; color:#888; font-style:italic;">
-        Aucune règle CPIC disponible pour ce gène dans la base actuelle.
+        Aucune prédiction disponible pour ce gène.
     </div>
     {% endif %}
 </div>
@@ -318,11 +313,11 @@
     {% set drugs_consider = [] %}
     {% for gene, data in cpic_by_gene.items() %}
         {% for r in data.recommendations %}
-            {% if 'viter' in r.recommendation %}
+            {% if r.action == 'EVITER' %}
                 {% if r.drug not in drugs_avoid %}{% set _ = drugs_avoid.append(r.drug) %}{% endif %}
-            {% elif 'duire' in r.recommendation or 'ugmenter' in r.recommendation %}
+            {% elif r.action == 'ADAPTER_DOSE' %}
                 {% if r.drug not in drugs_reduce %}{% set _ = drugs_reduce.append(r.drug) %}{% endif %}
-            {% elif 'onsid' in r.recommendation %}
+            {% elif r.action == 'SURVEILLER' %}
                 {% if r.drug not in drugs_consider %}{% set _ = drugs_consider.append(r.drug) %}{% endif %}
             {% else %}
                 {% if r.drug not in drugs_safe %}{% set _ = drugs_safe.append(r.drug) %}{% endif %}
@@ -420,7 +415,7 @@
         <table class="tech" style="margin-top:10px;">
             <tr><th>Gène</th><th>Phénotype ML</th><th>Confiance</th></tr>
             {% for p in drug_result.ml_predictions %}
-            <tr><td>{{ p.gene }}</td><td>{{ p.phenotype }}</td><td>{{ p.confidence }}%</td></tr>
+            <tr><td>{{ p.gene }}</td><td>{{ p.icon }} {{ p.action }}</td><td>{{ p.confidence }}%</td></tr>
             {% endfor %}
         </table>
         {% endif %}
@@ -456,27 +451,27 @@
         {% endfor %}
     </table>
 
-    <strong style="display:block; margin-top:16px;">Vote majoritaire DL v5 (88%) + RF v3 (89.4%)</strong>
+    <strong style="display:block; margin-top:16px;">Prédictions DL v3 + RF — Morgan Fingerprints 512 bits (F1=0.481 ±0.006)</strong>
     <table class="tech">
-        <tr><th>Gène</th><th>rsID</th><th>Catégorie ML</th><th>Confiance moy.</th><th>Accord DL/RF</th></tr>
+        <tr><th>Gène</th><th>rsID</th><th>Médicament</th><th>Action prédite</th><th>Confiance</th></tr>
         {% for p in predictions %}
         <tr>
-            <td>{{ p.gene }}</td><td>{{ p.rsid }}</td><td>{{ p.phenotype }}</td>
+            <td>{{ p.gene }}</td><td>{{ p.rsid }}</td><td>{{ p.drug }}</td>
+            <td>{{ p.icon }} {{ p.action }}</td>
             <td style="color:{{ '#c0392b' if p.confidence < 50 else ('#e67e22' if p.confidence < 70 else '#27ae60') }};">
                 {{ p.confidence }}%
             </td>
-            <td>{{ p.level }}</td>
         </tr>
         {% endfor %}
     </table>
-
-    <strong style="display:block; margin-top:16px;">Correspondance catégories ML → phénotypes CPIC</strong>
+    <strong style="display:block; margin-top:16px;">Architecture du modèle</strong>
     <table class="tech">
-        <tr><th>Catégorie ML</th><th>Phénotype CPIC</th><th>Justification</th></tr>
-        <tr><td>Efficacy</td><td>Poor Metabolizer</td><td>Distribution dominante dans PharmGKB</td></tr>
-        <tr><td>Dosage</td><td>Intermediate Metabolizer</td><td>Ajustement de dose requis</td></tr>
-        <tr><td>Metabolism</td><td>Normal Metabolizer</td><td>Métabolisme standard</td></tr>
-        <tr><td>Toxicity</td><td>Poor Metabolizer</td><td>Accumulation → toxicité</td></tr>
+        <tr><th>Composante</th><th>Détail</th></tr>
+        <tr><td>Branche gènes</td><td>21 gènes PGx + Attention mechanism</td></tr>
+        <tr><td>Branche médicament</td><td>Morgan Fingerprints 512 bits + 6 propriétés PubChem</td></tr>
+        <tr><td>Ensemble</td><td>DL (×2) + RF (×1) / 3</td></tr>
+        <tr><td>Performance</td><td>F1-macro = 0.481 ± 0.006 (K-Fold 5 folds)</td></tr>
+        <tr><td>Dataset</td><td>2142 associations — PharmGKB + CPIC + ClinVar + FDA</td></tr>
     </table>
 </div>
 

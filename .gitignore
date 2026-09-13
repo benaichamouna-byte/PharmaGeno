@@ -9,3 +9,8 @@ app/uploads/
 data/external/clinvar_summary.txt
 data/external/clinvar_summary.txt.gz
 model_v2/results/rf_pgx_final.pkl
+data/*.tbi
+data/*.vcf.gz
+model_v2/results/rf_pgx_31genes.pkl
+model_v2/results/rf_pgx_multigene.pkl
+model_v2/results/rf_pgx_final.pkl
