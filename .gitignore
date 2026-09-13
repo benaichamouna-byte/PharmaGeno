@@ -8,3 +8,4 @@ __pycache__/
 app/uploads/
 data/external/clinvar_summary.txt
 data/external/clinvar_summary.txt.gz
+model_v2/results/rf_pgx_final.pkl
