@@ -542,7 +542,7 @@
         <table class="tech" style="margin-top:10px;">
             <tr><th>Gène</th><th>Phénotype ML</th><th>Confiance</th></tr>
             {% for p in drug_result.ml_predictions %}
-            <tr><td>{{ p.gene }}</td><td>{{ p.icon }} {{ p.action }}</td><td>{{ p.confidence }}%</td></tr>
+            <tr><td>{{ p.responsible_gene }}</td><td>{{ p.icon }} {{ p.action }}</td><td>{{ p.confidence }}%</td></tr>
             {% endfor %}
         </table>
         {% endif %}
@@ -583,7 +583,7 @@
         <tr><th>Gène</th><th>rsID</th><th>Médicament</th><th>Action prédite</th><th>Confiance</th></tr>
         {% for p in predictions %}
         <tr>
-            <td>{{ p.gene }}</td><td>{{ p.rsid }}</td><td>{{ p.drug }}</td>
+            <td>{{ p.responsible_gene }}</td><td>{{ p.rsid }}</td><td>{{ p.drug }}</td>
             <td>{{ p.icon }} {{ p.action }}</td>
             <td style="color:{{ '#c0392b' if p.confidence < 50 else ('#e67e22' if p.confidence < 70 else '#27ae60') }};">
                 {{ p.confidence }}%
