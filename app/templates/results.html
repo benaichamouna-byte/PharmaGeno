@@ -230,6 +230,7 @@
     </div>
 </div>
 
+{% if False %}
 <h2 class="section-title">🔬 Recommandations par gène</h2>
 
 {% for gene, data in cpic_by_gene.items() %}
@@ -303,6 +304,132 @@
     {% endif %}
 </div>
 {% endfor %}
+{% endif %}
+
+
+<h2 style="color:#2E5F8A; font-size:17px; margin:24px 0 12px 0;">💊 Recommandations — Profil génétique complet</h2>
+<p style="color:#666; font-size:13px; margin:-8px 0 16px 0;">Basé sur l'analyse simultanée de tous les variants du patient ({{ n_variants }} variants, {{ cpic_by_gene|length }} gène(s) affecté(s)).</p>
+
+{% set ns2 = namespace(eviter=[], adapter=[], surveiller=[], standard=[]) %}
+{% for p in predictions %}
+    {% if p.action == 'EVITER' %}{% set _ = ns2.eviter.append(p) %}
+    {% elif p.action == 'ADAPTER_DOSE' %}{% set _ = ns2.adapter.append(p) %}
+    {% elif p.action == 'SURVEILLER' %}{% set _ = ns2.surveiller.append(p) %}
+    {% else %}{% set _ = ns2.standard.append(p) %}{% endif %}
+{% endfor %}
+
+{% if ns2.eviter %}
+<div style="border-radius:10px; margin-bottom:16px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.07);">
+    <div style="padding:14px 20px; background:#fdecea; border-left:6px solid #c0392b; display:flex; align-items:center; gap:12px;">
+        <span style="font-size:24px;">⛔</span>
+        <div>
+            <div style="font-size:16px; font-weight:bold; color:#c0392b;">À ÉVITER — Médicaments dangereux pour ce patient</div>
+            <div style="font-size:12px; color:#888; margin-top:2px;">{{ ns2.eviter|length }} médicament(s) — Risque de toxicité ou d'inefficacité</div>
+        </div>
+    </div>
+    <table style="width:100%; border-collapse:collapse; background:white;">
+        <tr style="background:#f0f4f8;">
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:25%;">Médicament</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Gène responsable</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Explication</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:15%;">Confiance</th>
+        </tr>
+        {% for p in ns2.eviter %}
+        <tr style="border-bottom:1px solid #f0f0f0;">
+            <td style="padding:11px 15px; font-weight:bold; text-transform:capitalize;">{{ p.drug }}</td>
+            <td style="padding:11px 15px;"><span style="background:#eaf4fb; color:#2471a3; padding:2px 8px; border-radius:10px; font-size:11px;">{{ p.responsible_gene }}</span></td>
+            <td style="padding:11px 15px; font-size:13px; color:#666;">{{ p.phenotype_explain }}</td>
+            <td style="padding:11px 15px; font-weight:bold; color:{{ '#27ae60' if p.confidence >= 70 else ('#e67e22' if p.confidence >= 50 else '#c0392b') }};">{{ p.confidence }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+{% if ns2.adapter %}
+<div style="border-radius:10px; margin-bottom:16px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.07);">
+    <div style="padding:14px 20px; background:#fff8e6; border-left:6px solid #f39c12; display:flex; align-items:center; gap:12px;">
+        <span style="font-size:24px;">⚠️</span>
+        <div>
+            <div style="font-size:16px; font-weight:bold; color:#e67e22;">ADAPTER LA DOSE — Ajustement posologique requis</div>
+            <div style="font-size:12px; color:#888; margin-top:2px;">{{ ns2.adapter|length }} médicament(s)</div>
+        </div>
+    </div>
+    <table style="width:100%; border-collapse:collapse; background:white;">
+        <tr style="background:#f0f4f8;">
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:25%;">Médicament</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Gène responsable</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Explication</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:15%;">Confiance</th>
+        </tr>
+        {% for p in ns2.adapter %}
+        <tr style="border-bottom:1px solid #f0f0f0;">
+            <td style="padding:11px 15px; font-weight:bold; text-transform:capitalize;">{{ p.drug }}</td>
+            <td style="padding:11px 15px;"><span style="background:#eaf4fb; color:#2471a3; padding:2px 8px; border-radius:10px; font-size:11px;">{{ p.responsible_gene }}</span></td>
+            <td style="padding:11px 15px; font-size:13px; color:#666;">{{ p.phenotype_explain }}</td>
+            <td style="padding:11px 15px; font-weight:bold; color:{{ '#27ae60' if p.confidence >= 70 else ('#e67e22' if p.confidence >= 50 else '#c0392b') }};">{{ p.confidence }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+{% if ns2.surveiller %}
+<div style="border-radius:10px; margin-bottom:16px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.07);">
+    <div style="padding:14px 20px; background:#eaf4fb; border-left:6px solid #2980b9; display:flex; align-items:center; gap:12px;">
+        <span style="font-size:24px;">👁️</span>
+        <div>
+            <div style="font-size:16px; font-weight:bold; color:#2980b9;">SURVEILLER — Utilisation avec vigilance</div>
+            <div style="font-size:12px; color:#888; margin-top:2px;">{{ ns2.surveiller|length }} médicament(s)</div>
+        </div>
+    </div>
+    <table style="width:100%; border-collapse:collapse; background:white;">
+        <tr style="background:#f0f4f8;">
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:25%;">Médicament</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Gène responsable</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Explication</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:15%;">Confiance</th>
+        </tr>
+        {% for p in ns2.surveiller %}
+        <tr style="border-bottom:1px solid #f0f0f0;">
+            <td style="padding:11px 15px; font-weight:bold; text-transform:capitalize;">{{ p.drug }}</td>
+            <td style="padding:11px 15px;"><span style="background:#eaf4fb; color:#2471a3; padding:2px 8px; border-radius:10px; font-size:11px;">{{ p.responsible_gene }}</span></td>
+            <td style="padding:11px 15px; font-size:13px; color:#666;">{{ p.phenotype_explain }}</td>
+            <td style="padding:11px 15px; font-weight:bold; color:{{ '#27ae60' if p.confidence >= 70 else ('#e67e22' if p.confidence >= 50 else '#c0392b') }};">{{ p.confidence }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+{% if ns2.standard %}
+<div style="border-radius:10px; margin-bottom:16px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.07);">
+    <div style="padding:14px 20px; background:#eafaf1; border-left:6px solid #27ae60; display:flex; align-items:center; gap:12px;">
+        <span style="font-size:24px;">✅</span>
+        <div>
+            <div style="font-size:16px; font-weight:bold; color:#27ae60;">DOSE STANDARD — Médicaments appropriés</div>
+            <div style="font-size:12px; color:#888; margin-top:2px;">{{ ns2.standard|length }} médicament(s)</div>
+        </div>
+    </div>
+    <table style="width:100%; border-collapse:collapse; background:white;">
+        <tr style="background:#f0f4f8;">
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:25%;">Médicament</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Gène responsable</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:30%;">Explication</th>
+            <th style="padding:10px 15px; text-align:left; font-size:12px; color:#555; width:15%;">Confiance</th>
+        </tr>
+        {% for p in ns2.standard %}
+        <tr style="border-bottom:1px solid #f0f0f0;">
+            <td style="padding:11px 15px; font-weight:bold; text-transform:capitalize;">{{ p.drug }}</td>
+            <td style="padding:11px 15px;"><span style="background:#eaf4fb; color:#2471a3; padding:2px 8px; border-radius:10px; font-size:11px;">{{ p.responsible_gene }}</span></td>
+            <td style="padding:11px 15px; font-size:13px; color:#666;">{{ p.phenotype_explain }}</td>
+            <td style="padding:11px 15px; font-weight:bold; color:{{ '#27ae60' if p.confidence >= 70 else ('#e67e22' if p.confidence >= 50 else '#c0392b') }};">{{ p.confidence }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
 
 <!-- CONCLUSION CLINIQUE -->
 <div class="conclusion">

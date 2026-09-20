@@ -28,27 +28,42 @@ ORDER = ['EVITER','ADAPTER_DOSE','SURVEILLER','STANDARD']
 
 def build_results(variants_df, results_df):
     variants_list = variants_df.to_dict('records')
-    extra_drugs   = results_df[results_df['drug']!='Aucune recommandation trouvee']['drug'].unique().tolist()
+    extra_drugs = []
+    if results_df is not None and len(results_df) > 0:
+        extra_drugs = results_df[results_df['drug']!='Aucune recommandation trouvee']['drug'].unique().tolist()
+    
     patient_preds, mutated_genes, gene_vector = predict_for_patient(variants_list, extra_drugs)
+    
+    from predict_v2 import PHENO_EXPLAIN, _GENES, GENE_DRUGS
+    
+    # Si pas de prédictions depuis extra_drugs, utiliser GENE_DRUGS directement
+    if not patient_preds:
+        gene_drugs_direct = []
+        for gene in mutated_genes:
+            gene_drugs_direct.extend(GENE_DRUGS.get(gene, []))
+        patient_preds, mutated_genes, gene_vector = predict_for_patient(variants_list, gene_drugs_direct)
+    
+    # Dédoublonner les gènes mutés
+    seen = set()
+    mutated_unique = []
+    for g in mutated_genes:
+        if g not in seen:
+            seen.add(g)
+            mutated_unique.append(g)
+    
+    # Organiser par gène pour le résumé
     cpic_by_gene = {}
-    from predict_v2 import GENE_DRUGS, PHENO_EXPLAIN, _GENES
-    for gene in mutated_genes:
+    for gene in mutated_unique:
         idx      = _GENES.index(gene) if gene in _GENES else -1
         gene_val = gene_vector[idx] if idx >= 0 else 1.0
-        gene_drugs_preds = [p for p in patient_preds if gene in p['responsible_gene']]
-        if not gene_drugs_preds:
-            gene_drugs_preds = patient_preds[:3]
-        worst = sorted(gene_drugs_preds, key=lambda x: ORDER.index(x['action']) if x['action'] in ORDER else 4)[0]
+        gene_preds = [p for p in patient_preds if gene in p.get('responsible_gene','')]
         cpic_by_gene[gene] = {
-            'action':          worst['action'],
-            'icon':            worst['icon'],
-            'label':           worst['label'],
-            'color':           worst['color'],
-            'phenotype':       PHENO_EXPLAIN.get(gene_val,'Normal Metabolizer'),
-            'recommendations': gene_drugs_preds,
+            'action':          'EVITER' if gene_val == 0.0 else ('ADAPTER_DOSE' if gene_val == 0.5 else 'STANDARD'),
+            'phenotype':       PHENO_EXPLAIN.get(gene_val, 'Normal Metabolizer'),
+            'recommendations': gene_preds if gene_preds else patient_preds[:5],
         }
-    predictions = patient_preds
-    return predictions, cpic_by_gene
+    
+    return patient_preds, cpic_by_gene
 
 @app.route('/', methods=['GET'])
 def index():
@@ -93,19 +108,22 @@ def search_drug():
     results_df   = get_recommendations(variants_df, pharmgkb_df, clinical_df, guidelines)
     results_df   = results_df.drop_duplicates(subset=['gene','rsid','drug','phenotype'])
     drugs_list   = sorted(results_df[results_df['drug']!='Aucune recommandation trouvee']['drug'].unique().tolist())
-    ml_predictions = []
-    for _, variant in variants_df.iterrows():
-        pred = predict_action(variant['gene'], drug_query, variant['genotype'])
-        pred.update({'gene':variant['gene'],'rsid':variant['rsid'],'genotype':variant['genotype'],'drug':drug_query})
-        ml_predictions.append(pred)
-    if ml_predictions:
-        worst  = sorted(ml_predictions, key=lambda x: ORDER.index(x['action']) if x['action'] in ORDER else 4)[0]
+
+    variants_list = variants_df.to_dict('records')
+    patient_preds, mutated_genes, gene_vector = predict_for_patient(variants_list, extra_drugs=[drug_query])
+    drug_preds = [p for p in patient_preds if p['drug'] == drug_query]
+
+    if drug_preds:
+        worst  = sorted(drug_preds, key=lambda x: ORDER.index(x['action']) if x['action'] in ORDER else 4)[0]
         action = worst['action']
         drug_result = {'status':ACTION_COLORS.get(action,'secondary'),
             'message':ACTION_ICONS.get(action,'') + ' ' + drug_query.upper() + ' — ' + ACTION_LABELS.get(action,action),
-            'action':action, 'ml_predictions':ml_predictions, 'details':[]}
+            'action':action, 'ml_predictions':drug_preds, 'details':[]}
     else:
-        drug_result = {'status':'info','message':drug_query+' — aucune donnee disponible','ml_predictions':[]}
+        drug_result = {'status':'info',
+            'message':drug_query.upper()+' — aucune donnee disponible pour ce medicament avec le profil genetique de ce patient',
+            'ml_predictions':[]}
+
     predictions, cpic_by_gene = build_results(variants_df, results_df)
     return render_template('results.html', filename=vcf_filename,
         variants=variants_df.to_dict('records'),
