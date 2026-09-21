@@ -1,0 +1,310 @@
+gene,drug,statut,action_proposee,source_utilisee
+CYP2C9,warfarin,resolu,ADAPTER_DOSE,CPIC
+TPMT,azathioprine,resolu,ADAPTER_DOSE,CPIC
+DPYD,fluorouracil,resolu,EVITER,CPIC
+CYP4F2,warfarin,resolu,ADAPTER_DOSE,CPIC
+VKORC1,phenprocoumon,resolu,ADAPTER_DOSE,DPWG
+NUDT15,mercaptopurine,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,hydrocodone,texte_ambigu,,CPIC
+CYP2D6,tropisetron,texte_ambigu,,CPIC
+CYP2D6,desipramine,resolu,EVITER,CPIC
+CYP2C9,phenytoin,resolu,EVITER,CPIC
+UGT1A1,irinotecan,resolu,ADAPTER_DOSE,DPWG
+CYP2B6,efavirenz,resolu,ADAPTER_DOSE,CPIC
+VKORC1,acenocoumarol,texte_ambigu,,DPWG
+CYP2D6,amitriptyline,resolu,EVITER,CPIC
+CYP2D6,clomipramine,resolu,EVITER,CPIC
+CYP2D6,imipramine,resolu,EVITER,CPIC
+CYP2D6,codeine,resolu,EVITER,CPIC
+CYP2D6,nortriptyline,resolu,EVITER,CPIC
+CYP2C19,lansoprazole,texte_ambigu,,CPIC
+CYP2C19,clopidogrel,resolu,EVITER,CPIC
+CYP2C19,pantoprazole,texte_ambigu,,CPIC
+CYP2D6,atomoxetine,resolu,SURVEILLER,CPIC
+CYP2D6,tamoxifen,resolu,EVITER,CPIC
+CYP2C19,omeprazole,texte_ambigu,,CPIC
+CYP2D6,tramadol,resolu,EVITER,CPIC
+CYP2C9,fluvastatin,resolu,EVITER,CPIC
+SLCO1B1,simvastatin,resolu,ADAPTER_DOSE,CPIC
+SLCO1B1,lovastatin,texte_ambigu,,CPIC
+SLCO1B1,atorvastatin,texte_ambigu,,CPIC
+SLCO1B1,rosuvastatin,texte_ambigu,,CPIC
+SLCO1B1,pravastatin,resolu,ADAPTER_DOSE,CPIC
+ABCG2,allopurinol,resolu,ADAPTER_DOSE,DPWG
+CYP2C19,citalopram,resolu,ADAPTER_DOSE,CPIC
+TPMT,thioguanine,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,venlafaxine,resolu,ADAPTER_DOSE,CPIC
+TPMT,mercaptopurine,resolu,ADAPTER_DOSE,CPIC
+NAT2,hydralazine,resolu,ADAPTER_DOSE,CPIC
+CYP2B6,nevirapine,aucun_fichier_trouve,,
+CYP2C9,acenocoumarol,texte_ambigu,,DPWG
+DPYD,capecitabine,resolu,EVITER,CPIC
+CYP2C19,esomeprazole,texte_ambigu,,CPIC
+CYP2C19,rabeprazole,texte_ambigu,,CPIC
+CYP2D6,zuclopenthixol,resolu,EVITER,DPWG
+CYP2C19,imipramine,resolu,EVITER,CPIC
+CYP2D6,methylphenidate,texte_ambigu,,DPWG
+CYP3A5,tacrolimus,resolu,ADAPTER_DOSE,CPIC
+CYP2C9,gliclazide,texte_ambigu,,DPWG
+CYP2C19,voriconazole,resolu,ADAPTER_DOSE,CPIC
+ABCG2,rosuvastatin,texte_ambigu,,CPIC
+CYP2C19,amitriptyline,resolu,EVITER,CPIC
+CYP2C9,diclofenac,texte_ambigu,,CPIC
+CYP2C9,indomethacin,texte_ambigu,,CPIC
+CYP2D6,carvedilol,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,metoprolol,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,duloxetine,texte_ambigu,,CPIC
+CYP2D6,ondansetron,texte_ambigu,,CPIC
+G6PD,primaquine,resolu,EVITER,CPIC
+CYP2C19,mavacamten,resolu,EVITER,DPWG
+CYP1A2,clozapine,resolu,ADAPTER_DOSE,DPWG
+CYP2D6,paroxetine,resolu,ADAPTER_DOSE,CPIC
+CYP2C19,clomipramine,resolu,EVITER,CPIC
+CYP3A4,atorvastatin,texte_ambigu,,CPIC
+CYP3A4,fluvastatin,texte_ambigu,,CPIC
+CYP3A4,simvastatin,texte_ambigu,,CPIC
+CYP3A5,atorvastatin,texte_ambigu,,CPIC
+CYP3A5,lovastatin,texte_ambigu,,CPIC
+CYP3A5,rosuvastatin,texte_ambigu,,CPIC
+CYP3A5,simvastatin,texte_ambigu,,CPIC
+CYP2D6,haloperidol,resolu,EVITER,DPWG
+CYP2D6,oxycodone,texte_ambigu,,CPIC
+G6PD,nitrofurantoin,resolu,EVITER,CPIC
+CYP2D6,bisoprolol,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,risperidone,resolu,ADAPTER_DOSE,DPWG
+VKORC1,warfarin,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,propafenone,resolu,ADAPTER_DOSE,DPWG
+RYR1,desflurane,resolu,EVITER,CPIC
+RYR1,enflurane,resolu,EVITER,CPIC
+RYR1,halothane,resolu,EVITER,CPIC
+RYR1,isoflurane,resolu,EVITER,CPIC
+RYR1,methoxyflurane,resolu,EVITER,CPIC
+RYR1,sevoflurane,resolu,EVITER,CPIC
+RYR1,succinylcholine,resolu,EVITER,CPIC
+CYP2D6,fluvoxamine,resolu,EVITER,CPIC
+G6PD,aspirin,resolu,EVITER,CPIC
+VKORC1,fluindione,resolu,ADAPTER_DOSE,RNPGx
+DPYD,tegafur,resolu,ADAPTER_DOSE,CPIC
+CYP2C19,dexlansoprazole,texte_ambigu,,CPIC
+NUDT15,thioguanine,resolu,ADAPTER_DOSE,CPIC
+HLA-B,oxcarbazepine,resolu,EVITER,CPIC
+CYP2D6,methadone,texte_ambigu,,CPIC
+G6PD,dapsone,resolu,EVITER,CPIC
+G6PD,methylene blue,resolu,EVITER,CPIC
+G6PD,pegloticase,resolu,EVITER,CPIC
+G6PD,rasburicase,resolu,EVITER,CPIC
+G6PD,tafenoquine,resolu,EVITER,CPIC
+G6PD,toluidine blue,resolu,EVITER,CPIC
+CYP2D6,fluoxetine,texte_ambigu,,CPIC
+CYP2D6,citalopram,texte_ambigu,,DPWG
+CYP2D6,escitalopram,texte_ambigu,,DPWG
+CYP2C19,escitalopram,resolu,ADAPTER_DOSE,CPIC
+CYP2B6,sertraline,resolu,EVITER,CPIC
+CYP2C19,sertraline,resolu,EVITER,CPIC
+CYP2C19,prasugrel,texte_ambigu,,DPWG
+HLA-A,carbamazepine,resolu,EVITER,CPIC
+SLCO1B1,methotrexate,texte_ambigu,,RNPGx
+SLCO1B1,fluvastatin,resolu,EVITER,CPIC
+CYP2D6,mirtazapine,texte_ambigu,,DPWG
+CYP2C19,moclobemide,texte_ambigu,,DPWG
+G6PD,aminosalicylic acid,resolu,EVITER,CPIC
+G6PD,chloramphenicol,resolu,EVITER,CPIC
+G6PD,chloroquine,resolu,EVITER,CPIC
+G6PD,ciprofloxacin,resolu,EVITER,CPIC
+G6PD,dimercaprol,resolu,EVITER,CPIC
+G6PD,doxorubicin,resolu,EVITER,CPIC
+G6PD,furazolidone,resolu,EVITER,CPIC
+G6PD,glyburide,resolu,EVITER,CPIC
+G6PD,hydroxychloroquine,resolu,EVITER,CPIC
+G6PD,mafenide,resolu,EVITER,CPIC
+G6PD,nalidixic acid,resolu,EVITER,CPIC
+G6PD,norfloxacin,resolu,EVITER,CPIC
+G6PD,ofloxacin,resolu,EVITER,CPIC
+G6PD,phenazopyridine,resolu,EVITER,CPIC
+G6PD,quinine,resolu,EVITER,CPIC
+G6PD,sulfadiazine,resolu,EVITER,CPIC
+G6PD,sulfamethazine,resolu,EVITER,CPIC
+G6PD,sulfamethoxazole,resolu,EVITER,CPIC
+G6PD,sulfamethoxazole / trimethoprim,resolu,EVITER,CPIC
+G6PD,sulfanilamide,resolu,EVITER,CPIC
+G6PD,sulfasalazine,resolu,EVITER,CPIC
+G6PD,sulfisoxazole,resolu,EVITER,CPIC
+G6PD,tolbutamide,resolu,EVITER,CPIC
+G6PD,vitamin c,resolu,EVITER,CPIC
+G6PD,vitamin k and analogues,resolu,EVITER,CPIC
+CYP1A2,olanzapine,texte_ambigu,,DPWG
+CYP2C9,phenprocoumon,texte_ambigu,,DPWG
+CYP2D6,trimipramine,resolu,EVITER,CPIC
+CYP2C19,ticagrelor,texte_ambigu,,DPWG
+CYP2D6,sertraline,texte_ambigu,,DPWG
+CYP2C19,trametinib,aucun_fichier_trouve,,
+CYP2D6,tamsulosin hydrochloride,aucun_fichier_trouve,,
+CYP3A4,tamsulosin hydrochloride,aucun_fichier_trouve,,
+CYP2C19,lacosamide,aucun_fichier_trouve,,
+CYP2C9,lacosamide,aucun_fichier_trouve,,
+CYP1A2,lacosamide,aucun_fichier_trouve,,
+CYP3A4,lacosamide,aucun_fichier_trouve,,
+CYP2C19,olanzapine,aucun_fichier_trouve,,
+CYP2D6,ondansetron hydrochloride,texte_ambigu,,CPIC
+CYP1A2,ondansetron hydrochloride,aucun_fichier_trouve,,
+CYP3A4,ondansetron hydrochloride,aucun_fichier_trouve,,
+CYP2D6,bupropion hydrochloride,aucun_fichier_trouve,,
+CYP2C19,lorlatinib,aucun_fichier_trouve,,
+HLA-B,allopurinol,resolu,EVITER,CPIC
+CYP2C19,pramipexole dihydrochloride,aucun_fichier_trouve,,
+CYP2C19,leflunomide,aucun_fichier_trouve,,
+CYP2C19,ziprasidone,aucun_fichier_trouve,,
+CYP2C19,mirabegron,aucun_fichier_trouve,,
+CYP2D6,mirabegron,aucun_fichier_trouve,,
+CYP2C9,mirabegron,aucun_fichier_trouve,,
+CYP2B6,mirabegron,aucun_fichier_trouve,,
+CYP1A2,mirabegron,aucun_fichier_trouve,,
+CYP3A4,mirabegron,aucun_fichier_trouve,,
+CYP2C19,azacitidine for,aucun_fichier_trouve,,
+CYP2C19,esomeprazole magnesium,texte_ambigu,,CPIC
+CYP3A4,esomeprazole magnesium,aucun_fichier_trouve,,
+CYP2C9,sitagliptin and metformin hydrochloride,aucun_fichier_trouve,,
+CYP2D6,"dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate",aucun_fichier_trouve,,
+CYP2C19,fenofibrate,aucun_fichier_trouve,,
+CYP2D6,celecoxib,aucun_fichier_trouve,,
+CYP2C19,sildenafil citrate,aucun_fichier_trouve,,
+CYP2C19,doxepin hydrochloride,resolu,EVITER,CPIC
+CYP2D6,doxepin hydrochloride,resolu,EVITER,CPIC
+CYP2C9,doxepin hydrochloride,aucun_fichier_trouve,,
+CYP1A2,doxepin hydrochloride,aucun_fichier_trouve,,
+CYP2C19,ramelteon,aucun_fichier_trouve,,
+CYP2C19,pregabalin,aucun_fichier_trouve,,
+CYP3A4,quetiapine,texte_ambigu,,DPWG
+CYP2C19,modafinil,aucun_fichier_trouve,,
+CYP2D6,modafinil,aucun_fichier_trouve,,
+CYP2C9,modafinil,aucun_fichier_trouve,,
+CYP2B6,modafinil,aucun_fichier_trouve,,
+CYP1A2,modafinil,aucun_fichier_trouve,,
+CYP3A4,modafinil,aucun_fichier_trouve,,
+CYP2C19,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2D6,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2C9,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2B6,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2A6,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP1A2,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP3A4,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2D6,propranolol hydrochloride,resolu,ADAPTER_DOSE,CPIC
+CYP2C19,pomalidomide,aucun_fichier_trouve,,
+CYP2C19,gabapentin,aucun_fichier_trouve,,
+CYP2C19,topiramate,aucun_fichier_trouve,,
+CYP2C19,phenytoin,aucun_fichier_trouve,,
+CYP2C19,atomoxetine,aucun_fichier_trouve,,
+RYR1,succinylcholine chloride,resolu,EVITER,CPIC
+CYP2C9,rosuvastatin calcium,aucun_fichier_trouve,,
+CYP2C9,warfarin sodium,resolu,ADAPTER_DOSE,CPIC
+CYP2D6,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP2A6,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP1A2,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP3A4,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP2C9,rosuvastatin,aucun_fichier_trouve,,
+CYP2C19,extended phenytoin sodium,aucun_fichier_trouve,,
+CYP2C9,extended phenytoin sodium,resolu,EVITER,CPIC
+CYP2C19,pazopanib,aucun_fichier_trouve,,
+CYP2D6,amphetamine sulfate,aucun_fichier_trouve,,
+CYP2D6,nitisinone,aucun_fichier_trouve,,
+CYP2C9,nitisinone,aucun_fichier_trouve,,
+CYP1A2,nitisinone,aucun_fichier_trouve,,
+CYP3A4,nitisinone,aucun_fichier_trouve,,
+CYP2D6,lamotrigine,aucun_fichier_trouve,,
+CYP2D6,doxorubicin hydrochloride,aucun_fichier_trouve,,
+CYP2C19,clobazam,aucun_fichier_trouve,,
+CYP2D6,clobazam,aucun_fichier_trouve,,
+CYP2C9,clobazam,aucun_fichier_trouve,,
+CYP2B6,clobazam,aucun_fichier_trouve,,
+UGT1A1,clobazam,aucun_fichier_trouve,,
+CYP1A2,clobazam,aucun_fichier_trouve,,
+CYP3A4,clobazam,aucun_fichier_trouve,,
+CYP3A4,voriconazole,aucun_fichier_trouve,,
+CYP2C19,pazopanib hydrochloride,aucun_fichier_trouve,,
+CYP2C19,arformoterol tartrate,aucun_fichier_trouve,,
+CYP2C9,verapamil hydrochloride,aucun_fichier_trouve,,
+CYP2D6,ivermectin,aucun_fichier_trouve,,
+CYP2D6,nilotinib,aucun_fichier_trouve,,
+CYP2D6,aripiprazole,resolu,SURVEILLER,DPWG
+UGT1A1,bilirubin,aucun_fichier_trouve,,
+CYP2C9,meloxicam,resolu,ADAPTER_DOSE,CPIC
+CYP2A6,nicotine,aucun_fichier_trouve,,
+CYP2A6,letrozole,aucun_fichier_trouve,,
+CYP3A5,rivaroxaban,aucun_fichier_trouve,,
+TPMT,purine analogues,aucun_fichier_trouve,,
+CYP3A4,tacrolimus,resolu,ADAPTER_DOSE,RNPGx
+CYP3A4,amlodipine,aucun_fichier_trouve,,
+CYP2C19,aspirin,aucun_fichier_trouve,,
+NAT2,isoniazid,aucun_fichier_trouve,,
+CYP2D6,3,aucun_fichier_trouve,,
+CYP2D6,4-methylenedioxymethamphetamine,aucun_fichier_trouve,,
+CYP3A5,sirolimus,aucun_fichier_trouve,,
+CYP2B6,bupropion,aucun_fichier_trouve,,
+CYP2C9,ibuprofen,resolu,ADAPTER_DOSE,CPIC
+CYP2B6,artemether,aucun_fichier_trouve,,
+CYP2B6,cyclophosphamide,aucun_fichier_trouve,,
+CYP2C19,cyclophosphamide,aucun_fichier_trouve,,
+CYP2C9,losartan,aucun_fichier_trouve,,
+CYP3A4,fentanyl,aucun_fichier_trouve,,
+CYP3A4,sufentanil,aucun_fichier_trouve,,
+CYP3A4,cyclosporine,aucun_fichier_trouve,,
+CYP2B6,methadone,texte_ambigu,,CPIC
+SLCO1B1,conjugated estrogens,aucun_fichier_trouve,,
+CYP2D6,endoxifen,aucun_fichier_trouve,,
+CYP3A4,alprazolam,aucun_fichier_trouve,,
+CYP2D6,mianserin,aucun_fichier_trouve,,
+CYP2C19,mephenytoin,aucun_fichier_trouve,,
+CYP2A6,varenicline,aucun_fichier_trouve,,
+CYP2D6,primaquine,aucun_fichier_trouve,,
+CYP3A5,clopidogrel,aucun_fichier_trouve,,
+CYP2C19,tamoxifen,aucun_fichier_trouve,,
+CYP2D6,doxepin,resolu,EVITER,CPIC
+CYP3A5,cyclosporine,aucun_fichier_trouve,,
+ABCG2,imatinib,aucun_fichier_trouve,,
+SLCO1B1,estrone sulfate,aucun_fichier_trouve,,
+CYP2D6,simvastatin,aucun_fichier_trouve,,
+CYP2C19,thalidomide,aucun_fichier_trouve,,
+CYP3A5,imatinib,aucun_fichier_trouve,,
+CYP2A6,efavirenz,aucun_fichier_trouve,,
+CYP2C19,diazepam,aucun_fichier_trouve,,
+CYP2B6,mirtazapine,aucun_fichier_trouve,,
+UGT1A1,deferasirox,aucun_fichier_trouve,,
+CYP2C9,valproic acid,aucun_fichier_trouve,,
+CYP2D6,tamsulosin,aucun_fichier_trouve,,
+CYP2D6,morphine,aucun_fichier_trouve,,
+CYP2D6,paramethoxymethamphetamine,aucun_fichier_trouve,,
+CYP2D6,dextromethorphan,aucun_fichier_trouve,,
+CYP2C19,amoxicillin,aucun_fichier_trouve,,
+CYP2C19,clarithromycin,aucun_fichier_trouve,,
+CYP2D6,flecainide,resolu,EVITER,DPWG
+CYP2D6,oxymorphone,aucun_fichier_trouve,,
+CYP2C9,noscapine,aucun_fichier_trouve,,
+CYP2B6,propofol,aucun_fichier_trouve,,
+CYP2D6,clozapine,texte_ambigu,,DPWG
+NUDT15,azathioprine,resolu,ADAPTER_DOSE,CPIC
+CYP1A2,caffeine,aucun_fichier_trouve,,
+ABCG2,sulfasalazine,aucun_fichier_trouve,,
+CYP3A4,carbamazepine,aucun_fichier_trouve,,
+CYP3A4,lumefantrine,aucun_fichier_trouve,,
+CYP2C19,valproic acid,aucun_fichier_trouve,,
+CYP3A5,docetaxel,aucun_fichier_trouve,,
+ABCG2,methotrexate,aucun_fichier_trouve,,
+CYP3A4,warfarin,aucun_fichier_trouve,,
+CYP1A2,warfarin,aucun_fichier_trouve,,
+CYP2C9,irbesartan,aucun_fichier_trouve,,
+CYP2C19,mirvetuximab soravtansine,aucun_fichier_trouve,,
+CYP3A4,odevixibat,aucun_fichier_trouve,,
+CYP2C19,warfarin,aucun_fichier_trouve,,
+CYP2C19,propranolol hydrochloride,aucun_fichier_trouve,,
+CYP2C19,venlafaxine,aucun_fichier_trouve,,
+CYP2C19,fluoxetine,aucun_fichier_trouve,,
+CYP2C19,clozapine,aucun_fichier_trouve,,
+CYP2C19,tacrolimus,aucun_fichier_trouve,,
+CYP2C19,doxorubicin,aucun_fichier_trouve,,
+CYP2D6,quetiapine,texte_ambigu,,DPWG
+CYP2D6,rosuvastatin,aucun_fichier_trouve,,
+CYP2D6,carbamazepine,aucun_fichier_trouve,,
+CYP2D6,hydroxychloroquine,aucun_fichier_trouve,,
+CYP2C9,tolbutamide,texte_ambigu,,DPWG
+CYP2C9,glyburide,texte_ambigu,,DPWG
+CYP2B6,varenicline,aucun_fichier_trouve,,

@@ -31,14 +31,14 @@ class PharmDL_v3(nn.Module):
 
 def load_models_v2():
     global _rf,_dl,_le,_GENES,_scaler,_drug_fp,_n_genes,_n_drug_fp
-    _rf=joblib.load(RESULTS_DIR+'/rf_pgx_final.pkl')
-    with open(RESULTS_DIR+'/le_pgx.pkl','rb') as f: _le=pickle.load(f)
-    with open(RESULTS_DIR+'/genes_pgx.pkl','rb') as f: _GENES=pickle.load(f)
-    with open(RESULTS_DIR+'/scaler_pgx.pkl','rb') as f: _scaler=pickle.load(f)
+    _rf=joblib.load(RESULTS_DIR+'/rf_pgx_31genes.pkl')
+    with open(RESULTS_DIR+'/le_pgx_31genes.pkl','rb') as f: _le=pickle.load(f)
+    with open(RESULTS_DIR+'/genes_pgx_31genes.pkl','rb') as f: _GENES=pickle.load(f)
+    with open(RESULTS_DIR+'/scaler_pgx_31genes.pkl','rb') as f: _scaler=pickle.load(f)
     with open(RESULTS_DIR+'/drug_fp_ref.pkl','rb') as f: _drug_fp=pickle.load(f)
     _n_genes=len(_GENES); _n_drug_fp=518
     _dl=PharmDL_v3(_n_genes,_n_drug_fp,len(_le.classes_))
-    _dl.load_state_dict(torch.load(RESULTS_DIR+'/dl_pgx_final.pth',map_location='cpu'))
+    _dl.load_state_dict(torch.load(RESULTS_DIR+'/dl_pgx_31genes.pth',map_location='cpu'))
     _dl.eval()
     print('[predict_v2] OK — '+str(len(_GENES))+' genes, '+str(len(_drug_fp))+' medicaments')
 
@@ -136,6 +136,9 @@ def predict_for_patient(variants_list, extra_drugs=None):
         dl = str(drug).lower().strip()
         if dl not in _drug_fp:
             continue
+        responsible = list(dict.fromkeys([g for g in mutated_genes if drug in GENE_DRUGS.get(g,[])]))
+        if not responsible:
+            continue
         fp = _scaler.transform(_drug_fp[dl].reshape(1,-1))
         X = np.hstack([gene_vector, fp[0]]).reshape(1,-1).astype(float)
         with torch.no_grad():
@@ -144,7 +147,7 @@ def predict_for_patient(variants_list, extra_drugs=None):
         ens = (2.0*probs_dl + 1.0*probs_rf) / 3.0
         y = np.argmax(ens)
         action = _le.inverse_transform([y])[0]
-        responsible_genes = [g for g in mutated_genes if drug in GENE_DRUGS.get(g,[])]
+        responsible_genes = list(dict.fromkeys([g for g in mutated_genes if drug in GENE_DRUGS.get(g,[])]))
         gene_val = gene_vector[_GENES.index(responsible_genes[0])] if responsible_genes else 1.0
         results.append({
             'drug':             drug,

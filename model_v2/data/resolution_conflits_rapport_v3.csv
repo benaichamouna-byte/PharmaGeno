@@ -1,0 +1,310 @@
+gene,drug,statut,valides,invalides_supprimees
+CYP2C9,warfarin,texte_sans_signal,,0
+TPMT,azathioprine,coherent_apres_nettoyage,['ADAPTER_DOSE'],5
+DPYD,fluorouracil,coherent_apres_nettoyage,['SURVEILLER'],10
+CYP4F2,warfarin,texte_sans_signal,,0
+VKORC1,phenprocoumon,coherent_apres_nettoyage,['SURVEILLER'],5
+NUDT15,mercaptopurine,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+CYP2D6,hydrocodone,texte_sans_signal,,0
+CYP2D6,tropisetron,texte_sans_signal,,0
+CYP2D6,desipramine,texte_sans_signal,,0
+CYP2C9,phenytoin,texte_sans_signal,,0
+UGT1A1,irinotecan,coherent_apres_nettoyage,['ADAPTER_DOSE'],4
+CYP2B6,efavirenz,texte_sans_signal,,0
+VKORC1,acenocoumarol,coherent_apres_nettoyage,['SURVEILLER'],4
+CYP2D6,amitriptyline,texte_sans_signal,,0
+CYP2D6,clomipramine,texte_sans_signal,,0
+CYP2D6,imipramine,texte_sans_signal,,0
+CYP2D6,codeine,texte_sans_signal,,0
+CYP2D6,nortriptyline,texte_sans_signal,,0
+CYP2C19,lansoprazole,coherent_apres_nettoyage,"['ADAPTER_DOSE', 'SURVEILLER']",5
+CYP2C19,clopidogrel,coherent_apres_nettoyage,['EVITER'],7
+CYP2C19,pantoprazole,coherent_apres_nettoyage,"['ADAPTER_DOSE', 'SURVEILLER']",4
+CYP2D6,atomoxetine,texte_sans_signal,,0
+CYP2D6,tamoxifen,conflit_persiste_niveau3,"['ADAPTER_DOSE', 'EVITER']",1
+CYP2C19,omeprazole,texte_sans_signal,,0
+CYP2D6,tramadol,texte_sans_signal,,0
+CYP2C9,fluvastatin,conflit_persiste_niveau3,"['ADAPTER_DOSE', 'EVITER']",1
+SLCO1B1,simvastatin,texte_sans_signal,,0
+SLCO1B1,lovastatin,texte_sans_signal,,0
+SLCO1B1,atorvastatin,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+SLCO1B1,rosuvastatin,coherent_apres_nettoyage,['ADAPTER_DOSE'],4
+SLCO1B1,pravastatin,coherent_apres_nettoyage,['ADAPTER_DOSE'],5
+ABCG2,allopurinol,texte_sans_signal,,0
+CYP2C19,citalopram,texte_sans_signal,,0
+TPMT,thioguanine,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+CYP2D6,venlafaxine,texte_sans_signal,,0
+TPMT,mercaptopurine,coherent_apres_nettoyage,['ADAPTER_DOSE'],5
+NAT2,hydralazine,coherent_apres_nettoyage,['ADAPTER_DOSE'],4
+CYP2B6,nevirapine,aucune_guideline,,0
+CYP2C9,acenocoumarol,texte_sans_signal,,0
+DPYD,capecitabine,coherent_apres_nettoyage,['SURVEILLER'],8
+CYP2C19,esomeprazole,texte_sans_signal,,0
+CYP2C19,rabeprazole,texte_sans_signal,,0
+CYP2D6,zuclopenthixol,coherent_apres_nettoyage,['STANDARD'],5
+CYP2C19,imipramine,texte_sans_signal,,0
+CYP2D6,methylphenidate,texte_sans_signal,,0
+CYP3A5,tacrolimus,conflit_persiste_niveau3,"['ADAPTER_DOSE', 'SURVEILLER']",2
+CYP2C9,gliclazide,texte_sans_signal,,0
+CYP2C19,voriconazole,conflit_persiste_niveau3,"['ADAPTER_DOSE', 'EVITER', 'SURVEILLER']",1
+ABCG2,rosuvastatin,coherent_apres_nettoyage,['ADAPTER_DOSE'],2
+CYP2C19,amitriptyline,texte_sans_signal,,0
+CYP2C9,diclofenac,texte_sans_signal,,0
+CYP2C9,indomethacin,texte_sans_signal,,0
+CYP2D6,carvedilol,texte_sans_signal,,0
+CYP2D6,metoprolol,coherent_apres_nettoyage,['ADAPTER_DOSE'],4
+CYP2D6,duloxetine,texte_sans_signal,,0
+CYP2D6,ondansetron,texte_sans_signal,,0
+G6PD,primaquine,coherent_apres_nettoyage,['EVITER'],0
+CYP2C19,mavacamten,conflit_persiste_niveau3,"['ADAPTER_DOSE', 'EVITER']",1
+CYP1A2,clozapine,texte_sans_signal,,0
+CYP2D6,paroxetine,coherent_apres_nettoyage,['ADAPTER_DOSE'],4
+CYP2C19,clomipramine,texte_sans_signal,,0
+CYP3A4,atorvastatin,texte_sans_signal,,0
+CYP3A4,fluvastatin,texte_sans_signal,,0
+CYP3A4,simvastatin,texte_sans_signal,,0
+CYP3A5,atorvastatin,texte_sans_signal,,0
+CYP3A5,lovastatin,texte_sans_signal,,0
+CYP3A5,rosuvastatin,texte_sans_signal,,0
+CYP3A5,simvastatin,texte_sans_signal,,0
+CYP2D6,haloperidol,coherent_apres_nettoyage,['STANDARD'],5
+CYP2D6,oxycodone,texte_sans_signal,,0
+G6PD,nitrofurantoin,coherent_apres_nettoyage,['EVITER'],1
+CYP2D6,bisoprolol,texte_sans_signal,,0
+CYP2D6,risperidone,coherent_apres_nettoyage,['ADAPTER_DOSE'],4
+VKORC1,warfarin,texte_sans_signal,,0
+CYP2D6,propafenone,coherent_apres_nettoyage,"['ADAPTER_DOSE', 'SURVEILLER']",3
+RYR1,desflurane,coherent_apres_nettoyage,['EVITER'],2
+RYR1,enflurane,coherent_apres_nettoyage,['EVITER'],1
+RYR1,halothane,coherent_apres_nettoyage,['EVITER'],2
+RYR1,isoflurane,coherent_apres_nettoyage,['EVITER'],2
+RYR1,methoxyflurane,coherent_apres_nettoyage,['EVITER'],1
+RYR1,sevoflurane,coherent_apres_nettoyage,['EVITER'],1
+RYR1,succinylcholine,coherent_apres_nettoyage,['EVITER'],1
+CYP2D6,fluvoxamine,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+G6PD,aspirin,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",0
+VKORC1,fluindione,texte_sans_signal,,0
+DPYD,tegafur,texte_sans_signal,,0
+CYP2C19,dexlansoprazole,coherent_apres_nettoyage,"['ADAPTER_DOSE', 'SURVEILLER']",2
+NUDT15,thioguanine,coherent_apres_nettoyage,['ADAPTER_DOSE'],1
+HLA-B,oxcarbazepine,texte_sans_signal,,0
+CYP2D6,methadone,texte_sans_signal,,0
+G6PD,dapsone,coherent_apres_nettoyage,['EVITER'],1
+G6PD,methylene blue,coherent_apres_nettoyage,['EVITER'],1
+G6PD,pegloticase,coherent_apres_nettoyage,['EVITER'],1
+G6PD,rasburicase,coherent_apres_nettoyage,['EVITER'],1
+G6PD,tafenoquine,coherent_apres_nettoyage,['EVITER'],1
+G6PD,toluidine blue,coherent_apres_nettoyage,['EVITER'],1
+CYP2D6,fluoxetine,texte_sans_signal,,0
+CYP2D6,citalopram,texte_sans_signal,,0
+CYP2D6,escitalopram,texte_sans_signal,,0
+CYP2C19,escitalopram,texte_sans_signal,,0
+CYP2B6,sertraline,coherent_apres_nettoyage,['ADAPTER_DOSE'],1
+CYP2C19,sertraline,coherent_apres_nettoyage,['ADAPTER_DOSE'],2
+CYP2C19,prasugrel,texte_sans_signal,,0
+HLA-A,carbamazepine,texte_sans_signal,,0
+SLCO1B1,methotrexate,texte_sans_signal,,0
+SLCO1B1,fluvastatin,conflit_persiste_niveau3,"['ADAPTER_DOSE', 'EVITER']",0
+CYP2D6,mirtazapine,texte_sans_signal,,0
+CYP2C19,moclobemide,texte_sans_signal,,0
+G6PD,aminosalicylic acid,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,chloramphenicol,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,chloroquine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,ciprofloxacin,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,dimercaprol,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,doxorubicin,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",0
+G6PD,furazolidone,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,glyburide,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",0
+G6PD,hydroxychloroquine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",0
+G6PD,mafenide,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,nalidixic acid,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,norfloxacin,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,ofloxacin,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,phenazopyridine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,quinine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfadiazine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfamethazine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfamethoxazole,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfamethoxazole / trimethoprim,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfanilamide,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfasalazine,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,sulfisoxazole,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,tolbutamide,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",0
+G6PD,vitamin c,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+G6PD,vitamin k and analogues,coherent_apres_nettoyage,"['EVITER', 'SURVEILLER']",1
+CYP1A2,olanzapine,texte_sans_signal,,0
+CYP2C9,phenprocoumon,texte_sans_signal,,0
+CYP2D6,trimipramine,texte_sans_signal,,0
+CYP2C19,ticagrelor,texte_sans_signal,,0
+CYP2D6,sertraline,texte_sans_signal,,0
+CYP2C19,trametinib,aucune_guideline,,0
+CYP2D6,tamsulosin hydrochloride,aucune_guideline,,0
+CYP3A4,tamsulosin hydrochloride,aucune_guideline,,0
+CYP2C19,lacosamide,aucune_guideline,,0
+CYP2C9,lacosamide,aucune_guideline,,0
+CYP1A2,lacosamide,aucune_guideline,,0
+CYP3A4,lacosamide,aucune_guideline,,0
+CYP2C19,olanzapine,aucune_guideline,,0
+CYP2D6,ondansetron hydrochloride,texte_sans_signal,,0
+CYP1A2,ondansetron hydrochloride,aucune_guideline,,0
+CYP3A4,ondansetron hydrochloride,aucune_guideline,,0
+CYP2D6,bupropion hydrochloride,aucune_guideline,,0
+CYP2C19,lorlatinib,aucune_guideline,,0
+HLA-B,allopurinol,coherent_apres_nettoyage,['EVITER'],1
+CYP2C19,pramipexole dihydrochloride,aucune_guideline,,0
+CYP2C19,leflunomide,aucune_guideline,,0
+CYP2C19,ziprasidone,aucune_guideline,,0
+CYP2C19,mirabegron,aucune_guideline,,0
+CYP2D6,mirabegron,aucune_guideline,,0
+CYP2C9,mirabegron,aucune_guideline,,0
+CYP2B6,mirabegron,aucune_guideline,,0
+CYP1A2,mirabegron,aucune_guideline,,0
+CYP3A4,mirabegron,aucune_guideline,,0
+CYP2C19,azacitidine for,aucune_guideline,,0
+CYP2C19,esomeprazole magnesium,texte_sans_signal,,0
+CYP3A4,esomeprazole magnesium,aucune_guideline,,0
+CYP2C9,sitagliptin and metformin hydrochloride,aucune_guideline,,0
+CYP2D6,"dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate",aucune_guideline,,0
+CYP2C19,fenofibrate,aucune_guideline,,0
+CYP2D6,celecoxib,aucune_guideline,,0
+CYP2C19,sildenafil citrate,aucune_guideline,,0
+CYP2C19,doxepin hydrochloride,texte_sans_signal,,0
+CYP2D6,doxepin hydrochloride,texte_sans_signal,,0
+CYP2C9,doxepin hydrochloride,aucune_guideline,,0
+CYP1A2,doxepin hydrochloride,aucune_guideline,,0
+CYP2C19,ramelteon,aucune_guideline,,0
+CYP2C19,pregabalin,aucune_guideline,,0
+CYP3A4,quetiapine,texte_sans_signal,,0
+CYP2C19,modafinil,aucune_guideline,,0
+CYP2D6,modafinil,aucune_guideline,,0
+CYP2C9,modafinil,aucune_guideline,,0
+CYP2B6,modafinil,aucune_guideline,,0
+CYP1A2,modafinil,aucune_guideline,,0
+CYP3A4,modafinil,aucune_guideline,,0
+CYP2C19,lurasidone hydrochloride,aucune_guideline,,0
+CYP2D6,lurasidone hydrochloride,aucune_guideline,,0
+CYP2C9,lurasidone hydrochloride,aucune_guideline,,0
+CYP2B6,lurasidone hydrochloride,aucune_guideline,,0
+CYP2A6,lurasidone hydrochloride,aucune_guideline,,0
+CYP1A2,lurasidone hydrochloride,aucune_guideline,,0
+CYP3A4,lurasidone hydrochloride,aucune_guideline,,0
+CYP2D6,propranolol hydrochloride,texte_sans_signal,,0
+CYP2C19,pomalidomide,aucune_guideline,,0
+CYP2C19,gabapentin,aucune_guideline,,0
+CYP2C19,topiramate,aucune_guideline,,0
+CYP2C19,phenytoin,aucune_guideline,,0
+CYP2C19,atomoxetine,aucune_guideline,,0
+RYR1,succinylcholine chloride,coherent_apres_nettoyage,['EVITER'],2
+CYP2C9,rosuvastatin calcium,aucune_guideline,,0
+CYP2C9,warfarin sodium,texte_sans_signal,,0
+CYP2D6,galantamine hydrobromide,aucune_guideline,,0
+CYP2A6,galantamine hydrobromide,aucune_guideline,,0
+CYP1A2,galantamine hydrobromide,aucune_guideline,,0
+CYP3A4,galantamine hydrobromide,aucune_guideline,,0
+CYP2C9,rosuvastatin,aucune_guideline,,0
+CYP2C19,extended phenytoin sodium,aucune_guideline,,0
+CYP2C9,extended phenytoin sodium,texte_sans_signal,,0
+CYP2C19,pazopanib,aucune_guideline,,0
+CYP2D6,amphetamine sulfate,aucune_guideline,,0
+CYP2D6,nitisinone,aucune_guideline,,0
+CYP2C9,nitisinone,aucune_guideline,,0
+CYP1A2,nitisinone,aucune_guideline,,0
+CYP3A4,nitisinone,aucune_guideline,,0
+CYP2D6,lamotrigine,aucune_guideline,,0
+CYP2D6,doxorubicin hydrochloride,aucune_guideline,,0
+CYP2C19,clobazam,aucune_guideline,,0
+CYP2D6,clobazam,aucune_guideline,,0
+CYP2C9,clobazam,aucune_guideline,,0
+CYP2B6,clobazam,aucune_guideline,,0
+UGT1A1,clobazam,aucune_guideline,,0
+CYP1A2,clobazam,aucune_guideline,,0
+CYP3A4,clobazam,aucune_guideline,,0
+CYP3A4,voriconazole,aucune_guideline,,0
+CYP2C19,pazopanib hydrochloride,aucune_guideline,,0
+CYP2C19,arformoterol tartrate,aucune_guideline,,0
+CYP2C9,verapamil hydrochloride,aucune_guideline,,0
+CYP2D6,ivermectin,aucune_guideline,,0
+CYP2D6,nilotinib,aucune_guideline,,0
+CYP2D6,aripiprazole,texte_sans_signal,,0
+UGT1A1,bilirubin,aucune_guideline,,0
+CYP2C9,meloxicam,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+CYP2A6,nicotine,aucune_guideline,,0
+CYP2A6,letrozole,aucune_guideline,,0
+CYP3A5,rivaroxaban,aucune_guideline,,0
+TPMT,purine analogues,aucune_guideline,,0
+CYP3A4,tacrolimus,texte_sans_signal,,0
+CYP3A4,amlodipine,aucune_guideline,,0
+CYP2C19,aspirin,aucune_guideline,,0
+NAT2,isoniazid,aucune_guideline,,0
+CYP2D6,3,aucune_guideline,,0
+CYP2D6,4-methylenedioxymethamphetamine,aucune_guideline,,0
+CYP3A5,sirolimus,aucune_guideline,,0
+CYP2B6,bupropion,aucune_guideline,,0
+CYP2C9,ibuprofen,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+CYP2B6,artemether,aucune_guideline,,0
+CYP2B6,cyclophosphamide,aucune_guideline,,0
+CYP2C19,cyclophosphamide,aucune_guideline,,0
+CYP2C9,losartan,aucune_guideline,,0
+CYP3A4,fentanyl,aucune_guideline,,0
+CYP3A4,sufentanil,aucune_guideline,,0
+CYP3A4,cyclosporine,aucune_guideline,,0
+CYP2B6,methadone,texte_sans_signal,,0
+SLCO1B1,conjugated estrogens,aucune_guideline,,0
+CYP2D6,endoxifen,aucune_guideline,,0
+CYP3A4,alprazolam,aucune_guideline,,0
+CYP2D6,mianserin,aucune_guideline,,0
+CYP2C19,mephenytoin,aucune_guideline,,0
+CYP2A6,varenicline,aucune_guideline,,0
+CYP2D6,primaquine,aucune_guideline,,0
+CYP3A5,clopidogrel,aucune_guideline,,0
+CYP2C19,tamoxifen,aucune_guideline,,0
+CYP2D6,doxepin,texte_sans_signal,,0
+CYP3A5,cyclosporine,aucune_guideline,,0
+ABCG2,imatinib,aucune_guideline,,0
+SLCO1B1,estrone sulfate,aucune_guideline,,0
+CYP2D6,simvastatin,aucune_guideline,,0
+CYP2C19,thalidomide,aucune_guideline,,0
+CYP3A5,imatinib,aucune_guideline,,0
+CYP2A6,efavirenz,aucune_guideline,,0
+CYP2C19,diazepam,aucune_guideline,,0
+CYP2B6,mirtazapine,aucune_guideline,,0
+UGT1A1,deferasirox,aucune_guideline,,0
+CYP2C9,valproic acid,aucune_guideline,,0
+CYP2D6,tamsulosin,aucune_guideline,,0
+CYP2D6,morphine,aucune_guideline,,0
+CYP2D6,paramethoxymethamphetamine,aucune_guideline,,0
+CYP2D6,dextromethorphan,aucune_guideline,,0
+CYP2C19,amoxicillin,aucune_guideline,,0
+CYP2C19,clarithromycin,aucune_guideline,,0
+CYP2D6,flecainide,coherent_apres_nettoyage,"['STANDARD', 'SURVEILLER']",3
+CYP2D6,oxymorphone,aucune_guideline,,0
+CYP2C9,noscapine,aucune_guideline,,0
+CYP2B6,propofol,aucune_guideline,,0
+CYP2D6,clozapine,texte_sans_signal,,0
+NUDT15,azathioprine,coherent_apres_nettoyage,['ADAPTER_DOSE'],3
+CYP1A2,caffeine,aucune_guideline,,0
+ABCG2,sulfasalazine,aucune_guideline,,0
+CYP3A4,carbamazepine,aucune_guideline,,0
+CYP3A4,lumefantrine,aucune_guideline,,0
+CYP2C19,valproic acid,aucune_guideline,,0
+CYP3A5,docetaxel,aucune_guideline,,0
+ABCG2,methotrexate,aucune_guideline,,0
+CYP3A4,warfarin,aucune_guideline,,0
+CYP1A2,warfarin,aucune_guideline,,0
+CYP2C9,irbesartan,aucune_guideline,,0
+CYP2C19,mirvetuximab soravtansine,aucune_guideline,,0
+CYP3A4,odevixibat,aucune_guideline,,0
+CYP2C19,warfarin,aucune_guideline,,0
+CYP2C19,propranolol hydrochloride,aucune_guideline,,0
+CYP2C19,venlafaxine,aucune_guideline,,0
+CYP2C19,fluoxetine,aucune_guideline,,0
+CYP2C19,clozapine,aucune_guideline,,0
+CYP2C19,tacrolimus,aucune_guideline,,0
+CYP2C19,doxorubicin,aucune_guideline,,0
+CYP2D6,quetiapine,texte_sans_signal,,0
+CYP2D6,rosuvastatin,aucune_guideline,,0
+CYP2D6,carbamazepine,aucune_guideline,,0
+CYP2D6,hydroxychloroquine,aucune_guideline,,0
+CYP2C9,tolbutamide,texte_sans_signal,,0
+CYP2C9,glyburide,texte_sans_signal,,0
+CYP2B6,varenicline,aucune_guideline,,0

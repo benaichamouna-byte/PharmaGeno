@@ -1,0 +1,310 @@
+gene,drug,statut,action_proposee,source
+CYP2C9,warfarin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166182842.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166170752.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104949.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166202621.json']"
+TPMT,azathioprine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202521.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104933.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104934.json']"
+DPYD,fluorouracil,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202721.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166254881.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166312801.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166122686.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104939.json']"
+CYP4F2,warfarin,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104949.json
+VKORC1,phenprocoumon,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104940.json
+NUDT15,mercaptopurine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104945.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166184613.json']"
+CYP2D6,hydrocodone,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166228121.json
+CYP2D6,tropisetron,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166161955.json
+CYP2D6,desipramine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166105002.json
+CYP2C9,phenytoin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166122806.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104984.json']"
+UGT1A1,irinotecan,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166312821.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104951.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166127626.json']"
+CYP2B6,efavirenz,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166182603.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182846.json']"
+VKORC1,acenocoumarol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202621.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104938.json']"
+CYP2D6,amitriptyline,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104982.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105006.json']"
+CYP2D6,clomipramine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104964.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105007.json']"
+CYP2D6,imipramine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104999.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104972.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105001.json']"
+CYP2D6,codeine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166122666.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104970.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104996.json']"
+CYP2D6,nortriptyline,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104998.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104961.json']"
+CYP2C19,lansoprazole,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104987.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166219301.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166219103.json']"
+CYP2C19,clopidogrel,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104948.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166202501.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104956.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166342701.json']"
+CYP2C19,pantoprazole,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104958.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166219103.json']"
+CYP2D6,atomoxetine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166181885.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104989.json']"
+CYP2D6,tamoxifen,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202801.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104966.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166176068.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166181721.json']"
+CYP2C19,omeprazole,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166220321.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104957.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166219103.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104931.json']"
+CYP2D6,tramadol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104959.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166228101.json']"
+CYP2C9,fluvastatin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166262341.json
+SLCO1B1,simvastatin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202561.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105005.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182844.json']"
+SLCO1B1,lovastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166262241.json
+SLCO1B1,atorvastatin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166262221.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182843.json']"
+SLCO1B1,rosuvastatin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166262321.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166363221.json']"
+SLCO1B1,pravastatin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166363201.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166262281.json']"
+ABCG2,allopurinol,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166264961.json
+CYP2C19,citalopram,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104975.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166127638.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104977.json']"
+TPMT,thioguanine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104960.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104965.json']"
+CYP2D6,venlafaxine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104968.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166288201.json']"
+TPMT,mercaptopurine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104952.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166202761.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104945.json']"
+NAT2,hydralazine,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166416341.json
+CYP2B6,nevirapine,aucun_fichier_trouve,,
+CYP2C9,acenocoumarol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202621.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104979.json']"
+DPYD,capecitabine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202721.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166109594.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166254881.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104963.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166312801.json']"
+CYP2C19,esomeprazole,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166220321.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104931.json']"
+CYP2C19,rabeprazole,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166220321.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104985.json']"
+CYP2D6,zuclopenthixol,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104992.json
+CYP2C19,imipramine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104999.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104954.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105001.json']"
+CYP2D6,methylphenidate,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182808.json
+CYP3A5,tacrolimus,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166202481.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104983.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166124619.json']"
+CYP2C9,gliclazide,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104971.json
+CYP2C19,voriconazole,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166257241.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166161537.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104990.json']"
+ABCG2,rosuvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166262321.json
+CYP2C19,amitriptyline,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166184526.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105006.json']"
+CYP2C9,diclofenac,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166222201.json
+CYP2C9,indomethacin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166222201.json
+CYP2D6,carvedilol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166341341.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104974.json']"
+CYP2D6,metoprolol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104995.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166341321.json']"
+CYP2D6,duloxetine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104942.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166288561.json']"
+CYP2D6,ondansetron,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166161954.json
+G6PD,primaquine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279621.json
+CYP2C19,mavacamten,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166418081.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166360361.json']"
+CYP1A2,clozapine,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166265241.json
+CYP2D6,paroxetine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166127636.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104976.json']"
+CYP2C19,clomipramine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166105007.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166184528.json']"
+CYP3A4,atorvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP3A4,fluvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP3A4,simvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP3A5,atorvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP3A5,lovastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP3A5,rosuvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP3A5,simvastatin,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166273401.json
+CYP2D6,haloperidol,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104988.json
+CYP2D6,oxycodone,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104973.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166228022.json']"
+G6PD,nitrofurantoin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279721.json
+CYP2D6,bisoprolol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166341341.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182816.json']"
+CYP2D6,risperidone,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104943.json
+VKORC1,warfarin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166170752.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182841.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104949.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166202621.json']"
+CYP2D6,propafenone,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104962.json
+RYR1,desflurane,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+RYR1,enflurane,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+RYR1,halothane,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+RYR1,isoflurane,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+RYR1,methoxyflurane,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+RYR1,sevoflurane,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+RYR1,succinylcholine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166303941.json
+CYP2D6,fluvoxamine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166127637.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182813.json']"
+G6PD,aspirin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279561.json
+VKORC1,fluindione,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166202621.json
+DPYD,tegafur,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166122687.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104944.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166254881.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166312801.json']"
+CYP2C19,dexlansoprazole,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166219301.json
+NUDT15,thioguanine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166184612.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104965.json']"
+HLA-B,oxcarbazepine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166265201.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166422201.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166176623.json']"
+CYP2D6,methadone,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166228022.json
+G6PD,dapsone,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166119846.json
+G6PD,methylene blue,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166119846.json
+G6PD,pegloticase,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166119846.json
+G6PD,rasburicase,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166119846.json
+G6PD,tafenoquine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166119846.json
+G6PD,toluidine blue,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166119846.json
+CYP2D6,fluoxetine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166288541.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182852.json']"
+CYP2D6,citalopram,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182817.json
+CYP2D6,escitalopram,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182817.json
+CYP2C19,escitalopram,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104975.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166127638.json']"
+CYP2B6,sertraline,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166127639.json
+CYP2C19,sertraline,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166127639.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104980.json']"
+CYP2C19,prasugrel,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182820.json
+HLA-A,carbamazepine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166117280.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166422201.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166265161.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105008.json']"
+SLCO1B1,methotrexate,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166202781.json
+SLCO1B1,fluvastatin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166262341.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166182845.json']"
+CYP2D6,mirtazapine,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104967.json
+CYP2C19,moclobemide,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104941.json
+G6PD,aminosalicylic acid,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,chloramphenicol,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,chloroquine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,ciprofloxacin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,dimercaprol,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,doxorubicin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,furazolidone,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,glyburide,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,hydroxychloroquine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,mafenide,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,nalidixic acid,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,norfloxacin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,ofloxacin,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,phenazopyridine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,quinine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfadiazine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfamethazine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfamethoxazole,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfamethoxazole / trimethoprim,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfanilamide,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfasalazine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,sulfisoxazole,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,tolbutamide,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,vitamin c,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+G6PD,vitamin k and analogues,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166279741.json
+CYP1A2,olanzapine,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166265221.json
+CYP2C9,phenprocoumon,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166105004.json
+CYP2D6,trimipramine,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166105001.json
+CYP2C19,ticagrelor,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182807.json
+CYP2D6,sertraline,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182821.json
+CYP2C19,trametinib,aucun_fichier_trouve,,
+CYP2D6,tamsulosin hydrochloride,aucun_fichier_trouve,,
+CYP3A4,tamsulosin hydrochloride,aucun_fichier_trouve,,
+CYP2C19,lacosamide,aucun_fichier_trouve,,
+CYP2C9,lacosamide,aucun_fichier_trouve,,
+CYP1A2,lacosamide,aucun_fichier_trouve,,
+CYP3A4,lacosamide,aucun_fichier_trouve,,
+CYP2C19,olanzapine,aucun_fichier_trouve,,
+CYP2D6,ondansetron hydrochloride,aucun_fichier_trouve,,
+CYP1A2,ondansetron hydrochloride,aucun_fichier_trouve,,
+CYP3A4,ondansetron hydrochloride,aucun_fichier_trouve,,
+CYP2D6,bupropion hydrochloride,aucun_fichier_trouve,,
+CYP2C19,lorlatinib,aucun_fichier_trouve,,
+HLA-B,allopurinol,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166422161.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166265141.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105003.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104993.json']"
+CYP2C19,pramipexole dihydrochloride,aucun_fichier_trouve,,
+CYP2C19,leflunomide,aucun_fichier_trouve,,
+CYP2C19,ziprasidone,aucun_fichier_trouve,,
+CYP2C19,mirabegron,aucun_fichier_trouve,,
+CYP2D6,mirabegron,aucun_fichier_trouve,,
+CYP2C9,mirabegron,aucun_fichier_trouve,,
+CYP2B6,mirabegron,aucun_fichier_trouve,,
+CYP1A2,mirabegron,aucun_fichier_trouve,,
+CYP3A4,mirabegron,aucun_fichier_trouve,,
+CYP2C19,azacitidine for,aucun_fichier_trouve,,
+CYP2C19,esomeprazole magnesium,aucun_fichier_trouve,,
+CYP3A4,esomeprazole magnesium,aucun_fichier_trouve,,
+CYP2C9,sitagliptin and metformin hydrochloride,aucun_fichier_trouve,,
+CYP2D6,"dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate",aucun_fichier_trouve,,
+CYP2C19,fenofibrate,aucun_fichier_trouve,,
+CYP2D6,celecoxib,aucun_fichier_trouve,,
+CYP2C19,sildenafil citrate,aucun_fichier_trouve,,
+CYP2C19,doxepin hydrochloride,aucun_fichier_trouve,,
+CYP2D6,doxepin hydrochloride,aucun_fichier_trouve,,
+CYP2C9,doxepin hydrochloride,aucun_fichier_trouve,,
+CYP1A2,doxepin hydrochloride,aucun_fichier_trouve,,
+CYP2C19,ramelteon,aucun_fichier_trouve,,
+CYP2C19,pregabalin,aucun_fichier_trouve,,
+CYP3A4,quetiapine,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166265421.json
+CYP2C19,modafinil,aucun_fichier_trouve,,
+CYP2D6,modafinil,aucun_fichier_trouve,,
+CYP2C9,modafinil,aucun_fichier_trouve,,
+CYP2B6,modafinil,aucun_fichier_trouve,,
+CYP1A2,modafinil,aucun_fichier_trouve,,
+CYP3A4,modafinil,aucun_fichier_trouve,,
+CYP2C19,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2D6,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2C9,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2B6,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2A6,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP1A2,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP3A4,lurasidone hydrochloride,aucun_fichier_trouve,,
+CYP2D6,propranolol hydrochloride,aucun_fichier_trouve,,
+CYP2C19,pomalidomide,aucun_fichier_trouve,,
+CYP2C19,gabapentin,aucun_fichier_trouve,,
+CYP2C19,topiramate,aucun_fichier_trouve,,
+CYP2C19,phenytoin,aucun_fichier_trouve,,
+CYP2C19,atomoxetine,aucun_fichier_trouve,,
+RYR1,succinylcholine chloride,aucun_fichier_trouve,,
+CYP2C9,rosuvastatin calcium,aucun_fichier_trouve,,
+CYP2C9,warfarin sodium,aucun_fichier_trouve,,
+CYP2D6,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP2A6,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP1A2,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP3A4,galantamine hydrobromide,aucun_fichier_trouve,,
+CYP2C9,rosuvastatin,aucun_fichier_trouve,,
+CYP2C19,extended phenytoin sodium,aucun_fichier_trouve,,
+CYP2C9,extended phenytoin sodium,aucun_fichier_trouve,,
+CYP2C19,pazopanib,aucun_fichier_trouve,,
+CYP2D6,amphetamine sulfate,aucun_fichier_trouve,,
+CYP2D6,nitisinone,aucun_fichier_trouve,,
+CYP2C9,nitisinone,aucun_fichier_trouve,,
+CYP1A2,nitisinone,aucun_fichier_trouve,,
+CYP3A4,nitisinone,aucun_fichier_trouve,,
+CYP2D6,lamotrigine,aucun_fichier_trouve,,
+CYP2D6,doxorubicin hydrochloride,aucun_fichier_trouve,,
+CYP2C19,clobazam,aucun_fichier_trouve,,
+CYP2D6,clobazam,aucun_fichier_trouve,,
+CYP2C9,clobazam,aucun_fichier_trouve,,
+CYP2B6,clobazam,aucun_fichier_trouve,,
+UGT1A1,clobazam,aucun_fichier_trouve,,
+CYP1A2,clobazam,aucun_fichier_trouve,,
+CYP3A4,clobazam,aucun_fichier_trouve,,
+CYP3A4,voriconazole,aucun_fichier_trouve,,
+CYP2C19,pazopanib hydrochloride,aucun_fichier_trouve,,
+CYP2C19,arformoterol tartrate,aucun_fichier_trouve,,
+CYP2C9,verapamil hydrochloride,aucun_fichier_trouve,,
+CYP2D6,ivermectin,aucun_fichier_trouve,,
+CYP2D6,nilotinib,aucun_fichier_trouve,,
+CYP2D6,aripiprazole,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104937.json
+UGT1A1,bilirubin,aucun_fichier_trouve,,
+CYP2C9,meloxicam,resolu,SURVEILLER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166192301.json
+CYP2A6,nicotine,aucun_fichier_trouve,,
+CYP2A6,letrozole,aucun_fichier_trouve,,
+CYP3A5,rivaroxaban,aucun_fichier_trouve,,
+TPMT,purine analogues,aucun_fichier_trouve,,
+CYP3A4,tacrolimus,resolu,ADAPTER_DOSE,/home/mouna/projet_memoire/data/cpic_guidelines/PA166202481.json
+CYP3A4,amlodipine,aucun_fichier_trouve,,
+CYP2C19,aspirin,aucun_fichier_trouve,,
+NAT2,isoniazid,aucun_fichier_trouve,,
+CYP2D6,3,aucun_fichier_trouve,,
+CYP2D6,4-methylenedioxymethamphetamine,aucun_fichier_trouve,,
+CYP3A5,sirolimus,aucun_fichier_trouve,,
+CYP2B6,bupropion,aucun_fichier_trouve,,
+CYP2C9,ibuprofen,resolu,SURVEILLER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166191841.json
+CYP2B6,artemether,aucun_fichier_trouve,,
+CYP2B6,cyclophosphamide,aucun_fichier_trouve,,
+CYP2C19,cyclophosphamide,aucun_fichier_trouve,,
+CYP2C9,losartan,aucun_fichier_trouve,,
+CYP3A4,fentanyl,aucun_fichier_trouve,,
+CYP3A4,sufentanil,aucun_fichier_trouve,,
+CYP3A4,cyclosporine,aucun_fichier_trouve,,
+CYP2B6,methadone,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166345801.json
+SLCO1B1,conjugated estrogens,aucun_fichier_trouve,,
+CYP2D6,endoxifen,aucun_fichier_trouve,,
+CYP3A4,alprazolam,aucun_fichier_trouve,,
+CYP2D6,mianserin,aucun_fichier_trouve,,
+CYP2C19,mephenytoin,aucun_fichier_trouve,,
+CYP2A6,varenicline,aucun_fichier_trouve,,
+CYP2D6,primaquine,aucun_fichier_trouve,,
+CYP3A5,clopidogrel,aucun_fichier_trouve,,
+CYP2C19,tamoxifen,aucun_fichier_trouve,,
+CYP2D6,doxepin,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166104994.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166105000.json']"
+CYP3A5,cyclosporine,aucun_fichier_trouve,,
+ABCG2,imatinib,aucun_fichier_trouve,,
+SLCO1B1,estrone sulfate,aucun_fichier_trouve,,
+CYP2D6,simvastatin,aucun_fichier_trouve,,
+CYP2C19,thalidomide,aucun_fichier_trouve,,
+CYP3A5,imatinib,aucun_fichier_trouve,,
+CYP2A6,efavirenz,aucun_fichier_trouve,,
+CYP2C19,diazepam,aucun_fichier_trouve,,
+CYP2B6,mirtazapine,aucun_fichier_trouve,,
+UGT1A1,deferasirox,aucun_fichier_trouve,,
+CYP2C9,valproic acid,aucun_fichier_trouve,,
+CYP2D6,tamsulosin,aucun_fichier_trouve,,
+CYP2D6,morphine,aucun_fichier_trouve,,
+CYP2D6,paramethoxymethamphetamine,aucun_fichier_trouve,,
+CYP2D6,dextromethorphan,aucun_fichier_trouve,,
+CYP2C19,amoxicillin,aucun_fichier_trouve,,
+CYP2C19,clarithromycin,aucun_fichier_trouve,,
+CYP2D6,flecainide,resolu,EVITER,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104969.json
+CYP2D6,oxymorphone,aucun_fichier_trouve,,
+CYP2C9,noscapine,aucun_fichier_trouve,,
+CYP2B6,propofol,aucun_fichier_trouve,,
+CYP2D6,clozapine,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104935.json
+NUDT15,azathioprine,plusieurs_fichiers,,"['/home/mouna/projet_memoire/data/cpic_guidelines/PA166184614.json', '/home/mouna/projet_memoire/data/cpic_guidelines/PA166104933.json']"
+CYP1A2,caffeine,aucun_fichier_trouve,,
+ABCG2,sulfasalazine,aucun_fichier_trouve,,
+CYP3A4,carbamazepine,aucun_fichier_trouve,,
+CYP3A4,lumefantrine,aucun_fichier_trouve,,
+CYP2C19,valproic acid,aucun_fichier_trouve,,
+CYP3A5,docetaxel,aucun_fichier_trouve,,
+ABCG2,methotrexate,aucun_fichier_trouve,,
+CYP3A4,warfarin,aucun_fichier_trouve,,
+CYP1A2,warfarin,aucun_fichier_trouve,,
+CYP2C9,irbesartan,aucun_fichier_trouve,,
+CYP2C19,mirvetuximab soravtansine,aucun_fichier_trouve,,
+CYP3A4,odevixibat,aucun_fichier_trouve,,
+CYP2C19,warfarin,aucun_fichier_trouve,,
+CYP2C19,propranolol hydrochloride,aucun_fichier_trouve,,
+CYP2C19,venlafaxine,aucun_fichier_trouve,,
+CYP2C19,fluoxetine,aucun_fichier_trouve,,
+CYP2C19,clozapine,aucun_fichier_trouve,,
+CYP2C19,tacrolimus,aucun_fichier_trouve,,
+CYP2C19,doxorubicin,aucun_fichier_trouve,,
+CYP2D6,quetiapine,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166182854.json
+CYP2D6,rosuvastatin,aucun_fichier_trouve,,
+CYP2D6,carbamazepine,aucun_fichier_trouve,,
+CYP2D6,hydroxychloroquine,aucun_fichier_trouve,,
+CYP2C9,tolbutamide,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104986.json
+CYP2C9,glyburide,texte_ambigu,,/home/mouna/projet_memoire/data/cpic_guidelines/PA166104953.json
+CYP2B6,varenicline,aucun_fichier_trouve,,

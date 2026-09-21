@@ -14,3 +14,9 @@ data/*.vcf.gz
 model_v2/results/rf_pgx_31genes.pkl
 model_v2/results/rf_pgx_multigene.pkl
 model_v2/results/rf_pgx_final.pkl
+app/*.tbi
+app/app.py.AVANT*
+app/templates/*.AVANT*
+cpic_guidelines.zip
+resultat_corrige.txt
+model_v2/scripts/resultat_corrige.txt
