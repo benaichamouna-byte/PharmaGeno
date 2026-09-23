@@ -20,3 +20,4 @@ app/templates/*.AVANT*
 cpic_guidelines.zip
 resultat_corrige.txt
 model_v2/scripts/resultat_corrige.txt
+model_v2/results/rf_pgx_v2.pkl
