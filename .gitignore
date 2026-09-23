@@ -21,3 +21,10 @@ cpic_guidelines.zip
 resultat_corrige.txt
 model_v2/scripts/resultat_corrige.txt
 model_v2/results/rf_pgx_v2.pkl
+*.tbi
+extract_genes_log.txt
+train_*.txt
+model_v2/data/*.AVANT_*
+model_v2/data/lignes_invalides_a_supprimer.csv
+data/VKORC1_rs9923231.vcf
+data/1kgp_CYP2C19_phenotypes.tsv
