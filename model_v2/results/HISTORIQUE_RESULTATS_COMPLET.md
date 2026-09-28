@@ -144,8 +144,13 @@ Protocole : StratifiedKFold 5 folds, **scaler fit intra-fold uniquement**, mini-
 | 1 | 0.954 | 0.902 |
 | 2 | 0.945 | 0.923 |
 | 3 | 0.959 | 0.918 |
-| 4 | 0.951 | en cours |
-| 5 | — | — |
+| 4 | 0.951 | 0.872 |
+| 5 | 0.962 | 0.879 |
+| **Moyenne** | **0.954 ± 0.006** | **0.899 ± 0.020** |
+
+**RESULTAT : DL v2 = 0.899 depasse v1 = 0.875, avec protocole plus rigoureux (scaler intra-fold, sans data leakage).**
+**Scripts : train_dl_kfold_only.py (folds 1-3), train_kfold_folds45.py (fold 4 + XGB fold 5), train_dl_fold5.py (DL fold 5)**
+**Note : folds 4-5 relances separement apres interruptions (OOM / fermeture terminal). Memes seeds, memes folds.**
 
 Script : train_dl_kfold_only.py
 RF exclu (contrainte RAM 7.6GB)
@@ -162,7 +167,7 @@ RF exclu (contrainte RAM 7.6GB)
 | v1 dataset corrigé | 39 259 lignes | 0.876 ± 0.013 | K-Fold, scaler global (leakage) |
 | v2 échec | 145 303 lignes | 0.736 | Train only, encodage non-CPIC |
 | v2 CPIC (train only) | 46 371 lignes | 0.861 | Train only (leakage) |
-| **v2 CPIC K-Fold** | 46 371 lignes | **0.902-0.923** | K-Fold, scaler intra-fold ✅ |
+| **v2 CPIC K-Fold** | 46 371 lignes | **0.899 ± 0.020** | K-Fold 5 folds, scaler intra-fold ✅ |
 
 ---
 
