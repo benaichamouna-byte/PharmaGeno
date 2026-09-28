@@ -48,6 +48,18 @@ BIOLOGIQUE = {
     'measles vaccines', 'rubella vaccines',
 }
 
+METABOLITE_SANS_FP = {
+    '2-hydroxyatorvastatin lactone', '4-hydroxyatorvastatin lactone',
+    '4-dehydrocilostazol', '6-orthoquinone', 'alpha-hydroxy sertraline ketone',
+    'cotinine', 'desethyl hydroxychloroquine', 'erythro-4-hydroxyhydrobupropion',
+    'threo-4-hydroxyhydrobupropion', 'losartan e-3174', 'n-desalkylquetiapine',
+    'n-didesmethyltramadol', 'pentoxifylline m5', 'r-eddp', 's-eddp',
+    'r-methylphenobarbital', 'r-norfluoxetine', 's-norfluoxetine',
+    'raloxifene-4\u2032-glucuronide', 'thioguanosine diphosphate',
+}
+
+FORME_GALENIQUE = {'pantoprazole sodium granules'}
+
 PETITE_MOLECULE_MANQUANTE = {
     'ambrisentan', 'amoxicillin', 'bepridil', 'caffeine', 'cilostazol',
     'donepezil', 'ivermectin', 'levonorgestrel', 'nelfinavir', 'oxaliplatin',
@@ -97,6 +109,10 @@ for d in drugs:
         statut, note = 'BIOLOGIQUE', 'Proteine / anticorps / polymere / vaccin — hors perimetre Morgan FP'
     elif '/' in d or ' and ' in d:
         statut, note = 'COMBINAISON', 'Association de plusieurs principes actifs'
+    elif d in METABOLITE_SANS_FP:
+        statut, note = 'METABOLITE_SANS_FP', 'Metabolite — structure disponible mais absente du referentiel PubChem interroge'
+    elif d in FORME_GALENIQUE:
+        statut, note = 'FORME_GALENIQUE', 'Forme galenique du principe actif deja present dans le dataset'
     elif d in PETITE_MOLECULE_MANQUANTE:
         statut, note = 'PETITE_MOLECULE_MANQUANTE', 'Structure PubChem disponible — FP recuperable (perspective)'
     elif a_fp:
@@ -141,7 +157,8 @@ r += ['', '## Interpretation', '',
       '1. **Classes therapeutiques** — un nom de classe ne correspond a aucune structure chimique unique. Exclusion methodologiquement justifiee.',
       '2. **Biologiques** — les Morgan Fingerprints encodent les sous-structures de petites molecules. Proteines, anticorps et polymeres sont hors du perimetre de la methode.',
       '3. **Erreurs de parsing** — fragments produits par des virgules non protegees dans le fichier source (ex. 1,3,7-trimethylxanthine scinde en trois entrees). Defaut technique identifie, corrigeable.',
-      '4. **Petites molecules manquantes** — seule categorie representant une lacune reelle. Structures disponibles sur PubChem, fingerprints recuperables.',
+      '4. **Metabolites** — produits de transformation d une molecule mere (ex. cotinine pour la nicotine, losartan E-3174 pour le losartan). Leur structure existe mais n a pas ete recuperee lors de la construction du referentiel. Molecules chimiquement distinctes de leur molecule mere : elles ne doivent pas etre fusionnees avec elle.',
+      '5. **Petites molecules manquantes** — lacune reelle. Structures disponibles sur PubChem, fingerprints recuperables.',
       '', '## Formes salines', '',
       f'{len(groupes_salins)} groupes ou une molecule apparait sous forme libre et sous forme saline ',
       '(ex. warfarin / warfarin sodium). Ces paires designent le meme principe actif et pourraient etre fusionnees.',

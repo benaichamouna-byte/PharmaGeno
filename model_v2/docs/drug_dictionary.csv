@@ -42,27 +42,27 @@ serdexmethylphenidate and dexmethylphenidate,3,False,,COMBINAISON,False,,Associa
 sitagliptin and metformin hydrochloride,1,False,,COMBINAISON,False,,Association de plusieurs principes actifs
 sulfamethoxazole / trimethoprim,1,False,,COMBINAISON,False,,Association de plusieurs principes actifs
 tegafur / gimeracil / oteracil,4,False,,COMBINAISON,False,,Association de plusieurs principes actifs
-2-hydroxyatorvastatin lactone,3,False,,NON_CLASSE,True,,A investiguer
-4-dehydrocilostazol,2,False,,NON_CLASSE,False,,A investiguer
-4-hydroxyatorvastatin lactone,3,False,,NON_CLASSE,True,,A investiguer
-6-orthoquinone,2,False,,NON_CLASSE,True,,A investiguer
-alpha-hydroxy sertraline ketone,3,False,,NON_CLASSE,True,,A investiguer
-cotinine,3,False,,NON_CLASSE,False,,A investiguer
-desethyl hydroxychloroquine,2,False,,NON_CLASSE,True,,A investiguer
-erythro-4-hydroxyhydrobupropion,2,False,,NON_CLASSE,True,,A investiguer
-losartan e-3174,2,False,,NON_CLASSE,False,,A investiguer
-n-desalkylquetiapine,3,False,,NON_CLASSE,True,,A investiguer
-n-didesmethyltramadol,2,False,,NON_CLASSE,True,,A investiguer
-pantoprazole sodium granules,6,False,,NON_CLASSE,False,pantoprazole sodium,A investiguer
-pentoxifylline m5,2,False,,NON_CLASSE,False,,A investiguer
-r-eddp,2,False,,NON_CLASSE,True,,A investiguer
-r-methylphenobarbital,2,False,,NON_CLASSE,True,,A investiguer
-r-norfluoxetine,2,False,,NON_CLASSE,True,,A investiguer
-raloxifene-4′-glucuronide,2,False,,NON_CLASSE,False,,A investiguer
-s-eddp,3,False,,NON_CLASSE,True,,A investiguer
-s-norfluoxetine,2,False,,NON_CLASSE,True,,A investiguer
-thioguanosine diphosphate,2,False,,NON_CLASSE,True,,A investiguer
-threo-4-hydroxyhydrobupropion,2,False,,NON_CLASSE,True,,A investiguer
+pantoprazole sodium granules,6,False,,FORME_GALENIQUE,False,pantoprazole sodium,Forme galenique du principe actif deja present dans le dataset
+2-hydroxyatorvastatin lactone,3,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+4-dehydrocilostazol,2,False,,METABOLITE_SANS_FP,False,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+4-hydroxyatorvastatin lactone,3,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+6-orthoquinone,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+alpha-hydroxy sertraline ketone,3,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+cotinine,3,False,,METABOLITE_SANS_FP,False,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+desethyl hydroxychloroquine,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+erythro-4-hydroxyhydrobupropion,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+losartan e-3174,2,False,,METABOLITE_SANS_FP,False,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+n-desalkylquetiapine,3,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+n-didesmethyltramadol,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+pentoxifylline m5,2,False,,METABOLITE_SANS_FP,False,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+r-eddp,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+r-methylphenobarbital,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+r-norfluoxetine,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+raloxifene-4′-glucuronide,2,False,,METABOLITE_SANS_FP,False,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+s-eddp,3,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+s-norfluoxetine,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+thioguanosine diphosphate,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
+threo-4-hydroxyhydrobupropion,2,False,,METABOLITE_SANS_FP,True,,Metabolite — structure disponible mais absente du referentiel PubChem interroge
 1-hydroxymidazolam,2,True,518,OK_FINGERPRINT,False,,
 2-hydroxyatorvastatin,3,True,518,OK_FINGERPRINT,True,,
 3-aminoisobutyrate,2,True,518,OK_FINGERPRINT,False,,
