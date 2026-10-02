@@ -64,7 +64,14 @@
       ],
       "critical_errors": 749,
       "n_eviter": 13120,
-      "critical_error_rate": 0.0571
+      "critical_error_rate": 0.0571,
+      "critical_errors_strict": 1007,
+      "critical_error_rate_strict": 0.0768,
+      "cer_detail": {
+        "ADAPTER_DOSE": 258,
+        "STANDARD": 126,
+        "SURVEILLER": 623
+      }
     },
     "XGBoost": {
       "macro_f1": 0.9541,
@@ -124,7 +131,14 @@
       ],
       "critical_errors": 480,
       "n_eviter": 13120,
-      "critical_error_rate": 0.0366
+      "critical_error_rate": 0.0366,
+      "critical_errors_strict": 571,
+      "critical_error_rate_strict": 0.0435,
+      "cer_detail": {
+        "ADAPTER_DOSE": 91,
+        "STANDARD": 34,
+        "SURVEILLER": 446
+      }
     },
     "RandomForest": {
       "macro_f1": 0.9319,
@@ -184,7 +198,14 @@
       ],
       "critical_errors": 554,
       "n_eviter": 13120,
-      "critical_error_rate": 0.0422
+      "critical_error_rate": 0.0422,
+      "critical_errors_strict": 944,
+      "critical_error_rate_strict": 0.072,
+      "cer_detail": {
+        "ADAPTER_DOSE": 390,
+        "STANDARD": 31,
+        "SURVEILLER": 523
+      }
     }
   }
 }
