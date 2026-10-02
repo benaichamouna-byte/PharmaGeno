@@ -30,3 +30,4 @@ data/VKORC1_rs9923231.vcf
 data/1kgp_CYP2C19_phenotypes.tsv
 mem_pid500.log
 metriques_log.txt
+groupkfold_log.txt
