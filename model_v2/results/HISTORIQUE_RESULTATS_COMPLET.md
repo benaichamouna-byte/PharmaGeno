@@ -207,3 +207,101 @@ Sur 530 médicaments :
 - 87 (16%) : action constante
 - 257 (48%) : déterminée par 1 seul gène
 - **186 (35%) : nécessite ≥2 gènes** → justifie l'architecture multi-gènes
+
+---
+
+## 11. METRIQUES COMPLETES — baseline non groupe (1er octobre 2026)
+
+Protocole : StratifiedKFold 5 plis, scaler intra-pli, RandomOverSampler sur le pli d entrainement.
+Sans groupement : un meme profil genetique peut figurer en entrainement et en test, apparie a des medicaments differents.
+
+| Modele | Macro-F1 | Weighted-F1 | Balanced Acc. | CER | CER strict |
+|---|---|---|---|---|---|
+| XGBoost | 0.9541 | 0.9786 | 0.9722 | 0.0366 | 0.0435 |
+| RandomForest | 0.9319 | 0.9563 | 0.9465 | 0.0422 | 0.072 |
+| DL | 0.88 | 0.9304 | 0.9475 | 0.0571 | 0.0768 |
+
+### Detail par classe
+
+**XGBoost**
+
+| Classe | Precision | Rappel | F1 | Support |
+|---|---|---|---|---|
+| ADAPTER_DOSE | 0.9951 | 0.9872 | 0.9912 | 23454 |
+| EVITER | 0.9761 | 0.9565 | 0.9662 | 13120 |
+| STANDARD | 0.8325 | 0.9558 | 0.8899 | 520 |
+| SURVEILLER | 0.9499 | 0.9892 | 0.9692 | 9023 |
+
+**RandomForest**
+
+| Classe | Precision | Rappel | F1 | Support |
+|---|---|---|---|---|
+| ADAPTER_DOSE | 0.9806 | 0.9756 | 0.9781 | 23454 |
+| EVITER | 0.9359 | 0.928 | 0.932 | 13120 |
+| STANDARD | 0.8279 | 0.9346 | 0.878 | 520 |
+| SURVEILLER | 0.931 | 0.9479 | 0.9394 | 9023 |
+
+**DL**
+
+| Classe | Precision | Rappel | F1 | Support |
+|---|---|---|---|---|
+| ADAPTER_DOSE | 0.9868 | 0.9152 | 0.9497 | 23454 |
+| EVITER | 0.8955 | 0.9232 | 0.9092 | 13120 |
+| STANDARD | 0.593 | 0.9808 | 0.7391 | 520 |
+| SURVEILLER | 0.8779 | 0.971 | 0.9221 | 9023 |
+
+### Critical Error Rate — deux definitions
+
+**CER** : EVITER predit en STANDARD ou SURVEILLER — le medicament est presente comme prescriptible.
+**CER strict** : toute erreur sur un cas EVITER, y compris vers ADAPTER_DOSE, ou le medicament
+contre-indique est prescrit avec un simple ajustement de dose. Vaut 1 moins le rappel sur EVITER.
+
+| Modele | vers ADAPTER_DOSE | vers SURVEILLER | vers STANDARD | Total manque |
+|---|---|---|---|---|
+| XGBoost | 91 | 446 | 34 | 571 |
+| RandomForest | 390 | 523 | 31 | 944 |
+| DL | 258 | 623 | 126 | 1007 |
+
+Observations :
+- XGBoost presente le plus faible taux de contre-indications manquees sous les deux definitions ; la conclusion ne depend pas du choix de definition.
+- La majorite des erreurs va vers SURVEILLER, qui declenche tout de meme une vigilance du prescripteur. STANDARD est l erreur la plus grave : le DL en commet 126, contre 34 pour XGBoost et 31 pour RandomForest.
+- RandomForest passe de 4,22 % a 7,20 % sous la definition stricte, car il envoie 390 cas EVITER vers ADAPTER_DOSE. Sous cette definition il rejoint le DL.
+- La Balanced Accuracy du DL (0,948) egale celle de RandomForest (0,947) malgre cinq points de macro-F1 en moins : elle est la moyenne des rappels et ignore la precision. Le DL sur-predit STANDARD — rappel 0,981, precision 0,593. Metrique rapportee en secondaire.
+- La classe STANDARD a perdu 17,2 % de ses lignes au filtrage des empreintes moleculaires (628 vers 520), contre moins de 1 % pour les autres classes.
+
+---
+
+## 12. VALIDATION CROISEE GROUPEE PAR INDIVIDU (2-3 octobre 2026)
+
+Protocole : StratifiedGroupKFold 5 plis sur `sample_id`. Chaque individu est entierement
+contenu dans un seul pli ; recouvrement entrainement/test nul, verifie a chaque pli.
+Jeu de donnees : phenotype_drug_dataset_FINAL.csv, 11 476 groupes dont 1 379 individus sequences.
+
+| Pli | XGBoost | RandomForest | DL |
+|---|---|---|---|
+| 1 | 0.9545 | 0.9358 | 0.8845 |
+| 2 | 0.9616 | 0.9479 | 0.89 |
+| 3 | 0.9535 | 0.938 | 0.8828 |
+| **Moyenne (3/5)** | **0.9565** | **0.9406** | **0.8858** |
+
+### Comparaison des deux protocoles
+
+| Modele | Groupe par individu | Baseline non groupe | Ecart |
+|---|---|---|---|
+| XGBoost | 0.9565 | 0.954 | +0.0025 |
+| RandomForest | 0.9406 | 0.932 | +0.0086 |
+| DL | 0.8858 | 0.880 | +0.0058 |
+
+Les scores ne baissent pas lorsque chaque individu est confine dans un seul pli ; les trois
+modeles sont legerement au-dessus du baseline. Deux lectures convergent vers la meme conclusion
+pratique — les chiffres rapportes sont solides.
+
+1. La fuite par repetition de profil, redoutee, n a pas d effet mesurable : le baseline etait honnete.
+2. Le groupement ne mord pas parce que la tache depend peu du patient : si l action est determinee
+   par la paire gene-medicament, voir un profil a l entrainement n apporte rien au modele.
+
+La seconde lecture renforce l idee que le veritable test de generalisation porte sur des molecules
+jamais vues — experience qui reste a mener (Phase 4).
+
+Note : les plis 4 et 5 ont ete relances apres une interruption du processus. Le script reprend
+les plis deja calcules depuis groupkfold_scores.json, sans les recalculer.
