@@ -3,5 +3,25 @@
     "XGBoost": 0.9545,
     "RandomForest": 0.9358,
     "DL": 0.8845
+  },
+  "2": {
+    "XGBoost": 0.9616,
+    "RandomForest": 0.9479,
+    "DL": 0.89
+  },
+  "3": {
+    "XGBoost": 0.9535,
+    "RandomForest": 0.938,
+    "DL": 0.8828
+  },
+  "4": {
+    "XGBoost": 0.9585,
+    "RandomForest": 0.932,
+    "DL": 0.8783
+  },
+  "5": {
+    "XGBoost": 0.9489,
+    "RandomForest": 0.9391,
+    "DL": 0.8878
   }
 }

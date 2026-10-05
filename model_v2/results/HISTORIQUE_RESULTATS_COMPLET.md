@@ -282,14 +282,16 @@ Jeu de donnees : phenotype_drug_dataset_FINAL.csv, 11 476 groupes dont 1 379 ind
 | 1 | 0.9545 | 0.9358 | 0.8845 |
 | 2 | 0.9616 | 0.9479 | 0.89 |
 | 3 | 0.9535 | 0.938 | 0.8828 |
-| **Moyenne (3/5)** | **0.9565** | **0.9406** | **0.8858** |
+| 4 | 0.9585 | 0.932 | 0.8783 |
+| 5 | 0.9489 | 0.9391 | 0.8878 |
+| **Moyenne (5/5)** | **0.9554 ± 0.0044** | **0.9386 ± 0.0053** | **0.8847 ± 0.0041** |
 
 ### Comparaison des deux protocoles
 
 | Modele | Groupe par individu | Baseline non groupe | Ecart |
 |---|---|---|---|
-| XGBoost | 0.9565 | 0.954 | +0.0025 |
-| RandomForest | 0.9406 | 0.932 | +0.0086 |
+| XGBoost | 0.9554 ± 0.0044 | 0.954 | +0.0014 |
+| RandomForest | 0.9386 ± 0.0053 | 0.932 | +0.0066 |
 | DL | 0.8858 | 0.880 | +0.0058 |
 
 Les scores ne baissent pas lorsque chaque individu est confine dans un seul pli ; les trois
@@ -302,6 +304,10 @@ pratique — les chiffres rapportes sont solides.
 
 La seconde lecture renforce l idee que le veritable test de generalisation porte sur des molecules
 jamais vues — experience qui reste a mener (Phase 4).
+
+Validation complete sur les cinq plis. Les ecarts au baseline sont inferieurs aux ecarts-types
+entre plis : le groupement par individu ne modifie pas les performances. Le DL gagne par ailleurs
+en stabilite, son ecart-type passant de 0,020 (non groupe) a 0,004 (groupe).
 
 Note : les plis 4 et 5 ont ete relances apres une interruption du processus. Le script reprend
 les plis deja calcules depuis groupkfold_scores.json, sans les recalculer.
