@@ -163,3 +163,116 @@ def predict_for_patient(variants_list, extra_drugs=None):
         })
     results.sort(key=lambda x: ['EVITER','ADAPTER_DOSE','SURVEILLER','STANDARD'].index(x['action']) if x['action'] in ['EVITER','ADAPTER_DOSE','SURVEILLER','STANDARD'] else 4)
     return results, mutated_genes, gene_vector
+
+
+def predict_all_drugs(gene_vector, mutated_genes=None, inclure_standard=False):
+    """Soumet au modele TOUS les medicaments disposant d une empreinte moleculaire.
+
+    Contrairement a predict_for_patient, aucune liste manuelle ne filtre les medicaments
+    en amont : le reseau recoit le profil genetique complet du patient et l empreinte de
+    chaque molecule du referentiel, puis decide. La liste GENE_DRUGS ne sert plus qu a
+    nommer le gene responsable dans l affichage.
+
+    gene_vector       profil du patient sur les 31 genes
+    mutated_genes     genes non normaux, pour l affichage du gene responsable
+    inclure_standard  si False, les medicaments predits STANDARD sont omis
+    """
+    if mutated_genes is None:
+        mutated_genes = [_GENES[i] for i, v in enumerate(gene_vector) if v < 1.0]
+
+    gv = np.asarray(gene_vector, dtype=float)
+    noms = list(_drug_fp.keys())
+
+    # Prediction par lots : une seule passe sur l ensemble du referentiel
+    FP = _scaler.transform(np.vstack([_drug_fp[d] for d in noms]))
+    G  = np.tile(gv, (len(noms), 1))
+    X  = np.hstack([G, FP]).astype(float)
+
+    with torch.no_grad():
+        probs_dl = torch.softmax(_dl(torch.FloatTensor(X)), dim=1).numpy()
+    probs_rf = _rf.predict_proba(X)
+    ens = (2.0 * probs_dl + 1.0 * probs_rf) / 3.0
+
+    resultats = []
+    for i, drug in enumerate(noms):
+        y = int(np.argmax(ens[i]))
+        action = _le.inverse_transform([y])[0]
+        if action == 'STANDARD' and not inclure_standard:
+            continue
+
+        responsables = [g for g in mutated_genes if drug in GENE_DRUGS.get(g, [])]
+        if responsables:
+            gene_val = gene_vector[_GENES.index(responsables[0])]
+            gene_aff = ', '.join(dict.fromkeys(responsables))
+            documente = True
+        else:
+            gene_val = min(gene_vector) if mutated_genes else 1.0
+            gene_aff = 'Profil genetique global'
+            documente = False
+
+        resultats.append({
+            'drug':              drug,
+            'action':            action,
+            'confidence':        round(float(ens[i][y]) * 100, 1),
+            'icon':              ACTION_ICONS.get(action, ''),
+            'label':             ACTION_LABELS.get(action, action),
+            'color':             ACTION_COLORS.get(action, 'secondary'),
+            'known_drug':        True,
+            'association_documentee': documente,
+            'responsible_gene':  gene_aff,
+            'phenotype_explain': PHENO_EXPLAIN.get(gene_val, 'Metabolisme inconnu'),
+            'probabilities':     {_le.classes_[k]: round(float(ens[i][k]) * 100, 1)
+                                  for k in range(len(_le.classes_))},
+        })
+
+    ordre = ['EVITER', 'ADAPTER_DOSE', 'SURVEILLER', 'STANDARD']
+    resultats.sort(key=lambda x: (ordre.index(x['action']) if x['action'] in ordre else 4,
+                                  not x['association_documentee'],
+                                  -x['confidence']))
+    return resultats
+
+
+def predict_drug_for_patient(gene_vector, drug, mutated_genes=None):
+    """Predit l action pour UN medicament, en utilisant le profil genetique complet.
+
+    Remplace predict_action, qui ne renseignait qu un seul gene et declarait les trente
+    autres normaux, effacant ainsi le profil reel du patient.
+    """
+    dl = str(drug).lower().strip()
+    if dl not in _drug_fp:
+        return {'action': 'SURVEILLER', 'confidence': 0.0,
+                'icon': ACTION_ICONS['SURVEILLER'], 'label': ACTION_LABELS['SURVEILLER'],
+                'color': ACTION_COLORS['SURVEILLER'], 'known_drug': False,
+                'message': "Ce medicament n est pas dans le referentiel moleculaire."}
+
+    if mutated_genes is None:
+        mutated_genes = [_GENES[i] for i, v in enumerate(gene_vector) if v < 1.0]
+
+    fp = _scaler.transform(_drug_fp[dl].reshape(1, -1))
+    X  = np.hstack([np.asarray(gene_vector, dtype=float), fp[0]]).reshape(1, -1).astype(float)
+
+    with torch.no_grad():
+        probs_dl = torch.softmax(_dl(torch.FloatTensor(X)), dim=1).numpy()[0]
+    probs_rf = _rf.predict_proba(X)[0]
+    ens = (2.0 * probs_dl + 1.0 * probs_rf) / 3.0
+    y = int(np.argmax(ens))
+    action = _le.inverse_transform([y])[0]
+
+    responsables = [g for g in mutated_genes if dl in GENE_DRUGS.get(g, [])]
+    gene_val = gene_vector[_GENES.index(responsables[0])] if responsables else (
+        min(gene_vector) if mutated_genes else 1.0)
+
+    return {
+        'drug':              dl,
+        'action':            action,
+        'confidence':        round(float(ens[y]) * 100, 1),
+        'icon':              ACTION_ICONS.get(action, ''),
+        'label':             ACTION_LABELS.get(action, action),
+        'color':             ACTION_COLORS.get(action, 'secondary'),
+        'known_drug':        True,
+        'association_documentee': bool(responsables),
+        'responsible_gene':  ', '.join(dict.fromkeys(responsables)) if responsables else 'Profil genetique global',
+        'phenotype_explain': PHENO_EXPLAIN.get(gene_val, 'Metabolisme inconnu'),
+        'probabilities':     {_le.classes_[k]: round(float(ens[k]) * 100, 1)
+                              for k in range(len(_le.classes_))},
+    }
