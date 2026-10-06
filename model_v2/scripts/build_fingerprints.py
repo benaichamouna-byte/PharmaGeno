@@ -43,24 +43,37 @@ medicaments = sorted(anciens.keys())
 print(f'Medicaments a traiter : {len(medicaments)}')
 print(f'Descripteurs physico-chimiques disponibles : {len(props)}\n')
 
-def interroger_pubchem(nom):
-    """Recupere le SMILES canonique et le CID depuis PubChem."""
+def interroger_pubchem(nom, tentatives=4):
+    """Recupere le SMILES et le CID depuis PubChem.
+
+    L API PUG REST a change de nomenclature : la propriete autrefois nommee
+    CanonicalSMILES est desormais renvoyee sous la cle ConnectivitySMILES.
+    Le script accepte donc plusieurs noms de cle, et repart de la premiere
+    valeur trouvee dans la reponse.
+
+    Le serveur renvoie regulierement un code 503 PUGREST.ServerBusy lorsque
+    les requetes s enchainent trop vite. Chaque echec est donc suivi d une
+    attente croissante avant nouvelle tentative.
+    """
     q = urllib.parse.quote(nom)
-    for champ in ('CanonicalSMILES', 'IsomericSMILES'):
-        url = f'{PUBCHEM}/compound/name/{q}/property/{champ}/JSON'
+    url = f'{PUBCHEM}/compound/name/{q}/property/ConnectivitySMILES,IsomericSMILES,CanonicalSMILES/JSON'
+
+    for essai in range(tentatives):
         try:
-            with urllib.request.urlopen(url, timeout=20) as r:
+            with urllib.request.urlopen(url, timeout=25) as r:
                 d = json.loads(r.read().decode())
-            p = d['PropertyTable']['Properties'][0]
-            s = p.get(champ)
-            if s:
-                return s, p.get('CID')
+            props_rep = d['PropertyTable']['Properties'][0]
+            for cle in ('IsomericSMILES', 'ConnectivitySMILES', 'CanonicalSMILES', 'SMILES'):
+                s = props_rep.get(cle)
+                if s:
+                    return s, props_rep.get('CID')
+            return None, None
         except urllib.error.HTTPError as e:
             if e.code == 404:
                 return None, None
+            time.sleep(2.0 * (essai + 1))
         except Exception:
-            pass
-        time.sleep(0.3)
+            time.sleep(2.0 * (essai + 1))
     return None, None
 
 gen = rdFingerprintGenerator.GetMorganGenerator(radius=RAYON, fpSize=N_BITS)
@@ -73,7 +86,7 @@ for i, nom in enumerate(medicaments, 1):
         print(f'  {i}/{len(medicaments)} — {len(empreintes)} empreintes obtenues', flush=True)
 
     smi, cid = interroger_pubchem(nom)
-    time.sleep(0.25)
+    time.sleep(0.45)
 
     if not smi:
         echecs_pubchem.append(nom)
