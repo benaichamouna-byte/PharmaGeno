@@ -311,3 +311,177 @@ en stabilite, son ecart-type passant de 0,020 (non groupe) a 0,004 (groupe).
 
 Note : les plis 4 et 5 ont ete relances apres une interruption du processus. Le script reprend
 les plis deja calcules depuis groupkfold_scores.json, sans les recalculer.
+
+---
+
+## 13. AUDIT DES EMPREINTES MOLECULAIRES (5 octobre 2026)
+
+### Constat
+
+La branche medicament du reseau recoit un vecteur de 518 variables, decrit comme
+une empreinte de Morgan de 512 bits complete par six descripteurs physico-chimiques.
+Une verification de ce vecteur a etabli que **les 512 bits structuraux etaient nuls
+pour les 437 medicaments du referentiel**, sans exception.
+
+| Indicateur | Valeur mesuree |
+|---|---|
+| Empreintes entierement nulles | 437 / 437 |
+| Bits actifs en moyenne | 0,0 |
+| Bits jamais actifs sur le corpus | 512 / 512 |
+
+Les six descripteurs finaux — masse moleculaire, coefficient de partage, donneurs et
+accepteurs de liaisons hydrogene, liaisons rotatives, surface polaire — etaient en
+revanche corrects. **Les modeles entraines jusque-la ne disposaient donc que de six
+variables moleculaires globales, et d aucune information de structure.**
+
+### Portee
+
+Avec six descripteurs globaux, deux molecules de masse et de polarite voisines sont
+indiscernables, quelle que soit leur structure. Cela explique en partie les predictions
+aberrantes observees lors du test de prediction elargie : pour un patient ne presentant
+que deux genes mutes, 326 medicaments sur 437 etaient classes en contre-indication, et
+la neomycine — sans lien documente avec CYP2C19 ou CYP2B6 — obtenait 94,6 % de confiance,
+soit davantage que les medicaments reellement concernes.
+
+Le script ayant produit ces fichiers n avait pas ete conserve et les structures SMILES
+n avaient pas ete sauvegardees, ce qui a empeche un diagnostic plus precoce.
+
+### Correction
+
+| Parametre | Valeur |
+|---|---|
+| Source des structures | PubChem PUG REST, interrogation par nom |
+| Bibliotheque | RDKit 2026.03.6 |
+| Type d empreinte | Morgan circulaire, rayon 2 |
+| Longueur | 512 bits |
+| Descripteurs conserves | MW, LogP, HBD, HBA, RB, TPSA |
+
+Une difficulte technique a ete rencontree : l API PubChem a change de nomenclature et
+renvoie desormais la structure sous la cle `ConnectivitySMILES` et non `CanonicalSMILES`.
+Le premier passage a donc echoue silencieusement. Apres correction et ralentissement de
+la cadence de requetes — le serveur renvoyant des codes 503 en cas de saturation —
+402 empreintes ont ete obtenues, puis les 35 restantes lors d un second passage.
+
+| Indicateur | Avant | Apres |
+|---|---|---|
+| Empreintes calculees | 0 | 437 / 437 |
+| Empreintes nulles | 437 | 0 |
+| Bits actifs en moyenne | 0,0 | 42,9 / 512 |
+| Bits jamais actifs | 512 | 0 |
+
+Les structures SMILES sont desormais conservees dans `drug_smiles.csv` avec leur
+identifiant PubChem, ce qui rend le calcul reproductible et verifiable.
+
+**Scripts** : `build_fingerprints.py`, `completer_fingerprints.py`
+**Fichiers** : `drug_fingerprints_v2.pkl`, `drug_smiles.csv`, `fingerprints_report.md`
+
+---
+
+## 14. CORPUS ENRICHI DE PAIRES SANS ASSOCIATION (5 octobre 2026)
+
+### Constat
+
+Le modele ne savait pas repondre qu un medicament ne concerne pas un patient donne.
+La cause en est l absence de contre-exemples : la classe STANDARD ne representait que
+520 lignes sur 46 117, soit 1,1 % du corpus. Le reseau n avait jamais vu de paire
+profil-medicament sans association, et tranchait donc systematiquement dans les classes
+qu il connaissait.
+
+Cette carence se lisait directement dans les metriques : precision de 0,593 sur STANDARD
+pour un rappel de 0,981 — le reseau identifiait presque tous les vrais STANDARD, mais
+quatre de ses predictions STANDARD sur dix etaient fausses.
+
+### Methode
+
+Les associations gene-medicament documentees ont ete extraites des 217 fichiers
+d annotation de guidelines presents dans le projet, soit **386 paires couvrant 41 genes
+et 208 medicaments**.
+
+| Source | Paires |
+|---|---|
+| CPIC | 315 |
+| DPWG | 111 |
+| RNPGx | 31 |
+| CPNDS | 13 |
+| AIOM, SEFF/SEOM, ACR, CFF, AusNZ, AHA | 11 |
+
+Pour chaque profil genetique du corpus, les genes non normaux sont identifies, puis les
+medicaments associes a l un d eux sont exclus. Parmi les medicaments restants, trois sont
+tires au hasard et etiquetes STANDARD. Le tirage est reproductible — graine fixee a 42.
+
+Ces paires ne sont pas inventees : un patient porteur d une seule deficience CYP2C19 ne
+requiert aucun ajustement pour la metformine. C est un fait clinique etabli que le corpus
+initial ne contenait simplement pas.
+
+### Resultat
+
+| Action | Avant | Apres | Part finale |
+|---|---|---|---|
+| ADAPTER_DOSE | 23 454 | 23 454 | 41,1 % |
+| EVITER | 13 120 | 13 120 | 23,0 % |
+| SURVEILLER | 9 023 | 9 023 | 15,8 % |
+| STANDARD | 520 | 11 456 | 20,1 % |
+
+Corpus : 46 117 vers **57 053 lignes**.
+SHA256 : `3c04b5cc66edcf3c2e43d63c2695466514e457303ca0b956d7c6b694ef5ddfb4`
+
+### Limite
+
+L absence d association repose sur les guidelines disponibles. Une paire non documentee
+n est pas necessairement sans interaction : elle peut relever d une association non
+encore etablie. Le modele apprend donc l etat des connaissances publiees, non une verite
+biologique.
+
+**Script** : `build_dataset_negatifs.py` · **Fichiers** : `phenotype_drug_dataset_NEG.csv`, `negatifs_report.md`
+
+---
+
+## 15. ENTRAINEMENT SUR CORPUS ENRICHI (6 octobre 2026)
+
+Protocole identique a la validation groupee : StratifiedGroupKFold sur `sample_id`,
+cinq plis, scaler ajuste intra-pli, reechantillonnage sur le pli d entrainement seul.
+La representation moleculaire reste celle des empreintes nulles — ce calcul constitue
+donc la mesure de reference **sans information structurale**.
+
+| Pli | XGBoost | RandomForest | DL |
+|---|---|---|---|
+| 1 | 0.977 | 0.9607 | 0.9103 |
+| 2 | 0.9772 | 0.956 | 0.9044 |
+| **Moyenne (2/5)** | **0.9771** | **0.9584** | **0.9073** |
+
+### Effet sur la classe STANDARD
+
+| Modele | Precision STANDARD | Rappel EVITER | CER strict |
+|---|---|---|---|
+| XGBoost | 0.9853 | 0.9578 | 0.0421 |
+| RandomForest | 0.9766 | 0.9376 | 0.0624 |
+| DL | 0.9896 | 0.8935 | 0.1065 |
+
+### Lecture
+
+**La correction a produit l effet recherche.** La precision du reseau sur STANDARD
+passe de 0,593 a pres de 0,99 : il sait desormais reconnaitre l absence de lien entre
+un profil et un medicament. Son macro-F1 progresse de 0,885 a environ 0,91.
+
+**Mais un effet secondaire apparait.** Le rappel sur EVITER diminue et le taux
+d erreur critique strict augmente, passant d environ 7,7 % a 10,5 % pour le reseau.
+Ayant appris a dire "pas de lien", le modele le dit un peu trop souvent — et manque
+davantage de contre-indications.
+
+C est le compromis classique entre les deux types d erreur. Il concerne les trois
+modeles, mais le reseau en souffre le plus. Pour un outil d aide a la prescription,
+c est une degradation a considerer : une contre-indication manquee pese plus lourd
+qu une prudence excessive.
+
+**Script** : `train_neg.py` · **Modeles** : `*_neg`
+
+---
+
+## 16. PROCHAINE ETAPE — entrainement avec empreintes reparees
+
+Le script `train_final.py` reprend exactement le protocole precedent, en substituant
+`drug_fingerprints_v2.pkl` aux empreintes nulles. Tout le reste est identique : meme
+corpus, memes plis, memes hyperparametres.
+
+**L ecart entre les deux entrainements mesurera donc exclusivement l apport de la
+representation structurale du medicament — question de recherche RQ4.**
