@@ -31,3 +31,8 @@ data/1kgp_CYP2C19_phenotypes.tsv
 mem_pid500.log
 metriques_log.txt
 groupkfold_log.txt
+completer_log.txt
+fingerprints_log.txt
+groupkfold_log2.txt
+train_neg_log.txt
+scripts/*.AVANT_*
