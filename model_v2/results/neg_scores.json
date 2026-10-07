@@ -50,5 +50,83 @@
       "eviter_recall": 0.8971,
       "cer_strict": 0.1029
     }
+  },
+  "3": {
+    "XGBoost": {
+      "macro_f1": 0.9747,
+      "standard_precision": 0.9816,
+      "standard_recall": 0.9764,
+      "eviter_precision": 0.9751,
+      "eviter_recall": 0.9562,
+      "cer_strict": 0.0438
+    },
+    "RandomForest": {
+      "macro_f1": 0.9609,
+      "standard_precision": 0.9713,
+      "standard_recall": 0.9607,
+      "eviter_precision": 0.9511,
+      "eviter_recall": 0.9478,
+      "cer_strict": 0.0522
+    },
+    "DL": {
+      "macro_f1": 0.9155,
+      "standard_precision": 0.9917,
+      "standard_recall": 0.9419,
+      "eviter_precision": 0.8503,
+      "eviter_recall": 0.9245,
+      "cer_strict": 0.0755
+    }
+  },
+  "4": {
+    "XGBoost": {
+      "macro_f1": 0.9762,
+      "standard_precision": 0.9834,
+      "standard_recall": 0.9817,
+      "eviter_precision": 0.9747,
+      "eviter_recall": 0.9535,
+      "cer_strict": 0.0465
+    },
+    "RandomForest": {
+      "macro_f1": 0.9535,
+      "standard_precision": 0.9775,
+      "standard_recall": 0.9481,
+      "eviter_precision": 0.9414,
+      "eviter_recall": 0.9314,
+      "cer_strict": 0.0686
+    },
+    "DL": {
+      "macro_f1": 0.9054,
+      "standard_precision": 0.9908,
+      "standard_recall": 0.9376,
+      "eviter_precision": 0.8504,
+      "eviter_recall": 0.8777,
+      "cer_strict": 0.1223
+    }
+  },
+  "5": {
+    "XGBoost": {
+      "macro_f1": 0.9766,
+      "standard_precision": 0.9895,
+      "standard_recall": 0.983,
+      "eviter_precision": 0.9717,
+      "eviter_recall": 0.9539,
+      "cer_strict": 0.0461
+    },
+    "RandomForest": {
+      "macro_f1": 0.9561,
+      "standard_precision": 0.9785,
+      "standard_recall": 0.9542,
+      "eviter_precision": 0.9375,
+      "eviter_recall": 0.9367,
+      "cer_strict": 0.0633
+    },
+    "DL": {
+      "macro_f1": 0.9108,
+      "standard_precision": 0.9884,
+      "standard_recall": 0.931,
+      "eviter_precision": 0.8462,
+      "eviter_recall": 0.9017,
+      "cer_strict": 0.0983
+    }
   }
 }
