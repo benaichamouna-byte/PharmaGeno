@@ -36,3 +36,6 @@ fingerprints_log.txt
 groupkfold_log2.txt
 train_neg_log.txt
 scripts/*.AVANT_*
+
+# tous les modeles RandomForest (jusqu a 1 Go)
+model_v2/results/rf_*.pkl
