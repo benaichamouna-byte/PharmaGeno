@@ -53,7 +53,7 @@ warnings.filterwarnings('ignore')
 #         l information moleculaire).
 # 'fp'  : modeles de train_fp.py, memes donnees, empreintes reparees.
 #         A activer des que fp_scores.json et les modeles *_fp existent.
-VERSION = 'neg'
+VERSION = 'fp'
 
 RESULTS_DIR = '/home/mouna/projet_memoire/model_v2/results'
 DATA_DIR    = '/home/mouna/projet_memoire/model_v2/data'
