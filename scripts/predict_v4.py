@@ -46,6 +46,7 @@ ACQUIS DE predict_v3, CONSERVES
    - Aucun filtre manuel n ecarte de medicament : le modele voit tout le referentiel.
 """
 
+import json
 import os
 import pickle
 import warnings
@@ -80,9 +81,28 @@ CONFIGS = {
 
 # Taux d erreur critique mesures en validation croisee groupee, 5 plis, recouvrement 0.
 # CER strict = proportion de contre-indications non detectees = 1 - rappel(EVITER).
-# Source : model_v2/results/neg_scores.json
-CER_MESURE = {'DL': 10.18, 'XGBoost': 4.41, 'RandomForest': 6.18}
-F1_MESURE  = {'DL': 0.9093, 'XGBoost': 0.9763, 'RandomForest': 0.9574}
+#
+# Ces valeurs etaient ecrites en dur avec les chiffres du corpus 'neg' alors que
+# VERSION valait 'fp' : l application annoncait 10,18 % de CER pour le reseau
+# profond au lieu de 5,65 %. Elles sont desormais lues dans le fichier de scores
+# correspondant a VERSION.
+SCORES = {'neg': 'neg_scores.json', 'fp': 'fp_scores.json'}
+
+def _performances(version):
+    """Moyennes sur les plis, lues dans le fichier de scores de cette version."""
+    with open(os.path.join(RESULTS_DIR, SCORES[version])) as f:
+        plis = json.load(f)
+    f1, cer = {}, {}
+    for modele in ('DL', 'XGBoost', 'RandomForest'):
+        vf = [plis[k][modele]['macro_f1']   for k in plis if modele in plis[k]]
+        vc = [plis[k][modele]['cer_strict'] for k in plis if modele in plis[k]]
+        if not vf:
+            continue
+        f1[modele]  = round(float(np.mean(vf)), 4)
+        cer[modele] = round(float(np.mean(vc)) * 100, 2)
+    return f1, cer
+
+F1_MESURE, CER_MESURE = _performances(VERSION)
 
 # ---------------------------------------------------------------------------
 # Libelles
