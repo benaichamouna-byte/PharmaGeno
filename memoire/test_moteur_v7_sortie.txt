@@ -1,0 +1,19 @@
+OK     gènes / classes / médicaments identiques aux données
+OK     DL film_id : mêmes lignes finales que le protocole
+OK     DL film_id : probabilités reproduites | écart max 4.92e-07 | même classe sur 100.0000% des 7620 lignes
+OK     XGBoost id : mêmes lignes finales que le protocole
+OK     XGBoost id : probabilités reproduites | écart max 0.00e+00 | même classe sur 100.0000% des 7620 lignes
+OK     DL : remplacer par 1.0 les gènes non requis ne change pas la classe | classe identique sur 99.8688% des lignes (information, non bloquant)
+        XGBoost : classe identique sur 99.9606%
+OK     profil tout à 1.0 : 76 médicaments traités
+OK     TPMT non lu -> azathioprine non déterminée (jamais 1.0)
+OK     TPMT non lu -> un médicament qui n'en dépend pas reste calculé | STANDARD
+OK     TPMT = 0 (jamais vu) -> azathioprine hors domaine, pas de prédiction
+OK     phénytoïne : alerte HLA-B (gène de règle hors modèle)
+OK     médicament inconnu -> pas de recommandation
+Couverture sur 1379 profils réels x 76 médicaments = 104804 couples :
+        ok                         76013  (72.5 %)
+        hors_domaine               28776  (27.5 %)
+        desaccord                     15  (0.0 %)
+
+RÉSULTAT : TOUS LES CONTRÔLES PASSENT
