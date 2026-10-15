@@ -1,0 +1,40 @@
+Médicaments : 76 | dont étiquette variable dans le corpus : 44
+Médicaments dont au moins une valeur de règle n'est jamais vue dans le corpus : 36
+  atorvastatin     classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : SLCO1B1=2.0 -> STANDARD
+  azathioprine     classes vues ['ADAPTER_DOSE'] | règles non vues : NUDT15=0.0 -> EVITER; TPMT=0.0 -> EVITER
+  capecitabine     classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : DPYD=0.0 -> EVITER
+  celecoxib        classes vues ['STANDARD'] | règles non vues : CYP2C9=0.0 -> ADAPTER_DOSE
+  citalopram       classes vues ['STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER; CYP2C19=1.5 -> STANDARD; CYP2C19=2.0 -> EVITER
+  clomipramine     classes vues ['ADAPTER_DOSE', 'EVITER', 'STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER
+  desipramine      classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : CYP2D6=0.0 -> EVITER; CYP2D6=2.0 -> EVITER
+  doxepin          classes vues ['ADAPTER_DOSE', 'EVITER', 'STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER
+  eliglustat       classes vues ['EVITER'] | règles non vues : CYP2D6=0.0 -> EVITER
+  escitalopram     classes vues ['STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER; CYP2C19=1.5 -> STANDARD; CYP2C19=2.0 -> EVITER
+  flecainide       classes vues ['ADAPTER_DOSE', 'SURVEILLER'] | règles non vues : CYP2D6=0.5 -> ADAPTER_DOSE
+  fluorouracil     classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : DPYD=0.0 -> EVITER
+  flurbiprofen     classes vues ['STANDARD'] | règles non vues : CYP2C9=0.0 -> ADAPTER_DOSE
+  fluvastatin      classes vues ['EVITER', 'STANDARD'] | règles non vues : SLCO1B1=2.0 -> STANDARD
+  fluvoxamine      classes vues ['STANDARD'] | règles non vues : CYP2D6=0.0 -> ADAPTER_DOSE
+  haloperidol      classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : CYP2D6=2.0 -> STANDARD
+  ibuprofen        classes vues ['STANDARD'] | règles non vues : CYP2C9=0.0 -> ADAPTER_DOSE
+  imipramine       classes vues ['ADAPTER_DOSE', 'EVITER', 'STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER
+  lornoxicam       classes vues ['STANDARD'] | règles non vues : CYP2C9=0.0 -> ADAPTER_DOSE
+  lovastatin       classes vues ['EVITER', 'STANDARD'] | règles non vues : SLCO1B1=0.5 -> EVITER; SLCO1B1=2.0 -> STANDARD
+  mavacamten       classes vues ['STANDARD'] | règles non vues : CYP2C19=0.0 -> ADAPTER_DOSE
+  meloxicam        classes vues ['EVITER', 'STANDARD'] | règles non vues : CYP2C9=0.5 -> ADAPTER_DOSE
+  mercaptopurine   classes vues ['ADAPTER_DOSE'] | règles non vues : NUDT15=0.0 -> EVITER; TPMT=0.0 -> EVITER
+  metoprolol       classes vues ['STANDARD'] | règles non vues : CYP2D6=2.0 -> ADAPTER_DOSE
+  nortriptyline    classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : CYP2D6=0.0 -> EVITER; CYP2D6=2.0 -> EVITER
+  piroxicam        classes vues ['EVITER', 'STANDARD'] | règles non vues : CYP2C9=0.5 -> EVITER
+  pitavastatin     classes vues ['STANDARD'] | règles non vues : SLCO1B1=0.0 -> ADAPTER_DOSE; SLCO1B1=0.5 -> ADAPTER_DOSE; SLCO1B1=2.0 -> STANDARD
+  pravastatin      classes vues ['STANDARD'] | règles non vues : SLCO1B1=0.0 -> ADAPTER_DOSE; SLCO1B1=2.0 -> STANDARD
+  risperidone      classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : CYP2D6=2.0 -> EVITER
+  simvastatin      classes vues ['EVITER', 'STANDARD'] | règles non vues : SLCO1B1=2.0 -> STANDARD
+  tegafur          classes vues ['ADAPTER_DOSE', 'STANDARD'] | règles non vues : DPYD=0.0 -> EVITER
+  tenoxicam        classes vues ['EVITER', 'STANDARD'] | règles non vues : CYP2C9=0.5 -> EVITER
+  thioguanine      classes vues ['ADAPTER_DOSE'] | règles non vues : NUDT15=0.0 -> EVITER; TPMT=0.0 -> EVITER
+  trimipramine     classes vues ['ADAPTER_DOSE', 'EVITER', 'STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER
+  voriconazole     classes vues ['EVITER', 'STANDARD'] | règles non vues : CYP2C19=0.0 -> EVITER
+  vortioxetine     classes vues ['STANDARD'] | règles non vues : CYP2D6=0.0 -> ADAPTER_DOSE; CYP2D6=2.0 -> EVITER
+Gènes de règle hors modèle : {'phenytoin': ['HLA-B']}
+Écrit : /mnt/user-data/outputs/domaine_v7.json
