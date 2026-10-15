@@ -1,0 +1,46 @@
+Phenotype,gene,0.0,0.5,1.0,1.5,2.0
+Decreased Function,ABCG2,0,266.0,53,,
+Normal Function,ABCG2,0,0.0,1024,,
+Poor Function,ABCG2,30,0.0,6,,
+Indeterminate,CYP2B6,0,2.0,16,1.0,0.0
+Intermediate Metabolizer,CYP2B6,1,519.0,3,0.0,0.0
+Normal Metabolizer,CYP2B6,0,2.0,490,80.0,3.0
+Poor Metabolizer,CYP2B6,218,1.0,0,0.0,0.0
+Rapid Metabolizer,CYP2B6,0,0.0,7,32.0,1.0
+Ultrarapid Metabolizer,CYP2B6,0,0.0,0,0.0,3.0
+Indeterminate,CYP2C19,0,0.0,18,0.0,0.0
+Intermediate Metabolizer,CYP2C19,0,434.0,0,0.0,0.0
+Likely Intermediate Metabolizer,CYP2C19,0,10.0,0,0.0,0.0
+Normal Metabolizer,CYP2C19,0,1.0,462,0.0,0.0
+Poor Metabolizer,CYP2C19,122,1.0,0,0.0,0.0
+Rapid Metabolizer,CYP2C19,0,0.0,0,267.0,0.0
+Ultrarapid Metabolizer,CYP2C19,0,0.0,0,0.0,64.0
+Indeterminate,CYP2C9,0,0.0,1,,
+Intermediate Metabolizer,CYP2C9,0,364.0,0,,
+Normal Metabolizer,CYP2C9,0,2.0,982,,
+Poor Metabolizer,CYP2C9,29,1.0,0,,
+Intermediate Metabolizer,CYP3A5,0,477.0,1,,
+Normal Metabolizer,CYP3A5,0,0.0,228,,
+Poor Metabolizer,CYP3A5,673,0.0,0,,
+Favorable Response,F5,0,,1350,,
+Unfavorable Response,F5,29,,0,,
+Indeterminate,NUDT15,0,0.0,25,,
+Intermediate Metabolizer,NUDT15,0,143.0,0,,
+Normal Metabolizer,NUDT15,0,0.0,1194,,
+Poor Metabolizer,NUDT15,13,1.0,0,,
+Possible Intermediate Metabolizer,NUDT15,0,3.0,0,,
+Decreased Function,SLCO1B1,0,250.0,32,0.0,
+Increased Function,SLCO1B1,0,0.0,8,14.0,
+Indeterminate,SLCO1B1,0,0.0,79,1.0,
+Normal Function,SLCO1B1,0,0.0,776,185.0,
+Poor Function,SLCO1B1,28,0.0,0,0.0,
+Possible Decreased Function,SLCO1B1,0,1.0,5,0.0,
+Indeterminate,TPMT,0,0.0,30,,
+Intermediate Metabolizer,TPMT,0,157.0,0,,
+Normal Metabolizer,TPMT,0,0.0,1179,,
+Poor Metabolizer,TPMT,8,0.0,0,,
+Possible Intermediate Metabolizer,TPMT,0,5.0,0,,
+Indeterminate,UGT1A1,1,0.0,0,,
+Intermediate Metabolizer,UGT1A1,0,587.0,0,,
+Normal Metabolizer,UGT1A1,0,0.0,514,,
+Poor Metabolizer,UGT1A1,277,0.0,0,,
