@@ -1,0 +1,74 @@
+{
+ "modele": "rf_id",
+ "ensemble": "final (jamais utilisé avant)",
+ "n_lignes": 7620,
+ "n_familles": 138,
+ "arbres": 500,
+ "metriques": {
+  "f1_macro": 0.9968,
+  "f1_hors_surveiller": 0.9958,
+  "exactitude": 0.9976,
+  "CER_strict": 0.0087,
+  "precision_EVITER": 1.0,
+  "logloss": 0.0261,
+  "ECE": 0.018,
+  "rappel_ADAPTER_DOSE": 0.9872,
+  "rappel_EVITER": 0.9913,
+  "rappel_STANDARD": 1.0,
+  "rappel_SURVEILLER": 1.0
+ },
+ "ic95_f1_macro": [
+  0.9945,
+  0.9988
+ ],
+ "ic95_CER_strict": [
+  0.0016,
+  0.0183
+ ],
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "matrice_confusion_lignes_vraies_colonnes_predites": [
+  [
+   1003,
+   0,
+   13,
+   0
+  ],
+  [
+   1,
+   567,
+   4,
+   0
+  ],
+  [
+   0,
+   0,
+   5969,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   63
+  ]
+ ],
+ "genes": [
+  "ABCG2",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A5",
+  "DPYD",
+  "F5",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1"
+ ]
+}

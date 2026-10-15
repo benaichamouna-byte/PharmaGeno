@@ -1,0 +1,5 @@
+Entraînement : 61562 lignes | validation interne : 6846 | ensemble final : 7620 lignes, 138 familles
+RÉSULTAT FINAL dl_film_id : F1 macro = 0.9993 (IC95 [0.9985, 0.9999]) | CER strict = 0.0000 (IC95 [0.0, 0.0]) | ECE = 0.0099 | 38s
+RÉSULTAT FINAL xgb_id : F1 macro = 0.9996 (IC95 [0.9987, 1.0]) | CER strict = 0.0000 (IC95 [0.0, 0.0]) | ECE = 0.0019 | 16s
+RÉSULTAT FINAL rf_id : F1 macro = 0.9968 (IC95 [0.9945, 0.9988]) | CER strict = 0.0087 (IC95 [0.0016, 0.0183]) | ECE = 0.0180 | 20s
+Fichiers écrits dans resultats_final_v7

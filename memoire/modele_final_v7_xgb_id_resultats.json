@@ -1,0 +1,74 @@
+{
+ "modele": "xgb_id",
+ "ensemble": "final (jamais utilisé avant)",
+ "n_lignes": 7620,
+ "n_familles": 138,
+ "arbres": 1000,
+ "metriques": {
+  "f1_macro": 0.9996,
+  "f1_hors_surveiller": 0.9994,
+  "exactitude": 0.9996,
+  "CER_strict": 0.0,
+  "precision_EVITER": 1.0,
+  "logloss": 0.0021,
+  "ECE": 0.0019,
+  "rappel_ADAPTER_DOSE": 0.997,
+  "rappel_EVITER": 1.0,
+  "rappel_STANDARD": 1.0,
+  "rappel_SURVEILLER": 1.0
+ },
+ "ic95_f1_macro": [
+  0.9987,
+  1.0
+ ],
+ "ic95_CER_strict": [
+  0.0,
+  0.0
+ ],
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "matrice_confusion_lignes_vraies_colonnes_predites": [
+  [
+   1013,
+   0,
+   3,
+   0
+  ],
+  [
+   0,
+   572,
+   0,
+   0
+  ],
+  [
+   0,
+   0,
+   5969,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   63
+  ]
+ ],
+ "genes": [
+  "ABCG2",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A5",
+  "DPYD",
+  "F5",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1"
+ ]
+}
