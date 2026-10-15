@@ -1,0 +1,3 @@
+Médicaments évalués : 44 (étiquette constante, non évalués : 32)
+Masse d'attention sur les gènes de règle : moyenne 0.325 (uniforme : 0.098) | rapport moyen 3.35, médian 3.12
+Rapport > 1 : 44/44 | gène de plus forte attention = gène de règle : 44/44
