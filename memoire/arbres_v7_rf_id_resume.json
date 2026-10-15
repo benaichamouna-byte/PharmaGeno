@@ -1,0 +1,35 @@
+{
+ "modele": "rf",
+ "representation": "id",
+ "protocole": "ensemble final 10% des familles à part ; StratifiedGroupKFold(5) groupes=family_id graine=42",
+ "n_lignes_cv": 68408,
+ "n_lignes_final_non_utilisees": 7620,
+ "genes": [
+  "ABCG2",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A5",
+  "DPYD",
+  "F5",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1"
+ ],
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.9976,
+ "f1_macro_std": 0.0010564090116995336,
+ "f1_hors_surveiller_moy": 0.99678,
+ "CER_strict_moy": 0.006520000000000001,
+ "CER_strict_std": 0.0028742999147618542,
+ "ECE_moy": 0.021759999999999995,
+ "precision_EVITER_moy": 1.0,
+ "f1_macro_oof": 0.9975917632080256
+}

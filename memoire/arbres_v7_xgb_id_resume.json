@@ -1,0 +1,35 @@
+{
+ "modele": "xgb",
+ "representation": "id",
+ "protocole": "ensemble final 10% des familles à part ; StratifiedGroupKFold(5) groupes=family_id graine=42",
+ "n_lignes_cv": 68408,
+ "n_lignes_final_non_utilisees": 7620,
+ "genes": [
+  "ABCG2",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A5",
+  "DPYD",
+  "F5",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1"
+ ],
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.9998799999999999,
+ "f1_macro_std": 0.0001939071942966318,
+ "f1_hors_surveiller_moy": 0.9998400000000001,
+ "CER_strict_moy": 0.0002,
+ "CER_strict_std": 0.0004,
+ "ECE_moy": 0.0016200000000000003,
+ "precision_EVITER_moy": 1.0,
+ "f1_macro_oof": 0.9998760572144295
+}

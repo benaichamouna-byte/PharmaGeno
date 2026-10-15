@@ -1,0 +1,11 @@
+Variante : film_id | gènes (12) : ['ABCG2', 'CYP2B6', 'CYP2C19', 'CYP2C9', 'CYP2D6', 'CYP3A5', 'DPYD', 'F5', 'NUDT15', 'SLCO1B1', 'TPMT', 'UGT1A1']
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [10059, 5634, 59706, 629]
+Ensemble final mis de côté : 7620 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 13683, 'epoques': 20, 'f1_val_interne': 1.0, 'f1_macro': 0.9983, 'f1_hors_surveiller': 0.9977, 'exactitude': 0.9985, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0136, 'ECE': 0.0101, 'rappel_ADAPTER_DOSE': 0.9956, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 0.9988, 'rappel_SURVEILLER': 1.0} | 46s
+{'pli': 2, 'n_test': 13680, 'epoques': 20, 'f1_val_interne': 0.9992, 'f1_macro': 0.9998, 'f1_hors_surveiller': 0.9997, 'exactitude': 0.9998, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0108, 'ECE': 0.0103, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 0.9997, 'rappel_SURVEILLER': 1.0} | 84s
+{'pli': 3, 'n_test': 13704, 'epoques': 19, 'f1_val_interne': 1.0, 'f1_macro': 0.9998, 'f1_hors_surveiller': 0.9997, 'exactitude': 0.9999, 'CER_strict': 0.001, 'precision_EVITER': 1.0, 'logloss': 0.0101, 'ECE': 0.0095, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.999, 'rappel_STANDARD': 0.9999, 'rappel_SURVEILLER': 1.0} | 112s
+{'pli': 4, 'n_test': 13678, 'epoques': 23, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0057, 'ECE': 0.0056, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 150s
+{'pli': 5, 'n_test': 13663, 'epoques': 22, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0091, 'ECE': 0.0088, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 189s
+
+RÉSULTAT DL (film_id) : F1 macro = 0.9996 +/- 0.0006 | CER strict = 0.0002 | ECE = 0.0089
+Fichiers écrits dans resultats_dl_v7b

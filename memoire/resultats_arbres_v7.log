@@ -1,0 +1,44 @@
+Modèle : xgb | représentation : fp | variables : 530 (12 gènes + 518 colonnes médicament)
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [10059, 5634, 59706, 629]
+Ensemble final mis de côté : 7620 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 13683, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 0.9998, 'f1_hors_surveiller': 0.9997, 'exactitude': 0.9998, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0006, 'ECE': 0.0004, 'rappel_ADAPTER_DOSE': 0.9983, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 43s
+{'pli': 2, 'n_test': 13680, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0002, 'ECE': 0.0002, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 84s
+{'pli': 3, 'n_test': 13704, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 0.9999, 'f1_hors_surveiller': 0.9998, 'exactitude': 0.9999, 'CER_strict': 0.001, 'precision_EVITER': 1.0, 'logloss': 0.0007, 'ECE': 0.0001, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.999, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 128s
+{'pli': 4, 'n_test': 13678, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0002, 'ECE': 0.0002, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 165s
+{'pli': 5, 'n_test': 13663, 'arbres': 930, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0002, 'ECE': 0.0002, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 198s
+
+RÉSULTAT XGB (fp) : F1 macro = 0.9999 +/- 0.0001 | CER strict = 0.0002 | ECE = 0.0002
+Fichiers écrits dans resultats_arbres_v7
+Modèle : xgb | représentation : id | variables : 88 (12 gènes + 76 colonnes médicament)
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [10059, 5634, 59706, 629]
+Ensemble final mis de côté : 7620 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 13683, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 0.9995, 'f1_hors_surveiller': 0.9994, 'exactitude': 0.9996, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0034, 'ECE': 0.0015, 'rappel_ADAPTER_DOSE': 0.9967, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 9s
+{'pli': 2, 'n_test': 13680, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0016, 'ECE': 0.0016, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 18s
+{'pli': 3, 'n_test': 13704, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 0.9999, 'f1_hors_surveiller': 0.9998, 'exactitude': 0.9999, 'CER_strict': 0.001, 'precision_EVITER': 1.0, 'logloss': 0.0024, 'ECE': 0.0017, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.999, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 27s
+{'pli': 4, 'n_test': 13678, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0017, 'ECE': 0.0017, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 34s
+{'pli': 5, 'n_test': 13663, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0016, 'ECE': 0.0016, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 43s
+
+RÉSULTAT XGB (id) : F1 macro = 0.9999 +/- 0.0002 | CER strict = 0.0002 | ECE = 0.0016
+Fichiers écrits dans resultats_arbres_v7
+Modèle : rf | représentation : fp | variables : 530 (12 gènes + 518 colonnes médicament)
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [10059, 5634, 59706, 629]
+Ensemble final mis de côté : 7620 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 13683, 'arbres': 500, 'f1_val_interne': 0.9962, 'f1_macro': 0.9937, 'f1_hors_surveiller': 0.993, 'exactitude': 0.9973, 'CER_strict': 0.0326, 'precision_EVITER': 1.0, 'logloss': 0.0401, 'ECE': 0.0326, 'rappel_ADAPTER_DOSE': 0.9978, 'rappel_EVITER': 0.9674, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 17s
+{'pli': 2, 'n_test': 13680, 'arbres': 500, 'f1_val_interne': 0.9953, 'f1_macro': 0.9973, 'f1_hors_surveiller': 0.9964, 'exactitude': 0.9985, 'CER_strict': 0.0168, 'precision_EVITER': 1.0, 'logloss': 0.0395, 'ECE': 0.0338, 'rappel_ADAPTER_DOSE': 0.9983, 'rappel_EVITER': 0.9832, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 34s
+{'pli': 3, 'n_test': 13704, 'arbres': 500, 'f1_val_interne': 0.9957, 'f1_macro': 0.9942, 'f1_hors_surveiller': 0.9923, 'exactitude': 0.9967, 'CER_strict': 0.0334, 'precision_EVITER': 1.0, 'logloss': 0.0416, 'ECE': 0.0332, 'rappel_ADAPTER_DOSE': 0.994, 'rappel_EVITER': 0.9666, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 50s
+{'pli': 4, 'n_test': 13678, 'arbres': 500, 'f1_val_interne': 0.9898, 'f1_macro': 0.9949, 'f1_hors_surveiller': 0.9932, 'exactitude': 0.9974, 'CER_strict': 0.0319, 'precision_EVITER': 1.0, 'logloss': 0.0405, 'ECE': 0.0333, 'rappel_ADAPTER_DOSE': 0.9978, 'rappel_EVITER': 0.9681, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 67s
+{'pli': 5, 'n_test': 13663, 'arbres': 500, 'f1_val_interne': 0.9959, 'f1_macro': 0.9944, 'f1_hors_surveiller': 0.9925, 'exactitude': 0.9971, 'CER_strict': 0.0374, 'precision_EVITER': 1.0, 'logloss': 0.0389, 'ECE': 0.0315, 'rappel_ADAPTER_DOSE': 0.9989, 'rappel_EVITER': 0.9626, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 85s
+
+RÉSULTAT RF (fp) : F1 macro = 0.9949 +/- 0.0013 | CER strict = 0.0304 | ECE = 0.0329
+Fichiers écrits dans resultats_arbres_v7
+Modèle : rf | représentation : id | variables : 88 (12 gènes + 76 colonnes médicament)
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [10059, 5634, 59706, 629]
+Ensemble final mis de côté : 7620 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 13683, 'arbres': 500, 'f1_val_interne': 0.9971, 'f1_macro': 0.9967, 'f1_hors_surveiller': 0.9956, 'exactitude': 0.9976, 'CER_strict': 0.0079, 'precision_EVITER': 1.0, 'logloss': 0.0275, 'ECE': 0.0208, 'rappel_ADAPTER_DOSE': 0.9862, 'rappel_EVITER': 0.9921, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 13s
+{'pli': 2, 'n_test': 13680, 'arbres': 500, 'f1_val_interne': 0.9991, 'f1_macro': 0.9987, 'f1_hors_surveiller': 0.9983, 'exactitude': 0.999, 'CER_strict': 0.002, 'precision_EVITER': 1.0, 'logloss': 0.0256, 'ECE': 0.0222, 'rappel_ADAPTER_DOSE': 0.9933, 'rappel_EVITER': 0.998, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 27s
+{'pli': 3, 'n_test': 13704, 'arbres': 500, 'f1_val_interne': 0.9976, 'f1_macro': 0.996, 'f1_hors_surveiller': 0.9946, 'exactitude': 0.997, 'CER_strict': 0.0108, 'precision_EVITER': 1.0, 'logloss': 0.0283, 'ECE': 0.0216, 'rappel_ADAPTER_DOSE': 0.9836, 'rappel_EVITER': 0.9892, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 39s
+{'pli': 4, 'n_test': 13678, 'arbres': 500, 'f1_val_interne': 0.9978, 'f1_macro': 0.9982, 'f1_hors_surveiller': 0.9975, 'exactitude': 0.9987, 'CER_strict': 0.006, 'precision_EVITER': 1.0, 'logloss': 0.0269, 'ECE': 0.0227, 'rappel_ADAPTER_DOSE': 0.9934, 'rappel_EVITER': 0.994, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 52s
+{'pli': 5, 'n_test': 13663, 'arbres': 500, 'f1_val_interne': 0.9975, 'f1_macro': 0.9984, 'f1_hors_surveiller': 0.9979, 'exactitude': 0.999, 'CER_strict': 0.0059, 'precision_EVITER': 1.0, 'logloss': 0.0247, 'ECE': 0.0215, 'rappel_ADAPTER_DOSE': 0.9956, 'rappel_EVITER': 0.9941, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 66s
+
+RÉSULTAT RF (id) : F1 macro = 0.9976 +/- 0.0011 | CER strict = 0.0065 | ECE = 0.0218
+Fichiers écrits dans resultats_arbres_v7
