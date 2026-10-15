@@ -1,0 +1,50 @@
+{
+ "modele": "DL",
+ "variante": "film",
+ "protocole": "ensemble final 10% des familles à part ; StratifiedGroupKFold(5) groupes=family_id graine=42",
+ "n_lignes_cv": 68408,
+ "n_lignes_final_non_utilisees": 7620,
+ "genes": [
+  "ABCG2",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A5",
+  "DPYD",
+  "F5",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1"
+ ],
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.9949200000000001,
+ "f1_macro_std": 0.0004354308211415366,
+ "f1_hors_surveiller_moy": 0.99322,
+ "CER_strict_moy": 0.00178,
+ "CER_strict_std": 0.0023650792798551173,
+ "ECE_moy": 0.014100000000000001,
+ "precision_EVITER_moy": 0.9812199999999999,
+ "f1_macro_oof": 0.9948910659984582,
+ "f1_macro_oof_confiance_haute": 0.9948821312256018,
+ "attention_moyenne_par_gene": {
+  "ABCG2": 0.061400000005960464,
+  "CYP2B6": 0.07729999721050262,
+  "CYP2C19": 0.1445000022649765,
+  "CYP2C9": 0.07580000162124634,
+  "CYP2D6": 0.13940000534057617,
+  "CYP3A5": 0.08479999750852585,
+  "DPYD": 0.07050000131130219,
+  "F5": 0.060100000351667404,
+  "NUDT15": 0.06469999998807907,
+  "SLCO1B1": 0.07450000196695328,
+  "TPMT": 0.062300000339746475,
+  "UGT1A1": 0.08470000326633453
+ }
+}
