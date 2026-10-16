@@ -1,0 +1,1127 @@
+medicament,dans_corpus_530,etiquete_corpus_v3,dans_liste_152_article,guideline_sources,guideline_n,guideline_dosage,guideline_alternative,guideline_test,guideline_genes,regles_v2_n,regles_v2_sources,regles_ambigues,regles_conditionnelles,regles_codage_a_valider,regles_conflit,etiquette_reglementaire_pharmgkb,etiquette_genes,table_fda_2025_genes_des_50,pharmgkb_niveau_variant_meilleur,pharmgkb_annotations_cliniques_genes,genes_des_50_impliques,genes_hors_12_entree,palier_provisoire
+"""1",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+"""caffeine""",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+"""interferon alfa-2a",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+"""ribavirin""",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+1-hydroxymidazolam,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+2-hydroxyatorvastatin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+2-hydroxyatorvastatin lactone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+3,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+"3,4-methylenedioxymethamphetamine",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,CYP2B6;CYP2C19,,,P4_autre
+3-aminoisobutyrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+3-hydroxycotinine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+3-hydroxycotinine glucuronide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-dehydrocilostazol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-hydroxyatorvastatin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-hydroxyatorvastatin lactone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-hydroxybupropion,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-hydroxycyclophosphamide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-hydroxytamoxifen,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+4-methylenedioxymethamphetamine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+6-orthoquinone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+7-carboxycannabidiol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+"7-dimethylxanthine""",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+7-hydroxycannabidiol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+abacavir,True,False,True,CPIC;DPWG;RNPGx,3,False,True,True,HLA-B,0,,0,0,0,0,True,HLA-B,HLA-B,1A,HLA-B;LST1;LTA;LTB,HLA-B,HLA-B,P1c_guideline_sans_regle_extraite
+abemaciclib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+abiraterone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DSE;TSPYL1,,,P4_autre
+abrocitinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP2C9,CYP2C19,,,CYP2C19;CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+"ace inhibitors, plain",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,ABO;AGTR1;KCNMA1;MME;NOS3;PTGER3;XPNPEP2,,,P4_autre
+acebutolol,True,True,False,CPIC,2,False,False,False,ADRA2C;ADRB1;CYP2D6;GRK4;GRK5,1,CPIC,0,0,0,0,False,,,,,CYP2D6,,P1_etiquete_corpus_v3
+aceclofenac,True,False,False,CPIC,1,False,False,False,CYP2C9,0,,0,0,0,0,False,,,,,CYP2C9,,P1c_guideline_sans_regle_extraite
+acenocoumarol,True,False,True,DPWG;RNPGx,3,True,True,True,CYP2C9;VKORC1,0,,0,0,0,0,True,CYP2C9,,1A,CALU,CYP2C9;VKORC1,VKORC1,P1c_guideline_sans_regle_extraite
+acetaldehyde,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADH1A;ADH1B;ALDH2;PGM1,,,P4_autre
+acetaminophen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;G6PD,CYP2D6,3,HLA-DQB1;NPIPB8;OPRM1;PLA2G4A;PLCG1;SULT1A3;SULT1A4;TNFRSF11A;TRPV1;UGT1A9;UGT2B15,CYP2D6;G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+acetaminophen / caffeine / dihydrocodeine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+acetaminophen / codeine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;G6PD,,,,CYP2D6;G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+acetaminophen / tramadol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+acetazolamide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+acetylcholine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACE,,,P4_autre
+acetylisoniazid,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+acyclovir,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+adagrasib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+adalimumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ATG16L1;ATG5;ATP5F1E;CRP;HFE;HLA-E;IL6;KLRD1;TF,,,P4_autre
+aducanumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,APOE,,,,APOE,APOE,P2_etiquette_reglementaire_gene_des_50
+afatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+alectinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+alemtuzumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CXCL12,,,P4_autre
+alendronate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MVK;VDR,,,P4_autre
+alfentanil,False,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,,,,P1c_guideline_sans_regle_extraite
+alglucosidase alfa,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,HLA-B,,,HLA-B,HLA-B,P2_etiquette_reglementaire_gene_des_50
+alirocumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+aliskiren,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+alkylating agents,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EGFR;ESR1,,,P4_autre
+allopurinol,True,False,True,ACR;CPIC;DPWG;RNPGx,5,True,True,True,ABCG2;HLA-B,1,CPIC,0,0,1,0,True,HLA-B,HLA-B,1A,AOX1;CYCSP5;GREM2;MYT1L;NOTCH4;NTNG1;PKD2;POU5F1;PSORS1C3;TBL1XR1;TRIB2;UGT1A1;UGT1A10;UGT1A3;UGT1A4;UGT1A5;UGT1A6;UGT1A7;UGT1A8;UGT1A9,ABCG2;HLA-B,HLA-B,P1b_guideline_regles_exclues
+alpelisib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+alpha-hydroxy sertraline ketone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+alpha-hydroxymetoprolol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+alprazolam,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A4,,,P4_autre
+amantadine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC22A1,,,P4_autre
+ambrisentan,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+amifampridine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,NAT2,NAT2,,,NAT2,NAT2,P2_etiquette_reglementaire_gene_des_50
+amifampridine phosphate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,NAT2,NAT2,,,NAT2,NAT2,P2_etiquette_reglementaire_gene_des_50
+amikacin,True,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,True,MT-RNR1,MT-RNR1,1A,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+aminoglycoside antibacterials,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1A,MT-ND1,,,P3_association_niveau_2B_ou_mieux
+aminosalicylic acid,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+amiodarone,True,False,False,DPWG,1,False,False,False,CYP2D6,0,,0,0,0,0,False,,,3,KCNE1;KCNH2;NOS1AP,CYP2D6,,P1c_guideline_sans_regle_extraite
+amisulpride,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ANKS1B;HTR1A;MC4R;RABEP1;SH2B1,,,P4_autre
+amitriptyline,True,True,True,CPIC;DPWG,3,True,True,True,CYP2C19;CYP2D6,29,CPIC,7,0,0,0,True,CYP2C19;CYP2D6,CYP2D6,1A,,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+amivantamab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+amlodipine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGT;NPPA,,,P4_autre
+amlodipine / atorvastatin / perindopril arginine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD;SLCO1B1,,,,G6PD;SLCO1B1,G6PD,P2_etiquette_reglementaire_gene_des_50
+amodiaquine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,G6PD,,,P4_autre
+amoxapine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+amoxicillin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B;HLA-DQB1,,,P4_autre
+amphetamine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,DRD2;OPRM1,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+amphetamine sulfate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+amprenavir,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLCO1B1,,,P4_autre
+anakinra,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+analgesics,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BDNF;COMT;DBH;DRD2;HTR2A;KCNJ6;OPRM1,,,P4_autre
+anastrozole,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,CSMD1;DLG2;MAP4K4;TUBB1,,,P4_autre
+anesthesiques,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+angiotensin ii,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGTR1,,,P4_autre
+angiotensin ii antagonists,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NOS3,,,P4_autre
+anifrolumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+anthracyclines and related substances,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2B,ABCB1;ABCB4;ABCC1;ADH7;CBR1;CYP4F2;ECT2L;FMO3;HAS3;HNMT;NOS3;RARG;SLC10A2;SLC22A2;SLC28A1;SLC28A3;SPG7;SULT2B1;UGT1A6,,,P3_association_niveau_2B_ou_mieux
+antibiotics,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,KCNE1,,,P4_autre
+anticholinergics,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC22A1,,,P4_autre
+antidepressants,True,False,False,RNPGx,1,True,True,True,CYP2C19;CYP2D6,0,,0,0,0,0,False,,,3,CACNA1A;CRH;CRHR1;CTNNA3;ERICH3;FHIT;GABRA6;GABRP;GAL;GRIA3;GRIK4;HTR7;METTL21A;MTRF1L;NBEA;PARP11;PON2;RAPGEF5;RGS17;RPP30;SERPINE1;TGFBR3;TPH2,CYP2C19;CYP2D6,,P1c_guideline_sans_regle_extraite
+antiepileptics,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2A,SCN2A,,,P3_association_niveau_2B_ou_mieux
+antihypertensives,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ATP2B1;CLNK;GRK5;NOS3;PTPRD,,,P4_autre
+antihypertensives and diuretics in combination,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NOS3,,,P4_autre
+"antiinflammatory agents, non-steroids",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,AGT;BDNF;CDKN2B-AS1;COMT;CTLA4;DBH;DRD2;HLA-DRB1;HTR2A;IL10;OPRM1;PTGS1,,,P4_autre
+antineoplastic agents,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DPYD;RBFOX1;SERPINA3;TP53,,,P4_autre
+antipsychotics,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADCY2;BDNF-AS;CLCN6;DGKB;GABRG3;GRIK3;GRM3;HSPG2;HTR1A;IL1B;KCNE1;LEPR;MC4R;MTHFR;NRG1;NRXN1;RGS2;SLC18A2;ZNF804A,,,P4_autre
+antithrombotic agents,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+antithymocyte globulin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FCGR3A,,,P4_autre
+antithyroid preparations,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EHMT2;FOXF2;HLA-B;HLA-DQA1;HLA-DQB1;HLA-DRB1,,,P4_autre
+"antivirals for treatment of hiv infections, combinations",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,ABCB1;APOE;CYP2B6;NAT2,,,P4_autre
+apatinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+apatinib metabolite m1-1,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+apixaban,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+apremilast,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+arformoterol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;UGT1A1,CYP2D6;UGT1A1,,,CYP2D6;UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+arformoterol tartrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+arimoclomol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+aripiprazole,True,True,True,DPWG,1,True,False,True,CYP2D6,3,DPWG,0,0,0,0,True,CYP2D6,CYP2D6,1A,ANKK1;FAAH;MC4R;RABEP1;SH2B1;TAAR6,CYP2D6,,P1_etiquete_corpus_v3
+aripiprazole lauroxil,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+arsenic trioxide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+artemether,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2B6,,,P4_autre
+artesunate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IKBKG,,,P4_autre
+articaine / epinephrine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+asciminib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+"ascorbic acid (vitamin c), combinations",False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+"ascorbic acid (vitamin c), plain",False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+asparaginase,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CPA2;GATA3;GRIA1;HLA-DRB1;NFATC2;PNPLA3;PYGL;SOD2,,,P4_autre
+aspirin,True,False,True,CPIC,2,False,False,False,CYP2C9;G6PD,3,CPIC,0,0,3,0,True,G6PD,,2B,ACE;ADORA1;AGAP3;AGT;CEP68;CHIA;COL26A1;CYP2D6;CYP4F2;ECHS1;EFR3A;EYA1;F13A1;FCER1G;FSIP1;GP6;HLA-DPB1;HLA-DPB2;IL4;JMJD8;KRTAP10-4;LTC4S;MYOM2;NAT2;NECAB1;NOS3;NTRK1;PLA2G4A;PLCG1;PPARG;PTGER2;PTGER3;PTGIR;SLC30A9;SLC6A12;TAPBP;TBXAS1;TGFB1;THRA;TLR3;TNF;TNFRSF11A;TSC1;TSPEAR;UGT1A6;WDR24;ZBTB22;ZDHHC3,CYP2C9;G6PD,G6PD,P1b_guideline_regles_exclues
+atazanavir,True,True,True,CPIC;DPWG,2,False,True,True,UGT1A1,3,CPIC,0,0,0,0,True,CYP2C19,,1A,ABCC2;CYP3A4;SORCS2;UGT1A3;UGT1A7,CYP2C19;UGT1A1,,P1_etiquete_corpus_v3
+atazanavir / ritonavir,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1A,,,,P3_association_niveau_2B_ou_mieux
+atenolol,True,False,False,CPIC;DPWG,2,False,False,False,ADRA2C;ADRB1;CYP2D6;GRK4;GRK5,0,,0,0,0,0,False,,,3,ABCB1;ADRA2A;ALDH1A2;CACNA1C;DPYS;FTO;GALNT2;GRK4;LDLR;LRRC15;NR1H3;PLA2G4A;PLEKHH2;PRKCB;PROX1;PTGS2;RRP1B;SLC25A31;SLC4A1;STN1;TBX2;ZMAT4,CYP2D6,,P1c_guideline_sans_regle_extraite
+atezolizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+atomoxetine,True,True,True,CPIC;DPWG,2,True,True,True,CYP2D6,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,1A,SLC6A2,CYP2D6,,P1_etiquete_corpus_v3
+atomoxetine hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+atorvastatin,True,True,True,CPIC;DPWG,4,True,True,True,ABCG2;CYP3A4;CYP3A5;HMGCR;SLCO1B1,4,CPIC,0,0,0,0,True,SLCO1B1,,1A,ABCA1;ACE;AGTR1;APOA5;BDKRB2;HLA-DRB1;HMGCR;LEPR;MYLIP;POR;TNF;UGT1A3,ABCG2;CYP3A4;CYP3A5;SLCO1B1,CYP3A4,P1_etiquete_corpus_v3
+atorvastatin lactone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+atrasentan,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLCO1B1,,,P4_autre
+avapritinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+avatrombopag,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9;F5,CYP2C9,,,CYP2C9;F5,,P2_etiquette_reglementaire_gene_des_50
+avelumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+avutometinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+axitinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;UGT1A1,,3,HIF1A,CYP2C19;UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+azacitidine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+azacitidine for,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+azathioprine,True,True,True,CPIC;DPWG;RNPGx,4,True,True,True,NUDT15;TPMT,4,DPWG,2,2,0,0,True,NUDT15;TPMT,NUDT15;TPMT,1A,ABCC4;AOX1;FTO;HLA-DQA1;HLA-DRB1;PACSIN2,NUDT15;TPMT,,P1_etiquete_corpus_v3
+azathioprine sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+bcr-abl tyrosine kinase inhibitors,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+belimumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+belinostat,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,UGT1A1,UGT1A1,,,UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+belzutifan,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19,CYP2C19,,,CYP2C19,,P2_etiquette_reglementaire_gene_des_50
+benazepril,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGT;PRCP,,,P4_autre
+benzbromarone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+benzodiazepine derivatives,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GAL,,,P4_autre
+bepridil,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+berberine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+beta blocking agents,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,KL;NOS3;PPARA,,,P4_autre
+"beta blocking agents, selective",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,BST1,,,P4_autre
+betaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,MTHFR,MTHFR,,,MTHFR,MTHFR,P2_etiquette_reglementaire_gene_des_50
+betaxolol,True,True,False,CPIC,2,False,False,False,ADRA2C;ADRB1;CYP2D6;GRK4;GRK5,1,CPIC,0,0,0,0,False,,,,,CYP2D6,,P1_etiquete_corpus_v3
+bevacizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CXCR4;EDN1;GGH;HSP90AB1;IL8;KCNAB1;MGAT4A;PRKCA;SHMT1,,,P4_autre
+bilirubin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT1A,,,P4_autre
+binimetinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,UGT1A1,UGT1A1,,,UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+bisoprolol,True,True,False,CPIC;DPWG,3,False,False,False,ADRA2C;ADRB1;CYP2D6;GRK4;GRK5,1,CPIC,0,0,0,0,False,,,3,ACY3,CYP2D6,,P1_etiquete_corpus_v3
+bisoprolol fumarate / perindopril arginine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+bisphosphonates,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC4;ALDH1A2;CSRNP3;FDPS;IL1B;KCNT2;MEX3C;RBMS3;SFRP5;TBC1D32,,,P4_autre
+bleomycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BLMH;GSTM1,,,P4_autre
+blinatumomab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+boceprevir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,IFNL3,1A,IFNL3;IFNL4,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+bosutinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+botulinum toxin type a,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CALCA,,,P4_autre
+brentuximab vedotin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+brexpiprazole,True,True,False,DPWG,1,True,False,True,CYP2D6,3,DPWG,0,2,0,0,True,CYP2D6,CYP2D6,3,,CYP2D6,,P1_etiquete_corpus_v3
+brigatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+brivaracetam,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP2C9,CYP2C19,3,CYP2C19,CYP2C19;CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+bromperidol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DRD2,,,P4_autre
+bucindolol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRA2C;ADRB1,,,P4_autre
+budesonide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GLCCI1,,,P4_autre
+bumetanide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACE;ADD1;GNB3;NPPA-AS1;SLC12A3,,,P4_autre
+bupivacaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+buprenorphine,True,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,ADAMTSL2;ARRB2;SLC6A4,,,P1c_guideline_sans_regle_extraite
+buprenorphine / naloxone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT2B7,,,P4_autre
+bupropion,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,2A,ACE;COMT;DBH;DRD1;EPB41;FKBP5;GALR1;SACM1L;SLC18A2,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+bupropion hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+busulfan,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,HLA-B;UGT1A1,3,CYP2C9;GSTA1;GSTM1,HLA-B;UGT1A1,HLA-B,P2_etiquette_reglementaire_gene_des_50
+cabazitaxel,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+cabotegravir / rilpivirine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,HLA-B;UGT1A1,,,,HLA-B;UGT1A1,HLA-B,P2_etiquette_reglementaire_gene_des_50
+cabozantinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+caffeine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,CYP2D6,3,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+calcein,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC2,,,P4_autre
+calcium,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,VDR,,,P4_autre
+calcium channel blockers,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CACNA1C;KCNH2;NUMA1;PICALM;TANC2,,,P4_autre
+candesartan,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP11B2;DOT1L;GPR83;KCNK3;PLEKHJ1;SH2B3;SULT1C3,,,P4_autre
+cangrelor,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,P2RY12,,,P4_autre
+cannabidiol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+cannabinoids,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FAAH;OPRM1,,,P4_autre
+capecitabine,True,True,True,AIOM;CPIC;DPWG;RNPGx;SEFF/SEOM,5,True,True,True,DPYD,3,CPIC,1,1,0,0,True,DPYD,DPYD,1A,ABCG2;AREG;CES1;CES1P1;CYP19A1;CYP1A1;DLG5;EXO1;MGAT4A;PPARD;PTEN;PTGS2;REV3L;SELE;SLC22A7,DPYD,,P1_etiquete_corpus_v3
+capivasertib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+capmatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+captopril,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,2A,ACE;AGTR1,,,P3_association_niveau_2B_ou_mieux
+carbamazepine,True,False,True,CPIC;CPNDS;DPWG;RNPGx,5,False,True,True,HLA-A;HLA-B,0,,0,0,0,0,True,HLA-A;HLA-B,HLA-A;HLA-B,1A,BAG6;CYP1A1;HLA-DRB1;HSPA1A;HSPA1L;LTA;PRRC2A;TNF,HLA-A;HLA-B,HLA-A;HLA-B,P1c_guideline_sans_regle_extraite
+carbasalate calcium,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+carbimazole,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+carbocisteine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PAH,,,P4_autre
+carboplatin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACSS2;ALDH1A1;ATAT1;ATP7B;C6orf15;CDSN;CYP3A5;DOCK8;DSCAM;ERBB2;ERBB3;ETS2;FNTB;GPX5;GSR;HCP5;HLA-C;MAD1L1;MAP3K1;MSH5;MTHFR;MUCL3;NRAS;PIK3CA;PPP1R18;PRRC2A;PSORS1C1;PTEN;RAF1;RNF8;SCN10A;SERPINA5;SERPINC1;SLC19A1;SLC31A1;SLCO1B3;TNF;VEGFA;XYLT2,,,P4_autre
+carglumic acid,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,NAGS,NAGS,,,NAGS,NAGS,P2_etiquette_reglementaire_gene_des_50
+cariprazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+carisoprodol,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19,CYP2C19,4,,CYP2C19,,P2_etiquette_reglementaire_gene_des_50
+carvedilol,True,True,False,CPIC;DPWG,4,False,False,False,ADRA2C;ADRB1;ADRB2;CYP2D6;GRK4;GRK5,1,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,3,,ADRB2;CYP2D6,ADRB2,P1_etiquete_corpus_v3
+casimersen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+catecholamines,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRB1;SLC22A3,,,P4_autre
+cefotaxime,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC22A8,,,P4_autre
+ceftriaxone,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,3,ABCC2,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+celecoxib,True,True,True,CPIC,1,True,True,False,CYP2C9,3,CPIC,1,0,0,0,True,CYP2C9,CYP2C9,1A,ALOX12;IL23R;PTGER4;PTGES,CYP2C9,,P1_etiquete_corpus_v3
+cemiplimab-rwlc,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+ceritinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+cerivastatin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,RYR2;SLCO1B1,,,P4_autre
+cerliponase alfa,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+certolizumab pegol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ATP5F1E;HLA-E;KLRD1,,,P4_autre
+cetuximab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,3,MGAT4A,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+cevimeline,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+chlorambucil,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CXCL12,,,P4_autre
+chloramphenicol,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,3,,G6PD,G6PD,P1b_guideline_regles_exclues
+chloroprocaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+chloroquine,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,4,,G6PD,G6PD,P1b_guideline_regles_exclues
+chlorothiazide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HMGCS2,,,P4_autre
+chlorpromazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EPM2A,,,P4_autre
+chlorpropamide,True,False,True,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+chlorthalidone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGT;MMP3;NPPA,,,P4_autre
+cholic acid,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+chorionic gonadotropin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FSHR,,,P4_autre
+cidofovir,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,4,SLC22A6,,,P4_autre
+cilostazol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A5,,,P4_autre
+ciprofloxacin,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,,3,G6PD,G6PD,G6PD,P1b_guideline_regles_exclues
+cisplatin,True,False,False,CPNDS,1,False,True,True,TPMT,0,,0,0,0,0,True,TPMT,TPMT,3,ABCC4;ACSS2;ADH1C;APEX1;BLMH;CCND1;CLCN6;CSNK2A3;CYBA;DCBLD1;ESR1;GALNT14;GALNT18;GPX5;MAP3K1;MLLT3;MTHFD1;MUTYH;NRAS;OSGEP;PIK3CA;POLR1G;PPP1R13L;PTEN;RAF1;RARS1;SLC19A1;TMEM43;UBE2I,TPMT,,P1c_guideline_sans_regle_extraite
+citalopram,True,True,True,CPIC;DPWG,5,True,True,True,CYP2C19;CYP2D6;HTR2A;SLC6A4,5,CPIC,3,1,0,0,True,CYP2C19;CYP2D6,CYP2C19;CYP2D6,1A,CACNA1C;COL26A1;CREB1;CRHR2;DTNBP1;ERICH3;GLDC;GRIA3;GRK5;GSK3B;HTR1B;METTL21A;NEDD4L;PAPLN;REEP5;RFK;RORA;SERPINE1;SRP19,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+citalopram hydrobromide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+cladribine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NT5C1A;RRM1;RRM2;RRM2B,,,P4_autre
+clarithromycin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+clavulanate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B;HLA-DQB1,,,P4_autre
+clindamycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+clobazam,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19,CYP2C19,2A,SCN1A,CYP2C19,,P2_etiquette_reglementaire_gene_des_50
+clodronate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IL1B;VDR,,,P4_autre
+clomipramine,True,True,True,CPIC;DPWG,3,True,True,True,CYP2C19;CYP2D6,9,CPIC,3,0,0,0,True,CYP2C19;CYP2D6,CYP2D6,1A,ABCB1;FKBP5;HTR1B;SLC6A4,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+clonazepam,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+clonidine,True,False,False,DPWG,1,False,False,False,CYP2D6,0,,0,0,0,0,False,,,3,ADRA2C,CYP2D6,,P1c_guideline_sans_regle_extraite
+clopidogrel,True,True,True,AHA;CPIC;DPWG;RNPGx,4,True,True,True,CYP2C19,5,CPIC,0,2,0,0,True,CYP2C19,CYP2C19,1A,AGAP3;B4GALT2;CES1P1;ECHS1;EFR3A;JMJD8;KRTAP10-4;MYOM2;N6AMT1;NECAB1;PTGS1;TSPEAR;WDR24;ZDHHC3,CYP2C19,,P1_etiquete_corpus_v3
+clopidogrel bisulfate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+clopidogrel thiol metabolite h4,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+clozapine,True,False,False,DPWG,2,False,False,False,CYP1A2;CYP2D6,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,C3;DTNBP1;EPM2A;FAAH;FKBP5;GCG;GLP1R;GRIN2B;GSTM1;GSTT1;HLA-DRB3;HTR1A;HTR3A;ITIH3;MC4R;MTHFR;NFIB;NTRK2;RABEP1;SH2B1;SLC6A3;TBC1D1;UGT1A1,CYP2D6,,P1c_guideline_sans_regle_extraite
+cobimetinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+cocaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CHRNA3;GABRA2,,,P4_autre
+codeine,True,True,True,CPIC;CPNDS;DPWG,4,True,True,True,COMT;CYP2D6;OPRM1,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,1A,SEPTIN3;WBP2NL,CYP2D6,,P1_etiquete_corpus_v3
+codeine sulfate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+conjugated estrogens,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ESR1;SULT1A1;VDR,,,P4_autre
+corticosteroids,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FKBP5;HDAC1;ST13;TAAR6;TBX21,,,P4_autre
+cosibelimab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+cotinine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CHRNB4;CYP2B6;NAT1;PSMA4,,,P4_autre
+cotinine glucuronide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT1A9,,,P4_autre
+coumarin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2A6,,,P4_autre
+creatine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MOBP,,,P4_autre
+crizanlizumab-tmca,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+crizotinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+curcumin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CFTR,,,P4_autre
+cyanocobalamin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MTHFR,,,P4_autre
+cyclophosphamide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC2;ABCC3;ABCG2;ADH1C;ALDH3A1;ATM;BMP7;CBR3;CCNK;CTNNB1;CXCL12;CYP1B1;CYP2A7P1;DOK5;FGFR4;FOXO1;GATA3;GNL3;HMMR;INSR;IRS1;LINC00251;MUTYH;NOS1;PERP;PIK3R2;PNPLA3;PPP2R5D;RBX1;SLCO1B1;SOD2;TP53AIP1;TPMT,,,P4_autre
+cyclosporine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CALM1;CTLA4;IMPDH2;TCF7L2;TNF;UGT1A8,,,P4_autre
+cysteamine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CFTR,,,P4_autre
+cytarabine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BMP7;CYP2E1;DOK5;GATA3;LINC00251;NT5C3A;RRM1;RRM2;RRM2B;SLC22A12;SLCO1B1;SULT2B1,,,P4_autre
+dabigatran,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A5,,,P4_autre
+dabrafenib,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+dacarbazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GSTM1,,,P4_autre
+daclatasvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,IFNL3,3,IFNL3;IFNL4,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+dacomitinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+dalcetrapib,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADCY9,,,P4_autre
+dapoxetine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,3,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+dapsone,True,False,True,CPIC,1,False,True,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,2A,HLA-A;HLA-B;HLA-DRB1,G6PD,G6PD,P1b_guideline_regles_exclues
+daptomycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1,,,P4_autre
+darifenacin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+darunavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+dasabuvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,IFNL3,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+dasabuvir / ombitasvir / paritaprevir / ritonavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+dasatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,ABCG2,,,P4_autre
+daunorubicin,True,False,False,CPNDS,1,False,True,True,RARG;SLC28A3;UGT1A6,0,,0,0,0,0,False,,,2B,BMP7;DOK5;GATA3;LINC00251;NOS3;NRP2;PNPLA3;SLCO1B1,,,P1c_guideline_sans_regle_extraite
+debrisoquine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2A,,,,P3_association_niveau_2B_ou_mieux
+defactinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+deferasirox,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC2;CYP24A1;CYP27B1;GC;UGT1A3;VDR,,,P4_autre
+dehydroaripiprazole,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+deleobuvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IFNL3;IFNL4,,,P4_autre
+denileukin diftitox,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+deoxy-thioguanosine triphosphate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+desbutyl lumefantrine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+desethyl hydroxychloroquine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+desethylchloroquine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+desflurane,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,True,CACNA1S;RYR1,CACNA1S;RYR1,1A,CACNA1S;RYR1,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+desipramine,True,True,True,CPIC,1,True,True,False,CYP2D6,4,CPIC,2,0,0,0,True,CYP2D6,CYP2D6,1A,BDNF;CYP2D6;MC1R,CYP2D6,,P1_etiquete_corpus_v3
+desmethylnaproxen,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NPIPB8;SULT1A1,,,P4_autre
+desmethylsertraline,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+desmopressin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+desvenlafaxine,True,False,False,CPIC,2,False,False,False,HTR2A;SLC6A4,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P1c_guideline_sans_regle_extraite
+deuruxolitinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+deutetrabenazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+dexamethasone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BMP7;CTNNB1;DOK5;GATA3;LINC00251;PYGL;SERPINE1,,,P4_autre
+dexlansoprazole,True,True,True,CPIC,1,True,False,False,CYP2C19,5,CPIC,0,0,0,0,True,CYP2C19,CYP2C19,1A,CYP2C19,CYP2C19,,P1_etiquete_corpus_v3
+dexmedetomidine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PRKCB,,,P4_autre
+dextroamphetamine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DRD1,,,P4_autre
+"dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+dextromethorphan,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,1B,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+dextromethorphan / quinidine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+dextromethorphan hydrobromide / bupropion hydrochloride,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+dextropropoxyphene,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A5,,,P4_autre
+diazepam,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP3A4,CYP2C19,3,,CYP2C19;CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+dibekacin,False,False,False,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,False,,,,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+diclofenac,True,False,False,CPIC,2,False,False,False,CYP2C8;CYP2C9,0,,0,0,0,0,False,,,3,CYP2C9;LST1;LTA;PLA2G4A;PLCG1;TNF;TNFRSF11A,CYP2C9,,P1c_guideline_sans_regle_extraite
+didanosine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NT5C2;XDH,,,P4_autre
+difluorodeoxyuridine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CDA,,,P4_autre
+digoxin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NOS1AP;NOS3,,,P4_autre
+dihydroartemisinin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+dihydroergotamine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HTR1B,,,P4_autre
+dihydropyridine derivatives,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NOS1AP,,,P4_autre
+dihydrostreptomycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MT-RNR1,,,P4_autre
+diltiazem,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PLCD3,,,P4_autre
+dimercaprol,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,3,G6PD,G6PD,G6PD,P1b_guideline_regles_exclues
+dimethyl fumarate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GSTP1,,,P4_autre
+dimolegin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+dinutuximab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+dipeptidyl peptidase 4 (dpp-4) inhibitors,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CDKAL1,,,P4_autre
+dipyrone,True,False,False,CPIC,1,False,False,False,CYP2C9,0,,0,0,0,0,False,,,3,CYP2C19;CYP2C9;NAT2,CYP2C9,,P1c_guideline_sans_regle_extraite
+direct acting antivirals,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IFNL4,,,P4_autre
+disopyramide,True,False,False,DPWG,1,False,False,False,CYP2D6,0,,0,0,0,0,False,,,3,KCNH2,CYP2D6,,P1c_guideline_sans_regle_extraite
+disulfiram,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ANKK1;DRD2;MTHFR;OPRD1;SLC6A3,,,P4_autre
+diuretics,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,KCNE1;NEDD4L;NELFCD;NOS3;PDE4D,,,P4_autre
+divalproex sodium,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,POLG,,,,POLG,POLG,P2_etiquette_reglementaire_gene_des_50
+docetaxel,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,ABCC6;ACSS2;AKR1C3;ATP7A;CHST3;CYP1A1;CYP4B1;EPHX1;ERBB3;HNF4A;MAP3K1;MDM4;NAT2;NR1I2;NR1I3;ORM2;PIK3CA;PPARD;PPCDC;PRDX4;RAF1;RNF8;RPL13;RXRA;SLC10A2;SLCO1B1;SNORD68;SPG7;SULT1C4;VAC14;XRCC4,,,P4_autre
+dolasetron,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NOS1AP,,,P4_autre
+dolutegravir,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4;CYP3A5;UGT1A1,UGT1A1,3,NR1I2,CYP3A4;CYP3A5;UGT1A1,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+dolutegravir / abacavir / lamivudine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,HLA-B,,,,HLA-B,HLA-B,P2_etiquette_reglementaire_gene_des_50
+donanemab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,APOE,,,,APOE,APOE,P2_etiquette_reglementaire_gene_des_50
+donepezil,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,CHRNA7;CYP2D6,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+dopamine agonists,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC22A1,,,P4_autre
+doxepin,True,True,True,CPIC;DPWG,3,True,True,True,CYP2C19;CYP2D6,9,CPIC,3,0,0,0,True,CYP2C19;CYP2D6,CYP2C19;CYP2D6,1A,CYP2C19;CYP2C9,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+doxepin hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+doxorubicin,True,False,False,CPIC;CPNDS,2,False,True,True,G6PD;RARG;SLC28A3;UGT1A6,3,CPIC,0,0,3,0,False,,,2B,ABCC3;ABCC4;ABCG2;AKR1C3;ALDH3A1;ATM;BMP7;CCND1;CLCN6;CYBA;CYP1B1;CYP2C19;DOK5;ERCC1;ERCC2;GATA3;LINC00251;MTHFD1;POLR1G;PPP1R13L;SLCO1B1;TMEM43;XPC;XRCC1,G6PD,G6PD,P1b_guideline_regles_exclues
+doxorubicin hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+doxorubicinol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CBR1;SLC22A16,,,P4_autre
+dronabinol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+dronedarone,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;CYP3A4,,,,CYP2D6;CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+drospirenone / ethinyl estradiol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;F5,,,,CYP2C19;F5,,P2_etiquette_reglementaire_gene_des_50
+drugs for treatment of tuberculosis,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1B,ABCB1;CYP2B6;RIPOR2,,,P3_association_niveau_2B_ou_mieux
+drugs used in alcohol dependence,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GATA4,,,P4_autre
+drugs used in nicotine dependence,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2A6;OPRM1,,,P4_autre
+duloxetine,True,False,False,CPIC;DPWG,4,False,False,False,CYP2D6;HTR2A;SLC6A4,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,ANO2;ATP10A;DRD3;FCN2;INVS;KMT2E;MIEF2;NCAM1;NRXN1;SKIC3;TEX10;TREML4;ZNF385D,CYP2D6,,P1c_guideline_sans_regle_extraite
+duloxetine hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+durvalumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+eculizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CHRNA5,,3,C5,CHRNA5,CHRNA5,P2_etiquette_reglementaire_gene_des_50
+edoxaban,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+efavirenz,True,True,True,CPIC;DPWG,2,True,False,True,CYP2B6,4,CPIC,0,0,0,0,True,CYP2B6,CYP2B6,1A,ABCC2;ABCG2;HNF4A;HTR2A;IL10,CYP2B6,,P1_etiquete_corpus_v3
+efavirenz / emtricitabine / tenofovir disoproxil,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2B6,,,,CYP2B6,,P2_etiquette_reglementaire_gene_des_50
+efgartigimod alfa,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CHRNA5,,,,CHRNA5,CHRNA5,P2_etiquette_reglementaire_gene_des_50
+eflornithine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+egfr inhibitors,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EGFR,,,P4_autre
+elacestrant,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+elagolix,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,SLCO1B1,SLCO1B1,,,SLCO1B1,,P2_etiquette_reglementaire_gene_des_50
+elbasvir / grazoprevir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+eletriptan,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+elexacaftor / tezacaftor / ivacaftor,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CFTR,,1A,,CFTR,CFTR,P2_etiquette_reglementaire_gene_des_50
+eliglustat,True,False,True,DPWG,1,True,True,True,CYP2D6,3,DPWG,0,1,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P1b_guideline_regles_exclues
+elosulfase alfa,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+eltrombopag,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,F5,,,,F5,,P2_etiquette_reglementaire_gene_des_50
+emapalumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+enalapril,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACE;ADRB2,,,P4_autre
+enasidenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+encorafenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+endoxifen,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+enflurane,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,False,,,1A,CACNA1S;RYR1,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+enfortumab vedotin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ensartinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+entacapone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,COMT,,,P4_autre
+entrectinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+enzymes,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,A2M;F12,,,P4_autre
+epirubicin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CBR3;CCNK;FOXO1;GNL3;HMMR;INSR;IRS1;MDM4;NOS1;PERP;PIK3R2;PPP2R5D;RBX1;SLCO1B1;TOP2A;TP53;TP53AIP1,,,P4_autre
+eplontersen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+erdafitinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+erenumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,COMT,,,P4_autre
+ergot alkaloids,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BDNF;COMT;DBH;DRD2;HTR2A;OPRM1,,,P4_autre
+eribulin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+erlotinib,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,EGFR;UGT1A1,EGFR;G6PD,2B,CYP1A2;EGFR;MAP3K1,EGFR;G6PD;UGT1A1,EGFR;G6PD,P2_etiquette_reglementaire_gene_des_50
+erythro-4-hydroxyhydrobupropion,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+erythromycin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,EGFR;G6PD,3,ABCC2,EGFR;G6PD,EGFR;G6PD,P2_etiquette_reglementaire_gene_des_50
+erythromycin ethylsuccinate / sulfisoxazole acetyl,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+escitalopram,True,True,True,CPIC;DPWG,5,True,True,True,CYP2C19;CYP2D6;HTR2A;SLC6A4,5,CPIC,3,1,0,0,True,CYP2C19;CYP2D6,CYP2C19;CYP2D6,1A,BMP5;ERICH3;FKBP5;GLDC;GRK5;HTR1B;IL11;RFK;RPP30;TPH1,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+esmolol,False,False,False,CPIC,1,False,False,False,ADRA2C;ADRB1;GRK4;GRK5,0,,0,0,0,0,False,,,,,,,P1c_guideline_sans_regle_extraite
+esomeprazole,True,True,False,CPIC;DPWG,2,False,False,False,CYP2C19,1,DPWG,0,0,0,0,True,CYP2C19,CYP2C19,3,STAT6,CYP2C19,,P1_etiquete_corpus_v3
+esomeprazole magnesium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+esomeprazole magnesium delayed release capsules,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+esomeprazole sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+estradiol / progesterone,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+estradiol containing contraceptives,False,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+estrone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+estrone sulfate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+etanercept,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,2B,ATP5F1E;CD84;HLA-E;IL6;KLRD1;PSORS1C1;TNFRSF1B,,,P3_association_niveau_2B_ou_mieux
+eteplirsen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ethambutol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2B6;TNF,,,P4_autre
+ethanol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2B,ANKS1B;ARID4A;CACNA1C;CADM2;CAT;CHRNA4;DPP6;FUT2;GCKR;KLB;MAP2K4;MED19;PDE4B;PNPLA3;RABGAP1L;SLC39A8;SLC4A8;SRPRB;THSD7B;TMX2;TNRC6A,,,P3_association_niveau_2B_ou_mieux
+ethinyl estradiol / norelgestromin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,F5;MTHFR,,,,F5;MTHFR,MTHFR,P2_etiquette_reglementaire_gene_des_50
+ethosuximide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,4,SCN1A,,,P4_autre
+ethylmorphine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2D6,,,P4_autre
+etidronic acid,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IL1B,,,P4_autre
+etoposide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BLMH;DYNC2H1;SLCO1B1;SLIT1,,,P4_autre
+etrasimod,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+etravirine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C19,,,P4_autre
+everolimus,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,FGFR4;PIK3R1;RPTOR,,,P4_autre
+evinacumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+exemestane,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,AKR1C3;ESR1;MAP4K4;TUBB1,,,P4_autre
+exenatide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GLP1R,,,P4_autre
+extended phenytoin sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+ezetimibe / rosuvastatin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,ABCG2;SLCO1B1,,,,ABCG2;SLCO1B1,,P2_etiquette_reglementaire_gene_des_50
+ezetimibe / simvastatin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,SLCO1B1,,,,SLCO1B1,,P2_etiquette_reglementaire_gene_des_50
+faldaprevir,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IFNL3;IFNL4,,,P4_autre
+famotidine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+fampridine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+farglitazar,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SCNN1B,,,P4_autre
+febuxostat,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AOX1;UGT1A1;UGT1A10;UGT1A3;UGT1A4;UGT1A5;UGT1A6;UGT1A7;UGT1A8;UGT1A9,,,P4_autre
+fec100,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PPCDC,,,P4_autre
+felodipine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+fenofibrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,SLCO1B1,,3,ABCA1;APOB;APOE;IL6;SCARB1,SLCO1B1,,P2_etiquette_reglementaire_gene_des_50
+fentanyl,True,False,True,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,2A,ARRB2;ASTN2;CALCA;CYP2D6;KCNJ6;MYD88;OPRD1;RHBDF2,,,P1c_guideline_sans_regle_extraite
+fesoterodine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,CYP3A4,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+fexofenadine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLCO2B1,,,P4_autre
+flecainide,True,True,True,DPWG,1,True,True,True,CYP2D6,3,DPWG,0,1,0,0,False,,,1A,,CYP2D6,,P1_etiquete_corpus_v3
+flibanserin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP2C9;CYP2D6,CYP2C19;CYP2C9;CYP2D6,,,CYP2C19;CYP2C9;CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+flucloxacillin,True,False,True,DPWG,1,False,True,True,HLA-B,0,,0,0,0,0,True,HLA-B,,1A,HLA-B;NR1I2,HLA-B,HLA-B,P1c_guideline_sans_regle_extraite
+fluconazole,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+flucytosine,True,False,False,DPWG,1,False,True,True,DPYD,0,,0,0,0,0,True,DPYD,,,,DPYD,,P1c_guideline_sans_regle_extraite
+fludarabine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CXCL12;CYP2E1;SLC22A12;SLCO1B1;SULT2B1,,,P4_autre
+fluindione,True,False,False,RNPGx,1,True,True,True,CYP2C9;VKORC1,0,,0,0,0,0,False,,,3,VKORC1,CYP2C9;VKORC1,VKORC1,P1c_guideline_sans_regle_extraite
+flunisolide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GLCCI1;TBXT,,,P4_autre
+fluorouracil,True,True,True,AIOM;CPIC;DPWG;RNPGx;SEFF/SEOM,5,True,True,True,DPYD,3,CPIC,1,1,0,0,True,DPYD,DPYD,1A,ABCC2;ABCC4;ABCC5;ABCG1;ALDH3A1;APEX1;ATM;CBR1;CBR3;CCND1;CCNK;CYP19A1;CYP1B1;CYP2C19;CYP2C8;DLG5;EGFR;EXO1;FGFR4;FOXO1;GALNT14;GNL3;HMMR;IGFBP3;INSR;IRS1;KLC1;LGR5;MUTYH;NOS1;NT5C1A;OSGEP;PARD3B;PERP;PIK3R2;PPP2R5D;PTEN;RBX1;REV3L;RGS5;SELE;SLC19A1;SLC22A16;TMEM167A;TOP2A;TP53;TP53AIP1;WNT5B;XRCC3,DPYD,,P1_etiquete_corpus_v3
+fluorouracil / salicylic acid,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,DPYD,,,,DPYD,,P2_etiquette_reglementaire_gene_des_50
+fluoxetine,True,True,False,CPIC;DPWG,4,False,False,False,CYP2D6;HTR2A;SLC6A4,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,3,ACE;BDNF;CRHR1;GSK3B;HTR1B;REEP5;SERPINE1;SRP19,CYP2D6,,P1_etiquete_corpus_v3
+fluoxetine / olanzapine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+flupenthixol,True,False,False,DPWG,1,False,False,False,CYP2D6,0,,0,0,0,0,False,,,,,CYP2D6,,P1c_guideline_sans_regle_extraite
+flupirtine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-DQB1;HLA-DRB1,,,P4_autre
+flurbiprofen,True,True,True,CPIC,1,True,True,False,CYP2C9,3,CPIC,1,0,0,0,True,CYP2C9,CYP2C9,1A,CYP2C9,CYP2C9,,P1_etiquete_corpus_v3
+flutamide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+fluticasone propionate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CA10;GLCCI1,,,P4_autre
+fluvastatin,True,True,True,CPIC;DPWG,4,True,True,False,ABCG2;CYP2C9;CYP3A4;CYP3A5;HMGCR;SLCO1B1,19,CPIC,9,2,0,0,False,,,1A,ABCB1;APOE;CETP;CYP3A4;HLA-DRB1;LIPC,ABCG2;CYP2C9;CYP3A4;CYP3A5;SLCO1B1,CYP3A4,P1_etiquete_corpus_v3
+fluvoxamine,True,True,True,CPIC;DPWG,5,True,True,False,CYP2C19;CYP2D6;HTR2A;SLC6A4,3,CPIC,1,0,0,0,True,CYP2D6,CYP2D6,1A,ABCB1;COMT;FGF2;HTR1A;MDGA2,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+folfiri,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1A,TYMS,,,P3_association_niveau_2B_ou_mieux
+folfirinox,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT1A1,,,P4_autre
+folfox,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,TYMS,,,P4_autre
+folic acid,False,False,False,DPWG,1,False,False,False,MTHFR,0,,0,0,0,0,False,,,3,MTR;MTRR;TLR4,MTHFR,MTHFR,P1c_guideline_sans_regle_extraite
+follitropin beta,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FSHR,,,P4_autre
+formoterol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP2D6,CYP2C19;CYP2D6,,,CYP2C19;CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+fosamprenavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+fosdenopterin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,CYP2C19,,,CYP2C19,,P2_etiquette_reglementaire_gene_des_50
+fosphenytoin,True,False,True,CPIC,1,True,True,False,CYP2C9;HLA-B,6,CPIC,0,3,0,0,True,CYP2C9;HLA-B,CYP2C9;HLA-B,,,CYP2C9;HLA-B,HLA-B,P1b_guideline_regles_exclues
+fremanezumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,COMT,,,P4_autre
+fruquintinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+fulvestrant,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+furazolidone,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+furosemide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC4;ACE;ADD1;GNB3;NPPA-AS1;SLC12A3,,,P4_autre
+futibatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+gabapentin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC7A5,,,P4_autre
+galantamine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,CHRNA7,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+galantamine hydrobromide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+galcanezumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,COMT,,,P4_autre
+ganaxolone,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,MT-RNR1,,,MT-RNR1,MT-RNR1,P2_etiquette_reglementaire_gene_des_50
+gefitinib,True,True,True,DPWG,1,False,False,False,CYP2D6,3,DPWG,0,0,0,0,True,CYP2D6;EGFR,CYP2D6;EGFR,1A,MAP3K1;RELA;SIRT2,CYP2D6;EGFR,EGFR,P1_etiquete_corpus_v3
+geldanamycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EGFR,,,P4_autre
+gemcitabine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACSS2;ALG10;ATAT1;C6orf15;CDC5L;CDSN;CYP2C8;DOCK8;ESR2;ETS2;FKBP5;GPX5;HCP5;HLA-C;KLC3;MSH5;MUCL3;NRAS;NT5C1A;POLR1G;PPCDC;PPP1R13L;PPP1R18;PRRC2A;PSORS1C1;RAF1;SERPINA5;SERPINC1;SH2D5;TENT4A;TNF;XYLT2,,,P4_autre
+gemtuzumab ozogamicin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,CD33;CYP2E1;SLC22A12;SLCO1B1;SULT2B1,,,P4_autre
+gentamicin,True,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,True,MT-RNR1,MT-RNR1,1A,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+gilteritinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+givosiran,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+glibenclamide,False,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+gliclazide,True,False,False,CPIC;DPWG,2,False,False,False,CYP2C9;G6PD,0,,0,0,0,0,True,G6PD,,3,,CYP2C9;G6PD,G6PD,P1c_guideline_sans_regle_extraite
+glimepiride,True,False,True,CPIC;DPWG,2,False,False,False,CYP2C9;G6PD,0,,0,0,0,0,True,CYP2C9;G6PD,G6PD,3,NOS1AP,CYP2C9;G6PD,G6PD,P1c_guideline_sans_regle_extraite
+glipizide,True,False,True,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,G6PD,3,NOS1AP,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+glucarpidase,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC4;ARID5B;GATA3;INSRR;NTRK1;SLCO1B1,,,P4_autre
+glucocorticoids,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ATP5F1E;GLCCI1;HLA-E;HSD3B1;KLRD1,,,P4_autre
+glucose,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+glyburide,True,False,False,CPIC;DPWG,2,False,False,False,CYP2C9;G6PD,3,CPIC,0,0,3,0,True,CYP2C9;G6PD,G6PD,3,G6PD;NOS1AP;SCNN1B,CYP2C9;G6PD,G6PD,P1b_guideline_regles_exclues
+glycerol phenylbutyrate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CPS1;NAGS;OTC,CPS1;NAGS,,,CPS1;NAGS;OTC,CPS1;NAGS;OTC,P2_etiquette_reglementaire_gene_des_50
+golodirsen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+goserelin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+granisetron,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP1A1;CYP2D6;CYP3A5;NOS1AP,,,P4_autre
+grazoprevir,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,IFNL3,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+haloperidol,True,True,True,DPWG,1,True,True,True,CYP2D6,3,DPWG,1,0,0,0,True,CYP2D6,,1A,ABCB5;COMT;DTNBP1;EIF2AK4;EPM2A;FAAH;MC4R;SLC6A5,CYP2D6,,P1_etiquete_corpus_v3
+halothane,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,False,,,1A,CACNA1S;RYR1,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+hdl cholesterol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP19A1,,,P4_autre
+heparin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-DRB3,,,P4_autre
+hepatitis vaccines,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IL13;IL4R,,,P4_autre
+heroin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ALDH2;ANKS1B;BDNF-AS;CES1;CSNK1E;GAL,,,P4_autre
+highly active antiretroviral therapy (haart),False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;OPRM1,,,P4_autre
+"hmg coa reductase inhibitors, other combinations",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,EYS,,,P4_autre
+hmg-coa reductase inhibitors,True,False,False,RNPGx,1,True,True,False,SLCO1B1,0,,0,0,0,0,False,,,2A,ABCB1;ADAMTS1;APOE;CELSR2;CFAP44;CXCL5;CYP19A1;EYS;GNB3;HLA-DRB1;HLA-G;HTR7;LPA;NOS3;RYR1;SREBF1,SLCO1B1,,P1c_guideline_sans_regle_extraite
+hormonal contraceptives for systemic use,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2B,ABO;CYP2C9;F11;KNG1;SUGCT,,,P3_association_niveau_2B_ou_mieux
+hydralazine,True,True,True,CPIC,1,True,False,False,NAT2,3,CPIC,0,0,0,0,True,NAT2,,1A,,NAT2,NAT2,P1_etiquete_corpus_v3
+hydralazine / isosorbide dinitrate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,NAT2,,3,GNB3,NAT2,NAT2,P2_etiquette_reglementaire_gene_des_50
+hydrochlorothiazide,False,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,2B,ACE;ADO;ALDH1A2;ANKFN1;C5orf56;CSK;CSMD1;DIAPH3;FBXL17;GPR83;HMGCS2;ILKAP;LRRC15;NELFCD;NUCB2;PDE3A;PLCE1;PRKAG2;PRKCA;SLC25A31;SLIT1;TCF7L2;TET2;UGGT2;VASP;YEATS4,,,P3_association_niveau_2B_ou_mieux
+hydrocodone,True,True,True,CPIC,2,False,False,False,COMT;CYP2D6;OPRM1,3,CPIC,0,0,0,0,False,,,1A,OPRM1;SEPTIN3;WBP2NL,CYP2D6,,P1_etiquete_corpus_v3
+hydromorphone,True,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,,,,,P1c_guideline_sans_regle_extraite
+hydroxyamitriptyline,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+hydroxybupropion,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+hydroxychloroquine,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,,3,MTR,G6PD,G6PD,P1b_guideline_regles_exclues
+hydroxyphenytoin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+hydroxyurea,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MAP3K5,,,P4_autre
+ibogaine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+ibritumomab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ibrutinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+ibuprofen,True,True,True,CPIC,2,True,True,False,CYP2C8;CYP2C9,3,CPIC,1,0,0,0,False,,,1A,LST1;LTA;TNF,CYP2C9,,P1_etiquete_corpus_v3
+icotinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C19,,,P4_autre
+idarubicin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;CYBA;CYP2E1;DCK;NCF4;NT5C3A;RAC2;SLC22A12;SLCO1B1;SULT2B1,,,P4_autre
+iguratimod,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+iloperidone,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,CELF4;CERKL;NRG3;NUBPL,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+iloperidone metabolite p88,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+imatinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,ABCB4;ABCC4;BCL2L11;CHST1;CYP2B6;CYP2F1;CYP3A5;EGFR;GSTT1;RUNDC3B;SLC19A1;SLCO1A2;UGT2A1;ULK3,,,P4_autre
+imidapril,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGT;BDKRB2,,,P4_autre
+imipramine,True,True,True,CPIC;DPWG,3,True,True,True,CYP2C19;CYP2D6,9,CPIC,3,0,0,0,True,CYP2D6,CYP2D6,1A,,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+imiquimod,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,TLR7,,,P4_autre
+inavolisib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+inclisiran,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+indacaterol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,UGT1A1,UGT1A1,,,UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+indinavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,3,CYP3A4,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+indomethacin,True,False,False,CPIC,1,False,False,False,CYP2C9,0,,0,0,0,0,False,,,3,LST1;LTA;TNF,CYP2C9,,P1c_guideline_sans_regle_extraite
+inebilizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+infigratinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+infliximab,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ATP5F1E;HLA-B;HLA-C;HLA-DPB1;HLA-DQB1;HLA-DRB1;HLA-E;IL1B;IL6;KLRD1;TNFRSF1B,,,P4_autre
+inotersen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+inotuzumab ozogamicin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+insulin recombinant,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC30A8,,,P4_autre
+"interferon alfa-2a, recombinant",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,FTO;HLA-B;IDO1,,,P4_autre
+"interferon alfa-2b, recombinant",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,FTO;ITPA,,,P4_autre
+interferon beta-1a,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CD58;FHIT;GAPVD1;HLA-B;HLA-DQA1;HLA-DRB1;IRF6;RORA;ZNF697,,,P4_autre
+interferon beta-1b,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CD58;FHIT;GAPVD1;HLA-DQA1;IRF6;ZNF697,,,P4_autre
+interferons,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1B,BCL2;IL18;STAT3,,,P3_association_niveau_2B_ou_mieux
+ipilimumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR;HLA-A,EGFR;HLA-A,,,EGFR;HLA-A,EGFR;HLA-A,P2_etiquette_reglementaire_gene_des_50
+irbesartan,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,APOB,,,P4_autre
+irinotecan,True,True,True,AIOM;DPWG;RNPGx,3,True,False,True,UGT1A1,2,DPWG,0,1,0,0,True,UGT1A1,UGT1A1,1A,ABCC4;ABCC5;ABCG1;AREG;C8orf34;DCBLD1;KCNQ5;KLC1;PIN1;RGS5;SEMA3C;SHMT1;SLC19A1;TGFB1;TGFBR2;TOP1;TYMS;UBE2I;UGT1A;XRCC3,UGT1A1,,P1_etiquete_corpus_v3
+isatuximab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+isepamicin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MT-ND1;MT-RNR1,,,P4_autre
+isoflurane,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,True,CACNA1S;RYR1,CACNA1S;RYR1,1A,CACNA1S,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+isoniazid,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,NAT2,,1B,CYP2B6,NAT2,NAT2,P2_etiquette_reglementaire_gene_des_50
+isoniazid / pyrazinamide / rifampin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,NAT2,,,,NAT2,NAT2,P2_etiquette_reglementaire_gene_des_50
+isoproterenol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRB2,,,P4_autre
+isosorbide dinitrate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+isosorbide mononitrate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+itopride,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FMO3,,,P4_autre
+ivabradine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+ivacaftor,True,False,True,CFF;CPIC,2,False,True,False,CFTR,0,,0,0,0,0,True,CFTR,CFTR,1A,SLC26A9,CFTR,CFTR,P1c_guideline_sans_regle_extraite
+ivacaftor / lumacaftor,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CFTR,,1A,,CFTR,CFTR,P2_etiquette_reglementaire_gene_des_50
+ivacaftor / tezacaftor,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CFTR,,1A,CFTR,CFTR,CFTR,P2_etiquette_reglementaire_gene_des_50
+ivermectin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+ivosidenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ixabepilone,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+kanamycin,True,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,False,,,1A,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+ketamine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+ketanserin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HTR1B,,,P4_autre
+ketoprofen,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2D6,,,P4_autre
+ketorolac,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C9;LST1;LTA;TNF,,,P4_autre
+l-methylfolate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MTHFR,,,P4_autre
+l-tryptophan,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC22A2,,,P4_autre
+labetalol,True,False,False,CPIC,2,False,False,False,ADRA2C;ADRB1;ADRB2;GRK4;GRK5,0,,0,0,0,0,False,,,,,ADRB2,ADRB2,P1c_guideline_sans_regle_extraite
+lacosamide,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19,CYP2C19,,,CYP2C19,,P2_etiquette_reglementaire_gene_des_50
+lamivudine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+lamivudine / abacavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,HLA-B,,,,HLA-B,HLA-B,P2_etiquette_reglementaire_gene_des_50
+lamotrigine,True,False,True,DPWG,1,False,True,True,HLA-B,0,,0,0,0,0,False,,HLA-B,1A,SCN1A;SCN2A,HLA-B,HLA-B,P1c_guideline_sans_regle_extraite
+lansoprazole,True,True,True,CPIC;DPWG,2,True,False,True,CYP2C19,5,CPIC,0,0,0,0,True,CYP2C19,CYP2C19,1A,ABCB1,CYP2C19,,P1_etiquete_corpus_v3
+lapatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,HLA-DRB1,HLA-DRB1,3,HLA-DQA1,HLA-DRB1,HLA-DRB1,P2_etiquette_reglementaire_gene_des_50
+larotrectinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+latanoprost,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PTGFR,,,P4_autre
+lazertinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+lecanemab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,APOE,,,,APOE,APOE,P2_etiquette_reglementaire_gene_des_50
+ledipasvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,IFNL3,3,IFNL3;IFNL4,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+ledipasvir / sofosbuvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+leflunomide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ESR1,,,P4_autre
+lenalidomide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CTNNB1;FGF2,,,P4_autre
+leniolisib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lesinurad,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+letermovir,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,SLCO1B1;UGT1A1,,3,,SLCO1B1;UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+letrozole,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2A6,,3,CYP19A1;CYP2A6,CYP2A6,CYP2A6,P2_etiquette_reglementaire_gene_des_50
+leucovorin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC2;ABCC5;ABCG1;ABCG2;EGFR;GATA3;KLC1;RGS5;SELE;SHMT1;XRCC3,,,P4_autre
+levacetylleucine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+levetiracetam,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-A;SCN1A,,,P4_autre
+levodopa,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DBH;DRD3;SLC22A1;SLC6A3,,,P4_autre
+levomethadone,True,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,UGT2B7,,,P1c_guideline_sans_regle_extraite
+levomilnacipran,False,False,False,CPIC,2,False,False,False,HTR2A;SLC6A4,0,,0,0,0,0,False,,,,,,,P1c_guideline_sans_regle_extraite
+levonorgestrel,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+levothyroxine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lidocaine / prilocaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+lidocaine and tetracaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+liothyronine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HTR1B,,,P4_autre
+lisdexamfetamine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+lisinopril,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGT;BDKRB2;MMP3,,,P4_autre
+lithium,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;ADCY1;ASIC2;CACNG2;CRY1;EPHX2;FAM177A1;FAM178B;FKBP5;GRAMD1B;HTR1B;MYO1H;OR52E2;OR52J2P;OR52J3;RABEP1;SH2B1;TPH1,,,P4_autre
+lofexidine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+lomitapide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lonafarnib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,3,FNTB,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+lopinavir,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ZSCAN25,,,P4_autre
+loratadine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+lorazepam,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT2B15,,,P4_autre
+lorlatinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lornoxicam,True,True,True,CPIC,1,True,True,False,CYP2C9,3,CPIC,1,0,0,0,False,,,1A,CYP2C9,CYP2C9,,P1_etiquete_corpus_v3
+losartan,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9;CYP3A4,,3,AGTR1;CAMK1D;NPHS1;STK39,CYP2C9;CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+losartan e-3174,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+lovastatin,True,True,True,CPIC,3,True,True,False,ABCG2;CYP3A4;CYP3A5;HMGCR;SLCO1B1,4,CPIC,1,0,0,0,False,,,1A,APOA5;CETP;CYP2D6;CYP3A5;HMGCR;LDLR,ABCG2;CYP3A4;CYP3A5;SLCO1B1,CYP3A4,P1_etiquete_corpus_v3
+lovastatin acid,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1A,SLCO1B1,,,P3_association_niveau_2B_ou_mieux
+lumasiran,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lumefantrine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A4,,,P4_autre
+lumiracoxib,True,False,False,CPIC,1,False,False,False,CYP2C9,0,,0,0,0,0,False,,,,,CYP2C9,,P1c_guideline_sans_regle_extraite
+lurasidone hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+lurbinectedin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+luspatercept,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lusutrombopag,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,F5,,,,F5,,P2_etiquette_reglementaire_gene_des_50
+lutetium (177lu) dotatate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+lutetium (177lu) vipivotide tetraxetan,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+mafenide,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,,,G6PD,G6PD,P1b_guideline_regles_exclues
+maprotiline,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+maralixibat,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+maraviroc,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A5,,3,,CYP3A5,,P2_etiquette_reglementaire_gene_des_50
+margetuximab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,FCGR3A,,,,FCGR3A,FCGR3A,P2_etiquette_reglementaire_gene_des_50
+mavacamten,True,False,False,DPWG;RNPGx,2,True,True,True,CYP2C19,3,DPWG,1,1,0,0,True,CYP2C19,CYP2C19,,,CYP2C19,,P1b_guideline_regles_exclues
+mavorixafor,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+measles vaccines,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,TLR3,,,P4_autre
+mecasermin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+meclizine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+medroxyprogesterone,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,ESR1;VDR,,,P4_autre
+mefloquine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,4,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+meloxicam,True,True,True,CPIC,1,True,True,False,CYP2C9,3,CPIC,1,0,0,1,True,CYP2C9;G6PD,CYP2C9,1A,CYP2C9,CYP2C9;G6PD,G6PD,P1_etiquete_corpus_v3
+melphalan,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CTLA4;SLC7A5,,,P4_autre
+memantine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NR1I2,,,P4_autre
+menotropins,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FSHR,,,P4_autre
+meperidine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FIP1L1;SERINC5,,,P4_autre
+mephedrone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+mephenytoin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+mepivacaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+mepolizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+mercaptopurine,True,True,True,CPIC;DPWG;RNPGx,4,True,True,True,NUDT15;TPMT,4,DPWG,2,2,0,0,True,NUDT15;TPMT,NUDT15;TPMT,1A,FOLH1;GATA3;GNMT;HLA-DQA1;HLA-DRB1;MED4,NUDT15;TPMT,,P1_etiquete_corpus_v3
+mesalazine,True,False,True,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,False,,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+metabutethamine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+metaxalone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+metformin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CAPN10;CPA6;FMO5;KCNJ11;NBEA;PPARA;PRPF31;SLC22A3;SLC2A2,,,P4_autre
+methacholine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRB2,,,P4_autre
+methadone,True,True,True,CPIC,2,False,False,False,COMT;CYP2B6;CYP2D6;OPRM1,5,CPIC,0,0,0,0,False,,,2A,ALDH5A1;CCL11;CDH2;CYP2A7P1;KCNJ6;NECTIN4;NTRK2;SLC6A4;TXNRD2,CYP2B6;CYP2D6,,P1_etiquete_corpus_v3
+methamphetamine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ANKS1B;ARRB2;DAOA;DRD3;DTNBP1;ESR1;HTR1A;PICK1,,,P4_autre
+methazolamide,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,2A,HLA-B;HLA-C,,,P3_association_niveau_2B_ou_mieux
+methimazole,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+methotrexate,True,False,True,DPWG;RNPGx,2,False,False,False,ABCB1;MTHFR;SLC19A1;SLCO1B1,0,,0,0,0,0,False,,,2A,AHRR;ATP5F1E;BMP7;DOK5;ENOSF1;ERCC2;FGFR4;FOLH1;FOXP3;GATA3;GSTT1;HLA-C;HLA-E;KLRD1;LINC00251;NALCN;NOS3;PYGL;SLC16A7;SLC22A11;SOD2;SPECC1L;TLR4;TNFAIP3,MTHFR;SLC19A1;SLCO1B1,MTHFR;SLC19A1,P1c_guideline_sans_regle_extraite
+methoxyflurane,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,False,,,1A,CACNA1S;RYR1,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+methylene blue,True,False,True,CPIC,1,False,True,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,3,,G6PD,G6PD,P1b_guideline_regles_exclues
+methylphenidate,True,False,False,DPWG,2,False,False,False,COMT;CYP2D6,0,,0,0,0,0,False,,,3,ABCB1;ALDH1L1;ARHGAP12;ARHGEF28;ARSA;CDH23;CHURC1;CMTM8;CORO7;DRD1;DRD3;ELP5;ESYT2;ETFDH;FARP2;FXR2;GGH;HTT;NFIB;OPCML;PDIA2;PEBP4;PIGM;PURA;PYROXD2;RRP7A;SENP3;SPSB2;STRBP;TH;TRIB3;ZDHHC7;ZNF134;ZNF211;ZNF565,CYP2D6,,P1c_guideline_sans_regle_extraite
+methylphenobarbital,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C19,,,P4_autre
+methylprednisolone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1,,,P4_autre
+methysergide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HTR1B,,,P4_autre
+metoclopramide,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;G6PD,CYP2D6;G6PD,,,CYP2D6;G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+metoprolol,True,True,True,CPIC;DPWG,3,True,True,True,ADRA2C;ADRB1;CYP2D6;GRK4;GRK5,4,CPIC;DPWG,1,1,0,0,True,CYP2D6,CYP2D6,1A,LRRC15;SLC25A31;SLC4A1,CYP2D6,,P1_etiquete_corpus_v3
+metoprolol succinate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+metoprolol succinate er,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+metoprolol succinate er tablets,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+metoprolol tartrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+metreleptin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+metronidazole,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+mexiletine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+mianserin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2D6,,,P4_autre
+micronomicin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MT-ND1;MT-RNR1,,,P4_autre
+midazolam,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,POR;VDR,,,P4_autre
+midostaurin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+migalastat,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,GLA;HNRNPH2,,,P4_autre
+milnacipran,False,False,False,CPIC,2,False,False,False,HTR2A;SLC6A4,0,,0,0,0,0,False,,,3,ADRA2A;HTR1A;MDGA2,,,P1c_guideline_sans_regle_extraite
+milsaperidone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+minocycline,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+mipomersen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+mirabegron,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+mirtazapine,True,False,True,DPWG,2,False,False,False,CYP2C19;CYP2D6,0,,0,0,0,0,False,,,2A,GAL;RABEP1;SH2B1;TPH2,CYP2C19;CYP2D6,,P1c_guideline_sans_regle_extraite
+mirvetuximab soravtansine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+mitapivat,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+mitotane,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2B6,,,P4_autre
+mitoxantrone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GALNT14;SLCO1B1,,,P4_autre
+mivacurium,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+mobocertinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+moclobemide,True,False,False,DPWG,1,False,False,False,CYP2C19,0,,0,0,0,0,True,CYP2C19,,,,CYP2C19,,P1c_guideline_sans_regle_extraite
+modafinil,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,ABCB1,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+montelukast,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC1;ABCC9;ALOX5;CA10;CYP2C8;GALNT17;LTA4H;LTC4S;MLLT3;UGT1A3,,,P4_autre
+morphine,True,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,ABCC3;IL1B;RHBDF2;SULT1A4;TAOK3;TLR2,,,P1c_guideline_sans_regle_extraite
+moviprep,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+moxifloxacin,True,False,True,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+muraglitazar,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRB1;EDN1;REN,,,P4_autre
+mycophenolate mofetil,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C8;IL12A;TNF,,,P4_autre
+mycophenolic acid,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,HPRT1,HPRT1,3,SLCO1B3,HPRT1,HPRT1,P2_etiquette_reglementaire_gene_des_50
+n,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+n-desalkylquetiapine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+n-desmethylclozapine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+n-desmethyltamoxifen,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+n-desmethyltramadol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+n-didesmethyltramadol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+nabumetone,True,False,False,CPIC,1,False,False,False,CYP2C9,0,,0,0,0,0,False,,,,,CYP2C9,,P1c_guideline_sans_regle_extraite
+nadolol,False,False,False,CPIC,2,False,False,False,ADRA2C;ADRB1;ADRB2;GRK4;GRK5,0,,0,0,0,0,False,,,,,ADRB2,ADRB2,P1c_guideline_sans_regle_extraite
+naldemedine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+nalidixic acid,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,,,G6PD,G6PD,P1b_guideline_regles_exclues
+naloxone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,COMT;OPRM1,,,P4_autre
+naltrexone,False,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,ADH1C;AKR1C4;ALDH2;ANKK1;DBH;DRD2,,,P1c_guideline_sans_regle_extraite
+naproxen,True,False,False,CPIC,1,False,False,False,CYP2C9,0,,0,0,0,0,False,,,3,LST1;LTA;TNF,CYP2C9,,P1c_guideline_sans_regle_extraite
+nateglinide,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+nebivolol,True,True,False,CPIC,2,False,False,False,ADRA2C;ADRB1;CYP2D6;GRK4;GRK5,1,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P1_etiquete_corpus_v3
+nedocromil,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GLCCI1,,,P4_autre
+nedosiran,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+nefazodone,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6;MT-RNR1,3,ABCB1;FKBP5;HTR1B,CYP2D6;MT-RNR1,MT-RNR1,P2_etiquette_reglementaire_gene_des_50
+nelfinavir,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP3A4;CYP3A5,,3,CYP2C19,CYP2C19;CYP3A4;CYP3A5,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+nemonapride,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ANKK1;DRD2,,,P4_autre
+neomycin,True,False,False,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,True,MT-RNR1,CYP2D6;MT-RNR1,1A,MT-RNR1,CYP2D6;MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+neratinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+netilmicin,False,False,False,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,False,,,,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+nevirapine,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,2A,CCHCR1;CYP2C19;HLA-DQB1;POLR3G;TCF19;TRAF3IP2,,,P3_association_niveau_2B_ou_mieux
+nicorandil,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+nicotine,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,1B,ADGRL3;DRD1;EPB41;FMO1;GRIN3A;HTR3B;POR,,,P3_association_niveau_2B_ou_mieux
+nifedipine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRA1A;CYP3A5;SLC14A2,,,P4_autre
+nilotinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,UGT1A1,UGT1A1,3,ABCG2;UGT1A1,UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+nimodipine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A5,,,P4_autre
+niraparib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+nirogacestat,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+nitisinone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+nitrendipine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGTR1;KCNH2,,,P4_autre
+nitrofurantoin,True,False,True,CPIC,1,False,True,False,G6PD,2,CPIC,0,0,2,0,True,G6PD,G6PD,3,G6PD,G6PD,G6PD,P1b_guideline_regles_exclues
+nitrofurazone,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,False,,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+nitroglycerin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+nitroprusside,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACE,,,P4_autre
+nitrous oxide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,MTHFR,,,P4_autre
+nivolumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+nivolumab / relatlimab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+non-nucleoside reverse transcriptase inhibitors,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+norclobazam,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2A,CYP2C19,,,P3_association_niveau_2B_ou_mieux
+norfloxacin,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+noroxycodone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+noroxymorphone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+nortriptyline,True,True,True,CPIC;DPWG,2,True,True,True,CYP2D6,4,CPIC,2,0,0,0,True,CYP2D6,CYP2D6,1A,BDNF;GNB3;NOS3;SLC39A14;UST,CYP2D6,,P1_etiquete_corpus_v3
+noscapine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+nusinersen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+o-desmethyltramadol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HCN1;ICA1;RFPL4B;RGL4;SULT1A3,,,P4_autre
+obinutuzumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+odevixibat,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ofatumumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ofloxacin,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+olanzapine,True,False,False,DPWG,2,False,False,False,CYP1A2;CYP2D6,0,,0,0,0,0,True,CYP2D6,,3,ADRB3;AHR;ATP1A2;BDNF;CHAT;CYP1A1;EIF2AK4;EPM2A;FAAH;FMO1;GCG;GIPR;GLP1R;GNB3;GSTM3;HTR1A;IL1A;MC4R;MTHFR;PPARG;RABEP1;RGS4;SH2B1;SLC22A1;SPOPL;TBC1D1;TPMT,CYP2D6,,P1c_guideline_sans_regle_extraite
+olaparib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+olaratumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+olezarsen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+oliceridine,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+olmesartan,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLCO1B1,,,P4_autre
+olutasidenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+omacetaxine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ombitasvir / paritaprevir / ritonavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3;IFNL4,,,,IFNL3;IFNL4,IFNL3;IFNL4,P2_etiquette_reglementaire_gene_des_50
+omeprazole,True,True,True,CPIC;DPWG,2,True,False,True,CYP2C19,5,CPIC,0,0,0,0,True,CYP2C19,CYP2C19,1A,ABCB1,CYP2C19,,P1_etiquete_corpus_v3
+omeprazole/sodiium bicarbonate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+ondansetron,True,True,True,CPIC,1,False,True,False,CYP2D6,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,1A,ABCB1;CYP3A5;SLC6A4,CYP2D6,,P1_etiquete_corpus_v3
+ondansetron hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+opioid anesthetics,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCG2;OPRM1,,,P4_autre
+opioids,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BDNF;BDNF-AS;CLCC1;CNIH3;CRYBG2;CYP1A2;CYP2A7P1;DBH;EXOC4;FAAH;GABRB3;GAL;GPR98;IL17A;LKAAEAR1;MCOLN1;MUC16;PDE3A;POM121L2;RGS19;RHBDF2;TACR3;TAOK3;ZNF165;ZNF568;ZNF804A;ZSCAN25,,,P4_autre
+opipramol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+opium alkaloids and derivatives,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CHRNA3,,,P4_autre
+opium derivatives and expectorants,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+osimertinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+ospemifene,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2B6;CYP2C9,CYP2B6;CYP2C9,,,CYP2B6;CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+other general anesthetics,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCG2;OPRM1,,,P4_autre
+oxaliplatin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC2;KLC3;MGAT4A;PARD3B;PIN1;PTGS2;SELE,,,P4_autre
+oxazepam,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT2B15,,,P4_autre
+oxcarbazepine,True,False,True,CPIC;DPWG;RNPGx,3,False,True,True,HLA-A;HLA-B,0,,0,0,0,0,True,HLA-A;HLA-B,HLA-B,1A,ABCB1;HLA-DRB1;UGT1A10;UGT1A7;UGT1A8;UGT1A9,HLA-A;HLA-B,HLA-A;HLA-B,P1c_guideline_sans_regle_extraite
+oxycodone,True,True,True,CPIC;DPWG,2,False,False,False,COMT;CYP2D6;OPRM1,4,CPIC;DPWG,0,0,0,0,True,CYP2D6,,2A,RHBDF2;SEPTIN3;WBP2NL,CYP2D6,,P1_etiquete_corpus_v3
+oxymetazoline and tetracaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+oxymorphone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+paclitaxel,True,False,False,DPWG,1,False,False,False,CYP3A4,0,,0,0,0,0,False,,,3,ACSS2;DSCAM;EPHA5;FGD4;FNTB;MAD1L1;MAP3K1;RAF1;SLC29A1;SLCO1B3;SOD2,CYP3A4,CYP3A4,P1c_guideline_sans_regle_extraite
+palbociclib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+paliperidone,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,MC4R;RABEP1;SH2B1,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+palonosetron,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+pamidronate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,4,CYP2C8,,,P4_autre
+panitumumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,3,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+pantoprazole,True,True,True,CPIC;DPWG,2,True,False,True,CYP2C19,5,CPIC,0,0,0,0,True,CYP2C19,CYP2C19,1A,,CYP2C19,,P1_etiquete_corpus_v3
+pantoprazole sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+pantoprazole sodium granules,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+"paracetamol, combinations excl. psycholeptics (vicks medinait sirup)",False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;G6PD,,,,CYP2D6;G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+paramethoxymethamphetamine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+parathyroid hormones and analogues,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+paromomycin,False,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,False,,,,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+paroxetine,True,True,True,CPIC;DPWG,4,True,True,True,CYP2D6;HTR2A;SLC6A4,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,1A,ADM;COMT;DRD3;GDNF;HTR1B;HTR7;MDGA2;REEP5;RPP30;SRP19,CYP2D6,,P1_etiquete_corpus_v3
+paroxetine hydrochloride hemihydrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+patisiran,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+pazopanib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,HLA-B;UGT1A1,HLA-B;UGT1A1,3,KDR;UGT1A1,HLA-B;UGT1A1,HLA-B,P2_etiquette_reglementaire_gene_des_50
+pazopanib hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+pegaptanib,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,VEGFA,,,P4_autre
+pegaspargase,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BMP7;DOK5;GATA3;HLA-DQB1;HLA-DRB1;LINC00251,,,P4_autre
+peginterferon alfa-2a,True,False,True,CPIC,1,False,False,False,IFNL3,0,,0,0,0,0,False,,,1A,CXCL10;EGFR;HLA-B;MICB;SLC29A1;VDR,IFNL3,IFNL3,P1c_guideline_sans_regle_extraite
+peginterferon alfa-2b,True,False,True,CPIC,1,False,False,False,IFNL3,0,,0,0,0,0,True,IFNL3,IFNL3,1A,CXCL10;CYP2R1;EGFR;HLA-B;HLA-C;HLA-DPA1;IL6;MICB;OASL;SLC28A2;SLC29A1;SLC6A4;VDR,IFNL3,IFNL3,P1c_guideline_sans_regle_extraite
+pegloticase,True,False,True,CPIC,1,False,True,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,3,G6PD,G6PD,G6PD,P1b_guideline_regles_exclues
+pembrolizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+pemetrexed,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,3,ABCC2;DHFR;FOLR3;GGH;MTHFR;SLC19A1,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+pemigatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+penicillin g,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+penicillin v,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+pentoxifylline,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+pentoxifylline m5,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+perampanel,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+perindopril,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,3,ACE;AGTR1;BDKRB1,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+perphenazine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,RGS4,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+pertussis vaccines,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,TLR4,,,P4_autre
+pertuzumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+phenazepam,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+phenazopyridine,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,3,G6PD,G6PD,G6PD,P1b_guideline_regles_exclues
+phenobarbital,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP1A1;MTHFR;SCN2A,,,P4_autre
+phenprocoumon,True,False,True,DPWG,2,True,False,True,CYP2C9;VKORC1,0,,0,0,0,0,False,,,1A,EPHX1;PPARA;STX4,CYP2C9;VKORC1,VKORC1,P1c_guideline_sans_regle_extraite
+phenytoin,True,True,True,CPIC;DPWG,3,True,True,True,CYP2C9;HLA-B,8,CPIC;DPWG,0,3,0,0,True,CYP2C19;CYP2C9;HLA-B,CYP2C19;CYP2C9;HLA-B,1A,CFHR4;CYP1A1;EPHX1;MTHFR;NAT2;SCN2A,CYP2C19;CYP2C9;HLA-B,HLA-B,P1_etiquete_corpus_v3
+phenytoin sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+photodynamic therapy,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,F13A1,,,P4_autre
+pilocarpine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+pimozide,True,True,True,DPWG,1,True,False,True,CYP2D6,3,DPWG,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P1_etiquete_corpus_v3
+pindolol,False,False,False,CPIC,2,False,False,False,ADRA2C;ADRB1;ADRB2;GRK4;GRK5,0,,0,0,0,0,False,,,,,ADRB2,ADRB2,P1c_guideline_sans_regle_extraite
+pioglitazone,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,3,PTPRD,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+piroxicam,True,True,True,CPIC,1,False,True,False,CYP2C9,3,CPIC,1,0,0,1,True,CYP2C9,CYP2C9,1A,,CYP2C9,,P1_etiquete_corpus_v3
+pirtobrutinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+pitavastatin,True,True,True,CPIC,3,True,True,False,ABCG2;CYP3A4;CYP3A5;HMGCR;SLCO1B1,4,CPIC,2,0,0,0,True,SLCO1B1,,1A,,ABCG2;CYP3A4;CYP3A5;SLCO1B1,CYP3A4,P1_etiquete_corpus_v3
+pitavastatin lactone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+pitolisant,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+pitrakinra,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IL4R,,,P4_autre
+platinum,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ERCC1;ERCC2;ERCC5;GSTP1;KLC3,,,P4_autre
+platinum compounds,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,2B,APLF;AXIN2;CXXC4;DYNC2H1;ERCC3;GSTM1;H19;HSPA5;IL16;KLC3;MALAT1;NOS3;NQO1;POLR1G;PPP1R13L;RRM1;SLC19A1;TMEM167A;TP53;WIF1;WNT5B;XPA,,,P3_association_niveau_2B_ou_mieux
+plazomicin,False,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,True,MT-RNR1,MT-RNR1,,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+polatuzumab vedotin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+pomalidomide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+ponatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+posaconazole,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+pralsetinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+pramipexole,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DRD3,,,P4_autre
+pramipexole dihydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+prasugrel,True,False,False,DPWG,1,False,False,False,CYP2C19,0,,0,0,0,0,True,CYP2B6;CYP2C19;CYP2C9;CYP3A5,CYP2B6;CYP2C19;CYP2C9;CYP3A5,3,NTRK1,CYP2B6;CYP2C19;CYP2C9;CYP3A5,,P1c_guideline_sans_regle_extraite
+pravastatin,True,True,True,CPIC;DPWG,4,True,True,False,ABCG2;CYP3A4;CYP3A5;HMGCR;SLCO1B1,4,CPIC,1,1,0,0,True,APOE,,1A,ABCA1;ACE;ADAMTS1;APOE;HLA-DRB1;IL1B;LDLR;LPL;MMP3;MTTP;NPC1L1;RHOA,ABCG2;APOE;CYP3A4;CYP3A5;SLCO1B1,APOE;CYP3A4,P1_etiquete_corpus_v3
+praziquantel,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+prednisolone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DSE;PNPLA3;TSPYL1,,,P4_autre
+prednisone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;BMP7;CTLA4;CXCL12;DOK5;GATA3;GSTA1;LINC00251,,,P4_autre
+pregabalin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+pridopidine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+prilocaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+primaquine,True,False,True,CPIC,1,False,True,False,G6PD,2,CPIC,0,0,2,0,True,CYP2D6;G6PD,CYP2D6;G6PD,3,IKBKG,CYP2D6;G6PD,G6PD,P1b_guideline_regles_exclues
+primaquine 5,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+primaquine phosphate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+primidone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+probenecid,True,False,True,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,CYP2D6;G6PD,,,CYP2D6;G6PD,G6PD,P1c_guideline_sans_regle_extraite
+procainamide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,NAT2,CYP2D6;G6PD,,,CYP2D6;G6PD;NAT2,G6PD;NAT2,P2_etiquette_reglementaire_gene_des_50
+progesterone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+proguanil,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+propafenone,True,True,True,DPWG,1,True,True,True,CYP2D6,3,DPWG,0,0,0,0,True,CYP2D6,CYP2D6,1A,,CYP2D6,,P1_etiquete_corpus_v3
+propionic acid derivatives,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PLA2G4A;PLCG1;TNFRSF11A,,,P4_autre
+propofol,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT1A9,,,P4_autre
+propranolol,True,True,False,CPIC,3,False,False,False,ADRA2C;ADRB1;ADRB2;CYP2D6;GRK4;GRK5,1,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,3,ADRB2;COMT,ADRB2;CYP2D6,ADRB2,P1_etiquete_corpus_v3
+propranolol hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+protease inhibitors,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC28A2,,,P4_autre
+proton pump inhibitors,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+protriptyline,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+purine analogues,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+purixan,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+pyrazinamide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2B6;TNF,,,P4_autre
+pyrazolones,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PLA2G4A;PLCG1;TNFRSF11A,,,P4_autre
+pyrimethamine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IKBKG,,,P4_autre
+qt-prolonging drugs,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,KCNE1,,,P4_autre
+quetiapine,True,True,True,DPWG,2,True,True,True,CYP2D6;CYP3A4,2,DPWG,1,1,0,0,False,,,1A,COMT;DRD3;EIF2AK4;EPM2A;FAAH;GRIN2B;HTR1A;MC4R;MIR582;PDE4D;RABEP1;RGS4;SH2B1,CYP2D6;CYP3A4,CYP3A4,P1_etiquete_corpus_v3
+quinacrine,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,False,,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+quinapril,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGT,,,P4_autre
+quinidine,True,False,False,DPWG,1,False,False,False,CYP2D6,0,,0,0,0,0,True,CYP2D6,CYP2D6,3,KCNE1;KCNH2,CYP2D6,,P1c_guideline_sans_regle_extraite
+quinine,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,CYP2D6;G6PD,CYP2D6;G6PD,,,CYP2D6;G6PD,G6PD,P1b_guideline_regles_exclues
+quizartinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+r-eddp,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+r-methylphenobarbital,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+r-norfluoxetine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+rabeprazole,True,False,True,CPIC;DPWG,2,False,False,False,CYP2C19,0,,0,0,0,0,True,CYP2C19,CYP2C19,2A,,CYP2C19,,P1c_guideline_sans_regle_extraite
+rabeprazole sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+radiotherapy,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,APEX1;AREG;CDK1;MUTYH;OSGEP;PRKCE;TANC1;TMEM167A,,,P4_autre
+raloxifene,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,UGT1A1;UGT1A8;ZNF423,,,P4_autre
+raloxifene 6-glucuronide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+raloxifene-4′-glucuronide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+raltegravir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,UGT1A1,UGT1A1,,,UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+raltitrexed,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,TYMS,,,P4_autre
+ramelteon,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+ramipril,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+ramucirumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+ranolazine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+rasagiline,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,DRD2,,,P4_autre
+rasburicase,True,False,True,CPIC,1,False,True,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,1A,G6PD,G6PD,G6PD,P1b_guideline_regles_exclues
+ravulizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CHRNA5,,,,CHRNA5,CHRNA5,P2_etiquette_reglementaire_gene_des_50
+"recombinant""",True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+regadenoson,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AMPD1,,,P4_autre
+regorafenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,,,,P4_autre
+relugolix / estradiol / norethindrone acetate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,F5,,,,F5,,P2_etiquette_reglementaire_gene_des_50
+remifentanil,False,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,COMT;OPRM1,,,P1c_guideline_sans_regle_extraite
+repaglinide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C8;IGF2BP2;KCNJ11;KCNQ1;NEUROD1;NOS1AP;NR1I2;SLC30A8;TCF7L2,,,P4_autre
+repotrectinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+resmetirom,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,ABCG2,ABCG2,,,ABCG2,,P2_etiquette_reglementaire_gene_des_50
+revumenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ribavirin,True,False,True,CPIC;DPWG,2,False,False,False,HLA-B;IFNL3,0,,0,0,0,0,False,,,1A,BCL2;CYP2R1;EGFR;FTO;HLA-B;HLA-C;IL18;IL6;MICB;OASL;SLC28A2;SLC29A1;SLC6A4;VDR,HLA-B;IFNL3,HLA-B;IFNL3,P1c_guideline_sans_regle_extraite
+ribociclib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ribostamycin,False,False,False,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,False,,,,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+rifampin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AGBL4;CUX2;CYP2B6;NOS2;NR1I2;RIPOR2;TNF,,,P4_autre
+rimegepant,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+risdiplam,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+risedronate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IL1B,,,P4_autre
+risperidone,True,True,True,DPWG,1,True,True,True,CYP2D6,3,DPWG,1,0,0,0,True,CYP2D6,CYP2D6,1A,ADRB2;CCL2;CYP1B1;CYP2E1;EIF2AK4;EPM2A;GRID2;GRIN2B;GRM3;GRM7;HTT;MSANTD1;PPA2;RABEP1;RGS4;SH2B1;TJP1;TNFRSF11A;UGT1A1;UGT1A10;UGT1A3;UGT1A5;UGT1A6;UGT1A7;UGT1A8;UGT1A9,CYP2D6,,P1_etiquete_corpus_v3
+ritonavir,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;CYP3A4,IFNL3,3,ABCC2;APOC3;APOE;UGT1A3;UGT1A7,CYP2D6;CYP3A4;IFNL3,CYP3A4;IFNL3,P2_etiquette_reglementaire_gene_des_50
+rituximab,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,,,2B,ABCB1;CXCL12;FCGR3A;GSTA1;IL2;TGFB1,,,P3_association_niveau_2B_ou_mieux
+rivaroxaban,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,F5,,3,,F5,,P2_etiquette_reglementaire_gene_des_50
+rivastigmine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CHRNA7,,,P4_autre
+rivastigmine tartrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+rocuronium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;IAPP;SLCO1B1,,,P4_autre
+rofecoxib,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PTGS2,,,P4_autre
+ropeginterferon alfa-2b,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+ropivacaine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+rosiglitazone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+rosuvastatin,True,True,True,CPIC;DPWG,3,True,True,True,ABCG2;CYP3A4;CYP3A5;HMGCR;SLCO1B1,12,CPIC,3,0,0,0,True,ABCG2;SLCO1B1,SLCO1B1,1A,ABCA1;CETP;CRP;FMO3;HLA-DRB1;KIF6;LPA,ABCG2;CYP3A4;CYP3A5;SLCO1B1,CYP3A4,P1_etiquete_corpus_v3
+rosuvastatin calcium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+rozanolixizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CHRNA5,,,,CHRNA5,CHRNA5,P2_etiquette_reglementaire_gene_des_50
+rubella vaccines,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+rucaparib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+ruxolitinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+s-eddp,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT2B7,,,P4_autre
+s-methadone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+s-norfluoxetine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+sacituzumab govitecan,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,UGT1A1,,1A,,UGT1A1,,P2_etiquette_reglementaire_gene_des_50
+sacrosidase,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+salbutamol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CLOCK;COL22A1,,,P4_autre
+salmeterol,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,2A,,,,P3_association_niveau_2B_ou_mieux
+salvianolic acid b,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NOS3,,,P4_autre
+satralizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+seladelpar,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C9,CYP2C9,,,CYP2C9,,P2_etiquette_reglementaire_gene_des_50
+selective beta-2-adrenoreceptor agonists,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ARG1;VDR,,,P4_autre
+selective serotonin reuptake inhibitors,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADRA2A;COMT;GABRA6;GABRP;GAL;GRIA3;HTR1A;HTR7;PLCB1;SLC1A1;SLC6A4,,,P4_autre
+selegiline,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC22A1,,,P4_autre
+selpercatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+sepiapterin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,ABCG2,ABCG2,,,ABCG2,,P2_etiquette_reglementaire_gene_des_50
+serdexmethylphenidate and dexmethylphenidate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+sertindole,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+sertraline,True,True,True,CPIC;DPWG,5,True,True,True,CYP2B6;CYP2C19;CYP2D6;HTR2A;SLC6A4,35,CPIC,11,4,0,0,False,,,1A,HTR1A;P3H3;REEP5;SRP19,CYP2B6;CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+setmelanotide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+sevoflurane,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,True,CACNA1S;RYR1,CACNA1S;RYR1,1A,CACNA1S;CYP2E1;DUX1;FASTKD3;GABRA2;GRIN2B;KCNK2;KCNK3;MTRR,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+sibutramine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GNB3,,,P4_autre
+sildenafil,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACE;CYP3A4;GNB3;NOS3;VEGFA,,,P4_autre
+sildenafil citrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+silibinin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1,,,P4_autre
+silodosin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+simeprevir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,IFNL3,3,IFNL3;IFNL4,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+simvastatin,True,True,True,CPIC;DPWG;RNPGx,5,True,True,True,ABCG2;CYP3A4;CYP3A5;HMGCR;SLCO1B1,4,CPIC,0,0,0,0,True,SLCO1B1,,1A,ABCA1;ABCC2;APOA5;CYBA;F3;HLA-DRB1;HMGCR;LEPR;LIPC;PON1;RHOA;SCAP;UGT1A9,ABCG2;CYP3A4;CYP3A5;SLCO1B1,CYP3A4,P1_etiquete_corpus_v3
+simvastatin acid,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,1A,SLCO1B1,,,P3_association_niveau_2B_ou_mieux
+sipoglitazar,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT2B15,,,P4_autre
+siponimod,True,True,True,DPWG,1,True,True,True,CYP2C9,2,DPWG,0,1,0,0,True,CYP2C9,CYP2C9,1A,CYP2C9,CYP2C9,,P1_etiquete_corpus_v3
+sirolimus,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,3,IL10;NR1I2;TCF7L2,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+sitagliptin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,KCNJ11,,,P4_autre
+sitagliptin and metformin hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+sn-38,True,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,1B,SLCO1B1;UGT1A9,,,P3_association_niveau_2B_ou_mieux
+sodium ascorbate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+sodium benzoate / sodium phenylacetate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CPS1;NAGS;OTC,,,,CPS1;NAGS;OTC,CPS1;NAGS;OTC,P2_etiquette_reglementaire_gene_des_50
+sodium nitrate,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,False,,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+sodium nitrite,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+sodium oxybate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+sodium phenylbutyrate,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CPS1;OTC,CPS1,,,CPS1;OTC,CPS1;OTC,P2_etiquette_reglementaire_gene_des_50
+sofosbuvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3;IFNL4,IFNL3,3,IFNL3,IFNL3;IFNL4,IFNL3;IFNL4,P2_etiquette_reglementaire_gene_des_50
+sofosbuvir / velpatasvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+sofosbuvir / velpatasvir / voxilaprevir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,,,,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+solanidine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+somatropin recombinant,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CDK4;COL1A1,,,P4_autre
+sorafenib,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;ABCC2;ADAMTS18;CDH13;HIF1A;KDR;MAP2K6;NOS3;PRKCE;SLC15A2;SLCO1B1;TNF;UGT1A9;VEGFA;WWOX,,,P4_autre
+sotalol,True,False,False,CPIC;DPWG,3,False,False,False,ADRA2C;ADRB1;ADRB2;CYP2D6;GRK4;GRK5,0,,0,0,0,0,False,,,3,KCNE1,ADRB2;CYP2D6,ADRB2,P1c_guideline_sans_regle_extraite
+sotorasib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+sparteine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2D6,,,P4_autre
+spironolactone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ADD1;NOS3,,,P4_autre
+stavudine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,TNF,,,P4_autre
+streptomycin,True,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,True,MT-RNR1,MT-RNR1,1A,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+succimer,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+succinylcholine,True,False,True,CPIC,1,False,True,False,CACNA1S;RYR1,0,,0,0,0,0,True,CACNA1S;RYR1,CACNA1S;RYR1,1A,BCHE;CACNA1S;RYR1,CACNA1S;RYR1,CACNA1S;RYR1,P1c_guideline_sans_regle_extraite
+succinylcholine chloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+sufentanil,True,False,False,CPIC,1,False,False,False,COMT;OPRM1,0,,0,0,0,0,False,,,3,,,,P1c_guideline_sans_regle_extraite
+sulfacetamide,True,False,True,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,False,,,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+sulfadiazine,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,,,G6PD,G6PD,P1b_guideline_regles_exclues
+sulfadoxine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IKBKG,,,P4_autre
+sulfamethazine,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+sulfamethoxazole,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,G6PD,3,G6PD;GCLC,G6PD,G6PD,P1b_guideline_regles_exclues
+sulfamethoxazole / trimethoprim,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD;NAT2,,2A,GSTM1;HLA-B;HLA-C,G6PD;NAT2,G6PD;NAT2,P1b_guideline_regles_exclues
+sulfamethoxazole/trimethoprim,False,False,True,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+sulfanilamide,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+sulfapyridine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+sulfasalazine,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD;NAT2,G6PD,3,G6PD;HLA-B;MTR,G6PD;NAT2,G6PD;NAT2,P1b_guideline_regles_exclues
+sulfinpyrazone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT1A9,,,P4_autre
+sulfisoxazole,True,False,True,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,EGFR;G6PD,,,EGFR;G6PD,EGFR;G6PD,P1b_guideline_regles_exclues
+sulfonamides,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+"sulfonamides, urea derivatives",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,CYP2C19;TCF7L2,,,P4_autre
+sulindac,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FMO3,,,P4_autre
+sumatriptan,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,BDNF;COMT;DBH;DRD2;GNB3;HTR2A;OPRM1,,,P4_autre
+sunitinib,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,3,FLT4;IL8;NR1I2;POR;SLCO1B3;VEGFA,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+"synthetic conjugated estrogens, a",False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tacrolimus,True,True,True,CPIC;DPWG;RNPGx,3,True,False,True,CYP3A4;CYP3A5,3,CPIC,0,0,0,0,True,CYP3A4;CYP3A5,,1A,CAPN10;CYP2C8;CYP2J2;CYP3A7;HSD11B1;KCNJ11;KCNQ1;NOD2;SUMO4;ZSCAN25,CYP3A4;CYP3A5,CYP3A4,P1_etiquete_corpus_v3
+tadalafil,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+tafamidis,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tafenoquine,True,False,True,CPIC,1,False,True,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,3,,G6PD,G6PD,P1b_guideline_regles_exclues
+talazoparib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tamoxifen,True,True,True,CPIC;CPNDS;DPWG;RNPGx,4,True,True,True,CYP2D6,4,CPIC,0,0,0,0,True,CYP2D6;F5,CYP2D6,1A,CYP19A1;E2F7;ESR2;LRMDA;NCOA1;RRAS2;ZNF423,CYP2D6;F5,,P1_etiquete_corpus_v3
+tamoxifen citrate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+tamsulosin,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;CYP3A4,CYP2D6,,,CYP2D6;CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+tamsulosin hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+tapentadol,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,NPIPB8;SULT1A3,,,P4_autre
+taxanes,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;ATP7B;GSR;SCN10A,,,P4_autre
+tebentafusp,True,False,False,RNPGx,1,False,True,True,HLA-A,0,,0,0,0,0,True,HLA-A,,,,HLA-A,HLA-A,P1c_guideline_sans_regle_extraite
+tegafur,True,True,True,AIOM;CPIC;DPWG;SEFF/SEOM,4,True,True,True,DPYD,3,CPIC;DPWG,1,0,0,0,False,,,1A,EGFR;UMPS,DPYD,,P1_etiquete_corpus_v3
+tegafur / gimeracil / oteracil,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,DPYD,,3,,DPYD,,P2_etiquette_reglementaire_gene_des_50
+telaprevir,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,IFNL3,IFNL3,1A,CYP24A1,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+telithromycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+telmisartan,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GNB3;SLCO1B3;UGT1A3,,,P4_autre
+temsirolimus,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+teneligliptin,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+tenofovir,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC10;ABCG2;OCRL,,,P4_autre
+tenofovir alafenamide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+tenofovir disoproxil fumarate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP24A1;CYP27B1;SLC28A2,,,P4_autre
+tenoxicam,True,True,True,CPIC,1,False,True,False,CYP2C9,3,CPIC,1,0,0,1,False,,,1A,CYP2C9,CYP2C9,,P1_etiquete_corpus_v3
+tepotinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,EGFR,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+terbinafine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+tetrabenazine,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+tezacaftor,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,CFTR,3,CFTR,CFTR,CFTR,P2_etiquette_reglementaire_gene_des_50
+thalidomide,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC6;ATP7A;CHST3;CTNNB1;CYP4B1;ERCC1;FGF2;GSTT1;NAT2;PPARD;RPL13;SLC10A2;SNORD68;SPG7;SULT1C4;XRCC5,,,P4_autre
+theophylline,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+"thiazides, plain",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,ACE;AGTR1;GNB3;NELFCD;SLC12A3;SLCO2A1,,,P4_autre
+thiazolidinediones,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,AQP2,,,P4_autre
+thioguanine,True,True,True,CPIC;DPWG,3,True,True,True,NUDT15;TPMT,4,DPWG,2,2,0,0,True,NUDT15;TPMT,CYP2D6;NUDT15;TPMT,1A,BMP7;DOK5;GATA3;LINC00251,CYP2D6;NUDT15;TPMT,,P1_etiquete_corpus_v3
+thioguanosine diphosphate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+thioguanosine monophosphate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+thioguanosine triphosphate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+thiopurine,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+thioridazine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6;NUDT15,3,CYP2D6,CYP2D6;NUDT15,,P2_etiquette_reglementaire_gene_des_50
+thiotepa,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ALDH1A1;GSTP1,,,P4_autre
+threo-4-hydroxyhydrobupropion,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+thyrotropin alfa,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FSHR,,,P4_autre
+tianeptine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,OPRM1,,,P4_autre
+ticagrelor,True,False,False,DPWG,1,False,False,False,CYP2C19,0,,0,0,0,0,True,CYP2C19,CYP2C19,3,CYP3A43;PEAR1,CYP2C19,,P1c_guideline_sans_regle_extraite
+ticlopidine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B;HLA-C,,,P4_autre
+tiludronate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,IL1B,,,P4_autre
+timolol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,3,ADRB1,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+tiotropium,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,3,ADRB2,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+tipiracil / trifluridine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tipiracil hydrochloride,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC29A1,,,P4_autre
+tipranavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,,,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+tislelizumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tobramycin,True,False,True,CPIC,1,False,True,False,MT-RNR1,2,CPIC,0,0,2,0,True,MT-RNR1,MT-RNR1,1A,,MT-RNR1,MT-RNR1,P1b_guideline_regles_exclues
+tocilizumab,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CD69;FCGR3A;GALNT18,,,P4_autre
+tofersen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,G6PD,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+tolazamide,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+tolbutamide,True,False,False,CPIC;DPWG,2,False,False,False,CYP2C9;G6PD,3,CPIC,0,0,3,0,True,G6PD,G6PD,3,,CYP2C9;G6PD,G6PD,P1b_guideline_regles_exclues
+tolperisone,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,3,CYP2D6,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+tolterodine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;CYP3A4,CYP2D6,3,,CYP2D6;CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+toluidine blue,True,False,False,CPIC,1,False,True,False,G6PD,3,CPIC,0,0,3,0,False,,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+topiramate,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1;CA12;INSR;SCN2A,,,P4_autre
+topoisomerase i inhibitors,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EGFR,,,P4_autre
+topotecan,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCG2,,,P4_autre
+torasemide,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ACE;ADD1;GNB3;NPPA-AS1;SLC12A3,,,P4_autre
+toremifene,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tositumomab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tovorafenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tramadol,True,True,True,CPIC;DPWG,3,True,True,True,COMT;CYP2D6;OPRM1,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,1A,ARRB2;HCN1;ICA1;OPRD1;RFPL4B;RGL4;SEPTIN3;SULT1A3;WBP2NL,CYP2D6,,P1_etiquete_corpus_v3
+tramadol hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+trametinib,True,False,False,CPIC,1,False,False,False,G6PD,0,,0,0,0,0,True,G6PD,G6PD,,,G6PD,G6PD,P1c_guideline_sans_regle_extraite
+trandolapril,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PTPRD,,,P4_autre
+tranilast,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,UGT1A1,,,P4_autre
+trastuzumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,ERBB3;FCGR2A;FCGR3A;PPCDC;RNF8,,,P4_autre
+trastuzumab deruxtecan,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+trastuzumab emtansine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tremelimumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,EGFR,,,,EGFR,EGFR,P2_etiquette_reglementaire_gene_des_50
+tretinoin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+triamcinolone,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GLCCI1;HCG22,,,P4_autre
+trichloroethylene,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-B,,,P4_autre
+trifluoperazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EPM2A,,,P4_autre
+trifluridine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC29A1,,,P4_autre
+triglycerides,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP19A1,,,P4_autre
+triheptanoin,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+trimipramine,True,True,True,CPIC,1,True,True,False,CYP2C19;CYP2D6,9,CPIC,3,0,0,0,True,CYP2D6,CYP2D6,1A,CYP2C19;CYP2C9;CYP2D6,CYP2C19;CYP2D6,,P1_etiquete_corpus_v3
+trofinetide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tropisetron,True,True,True,CPIC,1,False,True,False,CYP2D6,4,CPIC,0,0,0,0,False,,,1A,CYP2D6,CYP2D6,,P1_etiquete_corpus_v3
+tucatinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+tumor necrosis factor alpha (tnf-alpha) inhibitors,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ARAP2;C9orf72;CD14;CDKAL1;CERS6;CNPY4;CSRP3;CST5;CTNNA2;FBXL19;GBP6;HLA-C;HLA-DQA1;IFNG;IL12B;IL17A;IL1B;IL1RN;IL23R;IL6;LY96;MAFB;MAP3K1;MICA;MOB3B;PGLYRP4;PON1;SLC12A8;TLR2;TLR4;TLR9;TNFAIP3;TNFRSF10A;TNFRSF1A;ZNF816,,,P4_autre
+umeclidinium,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+umeclidinium / vilanterol,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+upadacitinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+uracil,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+urea derivatives,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,,,,P4_autre
+urofollitropin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,FSHR,,,P4_autre
+ustekinumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,HLA-C;IL12B;IL1B;TIRAP;TLR5,,,P4_autre
+valbenazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,CYP2D6,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+valproic acid,True,False,True,,0,False,False,False,,0,,0,0,0,0,True,CPS1;OTC;POLG,POLG,3,ANKK1;COL1A1;CYP1A1;GRIN2B;LEPR;RABEP1;SH2B1;SOD2;UGT1A3;UGT1A5,CPS1;OTC;POLG,CPS1;OTC;POLG,P2_etiquette_reglementaire_gene_des_50
+vancomycin,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HLA-A,,,P4_autre
+vandetanib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+vanzacaftor / tezacaftor / deutivacaftor,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CFTR,,,,CFTR,CFTR,P2_etiquette_reglementaire_gene_des_50
+vardenafil,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP3A5,,,P4_autre
+varenicline,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,HYKK,,,P4_autre
+velaglucerase alfa,False,False,True,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+velpatasvir,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,IFNL3,3,IFNL3;IFNL4,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+vemurafenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+venetoclax,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,CYP2D6;SLCO1B1,,,CYP2D6;SLCO1B1,,P2_etiquette_reglementaire_gene_des_50
+venlafaxine,True,True,True,CPIC;DPWG,4,True,True,True,CYP2D6;HTR2A;SLC6A4,4,CPIC,0,0,0,0,True,CYP2D6,CYP2D6,1A,GABRA6;GABRP;GABRQ;GRIA3;SLC6A2,CYP2D6,,P1_etiquete_corpus_v3
+verapamil,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GRK4;KCNIP1;KCNMB1;NOS1AP;NR1H3;PLEKHH2;PTPRD,,,P4_autre
+verapamil hydrochloride,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+vernakalant,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+vilazodone,False,False,False,CPIC,2,False,False,False,HTR2A;SLC6A4,0,,0,0,0,0,False,,,,,,,P1c_guideline_sans_regle_extraite
+viloxazine,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6;SLCO1B1,CYP2D6;SLCO1B1,,,CYP2D6;SLCO1B1,,P2_etiquette_reglementaire_gene_des_50
+viltolarsen,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+vinblastine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,GSTM1,,,P4_autre
+vincristine,True,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,3,ABCC3;ACTG1;BMP7;CAPG;CXCL12;DOK5;GATA3;GSTA1;LINC00251;PNPLA3,,,P4_autre
+vindesine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCB1,,,P4_autre
+vitamin b-complex with vitamin c,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,G6PD,,,,G6PD,G6PD,P2_etiquette_reglementaire_gene_des_50
+"vitamin b-complex, incl. combinations",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,MTHFR,,,P4_autre
+"vitamin b-complex, plain",False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,MTHFR;MTRR,,,P4_autre
+vitamin c,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,True,G6PD,,,,G6PD,G6PD,P1b_guideline_regles_exclues
+vitamin k and analogues,True,False,False,CPIC,1,False,False,False,G6PD,3,CPIC,0,0,3,0,False,,,3,CYP4F2,G6PD,G6PD,P1b_guideline_regles_exclues
+vitamin k1,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP4F2,,,P4_autre
+volatile anesthetics,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCG2;OPRM1;RYR1,,,P4_autre
+vonoprazan,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2C19;CYP2D6,CYP2C19,,,CYP2C19;CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+vorasidenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+voriconazole,True,True,True,AusNZ;CPIC;DPWG,3,True,True,True,CYP2C19,5,CPIC,1,0,0,0,True,CYP2C19,CYP2C19,1A,SLCO2B1,CYP2C19,,P1_etiquete_corpus_v3
+vortioxetine,True,True,True,CPIC,3,True,True,False,CYP2D6;HTR2A;SLC6A4,4,CPIC,2,0,0,0,True,CYP2D6,CYP2D6,1A,CYP2D6,CYP2D6,,P1_etiquete_corpus_v3
+voxelotor,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+voxilaprevir,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,IFNL3,3,IFNL3;IFNL4,IFNL3,IFNL3,P2_etiquette_reglementaire_gene_des_50
+vutrisiran,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+warfarin,True,True,True,CPIC;CPNDS;DPWG;RNPGx,5,True,True,True,CYP2C9;CYP4F2;VKORC1,2,DPWG,0,0,0,0,True,CYP2C9;VKORC1,CYP2C9;VKORC1,1A,ASPH;DDHD1;DNMT3A;EPHA7;HNF4A;NEDD4;PRSS53;STX1B;STX4;VKORC1L1,CYP2C9;CYP4F2;VKORC1,CYP4F2;VKORC1,P1_etiquete_corpus_v3
+warfarin sodium,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,,,,,P4_autre
+xanomeline / trospium,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP2D6,,,,CYP2D6,,P2_etiquette_reglementaire_gene_des_50
+zafirlukast,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C9,,,P4_autre
+zanidatamab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+zanubrutinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+zenocutuzumab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+zidovudine,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,ABCC4,,,P4_autre
+zidovudine / lamivudine / abacavir,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,HLA-B,,,,HLA-B,HLA-B,P2_etiquette_reglementaire_gene_des_50
+ziftomenib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+zileuton,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,PRORP,,,P4_autre
+zilucoplan,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CHRNA5,,,,CHRNA5,CHRNA5,P2_etiquette_reglementaire_gene_des_50
+zinc acetate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,SLC30A8,,,P4_autre
+ziprasidone,True,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,EIF2AK4;RGS4,,,P4_autre
+zolbetuximab,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+zoledronate,False,False,False,,0,False,False,False,,0,,0,0,0,0,False,,,3,CYP2C8;FDPS;PPCDC,,,P4_autre
+zongertinib,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,,,,,,,P4_autre
+zonisamide,False,False,False,,0,False,False,False,,0,,0,0,0,0,True,CYP3A4,,3,CA12;HLA-A,CYP3A4,CYP3A4,P2_etiquette_reglementaire_gene_des_50
+zuclopenthixol,True,True,True,DPWG,1,True,False,True,CYP2D6,3,DPWG,0,0,0,0,True,CYP2D6,,1A,,CYP2D6,,P1_etiquete_corpus_v3

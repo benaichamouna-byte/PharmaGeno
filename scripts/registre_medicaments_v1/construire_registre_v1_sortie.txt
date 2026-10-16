@@ -1,0 +1,13 @@
+Registre : 1126 médicaments -> registre_medicaments_v1.csv
+palier_provisoire
+P4_autre                                  669
+P2_etiquette_reglementaire_gene_des_50    226
+P1c_guideline_sans_regle_extraite          83
+P1_etiquete_corpus_v3                      76
+P1b_guideline_regles_exclues               49
+P3_association_niveau_2B_ou_mieux          23
+
+Guidelines (217) par organisme : {'ACR': 1, 'AHA': 1, 'AIOM': 4, 'AusNZ': 1, 'CFF': 1, 'CPIC': 168, 'CPNDS': 7, 'DPWG': 89, 'RNPGx': 21, 'SEFF/SEOM': 3} (nombre de médicaments par organisme)
+Médicaments avec au moins une guideline : 208
+  dont dans le corpus 530 : 193 | étiquetés corpus v3 : 76
+Liste 152 (article) : 152 lue, 125 avec guideline, 109 avec étiquette réglementaire PharmGKB, 67 étiquetés v3
