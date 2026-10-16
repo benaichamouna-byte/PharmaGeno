@@ -1,0 +1,11 @@
+1379 profils -> hla_profils_v1.csv
+profils avec HLA-B dbMHC : 508 | sans : 871
+HLA-B_source
+NaN       871
+PA0811    508
+HLA-B*15:02 {'non_type': 871, 'absent': 502, 'certain': 6}
+HLA-B*15:11 {'non_type': 871, 'absent': 508}
+HLA-B*57:01 {'non_type': 871, 'absent': 477, 'certain': 31}
+HLA-B*58:01 {'non_type': 871, 'absent': 483, 'possible': 22, 'certain': 3}
+HLA-A*31:01 {'non_type': 871, 'absent': 480, 'possible': 24, 'certain': 4}
+HLA-A*02:01 {'non_type': 871, 'absent': 317, 'possible': 162, 'certain': 29}

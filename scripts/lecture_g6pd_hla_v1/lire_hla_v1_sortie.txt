@@ -1,0 +1,12 @@
+22 lignes, 10 médicaments -> hla_consignes_v1.csv
+medicament
+abacavir                     CPIC,DPWG,RNPGx
+allopurinol              ACR,CPIC,DPWG,RNPGx
+carbamazepine     CPIC,CPNDS,DPWG,DPWG,RNPGx
+flucloxacillin                          DPWG
+fosphenytoin                            CPIC
+lamotrigine                             DPWG
+oxcarbazepine                CPIC,DPWG,RNPGx
+phenytoin                          CPIC,DPWG
+ribavirin                               DPWG
+tebentafusp                            RNPGx

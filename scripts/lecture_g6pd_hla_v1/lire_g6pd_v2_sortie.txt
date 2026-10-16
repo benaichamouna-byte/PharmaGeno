@@ -1,0 +1,18 @@
+49 lignes -> g6pd_consignes_v2.csv
+concordance_nom_pharmgkb_article
+oui                                                42
+nom différent (article : nitrofural)                1
+nom différent (article : mepacrine)                 1
+nom différent (article : sodium nitrite)            1
+nom différent (article : 4-aminosalicylic acid)     1
+nom différent (article : sulfadimidine)             1
+absent du tableau 2                                 1
+nom différent (article : vitamin k)                 1
+                         medicament                 concordance_nom_pharmgkb_article
+8                     nitrofurazone             nom différent (article : nitrofural)
+10                       quinacrine              nom différent (article : mepacrine)
+11                   sodium nitrate         nom différent (article : sodium nitrite)
+15              aminosalicylic acid  nom différent (article : 4-aminosalicylic acid)
+31                   sulfamethazine          nom différent (article : sulfadimidine)
+33  sulfamethoxazole / trimethoprim                              absent du tableau 2
+39          vitamin k and analogues              nom différent (article : vitamin k)

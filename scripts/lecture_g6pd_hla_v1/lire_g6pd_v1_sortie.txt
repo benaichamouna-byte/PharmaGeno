@@ -1,0 +1,8 @@
+49 lignes, 49 médicaments -> g6pd_consignes_v1.csv
+categorie_risque_cpic
+AUCUNE_RECOMMANDATION             15
+FAIBLE_A_AUCUN_RISQUE             25
+FAIBLE_A_AUCUN_RISQUE_ASPIRINE     1
+HAUT_RISQUE                        6
+HAUT_RISQUE_DEPENDANT_DOSE         1
+RISQUE_MOYEN                       1
