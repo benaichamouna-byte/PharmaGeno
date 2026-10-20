@@ -1,0 +1,14 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Modèle : xgb | lignes hors ensemble final : 112654 | groupes de médicaments (empreintes distinctes) : 110
+{'pli': 1, 'n_test': 22408, 'n_medicaments_test': 21, 'arbres': 35, 'f1_macro': 0.4245, 'f1_hors_surveiller': 0.566, 'exactitude': 0.8175, 'CER_strict': 0.7232, 'precision_EVITER': 0.2417, 'logloss': 0.6642, 'ECE': 0.1116, 'rappel_ADAPTER_DOSE': 0.446, 'rappel_EVITER': 0.2768, 'rappel_STANDARD': 0.8933, 'rappel_SURVEILLER': 0.0} | 8s
+{'pli': 2, 'n_test': 22399, 'n_medicaments_test': 24, 'arbres': 60, 'f1_macro': 0.4381, 'f1_hors_surveiller': 0.5841, 'exactitude': 0.8216, 'CER_strict': 0.5316, 'precision_EVITER': 0.7066, 'logloss': 0.5154, 'ECE': 0.1059, 'rappel_ADAPTER_DOSE': 0.3459, 'rappel_EVITER': 0.4684, 'rappel_STANDARD': 0.893, 'rappel_SURVEILLER': 0.0} | 19s
+{'pli': 3, 'n_test': 22533, 'n_medicaments_test': 21, 'arbres': 38, 'f1_macro': 0.4026, 'f1_hors_surveiller': 0.5368, 'exactitude': 0.7738, 'CER_strict': 0.5551, 'precision_EVITER': 0.456, 'logloss': 0.6081, 'ECE': 0.1147, 'rappel_ADAPTER_DOSE': 0.3857, 'rappel_EVITER': 0.4449, 'rappel_STANDARD': 0.8345, 'rappel_SURVEILLER': 0.0} | 29s
+{'pli': 4, 'n_test': 23189, 'n_medicaments_test': 25, 'arbres': 40, 'f1_macro': 0.3949, 'f1_hors_surveiller': 0.5266, 'exactitude': 0.848, 'CER_strict': 0.7427, 'precision_EVITER': 0.8532, 'logloss': 0.5866, 'ECE': 0.0813, 'rappel_ADAPTER_DOSE': 0.163, 'rappel_EVITER': 0.2573, 'rappel_STANDARD': 0.9914, 'rappel_SURVEILLER': 0.0} | 38s
+{'pli': 5, 'n_test': 22125, 'n_medicaments_test': 22, 'arbres': 183, 'f1_macro': 0.6093, 'f1_hors_surveiller': 0.6093, 'exactitude': 0.8642, 'CER_strict': 0.5917, 'precision_EVITER': 0.3845, 'logloss': 0.599, 'ECE': 0.0982, 'rappel_ADAPTER_DOSE': 0.471, 'rappel_EVITER': 0.4083, 'rappel_STANDARD': 0.9283, 'rappel_SURVEILLER': 0.0} | 69s
+
+RÉSULTAT xgb (médicament jamais vu) : F1 macro = 0.4539 +/- 0.0792 | exactitude = 0.8250 | CER strict = 0.6289 | précision EVITER = 0.5284
+Fichiers écrits dans resultats_v9/medicament_inconnu/xgb
+
+real	1m13.690s
+user	2m15.404s
+sys	0m1.456s

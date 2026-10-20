@@ -1,0 +1,14 @@
+PASS T1 référence CPIC = étiquettes du corpus | 130578 lignes comparées, 0 différences ; lignes non étiquetées avec action : 0
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+PASS T2 variables du moteur = variables d'entraînement | 600 lignes tirées, 0 différentes
+PASS T3 actions DL du moteur = calcul indépendant | 600 comparées, 0 différentes, 0 sans prédiction (couche de sécurité)
+PASS T4a médicament inconnu
+PASS T4b médicament sans empreinte | statut=dl_indisponible ; action_cpic=STANDARD
+PASS T4c gène requis manquant (jamais vu avec manquant) : pas de prédiction | statut=non_determine_gene
+PASS T4d combinaison jamais vue : pas de prédiction | statut=hors_domaine
+PASS T4e profil réel : tous les médicaments reçoivent un statut | {'ok': 97, 'hors_domaine': 16, 'dl_indisponible': 4}
+INFO 3000 lignes d'entraînement : statuts {'ok': 2990, 'a_verifier': 10} | alertes (sur 3000 prédictions DL) {'incertain': 10, 'desaccord_xgboost': 1, 'desaccord_cpic': 1}
+PASS T4f abstention : part « incertain » raisonnable (<= 3 %) | 0.33 %
+INFO T5 : l'action du DL change dans 0 cas sur 1500 (0.00 %) quand les gènes NON requis viennent d'un autre profil
+
+RÉSULTAT GLOBAL : TOUS LES TESTS PASSENT

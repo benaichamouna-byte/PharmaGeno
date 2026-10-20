@@ -1,0 +1,28 @@
+Lot application v8 - moteur (20 oct 2026) ; rien n'est écrasé (moteur_v7.py, modele_final_v7.py, domaine_v7.json restent intacts)
+
+Rôle (règle du projet : le DL est le CŒUR) :
+  DL (film, identifiant de médicament) = moteur de recommandation ; XGBoost = second avis ; règle CPIC/DPWG = référence affichée avec sa source
+  (jamais utilisée pour calculer la prédiction du DL) ; couche de sécurité = le modèle ne parle pas hors de ce qu'il a appris ; abstention sur confiance faible.
+
+Fichiers :
+  modele_final_v8.py                    entraîne les fichiers du modèle de l'application sur les ~90 % (ensemble final de 10 % NON LU, aucun verrou posé)
+  resultats_final_v8/                   modele_final_v8_dl_film_id.pt, modele_final_v8_xgb_id.json (+ _meta.json), abstention_seuils_v8.json,
+                                        modele_final_v8_validation_interne.json, modele_final_v8_configuration.json
+  resultats_final_v8_sortie.txt         sortie de l'entraînement
+  regle_cpic_v8.py                      référence CPIC/DPWG (même logique que construire_corpus_v3.py, dont les constantes sont importées)
+  construire_domaine_v8.py (+ _sortie)  construit domaine_v8.json
+  domaine_v8.json                       domaine de validité par médicament (113 dans le modèle, 4 en référence CPIC seule)
+  moteur_v8.py                          moteur (calcul + sécurité, sans interface)
+  test_moteur_v8.py (+ _sortie.txt)     tests T1 à T5 (tous PASS le 20 oct 2026)
+
+Résultats des tests : T1 la référence CPIC redonne les 130 578 étiquettes du corpus v7 (0 différence) et rien sur 30 765 lignes non étiquetées ;
+  T2/T3 variables et actions du moteur identiques à l'entraînement (600 lignes, 0 différence) ; T4 sécurité (médicament inconnu, sans empreinte, gène manquant,
+  combinaison jamais vue, abstention) ; T5 l'action du DL ne change dans aucun des 1500 cas testés quand les gènes non requis viennent d'un autre profil.
+  T2/T3/T5 portent sur des lignes vues à l'entraînement : ils testent la mécanique, PAS la performance.
+
+Fichiers nécessaires pour relancer (dans les lots précédents, à mettre dans le même dossier) :
+  protocole_commun_v8.py, train_dl_v9_graines.py (lot_dl_v10) ; construire_corpus_v3.py (lot_corpus_v4 / v5) ;
+  regles_v2_corrigees_multigene_v7.csv, corpus_v7/regles_v7_monogene.csv, corpus_v7/phenotype_drug_dataset_v7.csv (lot_corpus_v7_final) ;
+  profils_genes_v4.csv (lot_profils_v4_corpus_v6) ; drug_fingerprints_v2.pkl.
+Limites : seuils d'abstention pris sur les probabilités hors-plis de la validation croisée (jamais sur l'ensemble final) mais pour un modèle entraîné sur l'ensemble des ~90 % ;
+  30 765 des 161 343 paires profil x médicament (19,1 %) n'ont aucune action de référence (valeur sans règle pour ce médicament, ou gène manquant) : le modèle ne les a pas apprises et l'application répond « hors domaine » ou « gène non déterminé » (un profil de test : 16 médicaments sur 117).

@@ -1,0 +1,10 @@
+{
+ "source": "probabilités hors-plis de la validation croisée (DL, 5 fichiers, 563270 valeurs)",
+ "regle": "abstenir (« non décidé par le modèle ») si la probabilité maximale du DL est <= seuil ; la fraction indiquée est la part de prédictions écartées en validation croisée",
+ "seuils_confiance": {
+  "0.005": 0.868576169013977,
+  "0.010": 0.9304633736610413,
+  "0.020": 0.9654547572135925,
+  "0.050": 0.9844745993614197
+ }
+}

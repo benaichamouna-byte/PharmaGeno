@@ -1,0 +1,14 @@
+Lot du 19 octobre 2026 (fin d'après-midi) : réentraînement sur le corpus v7 (protocole v8 inchangé)
+Rien d'existant n'est modifié : resultats_v8/ reste intact.
+
+lancer_entrainement_v9.sh : XGBoost, RF, DL film, mêmes scripts que v8 (train_arbres_v8.py, train_dl_v8.py, protocole_commun_v8.py, déjà sauvegardés), données corpus_v7.
+resultats_v9/ : xgb/, rf/, dl_film/ (résultats par pli, hors-pli, découpage), *_sortie.txt avec temps.
+controle_codage_regles_profils_v1.py (+ _sortie.txt, .csv) : cohérence du codage profils / règles, par gène.
+analyse_erreurs_v9.py (+ _sortie.txt) : erreurs hors-pli du DL et de XGBoost.
+
+Résultats (moyenne des 5 plis, v9 ; v8 entre parenthèses) :
+  XGBoost : F1 macro 0,9999 (1,0000) ; CER strict 0,0011 (0,0004) ; précision EVITER 1,000 ; ECE 0,0002
+  RF      : F1 macro 0,9817 (0,9853) ; CER strict 0,0489 (0,0414) ; précision EVITER 0,982 ; ECE 0,0638
+  DL film : F1 macro 0,9687 ± 0,0172 (0,9642) ; CER strict 0,0131 (0,0055) ; précision EVITER 0,909 ; ECE 0,0143
+Erreurs hors-pli sur 112 654 lignes : DL 1 774 (1,57 %), XGBoost 6. EVITER manqués : DL 70 sur 5 323, XGBoost 6.
+Le découpage est recalculé car le corpus a changé (les plis ne sont pas identiques à ceux de v8).

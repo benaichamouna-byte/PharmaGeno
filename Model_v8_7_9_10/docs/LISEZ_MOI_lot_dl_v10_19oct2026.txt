@@ -1,0 +1,14 @@
+Lot DL v10 - 19 oct 2026 (complète lot_dl_v9 ; rien n'est écrasé)
+Contenu :
+ 1) Graines multiples : train_dl_v9_graines.py (copie de train_dl_v9.py + option --graine_modele), lancer_dl_graines_v9.sh,
+    resultats_v9/graines/ (graines 1 à 4 ; la graine 0 = resultats_v9/phase2b/dl_film_racine_id_evit2 du lot v9).
+    Configuration : DL film, identifiant de médicament, poids « racine », EVITER x2, tous les gènes, corpus v7.
+    Résultat (5 graines, même découpage en plis) : F1 macro 0,9980 +/- 0,0010 ; EVITER manqués 0,0029 +/- 0,0010.
+ 2) Médicament jamais vu : protocole_commun_v8.py (inchangé, requis), train_medicament_inconnu_v1.py, lancer_medicament_inconnu_v1.sh,
+    resultats_v9/medicament_inconnu/ (majorite, genes_xgb, rf, xgb, dl ; par_medicament_dl_rf_xgb.csv).
+    Découpage en 5 plis groupé par médicament (empreinte identique = même groupe), ensemble final 10 % non utilisé.
+ 3) RESUME_graines_et_medicament_inconnu_v1.csv : tableau récapitulatif des deux expériences.
+Limites : un seul découpage en plis ; l'écart-type des graines ne mesure que l'initialisation ; médicament jamais vu : 5 plis, écarts entre modèles
+du même ordre que l'écart-type entre plis (pas de test statistique fait).
+Pour relancer : cd dans le dossier des scripts ; bash lancer_dl_graines_v9.sh ; bash lancer_medicament_inconnu_v1.sh
+(les chemins du corpus v7 et des empreintes sont ceux du lot précédent).

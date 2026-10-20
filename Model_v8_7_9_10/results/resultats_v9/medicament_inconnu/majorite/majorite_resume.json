@@ -1,0 +1,21 @@
+{
+ "modele": "majorite",
+ "protocole": "médicament jamais vu : StratifiedGroupKFold(5) groupes=empreinte identique, graine 42 ; ensemble final non utilisé",
+ "n_lignes": 112654,
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.26096,
+ "f1_macro_std": 0.03902166577684761,
+ "f1_hors_surveiller_moy": 0.30678,
+ "exactitude_moy": 0.8526800000000001,
+ "CER_strict_moy": 1.0,
+ "CER_strict_std": 0.0,
+ "precision_EVITER_moy": 0.0,
+ "logloss_moy": 0.5379799999999999,
+ "ECE_moy": 0.014879999999999999,
+ "f1_macro_oof": 0.23008730820467113
+}

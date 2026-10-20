@@ -1,0 +1,21 @@
+{
+ "modele": "xgb",
+ "protocole": "médicament jamais vu : StratifiedGroupKFold(5) groupes=empreinte identique, graine 42 ; ensemble final non utilisé",
+ "n_lignes": 112654,
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.45388,
+ "f1_macro_std": 0.07921596808724866,
+ "f1_hors_surveiller_moy": 0.56456,
+ "exactitude_moy": 0.82502,
+ "CER_strict_moy": 0.62886,
+ "CER_strict_std": 0.08733898556772915,
+ "precision_EVITER_moy": 0.5284000000000001,
+ "logloss_moy": 0.59466,
+ "ECE_moy": 0.10233999999999999,
+ "f1_macro_oof": 0.41716376530520394
+}

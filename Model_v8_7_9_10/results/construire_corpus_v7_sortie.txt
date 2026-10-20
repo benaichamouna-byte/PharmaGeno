@@ -1,0 +1,23 @@
+profils 1379 | médicaments avec règle 117 | lignes croisées 161343 | colonnes valeur 37
+lignes de règles G6PD/HLA-B/MT-RNR1 de la v2 non reprises (remplacées, fichier v2 intact) : 123
+Fichier ecrit : corpus_v7/phenotype_drug_dataset_v3.csv 130578 lignes
+Lignes corpus : 161343
+         lignes_corpus  lignes_v3  lignes_incompletes  lignes_sans_regle
+origine                                                                 
+1KGP_HG         125190     101030               24160                  0
+1KGP_NA          36153      29548                6605                  0
+Médicaments avec règle utilisable : 117 | présents au corpus : 117
+Distribution v3 : {'STANDARD': 112013, 'ADAPTER_DOSE': 11902, 'EVITER': 5995, 'SURVEILLER': 668}
+Distribution v3 par origine :
+action   ADAPTER_DOSE  EVITER  STANDARD  SURVEILLER
+origine                                            
+1KGP_HG          8964    4548     87004         514
+1KGP_NA          2938    1447     25009         154
+Accord ancienne/v3 : 0.858
+v3        ADAPTER_DOSE  EVITER  STANDARD  SURVEILLER
+ancienne                                            
+STANDARD         11902    5995    112013         668
+Confiance : {'haute': 119090, 'moyenne': 11488}
+
+CORPUS v7 : 130578 lignes | 117 médicaments | 1379 profils
+{'STANDARD': 112013, 'ADAPTER_DOSE': 11902, 'EVITER': 5995, 'SURVEILLER': 668}

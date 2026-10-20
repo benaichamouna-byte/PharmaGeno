@@ -1,0 +1,14 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Modèle : majorite | lignes hors ensemble final : 112654 | groupes de médicaments (empreintes distinctes) : 110
+{'pli': 1, 'n_test': 22408, 'n_medicaments_test': 21, 'f1_macro': 0.23, 'f1_hors_surveiller': 0.3067, 'exactitude': 0.8521, 'CER_strict': 1.0, 'precision_EVITER': 0.0, 'logloss': 0.5274, 'ECE': 0.0092, 'rappel_ADAPTER_DOSE': 0.0, 'rappel_EVITER': 0.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 0s
+{'pli': 2, 'n_test': 22399, 'n_medicaments_test': 24, 'f1_macro': 0.2314, 'f1_hors_surveiller': 0.3085, 'exactitude': 0.8613, 'CER_strict': 1.0, 'precision_EVITER': 0.0, 'logloss': 0.5035, 'ECE': 0.0045, 'rappel_ADAPTER_DOSE': 0.0, 'rappel_EVITER': 0.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 0s
+{'pli': 3, 'n_test': 22533, 'n_medicaments_test': 21, 'f1_macro': 0.3081, 'f1_hors_surveiller': 0.3081, 'exactitude': 0.8595, 'CER_strict': 1.0, 'precision_EVITER': 0.0, 'logloss': 0.4925, 'ECE': 0.0025, 'rappel_ADAPTER_DOSE': 0.0, 'rappel_EVITER': 0.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 0s
+{'pli': 4, 'n_test': 23189, 'n_medicaments_test': 25, 'f1_macro': 0.226, 'f1_hors_surveiller': 0.3013, 'exactitude': 0.8248, 'CER_strict': 1.0, 'precision_EVITER': 0.0, 'logloss': 0.6791, 'ECE': 0.0312, 'rappel_ADAPTER_DOSE': 0.0, 'rappel_EVITER': 0.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 0s
+{'pli': 5, 'n_test': 22125, 'n_medicaments_test': 22, 'f1_macro': 0.3093, 'f1_hors_surveiller': 0.3093, 'exactitude': 0.8657, 'CER_strict': 1.0, 'precision_EVITER': 0.0, 'logloss': 0.4874, 'ECE': 0.027, 'rappel_ADAPTER_DOSE': 0.0, 'rappel_EVITER': 0.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 0s
+
+RÉSULTAT majorite (médicament jamais vu) : F1 macro = 0.2610 +/- 0.0390 | exactitude = 0.8527 | CER strict = 1.0000 | précision EVITER = 0.0000
+Fichiers écrits dans resultats_v9/medicament_inconnu/majorite
+
+real	0m3.995s
+user	0m3.719s
+sys	0m0.257s

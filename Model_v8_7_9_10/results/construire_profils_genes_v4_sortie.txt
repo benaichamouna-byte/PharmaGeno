@@ -1,0 +1,5 @@
+   gene  profils  valeurs_changees  manquants_v3  manquants_v4  v4_0.0  v4_0.5  v4_1.0  v4_1.5  v4_2.0
+ NUDT15     1379                77             0            56       9     115    1199       0       0
+   TPMT     1379                19             0            16       9     163    1191       0       0
+SLCO1B1     1379               313             0            60      32     304     961      22       0
+Contrôle : les 81 autres colonnes sont identiques à la v3 ; 1379 profils, 90 colonnes

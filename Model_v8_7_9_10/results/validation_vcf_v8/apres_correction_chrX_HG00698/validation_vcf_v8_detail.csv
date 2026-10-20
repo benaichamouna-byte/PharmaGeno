@@ -1,0 +1,19 @@
+echantillon,gene,valeur_lue,valeur_profil,statut,genotype_pypgx,phenotype_utilise,motif
+HG00698,ABCG2,0.5,0.5,identique,Reference/rs2231142,Decreased Function,
+HG00698,CFTR,1.0,1.0,identique,Reference/Reference,Reference/Reference (aucune variation CFTR de la table),
+HG00698,CYP2B6,0.5,0.5,identique,*1/*9,Intermediate Metabolizer,
+HG00698,CYP2C19,0.5,0.5,identique,*1/*2,Intermediate Metabolizer,
+HG00698,CYP2C9,1.0,1.0,identique,*1/*1,Normal Metabolizer,
+HG00698,CYP2D6,,1.0,non_compare,,,"CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV."
+HG00698,CYP3A4,1.0,1.0,identique,*1/*1,Normal Metabolizer,
+HG00698,CYP3A5,0.5,0.5,identique,*1/*3,Intermediate Metabolizer,
+HG00698,CYP4F2,1.0,1.0,identique,*1/*1,0 allèle(s) *3/*4,
+HG00698,DPYD,1.0,1.0,identique,Reference/c.1627A>G (*5),Normal Metabolizer,
+HG00698,F5,1.0,1.0,identique,Reference/Reference,Favorable Response,
+HG00698,G6PD,0.0,0.0,identique,"Kaiping, Anant, Dhon, Sapporo-like, Wosera/Kaiping, Anant, Dhon, Sapporo-like, Wosera",G6PD Deficient,
+HG00698,NAT2,,,identique_manquant,*4/*12,,Génotype PyPGx « *4/*12 » absent de la table CPIC : non déterminé (jamais « normal »).
+HG00698,NUDT15,,,identique_manquant,*1/*2,,Génotype PyPGx « *1/*2 » absent de la table CPIC : non déterminé (jamais « normal »).
+HG00698,SLCO1B1,1.0,1.0,identique,*37/*37,Normal Function,
+HG00698,TPMT,1.0,1.0,identique,*1/*1,Normal Metabolizer,
+HG00698,UGT1A1,0.5,0.5,identique,*1/*80+*28,Intermediate Metabolizer,
+HG00698,VKORC1,0.0,0.0,identique,rs9923231/rs9923231,2 allèle(s) rs9923231,

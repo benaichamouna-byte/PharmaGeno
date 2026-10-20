@@ -1,0 +1,38 @@
+Tables CPIC : PharmCAT 27ea1bcd 2026-09-25 10:04:38 -0700 {'NAT2': 1770, 'CYP3A4': 78, 'CFTR': 5460, 'NUDT15': 253, 'TPMT': 1225, 'SLCO1B1': 741}
+
+T1 : codage à partir du génotype PyPGx enregistré vs valeur du profil d'entraînement
+  G6PD     profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 2 / 2
+  NAT2     profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 153 / 153
+  CYP3A4   profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 42 / 42
+  CFTR     profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 31 / 31
+  NUDT15   profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 56 / 56
+  TPMT     profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 16 / 16
+  SLCO1B1  profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 60 / 60
+  VKORC1   profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 0 / 0
+  CYP4F2   profils 1379 | valeurs identiques 1379 | différentes 0 | manquants (profil / codage) 0 / 0
+
+T2 : tests unitaires
+  CYP2C19  None                   Poor Metabolizer             attendu 0.0   obtenu 0.0   OK
+  CYP2C19  None                   Indeterminate                attendu None  obtenu None  OK
+  ABCG2    None                   Decreased Function           attendu 0.5   obtenu 0.5   OK
+  CYP2B6   None                   Rapid Metabolizer            attendu 1.5   obtenu 1.5   OK
+  G6PD     None                   G6PD Indeterminate           attendu None  obtenu None  OK
+  CFTR     Reference/Reference    Indeterminate                attendu 1.0   obtenu 1.0   OK
+  CFTR     Reference/F508del      None                         attendu None  obtenu None  OK
+  VKORC1   rs9923231/rs9923231    None                         attendu 0.0   obtenu 0.0   OK
+  VKORC1   Reference/Reference    None                         attendu 1.0   obtenu 1.0   OK
+  CYP4F2   *3/*4                  None                         attendu 0.0   obtenu 0.0   OK
+  CYP4F2   *1/*1                  None                         attendu 1.0   obtenu 1.0   OK
+  CYP2D6   *1/*1                  Normal Metabolizer           attendu None  obtenu None  OK
+  NAT2     texte_invalide         None                         attendu None  obtenu None  OK
+  TPMT     None                   None                         attendu None  obtenu None  OK
+
+T3 : saisie HLA
+  lecture : {'HLA-B*15:02': None, 'HLA-B*57:01': 0.0, 'HLA-B*58:01': None, 'HLA-A*31:01': 1.0} OK
+  refusé comme attendu : HLA-B*99:99=porteur
+  refusé comme attendu : HLA-B*57:01=oui
+
+T4 : chrX haploïde (homme) converti en homozygote diploïde ; chrX diploïde (femme) et autosomes inchangés
+  convertis : 2 | enregistrements : [('chr1', (0, 1), (1, 1)), ('chrX', (1, 1), (0, 1)), ('chrX', (0, 0), (1, 1))] OK
+
+RÉSULTAT : TOUS LES TESTS PASSENT

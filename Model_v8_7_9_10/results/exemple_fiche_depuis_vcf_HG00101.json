@@ -1,0 +1,5164 @@
+{
+ "profil": {
+  "ABCG2": 1.0,
+  "CFTR": 1.0,
+  "CYP2B6": 1.0,
+  "CYP2C19": 1.0,
+  "CYP2C9": 1.0,
+  "CYP2D6": null,
+  "CYP3A4": 1.0,
+  "CYP3A5": 0.0,
+  "CYP4F2": 1.0,
+  "DPYD": 1.0,
+  "F5": 1.0,
+  "G6PD": 1.0,
+  "NAT2": 0.0,
+  "NUDT15": 1.0,
+  "SLCO1B1": 0.5,
+  "TPMT": 1.0,
+  "UGT1A1": 1.0,
+  "VKORC1": 1.0,
+  "HLA-B*15:02": null,
+  "HLA-B*57:01": 0.0,
+  "HLA-B*58:01": 0.0,
+  "HLA-A*31:01": null
+ },
+ "lecture_vcf": {
+  "ABCG2": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/Reference",
+   "phenotype_pypgx": "Normal Function",
+   "phenotype_utilise": "Normal Function",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 1882
+  },
+  "CFTR": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/Reference",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "Reference/Reference (aucune variation CFTR de la table)",
+   "methode": "cftr",
+   "enregistrements_dans_le_gene": 3599
+  },
+  "CYP2B6": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*5",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 4650
+  },
+  "CYP2C19": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 3437
+  },
+  "CYP2C9": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 1644
+  },
+  "CYP2D6": {
+   "valeur": null,
+   "statut": "non_determine",
+   "motif": "CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.",
+   "genotype": null,
+   "phenotype_pypgx": null,
+   "phenotype_utilise": null,
+   "methode": "non_appelable"
+  },
+  "CYP3A4": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "cpic_court",
+   "enregistrements_dans_le_gene": 623
+  },
+  "CYP3A5": {
+   "valeur": 0.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*3/*3",
+   "phenotype_pypgx": "Poor Metabolizer",
+   "phenotype_utilise": "Poor Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 703
+  },
+  "CYP4F2": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "0 allèle(s) *3/*4",
+   "methode": "compte_cyp4f2",
+   "enregistrements_dans_le_gene": 1556
+  },
+  "DPYD": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/c.1627A>G (*5)",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 19425
+  },
+  "F5": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/Reference",
+   "phenotype_pypgx": "Favorable Response",
+   "phenotype_utilise": "Favorable Response",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 1897
+  },
+  "G6PD": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "B (reference)/B (reference)",
+   "phenotype_pypgx": "G6PD Normal",
+   "phenotype_utilise": "G6PD Normal",
+   "methode": "g6pd",
+   "enregistrements_dans_le_gene": 380
+  },
+  "NAT2": {
+   "valeur": 0.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*6/*6",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "Poor Metabolizer",
+   "methode": "cpic_court",
+   "enregistrements_dans_le_gene": 445
+  },
+  "NUDT15": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "cpic_csv",
+   "enregistrements_dans_le_gene": 389
+  },
+  "SLCO1B1": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*15",
+   "phenotype_pypgx": "Decreased Function",
+   "phenotype_utilise": "Decreased Function",
+   "methode": "cpic_csv",
+   "enregistrements_dans_le_gene": 3216
+  },
+  "TPMT": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "cpic_csv",
+   "enregistrements_dans_le_gene": 820
+  },
+  "UGT1A1": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 626
+  },
+  "VKORC1": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/Reference",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "0 allèle(s) rs9923231",
+   "methode": "compte_vkorc1",
+   "enregistrements_dans_le_gene": 196
+  },
+  "HLA-B*15:02": {
+   "valeur": null,
+   "statut": "non_determine",
+   "methode": "saisie_utilisateur",
+   "motif": "Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV)."
+  },
+  "HLA-B*57:01": {
+   "valeur": 0.0,
+   "statut": "saisi",
+   "methode": "saisie_utilisateur",
+   "motif": null
+  },
+  "HLA-B*58:01": {
+   "valeur": 0.0,
+   "statut": "saisi",
+   "methode": "saisie_utilisateur",
+   "motif": null
+  },
+  "HLA-A*31:01": {
+   "valeur": null,
+   "statut": "non_determine",
+   "methode": "saisie_utilisateur",
+   "motif": "Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV)."
+  }
+ },
+ "assemblage": "GRCh38",
+ "specialite": "Cardiologie",
+ "recommandation": {
+  "specialite": "Cardiologie",
+  "n_medicaments_specialite": 22,
+  "proposes": [
+   {
+    "medicament": "aspirin",
+    "categorie": "proposable",
+    "libelle": "Aucune adaptation liée aux gènes analysés",
+    "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+    "statut": "ok",
+    "avis": {
+     "DL": "STANDARD",
+     "XGBoost": "STANDARD",
+     "règle CPIC/DPWG": "STANDARD"
+    },
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "G6PD",
+      "valeur_codage": 1.0,
+      "lecture": "G6PD Normal"
+     }
+    ],
+    "regle": [
+     {
+      "genes": [
+       "G6PD"
+      ],
+      "phenotype": "G6PD Normal",
+      "action": "STANDARD",
+      "texte_guideline_en": "Aspirine <=1 g/j : pas d'action ; CNSHA : prudence et surveillance. >1 g/j : \"no recommendation\".",
+      "source": "CPIC",
+      "fichier": "PA166279561",
+      "autres_sources_en_desaccord": false
+     }
+    ],
+    "confiance_regle": "haute",
+    "confiance_dl": 0.9972,
+    "proba_dl": {
+     "ADAPTER_DOSE": 0.0011,
+     "EVITER": 0.0008,
+     "STANDARD": 0.9972,
+     "SURVEILLER": 0.0009
+    },
+    "action": "STANDARD",
+    "rang": 1
+   },
+   {
+    "medicament": "ibuprofen",
+    "categorie": "proposable",
+    "libelle": "Aucune adaptation liée aux gènes analysés",
+    "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+    "statut": "ok",
+    "avis": {
+     "DL": "STANDARD",
+     "XGBoost": "STANDARD",
+     "règle CPIC/DPWG": "STANDARD"
+    },
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2C9",
+      "valeur_codage": 1.0,
+      "lecture": "CYP2C9 Normal metabolizer"
+     }
+    ],
+    "regle": [
+     {
+      "genes": [
+       "CYP2C9"
+      ],
+      "phenotype": "CYP2C9 Normal metabolizer",
+      "action": "STANDARD",
+      "texte_guideline_en": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+      "source": "CPIC",
+      "fichier": "PA166191841.json",
+      "autres_sources_en_desaccord": false
+     }
+    ],
+    "confiance_regle": "haute",
+    "confiance_dl": 0.9972,
+    "proba_dl": {
+     "ADAPTER_DOSE": 0.0011,
+     "EVITER": 0.0008,
+     "STANDARD": 0.9972,
+     "SURVEILLER": 0.0009
+    },
+    "action": "STANDARD",
+    "rang": 2
+   },
+   {
+    "medicament": "pravastatin",
+    "categorie": "proposable",
+    "libelle": "Aucune adaptation liée aux gènes analysés",
+    "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+    "statut": "ok",
+    "avis": {
+     "DL": "STANDARD",
+     "XGBoost": "STANDARD",
+     "règle CPIC/DPWG": "STANDARD"
+    },
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "SLCO1B1",
+      "valeur_codage": 0.5,
+      "lecture": "Decreased function"
+     }
+    ],
+    "regle": [
+     {
+      "genes": [
+       "SLCO1B1"
+      ],
+      "phenotype": "Decreased function",
+      "action": "STANDARD",
+      "texte_guideline_en": "Prescribe desired starting dose and adjust doses of pravastatin based on disease-specific guidelines. Prescriber should be aware of possible increased risk for myopathy with pravastatin especially with doses >40mg per day.",
+      "source": "CPIC",
+      "fichier": "PA166262281.json",
+      "autres_sources_en_desaccord": false
+     }
+    ],
+    "confiance_regle": "haute",
+    "confiance_dl": 0.9971,
+    "proba_dl": {
+     "ADAPTER_DOSE": 0.0012,
+     "EVITER": 0.0008,
+     "STANDARD": 0.9971,
+     "SURVEILLER": 0.0009
+    },
+    "action": "STANDARD",
+    "rang": 3
+   },
+   {
+    "medicament": "rosuvastatin",
+    "categorie": "proposable",
+    "libelle": "Aucune adaptation liée aux gènes analysés",
+    "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+    "statut": "ok",
+    "avis": {
+     "DL": "STANDARD",
+     "XGBoost": "STANDARD",
+     "règle CPIC/DPWG": "STANDARD"
+    },
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "ABCG2",
+      "valeur_codage": 1.0,
+      "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+     },
+     {
+      "gene": "SLCO1B1",
+      "valeur_codage": 0.5,
+      "lecture": "valeur de codage 0.5 (sans règle associée à ce cas)"
+     }
+    ],
+    "regle": [
+     {
+      "genes": [
+       "ABCG2",
+       "SLCO1B1"
+      ],
+      "phenotype": "SLCO1B1 decreased function ; ABCG2 normal function",
+      "action": "STANDARD",
+      "texte_guideline_en": "Prescribe desired starting dose and adjust doses of rosuvastatin based on disease-specific and specific population guidelines. Prescriber should be aware of possible increased risk for myopathy especially for doses >20mg. STRONG",
+      "source": "CPIC",
+      "fichier": "PA166262321.json",
+      "autres_sources_en_desaccord": false
+     }
+    ],
+    "confiance_regle": "haute",
+    "confiance_dl": 0.9967,
+    "proba_dl": {
+     "ADAPTER_DOSE": 0.0021,
+     "EVITER": 0.0006,
+     "STANDARD": 0.9967,
+     "SURVEILLER": 0.0007
+    },
+    "action": "STANDARD",
+    "rang": 4
+   }
+  ],
+  "autres_compatibles": 4,
+  "a_eviter": [
+   {
+    "medicament": "simvastatin",
+    "categorie": "a_eviter",
+    "libelle": "À éviter pour ce profil génétique",
+    "texte_patient": "Vos gènes indiquent que ce médicament peut ne pas vous convenir. Ne le prenez pas sans en parler à votre médecin ou à votre pharmacien.",
+    "statut": "ok",
+    "avis": {
+     "DL": "EVITER",
+     "XGBoost": "EVITER",
+     "règle CPIC/DPWG": "EVITER"
+    },
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "SLCO1B1",
+      "valeur_codage": 0.5,
+      "lecture": "Decreased function"
+     }
+    ],
+    "regle": [
+     {
+      "genes": [
+       "SLCO1B1"
+      ],
+      "phenotype": "Decreased function",
+      "action": "EVITER",
+      "texte_guideline_en": "Prescribe an alternative statin depending on the desired potency (see Figure 1 for recommendations for alternative statins). If simvastatin therapy is warranted, limit dose to <20mg/day.",
+      "source": "CPIC",
+      "fichier": "PA166105005.json",
+      "autres_sources_en_desaccord": true
+     }
+    ],
+    "confiance_regle": "moyenne",
+    "confiance_dl": 0.9959,
+    "proba_dl": {
+     "ADAPTER_DOSE": 0.0009,
+     "EVITER": 0.9959,
+     "STANDARD": 0.0026,
+     "SURVEILLER": 0.0006
+    },
+    "alternatives": [
+     {
+      "medicament": "pravastatin",
+      "confiance": 0.9971
+     },
+     {
+      "medicament": "rosuvastatin",
+      "confiance": 0.9967
+     },
+     {
+      "medicament": "fluvastatin",
+      "confiance": 0.9919
+     }
+    ]
+   }
+  ],
+  "a_verifier": [],
+  "non_evalues": [
+   {
+    "medicament": "acebutolol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "betaxolol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "bisoprolol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "carvedilol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "flecainide",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "lovastatin",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "hors_domaine",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "SLCO1B1",
+      "valeur_codage": 0.5,
+      "lecture": "valeur de codage 0.5 (sans règle associée à ce cas)"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+   },
+   {
+    "medicament": "mavacamten",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "hors_domaine",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2C19",
+      "valeur_codage": 1.0,
+      "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+   },
+   {
+    "medicament": "metoprolol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "nebivolol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "pitavastatin",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "hors_domaine",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "SLCO1B1",
+      "valeur_codage": 0.5,
+      "lecture": "valeur de codage 0.5 (sans règle associée à ce cas)"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+   },
+   {
+    "medicament": "propafenone",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "propranolol",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "non_determine_gene",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2D6",
+      "valeur_codage": null,
+      "lecture": "non déterminé"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+   },
+   {
+    "medicament": "warfarin",
+    "categorie": "non_evalue",
+    "libelle": "Non évalué",
+    "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+    "statut": "hors_domaine",
+    "avis": {},
+    "alertes": [],
+    "explication": [
+     {
+      "gene": "CYP2C9",
+      "valeur_codage": 1.0,
+      "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+     }
+    ],
+    "regle": [],
+    "confiance_regle": "",
+    "confiance_dl": null,
+    "proba_dl": null,
+    "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+   }
+  ],
+  "reference_seule": [],
+  "avertissement": "Cet outil analyse un nombre limité de gènes et de médicaments ; il ne remplace ni l'avis d'un médecin ou d'un pharmacien, ni une prescription. Il ne tient pas compte des autres médicaments, des maladies ni de l'âge. Résultat à discuter avec un professionnel de santé.",
+  "note_ordre": "L'ordre reflète la confiance du modèle, pas une validation clinique."
+ },
+ "moteur": [
+  {
+   "medicament": "abacavir",
+   "alertes": [],
+   "genes_requis": [
+    "HLA-B*57:01"
+   ],
+   "valeurs_requises": {
+    "HLA-B*57:01": 0.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "HLA-B*57:01"
+     ],
+     "valeurs": [
+      0.0
+     ],
+     "action": "STANDARD",
+     "desaccord": true,
+     "texte": "CPIC Strong (PA166104997)",
+     "phenotype": "non porteur HLA-B*57:01",
+     "source": "CPIC",
+     "fichier": "hla_consignes_v2.csv"
+    }
+   ],
+   "confiance_regle_cpic": "moyenne",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9913,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0018,
+    "EVITER": 0.0055,
+    "STANDARD": 0.9913,
+    "SURVEILLER": 0.0014
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0008,
+    "EVITER": 0.0006,
+    "STANDARD": 0.9986,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "acebutolol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "allopurinol",
+   "alertes": [],
+   "genes_requis": [
+    "HLA-B*58:01"
+   ],
+   "valeurs_requises": {
+    "HLA-B*58:01": 0.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "HLA-B*58:01"
+     ],
+     "valeurs": [
+      0.0
+     ],
+     "action": "STANDARD",
+     "desaccord": true,
+     "texte": "CPIC Strong (PA166105003)",
+     "phenotype": "non porteur HLA-B*58:01",
+     "source": "CPIC",
+     "fichier": "hla_consignes_v2.csv"
+    }
+   ],
+   "confiance_regle_cpic": "moyenne",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.001,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0009,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9989,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "aminosalicylic acid",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9973,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9973,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "amitriptyline",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0,
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. f",
+     "phenotype": "CYP2C19 Normal metabolizer (~35-50% of patients) d",
+     "source": "CPIC",
+     "fichier": "PA166105006.json"
+    }
+   ],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "aripiprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "aspirin",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Aspirine <=1 g/j : pas d'action ; CNSHA : prudence et surveillance. >1 g/j : \"no recommendation\".",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279561"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "atazanavir",
+   "alertes": [],
+   "genes_requis": [
+    "UGT1A1"
+   ],
+   "valeurs_requises": {
+    "UGT1A1": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "UGT1A1"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "There is no need to avoid prescribing of atazanavir based on UGT1A1 genetic test result.",
+     "phenotype": "Extensive Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166128738.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9987,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9987,
+    "SURVEILLER": 0.0003
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0008,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9984,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "atomoxetine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "atorvastatin",
+   "alertes": [],
+   "genes_requis": [
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "ADAPTER_DOSE",
+   "regle_cpic": [
+    {
+     "genes": [
+      "SLCO1B1"
+     ],
+     "valeurs": [
+      0.5
+     ],
+     "action": "ADAPTER_DOSE",
+     "desaccord": false,
+     "texte": "Prescribe ≤40mg as a starting dose and adjust doses of atorvastatin based on disease-specific guidelines. Prescriber should be aware of possible increased risk for myopathy especially for 40mg dose. If dose >40mg needed for desired efficacy, consider combinati",
+     "phenotype": "Decreased function",
+     "source": "CPIC",
+     "fichier": "PA166262221.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "ADAPTER_DOSE",
+   "confiance_dl": 0.9833,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.9833,
+    "EVITER": 0.0035,
+    "STANDARD": 0.011,
+    "SURVEILLER": 0.0023
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "ADAPTER_DOSE",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.9986,
+    "EVITER": 0.0,
+    "STANDARD": 0.0014,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "azathioprine",
+   "alertes": [],
+   "genes_requis": [
+    "NUDT15",
+    "TPMT"
+   ],
+   "valeurs_requises": {
+    "NUDT15": 1.0,
+    "TPMT": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "NUDT15"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard starting dose (e.g., 2 mg/kg/day for autoimmune diseases). During therapy, adjust doses of azathioprine based on disease-specific guidelines. It usually takes at least 2 weeks to reach steady state after each dose adjustment.",
+     "phenotype": "NUDT15 Normal Metabolizer (TPMT Normal + NUDT15 Normal)",
+     "source": "CPIC",
+     "fichier": "prescribing_guidance.json (PharmCAT) PA166104933 / PA166297277"
+    },
+    {
+     "genes": [
+      "TPMT"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard starting dose (e.g., 2 mg/kg/day for autoimmune diseases). During therapy, adjust doses of azathioprine based on disease-specific guidelines. It usually takes at least 2 weeks to reach steady state after each dose adjustment.",
+     "phenotype": "TPMT Normal Metabolizer (TPMT Normal + NUDT15 Normal)",
+     "source": "CPIC",
+     "fichier": "prescribing_guidance.json (PharmCAT) PA166104933 / PA166297277"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9979,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0008,
+    "EVITER": 0.0006,
+    "STANDARD": 0.9979,
+    "SURVEILLER": 0.0007
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0014,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9984,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "betaxolol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "bisoprolol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "brexpiprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "capecitabine",
+   "alertes": [],
+   "genes_requis": [
+    "DPYD"
+   ],
+   "valeurs_requises": {
+    "DPYD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "DPYD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Based on genotype, there is no indication to change dose or therapy. Use label-recommended dosage and administration",
+     "phenotype": "DPYD Normal Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166109594.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9989,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9989,
+    "SURVEILLER": 0.0004
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9995,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "carbamazepine",
+   "alertes": [],
+   "genes_requis": [
+    "HLA-A*31:01",
+    "HLA-B*15:02"
+   ],
+   "valeurs_requises": {
+    "HLA-A*31:01": null,
+    "HLA-B*15:02": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : HLA-A*31:01=None, HLA-B*15:02=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "HLA-A*31:01",
+    "HLA-B*15:02"
+   ],
+   "message": "Gène(s) non déterminé(s) : HLA-A*31:01, HLA-B*15:02. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "carvedilol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "celecoxib",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166191841.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "chloramphenicol",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "chloroquine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9973,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9973,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "ciprofloxacin",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "citalopram",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose.",
+     "phenotype": "Normal Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166127638.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.997,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0013,
+    "EVITER": 0.0008,
+    "STANDARD": 0.997,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9994,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "clomipramine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0,
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. f",
+     "phenotype": "CYP2C19 Normal metabolizer (~35-50% of patients) d",
+     "source": "CPIC",
+     "fichier": "PA166105007.json"
+    }
+   ],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "clopidogrel",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "If considering clopidogrel, use at standard dose (75 mg/day)",
+     "phenotype": "CYP2C19 normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166104948.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9963,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0006,
+    "EVITER": 0.0018,
+    "STANDARD": 0.9963,
+    "SURVEILLER": 0.0012
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0016,
+    "EVITER": 0.0012,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "codeine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "dapsone",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Rasburicase/pegloticase : le risque doit être pesé contre l'hyperuricémie (texte).",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166119846"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9985,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0006,
+    "STANDARD": 0.9985,
+    "SURVEILLER": 0.0005
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0003,
+    "STANDARD": 0.999,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "desipramine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "dexlansoprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses. Monitor for efficacy.",
+     "phenotype": "CYP2C19 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166219301.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9984,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.001,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9984,
+    "SURVEILLER": 0.0004
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0006,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9993,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "dimercaprol",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "doxepin",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0,
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. f",
+     "phenotype": "CYP2C19 Normal metabolizer (~35-50% of patients) d",
+     "source": "CPIC",
+     "fichier": "PA166105000.json"
+    }
+   ],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "doxorubicin",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "efavirenz",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2B6"
+   ],
+   "valeurs_requises": {
+    "CYP2B6": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2B6"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate efavirenz with standard dosing (600 mg/day)",
+     "phenotype": "Normal Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166182603.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9966,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0024,
+    "EVITER": 0.0004,
+    "STANDARD": 0.9966,
+    "SURVEILLER": 0.0006
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0024,
+    "EVITER": 0.0004,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "eliglustat",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "escitalopram",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose.",
+     "phenotype": "Normal Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166127638.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9994,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "esomeprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2C19=1.0",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "flecainide",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "fluorouracil",
+   "alertes": [],
+   "genes_requis": [
+    "DPYD"
+   ],
+   "valeurs_requises": {
+    "DPYD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "DPYD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Based on genotype, there is no indication to change dose or therapy. Use label-recommended dosage and administration",
+     "phenotype": "DPYD Normal Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166122686.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9989,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9989,
+    "SURVEILLER": 0.0003
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0003,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9996,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "fluoxetine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "flurbiprofen",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166191841.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "fluvastatin",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9",
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0,
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9",
+      "SLCO1B1"
+     ],
+     "valeurs": [
+      1.0,
+      0.5
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Prescribe desired starting dose and adjust doses of fluvastatin based on disease-specific guidelines. Prescriber should be aware of possible increased risk for myopathy especially for doses >40mg per day. MODERATE",
+     "phenotype": "SLCO1B1 decreased function ; CYP2C9 normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166262341.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9919,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0031,
+    "EVITER": 0.0033,
+    "STANDARD": 0.9919,
+    "SURVEILLER": 0.0017
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0014,
+    "EVITER": 0.0005,
+    "STANDARD": 0.9981,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "fluvoxamine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "fosphenytoin",
+   "alertes": [],
+   "genes_requis": [
+    "HLA-B*15:02"
+   ],
+   "valeurs_requises": {
+    "HLA-B*15:02": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : HLA-B*15:02=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "HLA-B*15:02"
+   ],
+   "message": "Gène(s) non déterminé(s) : HLA-B*15:02. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "furazolidone",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "gefitinib",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "glyburide",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "haloperidol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "hydralazine",
+   "alertes": [],
+   "genes_requis": [
+    "NAT2"
+   ],
+   "valeurs_requises": {
+    "NAT2": 0.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "ADAPTER_DOSE",
+   "regle_cpic": [
+    {
+     "genes": [
+      "NAT2"
+     ],
+     "valeurs": [
+      0.0
+     ],
+     "action": "ADAPTER_DOSE",
+     "desaccord": false,
+     "texte": "Initiate therapy at a total daily dose of 40–75 mg. Carefully titrate dose upward to clinical effect or guideline-recommended dose; use caution with total daily hydralazine doses of 200 mg or more",
+     "phenotype": "NAT2 Poor Metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166416341.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "ADAPTER_DOSE",
+   "confiance_dl": 0.9958,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.9958,
+    "EVITER": 0.0014,
+    "STANDARD": 0.0016,
+    "SURVEILLER": 0.0011
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "ADAPTER_DOSE",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.9999,
+    "EVITER": 0.0,
+    "STANDARD": 0.0001,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "hydrocodone",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "hydroxychloroquine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "ibuprofen",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166191841.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "imipramine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0,
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. f",
+     "phenotype": "CYP2C19 Normal metabolizer (~35-50% of patients) d",
+     "source": "CPIC",
+     "fichier": "PA166104999.json"
+    }
+   ],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "irinotecan",
+   "alertes": [],
+   "genes_requis": [
+    "UGT1A1"
+   ],
+   "valeurs_requises": {
+    "UGT1A1": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : UGT1A1=1.0",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "lansoprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses. Monitor for efficacy.",
+     "phenotype": "CYP2C19 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166219103.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9985,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0009,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9985,
+    "SURVEILLER": 0.0003
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0006,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9992,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "lornoxicam",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166191841.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "lovastatin",
+   "alertes": [],
+   "genes_requis": [
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : SLCO1B1=0.5",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "mafenide",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "mavacamten",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2C19=1.0",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "meloxicam",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166192301.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9942,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0025,
+    "EVITER": 0.0018,
+    "STANDARD": 0.9942,
+    "SURVEILLER": 0.0014
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9994,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "mercaptopurine",
+   "alertes": [],
+   "genes_requis": [
+    "NUDT15",
+    "TPMT"
+   ],
+   "valeurs_requises": {
+    "NUDT15": 1.0,
+    "TPMT": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "NUDT15"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard starting dose of mecaptopurine (e.g., 75 mg/m2/day for malignancy or 1.5 mg/kg/day for nonmalignancy). During therapy, adjust the doses of myelosuppressive agents, as per standard clinical practice. It usually takes at least 2 weeks of stable dosing to reach steady state after each dose adjustment.",
+     "phenotype": "NUDT15 Normal Metabolizer (TPMT Normal + NUDT15 Normal)",
+     "source": "CPIC",
+     "fichier": "prescribing_guidance.json (PharmCAT) PA166104945 / PA166298222"
+    },
+    {
+     "genes": [
+      "TPMT"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard starting dose of mecaptopurine (e.g., 75 mg/m2/day for malignancy or 1.5 mg/kg/day for nonmalignancy). During therapy, adjust the doses of myelosuppressive agents, as per standard clinical practice. It usually takes at least 2 weeks of stable dosing to reach steady state after each dose adjustment.",
+     "phenotype": "TPMT Normal Metabolizer (TPMT Normal + NUDT15 Normal)",
+     "source": "CPIC",
+     "fichier": "prescribing_guidance.json (PharmCAT) PA166104945 / PA166298222"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9981,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0005,
+    "STANDARD": 0.9981,
+    "SURVEILLER": 0.0006
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0014,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9983,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "methadone",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2B6",
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2B6": 1.0,
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2B6"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Standard dosing, titration, and monitoring of methadone",
+     "phenotype": "CYP2B6 normal metabolizer (NM)",
+     "source": "CPIC",
+     "fichier": "PA166345801.json"
+    }
+   ],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "methylene blue",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Rasburicase/pegloticase : le risque doit être pesé contre l'hyperuricémie (texte).",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166119846"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9985,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0007,
+    "STANDARD": 0.9985,
+    "SURVEILLER": 0.0004
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0003,
+    "STANDARD": 0.999,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "metoprolol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "nalidixic acid",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "nebivolol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "nitrofurantoin",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Surveillance plus importante à doses élevées, traitement chronique, infection ou stress oxydant.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279721"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0004,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0021
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9993,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "norfloxacin",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "nortriptyline",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "ofloxacin",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "omeprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses. Monitor for efficacy.",
+     "phenotype": "CYP2C19 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166219103.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9987,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9987,
+    "SURVEILLER": 0.0003
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0006,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9993,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "ondansetron",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "oxcarbazepine",
+   "alertes": [],
+   "genes_requis": [
+    "HLA-B*15:02"
+   ],
+   "valeurs_requises": {
+    "HLA-B*15:02": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : HLA-B*15:02=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "HLA-B*15:02"
+   ],
+   "message": "Gène(s) non déterminé(s) : HLA-B*15:02. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "oxycodone",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "pantoprazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses. Monitor for efficacy.",
+     "phenotype": "CYP2C19 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166219103.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9987,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9987,
+    "SURVEILLER": 0.0003
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0006,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9993,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "paroxetine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "pegloticase",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Rasburicase/pegloticase : le risque doit être pesé contre l'hyperuricémie (texte).",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166119846"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "statut": "dl_indisponible",
+   "message": "Ce médicament n'a pas d'entrée dans le modèle d'apprentissage : seule la règle de guideline est affichée."
+  },
+  {
+   "medicament": "phenazopyridine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9973,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9973,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "phenytoin",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9",
+    "HLA-B*15:02"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0,
+    "HLA-B*15:02": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2C9=1.0, HLA-B*15:02=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "HLA-B*15:02"
+   ],
+   "message": "Gène(s) non déterminé(s) : HLA-B*15:02. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "pimozide",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "piroxicam",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166192321.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9948,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0022,
+    "EVITER": 0.0017,
+    "STANDARD": 0.9948,
+    "SURVEILLER": 0.0013
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9994,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "pitavastatin",
+   "alertes": [],
+   "genes_requis": [
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : SLCO1B1=0.5",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "pravastatin",
+   "alertes": [],
+   "genes_requis": [
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "SLCO1B1"
+     ],
+     "valeurs": [
+      0.5
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Prescribe desired starting dose and adjust doses of pravastatin based on disease-specific guidelines. Prescriber should be aware of possible increased risk for myopathy with pravastatin especially with doses >40mg per day.",
+     "phenotype": "Decreased function",
+     "source": "CPIC",
+     "fichier": "PA166262281.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0003,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "primaquine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Exceptions cités (OMS/CDC) : 0.75 mg/kg 1x/sem x8 sem ou 45 mg 1x/sem x8 sem avec surveillance ; 0.25 mg/kg dose unique contre P. falciparum.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279621"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0003,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "propafenone",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "propranolol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "quetiapine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP3A4"
+   ],
+   "valeurs_requises": {
+    "CYP3A4": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP3A4=1.0",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "quinine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.997,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.997,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "rasburicase",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Rasburicase/pegloticase : le risque doit être pesé contre l'hyperuricémie (texte).",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166119846"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "statut": "dl_indisponible",
+   "message": "Ce médicament n'a pas d'entrée dans le modèle d'apprentissage : seule la règle de guideline est affichée."
+  },
+  {
+   "medicament": "risperidone",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "rosuvastatin",
+   "alertes": [],
+   "genes_requis": [
+    "ABCG2",
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "ABCG2": 1.0,
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "ABCG2",
+      "SLCO1B1"
+     ],
+     "valeurs": [
+      1.0,
+      0.5
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Prescribe desired starting dose and adjust doses of rosuvastatin based on disease-specific and specific population guidelines. Prescriber should be aware of possible increased risk for myopathy especially for doses >20mg. STRONG",
+     "phenotype": "SLCO1B1 decreased function ; ABCG2 normal function",
+     "source": "CPIC",
+     "fichier": "PA166262321.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9967,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0021,
+    "EVITER": 0.0006,
+    "STANDARD": 0.9967,
+    "SURVEILLER": 0.0007
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9994,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "sertraline",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2B6",
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2B6": 1.0,
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2B6",
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0,
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. Classification of recommendation: Strong",
+     "phenotype": "CYP2C19 normal metabolizers ; CYP2B6 normal metabolizers",
+     "source": "CPIC",
+     "fichier": "PA166127639.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9992,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9992,
+    "SURVEILLER": 0.0003
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0,
+    "STANDARD": 0.9995,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "simvastatin",
+   "alertes": [],
+   "genes_requis": [
+    "SLCO1B1"
+   ],
+   "valeurs_requises": {
+    "SLCO1B1": 0.5
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "EVITER",
+   "regle_cpic": [
+    {
+     "genes": [
+      "SLCO1B1"
+     ],
+     "valeurs": [
+      0.5
+     ],
+     "action": "EVITER",
+     "desaccord": true,
+     "texte": "Prescribe an alternative statin depending on the desired potency (see Figure 1 for recommendations for alternative statins). If simvastatin therapy is warranted, limit dose to <20mg/day.",
+     "phenotype": "Decreased function",
+     "source": "CPIC",
+     "fichier": "PA166105005.json"
+    }
+   ],
+   "confiance_regle_cpic": "moyenne",
+   "action_dl": "EVITER",
+   "confiance_dl": 0.9959,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0009,
+    "EVITER": 0.9959,
+    "STANDARD": 0.0026,
+    "SURVEILLER": 0.0006
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "EVITER",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0,
+    "EVITER": 0.9993,
+    "STANDARD": 0.0007,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "siponimod",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2C9=1.0",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "sulfadiazine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "sulfamethazine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9971,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "sulfamethoxazole",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9969,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0013,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9969,
+    "SURVEILLER": 0.001
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "sulfamethoxazole / trimethoprim",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "statut": "dl_indisponible",
+   "message": "Ce médicament n'a pas d'entrée dans le modèle d'apprentissage : seule la règle de guideline est affichée."
+  },
+  {
+   "medicament": "sulfanilamide",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9973,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0007,
+    "STANDARD": 0.9973,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "sulfasalazine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.997,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.997,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "sulfisoxazole",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "tacrolimus",
+   "alertes": [],
+   "genes_requis": [
+    "CYP3A5"
+   ],
+   "valeurs_requises": {
+    "CYP3A5": 0.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP3A5"
+     ],
+     "valeurs": [
+      0.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard recommended dose. Use therapeutic drug monitoring to guide dose adjustments",
+     "phenotype": "Poor metabolizer (CYP3A5 non-expresser)",
+     "source": "CPIC",
+     "fichier": "PA166124619.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9987,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9987,
+    "SURVEILLER": 0.0004
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0025,
+    "EVITER": 0.0004,
+    "STANDARD": 0.9971,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "tafenoquine",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Rasburicase/pegloticase : le risque doit être pesé contre l'hyperuricémie (texte).",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166119846"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9984,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0007,
+    "STANDARD": 0.9984,
+    "SURVEILLER": 0.0005
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0003,
+    "STANDARD": 0.999,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "tamoxifen",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "tegafur",
+   "alertes": [],
+   "genes_requis": [
+    "DPYD"
+   ],
+   "valeurs_requises": {
+    "DPYD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "DPYD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Use label-recommended dosage and administration",
+     "phenotype": "Homozygous wild-type or normal, high DPD activity (two or more functio",
+     "source": "CPIC",
+     "fichier": "PA166122687.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9988,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9988,
+    "SURVEILLER": 0.0004
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0003,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9996,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "tenoxicam",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C9"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+     "phenotype": "CYP2C9 Normal metabolizer",
+     "source": "CPIC",
+     "fichier": "PA166192341.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9951,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0021,
+    "EVITER": 0.0016,
+    "STANDARD": 0.9951,
+    "SURVEILLER": 0.0013
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9994,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "thioguanine",
+   "alertes": [],
+   "genes_requis": [
+    "NUDT15",
+    "TPMT"
+   ],
+   "valeurs_requises": {
+    "NUDT15": 1.0,
+    "TPMT": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "NUDT15"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard starting dose of thioguanine (e.g., 40 mg/m2/day for malignancy). During therapy, adjust the doses of myelosuppressive agents, as per standard clinical practice. It usually takes at least 2 weeks of stable dosing to reach steady state after each dose adjustment.",
+     "phenotype": "NUDT15 Normal Metabolizer (TPMT Normal + NUDT15 Normal)",
+     "source": "CPIC",
+     "fichier": "prescribing_guidance.json (PharmCAT) PA166104965 / PA166298565"
+    },
+    {
+     "genes": [
+      "TPMT"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with standard starting dose of thioguanine (e.g., 40 mg/m2/day for malignancy). During therapy, adjust the doses of myelosuppressive agents, as per standard clinical practice. It usually takes at least 2 weeks of stable dosing to reach steady state after each dose adjustment.",
+     "phenotype": "TPMT Normal Metabolizer (TPMT Normal + NUDT15 Normal)",
+     "source": "CPIC",
+     "fichier": "prescribing_guidance.json (PharmCAT) PA166104965 / PA166298565"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9981,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0005,
+    "STANDARD": 0.9981,
+    "SURVEILLER": 0.0007
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0014,
+    "EVITER": 0.0002,
+    "STANDARD": 0.9983,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "tolbutamide",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9973,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0007,
+    "STANDARD": 0.9973,
+    "SURVEILLER": 0.0008
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "toluidine blue",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Rasburicase/pegloticase : le risque doit être pesé contre l'hyperuricémie (texte).",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166119846"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9985,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0007,
+    "STANDARD": 0.9985,
+    "SURVEILLER": 0.0005
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0003,
+    "STANDARD": 0.999,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "tramadol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "trimipramine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0,
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended starting dose. f",
+     "phenotype": "CYP2C19 Normal metabolizer (~35-50% of patients) d",
+     "source": "CPIC",
+     "fichier": "PA166105001.json"
+    }
+   ],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "tropisetron",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "venlafaxine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "vitamin c",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9972,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0008,
+    "STANDARD": 0.9972,
+    "SURVEILLER": 0.0009
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0002,
+    "EVITER": 0.0001,
+    "STANDARD": 0.9997,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "vitamin k and analogues",
+   "alertes": [],
+   "genes_requis": [
+    "G6PD"
+   ],
+   "valeurs_requises": {
+    "G6PD": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Résumé du texte : prudence et surveillance de l'hémolyse chez les patients CNSHA.",
+     "phenotype": "G6PD Normal",
+     "source": "CPIC",
+     "fichier": "PA166279741"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "statut": "dl_indisponible",
+   "message": "Ce médicament n'a pas d'entrée dans le modèle d'apprentissage : seule la règle de guideline est affichée."
+  },
+  {
+   "medicament": "voriconazole",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C19"
+   ],
+   "valeurs_requises": {
+    "CYP2C19": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": "STANDARD",
+   "regle_cpic": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "valeurs": [
+      1.0
+     ],
+     "action": "STANDARD",
+     "desaccord": false,
+     "texte": "Initiate therapy with recommended standard of care dosing. f",
+     "phenotype": "Normal metabolizer c (~35-50% of patients) a",
+     "source": "CPIC",
+     "fichier": "PA166161537.json"
+    }
+   ],
+   "confiance_regle_cpic": "haute",
+   "action_dl": "STANDARD",
+   "confiance_dl": 0.9989,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0004,
+    "EVITER": 0.0003,
+    "STANDARD": 0.9989,
+    "SURVEILLER": 0.0004
+   },
+   "variables_remplacees_pour_le_calcul": [
+    "CYP2D6"
+   ],
+   "action_xgboost": "STANDARD",
+   "proba_xgboost": {
+    "ADAPTER_DOSE": 0.0008,
+    "EVITER": 0.0012,
+    "STANDARD": 0.998,
+    "SURVEILLER": 0.0
+   },
+   "statut": "ok"
+  },
+  {
+   "medicament": "vortioxetine",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  },
+  {
+   "medicament": "warfarin",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2C9"
+   ],
+   "valeurs_requises": {
+    "CYP2C9": 1.0
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2C9=1.0",
+   "statut": "hors_domaine",
+   "message": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "zuclopenthixol",
+   "alertes": [],
+   "genes_requis": [
+    "CYP2D6"
+   ],
+   "valeurs_requises": {
+    "CYP2D6": null
+   },
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "action_cpic": null,
+   "regle_cpic": [],
+   "confiance_regle_cpic": "",
+   "raison_pas_de_regle_cpic": "gène manquant ou valeur sans règle : CYP2D6=None",
+   "statut": "non_determine_gene",
+   "genes_manquants": [
+    "CYP2D6"
+   ],
+   "message": "Gène(s) non déterminé(s) : CYP2D6. Pas de prédiction du modèle."
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+                                     configuration  f1_macro  CER_strict  precision_EVITER  logloss    ECE
+                               XGBoost (empreinte)    0.9999      0.0011            1.0000   0.0004 0.0002
+                                    RF (empreinte)    0.9817      0.0489            0.9818   0.0820 0.0638
+ DL film : empreinte, poids inverse (référence v9)    0.9687      0.0131            0.9087   0.0559 0.0143
+  DL film : empreinte, gènes règles, poids inverse    0.9625      0.0092            0.9014   0.0611 0.0101
+     DL film : empreinte, tous gènes, poids racine    0.9931      0.0176            0.9790   0.0164 0.0090
+   DL film : empreinte, gènes règles, poids racine    0.9926      0.0186            0.9792   0.0178 0.0090
+       DL film : empreinte, tous gènes, sans poids    0.7374      0.0469            0.9822   0.0334 0.0126
+     DL film : empreinte, gènes règles, sans poids    0.7373      0.0586            0.9874   0.0372 0.0155
+            DL film : empreinte, racine, EVITER x2    0.9896      0.0053            0.9550   0.0223 0.0120
+            DL film : empreinte, racine, EVITER x4    0.9880      0.0045            0.9457   0.0272 0.0108
+            DL film : empreinte, racine, EVITER x8    0.9651      0.0030            0.9139   0.0635 0.0157
+                     DL film : identifiant, racine    0.9981      0.0051            0.9961   0.0065 0.0046
+          DL film : identifiant, racine, EVITER x2    0.9973      0.0032            0.9933   0.0084 0.0053
+           DL film : empreinte+identifiant, racine    0.9873      0.0250            0.9583   0.0204 0.0083
+DL film : empreinte+identifiant, racine, EVITER x2    0.9917      0.0128            0.9706   0.0170 0.0079

@@ -1,0 +1,409 @@
+Échantillons testés (19) : NA21135, HG01625, HG00275, HG00111, HG00105, HG00253, HG00231, HG00118, HG00097, HG00103, HG02684, HG00151, HG00698, HG00096, HG00524, HG00174, HG00304, HG00109, HG00127
+
+== NA21135 : VCF patient de 46968 enregistrements | 3 s
+  ABCG2    0.5    Reference/rs2231142        Decreased Function             
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  0.0    *2/*2                      Poor Metabolizer               
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.1627A>G (*5)   Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *6/*6                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *37/*37                    Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   1.0    Reference/Reference        0 allèle(s) rs9923231          
+
+== HG01625 : VCF patient de 46968 enregistrements | 80 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *2/*9                      Intermediate Metabolizer       
+  CYP2C19  0.5    *2/*17                     Intermediate Metabolizer       
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.5    *1/*4                      1 allèle(s) *3/*4              
+  DPYD     1.0    Reference/Reference        Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*5                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *1/*14                     Normal Function                
+  TPMT     0.5    *1/*3A                     Intermediate Metabolizer       
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   1.0    Reference/Reference        0 allèle(s) rs9923231          
+
+== HG00275 : VCF patient de 46968 enregistrements | 158 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  1.0    *1/*1                      Normal Metabolizer             
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.1627A>G (*5)   Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*6                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.0    *5/*15                     Poor Function                  
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00111 : VCF patient de 46968 enregistrements | 235 s
+  ABCG2    0.0    rs2231142/rs2231142        Poor Function                  
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*5                      Normal Metabolizer             
+  CYP2C19  1.0    *1/*1                      Normal Metabolizer             
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   0.5    *1/*22                     Intermediate Metabolizer       
+  CYP3A5   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP4F2   0.5    *1/*3                      1 allèle(s) *3/*4              
+  DPYD     1.0    c.1627A>G (*5)/c.2194G>A (*6) Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*6                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *1/*1                      Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   1.0    Reference/Reference        0 allèle(s) rs9923231          
+
+== HG00105 : VCF patient de 46968 enregistrements | 310 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.0    *9/*9                      Poor Metabolizer               
+  CYP2C19  2.0    *17/*17                    Ultrarapid Metabolizer         
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/Reference        Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*6                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *1/*1                      Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   1.0    Reference/Reference        0 allèle(s) rs9923231          
+
+== HG00253 : VCF patient de 46968 enregistrements | 390 s
+  ABCG2    0.5    Reference/rs2231142        Decreased Function             
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  0.0    *2/*2                      Poor Metabolizer               
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.85T>C (*9A)    Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*5                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *1/*15                     Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00231 : VCF patient de 46968 enregistrements | 464 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*5                      Normal Metabolizer             
+  CYP2C19  1.0    *1/*38                     Normal Metabolizer             
+  CYP2C9   0.0    *2/*3                      Poor Metabolizer               
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.1627A>G (*5)   Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*5                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *1/*15                     Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00118 : VCF patient de 46968 enregistrements | 539 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  1.0    *1/*1                      Normal Metabolizer             
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   0.0    *22/*22                    Poor Metabolizer               
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.0    *3/*4                      2 allèle(s) *3/*4              
+  DPYD     0.5    c.2846A>T/c.1129-5923C>G, c.1236G>A (HapB3) Intermediate Metabolizer       
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*5                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *1/*14                     Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00097 : VCF patient de 46968 enregistrements | 623 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*1                      Normal Metabolizer             
+  CYP2C19  1.0    *1/*1                      Normal Metabolizer             
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   0.5    *1/*22                     Intermediate Metabolizer       
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.5    *1/*4                      1 allèle(s) *3/*4              
+  DPYD     1.0    c.85T>C (*9A)/c.2194G>A (*6) Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     1.5    *4/*4                      Rapid Metabolizer              
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *5/*37                     Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00103 : VCF patient de 46968 enregistrements | 706 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*1                      Normal Metabolizer             
+  CYP2C19  1.5    *17/*38                    Rapid Metabolizer              
+  CYP2C9   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.0    *3/*3                      2 allèle(s) *3/*4              
+  DPYD     1.0    Reference/Reference        Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*7                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *1/*1                      Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.0    *80+*28/*80+*28            Poor Metabolizer               
+  VKORC1   0.0    rs9923231/rs9923231        2 allèle(s) rs9923231          
+
+== HG02684 : VCF patient de 46968 enregistrements | 789 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*1                      Normal Metabolizer             
+  CYP2C19  1.0    *1/*38                     Normal Metabolizer             
+  CYP2C9   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.5    *1/*3                      1 allèle(s) *3/*4              
+  DPYD     0.0    c.1905+1G>A (*2A)/c.1905+1G>A (*2A) Poor Metabolizer               
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*5                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *37/*37                    Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   1.0    Reference/Reference        0 allèle(s) rs9923231          
+
+== HG00151 : VCF patient de 46968 enregistrements | 875 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*1                      Normal Metabolizer             
+  CYP2C19  1.0    *1/*1                      Normal Metabolizer             
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/Reference        Normal Metabolizer             
+  F5       0.0    Reference/Leiden           Unfavorable Response           
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*5                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *1/*15                     Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   1.0    Reference/Reference        0 allèle(s) rs9923231          
+
+== HG00698 : VCF patient de 46968 enregistrements | 959 s
+  ABCG2    0.5    Reference/rs2231142        Decreased Function             
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  0.5    *1/*2                      Intermediate Metabolizer       
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.1627A>G (*5)   Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     0.5    B (reference)/Kaiping, Anant, Dhon, Sapporo-like, Wosera G6PD Variable                  
+  NAT2     None   *4/*12                     None                           Génotype PyPGx « *4/*12 » absent de la table CPIC : non déterminé (jamais « normal »).
+  NUDT15   None   *1/*2                      None                           Génotype PyPGx « *1/*2 » absent de la table CPIC : non déterminé (jamais « normal »).
+  SLCO1B1  1.0    *37/*37                    Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   0.0    rs9923231/rs9923231        2 allèle(s) rs9923231          
+
+== HG00096 : VCF patient de 46968 enregistrements | 1042 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  0.5    *1/*2                      Intermediate Metabolizer       
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP4F2   1.0    *1/*6                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.85T>C (*9A)    Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*5                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *1/*5                      Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00524 : VCF patient de 46968 enregistrements | 1126 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*1                      Normal Metabolizer             
+  CYP2C19  0.5    *1/*2                      Intermediate Metabolizer       
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.5    *1/*4                      1 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.1627A>G (*5)   Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     1.5    *4/*4                      Rapid Metabolizer              
+  NUDT15   0.0    *3/*3                      Poor Metabolizer               
+  SLCO1B1  0.5    *15/*37                    Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   0.0    rs9923231/rs9923231        2 allèle(s) rs9923231          
+
+== HG00174 : VCF patient de 46968 enregistrements | 1207 s
+  ABCG2    0.5    Reference/rs2231142        Decreased Function             
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*5                      Normal Metabolizer             
+  CYP2C19  1.5    *1/*17                     Rapid Metabolizer              
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.85T>C (*9A)    Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.0    *5/*6                      Poor Metabolizer               
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.0    *15/*15                    Poor Function                  
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   1.0    *1/*1                      Normal Metabolizer             
+  VKORC1   0.0    rs9923231/rs9923231        2 allèle(s) rs9923231          
+
+== HG00304 : VCF patient de 46968 enregistrements | 1284 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   1.0    *1/*1                      Normal Metabolizer             
+  CYP2C19  1.5    *17/*38                    Rapid Metabolizer              
+  CYP2C9   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   0.5    *1/*3                      1 allèle(s) *3/*4              
+  DPYD     1.0    Reference/c.85T>C (*9A)    Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*6                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *1/*15                     Decreased Function             
+  TPMT     0.0    *3A/*16                    Poor Metabolizer               
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00109 : VCF patient de 46968 enregistrements | 1361 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   0.5    *1/*9                      Intermediate Metabolizer       
+  CYP2C19  1.0    *1/*1                      Normal Metabolizer             
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.5    *1/*3                      Intermediate Metabolizer       
+  CYP4F2   0.5    *1/*4                      1 allèle(s) *3/*4              
+  DPYD     1.0    Reference/Reference        Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*5                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  0.5    *1/*15                     Decreased Function             
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.0    *80+*28/*80+*28            Poor Metabolizer               
+  VKORC1   0.5    Reference/rs9923231        1 allèle(s) rs9923231          
+
+== HG00127 : VCF patient de 46968 enregistrements | 1444 s
+  ABCG2    1.0    Reference/Reference        Normal Function                
+  CFTR     1.0    Reference/Reference        Reference/Reference (aucune variation CFTR de la table) 
+  CYP2B6   None   *5/*15                     Indeterminate                  PyPGx : phénotype indéterminé.
+  CYP2C19  1.5    *1/*17                     Rapid Metabolizer              
+  CYP2C9   1.0    *1/*1                      Normal Metabolizer             
+  CYP2D6   None   None                       None                           CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.
+  CYP3A4   1.0    *1/*1                      Normal Metabolizer             
+  CYP3A5   0.0    *3/*3                      Poor Metabolizer               
+  CYP4F2   1.0    *1/*1                      0 allèle(s) *3/*4              
+  DPYD     1.0    Reference/Reference        Normal Metabolizer             
+  F5       1.0    Reference/Reference        Favorable Response             
+  G6PD     1.0    B (reference)/B (reference) G6PD Normal                    
+  NAT2     0.5    *4/*6                      Intermediate Metabolizer       
+  NUDT15   1.0    *1/*1                      Normal Metabolizer             
+  SLCO1B1  1.0    *1/*1                      Normal Function                
+  TPMT     1.0    *1/*1                      Normal Metabolizer             
+  UGT1A1   0.5    *1/*80+*28                 Intermediate Metabolizer       
+  VKORC1   0.0    rs9923231/rs9923231        2 allèle(s) rs9923231          
+
+Échantillons : 19 | comparaisons : 323 | identiques (valeur ou manquant) : 321 | différentes : 2
+
+   gene  different  identique  identique_manquant  lecteur_manquant_profil_valeur  n  concordance_pct
+  ABCG2          0         19                   0                               0 19            100.0
+   CFTR          0         19                   0                               0 19            100.0
+ CYP2B6          0         18                   0                               1 19             94.7
+CYP2C19          0         19                   0                               0 19            100.0
+ CYP2C9          0         19                   0                               0 19            100.0
+ CYP3A4          0         19                   0                               0 19            100.0
+ CYP3A5          0         19                   0                               0 19            100.0
+ CYP4F2          0         19                   0                               0 19            100.0
+   DPYD          0         19                   0                               0 19            100.0
+     F5          0         19                   0                               0 19            100.0
+   G6PD          1         18                   0                               0 19             94.7
+   NAT2          0         18                   1                               0 19            100.0
+ NUDT15          0         18                   1                               0 19            100.0
+SLCO1B1          0         19                   0                               0 19            100.0
+   TPMT          0         19                   0                               0 19            100.0
+ UGT1A1          0         19                   0                               0 19            100.0
+ VKORC1          0         19                   0                               0 19            100.0
+
+Écarts :
+echantillon   gene  valeur_lue  valeur_profil                                           genotype_pypgx phenotype_utilise                         statut
+    HG00698   G6PD         0.5            0.0 B (reference)/Kaiping, Anant, Dhon, Sapporo-like, Wosera     G6PD Variable                      different
+    HG00127 CYP2B6         NaN            1.0                                                   *5/*15     Indeterminate lecteur_manquant_profil_valeur
+
+FIN_VALIDATION

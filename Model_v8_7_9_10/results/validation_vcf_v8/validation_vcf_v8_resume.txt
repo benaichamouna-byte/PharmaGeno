@@ -1,0 +1,25 @@
+Échantillons : 19 | comparaisons : 323 | identiques (valeur ou manquant) : 321 | différentes : 2
+
+   gene  different  identique  identique_manquant  lecteur_manquant_profil_valeur  n  concordance_pct
+  ABCG2          0         19                   0                               0 19            100.0
+   CFTR          0         19                   0                               0 19            100.0
+ CYP2B6          0         18                   0                               1 19             94.7
+CYP2C19          0         19                   0                               0 19            100.0
+ CYP2C9          0         19                   0                               0 19            100.0
+ CYP3A4          0         19                   0                               0 19            100.0
+ CYP3A5          0         19                   0                               0 19            100.0
+ CYP4F2          0         19                   0                               0 19            100.0
+   DPYD          0         19                   0                               0 19            100.0
+     F5          0         19                   0                               0 19            100.0
+   G6PD          1         18                   0                               0 19             94.7
+   NAT2          0         18                   1                               0 19            100.0
+ NUDT15          0         18                   1                               0 19            100.0
+SLCO1B1          0         19                   0                               0 19            100.0
+   TPMT          0         19                   0                               0 19            100.0
+ UGT1A1          0         19                   0                               0 19            100.0
+ VKORC1          0         19                   0                               0 19            100.0
+
+Écarts :
+echantillon   gene  valeur_lue  valeur_profil                                           genotype_pypgx phenotype_utilise                         statut
+    HG00698   G6PD         0.5            0.0 B (reference)/Kaiping, Anant, Dhon, Sapporo-like, Wosera     G6PD Variable                      different
+    HG00127 CYP2B6         NaN            1.0                                                   *5/*15     Indeterminate lecteur_manquant_profil_valeur

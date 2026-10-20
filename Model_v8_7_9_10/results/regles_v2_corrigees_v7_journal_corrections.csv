@@ -1,0 +1,19 @@
+correction,fichier,gene,medicament,avant,apres,source
+thiopuriniques_normal_standard,mono,TPMT,azathioprine,(absent),1.0 -> STANDARD,prescribing_guidance.json (PharmCAT) PA166104933 / PA166297277
+thiopuriniques_normal_standard,mono,NUDT15,azathioprine,(absent),1.0 -> STANDARD,prescribing_guidance.json (PharmCAT) PA166104933 / PA166297277
+thiopuriniques_normal_standard,mono,TPMT,mercaptopurine,(absent),1.0 -> STANDARD,prescribing_guidance.json (PharmCAT) PA166104945 / PA166298222
+thiopuriniques_normal_standard,mono,NUDT15,mercaptopurine,(absent),1.0 -> STANDARD,prescribing_guidance.json (PharmCAT) PA166104945 / PA166298222
+thiopuriniques_normal_standard,mono,TPMT,thioguanine,(absent),1.0 -> STANDARD,prescribing_guidance.json (PharmCAT) PA166104965 / PA166298565
+thiopuriniques_normal_standard,mono,NUDT15,thioguanine,(absent),1.0 -> STANDARD,prescribing_guidance.json (PharmCAT) PA166104965 / PA166298565
+slco1b1_increased_2.0_vers_1.5,mono,SLCO1B1,atorvastatin,2.0,1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,mono,SLCO1B1,fluvastatin,2.0,1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,mono,SLCO1B1,lovastatin,2.0,1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,mono,SLCO1B1,pitavastatin,2.0,1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,mono,SLCO1B1,pravastatin,2.0,1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,mono,SLCO1B1,simvastatin,2.0,1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,multi,ABCG2+SLCO1B1,rosuvastatin,0.0/2.0,0.0/1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,multi,ABCG2+SLCO1B1,rosuvastatin,0.5/2.0,0.5/1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,multi,ABCG2+SLCO1B1,rosuvastatin,1.0/2.0,1.0/1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,multi,CYP2C9+SLCO1B1,fluvastatin,0.0/2.0,0.0/1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,multi,CYP2C9+SLCO1B1,fluvastatin,0.5/2.0,0.5/1.5,codage_pypgx_valeur_v7.csv
+slco1b1_increased_2.0_vers_1.5,multi,CYP2C9+SLCO1B1,fluvastatin,1.0/2.0,1.0/1.5,codage_pypgx_valeur_v7.csv

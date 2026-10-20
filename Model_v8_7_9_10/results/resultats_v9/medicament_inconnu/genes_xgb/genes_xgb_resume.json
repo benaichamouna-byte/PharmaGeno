@@ -1,0 +1,21 @@
+{
+ "modele": "genes_xgb",
+ "protocole": "médicament jamais vu : StratifiedGroupKFold(5) groupes=empreinte identique, graine 42 ; ensemble final non utilisé",
+ "n_lignes": 112654,
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.21908,
+ "f1_macro_std": 0.03486570808115045,
+ "f1_hors_surveiller_moy": 0.2865,
+ "exactitude_moy": 0.41396,
+ "CER_strict_moy": 0.626,
+ "CER_strict_std": 0.08123614958871452,
+ "precision_EVITER_moy": 0.07994,
+ "logloss_moy": 1.2009200000000002,
+ "ECE_moy": 0.22036000000000003,
+ "f1_macro_oof": 0.22593767490108582
+}

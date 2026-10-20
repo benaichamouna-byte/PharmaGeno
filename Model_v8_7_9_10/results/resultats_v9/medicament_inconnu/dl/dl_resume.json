@@ -1,0 +1,21 @@
+{
+ "modele": "dl",
+ "protocole": "médicament jamais vu : StratifiedGroupKFold(5) groupes=empreinte identique, graine 42 ; ensemble final non utilisé",
+ "n_lignes": 112654,
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.46701999999999994,
+ "f1_macro_std": 0.09447838694643342,
+ "f1_hors_surveiller_moy": 0.54536,
+ "exactitude_moy": 0.8068,
+ "CER_strict_moy": 0.6410399999999999,
+ "CER_strict_std": 0.05858397733169025,
+ "precision_EVITER_moy": 0.58176,
+ "logloss_moy": 0.6943199999999999,
+ "ECE_moy": 0.10533999999999999,
+ "f1_macro_oof": 0.4079539471351913
+}

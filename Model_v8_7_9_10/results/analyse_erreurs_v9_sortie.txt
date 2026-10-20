@@ -1,0 +1,36 @@
+lignes CV : 112654 | erreurs DL : 1774 (1.57 %) | erreurs XGB : 6
+
+matrice de confusion DL (lignes = vrai, colonnes = prédit) :
+col_0         ADAPTER_DOSE  EVITER  STANDARD  SURVEILLER
+row_0                                                   
+ADAPTER_DOSE         10667       2        29           0
+EVITER                   6    5253        64           0
+STANDARD              1129     529     94359          15
+SURVEILLER               0       0         0         601
+
+taux d'erreur DL par médicament (top 15) :
+              taux_pct  erreurs  lignes
+drug                                   
+efavirenz         28.2      348    1234
+irinotecan        23.6      185     785
+tacrolimus        12.7      157    1241
+abacavir           9.7       44     453
+allopurinol        9.2       40     437
+aripiprazole       7.9       45     567
+risperidone        7.3       37     509
+pimozide           7.1       40     567
+clopidogrel        5.9       73    1241
+sertraline         5.7       61    1078
+atazanavir         5.5       68    1241
+fosphenytoin       5.3       24     453
+venlafaxine        4.9       61    1241
+tamoxifen          4.5       56    1241
+ondansetron        4.4       54    1241
+
+médicaments avec 0 erreur DL : 17 sur 113 | part des erreurs dans les 10 premiers médicaments (en nombre) : 62.5 %
+
+erreurs XGB par médicament : {'allopurinol': 3, 'carbamazepine': 3}
+
+EVITER manqués : DL 70 sur 5323 | XGB 6
+EVITER manqués DL par médicament : {'toluidine blue': 13, 'methylene blue': 10, 'tafenoquine': 10, 'abacavir': 8, 'tropisetron': 6, 'sertraline': 4, 'allopurinol': 3, 'fosphenytoin': 3, 'fluvastatin': 3, 'dapsone': 3}
+EVITER manqués XGB par médicament : {'allopurinol': 3, 'carbamazepine': 3}

@@ -1,0 +1,18 @@
+Lot du 19 octobre 2026 (fin d'après-midi) : corpus v7 = corpus final des données avant le gel
+Rien d'existant n'est modifié : profils v4, corpus v5 et v6 restent intacts.
+
+construire_regles_v7_v1.py (+ _sortie.txt) -> regles_v2_corrigees_monogene_v7.csv, regles_v2_corrigees_multigene_v7.csv, regles_v2_corrigees_v7_journal_corrections.csv
+  (1) Thiopuriniques : 6 règles « TPMT normal / NUDT15 normal -> STANDARD » (azathioprine, mercaptopurine, thioguanine), source CPIC (annotation PharmGKB PA166104945 et équivalents, copie du dépôt PharmCAT).
+      DPWG n'a pas de recommandation pour les métaboliseurs normaux ; c'est pourquoi ces règles manquaient.
+  (2) SLCO1B1 « Increased function » : règles recodées 2.0 -> 1.5 (12 lignes) pour coller au codage des profils ; 22 profils étaient exclus à tort pour les statines.
+construire_corpus_v7.py (+ _sortie.txt) -> corpus_v7/ (phenotype_drug_dataset_v7.csv, regles_v7_monogene.csv = règles réellement utilisées, corpus_v7_couverture_par_medicament.csv)
+
+Chiffres vérifiés : corpus v7 = 130 578 lignes (v6 : 126 582 ; +3 996, 0 retirée), 117 médicaments, 1 379 profils.
+Classes : STANDARD 112 013 ; ADAPTER_DOSE 11 902 ; EVITER 5 995 ; SURVEILLER 668. Étiquettes changées par rapport à v6 : 0.
+Thiopuriniques : 1 289 lignes par médicament (STANDARD 1 018 ; ADAPTER_DOSE 271), conformes à la grille CPIC (contrôle indépendant).
+Statines : +22 lignes pour atorvastatine, lovastatine, pitavastatine, pravastatine, rosuvastatine, simvastatine ; +9 pour la fluvastatine.
+
+Limites connues (à écrire dans le mémoire) :
+ - poor metabolizers TPMT/NUDT15 (18 profils) exclus pour les thiopuriniques : règle ambiguë (dose divisée par 10 ou autre médicament selon l'indication) ;
+ - 72 profils avec un seul des deux gènes TPMT/NUDT15 connu exclus (règle « inconnu = manquant ») ;
+ - DPYD : valeurs de la v3, accord de 14/15 avec GeT-RM sur les profils comparables (34 non comparables : notation c.) ; le recalcul PyPGx n'a pas abouti.

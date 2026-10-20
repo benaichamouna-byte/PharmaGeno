@@ -1,0 +1,12 @@
+{
+ "dl_action_change": 0.003908045977011494,
+ "dl_conf_change_moy": 0.007805996036793282,
+ "xgb_action_change": 0.00954022988505747,
+ "xgb_conf_change_moy": 0.004265670572279085,
+ "medicaments": 58,
+ "profils": 300,
+ "dl_dP_EVITER_max": 0.9472224712371826,
+ "xgb_dP_EVITER_max": 0.8593207597732544,
+ "dl_medicaments_avec_changement_action": 14,
+ "xgb_medicaments_avec_changement_action": 4
+}

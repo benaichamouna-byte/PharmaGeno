@@ -1,0 +1,27 @@
+{'SANS_REGLE': 18, 'OK': 15, 'A_VERIFIER': 4}
+
+       gene     statut                valeurs_profils valeurs_regles profils_valeur_sans_regle valeurs_regle_absentes_des_profils
+        ACE SANS_REGLE                             {}   AUCUNE REGLE                                                             
+      ADRB2 SANS_REGLE                             {}   AUCUNE REGLE                                                             
+    CACNA1S SANS_REGLE                    {0.5: 1379}   AUCUNE REGLE                                                             
+       CFTR SANS_REGLE            {1.0: 1345, 0.5: 3}   AUCUNE REGLE                                                             
+     CYP1A2 SANS_REGLE                             {}   AUCUNE REGLE                                                             
+     CYP2A6 SANS_REGLE                             {}   AUCUNE REGLE                                                             
+     CYP3A4 A_VERIFIER   {1.0: 1286, 0.5: 50, 0.0: 1}     [0.0, 0.5]               {1.0: 1286}                                   
+     CYP4F2 SANS_REGLE {1.0: 822, 0.5: 455, 0.0: 102}   AUCUNE REGLE                                                             
+       EGFR SANS_REGLE                             {}   AUCUNE REGLE                                                             
+         F5 SANS_REGLE           {1.0: 1350, 0.0: 29}   AUCUNE REGLE                                                             
+      HLA-A SANS_REGLE                             {}   AUCUNE REGLE                                                             
+      HLA-B A_VERIFIER                             {}     [0.0, 1.0]                                                   [0.0, 1.0]
+      IFNL3 SANS_REGLE                             {}   AUCUNE REGLE                                                             
+    MT-RNR1 SANS_REGLE                             {}   AUCUNE REGLE                                                             
+      MTHFR SANS_REGLE                             {}   AUCUNE REGLE                                                             
+       RYR1 SANS_REGLE            {0.5: 1378, 0.0: 1}   AUCUNE REGLE                                                             
+    SLC19A1 SANS_REGLE                             {}   AUCUNE REGLE                                                             
+     VKORC1 SANS_REGLE {1.0: 705, 0.5: 378, 0.0: 296}   AUCUNE REGLE                                                             
+HLA-B*58:01 A_VERIFIER    {0.0: 483, 0.5: 22, 1.0: 3}     [0.0, 1.0]                 {0.5: 22}                                   
+HLA-B*15:11 SANS_REGLE                     {0.0: 508}   AUCUNE REGLE                                                             
+HLA-A*31:01 A_VERIFIER    {0.0: 480, 0.5: 24, 1.0: 4}     [0.0, 1.0]                 {0.5: 24}                                   
+HLA-A*02:01 SANS_REGLE  {0.0: 317, 0.5: 162, 1.0: 29}   AUCUNE REGLE                                                             
+
+Gènes OK : ABCG2, CYP2B6, CYP2C19, CYP2C9, CYP2D6, CYP3A5, DPYD, G6PD, NAT2, NUDT15, SLCO1B1, TPMT, UGT1A1, HLA-B*15:02, HLA-B*57:01

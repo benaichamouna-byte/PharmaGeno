@@ -1,0 +1,418 @@
+{
+ "profil_id": "HG00101",
+ "specialite": "Cardiologie",
+ "n_medicaments_specialite": 22,
+ "proposes": [
+  {
+   "medicament": "metoprolol",
+   "categorie": "proposable",
+   "libelle": "Aucune adaptation liée aux gènes analysés",
+   "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+   "statut": "ok",
+   "avis": {
+    "DL": "STANDARD",
+    "XGBoost": "STANDARD",
+    "règle CPIC/DPWG": "STANDARD"
+   },
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2D6",
+     "valeur_codage": 1.0,
+     "lecture": "Normal metabolizer"
+    }
+   ],
+   "regle": [
+    {
+     "genes": [
+      "CYP2D6"
+     ],
+     "phenotype": "Normal metabolizer",
+     "action": "STANDARD",
+     "texte_guideline_en": "Initiate standard dosing",
+     "source": "CPIC",
+     "fichier": "PA166341321.json",
+     "autres_sources_en_desaccord": false
+    }
+   ],
+   "confiance_regle": "haute",
+   "confiance_dl": 0.9962,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0015,
+    "STANDARD": 0.9962,
+    "SURVEILLER": 0.0012
+   },
+   "action": "STANDARD",
+   "rang": 1
+  },
+  {
+   "medicament": "aspirin",
+   "categorie": "proposable",
+   "libelle": "Aucune adaptation liée aux gènes analysés",
+   "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+   "statut": "ok",
+   "avis": {
+    "DL": "STANDARD",
+    "XGBoost": "STANDARD",
+    "règle CPIC/DPWG": "STANDARD"
+   },
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "G6PD",
+     "valeur_codage": 1.0,
+     "lecture": "G6PD Normal"
+    }
+   ],
+   "regle": [
+    {
+     "genes": [
+      "G6PD"
+     ],
+     "phenotype": "G6PD Normal",
+     "action": "STANDARD",
+     "texte_guideline_en": "Aspirine <=1 g/j : pas d'action ; CNSHA : prudence et surveillance. >1 g/j : \"no recommendation\".",
+     "source": "CPIC",
+     "fichier": "PA166279561",
+     "autres_sources_en_desaccord": false
+    }
+   ],
+   "confiance_regle": "haute",
+   "confiance_dl": 0.9961,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0011,
+    "EVITER": 0.0015,
+    "STANDARD": 0.9961,
+    "SURVEILLER": 0.0012
+   },
+   "action": "STANDARD",
+   "rang": 2
+  },
+  {
+   "medicament": "bisoprolol",
+   "categorie": "proposable",
+   "libelle": "Aucune adaptation liée aux gènes analysés",
+   "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+   "statut": "ok",
+   "avis": {
+    "DL": "STANDARD",
+    "XGBoost": "STANDARD",
+    "règle CPIC/DPWG": "STANDARD"
+   },
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2D6",
+     "valeur_codage": 1.0,
+     "lecture": "Normal metabolizer"
+    }
+   ],
+   "regle": [
+    {
+     "genes": [
+      "CYP2D6"
+     ],
+     "phenotype": "Normal metabolizer",
+     "action": "STANDARD",
+     "texte_guideline_en": "Initiate standard dosing",
+     "source": "CPIC",
+     "fichier": "PA166341341.json",
+     "autres_sources_en_desaccord": false
+    }
+   ],
+   "confiance_regle": "haute",
+   "confiance_dl": 0.9958,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0012,
+    "EVITER": 0.0016,
+    "STANDARD": 0.9958,
+    "SURVEILLER": 0.0013
+   },
+   "action": "STANDARD",
+   "rang": 3
+  },
+  {
+   "medicament": "clopidogrel",
+   "categorie": "proposable",
+   "libelle": "Aucune adaptation liée aux gènes analysés",
+   "texte_patient": "Pour les gènes analysés, rien n'indique qu'il faille changer la manière habituelle de prendre ce médicament.",
+   "statut": "ok",
+   "avis": {
+    "DL": "STANDARD",
+    "XGBoost": "STANDARD",
+    "règle CPIC/DPWG": "STANDARD"
+   },
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2C19",
+     "valeur_codage": 1.0,
+     "lecture": "CYP2C19 normal metabolizer"
+    }
+   ],
+   "regle": [
+    {
+     "genes": [
+      "CYP2C19"
+     ],
+     "phenotype": "CYP2C19 normal metabolizer",
+     "action": "STANDARD",
+     "texte_guideline_en": "If considering clopidogrel, use at standard dose (75 mg/day)",
+     "source": "CPIC",
+     "fichier": "PA166104948.json",
+     "autres_sources_en_desaccord": false
+    }
+   ],
+   "confiance_regle": "haute",
+   "confiance_dl": 0.9957,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0007,
+    "EVITER": 0.0022,
+    "STANDARD": 0.9957,
+    "SURVEILLER": 0.0014
+   },
+   "action": "STANDARD",
+   "rang": 4
+  }
+ ],
+ "autres_compatibles": 10,
+ "a_eviter": [
+  {
+   "medicament": "simvastatin",
+   "categorie": "a_eviter",
+   "libelle": "À éviter pour ce profil génétique",
+   "texte_patient": "Vos gènes indiquent que ce médicament peut ne pas vous convenir. Ne le prenez pas sans en parler à votre médecin ou à votre pharmacien.",
+   "statut": "ok",
+   "avis": {
+    "DL": "EVITER",
+    "XGBoost": "EVITER",
+    "règle CPIC/DPWG": "EVITER"
+   },
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "SLCO1B1",
+     "valeur_codage": 0.5,
+     "lecture": "Decreased function"
+    }
+   ],
+   "regle": [
+    {
+     "genes": [
+      "SLCO1B1"
+     ],
+     "phenotype": "Decreased function",
+     "action": "EVITER",
+     "texte_guideline_en": "Prescribe an alternative statin depending on the desired potency (see Figure 1 for recommendations for alternative statins). If simvastatin therapy is warranted, limit dose to <20mg/day.",
+     "source": "CPIC",
+     "fichier": "PA166105005.json",
+     "autres_sources_en_desaccord": true
+    }
+   ],
+   "confiance_regle": "moyenne",
+   "confiance_dl": 0.9977,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0005,
+    "EVITER": 0.9977,
+    "STANDARD": 0.0015,
+    "SURVEILLER": 0.0003
+   },
+   "alternatives": [
+    {
+     "medicament": "pravastatin",
+     "confiance": 0.995
+    },
+    {
+     "medicament": "rosuvastatin",
+     "confiance": 0.9942
+    }
+   ]
+  }
+ ],
+ "a_verifier": [
+  {
+   "medicament": "fluvastatin",
+   "categorie": "a_verifier",
+   "libelle": "À vérifier par un professionnel",
+   "texte_patient": "Les analyses ne donnent pas une réponse assez sûre pour ce médicament : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "a_verifier",
+   "avis": {
+    "DL": "STANDARD",
+    "XGBoost": "STANDARD",
+    "règle CPIC/DPWG": "STANDARD"
+   },
+   "alertes": [
+    {
+     "code": "incertain",
+     "libelle": "Confiance du modèle trop faible pour ce cas."
+    }
+   ],
+   "explication": [
+    {
+     "gene": "CYP2C9",
+     "valeur_codage": 1.0,
+     "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+    },
+    {
+     "gene": "SLCO1B1",
+     "valeur_codage": 0.5,
+     "lecture": "valeur de codage 0.5 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [
+    {
+     "genes": [
+      "CYP2C9",
+      "SLCO1B1"
+     ],
+     "phenotype": "SLCO1B1 decreased function ; CYP2C9 normal metabolizer",
+     "action": "STANDARD",
+     "texte_guideline_en": "Prescribe desired starting dose and adjust doses of fluvastatin based on disease-specific guidelines. Prescriber should be aware of possible increased risk for myopathy especially for doses >40mg per day. MODERATE",
+     "source": "CPIC",
+     "fichier": "PA166262341.json",
+     "autres_sources_en_desaccord": false
+    }
+   ],
+   "confiance_regle": "haute",
+   "confiance_dl": 0.9207,
+   "proba_dl": {
+    "ADAPTER_DOSE": 0.0064,
+    "EVITER": 0.0669,
+    "STANDARD": 0.9207,
+    "SURVEILLER": 0.006
+   }
+  }
+ ],
+ "non_evalues": [
+  {
+   "medicament": "flecainide",
+   "categorie": "non_evalue",
+   "libelle": "Non évalué",
+   "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "hors_domaine",
+   "avis": {},
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2D6",
+     "valeur_codage": 1.0,
+     "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [],
+   "confiance_regle": "",
+   "confiance_dl": null,
+   "proba_dl": null,
+   "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "lovastatin",
+   "categorie": "non_evalue",
+   "libelle": "Non évalué",
+   "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "hors_domaine",
+   "avis": {},
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "SLCO1B1",
+     "valeur_codage": 0.5,
+     "lecture": "valeur de codage 0.5 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [],
+   "confiance_regle": "",
+   "confiance_dl": null,
+   "proba_dl": null,
+   "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "mavacamten",
+   "categorie": "non_evalue",
+   "libelle": "Non évalué",
+   "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "hors_domaine",
+   "avis": {},
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2C19",
+     "valeur_codage": 1.0,
+     "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [],
+   "confiance_regle": "",
+   "confiance_dl": null,
+   "proba_dl": null,
+   "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "pitavastatin",
+   "categorie": "non_evalue",
+   "libelle": "Non évalué",
+   "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "hors_domaine",
+   "avis": {},
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "SLCO1B1",
+     "valeur_codage": 0.5,
+     "lecture": "valeur de codage 0.5 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [],
+   "confiance_regle": "",
+   "confiance_dl": null,
+   "proba_dl": null,
+   "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "propafenone",
+   "categorie": "non_evalue",
+   "libelle": "Non évalué",
+   "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "hors_domaine",
+   "avis": {},
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2D6",
+     "valeur_codage": 1.0,
+     "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [],
+   "confiance_regle": "",
+   "confiance_dl": null,
+   "proba_dl": null,
+   "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  },
+  {
+   "medicament": "warfarin",
+   "categorie": "non_evalue",
+   "libelle": "Non évalué",
+   "texte_patient": "Ce médicament n'a pas pu être évalué pour votre profil. Cela ne veut pas dire qu'il vous convient : demandez l'avis de votre médecin ou de votre pharmacien.",
+   "statut": "hors_domaine",
+   "avis": {},
+   "alertes": [],
+   "explication": [
+    {
+     "gene": "CYP2C9",
+     "valeur_codage": 1.0,
+     "lecture": "valeur de codage 1.0 (sans règle associée à ce cas)"
+    }
+   ],
+   "regle": [],
+   "confiance_regle": "",
+   "confiance_dl": null,
+   "proba_dl": null,
+   "motif": "Combinaison génétique jamais rencontrée à l'entraînement pour ce médicament : pas de prédiction du modèle."
+  }
+ ],
+ "reference_seule": [],
+ "avertissement": "Cet outil analyse un nombre limité de gènes et de médicaments ; il ne remplace ni l'avis d'un médecin ou d'un pharmacien, ni une prescription. Il ne tient pas compte des autres médicaments, des maladies ni de l'âge. Résultat à discuter avec un professionnel de santé.",
+ "note_ordre": "L'ordre reflète la confiance du modèle, pas une validation clinique."
+}

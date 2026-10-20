@@ -1,0 +1,12 @@
+PASS I1 chaque médicament de la spécialité est dans exactement une catégorie | 80 profils x 17 spécialités
+PASS I2 aucun médicament « proposé » n'a un avis EVITER (DL, XGBoost ou règle)
+PASS I3 tout médicament « à éviter » a au moins un avis EVITER
+PASS I4 alternatives : statut ok, STANDARD, même sous-groupe ATC, différentes du médicament évité
+PASS I5 chaque fiche a un libellé et un texte patient | 6741 fiches
+INFO répartition totale des fiches (80 profils x spécialités) : {'proposes': 4242, 'a_eviter': 411, 'a_verifier': 23, 'non_evalues': 1913, 'reference_seule': 152}
+PASS I6a nom commercial non reconnu : message clair
+PASS I6b nom international reconnu | proposable
+PASS I7 CYP2C19 = 0 : clopidogrel classé « à éviter » | avis={'DL': 'EVITER', 'XGBoost': 'EVITER', 'règle CPIC/DPWG': 'EVITER'} statut=ok
+Exemple écrit : exemple_recommandation_v8.json (spécialité None)
+
+RÉSULTAT GLOBAL : TOUS LES TESTS PASSENT

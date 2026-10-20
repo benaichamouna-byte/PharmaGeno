@@ -1,0 +1,5 @@
+Médicaments : 117 | dans le modèle : 113 | étiquette variable : 60
+Hors modèle (référence CPIC seule) : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Gènes requis que le modèle ne reçoit pas : {}
+Gènes de règle absents du profil : {}
+Écrit : domaine_v8.json

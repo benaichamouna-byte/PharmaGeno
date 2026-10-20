@@ -1,0 +1,14 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Modèle : rf | lignes hors ensemble final : 112654 | groupes de médicaments (empreintes distinctes) : 110
+{'pli': 1, 'n_test': 22408, 'n_medicaments_test': 21, 'arbres': 500, 'f1_macro': 0.4977, 'f1_hors_surveiller': 0.6635, 'exactitude': 0.9092, 'CER_strict': 0.7468, 'precision_EVITER': 1.0, 'logloss': 0.4119, 'ECE': 0.1072, 'rappel_ADAPTER_DOSE': 0.4675, 'rappel_EVITER': 0.2532, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 26s
+{'pli': 2, 'n_test': 22399, 'n_medicaments_test': 24, 'arbres': 500, 'f1_macro': 0.4127, 'f1_hors_surveiller': 0.5503, 'exactitude': 0.883, 'CER_strict': 0.6904, 'precision_EVITER': 1.0, 'logloss': 0.4661, 'ECE': 0.1059, 'rappel_ADAPTER_DOSE': 0.1456, 'rappel_EVITER': 0.3096, 'rappel_STANDARD': 0.9939, 'rappel_SURVEILLER': 0.0} | 53s
+{'pli': 3, 'n_test': 22533, 'n_medicaments_test': 21, 'arbres': 500, 'f1_macro': 0.5612, 'f1_hors_surveiller': 0.5612, 'exactitude': 0.8428, 'CER_strict': 0.6696, 'precision_EVITER': 0.9202, 'logloss': 0.407, 'ECE': 0.1036, 'rappel_ADAPTER_DOSE': 0.2613, 'rappel_EVITER': 0.3304, 'rappel_STANDARD': 0.9346, 'rappel_SURVEILLER': 0.0} | 80s
+{'pli': 4, 'n_test': 23189, 'n_medicaments_test': 25, 'arbres': 500, 'f1_macro': 0.3905, 'f1_hors_surveiller': 0.5207, 'exactitude': 0.8522, 'CER_strict': 0.7405, 'precision_EVITER': 1.0, 'logloss': 0.5423, 'ECE': 0.0509, 'rappel_ADAPTER_DOSE': 0.1314, 'rappel_EVITER': 0.2595, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.0} | 106s
+{'pli': 5, 'n_test': 22125, 'n_medicaments_test': 22, 'arbres': 500, 'f1_macro': 0.6458, 'f1_hors_surveiller': 0.6458, 'exactitude': 0.8979, 'CER_strict': 0.6407, 'precision_EVITER': 0.83, 'logloss': 0.4218, 'ECE': 0.127, 'rappel_ADAPTER_DOSE': 0.381, 'rappel_EVITER': 0.3593, 'rappel_STANDARD': 0.9791, 'rappel_SURVEILLER': 0.0} | 133s
+
+RÉSULTAT rf (médicament jamais vu) : F1 macro = 0.5016 +/- 0.0945 | exactitude = 0.8770 | CER strict = 0.6976 | précision EVITER = 0.9500
+Fichiers écrits dans resultats_v9/medicament_inconnu/rf
+
+real	2m16.960s
+user	4m17.821s
+sys	0m3.730s

@@ -1,0 +1,16 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Variante : film | gènes (33) : ['ABCG2', 'CFTR', 'CYP2B6', 'CYP2C19', 'CYP2C9', 'CYP2D6', 'CYP3A4', 'CYP3A5', 'CYP4F2', 'DPYD', 'F5', 'G6PD', 'NAT2', 'NUDT15', 'SLCO1B1', 'TPMT', 'UGT1A1', 'VKORC1', 'HLA-B*15:02', 'HLA-B*57:01', 'HLA-B*58:01', 'HLA-A*31:01', 'CFTR_manquant', 'CYP3A4_manquant', 'G6PD_manquant', 'NAT2_manquant', 'NUDT15_manquant', 'SLCO1B1_manquant', 'TPMT_manquant', 'HLA-B*15:02_manquant', 'HLA-B*57:01_manquant', 'HLA-B*58:01_manquant', 'HLA-A*31:01_manquant']
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [11902, 5917, 106691, 668]
+Ensemble final mis de côté : 12524 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 22500, 'epoques': 29, 'f1_val_interne': 0.9992, 'f1_macro': 0.9991, 'f1_hors_surveiller': 0.9988, 'exactitude': 0.9996, 'CER_strict': 0.0009, 'precision_EVITER': 0.9944, 'logloss': 0.0074, 'ECE': 0.0065, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9991, 'rappel_STANDARD': 0.9996, 'rappel_SURVEILLER': 1.0} | 72s
+{'pli': 2, 'n_test': 22533, 'epoques': 20, 'f1_val_interne': 0.9987, 'f1_macro': 0.9979, 'f1_hors_surveiller': 0.9971, 'exactitude': 0.9992, 'CER_strict': 0.0019, 'precision_EVITER': 0.987, 'logloss': 0.0086, 'ECE': 0.0068, 'rappel_ADAPTER_DOSE': 0.9995, 'rappel_EVITER': 0.9981, 'rappel_STANDARD': 0.9992, 'rappel_SURVEILLER': 1.0} | 118s
+{'pli': 3, 'n_test': 22574, 'epoques': 26, 'f1_val_interne': 0.9997, 'f1_macro': 0.9987, 'f1_hors_surveiller': 0.9983, 'exactitude': 0.9996, 'CER_strict': 0.0085, 'precision_EVITER': 1.0, 'logloss': 0.0076, 'ECE': 0.0061, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9915, 'rappel_STANDARD': 0.9999, 'rappel_SURVEILLER': 1.0} | 181s
+{'pli': 4, 'n_test': 22523, 'epoques': 32, 'f1_val_interne': 0.9997, 'f1_macro': 0.9995, 'f1_hors_surveiller': 0.9993, 'exactitude': 0.9998, 'CER_strict': 0.0, 'precision_EVITER': 0.9972, 'logloss': 0.005, 'ECE': 0.0044, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 0.9997, 'rappel_SURVEILLER': 1.0} | 257s
+{'pli': 5, 'n_test': 22524, 'epoques': 21, 'f1_val_interne': 0.9997, 'f1_macro': 0.9984, 'f1_hors_surveiller': 0.9979, 'exactitude': 0.9995, 'CER_strict': 0.0019, 'precision_EVITER': 0.9915, 'logloss': 0.0062, 'ECE': 0.0046, 'rappel_ADAPTER_DOSE': 0.9981, 'rappel_EVITER': 0.9981, 'rappel_STANDARD': 0.9997, 'rappel_SURVEILLER': 1.0} | 307s
+
+RÉSULTAT DL (film) : F1 macro = 0.9987 +/- 0.0006 | CER strict = 0.0026 | ECE = 0.0057
+Fichiers écrits dans resultats_v9/graines/id_evit2_graine2
+
+real	5m13.650s
+user	10m5.834s
+sys	0m2.424s

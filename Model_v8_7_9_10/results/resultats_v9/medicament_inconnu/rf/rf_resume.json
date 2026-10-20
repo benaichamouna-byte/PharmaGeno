@@ -1,0 +1,21 @@
+{
+ "modele": "rf",
+ "protocole": "médicament jamais vu : StratifiedGroupKFold(5) groupes=empreinte identique, graine 42 ; ensemble final non utilisé",
+ "n_lignes": 112654,
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.50158,
+ "f1_macro_std": 0.09445361612982323,
+ "f1_hors_surveiller_moy": 0.5883,
+ "exactitude_moy": 0.8770199999999999,
+ "CER_strict_moy": 0.6975999999999999,
+ "CER_strict_std": 0.04082768668440572,
+ "precision_EVITER_moy": 0.9500399999999999,
+ "logloss_moy": 0.44982,
+ "ECE_moy": 0.09892,
+ "f1_macro_oof": 0.4414450424163857
+}

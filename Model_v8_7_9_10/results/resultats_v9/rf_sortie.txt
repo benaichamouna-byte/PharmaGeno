@@ -1,0 +1,16 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Modèle : rf | représentation : fp | variables : 551 (33 gènes + 518 colonnes médicament)
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [11902, 5917, 106691, 668]
+Ensemble final mis de côté : 12524 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 22500, 'arbres': 500, 'f1_val_interne': 0.9813, 'f1_macro': 0.9821, 'f1_hors_surveiller': 0.9856, 'exactitude': 0.9952, 'CER_strict': 0.0412, 'precision_EVITER': 0.9856, 'logloss': 0.0811, 'ECE': 0.0638, 'rappel_ADAPTER_DOSE': 0.9915, 'rappel_EVITER': 0.9588, 'rappel_STANDARD': 0.9977, 'rappel_SURVEILLER': 0.9754} | 35s
+{'pli': 2, 'n_test': 22533, 'arbres': 500, 'f1_val_interne': 0.9768, 'f1_macro': 0.9844, 'f1_hors_surveiller': 0.9834, 'exactitude': 0.995, 'CER_strict': 0.0515, 'precision_EVITER': 0.9759, 'logloss': 0.0829, 'ECE': 0.0644, 'rappel_ADAPTER_DOSE': 0.9921, 'rappel_EVITER': 0.9485, 'rappel_STANDARD': 0.998, 'rappel_SURVEILLER': 0.9835} | 72s
+{'pli': 3, 'n_test': 22574, 'arbres': 500, 'f1_val_interne': 0.989, 'f1_macro': 0.9817, 'f1_hors_surveiller': 0.9825, 'exactitude': 0.9945, 'CER_strict': 0.0568, 'precision_EVITER': 0.9852, 'logloss': 0.0828, 'ECE': 0.0639, 'rappel_ADAPTER_DOSE': 0.9879, 'rappel_EVITER': 0.9432, 'rappel_STANDARD': 0.998, 'rappel_SURVEILLER': 1.0} | 107s
+{'pli': 4, 'n_test': 22523, 'arbres': 500, 'f1_val_interne': 0.9792, 'f1_macro': 0.9831, 'f1_hors_surveiller': 0.9857, 'exactitude': 0.9951, 'CER_strict': 0.0336, 'precision_EVITER': 0.9783, 'logloss': 0.0817, 'ECE': 0.0641, 'rappel_ADAPTER_DOSE': 0.993, 'rappel_EVITER': 0.9664, 'rappel_STANDARD': 0.997, 'rappel_SURVEILLER': 0.9917} | 144s
+{'pli': 5, 'n_test': 22524, 'arbres': 500, 'f1_val_interne': 0.9835, 'f1_macro': 0.9773, 'f1_hors_surveiller': 0.9824, 'exactitude': 0.9947, 'CER_strict': 0.0615, 'precision_EVITER': 0.9841, 'logloss': 0.0815, 'ECE': 0.063, 'rappel_ADAPTER_DOSE': 0.9897, 'rappel_EVITER': 0.9385, 'rappel_STANDARD': 0.9985, 'rappel_SURVEILLER': 0.958} | 180s
+
+RÉSULTAT RF (fp) : F1 macro = 0.9817 +/- 0.0024 | CER strict = 0.0489 | ECE = 0.0638
+Fichiers écrits dans resultats_v9/rf
+
+real	3m4.215s
+user	5m49.573s
+sys	0m4.347s

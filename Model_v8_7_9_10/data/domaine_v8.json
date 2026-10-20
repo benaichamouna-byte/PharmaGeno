@@ -1,0 +1,3212 @@
+{
+ "genes_profil": [
+  "ABCG2",
+  "ACE",
+  "ADRB2",
+  "CACNA1S",
+  "CFTR",
+  "CYP1A2",
+  "CYP2A6",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A4",
+  "CYP3A5",
+  "CYP4F2",
+  "DPYD",
+  "EGFR",
+  "F5",
+  "G6PD",
+  "HLA-A",
+  "HLA-B",
+  "IFNL3",
+  "MT-RNR1",
+  "MTHFR",
+  "NAT2",
+  "NUDT15",
+  "RYR1",
+  "SLC19A1",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1",
+  "VKORC1",
+  "HLA-B*15:02",
+  "HLA-B*57:01",
+  "HLA-B*58:01",
+  "HLA-B*15:11",
+  "HLA-A*31:01",
+  "HLA-A*02:01"
+ ],
+ "genes_modele": [
+  "ABCG2",
+  "CFTR",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A4",
+  "CYP3A5",
+  "CYP4F2",
+  "DPYD",
+  "F5",
+  "G6PD",
+  "NAT2",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1",
+  "VKORC1",
+  "HLA-B*15:02",
+  "HLA-B*57:01",
+  "HLA-B*58:01",
+  "HLA-A*31:01"
+ ],
+ "medicaments": {
+  "abacavir": {
+   "genes": [
+    "HLA-B*57:01"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 508,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "acebutolol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 748,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "allopurinol": {
+   "genes": [
+    "HLA-B*58:01"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 486,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "aminosalicylic acid": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "amitriptyline": {
+   "genes": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.5
+    ],
+    [
+     0.0,
+     2.0
+    ],
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     2.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.5,
+     0.0
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.0
+    ],
+    [
+     1.5,
+     2.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.5
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     2.0
+    ]
+   ],
+   "n_lignes": 1238,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "aripiprazole": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 631,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "aspirin": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "atazanavir": {
+   "genes": [
+    "UGT1A1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "atomoxetine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "atorvastatin": {
+   "genes": [
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 1319,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "azathioprine": {
+   "genes": [
+    "NUDT15",
+    "TPMT"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "n_lignes": 1289,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "betaxolol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 748,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "bisoprolol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 748,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "brexpiprazole": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 631,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "capecitabine": {
+   "genes": [
+    "DPYD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1378,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "carbamazepine": {
+   "genes": [
+    "HLA-A*31:01",
+    "HLA-B*15:02"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     1.0
+    ],
+    [
+     1.0,
+     0.0
+    ]
+   ],
+   "n_lignes": 484,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "carvedilol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 748,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "celecoxib": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1350,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "chloramphenicol": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "chloroquine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "ciprofloxacin": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "citalopram": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 926,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "clomipramine": {
+   "genes": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.5,
+     0.0
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.0
+    ],
+    [
+     1.5,
+     2.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.5
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     2.0
+    ]
+   ],
+   "n_lignes": 1164,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "clopidogrel": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "codeine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "dapsone": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "desipramine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1249,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "dexlansoprazole": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "dimercaprol": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "doxepin": {
+   "genes": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.5,
+     0.0
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.0
+    ],
+    [
+     1.5,
+     2.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.5
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     2.0
+    ]
+   ],
+   "n_lignes": 1164,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "doxorubicin": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "efavirenz": {
+   "genes": [
+    "CYP2B6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 1372,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "eliglustat": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 565,
+   "classes_vues": [
+    "EVITER"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "escitalopram": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 926,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "esomeprazole": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 64,
+   "classes_vues": [
+    "ADAPTER_DOSE"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "flecainide": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 130,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "SURVEILLER"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "fluorouracil": {
+   "genes": [
+    "DPYD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1378,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "fluoxetine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "flurbiprofen": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1350,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "fluvastatin": {
+   "genes": [
+    "CYP2C9",
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     0.5
+    ],
+    [
+     0.5,
+     0.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.5
+    ]
+   ],
+   "n_lignes": 926,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "fluvoxamine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1249,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "fosphenytoin": {
+   "genes": [
+    "HLA-B*15:02"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 508,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "furazolidone": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "gefitinib": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 631,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "glyburide": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "haloperidol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ]
+   ],
+   "n_lignes": 567,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "hydralazine": {
+   "genes": [
+    "NAT2"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 1226,
+   "classes_vues": [
+    "ADAPTER_DOSE"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "hydrocodone": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1315,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "hydroxychloroquine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "ibuprofen": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1350,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "imipramine": {
+   "genes": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.5,
+     0.0
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.0
+    ],
+    [
+     1.5,
+     2.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.5
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     2.0
+    ]
+   ],
+   "n_lignes": 1164,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "irinotecan": {
+   "genes": [
+    "UGT1A1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ]
+   ],
+   "n_lignes": 865,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "lansoprazole": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "lornoxicam": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1350,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "lovastatin": {
+   "genes": [
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 1015,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "mafenide": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "mavacamten": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 510,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "meloxicam": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1012,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "mercaptopurine": {
+   "genes": [
+    "NUDT15",
+    "TPMT"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "n_lignes": 1289,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "methadone": {
+   "genes": [
+    "CYP2B6",
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     1.0
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.5,
+     1.0
+    ]
+   ],
+   "n_lignes": 744,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "methylene blue": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "metoprolol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1315,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "nalidixic acid": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "nebivolol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 748,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "nitrofurantoin": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "STANDARD",
+    "SURVEILLER"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "norfloxacin": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "nortriptyline": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1249,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "ofloxacin": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "omeprazole": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "ondansetron": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "oxcarbazepine": {
+   "genes": [
+    "HLA-B*15:02"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 508,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "oxycodone": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "pantoprazole": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "paroxetine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "pegloticase": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": false
+  },
+  "phenazopyridine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "phenytoin": {
+   "genes": [
+    "CYP2C9",
+    "HLA-B*15:02"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.5,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "n_lignes": 163,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "pimozide": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 631,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "piroxicam": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1012,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "pitavastatin": {
+   "genes": [
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 983,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "pravastatin": {
+   "genes": [
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 1287,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "primaquine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1284,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "propafenone": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 631,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "SURVEILLER"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "propranolol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 748,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "quetiapine": {
+   "genes": [
+    "CYP3A4"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ]
+   ],
+   "n_lignes": 50,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "quinine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "rasburicase": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": false
+  },
+  "risperidone": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ]
+   ],
+   "n_lignes": 567,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "rosuvastatin": {
+   "genes": [
+    "ABCG2",
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.5,
+     0.0
+    ],
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     1.5
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.5
+    ]
+   ],
+   "n_lignes": 1292,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "sertraline": {
+   "genes": [
+    "CYP2B6",
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.5
+    ],
+    [
+     0.0,
+     1.5
+    ],
+    [
+     0.0,
+     2.0
+    ],
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     1.5
+    ],
+    [
+     0.5,
+     2.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.5
+    ],
+    [
+     1.0,
+     2.0
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.0
+    ],
+    [
+     1.5,
+     1.5
+    ],
+    [
+     1.5,
+     2.0
+    ],
+    [
+     2.0,
+     0.5
+    ],
+    [
+     2.0,
+     1.5
+    ]
+   ],
+   "n_lignes": 1198,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "simvastatin": {
+   "genes": [
+    "SLCO1B1"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ]
+   ],
+   "n_lignes": 1319,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "siponimod": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ]
+   ],
+   "n_lignes": 396,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "sulfadiazine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "sulfamethazine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "sulfamethoxazole": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "sulfamethoxazole / trimethoprim": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": false
+  },
+  "sulfanilamide": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "sulfasalazine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "sulfisoxazole": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "tacrolimus": {
+   "genes": [
+    "CYP3A5"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tafenoquine": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tamoxifen": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tegafur": {
+   "genes": [
+    "DPYD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1378,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tenoxicam": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1012,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "thioguanine": {
+   "genes": [
+    "NUDT15",
+    "TPMT"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ]
+   ],
+   "n_lignes": 1289,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tolbutamide": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "toluidine blue": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1323,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tramadol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "trimipramine": {
+   "genes": [
+    "CYP2C19",
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     1.0
+    ],
+    [
+     1.0,
+     0.5
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.5,
+     0.0
+    ],
+    [
+     1.5,
+     0.5
+    ],
+    [
+     1.5,
+     1.0
+    ],
+    [
+     1.5,
+     2.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.5
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     2.0
+    ]
+   ],
+   "n_lignes": 1164,
+   "classes_vues": [
+    "ADAPTER_DOSE",
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "tropisetron": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "venlafaxine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1379,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "vitamin c": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "vitamin k and analogues": {
+   "genes": [
+    "G6PD"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1377,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": false
+  },
+  "voriconazole": {
+   "genes": [
+    "CYP2C19"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ],
+    [
+     1.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 1257,
+   "classes_vues": [
+    "EVITER",
+    "STANDARD"
+   ],
+   "depend_du_genotype": true,
+   "dans_modele": true
+  },
+  "vortioxetine": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.5
+    ],
+    [
+     1.0
+    ]
+   ],
+   "n_lignes": 1249,
+   "classes_vues": [
+    "STANDARD"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "warfarin": {
+   "genes": [
+    "CYP2C9"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ]
+   ],
+   "n_lignes": 396,
+   "classes_vues": [
+    "ADAPTER_DOSE"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  },
+  "zuclopenthixol": {
+   "genes": [
+    "CYP2D6"
+   ],
+   "genes_requis_hors_modele": [],
+   "genes_regle_hors_profil": [],
+   "combos_vues": [
+    [
+     0.0
+    ],
+    [
+     0.5
+    ],
+    [
+     2.0
+    ]
+   ],
+   "n_lignes": 631,
+   "classes_vues": [
+    "ADAPTER_DOSE"
+   ],
+   "depend_du_genotype": false,
+   "dans_modele": true
+  }
+ }
+}

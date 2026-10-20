@@ -1,0 +1,14 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Modèle : genes_xgb | lignes hors ensemble final : 112654 | groupes de médicaments (empreintes distinctes) : 110
+{'pli': 1, 'n_test': 22408, 'n_medicaments_test': 21, 'arbres': 196, 'f1_macro': 0.2002, 'f1_hors_surveiller': 0.2665, 'exactitude': 0.3795, 'CER_strict': 0.7291, 'precision_EVITER': 0.0738, 'logloss': 1.2256, 'ECE': 0.202, 'rappel_ADAPTER_DOSE': 0.0774, 'rappel_EVITER': 0.2709, 'rappel_STANDARD': 0.4198, 'rappel_SURVEILLER': 0.1714} | 6s
+{'pli': 2, 'n_test': 22399, 'n_medicaments_test': 24, 'arbres': 60, 'f1_macro': 0.1917, 'f1_hors_surveiller': 0.2524, 'exactitude': 0.3868, 'CER_strict': 0.669, 'precision_EVITER': 0.0758, 'logloss': 1.23, 'ECE': 0.2098, 'rappel_ADAPTER_DOSE': 0.0285, 'rappel_EVITER': 0.331, 'rappel_STANDARD': 0.427, 'rappel_SURVEILLER': 0.7414} | 8s
+{'pli': 3, 'n_test': 22533, 'n_medicaments_test': 21, 'arbres': 25, 'f1_macro': 0.2671, 'f1_hors_surveiller': 0.3561, 'exactitude': 0.5005, 'CER_strict': 0.4901, 'precision_EVITER': 0.1024, 'logloss': 1.1438, 'ECE': 0.1939, 'rappel_ADAPTER_DOSE': 0.4305, 'rappel_EVITER': 0.5099, 'rappel_STANDARD': 0.5082, 'rappel_SURVEILLER': 0.0} | 9s
+{'pli': 4, 'n_test': 23189, 'n_medicaments_test': 25, 'arbres': 26, 'f1_macro': 0.2547, 'f1_hors_surveiller': 0.3152, 'exactitude': 0.4428, 'CER_strict': 0.5893, 'precision_EVITER': 0.0879, 'logloss': 1.1313, 'ECE': 0.26, 'rappel_ADAPTER_DOSE': 0.3318, 'rappel_EVITER': 0.4107, 'rappel_STANDARD': 0.4661, 'rappel_SURVEILLER': 0.1398} | 10s
+{'pli': 5, 'n_test': 22125, 'n_medicaments_test': 22, 'arbres': 204, 'f1_macro': 0.1817, 'f1_hors_surveiller': 0.2423, 'exactitude': 0.3602, 'CER_strict': 0.6525, 'precision_EVITER': 0.0598, 'logloss': 1.2739, 'ECE': 0.2361, 'rappel_ADAPTER_DOSE': 0.056, 'rappel_EVITER': 0.3475, 'rappel_STANDARD': 0.3931, 'rappel_SURVEILLER': 0.0} | 15s
+
+RÉSULTAT genes_xgb (médicament jamais vu) : F1 macro = 0.2191 +/- 0.0349 | exactitude = 0.4140 | CER strict = 0.6260 | précision EVITER = 0.0799
+Fichiers écrits dans resultats_v9/medicament_inconnu/genes_xgb
+
+real	0m19.331s
+user	0m32.949s
+sys	0m0.400s

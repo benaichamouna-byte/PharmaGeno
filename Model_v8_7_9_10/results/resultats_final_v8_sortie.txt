@@ -1,0 +1,9 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Entraînement : 101319 lignes | validation interne : 11335 | ensemble final (NON LU) : 12524 lignes
+DL : validation interne {'f1_macro': 0.9984, 'f1_hors_surveiller': 0.9979, 'exactitude': 0.9994, 'CER_strict': 0.0051, 'precision_EVITER': 0.9949, 'logloss': 0.0062, 'ECE': 0.0046, 'rappel_ADAPTER_DOSE': 0.999, 'rappel_EVITER': 0.9949, 'rappel_STANDARD': 0.9997, 'rappel_SURVEILLER': 1.0} | 60s
+XGBoost : validation interne {'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0021, 'ECE': 0.0021, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 42s
+Fichiers écrits dans resultats_final_v8
+
+real	1m48.447s
+user	3m24.200s
+sys	0m1.151s

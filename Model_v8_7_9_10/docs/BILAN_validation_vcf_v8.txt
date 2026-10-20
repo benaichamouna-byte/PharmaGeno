@@ -1,0 +1,19 @@
+BILAN de la validation du lecteur de VCF v8 (20 octobre 2026) - vérifié dans les sorties de ce dossier
+
+Méthode : pour chaque échantillon 1000 Genomes du corpus, un VCF patient à un seul échantillon est reconstruit (GRCh38) à partir des VCF 1KGP par gène du pypgx-bundle ;
+vcf_to_profile_v8.lire_vcf (PyPGx 0.27.0 run-chip-pipeline, un gène à la fois, codage v8) lit le profil ; chaque gène est comparé à la valeur du profil d'entraînement (profils_genes_v4.csv).
+17 gènes comparés (CYP2D6 jamais appelé ; HLA saisis).
+
+Résultat sur 19 échantillons (tirage reproductible de 3 + un échantillon porteur d'une valeur 0,0 par gène) : 323 comparaisons, 321 identiques (valeur ou « manquant » des deux côtés), 2 différentes.
+
+Écart 1 : HG00698, G6PD. Lu 0,5 (« G6PD Variable »), profil d'entraînement 0,0 (« G6PD Deficient »).
+  Cause trouvée : patient masculin, génotype HAPLOÏDE sur chrX dans le VCF ; run-chip-pipeline lisait « B (reference)/Kaiping... » au lieu de « Kaiping.../Kaiping... ».
+  Défaut du lecteur (lecture moins sévère que la réalité). Correction : normaliser_chrX_haploide convertit un génotype haploïde de chrX en homozygote diploïde avant PyPGx.
+  Après correction : HG00698 lu 0,0 « G6PD Deficient », 17 gènes sur 17 identiques (dossier apres_correction_chrX_HG00698). Test unitaire T4 de test_codage_vcf_v8.py.
+  Limite : la correction n'a été vérifiée de bout en bout que sur ce seul cas déficient ; les autres hommes de l'échantillon étaient déjà identiques.
+
+Écart 2 : HG00127, CYP2B6, génotype *5/*15, PyPGx « Indeterminate ». Le lecteur rend « non déterminé » ; le profil d'entraînement a 1,0.
+  Cause : choix du corpus v3 de coder « Indeterminate » en 1,0 (16 profils sur 1 379 pour CYP2B6, voir concordance_pypgx_corpus_v7_resume.csv). Le lecteur garde « non déterminé » (jamais « normal » pour un indéterminé) : choix délibéré, pas une erreur du lecteur.
+
+Limites de cette validation : VCF 1KGP du bundle = déjà phasés, positions définissantes présentes (données propres) ; ne teste pas des VCF cliniques épars ; 19 échantillons sur 1 379 ;
+les 8 gènes ABCG2, CYP2B6, CYP2C19, CYP2C9, CYP3A5, DPYD, F5, UGT1A1 ont des profils d'entraînement issus du corpus v3 (écarts attendus, voir concordance_pypgx_corpus_v7_resume.csv).

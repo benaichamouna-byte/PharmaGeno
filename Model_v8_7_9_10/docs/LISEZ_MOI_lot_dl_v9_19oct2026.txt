@@ -1,0 +1,13 @@
+Lot du 19 octobre 2026 (soir) : réentraînement sur le corpus v7 + optimisation du DL (phases 1, 2 et 2b)
+Ce lot REMPLACE lot_entrainement_v9_19oct2026.zip (non téléchargé) : il contient tout son contenu et la suite. Rien d'existant n'est modifié.
+
+Scripts : lancer_entrainement_v9.sh (XGBoost, RF, DL de référence) ; train_dl_v9.py (copie de train_dl_v8.py + options --genes, --poids, --poids_evit, --empreinte ; train_dl_v8.py reste intact) ;
+          lancer_dl_ablations_v9.sh (phase 1) ; lancer_dl_phase2_v9.sh ; lancer_dl_phase2b_v9.sh ; resume_dl_v9.py (+ sortie) ; analyse_erreurs_v9.py (+ sortie) ; controle_codage_regles_profils_v1.py (+ sortie, csv).
+Résultats : resultats_v9/ (xgb, rf, dl_film, ablations/, phase2/, phase2b/) ; RESUME_phase1_phase2_v9.csv = tableau de toutes les configurations.
+
+Meilleures configurations du DL film (moyenne 5 plis, une graine, tous les gènes, poids de classes « racine ») :
+  identifiant de médicament appris : F1 macro 0,9981 ; EVITER manqués 0,0051 ; précision EVITER 0,996
+  identifiant + EVITER x2          : F1 macro 0,9973 ; EVITER manqués 0,0032 ; précision EVITER 0,993
+  empreinte (référence phase 1)    : F1 macro 0,9931 ; EVITER manqués 0,0176
+  XGBoost (référence)              : F1 macro 0,9999 ; EVITER manqués 0,0011
+Limites : une seule graine ; avec l'identifiant, le DL ne peut pas traiter un médicament jamais vu (à mesurer avec l'empreinte dans une expérience dédiée) ; l'ensemble final de 10 % des familles n'a pas été utilisé.
