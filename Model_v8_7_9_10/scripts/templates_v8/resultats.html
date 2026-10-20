@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% macro badge(a, t) %}<span class="badge {{ a or 'NE' }}">{{ t }}</span>{% endmacro %}
+{% macro act(a) %}{% if a %}{{ badge(a, court[a]) }}{% else %}<span class="gris">-</span>{% endif %}{% endmacro %}
+{% macro lignes(f, rang=False) %}
+<tr><td><b>{% if rang and f.rang %}#{{ f.rang }} {% endif %}{{ f.medicament }}</b></td>
+<td>{{ act(f.avis.get('DL')) }}{% if f.confiance_dl is not none %}<br><span class="petit gris">confiance du modèle {{ '%.1f'|format(100 * f.confiance_dl) }} %</span>{% endif %}</td>
+<td>{{ act(f.avis.get('règle CPIC/DPWG')) }}{% if f.regle and f.regle[0].autres_sources_en_desaccord %}<br><span class="petit gris">les guidelines (CPIC/DPWG/autres) ne concordent pas entre elles pour ce cas</span>{% endif %}</td>
+<td>{{ act(f.avis.get('XGBoost')) }}</td>
+<td>{% for a in f.alertes %}<span class="chip">{{ a.libelle }}</span> {% else %}<span class="gris petit">aucune</span>{% endfor %}{% if f.motif %}<br><span class="petit">{{ f.motif }}</span>{% endif %}</td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+{% if f.explication %}<table><tr><th>Gène requis</th><th>Valeur de codage</th><th>Lecture</th></tr>{% for e in f.explication %}<tr><td>{{ e.gene }}</td><td>{{ e.valeur_codage if e.valeur_codage is not none else 'non déterminé' }}</td><td>{{ e.lecture }}</td></tr>{% endfor %}</table>{% endif %}
+{% for r in f.regle %}<p class="petit"><b>Règle de guideline ({{ r.genes|join(' + ') }} : {{ r.phenotype }})</b> → {{ court.get(r.action, r.action) }}. Source : {{ r.source }}. Niveau de confiance de la règle : {{ f.confiance_regle or 'non précisé' }}.<br>
+<i lang="en">{{ r.texte_guideline_en }}</i></p>{% else %}<p class="petit gris">Aucune règle de guideline applicable à ce profil.</p>{% endfor %}
+{% if f.proba_dl %}<p class="petit">Probabilités du modèle : {% for c, p in f.proba_dl.items() %}{{ court.get(c, c) }} {{ '%.1f'|format(100 * p) }} %{% if not loop.last %} ; {% endif %}{% endfor %}. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>{% endif %}
+{% if f.alerte_gene_hors_modele %}<p class="petit">Ce médicament dépend aussi de gènes que le modèle n'utilise pas : {{ f.alerte_gene_hors_modele|join(', ') }}.</p>{% endif %}
+{% if f.alerte_gene_hors_profil %}<p class="petit">La règle de guideline dépend aussi de gènes absents du profil : {{ f.alerte_gene_hors_profil|join(', ') }}.</p>{% endif %}
+{% if f.alternatives is defined %}<p class="petit"><b>Alternatives de la même classe ATC</b> (statut « ok », sans adaptation génétique pour ce profil ; équivalence clinique non affirmée) : {{ f.alternatives|map(attribute='medicament')|join(', ') or 'aucune parmi les médicaments pris en charge' }}.</p>{% endif %}
+<div class="patient"><b>En langage simple :</b> {{ f.texte_patient }}</div></details></td></tr>
+{% endmacro %}
+{% macro entete() %}<tr><th>Médicament</th><th>Modèle (DL) - moteur</th><th>Règle CPIC/DPWG (référence)</th><th>XGBoost (second avis)</th><th>Alertes</th></tr>{% endmacro %}
+{% block corps %}
+<h1>Résultats - {{ spec }}</h1>
+<div class="alerte"><b>Important.</b> {{ avertissement }}</div>
+{% if j.mode == 'demo' %}<div class="info"><b>Profil de démonstration</b> (profil réel du corpus d'entraînement, déjà vu par le modèle) : aucun patient réel.</div>
+{% else %}<div class="info">Fichier : {{ j.nom_fichier }} - assemblage {{ j.assemblage }}.{% if j.chrX_haploide_converti %} {{ j.chrX_haploide_converti }} génotype(s) haploïde(s) du chromosome X converti(s) en génotype homozygote avant l'analyse.{% endif %}</div>{% endif %}
+
+<div class="carte"><h2>Alertes de sécurité - toutes spécialités</h2>
+{% if globaux %}
+<div class="danger"><b>{{ globaux|length }} médicament(s) signalé(s) « à éviter » par au moins un avis (modèle, XGBoost ou règle de guideline).</b> Un seul avis suffit, par prudence.</div>
+<div class="scroll"><table>{{ entete() }}{% for f in globaux %}{{ lignes(f) }}{% endfor %}</table></div>
+{% else %}<p>Aucun des médicaments évalués n'est signalé « à éviter ». Cette conclusion ne couvre pas les médicaments non évalués (voir le résumé).</p>{% endif %}</div>
+
+<div class="carte"><h2>Résumé</h2><p>{{ resume }}</p>
+{% for b in bloquants %}<div class="alerte">{{ b }}</div>{% endfor %}
+<p class="petit gris">« Non évalué » veut dire que le modèle ne peut pas répondre de façon fiable : ce n'est jamais un résultat « normal ».</p>
+<form method="get" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end">
+<div style="flex:1;min-width:220px"><label for="sp">Changer de spécialité</label><select id="sp" name="specialite" onchange="this.form.submit()">
+{% for s, n in specialites %}<option value="{{ s }}" {% if s == spec %}selected{% endif %} {% if n == 0 %}disabled{% endif %}>{{ s }} ({{ n }})</option>{% endfor %}</select></div>
+<div style="flex:1;min-width:220px"><label for="q">Rechercher un médicament</label><input type="text" id="q" name="q" list="meds" value="{{ q }}" placeholder="nom de la substance active, ex. warfarin">
+<datalist id="meds">{% for m in noms %}<option value="{{ m }}">{% endfor %}</datalist></div>
+<div><button type="submit">Rechercher</button></div>
+<div class="nopr"><a class="btn sec" href="{{ url_for('pdf', jid=j.id, specialite=spec, q=q) }}">Télécharger le PDF</a>
+<a class="btn sec" href="{{ url_for('patient', jid=j.id, specialite=spec) }}">Vue patient</a>
+<a class="btn sec" href="{{ url_for('json_fiche', jid=j.id, specialite=spec) }}">Fiche JSON</a></div>
+</form></div>
+
+{% if fiche %}
+<div class="carte"><h2>Médicament recherché : {{ fiche.medicament if fiche.trouve else q }}</h2>
+{% if not fiche.trouve %}<div class="erreur">{{ fiche.message }}</div>
+{% else %}<div class="scroll"><table>{{ entete() }}{{ lignes(fiche) }}</table></div>
+<p><b>{{ fiche.libelle }}</b></p>{% endif %}</div>
+{% endif %}
+
+<div class="carte"><h2>Spécialité « {{ spec }} » : médicaments proposés (compatibilité génétique uniquement)</h2>
+{% if reco.proposes %}
+<div class="scroll"><table>{{ entete() }}{% for f in reco.proposes %}{{ lignes(f, True) }}{% endfor %}</table></div>
+<p class="petit gris">{{ reco.note_ordre }} Plusieurs médicaments ont une confiance quasi identique : l'écart entre eux n'est pas significatif. Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées.{% if reco.autres_compatibles %} {{ reco.autres_compatibles }} autre(s) médicament(s) compatible(s) non affichés.{% endif %}</p>
+{% else %}<p>Aucun médicament de cette spécialité n'a pu être proposé pour ce profil.</p>{% endif %}</div>
+
+<div class="carte"><h2>Spécialité « {{ spec }} » : médicaments à éviter</h2>
+{% if reco.a_eviter %}<div class="scroll"><table>{{ entete() }}{% for f in reco.a_eviter %}{{ lignes(f) }}{% endfor %}</table></div>
+{% else %}<p>Aucun médicament de la spécialité n'est signalé « à éviter » pour ce profil.</p>{% endif %}</div>
+
+<div class="carte"><h2>À vérifier par un professionnel ({{ reco.a_verifier|length }})</h2>
+{% if reco.a_verifier %}<p class="petit gris">Le modèle, XGBoost ou la règle de guideline ne donnent pas la même réponse, ou la confiance du modèle est trop faible : aucune conclusion n'est avancée.</p>
+<div class="scroll"><table>{{ entete() }}{% for f in reco.a_verifier %}{{ lignes(f) }}{% endfor %}</table></div>
+{% else %}<p>Aucun médicament de la spécialité dans cette catégorie.</p>{% endif %}</div>
+
+<div class="carte"><h2>Médicaments non évalués ({{ reco.non_evalues|length }})</h2>
+{% if reco.non_evalues %}<div class="scroll"><table>{{ entete() }}{% for f in reco.non_evalues %}{{ lignes(f) }}{% endfor %}</table></div>
+{% else %}<p>Tous les médicaments de la spécialité ont pu être évalués.</p>{% endif %}</div>
+
+{% if reco.reference_seule %}<div class="carte"><h2>Règle de guideline seule ({{ reco.reference_seule|length }})</h2>
+<p class="petit gris">Ces médicaments n'ont pas d'entrée dans le modèle : seule la règle de guideline est affichée, sans classement.</p>
+<div class="scroll"><table>{{ entete() }}{% for f in reco.reference_seule %}{{ lignes(f) }}{% endfor %}</table></div></div>{% endif %}
+
+<div class="carte"><h2>Gènes du modèle ({{ genes|length }})</h2>
+<div class="scroll"><table><tr><th>Gène</th><th>Valeur de codage</th><th>Phénotype lu</th><th>Génotype lu</th><th>Origine</th><th>Remarque</th></tr>
+{% for g in genes %}<tr><td>{{ g.gene }}</td><td>{{ g.valeur_txt }}</td><td>{{ g.lecture }}</td><td>{{ g.genotype or '-' }}</td><td>{{ g.origine }}</td><td>{{ g.motif or '' }}</td></tr>{% endfor %}</table></div></div>
+
+<div class="carte"><details><summary>Les {{ n_med }} médicaments de l'application et leur statut pour ce profil</summary>
+<div class="scroll"><table><tr><th>Médicament</th><th>Catégorie</th><th>DL</th><th>XGBoost</th><th>Règle</th><th>Détail</th></tr>
+{% for x in tous %}<tr><td>{{ x.medicament }}</td><td>{{ x.categorie }}</td><td>{{ act(x.dl) }}</td><td>{{ act(x.xgb) }}</td><td>{{ act(x.cpic) }}</td>
+<td class="petit">{{ x.alertes|join(', ') }}{% if x.message %}{% if x.alertes %}<br>{% endif %}{{ x.message }}{% endif %}</td></tr>{% endfor %}</table></div></details></div>
+
+<div class="carte"><details><summary>Méthode et limites</summary><p class="petit">{{ methode }}</p><ul class="petit">{% for l in limites %}<li>{{ l }}</li>{% endfor %}</ul>
+<p class="petit"><a href="{{ url_for('apropos') }}">Performances mesurées et détails</a></p></details></div>
+
+<div class="carte nopr"><form action="{{ url_for('supprimer', jid=j.id) }}" method="post"><button class="sec" type="submit">Supprimer mes données</button>
+<a class="btn sec" href="{{ url_for('index') }}">Nouvelle analyse</a></form></div>
+{% endblock %}

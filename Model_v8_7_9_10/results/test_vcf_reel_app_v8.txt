@@ -1,0 +1,37 @@
+TEST RÉEL DE L'APPLICATION v8 AVEC UN VRAI FICHIER VCF (20 octobre 2026)
+Fichier : VCF à un échantillon construit à partir des VCF 1000 Genomes du bundle PyPGx (HG00101, GRCh38, 46 968 enregistrements dans les régions GRCh38).
+Chemin testé : formulaire web (POST /analyser) -> vcf_to_profile_v8 -> PyPGx 0.27.0 gène par gène -> moteur_v8 (DL) -> recommandation_v8 -> pages, PDF, JSON.
+Saisies HLA faites pour le test : B*57:01, B*58:01, B*15:02 = non porteur ; A*31:01 non renseigné ; CYP2D6 non renseigné.
+Assemblage détecté : GRCh38 ; génotypes haploïdes chrX convertis : 380
+
+Comparaison gène par gène : valeur lue dans le VCF / valeur du profil d'entraînement (data/profils_genes_v4.csv)
+  ABCG2        1.0 / 1.0  identique
+  CFTR         1.0 / 1.0  identique
+  CYP2B6       1.0 / 1.0  identique
+  CYP2C19      1.0 / 1.0  identique
+  CYP2C9       1.0 / 1.0  identique
+  CYP2D6       non déterminé (non comparé)
+  CYP3A4       1.0 / 1.0  identique
+  CYP3A5       0.0 / 0.0  identique
+  CYP4F2       1.0 / 1.0  identique
+  DPYD         1.0 / 1.0  identique
+  F5           1.0 / 1.0  identique
+  G6PD         1.0 / 1.0  identique
+  NAT2         0.0 / 0.0  identique
+  NUDT15       1.0 / 1.0  identique
+  SLCO1B1      0.5 / 0.5  identique
+  TPMT         1.0 / 1.0  identique
+  UGT1A1       1.0 / 1.0  identique
+  VKORC1       1.0 / 1.0  identique
+  HLA-B*15:02  0.0 / 0.0  identique
+  HLA-B*57:01  0.0 / 1.0  DIFFÉRENT
+  HLA-B*58:01  0.0 / 0.0  identique
+  HLA-A*31:01  non déterminé (non comparé)
+
+Gènes comparés : 20 ; différences : 1.
+La seule différence est HLA-B*57:01 : le profil du corpus indique 1.0 (porteur) ; pour ce test j'ai saisi « non porteur » à la main (saisie de test, pas une lecture du VCF).
+Ce n'est donc pas une erreur de lecture ; elle montre que le résultat dépend de la saisie HLA (abacavir). Les 17 gènes lus par PyPGx (CYP2D6 exclu) et 2 des 3 allèles HLA saisis sont identiques au profil d'entraînement.
+
+Sorties obtenues (HTTP 200) : page de résultats, page patient, PDF (3 pages), JSON.
+Résultat Cardiologie : 1 médicament à éviter (simvastatine : modèle DL, règle CPIC et XGBoost d'accord, SLCO1B1 fonction diminuée) ; 64 compatibles ; 0 à vérifier ; 48 non évalués (CYP2D6 non déterminé, HLA-A*31:01 non renseigné, combinaisons jamais vues) ; 4 règle seule.
+Limite : ce test valide la chaîne technique sur des données propres 1000 Genomes ; il ne mesure pas la robustesse sur des VCF cliniques épars ni sur un patient réel.

@@ -1,0 +1,25 @@
+PASS T1 accueil : 200, spécialités, 4 allèles HLA, bouton démo | 17 spécialités
+PASS T2 démonstration : toutes les spécialités rendent une page sans erreur ni gabarit non résolu | 17 pages ; mauvais : []
+PASS T3 tout médicament avec au moins un avis EVITER figure dans les alertes de sécurité (toutes spécialités) | 17 spécialités
+PASS T4 PDF valide pour chaque spécialité
+PASS T5 JSON cohérent avec le profil et le moteur
+PASS T6 vue patient pour chaque spécialité
+PASS T7 PDF : sections attendues et formulation de sécurité
+PASS T8a recherche d'un nom international
+PASS T8b nom commercial : message clair, pas d'erreur
+PASS T9 échappement HTML de la recherche
+PASS T10 spécialité inconnue en paramètre : repli sans erreur
+PASS T11 en-têtes (no-store, nosniff, CSP)
+PASS T12 entrées invalides refusées (spécialité, fichier absent, extension, CYP2D6, HLA, identifiant) | [True, True, True, True, True, True]
+PASS T13 fichier trop gros refusé (413)
+PASS T14 circuit VCF (lecteur simulé) : HLA et échantillon transmis, VCF supprimé du disque | {'hla': 'HLA-B*57:01=porteur', 'echantillon': 'S1', 'existe': True, 'codage': 'codage_pypgx_valeur_v7.csv', 'tables': 'tables_cpic_v8.json'}
+PASS T15 CYP2D6 saisi : marqué « Fourni par l'utilisateur » (jamais « lu dans le VCF »)
+PASS T16 HLA-B*57:01 porteur saisi : abacavir à éviter dans les alertes de sécurité
+PASS T17 CYP2D6 non fourni : message explicite « pas lisible depuis un VCF » et médicaments non évalués
+PASS T18 aucun médicament dépendant de CYP2D6 n'est classé « compatible » sans CYP2D6 (jamais supposé normal)
+PASS T19 fichier refusé par le lecteur : message affiché, pas de résultat
+PASS T20 suppression des données
+PASS T21 purge automatique des tâches de plus de 24 h
+PASS T22 page « méthode, performances et limites »
+
+RÉSULTAT GLOBAL : TOUT PASSE

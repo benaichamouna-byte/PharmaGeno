@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block corps %}
+<h1>Analyse pharmacogénétique</h1>
+{% if erreur %}<div class="erreur">{{ erreur }}</div>{% endif %}
+<div class="alerte"><b>Outil de recherche (mémoire de master), non validé cliniquement.</b> Il ne remplace ni un médecin, ni un pharmacien, ni une prescription.</div>
+<div class="carte">
+<h2>1. Téléversez le VCF d'un patient</h2>
+<form action="{{ url_for('analyser') }}" method="post" enctype="multipart/form-data">
+<label for="vcf">Fichier VCF (.vcf ou .vcf.gz, un seul patient, génome GRCh37 ou GRCh38, taille max. {{ taille_max }} Mo)</label>
+<input type="file" id="vcf" name="vcf" accept=".vcf,.gz" required>
+<label for="specialite">Spécialité du médecin</label>
+<select id="specialite" name="specialite" required>
+{% for s, n in specialites %}<option value="{{ s }}" {% if n == 0 %}disabled{% endif %}>{{ s }} ({% if n == 0 %}aucun médicament couvert{% else %}{{ n }} médicament{{ 's' if n > 1 }}{% endif %})</option>{% endfor %}
+</select>
+<h2 style="margin-top:20px">2. Allèles HLA (test de laboratoire séparé, facultatif)</h2>
+<p class="petit gris">Les allèles HLA ne se lisent pas dans un VCF de variants ponctuels. Si vous avez le résultat d'un typage HLA, indiquez-le ; sinon laissez « non renseigné » : les médicaments concernés seront alors « non évalués » (jamais supposés sans risque).</p>
+<div class="grille">
+{% for a in hla %}<div><label for="hla_{{ loop.index }}">{{ a }}</label>
+<select id="hla_{{ loop.index }}" name="hla_{{ a }}"><option value="">Non renseigné</option><option value="non_porteur">Non porteur</option><option value="porteur">Porteur</option></select>
+<span class="petit gris">Médicaments concernés : {{ hla_meds[a]|join(', ') or 'aucun' }}</span></div>{% endfor %}
+</div>
+<details style="margin-top:14px"><summary>Options avancées</summary>
+<label for="cyp2d6">Résultat CYP2D6 d'un test externe (facultatif)</label>
+<select id="cyp2d6" name="cyp2d6">
+<option value="">Non fourni (CYP2D6 non déterminé)</option><option value="0">Métaboliseur lent (activité très réduite ou absente)</option>
+<option value="0.5">Métaboliseur intermédiaire (activité réduite)</option><option value="1">Métaboliseur normal</option><option value="2">Métaboliseur ultra-rapide</option>
+</select>
+<p class="petit gris">CYP2D6 contient des délétions et duplications de gène qu'un VCF de variants ponctuels ne permet pas d'analyser. Sans cette information, les médicaments qui dépendent de CYP2D6 sont « non évalués ». La valeur saisie n'est pas vérifiée par l'application et est signalée comme telle dans les résultats.</p>
+<label for="echantillon">Nom de l'échantillon dans le VCF (seulement si le fichier en contient plusieurs)</label>
+<input type="text" id="echantillon" name="echantillon" placeholder="ex. HG00101">
+</details>
+<p><button type="submit">Lancer l'analyse</button></p>
+<p class="petit gris">Le fichier VCF est supprimé du serveur dès la fin de l'analyse. L'analyse peut durer plusieurs minutes.</p>
+</form></div>
+{% if demo_ok %}
+<div class="carte"><h2>Voir l'interface sans fichier</h2>
+<p class="petit gris">Utilise un profil réel du corpus d'entraînement ({{ demo_echantillon }}, 1000 Genomes) : il sert seulement à illustrer l'interface, ne concerne aucun patient, et le modèle l'a vu à l'entraînement (ce n'est pas une mesure de performance).</p>
+<form action="{{ url_for('demo') }}" method="post"><label for="spec2">Spécialité</label>
+<select id="spec2" name="specialite">{% for s, n in specialites %}<option value="{{ s }}" {% if n == 0 %}disabled{% endif %}>{{ s }}</option>{% endfor %}</select>
+<p><button class="sec" type="submit">Profil de démonstration</button></p></form></div>
+{% endif %}
+{% endblock %}
