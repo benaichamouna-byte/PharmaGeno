@@ -1,0 +1,40 @@
+lignes : 130578 | profils : 1379 | médicaments : 117
+colonnes de profil : 40 | colonnes qui changent d'une ligne à l'autre pour un même profil : 2 ['confiance', 'nb_regles_appliquees']
+tableau : 1379 profils x 117 médicaments | cases remplies : 130578 sur 161343
+médicaments étiquetés par profil : min 53 | médiane 95 | max 105
+
+Exemple : 1 profil (la première ligne du tableau), médicaments à adapter ou à éviter :
+  profil : HG00096
+drug
+amitriptyline     ADAPTER_DOSE
+atomoxetine       ADAPTER_DOSE
+atorvastatin      ADAPTER_DOSE
+clomipramine      ADAPTER_DOSE
+clopidogrel             EVITER
+desipramine       ADAPTER_DOSE
+doxepin           ADAPTER_DOSE
+efavirenz         ADAPTER_DOSE
+eliglustat              EVITER
+hydralazine       ADAPTER_DOSE
+imipramine        ADAPTER_DOSE
+nortriptyline     ADAPTER_DOSE
+oxycodone               EVITER
+paroxetine        ADAPTER_DOSE
+pimozide          ADAPTER_DOSE
+propafenone         SURVEILLER
+simvastatin             EVITER
+tacrolimus        ADAPTER_DOSE
+tamoxifen               EVITER
+trimipramine      ADAPTER_DOSE
+zuclopenthixol    ADAPTER_DOSE
+
+Actions par médicament (les 8 premiers par nombre de profils non STANDARD) :
+drug
+atomoxetine      1379
+hydralazine      1226
+efavirenz         743
+amitriptyline     735
+tacrolimus        706
+trimipramine      661
+clomipramine      661
+doxepin           661

@@ -1,0 +1,4 @@
+tirage,paires,combinaisons_cachees,profils_caches,familles_retirees,profils_entrainement,cases_test,cases_informatives,DL_exactitude_informatives,cases_informatives_classe_vue,DL_exactitude_informatives_classe_vue,cases_informatives_classe_jamais_vue,DL_exactitude_toutes_cases,EVITER_reel,EVITER_detectes,DL_exactitude_combinaisons_vues_memes_medicaments,reference_majoritaire_informatives,table_de_regles_couverture,combinaisons_cachees_presentes_a_l_entrainement,epoques,secondes
+1,8,16,305,305,936,268,87,0.5747,73,0.6849,14,0.8619,64,50,0.998,0.0,0.0,0,73,11
+2,8,19,309,309,932,440,367,0.8529,353,0.8867,14,0.8773,344,313,0.999,0.0,0.0,0,75,7
+3,8,15,299,299,942,173,50,1.0,50,1.0,0,1.0,50,50,1.0,0.0,0.0,0,59,4
