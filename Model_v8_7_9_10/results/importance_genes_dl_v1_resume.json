@@ -1,0 +1,12 @@
+{
+ "medicaments": 113,
+ "dependants_du_genotype": 58,
+ "avec_importance_totale_au_moins_0_05": 58,
+ "top_k_identique_cpic_parmi_dependants": 55,
+ "part_moyenne_sur_genes_cpic_parmi_dependants_informatifs": 0.8558448275862068,
+ "part_mediane_sur_genes_cpic_parmi_dependants_informatifs": 0.965,
+ "independants_du_genotype": 55,
+ "n_profils_par_medicament": 300,
+ "repetitions": 3,
+ "graine": 11
+}

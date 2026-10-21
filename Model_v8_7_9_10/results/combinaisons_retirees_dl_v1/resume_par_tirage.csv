@@ -1,0 +1,4 @@
+tirage,medicaments,combinaisons_retirees,lignes_test,lignes_informatives,DL_exactitude,DL_exactitude_informatives,reference_majoritaire_exactitude,reference_majoritaire_informatives,table_de_regles_couverture,DL_F1_macro,EVITER_reel,DL_EVITER_detectes,DL_exactitude_combinaisons_vues_memes_medicaments,lignes_vues_ref,epoques,secondes
+1,10,20,4896,3923,0.4316,0.2911,0.1987,0.0,0.0,0.5884,306,306,0.9953,638,20,67
+2,10,20,5406,4181,0.4637,0.3348,0.2266,0.0,0.0,0.5589,704,704,1.0,538,22,67
+3,10,20,5562,4295,0.4793,0.3371,0.2278,0.0,0.0,0.6034,169,169,0.9963,538,22,66

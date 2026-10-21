@@ -1,0 +1,12 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+{'tirage': 1, 'medicaments': 10, 'combinaisons_retirees': 20, 'lignes_test': 4896, 'lignes_informatives': 3923, 'DL_exactitude': 0.4316, 'DL_exactitude_informatives': 0.2911, 'reference_majoritaire_exactitude': 0.1987, 'reference_majoritaire_informatives': 0.0, 'table_de_regles_couverture': 0.0, 'DL_F1_macro': 0.5884, 'EVITER_reel': 306, 'DL_EVITER_detectes': 306, 'DL_exactitude_combinaisons_vues_memes_medicaments': 0.9953, 'lignes_vues_ref': 638, 'epoques': 20, 'secondes': 67}
+{'tirage': 2, 'medicaments': 10, 'combinaisons_retirees': 20, 'lignes_test': 5406, 'lignes_informatives': 4181, 'DL_exactitude': 0.4637, 'DL_exactitude_informatives': 0.3348, 'reference_majoritaire_exactitude': 0.2266, 'reference_majoritaire_informatives': 0.0, 'table_de_regles_couverture': 0.0, 'DL_F1_macro': 0.5589, 'EVITER_reel': 704, 'DL_EVITER_detectes': 704, 'DL_exactitude_combinaisons_vues_memes_medicaments': 1.0, 'lignes_vues_ref': 538, 'epoques': 22, 'secondes': 67}
+{'tirage': 3, 'medicaments': 10, 'combinaisons_retirees': 20, 'lignes_test': 5562, 'lignes_informatives': 4295, 'DL_exactitude': 0.4793, 'DL_exactitude_informatives': 0.3371, 'reference_majoritaire_exactitude': 0.2278, 'reference_majoritaire_informatives': 0.0, 'table_de_regles_couverture': 0.0, 'DL_F1_macro': 0.6034, 'EVITER_reel': 169, 'DL_EVITER_detectes': 169, 'DL_exactitude_combinaisons_vues_memes_medicaments': 0.9963, 'lignes_vues_ref': 538, 'epoques': 22, 'secondes': 66}
+{
+ "tirages": 3,
+ "DL_exactitude_informatives_moy": 0.321,
+ "DL_exactitude_informatives_min": 0.2911,
+ "DL_exactitude_moy": 0.4582,
+ "reference_majoritaire_moy": 0.2177,
+ "DL_exactitude_combinaisons_vues_moy": 0.9972
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block corps %}
+<h1>Méthode, performances mesurées et limites</h1>
+<div class="alerte"><b>Outil de recherche (mémoire de master), non validé cliniquement.</b></div>
+<div class="carte"><h2>Comment l'application répond</h2>
+<ol><li><b>Lecture du VCF.</b> PyPGx 0.27.0 donne un génotype puis un phénotype pour chaque gène lu ({{ n_genes }} gènes dans le modèle : {{ genes|join(', ') }}) ; les allèles HLA sont saisis par l'utilisateur ; CYP2D6 n'est pas lisible depuis un VCF de variants ponctuels.</li>
+<li><b>Le réseau de neurones (DL) est le moteur.</b> Un réseau de neurones à couche FiLM, conditionné par l'identifiant du médicament, produit la recommandation (à éviter, adapter la dose, surveiller, standard) pour {{ n_modele }} des {{ n_med }} médicaments de l'application.</li>
+<li><b>La règle CPIC/DPWG est affichée à côté</b>, avec sa source et son texte (en anglais, non traduit). Elle ne sert pas à calculer la prédiction du DL. Une alerte signale tout désaccord.</li>
+<li><b>XGBoost donne un second avis</b>, signalé en cas de désaccord avec le DL.</li>
+<li><b>Couche de sécurité.</b> Si un gène requis n'est pas déterminé, si la combinaison de gènes n'a jamais été vue à l'entraînement, ou si le médicament est inconnu, l'application affiche « non évalué » ; elle ne suppose jamais un gène « normal ». Si la confiance du DL est au plus égale à {{ '%.3f'|format(seuil) }} (seuil qui écarte {{ niveau }} des prédictions les moins sûres en validation croisée), le cas passe en « à vérifier ».</li></ol></div>
+<div class="carte"><h2>Performances mesurées (validation croisée, patients nouveaux, médicaments connus)</h2>
+<p class="petit gris">Corpus v7 : profils réels 1000 Genomes × médicaments, étiquettes issues d'un moteur de règles CPIC/DPWG ; plis groupés par famille. L'ensemble final mis de côté n'a pas encore été utilisé (état au 20 octobre 2026).</p>
+<table><tr><th>Modèle</th><th>F1 macro</th><th>Cas à éviter manqués (proportion)</th></tr>{% for m, f, c in perf.patients_nouveaux %}<tr><td>{{ m }}</td><td>{{ f }}</td><td>{{ c }}</td></tr>{% endfor %}</table>
+<p class="petit">Aucune mesure ne montre, à ce jour, un avantage du DL sur XGBoost avec ces étiquettes issues de règles : cette limite est écrite telle quelle. Le DL reste le moteur de l'application ; XGBoost et la règle de guideline servent de contrôles affichés.</p></div>
+<div class="carte"><h2>Médicament jamais vu à l'entraînement</h2>
+<table><tr><th>Modèle</th><th>F1 macro</th></tr>{% for m, f in perf.medicament_jamais_vu %}<tr><td>{{ m }}</td><td>{{ f }}</td></tr>{% endfor %}</table>
+<p class="petit">Les écarts entre modèles sont du même ordre que l'écart-type entre plis (0,08 à 0,09), et environ 63 à 70 % des cas à éviter sont manqués : l'application n'émet donc aucune prédiction pour un médicament absent de l'entraînement (« non évalué »).</p></div>
+<div class="carte"><h2>Limites</h2><ul>{% for l in limites %}<li>{{ l }}</li>{% endfor %}</ul></div>
+{% endblock %}

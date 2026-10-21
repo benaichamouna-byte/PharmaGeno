@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% macro badge(a, t) %}<span class="badge {{ a or 'NE' }}">{{ t }}</span>{% endmacro %}
+{% macro act(a) %}{% if a %}{{ badge(a, court[a]) }}{% else %}<span class="gris">-</span>{% endif %}{% endmacro %}
+{% macro lignes(f, rang=False) %}
+<tr><td><b>{% if rang and f.rang %}#{{ f.rang }} {% endif %}{{ f.medicament }}</b></td>
+<td>{{ act(f.avis.get('DL')) }}{% if f.confiance_dl is not none %}<br><span class="petit gris">confiance du modèle {{ '%.1f'|format(100 * f.confiance_dl) }} %</span>{% endif %}</td>
+<td>{{ act(f.avis.get('règle CPIC/DPWG')) }}{% if f.regle and f.regle[0].autres_sources_en_desaccord %}<br><span class="petit gris">les guidelines (CPIC/DPWG/autres) ne concordent pas entre elles pour ce cas</span>{% endif %}</td>
+<td>{{ act(f.avis.get('XGBoost')) }}</td>
+<td>{% for a in f.alertes %}<span class="chip">{{ a.libelle }}</span> {% else %}<span class="gris petit">aucune</span>{% endfor %}{% if f.motif %}<br><span class="petit">{{ f.motif }}</span>{% endif %}</td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+{% if f.explication %}<table><tr><th>Gène requis</th><th>Résultat</th></tr>{% for e in f.explication %}<tr><td>{{ e.gene }}</td><td>{{ e.lecture }}</td></tr>{% endfor %}</table>{% endif %}
+{% for r in f.regle %}<p class="petit"><b>Règle de guideline ({{ r.genes|join(' + ') }} : {{ r.phenotype }})</b> → {{ court.get(r.action, r.action) }}. Source : {{ r.source }}. Niveau de confiance de la règle : {{ f.confiance_regle or 'non précisé' }}.<br>
+<i lang="en">{{ r.texte_guideline_en }}</i></p>{% else %}<p class="petit gris">Aucune règle de guideline applicable à ce profil.</p>{% endfor %}
+{% if f.proba_dl %}<p class="petit">Probabilités du modèle : {% for c, p in f.proba_dl.items() %}{{ court.get(c, c) }} {{ '%.1f'|format(100 * p) }} %{% if not loop.last %} ; {% endif %}{% endfor %}. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>{% endif %}
+{% if f.alerte_gene_hors_modele %}<p class="petit">Ce médicament dépend aussi de gènes que le modèle n'utilise pas : {{ f.alerte_gene_hors_modele|join(', ') }}.</p>{% endif %}
+{% if f.alerte_gene_hors_profil %}<p class="petit">La règle de guideline dépend aussi de gènes absents du profil : {{ f.alerte_gene_hors_profil|join(', ') }}.</p>{% endif %}
+{% if f.alternatives is defined %}<p class="petit"><b>Alternatives de la même classe ATC</b> (statut « ok », sans adaptation génétique pour ce profil ; équivalence clinique non affirmée) : {{ f.alternatives|map(attribute='medicament')|join(', ') or 'aucune parmi les médicaments pris en charge' }}.</p>{% endif %}
+<div class="patient"><b>En langage simple :</b> {{ f.texte_patient }}</div></details></td></tr>
+{% endmacro %}
+{% macro entete() %}<tr><th>Médicament</th><th>Modèle (DL) - moteur</th><th>Règle CPIC/DPWG (référence)</th><th>XGBoost (second avis)</th><th>Alertes</th></tr>{% endmacro %}
+{% block corps %}
+<h1>Résultat - {{ spec }}</h1>
+{% if erreur %}<div class="erreur">{{ erreur }}</div>{% endif %}
+{% if j.mode == 'demo' %}<div class="info"><b>Profil de démonstration</b> (profil réel du corpus d'entraînement, déjà vu par le modèle) : aucun patient réel.</div>
+{% else %}<p class="petit gris">Fichier : {{ j.nom_fichier }} - assemblage {{ j.assemblage }}.{% if j.chrX_haploide_converti %} {{ j.chrX_haploide_converti }} génotype(s) haploïde(s) du chromosome X converti(s) en génotype homozygote avant l'analyse.{% endif %}</p>{% endif %}
+
+{% if globaux %}
+<div class="danger"><h2 style="color:var(--rouge)">À éviter pour ce patient (toutes spécialités) : {{ globaux|length }} médicament{{ 's' if globaux|length > 1 }}</h2>
+<p class="petit" style="margin-top:0">Un seul avis « à éviter » (modèle, XGBoost ou règle de guideline) suffit, par prudence.</p>
+{% for f in globaux %}<div style="background:#fff;border:1px solid var(--bord);border-radius:8px;padding:10px 14px;margin:8px 0">
+<b style="font-size:1.1rem">{{ f.medicament }}</b> &nbsp; Modèle (DL) : {{ act(f.avis.get('DL')) }} &nbsp; Règle CPIC/DPWG : {{ act(f.avis.get('règle CPIC/DPWG')) }} &nbsp; XGBoost : {{ act(f.avis.get('XGBoost')) }}
+{% if f.explication %}<p class="petit" style="margin:6px 0 0"><b>Gènes en cause :</b> {% for e in f.explication %}{{ e.gene }} = {{ e.lecture }}{% if not loop.last %} ; {% endif %}{% endfor %}.</p>{% endif %}
+{% if f.alternatives %}<p class="petit" style="margin:4px 0 0"><b>Alternatives de la même classe :</b> {{ f.alternatives|map(attribute='medicament')|join(', ') }} (équivalence clinique non affirmée).</p>{% endif %}
+<p class="petit" style="margin:4px 0 0">{{ f.texte_patient }}</p></div>{% endfor %}</div>
+{% else %}<div class="info">Aucun des médicaments évalués n'est signalé « à éviter ». Cela ne couvre pas les médicaments non évalués (voir plus bas).</div>{% endif %}
+
+<form method="get" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin:14px 0">
+<div style="flex:1;min-width:220px"><label for="sp">Spécialité</label><select id="sp" name="specialite" onchange="this.form.submit()">
+{% for s, n in specialites %}<option value="{{ s }}" {% if s == spec %}selected{% endif %} {% if n == 0 %}disabled{% endif %}>{{ s }}</option>{% endfor %}</select></div>
+<div style="flex:1;min-width:220px"><label for="q">Rechercher un médicament</label><input type="text" id="q" name="q" list="meds" value="{{ q }}" placeholder="substance active, ex. warfarin">
+<datalist id="meds">{% for m in noms %}<option value="{{ m }}">{% endfor %}</datalist></div>
+<div><button type="submit">Rechercher</button></div></form>
+
+{% if fiche %}<div class="carte"><h2>Médicament recherché : {{ fiche.medicament if fiche.trouve else q }}</h2>
+{% if not fiche.trouve %}<div class="erreur">{{ fiche.message }}</div>
+{% else %}<div class="scroll"><table>{{ entete() }}{{ lignes(fiche) }}</table></div><p><b>{{ fiche.libelle }}</b></p>{% endif %}</div>{% endif %}
+
+<h2 style="margin-top:22px">Médicaments proposés pour la spécialité « {{ spec }} »</h2>
+{% if reco.proposes %}
+{% for f in reco.proposes %}
+<div class="carte"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline">
+<h2 style="margin:0;font-size:1.3rem">#{{ f.rang }} {{ f.medicament }}</h2>
+<div><b>Prédiction du modèle (DL) :</b> {{ act(f.avis.get('DL')) }}{% if f.confiance_dl is not none %} <span class="petit gris">confiance {{ '%.1f'|format(100 * f.confiance_dl) }} %</span>{% endif %}</div></div>
+<p class="petit" style="margin:6px 0">Règle CPIC/DPWG : {{ act(f.avis.get('règle CPIC/DPWG')) }} &nbsp; XGBoost : {{ act(f.avis.get('XGBoost')) }}{% for a in f.alertes %} &nbsp; <span class="chip">{{ a.libelle }}</span>{% endfor %}</p>
+<p style="margin:8px 0 4px"><b>Explication.</b> {{ f.libelle }}.
+{% if f.explication %} Gènes pris en compte : {% for e in f.explication %}<b>{{ e.gene }}</b> = {{ e.lecture }}{% if not loop.last %} ; {% endif %}{% endfor %}.{% endif %}</p>
+{% for r in f.regle %}<p class="petit" style="margin:4px 0">Règle de guideline ({{ r.genes|join(' + ') }} : {{ r.phenotype }}) → {{ court.get(r.action, r.action) }}. Source : {{ r.source }}.</p>{% endfor %}
+<div class="patient"><b>En langage simple :</b> {{ f.texte_patient }}</div>
+<details><summary>Voir le détail et le texte du guideline</summary>
+{% for r in f.regle %}<p class="petit"><i lang="en">{{ r.texte_guideline_en }}</i> (niveau de confiance de la règle : {{ f.confiance_regle or 'non précisé' }})</p>{% endfor %}
+{% if f.proba_dl %}<p class="petit">Probabilités du modèle : {% for c, p in f.proba_dl.items() %}{{ court.get(c, c) }} {{ '%.1f'|format(100 * p) }} %{% if not loop.last %} ; {% endif %}{% endfor %}. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>{% endif %}</details></div>
+{% endfor %}
+<p class="petit gris">{{ reco.note_ordre }} Plusieurs médicaments ont une confiance quasi identique : l'écart entre eux n'est pas significatif.{% if reco.autres_compatibles %} {{ reco.autres_compatibles }} autre(s) médicament(s) compatible(s) de la spécialité ne sont pas affichés (voir le détail complet).{% endif %} Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées.</p>
+{% else %}<div class="carte"><p>Aucun médicament de cette spécialité n'a pu être proposé pour ce profil.{% if reco.non_evalues %} {{ reco.non_evalues|length }} médicament(s) n'ont pas pu être évalués (voir plus bas).{% endif %}</p></div>{% endif %}
+
+{% if reco.a_eviter or reco.a_verifier %}<div class="alerte">{% if reco.a_eviter %}<b>{{ reco.a_eviter|length }} médicament(s) de cette spécialité sont à éviter</b> (voir l'encadré rouge ou le détail complet). {% endif %}{% if reco.a_verifier %}<b>{{ reco.a_verifier|length }} médicament(s) sont à vérifier par un professionnel</b> (avis discordants ou confiance trop faible) : {{ reco.a_verifier|map(attribute='medicament')|join(', ') }}.{% endif %}</div>{% endif %}
+
+<div class="carte">{% if reco.non_evalues %}<p><b>Aucune recommandation pour {{ reco.non_evalues|length }} médicament(s) de cette spécialité</b> (gène non déterminé ou profil trop rare pour le modèle). Cela ne veut pas dire « sans risque » : demandez l'avis d'un professionnel pour ces médicaments.</p>
+<details><summary>Voir lesquels et pourquoi</summary>
+<p class="petit">{{ reco.non_evalues|map(attribute='medicament')|join(', ') }}.</p>
+{% for b in bloquants %}<p class="petit" style="margin:4px 0">• {{ b }}</p>{% endfor %}</details>
+{% else %}<p class="petit">Tous les médicaments de cette spécialité ont pu être évalués pour ce patient.</p>{% endif %}
+{% if cyp_absent or hla_absents %}
+<details style="margin-top:10px"><summary>Compléter avec un test de laboratoire (facultatif)</summary>
+<form action="{{ url_for('completer', jid=j.id) }}" method="post"><input type="hidden" name="specialite" value="{{ spec }}">
+<div class="grille">
+{% if cyp_absent %}<div><label for="cyp2d6">Résultat CYP2D6 d'un test externe</label><select id="cyp2d6" name="cyp2d6">
+<option value="">Non fourni</option><option value="0">Métaboliseur lent</option><option value="0.5">Métaboliseur intermédiaire</option><option value="1">Métaboliseur normal</option><option value="2">Métaboliseur ultra-rapide</option></select></div>{% endif %}
+{% for a in hla_absents %}<div><label for="hla_{{ loop.index }}">{{ a }}</label><select id="hla_{{ loop.index }}" name="hla_{{ a }}"><option value="">Non testé</option><option value="non_porteur">Négatif</option><option value="porteur">Positif</option></select>
+<span class="petit gris">Médicaments concernés : {{ hla_meds[a]|join(', ') or 'aucun' }}</span></div>{% endfor %}
+</div><p class="petit gris">Les valeurs saisies sont signalées comme telles dans les résultats et ne sont pas vérifiées par l'application.</p>
+<p><button type="submit">Mettre à jour les résultats</button></p></form></details>{% endif %}</div>
+
+<p class="nopr"><a class="btn" href="{{ url_for('pdf', jid=j.id, specialite=spec, q=q) }}">Télécharger le PDF</a>
+<a class="btn sec" href="{{ url_for('patient', jid=j.id, specialite=spec) }}">Vue patient</a>
+<a class="btn sec" href="{{ url_for('json_fiche', jid=j.id, specialite=spec) }}">Fiche JSON</a></p>
+
+<details class="carte"><summary>Détail complet pour vérification (tous les avis, gènes lus, résumé)</summary>
+<p>{{ resume }}</p>
+<h2>Médicaments proposés</h2>{% if reco.proposes %}<div class="scroll"><table>{{ entete() }}{% for f in reco.proposes %}{{ lignes(f, True) }}{% endfor %}</table></div>{% else %}<p>Aucun.</p>{% endif %}
+{% if reco.a_eviter %}<h2>À éviter dans la spécialité</h2><div class="scroll"><table>{{ entete() }}{% for f in reco.a_eviter %}{{ lignes(f) }}{% endfor %}</table></div>{% endif %}
+{% if reco.a_verifier %}<h2>À vérifier</h2><div class="scroll"><table>{{ entete() }}{% for f in reco.a_verifier %}{{ lignes(f) }}{% endfor %}</table></div>{% endif %}
+{% if reco.reference_seule %}<h2>Règle de guideline seule</h2><div class="scroll"><table>{{ entete() }}{% for f in reco.reference_seule %}{{ lignes(f) }}{% endfor %}</table></div>{% endif %}
+<h2>Gènes du modèle ({{ genes|length }})</h2>
+<div class="scroll"><table><tr><th>Gène</th><th>Valeur de codage</th><th>Phénotype lu</th><th>Génotype lu</th><th>Origine</th><th>Remarque</th></tr>
+{% for g in genes %}<tr><td>{{ g.gene }}</td><td>{{ g.valeur_txt }}</td><td>{{ g.lecture }}</td><td>{{ g.genotype or '-' }}</td><td>{{ g.origine }}</td><td>{{ g.motif or '' }}</td></tr>{% endfor %}</table></div></details>
+
+<form class="nopr" action="{{ url_for('supprimer', jid=j.id) }}" method="post" style="margin-top:16px"><button class="sec" type="submit">Supprimer mes données</button> <a class="btn sec" href="{{ url_for('index') }}">Nouvelle analyse</a>
+<span class="petit gris">Les résultats sont aussi supprimés automatiquement après 24 h.</span></form>
+<p class="petit gris">{{ avertissement }} <a href="{{ url_for('apropos') }}">Méthode, performances et limites</a></p>
+{% endblock %}

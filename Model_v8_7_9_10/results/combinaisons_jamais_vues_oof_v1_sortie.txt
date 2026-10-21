@@ -1,0 +1,10 @@
+                groupe genes_requis  lignes  combinaisons_distinctes  EVITER_reel  DL_F1macro  DL_accuracy  DL_EVITER_manques  XGBoost_F1macro  XGBoost_accuracy  XGBoost_EVITER_manques  RF_F1macro  RF_accuracy  RF_EVITER_manques
+combinaison jamais vue         tous       1                        1            1      0.2500       1.0000                  0           0.2500            1.0000                       0      0.2500       1.0000                  0
+combinaison jamais vue            2       1                        1            1      0.2500       1.0000                  0           0.2500            1.0000                       0      0.2500       1.0000                  0
+       combinaison vue         tous  112653                      386         5322      0.9681       0.9843                 70           0.9999            0.9999                       6      0.9818       0.9949                260
+       combinaison vue            1   99556                      269         3719      0.9618       0.9836                 58           0.9999            1.0000                       3      0.9803       0.9952                218
+       combinaison vue            2   13097                      117         1603      0.7392       0.9889                 12           0.7497            0.9998                       3      0.7407       0.9922                 42
+
+Médicaments ayant des lignes « jamais vues » : 1
+medicament
+amitriptyline    1
