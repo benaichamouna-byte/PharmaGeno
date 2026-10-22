@@ -1,0 +1,17 @@
+{
+ "epoques": 112,
+ "f1_val_interne": 1.0,
+ "metriques_validation_interne": {
+  "f1_macro": 1.0,
+  "f1_hors_surveiller": 1.0,
+  "exactitude": 1.0,
+  "CER_strict": 0.0,
+  "precision_EVITER": 1.0,
+  "logloss": 0.0043,
+  "ECE": 0.0041,
+  "rappel_ADAPTER_DOSE": 1.0,
+  "rappel_EVITER": 1.0,
+  "rappel_STANDARD": 1.0,
+  "rappel_SURVEILLER": 1.0
+ }
+}
