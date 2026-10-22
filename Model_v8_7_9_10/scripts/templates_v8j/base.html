@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titre %}PharmaGeno v8b{% endblock %}</title>
+<style>
+:root{--bleu:#1f4e79;--fond:#f4f7fa;--texte:#1d2630;--gris:#5b6773;--bord:#d5dde5;--rouge:#b71c1c;--orange:#c75b00;--ambre:#8a6d00;--vert:#1b5e20}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--fond);color:var(--texte);line-height:1.5}
+header{background:var(--bleu);color:#fff;padding:14px 24px;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}header a{color:#fff;text-decoration:none}
+header .logo{font-weight:700;font-size:1.25rem}header small{opacity:.85}header nav a{margin-right:14px;text-decoration:underline;font-size:.95rem}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+.carte{background:#fff;border:1px solid var(--bord);border-radius:10px;padding:18px 20px;margin:16px 0}
+h1{font-size:1.5rem;color:var(--bleu)}h2{font-size:1.15rem;color:var(--bleu);margin:0 0 10px}
+label{display:block;font-weight:600;margin:12px 0 4px}select,input[type=text],input[type=file]{width:100%;padding:8px;border:1px solid var(--bord);border-radius:6px;font-size:1rem;background:#fff}
+button,.btn{display:inline-block;background:var(--bleu);color:#fff;border:0;border-radius:6px;padding:9px 18px;font-size:1rem;cursor:pointer;text-decoration:none}
+button.sec,.btn.sec{background:#fff;color:var(--bleu);border:1px solid var(--bleu)}
+:focus-visible{outline:3px solid #ffb300;outline-offset:2px}
+.alerte{background:#fff4e5;border-left:5px solid var(--orange);padding:10px 14px;border-radius:4px;margin:12px 0}
+.danger{background:#fdecea;border-left:5px solid var(--rouge);padding:10px 14px;border-radius:4px;margin:12px 0}
+.erreur{background:#fdecea;border-left:5px solid var(--rouge);padding:10px 14px;border-radius:4px;margin:12px 0}
+.info{background:#eaf3fb;border-left:5px solid var(--bleu);padding:10px 14px;border-radius:4px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{border:1px solid var(--bord);padding:6px 8px;text-align:left;vertical-align:top}th{background:#eaf0f6}
+tr.det td{background:#fafcfe;border-top:0}
+.badge{display:inline-block;padding:2px 9px;border-radius:12px;font-weight:700;font-size:.85rem;border:2px solid currentColor;background:#fff;white-space:nowrap}
+.EVITER{color:var(--rouge)}.ADAPTER_DOSE{color:var(--orange)}.SURVEILLER{color:var(--ambre)}.STANDARD{color:var(--vert)}.NE{color:var(--gris)}
+.chip{display:inline-block;background:#fff4e5;border:1px solid var(--orange);color:#6b3300;border-radius:10px;padding:1px 8px;font-size:.8rem;margin:1px 2px 1px 0}
+.patient{background:#f0f8f1;border-left:5px solid var(--vert);padding:8px 12px;border-radius:4px;margin:8px 0}
+.gris{color:var(--gris)}.petit{font-size:.85rem}
+.barre{background:#e3e9ef;border-radius:10px;height:26px;overflow:hidden}.barre>div{background:var(--bleu);height:100%;width:0;transition:width .5s;color:#fff;text-align:right;padding-right:8px;line-height:26px;font-size:.85rem}
+details summary{cursor:pointer;font-weight:600;color:var(--bleu)}
+.grille{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:760px){.grille{grid-template-columns:1fr}}
+.scroll{overflow-x:auto}
+@media print{header,.nopr,button,.btn{display:none!important}body{background:#fff}.carte{border:0;padding:0}}
+</style></head><body>
+<header><a class="logo" href="{{ url_for('index') }}">PharmaGeno</a><small>Recommandation de médicaments selon les variations génétiques - outil de recherche, version 8j</small>
+<nav><a href="{{ url_for('index') }}">Accueil</a><a href="{{ url_for('apropos') }}">Méthode, performances et limites</a></nav></header>
+<main>{% block corps %}{% endblock %}</main>
+</body></html>

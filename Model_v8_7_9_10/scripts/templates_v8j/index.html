@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block corps %}
+<h1>Analyse pharmacogénétique</h1>
+{% if erreur %}<div class="erreur">{{ erreur }}</div>{% endif %}
+<div class="carte">
+<form action="{{ url_for('analyser') }}" method="post" enctype="multipart/form-data">
+<label for="vcf">Fichier VCF du patient</label>
+<input type="file" id="vcf" name="vcf" accept=".vcf,.gz" required>
+<p class="petit gris" style="margin:4px 0 0">.vcf ou .vcf.gz, un seul patient, génome GRCh37 ou GRCh38, {{ taille_max }} Mo au maximum.</p>
+<label for="classe">Indication : classe de médicaments à choisir pour le patient</label>
+<select id="classe" name="classe" required>
+{% for code, nom, n in classes %}<option value="{{ code }}">{{ code }} : {{ nom }} ({{ n }} médicaments)</option>{% endfor %}
+</select>
+<p class="petit gris" style="margin:4px 0 0">Classes de l'OMS (ATC, niveau 4). Le DL lit le profil complet et prédit le ou les médicaments de cette classe adaptés à ce patient.</p>
+<details style="margin-top:14px"><summary>Le fichier contient plusieurs patients ?</summary>
+<label for="echantillon">Nom de l'échantillon à analyser</label>
+<input type="text" id="echantillon" name="echantillon" placeholder="ex. HG00101">
+</details>
+<p style="margin-top:18px"><button type="submit">Lancer l'analyse</button></p>
+<p class="petit gris">L'analyse prend quelques minutes. Le fichier VCF est supprimé du serveur dès qu'elle est terminée.</p>
+</form></div>
+<p class="petit gris">Outil de recherche (mémoire de master), non validé cliniquement : il ne remplace ni un médecin, ni un pharmacien, ni une prescription. <a href="{{ url_for('apropos') }}">Méthode, performances et limites</a></p>
+{% endblock %}
