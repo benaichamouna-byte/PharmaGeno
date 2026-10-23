@@ -1,0 +1,251 @@
+{
+ "id": "148cb50e749e",
+ "mode": "vcf",
+ "specialite": "Cardiologie",
+ "nom_fichier": "NA19085.vcf",
+ "etat": "termine",
+ "pct": 100,
+ "message": "Analyse terminée",
+ "cree": 1792754529.869906,
+ "profil": {
+  "ABCG2": 0.5,
+  "CFTR": 1.0,
+  "CYP2B6": 0.5,
+  "CYP2C19": 0.5,
+  "CYP2C9": 1.0,
+  "CYP2D6": null,
+  "CYP3A4": 1.0,
+  "CYP3A5": 0.5,
+  "CYP4F2": 0.5,
+  "DPYD": 1.0,
+  "F5": 1.0,
+  "G6PD": 1.0,
+  "NAT2": 1.5,
+  "NUDT15": 0.5,
+  "SLCO1B1": 1.0,
+  "TPMT": 1.0,
+  "UGT1A1": 0.0,
+  "VKORC1": 0.5,
+  "HLA-B*15:02": null,
+  "HLA-B*57:01": null,
+  "HLA-B*58:01": null,
+  "HLA-A*31:01": null
+ },
+ "detail": {
+  "ABCG2": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/rs2231142",
+   "phenotype_pypgx": "Decreased Function",
+   "phenotype_utilise": "Decreased Function",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 1882
+  },
+  "CFTR": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/Reference",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "Reference/Reference (aucune variation CFTR de la table)",
+   "methode": "cftr",
+   "enregistrements_dans_le_gene": 3599
+  },
+  "CYP2B6": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*9",
+   "phenotype_pypgx": "Intermediate Metabolizer",
+   "phenotype_utilise": "Intermediate Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 4650
+  },
+  "CYP2C19": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*2",
+   "phenotype_pypgx": "Intermediate Metabolizer",
+   "phenotype_utilise": "Intermediate Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 3437
+  },
+  "CYP2C9": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 1644
+  },
+  "CYP2D6": {
+   "valeur": null,
+   "statut": "non_determine",
+   "motif": "CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.",
+   "genotype": null,
+   "phenotype_pypgx": null,
+   "phenotype_utilise": null,
+   "methode": "non_appelable"
+  },
+  "CYP3A4": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "cpic_court",
+   "enregistrements_dans_le_gene": 623
+  },
+  "CYP3A5": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*3",
+   "phenotype_pypgx": "Intermediate Metabolizer",
+   "phenotype_utilise": "Intermediate Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 703
+  },
+  "CYP4F2": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*3",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "1 allèle(s) *3/*4",
+   "methode": "compte_cyp4f2",
+   "enregistrements_dans_le_gene": 1556
+  },
+  "DPYD": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "c.85T>C (*9A)/c.1627A>G (*5)",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 19425
+  },
+  "F5": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/Reference",
+   "phenotype_pypgx": "Favorable Response",
+   "phenotype_utilise": "Favorable Response",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 1897
+  },
+  "G6PD": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "B (reference)/B (reference)",
+   "phenotype_pypgx": "G6PD Normal",
+   "phenotype_utilise": "G6PD Normal",
+   "methode": "g6pd",
+   "enregistrements_dans_le_gene": 380
+  },
+  "NAT2": {
+   "valeur": 1.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*4/*4",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "Rapid Metabolizer",
+   "methode": "cpic_court",
+   "enregistrements_dans_le_gene": 445
+  },
+  "NUDT15": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*3",
+   "phenotype_pypgx": "Intermediate Metabolizer",
+   "phenotype_utilise": "Intermediate Metabolizer",
+   "methode": "cpic_csv",
+   "enregistrements_dans_le_gene": 389
+  },
+  "SLCO1B1": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*37",
+   "phenotype_pypgx": "Normal Function",
+   "phenotype_utilise": "Normal Function",
+   "methode": "cpic_csv",
+   "enregistrements_dans_le_gene": 3216
+  },
+  "TPMT": {
+   "valeur": 1.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*1/*1",
+   "phenotype_pypgx": "Normal Metabolizer",
+   "phenotype_utilise": "Normal Metabolizer",
+   "methode": "cpic_csv",
+   "enregistrements_dans_le_gene": 820
+  },
+  "UGT1A1": {
+   "valeur": 0.0,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "*80+*28/*80+*28",
+   "phenotype_pypgx": "Poor Metabolizer",
+   "phenotype_utilise": "Poor Metabolizer",
+   "methode": "pypgx_phenotype",
+   "enregistrements_dans_le_gene": 626
+  },
+  "VKORC1": {
+   "valeur": 0.5,
+   "statut": "appele",
+   "motif": null,
+   "genotype": "Reference/rs9923231",
+   "phenotype_pypgx": "Indeterminate",
+   "phenotype_utilise": "1 allèle(s) rs9923231",
+   "methode": "compte_vkorc1",
+   "enregistrements_dans_le_gene": 196
+  },
+  "HLA-B*15:02": {
+   "valeur": null,
+   "statut": "non_determine",
+   "methode": "saisie_utilisateur",
+   "motif": "Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV)."
+  },
+  "HLA-B*57:01": {
+   "valeur": null,
+   "statut": "non_determine",
+   "methode": "saisie_utilisateur",
+   "motif": "Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV)."
+  },
+  "HLA-B*58:01": {
+   "valeur": null,
+   "statut": "non_determine",
+   "methode": "saisie_utilisateur",
+   "motif": "Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV)."
+  },
+  "HLA-A*31:01": {
+   "valeur": null,
+   "statut": "non_determine",
+   "methode": "saisie_utilisateur",
+   "motif": "Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV)."
+  }
+ },
+ "assemblage": "GRCh38",
+ "controle_assemblage": {
+  "entete": "GRCh38",
+  "enregistrements_dans_regions": {
+   "GRCh37": 10254,
+   "GRCh38": 46968
+  },
+  "par_positions": null
+ },
+ "chrX_haploide_converti": 380,
+ "hla_saisis": "",
+ "cyp2d6_fourni": null
+}

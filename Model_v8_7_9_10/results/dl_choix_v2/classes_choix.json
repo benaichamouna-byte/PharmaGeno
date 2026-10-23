@@ -1,0 +1,303 @@
+[
+ {
+  "code": "A02BC",
+  "nom": "proton pump inhibitors",
+  "medicaments": [
+   "dexlansoprazole",
+   "esomeprazole",
+   "lansoprazole",
+   "omeprazole",
+   "pantoprazole",
+   "rabeprazole"
+  ]
+ },
+ {
+  "code": "A04AA",
+  "nom": "serotonin (5ht3) antagonists",
+  "medicaments": [
+   "ondansetron",
+   "tropisetron"
+  ]
+ },
+ {
+  "code": "A10BB",
+  "nom": "sulfonylureas",
+  "medicaments": [
+   "gliclazide",
+   "glimepiride",
+   "glyburide",
+   "tolbutamide"
+  ]
+ },
+ {
+  "code": "B01AA",
+  "nom": "vitamin k antagonists",
+  "medicaments": [
+   "acenocoumarol",
+   "phenprocoumon",
+   "warfarin"
+  ]
+ },
+ {
+  "code": "B01AC",
+  "nom": "platelet aggregation inhibitors excl. heparin",
+  "medicaments": [
+   "aspirin",
+   "clopidogrel",
+   "prasugrel",
+   "ticagrelor"
+  ]
+ },
+ {
+  "code": "C01BA",
+  "nom": "antiarrhythmics, class ia",
+  "medicaments": [
+   "disopyramide",
+   "quinidine"
+  ]
+ },
+ {
+  "code": "C01BC",
+  "nom": "antiarrhythmics, class ic",
+  "medicaments": [
+   "flecainide",
+   "propafenone"
+  ]
+ },
+ {
+  "code": "C01EB",
+  "nom": "other cardiac preparations",
+  "medicaments": [
+   "ibuprofen",
+   "mavacamten"
+  ]
+ },
+ {
+  "code": "C07AB",
+  "nom": "beta blocking agents, selective",
+  "medicaments": [
+   "acebutolol",
+   "betaxolol",
+   "bisoprolol",
+   "metoprolol",
+   "nebivolol"
+  ]
+ },
+ {
+  "code": "C10AA",
+  "nom": "hmg coa reductase inhibitors",
+  "medicaments": [
+   "atorvastatin",
+   "fluvastatin",
+   "lovastatin",
+   "pitavastatin",
+   "pravastatin",
+   "rosuvastatin",
+   "simvastatin"
+  ]
+ },
+ {
+  "code": "D06BA",
+  "nom": "sulfonamides",
+  "medicaments": [
+   "mafenide",
+   "sulfanilamide"
+  ]
+ },
+ {
+  "code": "J01EC",
+  "nom": "intermediate-acting sulfonamides",
+  "medicaments": [
+   "sulfadiazine",
+   "sulfamethoxazole"
+  ]
+ },
+ {
+  "code": "J01MA",
+  "nom": "fluoroquinolones",
+  "medicaments": [
+   "ciprofloxacin",
+   "norfloxacin",
+   "ofloxacin"
+  ]
+ },
+ {
+  "code": "L01BB",
+  "nom": "purine analogues",
+  "medicaments": [
+   "mercaptopurine",
+   "thioguanine"
+  ]
+ },
+ {
+  "code": "L01BC",
+  "nom": "pyrimidine analogues",
+  "medicaments": [
+   "capecitabine",
+   "fluorouracil",
+   "tegafur"
+  ]
+ },
+ {
+  "code": "M01AC",
+  "nom": "oxicams",
+  "medicaments": [
+   "lornoxicam",
+   "meloxicam",
+   "piroxicam",
+   "tenoxicam"
+  ]
+ },
+ {
+  "code": "M01AE",
+  "nom": "propionic acid derivatives",
+  "medicaments": [
+   "flurbiprofen",
+   "ibuprofen"
+  ]
+ },
+ {
+  "code": "M02AA",
+  "nom": "antiinflammatory preparations, non-steroids for topical use",
+  "medicaments": [
+   "flurbiprofen",
+   "ibuprofen",
+   "piroxicam"
+  ]
+ },
+ {
+  "code": "N03AB",
+  "nom": "hydantoin derivatives",
+  "medicaments": [
+   "fosphenytoin",
+   "phenytoin"
+  ]
+ },
+ {
+  "code": "N03AF",
+  "nom": "carboxamide derivatives",
+  "medicaments": [
+   "carbamazepine",
+   "oxcarbazepine"
+  ]
+ },
+ {
+  "code": "N05AF",
+  "nom": "thioxanthene derivatives",
+  "medicaments": [
+   "flupenthixol",
+   "zuclopenthixol"
+  ]
+ },
+ {
+  "code": "N05AX",
+  "nom": "other antipsychotics",
+  "medicaments": [
+   "aripiprazole",
+   "brexpiprazole",
+   "risperidone"
+  ]
+ },
+ {
+  "code": "N06AA",
+  "nom": "non-selective monoamine reuptake inhibitors",
+  "medicaments": [
+   "amitriptyline",
+   "clomipramine",
+   "desipramine",
+   "doxepin",
+   "imipramine",
+   "nortriptyline",
+   "trimipramine"
+  ]
+ },
+ {
+  "code": "N06AB",
+  "nom": "selective serotonin reuptake inhibitors",
+  "medicaments": [
+   "citalopram",
+   "escitalopram",
+   "fluoxetine",
+   "fluvoxamine",
+   "paroxetine",
+   "sertraline"
+  ]
+ },
+ {
+  "code": "N06AX",
+  "nom": "other antidepressants",
+  "medicaments": [
+   "mirtazapine",
+   "venlafaxine",
+   "vortioxetine"
+  ]
+ },
+ {
+  "code": "P01BA",
+  "nom": "aminoquinolines",
+  "medicaments": [
+   "chloroquine",
+   "hydroxychloroquine",
+   "primaquine",
+   "tafenoquine"
+  ]
+ },
+ {
+  "code": "R02AX",
+  "nom": "other throat preparations",
+  "medicaments": [
+   "flurbiprofen",
+   "ibuprofen"
+  ]
+ },
+ {
+  "code": "R05DA",
+  "nom": "opium alkaloids and derivatives",
+  "medicaments": [
+   "codeine",
+   "hydrocodone"
+  ]
+ },
+ {
+  "code": "S01AE",
+  "nom": "fluoroquinolones",
+  "medicaments": [
+   "ciprofloxacin",
+   "norfloxacin",
+   "ofloxacin"
+  ]
+ },
+ {
+  "code": "S01BC",
+  "nom": "antiinflammatory agents, non-steroids",
+  "medicaments": [
+   "flurbiprofen",
+   "piroxicam"
+  ]
+ },
+ {
+  "code": "S02AA",
+  "nom": "antiinfectives",
+  "medicaments": [
+   "chloramphenicol",
+   "ciprofloxacin",
+   "ofloxacin"
+  ]
+ },
+ {
+  "code": "S03AA",
+  "nom": "antiinfectives",
+  "medicaments": [
+   "chloramphenicol",
+   "ciprofloxacin"
+  ]
+ },
+ {
+  "code": "V03AB",
+  "nom": "antidotes",
+  "medicaments": [
+   "dimercaprol",
+   "methylene blue"
+  ]
+ }
+]

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PharmaGeno v8b</title>
+<style>
+:root{--bleu:#1f4e79;--fond:#f4f7fa;--texte:#1d2630;--gris:#5b6773;--bord:#d5dde5;--rouge:#b71c1c;--orange:#c75b00;--ambre:#8a6d00;--vert:#1b5e20}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--fond);color:var(--texte);line-height:1.5}
+header{background:var(--bleu);color:#fff;padding:14px 24px;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}header a{color:#fff;text-decoration:none}
+header .logo{font-weight:700;font-size:1.25rem}header small{opacity:.85}header nav a{margin-right:14px;text-decoration:underline;font-size:.95rem}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+.carte{background:#fff;border:1px solid var(--bord);border-radius:10px;padding:18px 20px;margin:16px 0}
+h1{font-size:1.5rem;color:var(--bleu)}h2{font-size:1.15rem;color:var(--bleu);margin:0 0 10px}
+label{display:block;font-weight:600;margin:12px 0 4px}select,input[type=text],input[type=file]{width:100%;padding:8px;border:1px solid var(--bord);border-radius:6px;font-size:1rem;background:#fff}
+button,.btn{display:inline-block;background:var(--bleu);color:#fff;border:0;border-radius:6px;padding:9px 18px;font-size:1rem;cursor:pointer;text-decoration:none}
+button.sec,.btn.sec{background:#fff;color:var(--bleu);border:1px solid var(--bleu)}
+:focus-visible{outline:3px solid #ffb300;outline-offset:2px}
+.alerte{background:#fff4e5;border-left:5px solid var(--orange);padding:10px 14px;border-radius:4px;margin:12px 0}
+.danger{background:#fdecea;border-left:5px solid var(--rouge);padding:10px 14px;border-radius:4px;margin:12px 0}
+.erreur{background:#fdecea;border-left:5px solid var(--rouge);padding:10px 14px;border-radius:4px;margin:12px 0}
+.info{background:#eaf3fb;border-left:5px solid var(--bleu);padding:10px 14px;border-radius:4px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.93rem}th,td{border:1px solid var(--bord);padding:6px 8px;text-align:left;vertical-align:top}th{background:#eaf0f6}
+tr.det td{background:#fafcfe;border-top:0}
+.badge{display:inline-block;padding:2px 9px;border-radius:12px;font-weight:700;font-size:.85rem;border:2px solid currentColor;background:#fff;white-space:nowrap}
+.EVITER{color:var(--rouge)}.ADAPTER_DOSE{color:var(--orange)}.SURVEILLER{color:var(--ambre)}.STANDARD{color:var(--vert)}.NE{color:var(--gris)}
+.chip{display:inline-block;background:#fff4e5;border:1px solid var(--orange);color:#6b3300;border-radius:10px;padding:1px 8px;font-size:.8rem;margin:1px 2px 1px 0}
+.patient{background:#f0f8f1;border-left:5px solid var(--vert);padding:8px 12px;border-radius:4px;margin:8px 0}
+.gris{color:var(--gris)}.petit{font-size:.85rem}
+.barre{background:#e3e9ef;border-radius:10px;height:26px;overflow:hidden}.barre>div{background:var(--bleu);height:100%;width:0;transition:width .5s;color:#fff;text-align:right;padding-right:8px;line-height:26px;font-size:.85rem}
+details summary{cursor:pointer;font-weight:600;color:var(--bleu)}
+.grille{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:760px){.grille{grid-template-columns:1fr}}
+.scroll{overflow-x:auto}
+@media print{header,.nopr,button,.btn{display:none!important}body{background:#fff}.carte{border:0;padding:0}}
+</style></head><body>
+<header><a class="logo" href="/">PharmaGeno</a><small>Recommandation de médicaments selon les variations génétiques - outil de recherche, version 8l</small>
+<nav><a href="/">Accueil</a><a href="/apropos">Méthode, performances et limites</a></nav></header>
+<main>
+<h1>Résultat</h1>
+
+<p class="petit gris">Fichier : NA19472.vcf - assemblage GRCh38.</p>
+
+<div class="carte" style="border-left:6px solid #1f7a3f">
+<p class="petit gris" style="margin:0">Spécialité : Cardiologie</p>
+<h2 style="margin:4px 0 10px">Ce que le DL recommande pour ce patient</h2>
+
+<div class="feu feu-vert" style="background:#e8f5ec;border:1px solid #1f7a3f;border-radius:8px;padding:10px 14px;margin:8px 0">
+<b style="color:#1f7a3f;font-size:1.05rem">✔ À prescrire à la dose habituelle</b>
+<p style="margin:5px 0;font-size:1.1rem">antiagrégants plaquettaires : <b class="med">aspirin</b> · <b class="med">clopidogrel</b> <span class="petit gris">(équivalents pour ce patient : le choix revient au clinicien)</span></p><p style="margin:5px 0;font-size:1.1rem">statines : <b class="med">rosuvastatin</b> · <b class="med">pravastatin</b> · <b class="med">simvastatin</b> · <b class="med">pitavastatin</b> · <b class="med">lovastatin</b> · <b class="med">atorvastatin</b> <span class="petit gris">(équivalents pour ce patient : le choix revient au clinicien)</span></p></div>
+
+
+
+<p class="petit" style="margin:8px 0 4px"><b>Pourquoi :</b> aucun gène du patient ne modifie ces recommandations.</p>
+<details class="petit" style="margin:6px 0"><summary><b>Non évalués pour ce patient : 11 médicaments</b> (cela ne veut pas dire « sans risque »)</summary>
+<p class="petit" style="margin:4px 0">acebutolol, betaxolol, bisoprolol, carvedilol, flecainide, fluvastatin, mavacamten, metoprolol, nebivolol, propafenone, propranolol. Un gène nécessaire n'est pas lisible dans le VCF, ou la combinaison de gènes est trop rare pour le modèle : demandez l'avis d'un professionnel.</p>
+<p class="petit" style="margin:4px 0">• CYP2D6 n&#39;est pas lisible depuis un VCF de variants ponctuels (délétions et duplications du gène) : 38 médicament(s) qui en dépendent sont non évalués. Si vous disposez d&#39;un test CYP2D6 externe, vous pouvez le saisir ci-dessous (facultatif).</p><p class="petit" style="margin:4px 0">• L&#39;allèle HLA-A*31:01 n&#39;a pas été renseigné (il ne se lit pas dans un VCF de variants ponctuels) : 1 médicament(s) qui en dépendent sont non évalués (carbamazepine).</p><p class="petit" style="margin:4px 0">• L&#39;allèle HLA-B*15:02 n&#39;a pas été renseigné (il ne se lit pas dans un VCF de variants ponctuels) : 4 médicament(s) qui en dépendent sont non évalués (carbamazepine, fosphenytoin, oxcarbazepine, phenytoin).</p><p class="petit" style="margin:4px 0">• L&#39;allèle HLA-B*57:01 n&#39;a pas été renseigné (il ne se lit pas dans un VCF de variants ponctuels) : 1 médicament(s) qui en dépendent sont non évalués (abacavir).</p><p class="petit" style="margin:4px 0">• L&#39;allèle HLA-B*58:01 n&#39;a pas été renseigné (il ne se lit pas dans un VCF de variants ponctuels) : 1 médicament(s) qui en dépendent sont non évalués (allopurinol).</p></details>
+
+<p class="petit gris" style="margin:8px 0 0">Aide à la décision : ce n'est pas une prescription. Les réponses du DL reproduisent les règles CPIC/DPWG ; l'outil n'a pas été validé cliniquement.</p>
+<p class="nopr" style="margin:10px 0 0"><a class="btn" href="/pdf/abea1b0d1c27?specialite=Cardiologie&amp;q=">Télécharger le PDF</a> <a class="btn sec" href="/patient/abea1b0d1c27?specialite=Cardiologie">Vue patient</a></p></div>
+
+
+
+<div class="danger"><h2 style="color:var(--rouge);font-size:1.05rem">✖ À éviter aussi pour ce patient (autres spécialités) : 6 médicaments</h2>
+<p style="margin:5px 0"><b>voriconazole</b> <span class="petit gris">(CYP2C19 : Rapid metabolizer (~2-30% of patients) a)</span></p><p style="margin:5px 0"><b>amitriptyline</b> <span class="petit gris">(CYP2C19 : CYP2C19 Rapid metabolizer (~2-30% of patients) d ; CYP2D6 : non testé)</span></p><p style="margin:5px 0"><b>clomipramine</b> <span class="petit gris">(CYP2C19 : CYP2C19 Rapid metabolizer (~2-30% of patients) d ; CYP2D6 : non testé)</span></p><p style="margin:5px 0"><b>doxepin</b> <span class="petit gris">(CYP2C19 : CYP2C19 Rapid metabolizer (~2-30% of patients) d ; CYP2D6 : non testé)</span></p><p style="margin:5px 0"><b>imipramine</b> <span class="petit gris">(CYP2C19 : CYP2C19 Rapid metabolizer (~2-30% of patients) d ; CYP2D6 : non testé)</span></p><p style="margin:5px 0"><b>trimipramine</b> <span class="petit gris">(CYP2C19 : CYP2C19 Rapid metabolizer (~2-30% of patients) d ; CYP2D6 : non testé)</span></p></div>
+
+<form method="get" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin:14px 0">
+<div style="flex:1;min-width:220px"><label for="sp">Spécialité</label><select id="sp" name="specialite" onchange="this.form.submit()">
+<option value="Cardiologie" selected >Cardiologie</option><option value="Dermatologie"  >Dermatologie</option><option value="Douleur et anesthésie-réanimation"  >Douleur et anesthésie-réanimation</option><option value="Endocrinologie et diabète"  >Endocrinologie et diabète</option><option value="Gastro-entérologie"  >Gastro-entérologie</option><option value="Gynécologie-obstétrique"  >Gynécologie-obstétrique</option><option value="Hématologie"  >Hématologie</option><option value="Immunologie et transplantation"  >Immunologie et transplantation</option><option value="Maladies infectieuses"  >Maladies infectieuses</option><option value="Neurologie"  >Neurologie</option><option value="ORL"  >ORL</option><option value="Oncologie"  >Oncologie</option><option value="Ophtalmologie"  >Ophtalmologie</option><option value="Pneumologie et allergologie"  >Pneumologie et allergologie</option><option value="Psychiatrie"  >Psychiatrie</option><option value="Rhumatologie"  >Rhumatologie</option><option value="Urologie"  >Urologie</option></select></div>
+<div style="flex:1;min-width:220px"><label for="q">Rechercher un médicament</label><input type="text" id="q" name="q" list="meds" value="" placeholder="substance active, ex. warfarin">
+<datalist id="meds"><option value="abacavir"><option value="acebutolol"><option value="allopurinol"><option value="aminosalicylic acid"><option value="amitriptyline"><option value="aripiprazole"><option value="aspirin"><option value="atazanavir"><option value="atomoxetine"><option value="atorvastatin"><option value="azathioprine"><option value="betaxolol"><option value="bisoprolol"><option value="brexpiprazole"><option value="capecitabine"><option value="carbamazepine"><option value="carvedilol"><option value="celecoxib"><option value="chloramphenicol"><option value="chloroquine"><option value="ciprofloxacin"><option value="citalopram"><option value="clomipramine"><option value="clopidogrel"><option value="codeine"><option value="dapsone"><option value="desipramine"><option value="dexlansoprazole"><option value="dimercaprol"><option value="doxepin"><option value="doxorubicin"><option value="efavirenz"><option value="eliglustat"><option value="escitalopram"><option value="esomeprazole"><option value="flecainide"><option value="fluorouracil"><option value="fluoxetine"><option value="flurbiprofen"><option value="fluvastatin"><option value="fluvoxamine"><option value="fosphenytoin"><option value="furazolidone"><option value="gefitinib"><option value="glyburide"><option value="haloperidol"><option value="hydralazine"><option value="hydrocodone"><option value="hydroxychloroquine"><option value="ibuprofen"><option value="imipramine"><option value="irinotecan"><option value="lansoprazole"><option value="lornoxicam"><option value="lovastatin"><option value="mafenide"><option value="mavacamten"><option value="meloxicam"><option value="mercaptopurine"><option value="methadone"><option value="methylene blue"><option value="metoprolol"><option value="nalidixic acid"><option value="nebivolol"><option value="nitrofurantoin"><option value="norfloxacin"><option value="nortriptyline"><option value="ofloxacin"><option value="omeprazole"><option value="ondansetron"><option value="oxcarbazepine"><option value="oxycodone"><option value="pantoprazole"><option value="paroxetine"><option value="pegloticase"><option value="phenazopyridine"><option value="phenytoin"><option value="pimozide"><option value="piroxicam"><option value="pitavastatin"><option value="pravastatin"><option value="primaquine"><option value="propafenone"><option value="propranolol"><option value="quetiapine"><option value="quinine"><option value="rasburicase"><option value="risperidone"><option value="rosuvastatin"><option value="sertraline"><option value="simvastatin"><option value="siponimod"><option value="sulfadiazine"><option value="sulfamethazine"><option value="sulfamethoxazole"><option value="sulfamethoxazole / trimethoprim"><option value="sulfanilamide"><option value="sulfasalazine"><option value="sulfisoxazole"><option value="tacrolimus"><option value="tafenoquine"><option value="tamoxifen"><option value="tegafur"><option value="tenoxicam"><option value="thioguanine"><option value="tolbutamide"><option value="toluidine blue"><option value="tramadol"><option value="trimipramine"><option value="tropisetron"><option value="venlafaxine"><option value="vitamin c"><option value="vitamin k and analogues"><option value="voriconazole"><option value="vortioxetine"><option value="warfarin"><option value="zuclopenthixol"></datalist></div>
+<div><button type="submit">Rechercher</button></div></form>
+
+
+
+
+
+<div class="carte">
+<details style="margin-top:10px"><summary>Compléter avec un test de laboratoire (facultatif)</summary>
+<form action="/completer/abea1b0d1c27" method="post"><input type="hidden" name="specialite" value="Cardiologie">
+<div class="grille">
+<div><label for="cyp2d6">Résultat CYP2D6 d'un test externe</label><select id="cyp2d6" name="cyp2d6">
+<option value="">Non fourni</option><option value="0">Métaboliseur lent</option><option value="0.5">Métaboliseur intermédiaire</option><option value="1">Métaboliseur normal</option><option value="2">Métaboliseur ultra-rapide</option></select></div>
+<div><label for="hla_1">HLA-B*15:02</label><select id="hla_1" name="hla_HLA-B*15:02"><option value="">Non testé</option><option value="non_porteur">Négatif</option><option value="porteur">Positif</option></select>
+<span class="petit gris">Médicaments concernés : carbamazepine, fosphenytoin, oxcarbazepine, phenytoin</span></div><div><label for="hla_2">HLA-B*57:01</label><select id="hla_2" name="hla_HLA-B*57:01"><option value="">Non testé</option><option value="non_porteur">Négatif</option><option value="porteur">Positif</option></select>
+<span class="petit gris">Médicaments concernés : abacavir</span></div><div><label for="hla_3">HLA-B*58:01</label><select id="hla_3" name="hla_HLA-B*58:01"><option value="">Non testé</option><option value="non_porteur">Négatif</option><option value="porteur">Positif</option></select>
+<span class="petit gris">Médicaments concernés : allopurinol</span></div><div><label for="hla_4">HLA-A*31:01</label><select id="hla_4" name="hla_HLA-A*31:01"><option value="">Non testé</option><option value="non_porteur">Négatif</option><option value="porteur">Positif</option></select>
+<span class="petit gris">Médicaments concernés : carbamazepine</span></div>
+</div><p class="petit gris">Les valeurs saisies sont signalées comme telles dans les résultats et ne sont pas vérifiées par l'application.</p>
+<p><button type="submit">Mettre à jour les résultats</button></p></form></details></div>
+
+<p class="nopr"><a class="btn sec" href="/json/abea1b0d1c27?specialite=Cardiologie">Fiche JSON</a></p>
+
+<details class="carte"><summary><b>Détails scientifiques</b> : probabilités du DL, conseil par médicament, gènes qui changent le choix, entrée du réseau</summary>
+<div class="carte" style="border-left:5px solid #1f7a3f">
+<h2 style="margin-top:0">Médicament(s) prédit(s) par le DL : « platelet aggregation inhibitors excl. heparin » (B01AC)</h2>
+
+<p style="margin:4px 0"><b>aspirin, clopidogrel</b></p>
+<p class="petit" style="margin:4px 0">Le DL a lu le profil complet (17 gènes lus) et a calculé, pour chaque médicament de la classe évaluable pour ce patient, une probabilité de choix.
+Ces médicaments sont <b>équivalents pour ce profil</b> : aucune guideline ne dit lequel est le meilleur, le DL ne les départage pas (probabilités quasi égales ; un écart n'est pas significatif).</p>
+
+<div style="background:#fff;border:1px solid var(--bord);border-radius:8px;padding:10px 14px;margin:8px 0">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline"><b style="font-size:1.2rem">aspirin</b>
+<span><b>Probabilité de choix du DL :</b> 50.2 %</span></div>
+<p class="petit" style="margin:6px 0">Conseil par médicament : DL <span class="badge STANDARD">À dose standard</span> &nbsp; règle CPIC/DPWG <span class="badge STANDARD">À dose standard</span> &nbsp; XGBoost <span class="badge STANDARD">À dose standard</span></p>
+<p style="margin:6px 0 4px"><b>Explication.</b> À dose standard : pas d&#39;adaptation liée aux gènes analysés. Gènes pris en compte : <b>G6PD</b> = G6PD Variable.</p>
+<p class="petit" style="margin:4px 0">Règle de guideline (G6PD : G6PD Variable) → À dose standard. Source : CPIC.</p>
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></div>
+
+<div style="background:#fff;border:1px solid var(--bord);border-radius:8px;padding:10px 14px;margin:8px 0">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline"><b style="font-size:1.2rem">clopidogrel</b>
+<span><b>Probabilité de choix du DL :</b> 49.8 %</span></div>
+<p class="petit" style="margin:6px 0">Conseil par médicament : DL <span class="badge STANDARD">À dose standard</span> &nbsp; règle CPIC/DPWG <span class="badge STANDARD">À dose standard</span> &nbsp; XGBoost <span class="badge STANDARD">À dose standard</span></p>
+<p style="margin:6px 0 4px"><b>Explication.</b> À dose standard : pas d&#39;adaptation liée aux gènes analysés. Gènes pris en compte : <b>CYP2C19</b> = CYP2C19 rapid metabolizer.</p>
+<p class="petit" style="margin:4px 0">Règle de guideline (CYP2C19 : CYP2C19 rapid metabolizer) → À dose standard. Source : CPIC.</p>
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></div>
+
+
+
+<p class="petit" style="margin:8px 0 4px"><b>Gènes qui changent le choix du DL :</b> aucun. Pour ce profil, aucun gène du patient ne modifie l'ensemble prédit dans cette classe (tous les médicaments évaluables sont acceptables).</p>
+
+
+
+<p class="petit gris" style="margin:6px 0 0">Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées. Les réponses apprises viennent des règles CPIC/DPWG.</p></div>
+<div class="carte" style="border-left:5px solid #1f7a3f">
+<h2 style="margin-top:0">Médicament(s) prédit(s) par le DL : « antiarrhythmics, class ic » (C01BC)</h2>
+<p>Moins de 2 médicaments de cette classe sont évaluables pour ce profil : pas de choix possible.</p>
+
+
+
+<p class="petit" style="margin:4px 0"><b>Non évalués pour ce patient :</b> flecainide, propafenone (gène requis non lu ou combinaison de gènes jamais apprise). Cela ne veut pas dire « sans risque ».</p>
+<p class="petit gris" style="margin:6px 0 0">Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées. Les réponses apprises viennent des règles CPIC/DPWG.</p></div>
+<div class="carte" style="border-left:5px solid #1f7a3f">
+<h2 style="margin-top:0">Médicament(s) prédit(s) par le DL : « other cardiac preparations » (C01EB)</h2>
+<p>Moins de 2 médicaments de cette classe sont évaluables pour ce profil : pas de choix possible.</p>
+
+
+
+<p class="petit" style="margin:4px 0"><b>Non évalués pour ce patient :</b> mavacamten (gène requis non lu ou combinaison de gènes jamais apprise). Cela ne veut pas dire « sans risque ».</p>
+<p class="petit gris" style="margin:6px 0 0">Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées. Les réponses apprises viennent des règles CPIC/DPWG.</p></div>
+<div class="carte" style="border-left:5px solid #1f7a3f">
+<h2 style="margin-top:0">Médicament(s) prédit(s) par le DL : « beta blocking agents, selective » (C07AB)</h2>
+<p>Moins de 2 médicaments de cette classe sont évaluables pour ce profil : pas de choix possible.</p>
+
+
+
+<p class="petit" style="margin:4px 0"><b>Non évalués pour ce patient :</b> acebutolol, betaxolol, bisoprolol, metoprolol, nebivolol (gène requis non lu ou combinaison de gènes jamais apprise). Cela ne veut pas dire « sans risque ».</p>
+<p class="petit gris" style="margin:6px 0 0">Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées. Les réponses apprises viennent des règles CPIC/DPWG.</p></div>
+<div class="carte" style="border-left:5px solid #1f7a3f">
+<h2 style="margin-top:0">Médicament(s) prédit(s) par le DL : « hmg coa reductase inhibitors » (C10AA)</h2>
+
+<p style="margin:4px 0"><b>rosuvastatin, pravastatin, simvastatin, pitavastatin, lovastatin, atorvastatin</b></p>
+<p class="petit" style="margin:4px 0">Le DL a lu le profil complet (17 gènes lus) et a calculé, pour chaque médicament de la classe évaluable pour ce patient, une probabilité de choix.
+Ces médicaments sont <b>équivalents pour ce profil</b> : aucune guideline ne dit lequel est le meilleur, le DL ne les départage pas (probabilités quasi égales ; un écart n'est pas significatif).</p>
+
+<div style="background:#fff;border:1px solid var(--bord);border-radius:8px;padding:10px 14px;margin:8px 0">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline"><b style="font-size:1.2rem">rosuvastatin</b>
+<span><b>Probabilité de choix du DL :</b> 17.0 %</span></div>
+<p class="petit" style="margin:6px 0">Conseil par médicament : DL <span class="badge STANDARD">À dose standard</span> &nbsp; règle CPIC/DPWG <span class="badge STANDARD">À dose standard</span> &nbsp; XGBoost <span class="badge STANDARD">À dose standard</span></p>
+<p style="margin:6px 0 4px"><b>Explication.</b> À dose standard : pas d&#39;adaptation liée aux gènes analysés. Gènes pris en compte : <b>ABCG2</b> = non interprété (aucune règle pour ce cas) ; <b>SLCO1B1</b> = non interprété (aucune règle pour ce cas).</p>
+<p class="petit" style="margin:4px 0">Règle de guideline (ABCG2 + SLCO1B1 : SLCO1B1 normal function ; ABCG2 normal function) → À dose standard. Source : CPIC.</p>
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></div>
+
+<div style="background:#fff;border:1px solid var(--bord);border-radius:8px;padding:10px 14px;margin:8px 0">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline"><b style="font-size:1.2rem">pravastatin</b>
+<span><b>Probabilité de choix du DL :</b> 16.9 %</span></div>
+<p class="petit" style="margin:6px 0">Conseil par médicament : DL <span class="badge STANDARD">À dose standard</span> &nbsp; règle CPIC/DPWG <span class="badge STANDARD">À dose standard</span> &nbsp; XGBoost <span class="badge STANDARD">À dose standard</span></p>
+<p style="margin:6px 0 4px"><b>Explication.</b> À dose standard : pas d&#39;adaptation liée aux gènes analysés. Gènes pris en compte : <b>SLCO1B1</b> = fonction normale.</p>
+<p class="petit" style="margin:4px 0">Règle de guideline (SLCO1B1 : Normal function) → À dose standard. Source : CPIC.</p>
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></div>
+
+<div style="background:#fff;border:1px solid var(--bord);border-radius:8px;padding:10px 14px;margin:8px 0">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline"><b style="font-size:1.2rem">simvastatin</b>
+<span><b>Probabilité de choix du DL :</b> 16.7 %</span></div>
+<p class="petit" style="margin:6px 0">Conseil par médicament : DL <span class="badge STANDARD">À dose standard</span> &nbsp; règle CPIC/DPWG <span class="badge STANDARD">À dose standard</span> &nbsp; XGBoost <span class="badge STANDARD">À dose standard</span></p>
+<p style="margin:6px 0 4px"><b>Explication.</b> À dose standard : pas d&#39;adaptation liée aux gènes analysés. Gènes pris en compte : <b>SLCO1B1</b> = fonction normale.</p>
+<p class="petit" style="margin:4px 0">Règle de guideline (SLCO1B1 : Normal function) → À dose standard. Source : CPIC.</p>
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></div>
+
+<p class="petit">Autres médicaments prédits, équivalents : pitavastatin, lovastatin, atorvastatin.</p>
+
+<p class="petit" style="margin:8px 0 4px"><b>Gènes qui changent le choix du DL :</b> aucun. Pour ce profil, aucun gène du patient ne modifie l'ensemble prédit dans cette classe (tous les médicaments évaluables sont acceptables).</p>
+
+
+<p class="petit" style="margin:4px 0"><b>Non évalués pour ce patient :</b> fluvastatin (gène requis non lu ou combinaison de gènes jamais apprise). Cela ne veut pas dire « sans risque ».</p>
+<p class="petit gris" style="margin:6px 0 0">Ce n'est pas une prescription : l'indication, les interactions et les contre-indications ne sont pas évaluées. Les réponses apprises viennent des règles CPIC/DPWG.</p></div>
+
+
+<div class="carte" style="border-left:4px solid var(--bleu, #1f5fbf)"><h2 style="margin-top:0">Le DL en action</h2>
+<p class="petit" style="margin:4px 0"><b>1. Entrée : le profil génétique complet du patient</b> (17 gènes lus sur 22 ; 33 variables données au réseau, dont les indicateurs « gène non lu »).</p>
+<p class="petit" style="margin:4px 0;line-height:1.9"><span class="chip" style="">ABCG2 : Normal Function</span> <span class="chip" style="">CFTR : Reference/Reference (aucune variation CFTR de la table)</span> <span class="chip" style="">CYP2B6 : Rapid Metabolizer</span> <span class="chip" style="">CYP2C19 : Rapid Metabolizer</span> <span class="chip" style="">CYP2C9 : Intermediate Metabolizer</span> <span class="chip" style="opacity:.55">CYP2D6 : non lu</span> <span class="chip" style="">CYP3A4 : Normal Metabolizer</span> <span class="chip" style="">CYP3A5 : Intermediate Metabolizer</span> <span class="chip" style="">CYP4F2 : 0 allèle(s) *3/*4</span> <span class="chip" style="">DPYD : Normal Metabolizer</span> <span class="chip" style="">F5 : Favorable Response</span> <span class="chip" style="">G6PD : G6PD Variable</span> <span class="chip" style="">NAT2 : Poor Metabolizer</span> <span class="chip" style="">NUDT15 : Normal Metabolizer</span> <span class="chip" style="">SLCO1B1 : Normal Function</span> <span class="chip" style="">TPMT : Possible Intermediate Metabolizer</span> <span class="chip" style="">UGT1A1 : Intermediate Metabolizer</span> <span class="chip" style="">VKORC1 : 0 allèle(s) rs9923231</span> <span class="chip" style="opacity:.55">HLA-B*15:02 : non lu</span> <span class="chip" style="opacity:.55">HLA-B*57:01 : non lu</span> <span class="chip" style="opacity:.55">HLA-B*58:01 : non lu</span> <span class="chip" style="opacity:.55">HLA-A*31:01 : non lu</span> </p>
+<p class="petit" style="margin:4px 0"><b>2. Un seul passage du réseau de neurones</b> (le médicament n'est pas une entrée : c'est une sortie).</p>
+<p class="petit" style="margin:4px 0"><b>3. Sortie : un conseil pour chacun des 113 médicaments modélisés</b> :
+Adapter la dose 12 ; Éviter 7 ; À dose standard 92 ; Surveiller 2.</p>
+<p class="petit gris" style="margin:4px 0">La couche de sécurité retire de l'affichage 59 cas (gène requis non lu ou combinaison de gènes jamais apprise pour ce médicament). Les conseils du DL reproduisent les règles CPIC/DPWG apprises : voir « Méthode, performances et limites ».</p></div>
+
+</details>
+<details class="carte"><summary>Détail complet pour vérification (tous les avis, gènes lus, résumé)</summary>
+<p>Sur 117 médicaments : 6 à éviter (signalés par au moins un avis) ; 53 compatibles (modèle, XGBoost et règle de guideline d&#39;accord) ; 0 à vérifier (alerte) ; 54 non évalués ; 4 avec la règle de guideline seule (pas de prédiction du modèle).</p>
+<h2>Médicaments prédits par le DL (choix dans la classe)</h2><div class="scroll"><table><tr><th>Médicament</th><th>Modèle (DL) - moteur</th><th>Règle CPIC/DPWG (référence)</th><th>XGBoost (second avis)</th><th>Alertes</th></tr>
+<tr><td><b>#1 aspirin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 99.9 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>G6PD</td><td>G6PD Variable</td></tr></table>
+<p class="petit"><b>Règle de guideline (G6PD : G6PD Variable)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Pas de raison d&#39;éviter aux doses standard. Aspirine &lt;=1 g/j : pas d&#39;action ; CNSHA : prudence et surveillance. &gt;1 g/j : &#34;no recommendation&#34;.</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.0 % ; Éviter 0.0 % ; À dose standard 99.9 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#2 clopidogrel</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 100.0 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>CYP2C19</td><td>CYP2C19 rapid metabolizer</td></tr></table>
+<p class="petit"><b>Règle de guideline (CYP2C19 : CYP2C19 rapid metabolizer)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">If considering clopidogrel, use at standard dose (75 mg/day)</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.0 % ; Éviter 0.0 % ; À dose standard 100.0 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#1 rosuvastatin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 100.0 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>ABCG2</td><td>non interprété (aucune règle pour ce cas)</td></tr><tr><td>SLCO1B1</td><td>non interprété (aucune règle pour ce cas)</td></tr></table>
+<p class="petit"><b>Règle de guideline (ABCG2 + SLCO1B1 : SLCO1B1 normal function ; ABCG2 normal function)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Prescribe desired starting dose and adjust doses of rosuvastatin based on disease-specific and specific population guidelines. STRONG</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.0 % ; Éviter 0.0 % ; À dose standard 100.0 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#2 pravastatin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 99.9 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>SLCO1B1</td><td>fonction normale</td></tr></table>
+<p class="petit"><b>Règle de guideline (SLCO1B1 : Normal function)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Prescribe desired starting dose and adjust doses based on disease-specific guidelines.</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.0 % ; Éviter 0.0 % ; À dose standard 99.9 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#3 simvastatin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 99.2 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>SLCO1B1</td><td>fonction normale</td></tr></table>
+<p class="petit"><b>Règle de guideline (SLCO1B1 : Normal function)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Prescribe desired starting dose and adjust doses based on disease-specific guidelines.</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.0 % ; Éviter 0.8 % ; À dose standard 99.2 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#4 pitavastatin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 99.8 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>SLCO1B1</td><td>fonction normale</td></tr></table>
+<p class="petit"><b>Règle de guideline (SLCO1B1 : Normal function)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Prescribe desired starting dose and adjust doses based on disease-specific guidelines.</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.1 % ; Éviter 0.1 % ; À dose standard 99.8 % ; Surveiller 0.1 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#5 lovastatin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 99.8 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>SLCO1B1</td><td>fonction normale</td></tr></table>
+<p class="petit"><b>Règle de guideline (SLCO1B1 : Normal function)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Prescribe desired starting dose and adjust doses based on disease-specific guidelines.</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.0 % ; Éviter 0.1 % ; À dose standard 99.8 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+
+<tr><td><b>#6 atorvastatin</b></td>
+<td><span class="badge STANDARD">À dose standard</span><br><span class="petit gris">confiance du modèle 99.4 %</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="badge STANDARD">À dose standard</span></td>
+<td><span class="gris petit">aucune</span></td></tr>
+<tr class="det"><td colspan="5"><details><summary>Pourquoi ? (gènes, règle de guideline, texte pour le patient)</summary>
+<table><tr><th>Gène requis</th><th>Résultat</th></tr><tr><td>SLCO1B1</td><td>fonction normale</td></tr></table>
+<p class="petit"><b>Règle de guideline (SLCO1B1 : Normal function)</b> → À dose standard. Source : CPIC. Niveau de confiance de la règle : haute.<br>
+<i lang="en">Prescribe desired starting dose and adjust doses based on disease-specific guidelines.</i></p>
+<p class="petit">Probabilités du modèle : Adapter la dose 0.5 % ; Éviter 0.0 % ; À dose standard 99.4 % ; Surveiller 0.0 %. La confiance du modèle n'est pas une probabilité d'exactitude clinique.</p>
+
+
+
+<div class="patient"><b>En langage simple :</b> Pour les gènes analysés, rien n&#39;indique qu&#39;il faille changer la dose ou la manière habituelle de prendre ce médicament.</div></details></td></tr>
+</table></div>
+
+
+
+<h2>Gènes du modèle (22)</h2>
+<div class="scroll"><table><tr><th>Gène</th><th>Valeur de codage</th><th>Phénotype lu</th><th>Génotype lu</th><th>Origine</th><th>Remarque</th></tr>
+<tr><td>ABCG2</td><td>1</td><td>Normal Function</td><td>Reference/Reference</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CFTR</td><td>1</td><td>Reference/Reference (aucune variation CFTR de la table)</td><td>Reference/Reference</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CYP2B6</td><td>1.5</td><td>Rapid Metabolizer</td><td>*1/*22</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CYP2C19</td><td>1.5</td><td>Rapid Metabolizer</td><td>*1/*17</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CYP2C9</td><td>0.5</td><td>Intermediate Metabolizer</td><td>*1/*8</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CYP2D6</td><td>-</td><td>non testé</td><td>-</td><td>Non déterminé</td><td>CYP2D6 : variants structuraux (délétions, duplications) non analysables depuis un VCF de SNV.</td></tr><tr><td>CYP3A4</td><td>1</td><td>Normal Metabolizer</td><td>*1/*1</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CYP3A5</td><td>0.5</td><td>Intermediate Metabolizer</td><td>*1/*6</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>CYP4F2</td><td>1</td><td>0 allèle(s) *3/*4</td><td>*1/*1</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>DPYD</td><td>1</td><td>Normal Metabolizer</td><td>c.85T&gt;C (*9A)/c.85T&gt;C (*9A)</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>F5</td><td>1</td><td>Favorable Response</td><td>Reference/Reference</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>G6PD</td><td>0.5</td><td>G6PD Variable</td><td>A- 202A_376G/B (reference)</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>NAT2</td><td>0</td><td>Poor Metabolizer</td><td>*5/*6</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>NUDT15</td><td>1</td><td>Normal Metabolizer</td><td>*1/*1</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>SLCO1B1</td><td>1</td><td>Normal Function</td><td>*20/*37</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>TPMT</td><td>0.5</td><td>Possible Intermediate Metabolizer</td><td>*3C/*8</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>UGT1A1</td><td>0.5</td><td>Intermediate Metabolizer</td><td>*1/*80+*28</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>VKORC1</td><td>1</td><td>0 allèle(s) rs9923231</td><td>Reference/Reference</td><td>Lu dans le VCF (PyPGx)</td><td></td></tr><tr><td>HLA-B*15:02</td><td>-</td><td>non testé</td><td>-</td><td>Non renseigné</td><td>Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV).</td></tr><tr><td>HLA-B*57:01</td><td>-</td><td>non testé</td><td>-</td><td>Non renseigné</td><td>Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV).</td></tr><tr><td>HLA-B*58:01</td><td>-</td><td>non testé</td><td>-</td><td>Non renseigné</td><td>Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV).</td></tr><tr><td>HLA-A*31:01</td><td>-</td><td>non testé</td><td>-</td><td>Non renseigné</td><td>Allèle HLA non renseigné ou « inconnu » (non lisible depuis un VCF de SNV).</td></tr></table></div></details>
+
+<form class="nopr" action="/supprimer/abea1b0d1c27" method="post" style="margin-top:16px"><button class="sec" type="submit">Supprimer mes données</button> <a class="btn sec" href="/">Nouvelle analyse</a>
+<span class="petit gris">Les résultats sont aussi supprimés automatiquement après 24 h.</span></form>
+<p class="petit gris">Cet outil analyse un nombre limité de gènes et de médicaments ; il ne remplace ni l&#39;avis d&#39;un médecin ou d&#39;un pharmacien, ni une prescription. Il ne tient pas compte des autres médicaments, des maladies ni de l&#39;âge. Résultat à discuter avec un professionnel de santé. <a href="/apropos">Méthode, performances et limites</a></p>
+</main>
+</body></html>

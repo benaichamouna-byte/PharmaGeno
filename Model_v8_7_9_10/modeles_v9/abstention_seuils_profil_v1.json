@@ -1,0 +1,10 @@
+{
+ "source": "probabilités hors-plis de la validation croisée (train_dl_profil_v2.py, 132469 valeurs, moyenne des graines)",
+ "regle": "abstenir (« non décidé par le modèle ») si la probabilité maximale est <= seuil ; la fraction indiquée est la part de prédictions écartées en validation croisée",
+ "seuils_confiance": {
+  "0.005": 0.8620560169219971,
+  "0.010": 0.9063978791236877,
+  "0.020": 0.9434191584587097,
+  "0.050": 0.9767582416534424
+ }
+}

@@ -1,0 +1,68 @@
+gene,valeur,medicament,action,ambigu,source,fichier,recommandation,statut_proposition
+CYP2C19,0.0,prasugrel,STANDARD,False,DPWG,PA166182820.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,0.5,prasugrel,STANDARD,False,DPWG,PA166182820.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,1.0,prasugrel,STANDARD,False,DPWG,PA166182820.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,1.5,prasugrel,STANDARD,False,DPWG,PA166182820.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,2.0,prasugrel,STANDARD,False,DPWG,PA166182820.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,0.0,ticagrelor,STANDARD,False,DPWG,PA166182807.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,0.5,ticagrelor,STANDARD,False,DPWG,PA166182807.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,1.0,ticagrelor,STANDARD,False,DPWG,PA166182807.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,1.5,ticagrelor,STANDARD,False,DPWG,PA166182807.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2C19,2.0,ticagrelor,STANDARD,False,DPWG,PA166182807.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.0,amiodarone,STANDARD,False,DPWG,PA166182815.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.5,amiodarone,STANDARD,False,DPWG,PA166182815.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,1.0,amiodarone,STANDARD,False,DPWG,PA166182815.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,2.0,amiodarone,STANDARD,False,DPWG,PA166182815.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.0,disopyramide,STANDARD,False,DPWG,PA166182811.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.5,disopyramide,STANDARD,False,DPWG,PA166182811.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,1.0,disopyramide,STANDARD,False,DPWG,PA166182811.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,2.0,disopyramide,STANDARD,False,DPWG,PA166182811.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.0,quinidine,STANDARD,False,DPWG,PA166182803.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.5,quinidine,STANDARD,False,DPWG,PA166182803.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,1.0,quinidine,STANDARD,False,DPWG,PA166182803.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,2.0,quinidine,STANDARD,False,DPWG,PA166182803.json,DPWG nov. 2018 : pas d interaction gène-médicament,A_valider_par_Mouna
+CYP2D6,0.0,clonidine,STANDARD,False,DPWG,PA166182818.json,DPWG : aucune interaction CYP2D6-clonidine trouvée,A_valider_par_Mouna
+CYP2D6,0.5,clonidine,STANDARD,False,DPWG,PA166182818.json,DPWG : aucune interaction CYP2D6-clonidine trouvée,A_valider_par_Mouna
+CYP2D6,1.0,clonidine,STANDARD,False,DPWG,PA166182818.json,DPWG : aucune interaction CYP2D6-clonidine trouvée,A_valider_par_Mouna
+CYP2D6,2.0,clonidine,STANDARD,False,DPWG,PA166182818.json,DPWG : aucune interaction CYP2D6-clonidine trouvée,A_valider_par_Mouna
+CYP2D6,0.0,flupenthixol,STANDARD,False,DPWG,PA166104981.json,"DPWG : pas de preuve d interaction, pas de recommandation de dose",A_valider_par_Mouna
+CYP2D6,0.5,flupenthixol,STANDARD,False,DPWG,PA166104981.json,"DPWG : pas de preuve d interaction, pas de recommandation de dose",A_valider_par_Mouna
+CYP2D6,1.0,flupenthixol,STANDARD,False,DPWG,PA166104981.json,"DPWG : pas de preuve d interaction, pas de recommandation de dose",A_valider_par_Mouna
+CYP2D6,2.0,flupenthixol,STANDARD,False,DPWG,PA166104981.json,"DPWG : pas de preuve d interaction, pas de recommandation de dose",A_valider_par_Mouna
+CYP2D6,0.0,mirtazapine,STANDARD,False,DPWG,PA166104967.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2D6,0.5,mirtazapine,STANDARD,False,DPWG,PA166104967.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2D6,1.0,mirtazapine,STANDARD,False,DPWG,PA166104967.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2D6,2.0,mirtazapine,STANDARD,False,DPWG,PA166104967.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2C19,0.0,mirtazapine,STANDARD,False,DPWG,PA166182805.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2C19,0.5,mirtazapine,STANDARD,False,DPWG,PA166182805.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2C19,1.0,mirtazapine,STANDARD,False,DPWG,PA166182805.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2C19,1.5,mirtazapine,STANDARD,False,DPWG,PA166182805.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2C19,2.0,mirtazapine,STANDARD,False,DPWG,PA166182805.json,DPWG 2024 : adaptation de traitement ni requise ni bénéfique,A_valider_par_Mouna
+CYP2C19,0.0,moclobemide,STANDARD,False,DPWG,PA166104941.json,DPWG : aucune action nécessaire,A_valider_par_Mouna
+CYP2C19,0.5,moclobemide,STANDARD,False,DPWG,PA166104941.json,DPWG : aucune action nécessaire,A_valider_par_Mouna
+CYP2C19,1.0,moclobemide,STANDARD,False,DPWG,PA166104941.json,DPWG : aucune action nécessaire,A_valider_par_Mouna
+CYP2C19,1.5,moclobemide,STANDARD,False,DPWG,PA166104941.json,DPWG : aucune action nécessaire,A_valider_par_Mouna
+CYP2C19,2.0,moclobemide,STANDARD,False,DPWG,PA166104941.json,DPWG : aucune action nécessaire,A_valider_par_Mouna
+CYP2C19,0.0,rabeprazole,STANDARD,False,DPWG,PA166104985.json,"DPWG nov. 2018 : aucune action nécessaire (CPIC : pas de recommandation, niveau C : pas de conflit)",A_valider_par_Mouna
+CYP2C19,0.5,rabeprazole,STANDARD,False,DPWG,PA166104985.json,"DPWG nov. 2018 : aucune action nécessaire (CPIC : pas de recommandation, niveau C : pas de conflit)",A_valider_par_Mouna
+CYP2C19,1.0,rabeprazole,STANDARD,False,DPWG,PA166104985.json,"DPWG nov. 2018 : aucune action nécessaire (CPIC : pas de recommandation, niveau C : pas de conflit)",A_valider_par_Mouna
+CYP2C19,1.5,rabeprazole,STANDARD,False,DPWG,PA166104985.json,"DPWG nov. 2018 : aucune action nécessaire (CPIC : pas de recommandation, niveau C : pas de conflit)",A_valider_par_Mouna
+CYP2C19,2.0,rabeprazole,STANDARD,False,DPWG,PA166104985.json,"DPWG nov. 2018 : aucune action nécessaire (CPIC : pas de recommandation, niveau C : pas de conflit)",A_valider_par_Mouna
+CYP2C9,0.0,gliclazide,STANDARD,False,DPWG,PA166104971.json,DPWG nov. 2018 : aucune action nécessaire,A_valider_par_Mouna
+CYP2C9,0.5,gliclazide,STANDARD,False,DPWG,PA166104971.json,DPWG nov. 2018 : aucune action nécessaire,A_valider_par_Mouna
+CYP2C9,1.0,gliclazide,STANDARD,False,DPWG,PA166104971.json,DPWG nov. 2018 : aucune action nécessaire,A_valider_par_Mouna
+CYP2C9,0.0,glimepiride,STANDARD,False,DPWG,PA166104978.json,DPWG nov. 2018 : aucune action nécessaire,A_valider_par_Mouna
+CYP2C9,0.5,glimepiride,STANDARD,False,DPWG,PA166104978.json,DPWG nov. 2018 : aucune action nécessaire,A_valider_par_Mouna
+CYP2C9,1.0,glimepiride,STANDARD,False,DPWG,PA166104978.json,DPWG nov. 2018 : aucune action nécessaire,A_valider_par_Mouna
+CYP3A4,0.0,paclitaxel,STANDARD,False,DPWG,PA166265202.json,DPWG mai 2021 : aucune action nécessaire,A_valider_par_Mouna
+CYP3A4,0.5,paclitaxel,STANDARD,False,DPWG,PA166265202.json,DPWG mai 2021 : aucune action nécessaire,A_valider_par_Mouna
+CYP3A4,1.0,paclitaxel,STANDARD,False,DPWG,PA166265202.json,DPWG mai 2021 : aucune action nécessaire,A_valider_par_Mouna
+VKORC1,0.0,acenocoumarol,ADAPTER_DOSE,False,DPWG,PA166104938.json,VKORC1 rs9923231 TT (-1639 AA) : 50 % de la dose initiale standard et suivi INR plus fréquent,A_valider_par_Mouna
+VKORC1,0.5,acenocoumarol,STANDARD,False,DPWG,PA166104938.json,VKORC1 CT (-1639 AG) : aucune action nécessaire,A_valider_par_Mouna
+VKORC1,1.0,acenocoumarol,STANDARD,False,DPWG,PA166104938.json,VKORC1 sans allèle rs9923231 : pas de recommandation génétique (dose standard),A_valider_par_Mouna
+VKORC1,0.0,phenprocoumon,ADAPTER_DOSE,False,DPWG,PA166104940.json,VKORC1 rs9923231 TT (-1639 AA) : 50 % de la dose initiale standard et suivi INR plus fréquent,A_valider_par_Mouna
+VKORC1,0.5,phenprocoumon,STANDARD,False,DPWG,PA166104940.json,VKORC1 CT (-1639 AG) : aucune action nécessaire,A_valider_par_Mouna
+VKORC1,1.0,phenprocoumon,STANDARD,False,DPWG,PA166104940.json,VKORC1 sans allèle rs9923231 : pas de recommandation génétique (dose standard),A_valider_par_Mouna
+DPYD,0.0,flucytosine,EVITER,False,DPWG,PA166222801.json,"Score d activité DPD 0 : éviter la flucytosine (1 seul profil du corpus a DPYD = 0,0)",A_valider_par_Mouna
+DPYD,0.5,flucytosine,SURVEILLER,False,DPWG,PA166222801.json,"Score 1 ou 1,5 : rester attentif aux effets graves (leucopénie, neutropénie, thrombopénie, diarrhée), arrêter si effets graves",A_valider_par_Mouna
+DPYD,1.0,flucytosine,STANDARD,False,DPWG,PA166222801.json,Score 2 : pas de recommandation génétique (dose standard),A_valider_par_Mouna

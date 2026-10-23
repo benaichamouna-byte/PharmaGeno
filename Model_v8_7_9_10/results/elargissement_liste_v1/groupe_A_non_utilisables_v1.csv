@@ -1,0 +1,23 @@
+medicament,raison
+chlorpropamide,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+dabrafenib,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+glipizide,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+mesalazine,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+moxifloxacin,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+nicorandil,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+nitrofurazone,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+probenecid,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+quinacrine,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+sodium_nitrate,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+sulfacetamide,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+tolazamide,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+trametinib,CPIC G6PD : pas de recommandation (preuves insuffisantes)
+aceclofenac,CPIC AINS/CYP2C9 : pas de recommandation
+dipyrone,CPIC AINS/CYP2C9 : pas de recommandation
+indomethacin,CPIC AINS/CYP2C9 : pas de recommandation
+lumiracoxib,CPIC AINS/CYP2C9 : pas de recommandation
+nabumetone,CPIC AINS/CYP2C9 : pas de recommandation
+naproxen,CPIC AINS/CYP2C9 : pas de recommandation
+cisplatin,"CPNDS TPMT : texte narratif, à lire en entier"
+fluindione,"RNPGx CYP2C9/VKORC1 : tableau français, à lire"
+ivacaftor,"CFTR : la règle dépend de variants précis et de l indication, pas d un score"

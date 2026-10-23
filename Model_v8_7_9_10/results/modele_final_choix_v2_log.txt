@@ -1,0 +1,8 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+profils entraînement : 1116 | validation interne : 125 | ensemble final NON LU : 138 profils (14731 lignes)
+validation interne : {'n_cas': 3427, 'n_informatifs': 311, 'n_defaut_faux': 0, 'n_avec_EVITER_dans_la_classe': 149, 'choix_dans_S_informatifs': 1.0, 'defaut_dans_S_informatifs': 1.0, 'choix_dans_S_si_defaut_faux': nan, 'ensemble_exact_informatifs': 1.0, 'defaut_ensemble_exact_informatifs': 0.3215, 'jaccard_informatifs': 1.0, 'defaut_jaccard_informatifs': 0.7384, 'choix_EVITER_si_EVITER_possible': 0.0, 'defaut_EVITER_si_EVITER_possible': 0.0, 'hasard_dans_S_informatifs': 0.5926} | 133 époques | 15s
+Fichiers écrits dans ../modeles_v9
+
+real	0m20.305s
+user	0m33.105s
+sys	0m0.611s

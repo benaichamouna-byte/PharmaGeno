@@ -1,0 +1,48 @@
+PASS T1 accueil simplifié : VCF + spécialité + bouton ; ni HLA, ni CYP2D6, ni bloc démonstration | 17 spécialités
+PASS T2 démonstration : toutes les spécialités rendent une page sans erreur ni gabarit non résolu | 17 pages ; mauvais : []
+PASS T3 tout médicament avec au moins un avis EVITER figure dans les alertes de sécurité (toutes spécialités) | 17 spécialités
+PASS T3b pour chaque spécialité : tous les médicaments recommandés par le DL figurent dans la recommandation en haut ; sans groupe de médicaments, le message le dit
+PASS T4 PDF valide pour chaque spécialité
+PASS T5 JSON cohérent avec le profil et le moteur
+PASS T6 vue patient pour chaque spécialité
+PASS T7 PDF : sections attendues et formulation de sécurité
+PASS T8a recherche d'un nom international
+PASS T8b nom commercial : message clair, pas d'erreur
+PASS T9 échappement HTML de la recherche
+PASS T10 spécialité inconnue en paramètre : repli sans erreur
+PASS T11 en-têtes (no-store, nosniff, CSP)
+PASS T12 entrées invalides refusées (spécialité, fichier absent, extension, CYP2D6, HLA, identifiant) | [True, True, True, True, True, True]
+PASS T13 fichier trop gros refusé (413)
+PASS T14 circuit VCF (lecteur simulé) : HLA et échantillon transmis, VCF supprimé du disque | {'hla': 'HLA-B*57:01=porteur', 'echantillon': 'S1', 'existe': True, 'codage': 'codage_pypgx_valeur_v7.csv', 'tables': 'tables_cpic_v8.json'}
+PASS T15 CYP2D6 saisi : marqué « Fourni par l'utilisateur » (jamais « lu dans le VCF »)
+PASS T16 HLA-B*57:01 porteur saisi : abacavir à éviter dans les alertes de sécurité
+PASS T17 CYP2D6 non fourni : message explicite « pas lisible depuis un VCF » et médicaments non évalués
+PASS T18 aucun médicament dépendant de CYP2D6 n'est classé « compatible » sans CYP2D6 (jamais supposé normal)
+PASS T19 fichier refusé par le lecteur : message affiché, pas de résultat
+PASS T19b formulaire facultatif « Compléter » présent quand CYP2D6 et HLA sont absents
+PASS T19c complétion : CYP2D6 et HLA-B*57:01 pris en compte, origine « saisi par l'utilisateur », abacavir à éviter
+PASS T19e vocabulaire clinicien : HLA « positif », ni « porteur » ni « valeur de codage » ni « probable » dans l'écran principal
+PASS T19f formulaire HLA : Positif / Négatif / Non testé
+PASS T19d complétion invalide refusée
+PASS T20 suppression des données
+PASS T21 purge automatique des tâches de plus de 24 h
+PASS T22 page « méthode, performances et limites »
+PASS T23 la « Recommandation du DL pour ce patient » est la première réponse de la page, avant les alertes ; le contenu scientifique est replié dans « Détails scientifiques »
+PASS T24 statines (Cardiologie, profil de démonstration) : médicaments recommandés affichés = sortie du réseau recalculée indépendamment | attendus ['rosuvastatin', 'pravastatin', 'fluvastatin'] | candidats ['atorvastatin', 'fluvastatin', 'pravastatin', 'rosuvastatin', 'simvastatin']
+PASS T25 un médicament à éviter n'est jamais affiché comme recommandé
+PASS T26 gènes qui changent le choix : le moteur et une substitution dans le profil suivie de choix() donnent le même ensemble | 1 gènes décisifs, 1 concordants
+PASS T26b ces gènes sont affichés à l'écran avec leur lecture, dans la recommandation en haut | 1 gènes : ['SLCO1B1']
+PASS T27 câblage : part des médicaments « EVITER » (étiquette du corpus) dans l'ensemble prédit <= 1 % (profils d'entraînement) | 2025 médicaments prédits, 8 étiquetés EVITER
+PASS T27b contre-épreuve : avec les probabilités attribuées aux mauvais médicaments, cette part augmente nettement | 39 contre 8
+PASS T28 vue patient et JSON : mêmes médicaments recommandés que l'écran principal
+PASS T29 changer de spécialité dans la page de résultats change la réponse du DL
+PASS T30 spécialité sans groupe de médicaments interchangeables : message clair, pas de choix inventé
+PASS T31 feux : atorvastatin (adapter la dose) en orange seulement ; simvastatin (éviter) en rouge seulement ; pravastatin en vert seulement | vert=✔ À prescrire à la dose habituelle statines : rosuvastatin · pravastatin · fluva | orange=▲ Dose à adapter ou à surveiller atorvastatin (statines ; ad | rouge=✖ À éviter simvastatin (statines) 
+PASS T31b les feux suivent les actions du moteur recalculées : atorvastatin ADAPTER_DOSE ou SURVEILLER, simvastatin EVITER (DL ou règle), pravastatin STANDARD | {'atorvastatin': 'ADAPTER_DOSE', 'simvastatin': 'EVITER', 'pravastatin': 'STANDARD'}
+PASS T32 aucune terme anglais de phénotype dans l'écran principal (Decreased/Normal/Poor/Intermediate function ou metabolizer)
+PASS T33 une seule liste de médicaments non évalués, avec le même nombre que le moteur (pas de « 5 » puis « 6 ») | affiché 6 | moteur 6
+PASS T34 l'encadré « à éviter aussi » ne répète jamais un médicament déjà dans le résumé de la spécialité
+PASS T35 Psychiatrie : simvastatin (autre spécialité) apparaît dans « à éviter aussi » et pas dans la liste verte
+PASS T36 intégrité : la liste de l'ensemble final compte 138 profils et aucun des profils échantillonnés pour T27 n'en fait partie | 138 profils exclus ; intersection 0
+
+RÉSULTAT GLOBAL : TOUT PASSE
