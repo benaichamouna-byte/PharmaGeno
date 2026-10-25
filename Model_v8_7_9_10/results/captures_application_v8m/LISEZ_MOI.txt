@@ -1,0 +1,2 @@
+Captures de l'application PharmaGeno v8m (programme reel, VCF de test NA19085 = echantillon 1000 Genomes reconstruit par script, pas un patient), prises le 25 octobre 2026.
+capture1 a capture6 : images du document d'avancement. capture.py et capture2.py : scripts Playwright qui les ont produites (application lancee sur le port 5058 avec --pgx-python et --bundle).

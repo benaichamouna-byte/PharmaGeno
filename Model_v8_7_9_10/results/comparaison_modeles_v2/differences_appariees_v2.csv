@@ -1,0 +1,13 @@
+comparaison,mesure,difference,ic95_bas,ic95_haut,ic_exclut_zero,p_indicatif,details
+DL profil v2 - XGBoost,f1_macro,-0.00093,-0.00152,-0.00045,True,,
+DL profil v2 - XGBoost,CER_strict,0.00094,0.00019,0.00188,True,,
+DL profil v2 - XGBoost,precision_EVITER,-0.00244,-0.00425,-0.00096,True,,
+DL profil v2 - XGBoost,ECE,0.00569,0.0054,0.00596,True,,
+DL profil v2 - XGBoost,McNemar exact (lignes) : DL juste & autre faux / DL faux & autre juste,,1.0,52.0,,0.0,
+DL profil v2 - XGBoost,Nadeau-Bengio (F1 macro par pli) : t,-2.6124,,,,0.0593,différences par pli : -0.0011 ; -0.0007 ; -0.0008 ; -0.0027 ; -0.0019
+DL profil v2 - Forêt aléatoire,f1_macro,0.01673,0.01354,0.02,True,,
+DL profil v2 - Forêt aléatoire,CER_strict,-0.0432,-0.0524,-0.03431,True,,
+DL profil v2 - Forêt aléatoire,precision_EVITER,0.02268,0.01736,0.02802,True,,
+DL profil v2 - Forêt aléatoire,ECE,-0.05278,-0.0536,-0.05195,True,,
+DL profil v2 - Forêt aléatoire,McNemar exact (lignes) : DL juste & autre faux / DL faux & autre juste,,608.0,35.0,,0.0,
+DL profil v2 - Forêt aléatoire,Nadeau-Bengio (F1 macro par pli) : t,11.201,,,,0.0004,différences par pli : 0.0163 ; 0.0126 ; 0.0177 ; 0.0167 ; 0.0179

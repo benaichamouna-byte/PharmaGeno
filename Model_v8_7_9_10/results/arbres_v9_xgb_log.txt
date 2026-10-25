@@ -1,0 +1,12 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+Modèle : xgb | représentation : fp | variables : 551 (33 gènes + 518 colonnes médicament)
+Classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER'] [12494, 5918, 128011, 777]
+Ensemble final mis de côté : 14731 lignes, 138 familles (NON utilisé ici)
+{'pli': 1, 'n_test': 26494, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0002, 'ECE': 0.0002, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 155s
+{'pli': 2, 'n_test': 26469, 'arbres': 1000, 'f1_val_interne': 1.0, 'f1_macro': 0.999, 'f1_hors_surveiller': 0.9998, 'exactitude': 1.0, 'CER_strict': 0.0009, 'precision_EVITER': 1.0, 'logloss': 0.0008, 'ECE': 0.0001, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9991, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 290s
+{'pli': 3, 'n_test': 26333, 'arbres': 621, 'f1_val_interne': 0.9997, 'f1_macro': 0.999, 'f1_hors_surveiller': 0.9998, 'exactitude': 0.9999, 'CER_strict': 0.0009, 'precision_EVITER': 1.0, 'logloss': 0.0004, 'ECE': 0.0004, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9991, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 0.9929} | 376s
+{'pli': 4, 'n_test': 26531, 'arbres': 802, 'f1_val_interne': 0.9976, 'f1_macro': 0.9999, 'f1_hors_surveiller': 0.9998, 'exactitude': 1.0, 'CER_strict': 0.0009, 'precision_EVITER': 1.0, 'logloss': 0.0004, 'ECE': 0.0003, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9991, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 488s
+{'pli': 5, 'n_test': 26642, 'arbres': 694, 'f1_val_interne': 0.9976, 'f1_macro': 0.9998, 'f1_hors_surveiller': 0.9997, 'exactitude': 0.9999, 'CER_strict': 0.0019, 'precision_EVITER': 1.0, 'logloss': 0.0008, 'ECE': 0.0002, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9981, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 582s
+
+RÉSULTAT XGB (fp) : F1 macro = 0.9995 +/- 0.0004 | CER strict = 0.0009 | ECE = 0.0002
+Fichiers écrits dans ../results/arbres_v9_xgb
