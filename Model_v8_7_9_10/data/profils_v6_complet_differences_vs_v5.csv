@@ -1,0 +1,204 @@
+sample_id,gene,valeur_v5,valeur_v6,genotype_pypgx,phenotype_pypgx
+NA06986,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA07000,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA11933,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA12718,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA12827,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18530,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18546,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18563,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18564,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18599,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18606,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18609,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18618,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18620,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18624,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18643,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18747,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18949,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18956,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18998,ABCG2,1.0,0.0,rs2231142/rs2231142,Poor Function
+NA19002,ABCG2,1.0,0.0,rs2231142/rs2231142,Poor Function
+NA19072,ABCG2,1.0,0.0,rs2231142/rs2231142,Poor Function
+NA19075,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19077,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19079,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19085,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19091,ABCG2,1.0,0.0,rs2231142/rs2231142,Poor Function
+NA19649,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19678,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19716,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20314,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20531,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA06985,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA11840,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA12046,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA12762,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA12778,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA12812,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18533,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18538,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18549,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18557,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18571,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18593,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18605,ABCG2,1.0,0.0,rs2231142/rs2231142,Poor Function
+NA18637,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18740,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18945,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18954,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA18979,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19066,ABCG2,1.0,0.0,rs2231142/rs2231142,Poor Function
+NA19087,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19725,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20359,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20510,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20757,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20763,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA20845,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+NA19723,ABCG2,1.0,0.5,Reference/rs2231142,Decreased Function
+HG00127,CYP2B6,1.0,,*5/*15,Indeterminate
+HG00154,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00171,CYP2B6,1.5,1.0,*1/*5,Normal Metabolizer
+HG00188,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00233,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00278,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00336,CYP2B6,1.5,1.0,*1/*5,Normal Metabolizer
+HG00357,CYP2B6,1.5,1.0,*1/*5,Normal Metabolizer
+HG00613,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00634,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00742,CYP2B6,1.0,,*1/*15,Indeterminate
+HG01097,CYP2B6,1.0,,*10/*15,Indeterminate
+HG01140,CYP2B6,1.0,,*9/*10,Indeterminate
+HG01257,CYP2B6,1.0,,*9/*10,Indeterminate
+HG01765,CYP2B6,1.0,,*1/*11,Indeterminate
+HG01781,CYP2B6,2.0,1.0,*1/*1,Normal Metabolizer
+HG01809,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01847,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01988,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02020,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02028,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02069,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02085,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02179,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02392,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02399,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02470,CYP2B6,0.5,1.0,*1/*1,Normal Metabolizer
+HG02476,CYP2B6,1.0,,*9/*15,Indeterminate
+HG02521,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02601,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02603,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG03021,CYP2B6,1.5,,*22/*27,Indeterminate
+HG03028,CYP2B6,0.5,0.0,*9/*9,Poor Metabolizer
+HG03667,CYP2B6,1.0,,*1/*10,Indeterminate
+HG03685,CYP2B6,1.5,1.0,*1/*2,Normal Metabolizer
+HG03686,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG03755,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG03824,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG03887,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG04098,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG04159,CYP2B6,1.5,1.0,*1/*5,Normal Metabolizer
+HG04211,CYP2B6,1.5,1.0,*1/*5,Normal Metabolizer
+NA11893,CYP2B6,1.0,,*9/*15,Indeterminate
+NA18530,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18546,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18599,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18624,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18629,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18643,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA19010,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA19054,CYP2B6,2.0,1.0,*1/*1,Normal Metabolizer
+NA19062,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA19079,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA19086,CYP2B6,2.0,1.0,*1/*1,Normal Metabolizer
+NA19472,CYP2B6,1.0,1.5,*1/*22,Rapid Metabolizer
+NA20334,CYP2B6,1.0,1.5,*1/*22,Rapid Metabolizer
+NA20531,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA20908,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00128,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00130,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00260,CYP2B6,0.5,,*9/*10,Indeterminate
+HG00277,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00406,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00409,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00457,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00608,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00623,CYP2B6,0.5,1.0,*1/*1,Normal Metabolizer
+HG00632,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00651,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00654,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00671,CYP2B6,1.5,1.0,*1/*2,Normal Metabolizer
+HG00729,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01198,CYP2B6,1.0,,*5/*15,Indeterminate
+HG01242,CYP2B6,1.0,,*1/*10,Indeterminate
+HG01275,CYP2B6,1.0,,*1/*10,Indeterminate
+HG01462,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01510,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01595,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01620,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01779,CYP2B6,1.0,,*1/*11,Indeterminate
+HG01797,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01812,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01850,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG01890,CYP2B6,0.5,,*9/*33,Indeterminate
+HG02025,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02151,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02231,CYP2B6,2.0,1.5,*1/*22,Rapid Metabolizer
+HG02396,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02600,CYP2B6,1.0,0.5,*1/*9,Intermediate Metabolizer
+HG02696,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02780,CYP2B6,1.0,1.5,*5/*22,Rapid Metabolizer
+HG02953,CYP2B6,1.0,1.5,*1/*22,Rapid Metabolizer
+HG03091,CYP2B6,1.0,1.5,*1/*22,Rapid Metabolizer
+HG03640,CYP2B6,1.0,0.5,*5/*9,Intermediate Metabolizer
+HG03750,CYP2B6,1.0,1.5,*1/*22,Rapid Metabolizer
+HG03790,CYP2B6,1.5,1.0,*1/*2,Normal Metabolizer
+HG04038,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG04096,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG04118,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA06984,CYP2B6,1.5,1.0,*1/*5,Normal Metabolizer
+NA11829,CYP2B6,1.0,,*1/*11,Indeterminate
+NA11840,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA12778,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18538,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18602,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA18871,CYP2B6,0.0,0.5,*1/*18,Intermediate Metabolizer
+NA18979,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA19000,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA19190,CYP2B6,1.0,0.5,*9/*22,Intermediate Metabolizer
+NA19452,CYP2B6,1.0,1.5,*1/*22,Rapid Metabolizer
+NA20287,CYP2B6,1.0,,*3/*22,Indeterminate
+NA20800,CYP2B6,1.0,,*10/*22,Indeterminate
+NA21114,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00138,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG00276,CYP2B6,1.5,1.0,*1/*2,Normal Metabolizer
+HG03738,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+NA20581,CYP2B6,1.5,1.0,*1/*1,Normal Metabolizer
+HG02318,CYP2C19,0.5,0.0,*3/*22,Poor Metabolizer
+HG02628,CYP2C19,1.0,,*1/*39,Indeterminate
+HG02757,CYP2C19,1.0,,*17/*39,Indeterminate
+HG03755,CYP2C19,1.0,,*2/*34,Indeterminate
+HG03920,CYP2C19,1.0,,*34/*38,Indeterminate
+HG04018,CYP2C19,1.0,,*34/*38,Indeterminate
+HG04185,CYP2C19,1.0,,*34/*38,Indeterminate
+HG04211,CYP2C19,1.0,,*2/*34,Indeterminate
+NA19213,CYP2C19,1.0,,*1/*39,Indeterminate
+NA20356,CYP2C19,0.5,1.0,*1/*1,Normal Metabolizer
+NA21104,CYP2C19,1.0,,*1/*34,Indeterminate
+HG02012,CYP2C19,1.0,,*1/*39,Indeterminate
+HG02977,CYP2C19,1.0,,*1/*39,Indeterminate
+HG03159,CYP2C19,1.0,,*1/*39,Indeterminate
+HG03166,CYP2C19,1.0,,*1/*39,Indeterminate
+HG04039,CYP2C19,1.0,,*2/*34,Indeterminate
+NA18871,CYP2C19,1.0,,*1/*39,Indeterminate
+NA21097,CYP2C19,1.0,,*2/*34,Indeterminate
+HG02938,CYP2C19,1.0,,*2/*39,Indeterminate
+HG03722,CYP2C19,1.0,,*17/*34,Indeterminate
+HG01840,CYP3A5,1.0,0.5,*1/*3,Intermediate Metabolizer
+HG00613,DPYD,0.5,1.0,Reference/c.1627A>G (*5),Normal Metabolizer
+NA18956,DPYD,0.5,1.0,Reference/Reference,Normal Metabolizer
+HG01631,DPYD,0.5,1.0,Reference/c.1627A>G (*5),Normal Metabolizer
+NA19711,DPYD,0.5,1.0,c.1627A>G (*5)/c.1627A>G (*5),Normal Metabolizer
+HG03115,DPYD,0.5,1.0,Reference/c.85T>C (*9A),Normal Metabolizer
+HG02648,UGT1A1,0.0,,*80/*80+*28,Indeterminate

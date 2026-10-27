@@ -1,0 +1,54 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+profils : 1379 | médicaments : 129 | variables d'entrée : 37 | cases étiquetées : 152032 sur 177891
+{'graine': 0, 'pli': 1, 'n_test': 27317, 'epoques': 128, 'f1_val_interne': 0.9975, 'f1_macro': 0.9954, 'f1_hors_surveiller': 0.995, 'exactitude': 0.9984, 'CER_strict': 0.0093, 'precision_EVITER': 0.9933, 'logloss': 0.0121, 'ECE': 0.0062, 'rappel_ADAPTER_DOSE': 0.9973, 'rappel_EVITER': 0.9907, 'rappel_STANDARD': 0.999, 'rappel_SURVEILLER': 1.0} | 19s
+{'graine': 0, 'pli': 2, 'n_test': 27296, 'epoques': 95, 'f1_val_interne': 0.9988, 'f1_macro': 0.9957, 'f1_hors_surveiller': 0.9954, 'exactitude': 0.9985, 'CER_strict': 0.0047, 'precision_EVITER': 0.9913, 'logloss': 0.0123, 'ECE': 0.009, 'rappel_ADAPTER_DOSE': 0.9943, 'rappel_EVITER': 0.9953, 'rappel_STANDARD': 0.9992, 'rappel_SURVEILLER': 1.0} | 24s
+{'graine': 0, 'pli': 3, 'n_test': 27400, 'epoques': 84, 'f1_val_interne': 0.9977, 'f1_macro': 0.9977, 'f1_hors_surveiller': 0.997, 'exactitude': 0.9988, 'CER_strict': 0.0033, 'precision_EVITER': 0.996, 'logloss': 0.0115, 'ECE': 0.0089, 'rappel_ADAPTER_DOSE': 0.9969, 'rappel_EVITER': 0.9967, 'rappel_STANDARD': 0.9992, 'rappel_SURVEILLER': 1.0} | 28s
+{'graine': 0, 'pli': 4, 'n_test': 27370, 'epoques': 151, 'f1_val_interne': 0.9961, 'f1_macro': 0.9971, 'f1_hors_surveiller': 0.9961, 'exactitude': 0.9988, 'CER_strict': 0.0099, 'precision_EVITER': 0.998, 'logloss': 0.0086, 'ECE': 0.0051, 'rappel_ADAPTER_DOSE': 0.9955, 'rappel_EVITER': 0.9901, 'rappel_STANDARD': 0.9997, 'rappel_SURVEILLER': 1.0} | 37s
+{'graine': 0, 'pli': 5, 'n_test': 27432, 'epoques': 138, 'f1_val_interne': 0.9996, 'f1_macro': 0.9948, 'f1_hors_surveiller': 0.9942, 'exactitude': 0.9981, 'CER_strict': 0.0033, 'precision_EVITER': 0.9862, 'logloss': 0.0096, 'ECE': 0.0056, 'rappel_ADAPTER_DOSE': 0.9939, 'rappel_EVITER': 0.9967, 'rappel_STANDARD': 0.9987, 'rappel_SURVEILLER': 0.9928} | 45s
+{'graine': 1, 'pli': 1, 'n_test': 27317, 'epoques': 100, 'f1_val_interne': 0.9973, 'f1_macro': 0.9951, 'f1_hors_surveiller': 0.9946, 'exactitude': 0.9985, 'CER_strict': 0.0153, 'precision_EVITER': 0.996, 'logloss': 0.0148, 'ECE': 0.0081, 'rappel_ADAPTER_DOSE': 0.9973, 'rappel_EVITER': 0.9847, 'rappel_STANDARD': 0.9996, 'rappel_SURVEILLER': 1.0} | 51s
+{'graine': 1, 'pli': 2, 'n_test': 27296, 'epoques': 118, 'f1_val_interne': 0.9994, 'f1_macro': 0.9988, 'f1_hors_surveiller': 0.9984, 'exactitude': 0.9995, 'CER_strict': 0.0033, 'precision_EVITER': 0.9993, 'logloss': 0.0087, 'ECE': 0.0069, 'rappel_ADAPTER_DOSE': 0.9981, 'rappel_EVITER': 0.9967, 'rappel_STANDARD': 0.9998, 'rappel_SURVEILLER': 1.0} | 57s
+{'graine': 1, 'pli': 3, 'n_test': 27400, 'epoques': 86, 'f1_val_interne': 0.997, 'f1_macro': 0.998, 'f1_hors_surveiller': 0.9973, 'exactitude': 0.9989, 'CER_strict': 0.0027, 'precision_EVITER': 0.9973, 'logloss': 0.0122, 'ECE': 0.0096, 'rappel_ADAPTER_DOSE': 0.9973, 'rappel_EVITER': 0.9973, 'rappel_STANDARD': 0.9992, 'rappel_SURVEILLER': 1.0} | 61s
+{'graine': 1, 'pli': 4, 'n_test': 27370, 'epoques': 134, 'f1_val_interne': 0.9964, 'f1_macro': 0.9973, 'f1_hors_surveiller': 0.9964, 'exactitude': 0.9991, 'CER_strict': 0.0092, 'precision_EVITER': 0.9973, 'logloss': 0.0096, 'ECE': 0.0062, 'rappel_ADAPTER_DOSE': 0.9962, 'rappel_EVITER': 0.9908, 'rappel_STANDARD': 0.9999, 'rappel_SURVEILLER': 1.0} | 68s
+{'graine': 1, 'pli': 5, 'n_test': 27432, 'epoques': 144, 'f1_val_interne': 0.999, 'f1_macro': 0.9933, 'f1_hors_surveiller': 0.9935, 'exactitude': 0.9978, 'CER_strict': 0.0046, 'precision_EVITER': 0.9823, 'logloss': 0.0101, 'ECE': 0.0064, 'rappel_ADAPTER_DOSE': 0.9943, 'rappel_EVITER': 0.9954, 'rappel_STANDARD': 0.9985, 'rappel_SURVEILLER': 0.9856} | 76s
+{'graine': 2, 'pli': 1, 'n_test': 27317, 'epoques': 96, 'f1_val_interne': 0.9974, 'f1_macro': 0.9954, 'f1_hors_surveiller': 0.995, 'exactitude': 0.9984, 'CER_strict': 0.0107, 'precision_EVITER': 0.9953, 'logloss': 0.0137, 'ECE': 0.0077, 'rappel_ADAPTER_DOSE': 0.9969, 'rappel_EVITER': 0.9893, 'rappel_STANDARD': 0.9991, 'rappel_SURVEILLER': 1.0} | 81s
+{'graine': 2, 'pli': 2, 'n_test': 27296, 'epoques': 114, 'f1_val_interne': 0.999, 'f1_macro': 0.9962, 'f1_hors_surveiller': 0.9961, 'exactitude': 0.999, 'CER_strict': 0.006, 'precision_EVITER': 0.9926, 'logloss': 0.0098, 'ECE': 0.0075, 'rappel_ADAPTER_DOSE': 0.9947, 'rappel_EVITER': 0.994, 'rappel_STANDARD': 0.9998, 'rappel_SURVEILLER': 1.0} | 88s
+{'graine': 2, 'pli': 3, 'n_test': 27400, 'epoques': 110, 'f1_val_interne': 0.9979, 'f1_macro': 0.9992, 'f1_hors_surveiller': 0.999, 'exactitude': 0.9996, 'CER_strict': 0.002, 'precision_EVITER': 1.0, 'logloss': 0.0088, 'ECE': 0.0077, 'rappel_ADAPTER_DOSE': 0.9985, 'rappel_EVITER': 0.998, 'rappel_STANDARD': 0.9999, 'rappel_SURVEILLER': 1.0} | 93s
+{'graine': 2, 'pli': 4, 'n_test': 27370, 'epoques': 118, 'f1_val_interne': 0.9965, 'f1_macro': 0.9978, 'f1_hors_surveiller': 0.997, 'exactitude': 0.9989, 'CER_strict': 0.0046, 'precision_EVITER': 0.9974, 'logloss': 0.0101, 'ECE': 0.007, 'rappel_ADAPTER_DOSE': 0.9966, 'rappel_EVITER': 0.9954, 'rappel_STANDARD': 0.9994, 'rappel_SURVEILLER': 1.0} | 99s
+{'graine': 2, 'pli': 5, 'n_test': 27432, 'epoques': 111, 'f1_val_interne': 0.999, 'f1_macro': 0.9945, 'f1_hors_surveiller': 0.9951, 'exactitude': 0.9983, 'CER_strict': 0.006, 'precision_EVITER': 0.9927, 'logloss': 0.0104, 'ECE': 0.0064, 'rappel_ADAPTER_DOSE': 0.9931, 'rappel_EVITER': 0.994, 'rappel_STANDARD': 0.9992, 'rappel_SURVEILLER': 0.9856} | 105s
+{'graine': 3, 'pli': 1, 'n_test': 27317, 'epoques': 93, 'f1_val_interne': 0.9975, 'f1_macro': 0.9949, 'f1_hors_surveiller': 0.9944, 'exactitude': 0.9982, 'CER_strict': 0.0113, 'precision_EVITER': 0.994, 'logloss': 0.0146, 'ECE': 0.0079, 'rappel_ADAPTER_DOSE': 0.9961, 'rappel_EVITER': 0.9887, 'rappel_STANDARD': 0.9991, 'rappel_SURVEILLER': 1.0} | 110s
+{'graine': 3, 'pli': 2, 'n_test': 27296, 'epoques': 149, 'f1_val_interne': 0.9989, 'f1_macro': 0.9961, 'f1_hors_surveiller': 0.9972, 'exactitude': 0.9991, 'CER_strict': 0.0027, 'precision_EVITER': 0.9947, 'logloss': 0.0087, 'ECE': 0.0062, 'rappel_ADAPTER_DOSE': 0.9951, 'rappel_EVITER': 0.9973, 'rappel_STANDARD': 0.9997, 'rappel_SURVEILLER': 0.9928} | 117s
+{'graine': 3, 'pli': 3, 'n_test': 27400, 'epoques': 99, 'f1_val_interne': 0.9979, 'f1_macro': 0.9987, 'f1_hors_surveiller': 0.9983, 'exactitude': 0.9993, 'CER_strict': 0.002, 'precision_EVITER': 0.9993, 'logloss': 0.0102, 'ECE': 0.0084, 'rappel_ADAPTER_DOSE': 0.9981, 'rappel_EVITER': 0.998, 'rappel_STANDARD': 0.9996, 'rappel_SURVEILLER': 1.0} | 122s
+{'graine': 3, 'pli': 4, 'n_test': 27370, 'epoques': 77, 'f1_val_interne': 0.9938, 'f1_macro': 0.9945, 'f1_hors_surveiller': 0.9927, 'exactitude': 0.9975, 'CER_strict': 0.0106, 'precision_EVITER': 0.9907, 'logloss': 0.0158, 'ECE': 0.0098, 'rappel_ADAPTER_DOSE': 0.9921, 'rappel_EVITER': 0.9894, 'rappel_STANDARD': 0.9987, 'rappel_SURVEILLER': 1.0} | 125s
+{'graine': 3, 'pli': 5, 'n_test': 27432, 'epoques': 95, 'f1_val_interne': 0.9986, 'f1_macro': 0.9946, 'f1_hors_surveiller': 0.9952, 'exactitude': 0.9983, 'CER_strict': 0.0027, 'precision_EVITER': 0.9882, 'logloss': 0.0123, 'ECE': 0.0082, 'rappel_ADAPTER_DOSE': 0.9928, 'rappel_EVITER': 0.9973, 'rappel_STANDARD': 0.9991, 'rappel_SURVEILLER': 0.9856} | 130s
+{'graine': 4, 'pli': 1, 'n_test': 27317, 'epoques': 110, 'f1_val_interne': 0.9979, 'f1_macro': 0.9951, 'f1_hors_surveiller': 0.9947, 'exactitude': 0.9986, 'CER_strict': 0.0127, 'precision_EVITER': 0.9906, 'logloss': 0.0128, 'ECE': 0.0067, 'rappel_ADAPTER_DOSE': 0.9988, 'rappel_EVITER': 0.9873, 'rappel_STANDARD': 0.9993, 'rappel_SURVEILLER': 1.0} | 136s
+{'graine': 4, 'pli': 2, 'n_test': 27296, 'epoques': 110, 'f1_val_interne': 0.9992, 'f1_macro': 0.9973, 'f1_hors_surveiller': 0.9976, 'exactitude': 0.9993, 'CER_strict': 0.0027, 'precision_EVITER': 0.996, 'logloss': 0.0103, 'ECE': 0.0079, 'rappel_ADAPTER_DOSE': 0.9959, 'rappel_EVITER': 0.9973, 'rappel_STANDARD': 0.9998, 'rappel_SURVEILLER': 1.0} | 142s
+{'graine': 4, 'pli': 3, 'n_test': 27400, 'epoques': 94, 'f1_val_interne': 0.9979, 'f1_macro': 0.9986, 'f1_hors_surveiller': 0.9981, 'exactitude': 0.9992, 'CER_strict': 0.0007, 'precision_EVITER': 0.9967, 'logloss': 0.0107, 'ECE': 0.0088, 'rappel_ADAPTER_DOSE': 0.9992, 'rappel_EVITER': 0.9993, 'rappel_STANDARD': 0.9992, 'rappel_SURVEILLER': 1.0} | 146s
+{'graine': 4, 'pli': 4, 'n_test': 27370, 'epoques': 146, 'f1_val_interne': 0.9965, 'f1_macro': 0.9968, 'f1_hors_surveiller': 0.9958, 'exactitude': 0.9986, 'CER_strict': 0.0086, 'precision_EVITER': 0.996, 'logloss': 0.0101, 'ECE': 0.0063, 'rappel_ADAPTER_DOSE': 0.997, 'rappel_EVITER': 0.9914, 'rappel_STANDARD': 0.9993, 'rappel_SURVEILLER': 1.0} | 153s
+{'graine': 4, 'pli': 5, 'n_test': 27432, 'epoques': 130, 'f1_val_interne': 0.9991, 'f1_macro': 0.9952, 'f1_hors_surveiller': 0.9961, 'exactitude': 0.9987, 'CER_strict': 0.0046, 'precision_EVITER': 0.9908, 'logloss': 0.0093, 'ECE': 0.0064, 'rappel_ADAPTER_DOSE': 0.9962, 'rappel_EVITER': 0.9954, 'rappel_STANDARD': 0.9993, 'rappel_SURVEILLER': 0.9856} | 160s
+
+        f1_macro  f1_hors_surveiller  exactitude  CER_strict  precision_EVITER     ECE
+graine                                                                                
+0         0.9961              0.9955      0.9985      0.0061            0.9930  0.0070
+1         0.9965              0.9960      0.9988      0.0070            0.9944  0.0074
+2         0.9966              0.9964      0.9988      0.0059            0.9956  0.0073
+3         0.9958              0.9956      0.9985      0.0059            0.9934  0.0081
+4         0.9966              0.9965      0.9989      0.0059            0.9940  0.0072
+{
+ "modele": "DL profil -> medicaments v1",
+ "graines": 5,
+ "plis": 5,
+ "n_lignes_final_non_utilisees": 15217,
+ "f1_macro_moy": 0.9963239999999999,
+ "f1_macro_std": 0.00033067204296705614,
+ "CER_strict_moy": 0.0061400000000000005,
+ "CER_strict_std": 0.00044971101832176646,
+ "precision_EVITER_moy": 0.99408,
+ "exactitude_moy": 0.998696,
+ "ECE_moy": 0.007396,
+ "reference_DL_actuel_journal_19oct": {
+  "f1_macro": "0,9980 +/- 0,0010",
+  "EVITER_manques": "0,0029 +/- 0,0010",
+  "precision_EVITER": "0,992 +/- 0,005",
+  "config": "film, identifiant de médicament, poids racine, EVITER x2, 5 graines"
+ }
+}
