@@ -1,0 +1,19 @@
+{
+ "modele": "DL profil -> medicaments v1",
+ "graines": 1,
+ "plis": 1,
+ "n_lignes_final_non_utilisees": 15243,
+ "f1_macro_moy": 0.9974,
+ "f1_macro_std": 0.0,
+ "CER_strict_moy": 0.0027,
+ "CER_strict_std": 0.0,
+ "precision_EVITER_moy": 0.9934,
+ "exactitude_moy": 0.9988,
+ "ECE_moy": 0.0079,
+ "reference_DL_actuel_journal_19oct": {
+  "f1_macro": "0,9980 +/- 0,0010",
+  "EVITER_manques": "0,0029 +/- 0,0010",
+  "precision_EVITER": "0,992 +/- 0,005",
+  "config": "film, identifiant de médicament, poids racine, EVITER x2, 5 graines"
+ }
+}

@@ -1,0 +1,2 @@
+graine,pli,n_test,epoques,f1_val_interne,f1_macro,f1_hors_surveiller,exactitude,CER_strict,precision_EVITER,logloss,ECE,rappel_ADAPTER_DOSE,rappel_EVITER,rappel_STANDARD,rappel_SURVEILLER
+0,1,27420,101,0.9995,0.9974,0.9966,0.9988,0.0027,0.9934,0.0109,0.0079,0.9947,0.9973,0.9994,1.0

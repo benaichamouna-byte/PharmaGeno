@@ -1,0 +1,26 @@
+Médicaments sans empreinte, lignes exclues : ['pegloticase', 'rasburicase', 'sulfamethoxazole / trimethoprim', 'vitamin k and analogues']
+profils : 1379 | médicaments : 129 | variables d'entrée : 34 | cases étiquetées : 152409 sur 177891
+{'graine': 0, 'pli': 1, 'n_test': 27420, 'epoques': 101, 'f1_val_interne': 0.9995, 'f1_macro': 0.9974, 'f1_hors_surveiller': 0.9966, 'exactitude': 0.9988, 'CER_strict': 0.0027, 'precision_EVITER': 0.9934, 'logloss': 0.0109, 'ECE': 0.0079, 'rappel_ADAPTER_DOSE': 0.9947, 'rappel_EVITER': 0.9973, 'rappel_STANDARD': 0.9994, 'rappel_SURVEILLER': 1.0} | 16s
+
+        f1_macro  f1_hors_surveiller  exactitude  CER_strict  precision_EVITER     ECE
+graine                                                                                
+0         0.9974              0.9966      0.9988      0.0027            0.9934  0.0079
+{
+ "modele": "DL profil -> medicaments v1",
+ "graines": 1,
+ "plis": 1,
+ "n_lignes_final_non_utilisees": 15243,
+ "f1_macro_moy": 0.9974,
+ "f1_macro_std": 0.0,
+ "CER_strict_moy": 0.0027,
+ "CER_strict_std": 0.0,
+ "precision_EVITER_moy": 0.9934,
+ "exactitude_moy": 0.9988,
+ "ECE_moy": 0.0079,
+ "reference_DL_actuel_journal_19oct": {
+  "f1_macro": "0,9980 +/- 0,0010",
+  "EVITER_manques": "0,0029 +/- 0,0010",
+  "precision_EVITER": "0,992 +/- 0,005",
+  "config": "film, identifiant de médicament, poids racine, EVITER x2, 5 graines"
+ }
+}
