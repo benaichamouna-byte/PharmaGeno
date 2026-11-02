@@ -1,0 +1,26 @@
+runs: 25 plis [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5)] graines [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)]
+
+Moyenne ± écart-type sur 25 entraînements (corpus v14, config 35 + calibration par température) :
+  f1_macro             0.9979 ± 0.0012
+  f1_hors_surveiller   0.9974 ± 0.0014
+  exactitude           0.9995 ± 0.0003
+  CER_strict           0.0083 ± 0.0048
+  precision_EVITER     0.9988 ± 0.0018
+  logloss              0.0030 ± 0.0017
+  ECE                  0.0003 ± 0.0002
+  T de calibration : min 0.16 max 0.31
+
+Par pli (moyenne des 5 graines) F1 macro : {1: 0.9979, 2: 0.9989, 3: 0.9992, 4: 0.9961, 5: 0.9972}
+Par niveau de source : {'CPIC': np.float64(0.9984), 'DPWG': np.float64(0.9923), 'EMA-etiquette': np.float64(0.9333), 'FDA': np.float64(0.9995), 'FDA-etiquette': np.float64(0.9986), 'HCSC-etiquette': np.float64(1.0), 'RNPGx': np.float64(0.9997)}
+
+Lignes évaluées (hors ensemble final) : 209415 | lignes EVITER : 7227
+EVITER manqués (moyenne 5 graines) : 60.2 / 7227 (0.83 %) | faux EVITER : 8.4 | erreurs totales : 113.0
+
+Rappel v13 (config 35 + calibration, 31 oct.) : F1 0.9980 ± 0.0010 ; logloss 0.0028 ; ECE 0.0004 ; EVITER manqués 55 / 7 227 ; faux EVITER 2 ; erreurs 94 (193 332 lignes)
+
+=== Origine des erreurs (moyenne 5 graines) ===
+erreurs totales 113.0
+dont sur les 13 médicaments ajoutés depuis v13 : 1.4 (lignes évaluées 16084)
+10 médicaments les plus touchés : [('rosuvastatin', 16.0), ('sertraline', 16.0), ('azathioprine', 13.8), ('fluvastatin', 11.6), ('meloxicam', 9.6), ('mercaptopurine', 5.6), ('thioguanine', 5.6), ('erdafitinib', 3.0), ('siponimod', 3.0), ('lesinurad', 2.8)]
+faux EVITER par médicament : [('meloxicam', 3.8), ('fluvastatin', 1.2), ('azathioprine', 1.0), ('mercaptopurine', 0.6), ('thioguanine', 0.6), ('deuruxolitinib', 0.6), ('sertraline', 0.2), ('citalopram', 0.2)]
+glyburide (règle modifiée en v14) erreurs: 1.6
