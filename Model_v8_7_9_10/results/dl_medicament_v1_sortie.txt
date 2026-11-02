@@ -1,0 +1,262 @@
+lignes v14b 232664 -> 209415 (hors ensemble final) | v13 193332
+profils 1241 | colonnes 37 | catégories 113 | médicaments v14b 189 | v13 176 | ajoutés depuis v13 13
+groupes de quasi-doublons (> 1 nom) : [['amifampridine', 'amifampridine phosphate'], ['aripiprazole', 'aripiprazole lauroxil'], ['ascorbic acid (vitamin c), combinations', 'ascorbic acid (vitamin c), plain'], ['citalopram', 'escitalopram'], ['esomeprazole', 'omeprazole'], ['imipramine', 'trimipramine'], ['norfloxacin', 'ofloxacin']]
+  [medicament g0] lien : 5 époques, 14 s
+  [medicament g0] lien+atc : 5 époques, 27 s
+  [medicament g0] lien+atc+fp : 5 époques, 42 s
+  [medicament g0] porte:lien+atc+fp : 5 époques, 60 s
+  [medicament g0] lien : 5 époques, 73 s
+  [medicament g0] lien+atc : 5 époques, 87 s
+  [medicament g0] lien+atc+fp : 5 époques, 103 s
+  [medicament g0] porte:lien+atc+fp : 5 époques, 119 s
+  [medicament g0] lien : 5 époques, 132 s
+  [medicament g0] lien+atc : 7 époques, 152 s
+  [medicament g0] lien+atc+fp : 5 époques, 166 s
+  [medicament g0] porte:lien+atc+fp : 5 époques, 183 s
+  [medicament g0] lien : 5 époques, 196 s
+  [medicament g0] lien+atc : 5 époques, 208 s
+  [medicament g0] lien+atc+fp : 5 époques, 223 s
+  [medicament g0] porte:lien+atc+fp : 5 époques, 240 s
+  [medicament g0] lien : 7 époques, 256 s
+  [medicament g0] lien+atc : 5 époques, 269 s
+  [medicament g0] lien+atc+fp : 8 époques, 290 s
+  [medicament g0] porte:lien+atc+fp : 6 époques, 307 s
+[medicament] graine 0 terminée (309 s)
+  [medicament g1] lien : 5 époques, 320 s
+  [medicament g1] lien+atc : 5 époques, 331 s
+  [medicament g1] lien+atc+fp : 5 époques, 342 s
+  [medicament g1] porte:lien+atc+fp : 5 époques, 355 s
+  [medicament g1] lien : 5 époques, 365 s
+  [medicament g1] lien+atc : 5 époques, 375 s
+  [medicament g1] lien+atc+fp : 5 époques, 387 s
+  [medicament g1] porte:lien+atc+fp : 6 époques, 404 s
+  [medicament g1] lien : 5 époques, 414 s
+  [medicament g1] lien+atc : 5 époques, 424 s
+  [medicament g1] lien+atc+fp : 5 époques, 435 s
+  [medicament g1] porte:lien+atc+fp : 5 époques, 449 s
+  [medicament g1] lien : 5 époques, 458 s
+  [medicament g1] lien+atc : 5 époques, 469 s
+  [medicament g1] lien+atc+fp : 5 époques, 482 s
+  [medicament g1] porte:lien+atc+fp : 5 époques, 497 s
+  [medicament g1] lien : 5 époques, 508 s
+  [medicament g1] lien+atc : 9 époques, 529 s
+  [medicament g1] lien+atc+fp : 5 époques, 543 s
+  [medicament g1] porte:lien+atc+fp : 5 époques, 557 s
+[medicament] graine 1 terminée (559 s)
+  [medicament g2] lien : 5 époques, 569 s
+  [medicament g2] lien+atc : 5 époques, 579 s
+  [medicament g2] lien+atc+fp : 5 époques, 590 s
+  [medicament g2] porte:lien+atc+fp : 5 époques, 604 s
+  [medicament g2] lien : 6 époques, 616 s
+  [medicament g2] lien+atc : 6 époques, 628 s
+  [medicament g2] lien+atc+fp : 5 époques, 640 s
+  [medicament g2] porte:lien+atc+fp : 6 époques, 656 s
+  [medicament g2] lien : 5 époques, 666 s
+  [medicament g2] lien+atc : 6 époques, 679 s
+  [medicament g2] lien+atc+fp : 5 époques, 690 s
+  [medicament g2] porte:lien+atc+fp : 5 époques, 704 s
+  [medicament g2] lien : 5 époques, 715 s
+  [medicament g2] lien+atc : 5 époques, 725 s
+  [medicament g2] lien+atc+fp : 5 époques, 738 s
+  [medicament g2] porte:lien+atc+fp : 5 époques, 752 s
+  [medicament g2] lien : 7 époques, 766 s
+  [medicament g2] lien+atc : 5 époques, 779 s
+  [medicament g2] lien+atc+fp : 5 époques, 791 s
+  [medicament g2] porte:lien+atc+fp : 5 époques, 804 s
+[medicament] graine 2 terminée (806 s)
+  [classe_ATC g0] lien : 5 époques, 816 s
+  [classe_ATC g0] lien+atc : 5 époques, 827 s
+  [classe_ATC g0] lien+atc+fp : 5 époques, 839 s
+  [classe_ATC g0] porte:lien+atc+fp : 5 époques, 852 s
+  [classe_ATC g0] lien : 5 époques, 862 s
+  [classe_ATC g0] lien+atc : 5 époques, 872 s
+  [classe_ATC g0] lien+atc+fp : 5 époques, 883 s
+  [classe_ATC g0] porte:lien+atc+fp : 5 époques, 896 s
+  [classe_ATC g0] lien : 5 époques, 907 s
+  [classe_ATC g0] lien+atc : 5 époques, 917 s
+  [classe_ATC g0] lien+atc+fp : 6 époques, 931 s
+  [classe_ATC g0] porte:lien+atc+fp : 7 époques, 951 s
+  [classe_ATC g0] lien : 6 époques, 963 s
+  [classe_ATC g0] lien+atc : 5 époques, 974 s
+  [classe_ATC g0] lien+atc+fp : 5 époques, 986 s
+  [classe_ATC g0] porte:lien+atc+fp : 5 époques, 1000 s
+  [classe_ATC g0] lien : 5 époques, 1010 s
+  [classe_ATC g0] lien+atc : 5 époques, 1021 s
+  [classe_ATC g0] lien+atc+fp : 5 époques, 1035 s
+  [classe_ATC g0] porte:lien+atc+fp : 5 époques, 1050 s
+[classe_ATC] graine 0 terminée (1052 s)
+  [classe_ATC g1] lien : 5 époques, 1063 s
+  [classe_ATC g1] lien+atc : 5 époques, 1074 s
+  [classe_ATC g1] lien+atc+fp : 5 époques, 1086 s
+  [classe_ATC g1] porte:lien+atc+fp : 5 époques, 1099 s
+  [classe_ATC g1] lien : 5 époques, 1110 s
+  [classe_ATC g1] lien+atc : 5 époques, 1120 s
+  [classe_ATC g1] lien+atc+fp : 5 époques, 1130 s
+  [classe_ATC g1] porte:lien+atc+fp : 5 époques, 1144 s
+  [classe_ATC g1] lien : 5 époques, 1155 s
+  [classe_ATC g1] lien+atc : 5 époques, 1166 s
+  [classe_ATC g1] lien+atc+fp : 5 époques, 1177 s
+  [classe_ATC g1] porte:lien+atc+fp : 5 époques, 1191 s
+  [classe_ATC g1] lien : 6 époques, 1203 s
+  [classe_ATC g1] lien+atc : 7 époques, 1218 s
+  [classe_ATC g1] lien+atc+fp : 5 époques, 1233 s
+  [classe_ATC g1] porte:lien+atc+fp : 6 époques, 1253 s
+  [classe_ATC g1] lien : 5 époques, 1267 s
+  [classe_ATC g1] lien+atc : 6 époques, 1284 s
+  [classe_ATC g1] lien+atc+fp : 5 époques, 1299 s
+  [classe_ATC g1] porte:lien+atc+fp : 5 époques, 1315 s
+[classe_ATC] graine 1 terminée (1317 s)
+  [classe_ATC g2] lien : 5 époques, 1328 s
+  [classe_ATC g2] lien+atc : 5 époques, 1339 s
+  [classe_ATC g2] lien+atc+fp : 5 époques, 1351 s
+  [classe_ATC g2] porte:lien+atc+fp : 5 époques, 1365 s
+  [classe_ATC g2] lien : 5 époques, 1375 s
+  [classe_ATC g2] lien+atc : 8 époques, 1392 s
+  [classe_ATC g2] lien+atc+fp : 9 époques, 1412 s
+  [classe_ATC g2] porte:lien+atc+fp : 7 époques, 1432 s
+  [classe_ATC g2] lien : 5 époques, 1442 s
+  [classe_ATC g2] lien+atc : 5 époques, 1453 s
+  [classe_ATC g2] lien+atc+fp : 5 époques, 1464 s
+  [classe_ATC g2] porte:lien+atc+fp : 5 époques, 1478 s
+  [classe_ATC g2] lien : 5 époques, 1488 s
+  [classe_ATC g2] lien+atc : 5 époques, 1500 s
+  [classe_ATC g2] lien+atc+fp : 5 époques, 1515 s
+  [classe_ATC g2] porte:lien+atc+fp : 5 époques, 1529 s
+  [classe_ATC g2] lien : 5 époques, 1540 s
+  [classe_ATC g2] lien+atc : 7 époques, 1555 s
+  [classe_ATC g2] lien+atc+fp : 7 époques, 1571 s
+  [classe_ATC g2] porte:lien+atc+fp : 7 époques, 1591 s
+[classe_ATC] graine 2 terminée (1592 s)
+  [prospectif g0] lien : 5 époques, 1604 s
+  [prospectif g0] lien+atc : 5 époques, 1617 s
+  [prospectif g0] lien+atc+fp : 5 époques, 1630 s
+  [prospectif g0] porte:lien+atc+fp : 5 époques, 1648 s
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[prospectif] graine 0 terminée (1648 s)
+  [prospectif g1] lien : 5 époques, 1660 s
+  [prospectif g1] lien+atc : 5 époques, 1672 s
+  [prospectif g1] lien+atc+fp : 5 époques, 1686 s
+  [prospectif g1] porte:lien+atc+fp : 5 époques, 1703 s
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[prospectif] graine 1 terminée (1703 s)
+  [prospectif g2] lien : 5 époques, 1715 s
+  [prospectif g2] lien+atc : 5 époques, 1727 s
+  [prospectif g2] lien+atc+fp : 5 époques, 1742 s
+  [prospectif g2] porte:lien+atc+fp : 5 époques, 1759 s
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[prospectif] graine 2 terminée (1759 s)
+  [prospectif g3] lien : 6 époques, 1775 s
+  [prospectif g3] lien+atc : 5 époques, 1787 s
+  [prospectif g3] lien+atc+fp : 7 époques, 1808 s
+  [prospectif g3] porte:lien+atc+fp : 7 époques, 1833 s
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[prospectif] graine 3 terminée (1833 s)
+  [prospectif g4] lien : 5 époques, 1845 s
+  [prospectif g4] lien+atc : 5 époques, 1858 s
+  [prospectif g4] lien+atc+fp : 5 époques, 1873 s
+  [prospectif g4] porte:lien+atc+fp : 5 époques, 1891 s
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/usr/local/lib/python3.13/dist-packages/sklearn/metrics/_classification.py:2939: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[prospectif] graine 4 terminée (1891 s)
+                                   lignes  medicaments  exactitude  exactitude_equilibree  f1_macro  auroc_non_standard  ap_non_standard  ap_eviter  logloss     ece  part_non_standard  rappel_ADAPTER_DOSE  rappel_EVITER  rappel_SURVEILLER
+schema     modele                                                                                                                                                                                                                             
+classe_ATC DL_lien               209415.0        189.0      0.7574                 0.3321    0.3152              0.6934           0.2704     0.0666   0.7118  0.0292             0.1437               0.1616         0.1286             0.1801
+           DL_lien+atc           209415.0        189.0      0.7786                 0.3221    0.3165              0.6974           0.2922     0.0606   0.6977  0.0329             0.1437               0.1595         0.1200             0.1240
+           DL_lien+atc+fp        209415.0        189.0      0.8093                 0.3032    0.3102              0.6540           0.2348     0.0712   0.6402  0.0496             0.1437               0.1012         0.0743             0.1084
+           DL_porte:lien+atc+fp  209415.0        189.0      0.8189                 0.3002    0.3103              0.6625           0.2429     0.0771   0.6349  0.0531             0.1437               0.0979         0.0779             0.0841
+           majoritaire           209415.0        189.0      0.8563                 0.2500    0.2307              0.3766           0.1172     0.0258   0.5649  0.0535             0.1437               0.0000         0.0000             0.0000
+           prior_gene_phenotype  209415.0        189.0      0.8568                 0.2536    0.2382              0.7897           0.3535     0.0581   0.4764  0.0266             0.1437               0.0142         0.0012             0.0000
+           voisins_k5            209415.0        189.0      0.8399                 0.3155    0.3229              0.7694           0.3846     0.0585   1.8397  0.0509             0.1437               0.2399         0.0511             0.0172
+medicament DL_lien               209415.0        189.0      0.7617                 0.4673    0.4046              0.7740           0.4229     0.3019   0.6547  0.0197             0.1437               0.2700         0.4872             0.2769
+           DL_lien+atc           209415.0        189.0      0.7893                 0.4789    0.4368              0.7695           0.4283     0.3006   0.6082  0.0325             0.1437               0.3185         0.4644             0.2691
+           DL_lien+atc+fp        209415.0        189.0      0.8026                 0.4486    0.4337              0.7232           0.3782     0.3188   0.5918  0.0336             0.1437               0.2759         0.4245             0.2074
+           DL_porte:lien+atc+fp  209415.0        189.0      0.8138                 0.4410    0.4391              0.7251           0.3757     0.3018   0.5793  0.0369             0.1437               0.2629         0.4154             0.1837
+           majoritaire           209415.0        189.0      0.8563                 0.2500    0.2307              0.4421           0.1292     0.0279   0.5515  0.0182             0.1437               0.0000         0.0000             0.0000
+           prior_gene_phenotype  209415.0        189.0      0.8580                 0.2567    0.2441              0.8169           0.4164     0.1170   0.4627  0.0457             0.1437               0.0255         0.0000             0.0018
+           voisins_k5            209415.0        189.0      0.8592                 0.4486    0.4825              0.7810           0.4599     0.3046   1.5378  0.0567             0.1437               0.3176         0.3787             0.1462
+prospectif DL_lien                16084.0         13.0      0.8562                 0.4635    0.3737              0.8175           0.3651        NaN   0.5127  0.0522             0.1147               0.1258            NaN             0.3290
+           DL_lien+atc            16084.0         13.0      0.7767                 0.3307    0.2668              0.7065           0.1736        NaN   0.6284  0.0875             0.1147               0.0390            NaN             0.0840
+           DL_lien+atc+fp         16084.0         13.0      0.8761                 0.3891    0.2983              0.8060           0.3500        NaN   0.4108  0.0430             0.1147               0.1645            NaN             0.0241
+           DL_porte:lien+atc+fp   16084.0         13.0      0.8786                 0.3825    0.2925              0.8051           0.3482        NaN   0.4220  0.0480             0.1147               0.1522            NaN             0.0124
+           majoritaire            16084.0         13.0      0.8853                 0.3333    0.2348              0.5000           0.1147        NaN   0.5203  0.0312             0.1147               0.0000            NaN             0.0000
+           prior_gene_phenotype   16084.0         13.0      0.9021                 0.4462    0.3636              0.8827           0.6419        NaN   0.3664  0.0696             0.1147               0.3388            NaN             0.0000
+           voisins_k5             16084.0         13.0      0.9069                 0.4720    0.3692              0.8773           0.6565        NaN   1.4260  0.0294             0.1147               0.3388            NaN             0.0775
+
+ecart-type entre graines (auroc_non_standard, f1_macro):
+                                 auroc_non_standard  f1_macro
+schema     modele                                            
+classe_ATC DL_lien                           0.0229    0.0235
+           DL_lien+atc                       0.0443    0.0244
+           DL_lien+atc+fp                    0.0170    0.0066
+           DL_porte:lien+atc+fp              0.0105    0.0037
+           majoritaire                       0.0079    0.0000
+           prior_gene_phenotype              0.0041    0.0046
+           voisins_k5                        0.0016    0.0093
+medicament DL_lien                           0.0093    0.0057
+           DL_lien+atc                       0.0085    0.0038
+           DL_lien+atc+fp                    0.0111    0.0146
+           DL_porte:lien+atc+fp              0.0133    0.0096
+           majoritaire                       0.0096    0.0000
+           prior_gene_phenotype              0.0195    0.0056
+           voisins_k5                        0.0031    0.0178
+prospectif DL_lien                           0.0396    0.0445
+           DL_lien+atc                       0.0240    0.0012
+           DL_lien+atc+fp                    0.0350    0.0438
+           DL_porte:lien+atc+fp              0.0329    0.0329
+           majoritaire                       0.0000    0.0000
+           prior_gene_phenotype              0.0000    0.0000
+           voisins_k5                        0.0000    0.0000

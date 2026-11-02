@@ -1,0 +1,15 @@
+CORPUS v14 GELÉ — 2 novembre 2026 (heure locale). Décisions du gel déléguées par Mouna (« fait ce que la littérature fait, sois professionnel et fiable ») : carisoprodol retiré (table FDA = pharmacocinétique seule, comme tamsulosine) ; avatrombopag-F5 ajouté (même texte d'étiquette que eltrombopag et lusutrombopag) ; six ajouts à preuve plus faible conservés, signalés confiance « moyenne » et évalués en analyse de sensibilité. 189 médicaments, 232 664 lignes. Toute idée nouvelle va dans les perspectives du mémoire.
+
+b876bb469e562d6e7f088190cc694f172ccabed50b1c2496d19e8928e50b238a  corpus_v14/phenotype_drug_dataset_v14.csv
+d18a8307beda5a62f0508463fc5919d688b3d2e6a73befd0e4867e3effb74079  corpus_v14/corpus_v14_couverture_par_medicament.csv
+39a736892cf6cc58f9e98250aa8abc5bdc62a3991ae6b287cbfeae4a4e7c1795  regles_v14_monogene.csv
+30eb35624074a248814e594c64a7ee9e481c6f843fb1c05bf45416a9fedac665  regles_v13_multigene.csv
+86bc8724cc57f6af9853f124712c7a68767ec66fe1c43ce1fa078842db5f70f7  regles_reference_seule_v13.csv
+d456d843dc817bd7388f3788de2d632ca88678b45cdf6e6538ed03be3305a237  fda_extraits_v13.csv
+77d43e925e4a50cf7d4af7d1a4be2af02a4a8f260fdb119858edccad432622e3  information_pharmgkb_variantes_cliniques_v13.csv
+2c0e5d652d8b80e2717f5d8f3dfdca429b86796568ff7ecd9f40f9ede3e45b07  profils_genes_v6_complet.csv
+5e554af79837f3f786fdf0452d61165d3b08aa3461164d67dc5ed68dc38b6155  profils_ensemble_final_v1.txt
+f24f0d9808b8281726dc2285e5e9eaf0f7fd21f09a5938ffc038193f504719bb  couverture_maximale_gene_substance_v14.csv
+9368ec3e1d09af4a1f2d2c86af5e10efab2ab7279c9bf66c32066e81751bb68b  descripteurs_medicaments_v1/descripteurs_v1.npz
+253f6c8e0e449ec5702dcb030792a52b2ca2ed1cc2b81abb4308e71204c182aa  scripts/construire_corpus_v8.py
+de95ceb646dbd8cee7eaf1799cfa7c62eb334d5bf139a0a6274be570a8614b75  scripts/construire_regles_etiquettes_v14b_v1.py
