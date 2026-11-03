@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block corps %}
+<h1>Analyse pharmacogénétique</h1>
+{% if erreur %}<div class="erreur">{{ erreur }}</div>{% endif %}
+{% if vcf_manque %}<div class="carte" style="border-left:4px solid #b7791f"><b>Avant la première analyse : installer la lecture des VCF</b> (manque sur cet ordinateur : {{ vcf_manque|join(', ') }}).
+<p class="petit" style="margin:6px 0 0">Dans un terminal, dans le dossier du paquet : <code>bash installer_vcf.sh</code> (une seule commande, quelques minutes ; détails dans LISEZMOI_ENCADRANT.md), puis relancer <code>bash lancer.sh</code>. Deux fichiers d'exemple sont fournis dans le dossier <code>exemples/</code>.</p></div>{% endif %}
+<div class="carte">
+<form action="{{ url_for('analyser') }}" method="post" enctype="multipart/form-data">
+<label for="vcf">Fichier VCF du patient</label>
+<input type="file" id="vcf" name="vcf" accept=".vcf,.gz" required>
+<p class="petit gris" style="margin:4px 0 0">.vcf ou .vcf.gz, un seul patient, génome GRCh37 ou GRCh38, {{ taille_max }} Mo au maximum.</p>
+<label for="specialite">Spécialité du médecin</label>
+<select id="specialite" name="specialite" required>
+{% for s, n in specialites %}<option value="{{ s }}" {% if n == 0 %}disabled{% endif %}>{{ s }}</option>{% endfor %}
+</select>
+<details style="margin-top:14px"><summary>Le fichier contient plusieurs patients ?</summary>
+<label for="echantillon">Nom de l'échantillon à analyser</label>
+<input type="text" id="echantillon" name="echantillon" placeholder="ex. HG00101">
+</details>
+<p style="margin-top:18px"><button type="submit" {% if vcf_manque %}disabled title="Installer d'abord la lecture des VCF (voir le message en haut de la page)" style="opacity:.5;cursor:not-allowed"{% endif %}>Lancer l'analyse</button></p>
+<p class="petit gris">L'analyse prend quelques minutes. Le fichier VCF est supprimé du serveur dès qu'elle est terminée.</p>
+</form></div>
+<p class="petit gris">Outil de recherche (mémoire de master), non validé cliniquement : il ne remplace ni un médecin, ni un pharmacien, ni une prescription. <a href="{{ url_for('apropos') }}">Méthode et limites</a></p>
+<div class="carte"><h2>Références scientifiques</h2>
+<p class="petit gris" style="margin:0 0 6px">Les règles, la lecture du génome, les données et les mesures de cette application s'appuient sur les sources suivantes (liste complète, avec DOI : <a href="{{ url_for('references') }}">page Références</a>).</p>
+<ul class="petit" style="margin:0 0 0 18px">{% for g in references %}<li><b>{{ g.groupe }}</b> : {% for it in g['items'] %}<a href="{{ it.lien }}" target="_blank" rel="noopener">{{ it.etiquette }}</a>{% if not loop.last %} ; {% endif %}{% endfor %}</li>{% endfor %}</ul></div>
+{% endblock %}

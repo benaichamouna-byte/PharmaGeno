@@ -1,0 +1,12 @@
+# Versions avec lesquelles le paquet a été testé (Python 3.13). Installation : pip install -r requirements.txt
+# torch : installer d abord la version CPU (pip install torch --index-url https://download.pytorch.org/whl/cpu) ; la ligne ci-dessous l accepte et ne la remplace pas par la version CUDA (plusieurs Go inutiles). Testé avec torch 2.14.1.
+Flask==3.1.3
+Werkzeug==3.1.8
+Jinja2==3.1.6
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+torch>=2.14.1
+xgboost==3.4.1
+reportlab==5.0.1

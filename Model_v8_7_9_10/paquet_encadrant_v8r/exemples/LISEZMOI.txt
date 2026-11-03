@@ -1,0 +1,4 @@
+Deux fichiers VCF d'exemple pour essayer l'application (aucun patient réel).
+NA19472.vcf et NA19085.vcf : deux échantillons publics de 1000 Genomes ; les VCF ont été reconstruits à partir des VCF 1000 Genomes du pypgx-bundle (positions des gènes de pharmacogénétique seulement), génome GRCh38, un seul échantillon par fichier.
+Ces deux échantillons ne font pas partie de l'ensemble final de 138 familles réservé à l'évaluation. Ils servent à montrer le fonctionnement de l'application, pas à mesurer sa performance.
+Utilisation : sur l'accueil, « Choisir un fichier » -> exemples/NA19472.vcf, choisir une spécialité (ex. Cardiologie), « Lancer l'analyse » (plusieurs minutes).

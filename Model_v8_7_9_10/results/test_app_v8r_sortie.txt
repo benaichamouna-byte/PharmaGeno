@@ -1,0 +1,75 @@
+PASS T1 accueil simplifié : VCF + spécialité + bouton ; ni HLA, ni CYP2D6, ni bloc démonstration | 17 spécialités
+PASS T2 démonstration : toutes les spécialités rendent une page sans erreur ni gabarit non résolu | 17 pages ; mauvais : []
+PASS T3 tout médicament avec au moins un avis EVITER figure dans les alertes de sécurité (toutes spécialités) | 17 spécialités
+PASS T3b pour chaque spécialité : tous les médicaments recommandés par le DL figurent dans la recommandation en haut ; sans groupe de médicaments, le message le dit
+PASS T4 PDF valide pour chaque spécialité
+PASS T5 JSON cohérent avec le profil et le moteur
+PASS T6 vue patient pour chaque spécialité
+PASS T7 PDF : sections attendues et formulation de sécurité
+PASS T8a recherche d'un nom international
+PASS T8b nom commercial : message clair, pas d'erreur
+PASS T9 échappement HTML de la recherche
+PASS T10 spécialité inconnue en paramètre : repli sans erreur
+PASS T11 en-têtes (no-store, nosniff, CSP)
+PASS T12 entrées invalides refusées (spécialité, fichier absent, extension, CYP2D6, HLA, identifiant) | [True, True, True, True, True, True]
+PASS T13 fichier trop gros refusé (413)
+PASS T14 circuit VCF (lecteur simulé) : HLA et échantillon transmis, VCF supprimé du disque | {'hla': 'HLA-B*57:01=porteur', 'echantillon': 'S1', 'existe': True, 'codage': 'codage_pypgx_valeur_v7.csv', 'tables': 'tables_cpic_v8.json'}
+PASS T15 CYP2D6 saisi : marqué « Fourni par l'utilisateur » (jamais « lu dans le VCF »)
+PASS T16 HLA-B*57:01 porteur saisi : abacavir à éviter dans les alertes de sécurité
+PASS T17 CYP2D6 non fourni : message explicite « pas lisible depuis un VCF » et médicaments non évalués
+PASS T18 aucun médicament dépendant de CYP2D6 n'est classé « compatible » sans CYP2D6 (jamais supposé normal)
+PASS T19 fichier refusé par le lecteur : message affiché, pas de résultat
+PASS T19b formulaire facultatif « Compléter » présent quand CYP2D6 et HLA sont absents
+PASS T19c complétion : CYP2D6 et HLA-B*57:01 pris en compte, origine « saisi par l'utilisateur », abacavir à éviter
+PASS T19e vocabulaire clinicien : HLA « positif », ni « porteur » ni « valeur de codage » ni « probable » dans l'écran principal
+PASS T19f formulaire HLA : Positif / Négatif / Non testé
+PASS T19d complétion invalide refusée
+PASS T20 suppression des données
+PASS T21 purge automatique des tâches de plus de 24 h
+PASS T22 v8q : page « méthode et limites » sans tableaux de performances ni nombre de gènes
+PASS T23 la « Recommandation du DL pour ce patient » est la première réponse de la page, avant les alertes ; le contenu scientifique est replié dans « Détails pour les experts »
+PASS T24 statines (Cardiologie, profil de démonstration) : médicaments recommandés affichés = sortie du réseau recalculée indépendamment | attendus ['fluvastatin', 'pravastatin', 'rosuvastatin'] | candidats ['atorvastatin', 'fluvastatin', 'lovastatin', 'pitavastatin', 'pravastatin', 'rosuvastatin', 'simvastatin']
+PASS T25 un médicament à éviter n'est jamais affiché comme recommandé
+PASS T26 gènes qui changent le choix : le moteur et une substitution dans le profil suivie de choix() donnent le même ensemble | 1 gènes décisifs, 1 concordants
+PASS T26b ces gènes sont affichés à l'écran avec leur lecture, dans la recommandation en haut | 1 gènes : ['SLCO1B1']
+PASS T27 câblage : part des médicaments « EVITER » (étiquette du corpus) dans l'ensemble prédit <= 1 % (profils d'entraînement) | 2688 médicaments prédits, 2 étiquetés EVITER
+PASS T27b contre-épreuve : avec les probabilités attribuées aux mauvais médicaments, cette part augmente nettement | 77 contre 2
+PASS T28 vue patient et JSON : mêmes médicaments recommandés que l'écran principal
+PASS T29 changer de spécialité dans la page de résultats change la réponse du DL
+PASS T30 spécialité sans groupe de médicaments interchangeables : message clair, pas de choix inventé
+PASS T31 feux : atorvastatin (adapter la dose) en orange seulement ; simvastatin (éviter) en rouge seulement ; pravastatin en vert seulement | vert=✔ À prescrire à la dose habituelle statines : fluvastatin · pravastatin · rosuva | orange=▲ Dose à adapter ou à surveiller atorvastatin (statines ; ad | rouge=✖ À éviter lovastatin (statines) simvastatin (stat
+PASS T31b les feux suivent les actions du moteur recalculées : atorvastatin ADAPTER_DOSE ou SURVEILLER, simvastatin EVITER (DL ou règle), pravastatin STANDARD | {'atorvastatin': 'ADAPTER_DOSE', 'simvastatin': 'EVITER', 'pravastatin': 'STANDARD'}
+PASS T32 aucune terme anglais de phénotype dans l'écran principal (Decreased/Normal/Poor/Intermediate function ou metabolizer)
+PASS T33 une seule liste de médicaments non évalués, avec le même nombre que le moteur (pas de « 5 » puis « 6 ») | affiché 4 | moteur 4
+PASS T34 l'encadré « à éviter aussi » ne répète jamais un médicament déjà dans le résumé de la spécialité
+PASS T35 Psychiatrie : simvastatin (autre spécialité) apparaît dans « à éviter aussi » et pas dans la liste verte
+PASS T36 intégrité : la liste de l'ensemble final compte 138 profils et aucun des profils échantillonnés pour T27 n'en fait partie | 138 profils exclus ; intersection 0
+PASS T37 page Références : 200, toutes les références présentes avec un lien (DOI ou page officielle), aucune balise non rendue | 18 références
+PASS T38 accueil : encadré « Références scientifiques » avant l'analyse + lien vers la page ; menu « Références »
+PASS T39 en-tête : « version 8r » (et plus « 8l »)
+PASS T40 liens de directive : un identifiant PA… -> 1 lien ClinPGx ; deux identifiants -> 2 liens ; fichier sans identifiant PA (API CPIC, HLA) -> aucun lien
+PASS T41 page de résultats : au moins une règle affiche le lien « directive PA… » (ClinPGx) et le lien Références
+PASS T42 règle à deux gènes (rosuvastatine, ABCG2 + SLCO1B1) : chaque gène est lu avec son phénotype, plus de « sans règle associée » | {'ABCG2': 'normal function', 'SLCO1B1': 'decreased function'}
+PASS T43 la recommandation dit que le programme a lu TOUS les gènes ensemble (pas un seul gène)
+PASS T44 plus de jargon dans la page : ni « softmax », ni « Probabilité de choix du DL », ni « moteur », ni « ATC » ni « guideline » hors texte original
+PASS T45 section experts : glossaire « Mots utilisés » + pour chaque médicament le tableau « Qui donne l'avis » avec accord ou désaccord dit en toutes lettres
+PASS T46 v8q : le pourcentage « Part de choix du DL » (ex. 33,5 %) n'est plus affiché nulle part
+PASS T47 v8r : le moteur charge le Random Forest et chaque médicament évalué reçoit un avis RF valide
+PASS T48 v8r : la page de résultats affiche une colonne Random Forest à côté de XGBoost
+PASS T49 v8r : plus de « confiance du modèle », plus de « probabilité du DL », plus de « Répartition du modèle » (pourcentages du DL)
+PASS T50 v8r : plus de nombre de gènes dans un titre (« Gènes du modèle (N) ») ; titre « Gènes lus chez ce patient »
+PASS T51 v8r : page Références contient Breiman (Random Forest), Chen & Guestrin (XGBoost), Guo (calibration), IWPC (warfarine)
+PASS T52 v8r : « Méthode et limites » mentionne le Random Forest et garde la section Limites
+PASS T53 v8r : le Random Forest n'a aucun effet sur les statuts ni sur les alertes (informatif) | 60 médicaments comparés
+PASS T54 v8r : module facultatif absent (pysam) -> message clair renvoyant au README, pas « Erreur inattendue »
+PASS T55 v8r : si le bundle PyPGx manque, l'accueil l'annonce avec la commande installer_vcf.sh, grise le bouton, et n'affiche plus de profil de démonstration
+PASS T56 v8r : la route interne /demo (utilisée par le vérificateur d'installation) fonctionne sans PyPGx ni bundle ; elle n'est plus reliée à l'écran
+PASS T57 v8r : un score 0-1 apparaît sous les avis du DL, de XGBoost et du Random Forest (résumé dépliable et tableaux) | 117 scores
+PASS T58 v8r : jamais « 1,000 » (un modèle n'est pas certain à 100 %) ; les scores ≥ 0,999 sont écrits « ≥ 0,999 »
+PASS T59 v8r : ligne de sources sous la recommandation (CPIC, DPWG, ATC OMS) avec lien vers Références ; publication générale de la source dans chaque directive
+PASS T60 v8r : formulaire de laboratoire expliqué (à quoi ça sert / ce que ça change / quoi faire) et liste les médicaments de la spécialité concernés par CYP2D6
+PASS T61 v8r : légende des scores présente (calibré / non calibré / pas une probabilité clinique)
+PASS T62 v8r : plus de libellé interne « règle v8 groupe A » à l'écran (remplacé par « pas d'interaction gène-médicament selon la directive »)
+PASS T63 v8r : le PDF a les 4 avis (DL, directive, XGBoost, Random Forest) avec score, aucun « confiance x % », la section des directives (PA…) et les références (DOI), titre v8r
+
+RÉSULTAT GLOBAL : TOUT PASSE
