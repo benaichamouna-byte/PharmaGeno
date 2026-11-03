@@ -1,0 +1,9 @@
+0 {'etat': 'en_cours', 'message': 'En attente', 'pct': 0}
+10 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 16}
+20 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 26}
+30 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 50}
+40 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 55}
+50 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 64}
+60 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 83}
+70 {'etat': 'termine', 'message': 'Analyse terminée', 'pct': 100}
+FIN NA19085

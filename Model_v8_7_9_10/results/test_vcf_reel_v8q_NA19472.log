@@ -1,0 +1,11 @@
+0 {'etat': 'en_cours', 'message': 'En attente', 'pct': 0}
+10 {'etat': 'en_cours', 'message': "Vérification de l'installation de PyPGx", 'pct': 1}
+20 {'etat': 'en_cours', 'message': "Vérification de l'installation de PyPGx", 'pct': 1}
+30 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 16}
+40 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 31}
+50 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 50}
+60 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 55}
+70 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 69}
+80 {'etat': 'en_cours', 'message': 'Lecture des gènes du patient', 'pct': 83}
+90 {'etat': 'termine', 'message': 'Analyse terminée', 'pct': 100}
+FIN NA19472
