@@ -1,0 +1,3 @@
+Entraînement : 188311 lignes | validation interne : 21104 | ensemble final (NON LU) : 23249 lignes
+XGBoost : validation interne {'f1_macro': 1.0, 'f1_hors_surveiller': 1.0, 'exactitude': 1.0, 'CER_strict': 0.0, 'precision_EVITER': 1.0, 'logloss': 0.0157, 'ECE': 0.0153, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 1.0, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 137s
+Fichiers écrits dans ../modeles_v10x

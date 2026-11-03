@@ -1,0 +1,5 @@
+Médicaments : 189 | dans le modèle : 189 | étiquette variable : 131
+Hors modèle (référence CPIC seule) : []
+Gènes requis que le modèle ne reçoit pas : {}
+Gènes de règle absents du profil : {}
+Écrit : ../data/domaine_v10.json

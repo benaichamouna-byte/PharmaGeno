@@ -1,0 +1,20 @@
+{
+ "epoques": 174,
+ "perte_val_interne": 0.9649,
+ "metriques_validation_interne": {
+  "n_cas": 4556,
+  "n_informatifs": 786,
+  "n_defaut_faux": 5,
+  "n_avec_EVITER_dans_la_classe": 279,
+  "choix_dans_S_informatifs": 1.0,
+  "defaut_dans_S_informatifs": 0.9936386768447837,
+  "choix_dans_S_si_defaut_faux": 1.0,
+  "ensemble_exact_informatifs": 0.9910941475826972,
+  "defaut_ensemble_exact_informatifs": 0.39185750636132316,
+  "jaccard_informatifs": 0.9976099600145403,
+  "defaut_jaccard_informatifs": 0.7318581122016236,
+  "choix_EVITER_si_EVITER_possible": 0.0,
+  "defaut_EVITER_si_EVITER_possible": 0.0,
+  "hasard_dans_S_informatifs": 0.5457257966799952
+ }
+}

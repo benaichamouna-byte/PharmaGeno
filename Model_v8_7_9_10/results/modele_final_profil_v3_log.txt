@@ -1,0 +1,9 @@
+profils entraînement : 1116 | validation interne : 125 | ensemble final NON LU : 138 profils (23249 lignes) | 189 médicaments | config 35 : {'couches': 2, 'largeur': 1024, 'dropout': 0.1, 'bn': False, 'act': 'relu', 'lr': 0.001, 'wd': 0.0001, 'lot': 64, 'w_exp': 0.5, 'ev_x': 1.0, 'lissage': 0.05, 'patience': 25}
+validation interne (calibrée, T=0.233) : {'f1_macro': 0.9998, 'f1_hors_surveiller': 0.9997, 'exactitude': 1.0, 'CER_strict': 0.0013, 'precision_EVITER': 1.0, 'logloss': 0.0009, 'ECE': 0.0001, 'rappel_ADAPTER_DOSE': 1.0, 'rappel_EVITER': 0.9987, 'rappel_STANDARD': 1.0, 'rappel_SURVEILLER': 1.0} | 79 époques | 34s
+Fichiers écrits dans ../modeles_v10
+{
+ "0.005": 0.9894543290138245,
+ "0.010": 0.9964839816093445,
+ "0.020": 0.9987927079200745,
+ "0.050": 0.9995461106300354
+}

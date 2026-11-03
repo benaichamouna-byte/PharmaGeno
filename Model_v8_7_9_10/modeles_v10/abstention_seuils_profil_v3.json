@@ -1,0 +1,10 @@
+{
+ "source": "probabilités hors-plis calibrées de results/dl_imbrique_v14 (config 35 + calibration, 209415 lignes, moyenne des 5 graines)",
+ "regle": "abstenir (« non décidé par le modèle ») si la probabilité maximale est <= seuil ; la fraction indiquée est la part de prédictions écartées en validation croisée",
+ "seuils_confiance": {
+  "0.005": 0.9894543290138245,
+  "0.010": 0.9964839816093445,
+  "0.020": 0.9987927079200745,
+  "0.050": 0.9995461106300354
+ }
+}

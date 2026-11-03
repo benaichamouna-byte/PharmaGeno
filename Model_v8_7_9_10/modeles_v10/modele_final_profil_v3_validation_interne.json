@@ -1,0 +1,18 @@
+{
+ "epoques": 79,
+ "f1_val_interne": 0.9998,
+ "temperature": 0.2328,
+ "metriques_validation_interne_calibree": {
+  "f1_macro": 0.9998,
+  "f1_hors_surveiller": 0.9997,
+  "exactitude": 1.0,
+  "CER_strict": 0.0013,
+  "precision_EVITER": 1.0,
+  "logloss": 0.0009,
+  "ECE": 0.0001,
+  "rappel_ADAPTER_DOSE": 1.0,
+  "rappel_EVITER": 0.9987,
+  "rappel_STANDARD": 1.0,
+  "rappel_SURVEILLER": 1.0
+ }
+}
