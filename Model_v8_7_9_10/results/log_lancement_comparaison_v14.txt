@@ -1,0 +1,230 @@
+nohup: ignoring input
+== 1/6 recherche DL (40 configurations x 5 plis) sur v14 : Thu Nov  5 07:36:43 WAT 2026
+== 2/6 evaluation DL (config choisie par pli, 5 graines, calibration) : Thu Nov  5 08:06:45 WAT 2026
+== 3/6 recherche XGBoost : Thu Nov  5 08:06:56 WAT 2026
+config 0 pli 1 F1val 0.9997 (1125 arbres, 56s) | total 56s
+config 0 pli 2 F1val 0.9956 (425 arbres, 25s) | total 81s
+config 0 pli 3 F1val 0.9996 (1150 arbres, 56s) | total 137s
+config 0 pli 4 F1val 0.9960 (350 arbres, 24s) | total 161s
+config 0 pli 5 F1val 0.9974 (800 arbres, 41s) | total 202s
+config 1 pli 1 F1val 0.9997 (400 arbres, 31s) | total 233s
+config 1 pli 2 F1val 1.0000 (325 arbres, 26s) | total 259s
+config 1 pli 3 F1val 0.9998 (400 arbres, 31s) | total 290s
+config 1 pli 4 F1val 1.0000 (375 arbres, 30s) | total 319s
+config 1 pli 5 F1val 0.9995 (475 arbres, 35s) | total 355s
+config 2 pli 1 F1val 0.8899 (2000 arbres, 81s) | total 435s
+config 2 pli 2 F1val 0.8917 (1650 arbres, 80s) | total 515s
+config 2 pli 3 F1val 0.9041 (2000 arbres, 81s) | total 596s
+config 2 pli 4 F1val 0.9237 (2000 arbres, 85s) | total 682s
+config 2 pli 5 F1val 0.9208 (2000 arbres, 80s) | total 762s
+config 3 pli 1 F1val 0.9991 (1100 arbres, 60s) | total 822s
+config 3 pli 2 F1val 0.9999 (1250 arbres, 65s) | total 888s
+config 3 pli 3 F1val 0.9982 (1075 arbres, 58s) | total 945s
+config 3 pli 4 F1val 0.9995 (1375 arbres, 70s) | total 1016s
+config 3 pli 5 F1val 0.9986 (1000 arbres, 57s) | total 1072s
+config 4 pli 1 F1val 0.9991 (375 arbres, 30s) | total 1103s
+config 4 pli 2 F1val 0.9996 (325 arbres, 28s) | total 1130s
+config 4 pli 3 F1val 0.9987 (450 arbres, 38s) | total 1168s
+config 4 pli 4 F1val 0.9987 (400 arbres, 33s) | total 1201s
+config 4 pli 5 F1val 0.9981 (250 arbres, 24s) | total 1225s
+config 5 pli 1 F1val 0.9997 (175 arbres, 18s) | total 1243s
+config 5 pli 2 F1val 1.0000 (125 arbres, 15s) | total 1257s
+config 5 pli 3 F1val 0.9999 (125 arbres, 15s) | total 1273s
+config 5 pli 4 F1val 0.9999 (200 arbres, 20s) | total 1293s
+config 5 pli 5 F1val 1.0000 (175 arbres, 17s) | total 1310s
+config 6 pli 1 F1val 0.9982 (200 arbres, 27s) | total 1337s
+config 6 pli 2 F1val 0.9993 (350 arbres, 39s) | total 1377s
+config 6 pli 3 F1val 0.9971 (200 arbres, 27s) | total 1403s
+config 6 pli 4 F1val 0.9985 (250 arbres, 30s) | total 1434s
+config 6 pli 5 F1val 0.9958 (125 arbres, 21s) | total 1455s
+config 7 pli 1 F1val 0.9876 (1950 arbres, 91s) | total 1546s
+config 7 pli 2 F1val 0.9904 (2000 arbres, 91s) | total 1637s
+config 7 pli 3 F1val 0.9759 (2000 arbres, 97s) | total 1734s
+config 7 pli 4 F1val 0.9891 (2000 arbres, 92s) | total 1826s
+config 7 pli 5 F1val 0.9876 (1975 arbres, 95s) | total 1921s
+config 8 pli 1 F1val 0.9993 (650 arbres, 38s) | total 1959s
+config 8 pli 2 F1val 0.9960 (375 arbres, 27s) | total 1986s
+config 8 pli 3 F1val 0.9998 (800 arbres, 46s) | total 2032s
+config 8 pli 4 F1val 0.9997 (775 arbres, 45s) | total 2078s
+config 8 pli 5 F1val 0.9992 (775 arbres, 47s) | total 2125s
+config 9 pli 1 F1val 0.9999 (425 arbres, 34s) | total 2158s
+config 9 pli 2 F1val 0.9999 (300 arbres, 27s) | total 2185s
+config 9 pli 3 F1val 1.0000 (350 arbres, 30s) | total 2215s
+config 9 pli 4 F1val 0.9999 (350 arbres, 30s) | total 2245s
+config 9 pli 5 F1val 0.9999 (350 arbres, 30s) | total 2275s
+config 10 pli 1 F1val 0.9991 (1625 arbres, 125s) | total 2400s
+config 10 pli 2 F1val 0.9996 (1350 arbres, 104s) | total 2504s
+config 10 pli 3 F1val 0.9993 (1600 arbres, 129s) | total 2633s
+config 10 pli 4 F1val 0.9984 (850 arbres, 71s) | total 2704s
+config 10 pli 5 F1val 0.9982 (1075 arbres, 86s) | total 2790s
+config 11 pli 1 F1val 0.9997 (175 arbres, 21s) | total 2812s
+config 11 pli 2 F1val 1.0000 (125 arbres, 17s) | total 2829s
+config 11 pli 3 F1val 1.0000 (125 arbres, 21s) | total 2850s
+config 11 pli 4 F1val 0.9997 (175 arbres, 20s) | total 2870s
+config 11 pli 5 F1val 0.9996 (225 arbres, 25s) | total 2895s
+config 12 pli 1 F1val 0.9785 (2000 arbres, 90s) | total 2984s
+config 12 pli 2 F1val 0.9704 (1200 arbres, 66s) | total 3050s
+config 12 pli 3 F1val 0.9743 (2000 arbres, 92s) | total 3142s
+config 12 pli 4 F1val 0.9816 (1975 arbres, 90s) | total 3232s
+config 12 pli 5 F1val 0.9761 (1725 arbres, 84s) | total 3316s
+config 13 pli 1 F1val 0.9993 (1750 arbres, 99s) | total 3415s
+config 13 pli 2 F1val 0.9990 (1075 arbres, 61s) | total 3476s
+config 13 pli 3 F1val 0.9982 (1875 arbres, 105s) | total 3581s
+config 13 pli 4 F1val 0.9971 (1225 arbres, 71s) | total 3652s
+config 13 pli 5 F1val 0.9975 (1175 arbres, 72s) | total 3724s
+config 14 pli 1 F1val 0.9882 (2000 arbres, 92s) | total 3816s
+config 14 pli 2 F1val 0.9890 (2000 arbres, 90s) | total 3906s
+config 14 pli 3 F1val 0.9806 (1975 arbres, 86s) | total 3992s
+config 14 pli 4 F1val 0.9902 (2000 arbres, 89s) | total 4081s
+config 14 pli 5 F1val 0.9898 (1375 arbres, 66s) | total 4147s
+config 15 pli 1 F1val 0.9997 (350 arbres, 31s) | total 4178s
+config 15 pli 2 F1val 0.9999 (300 arbres, 26s) | total 4204s
+config 15 pli 3 F1val 0.9982 (225 arbres, 21s) | total 4225s
+config 15 pli 4 F1val 0.9996 (300 arbres, 27s) | total 4252s
+config 15 pli 5 F1val 0.9995 (425 arbres, 35s) | total 4288s
+config 16 pli 1 F1val 0.9997 (250 arbres, 22s) | total 4310s
+config 16 pli 2 F1val 1.0000 (275 arbres, 21s) | total 4331s
+config 16 pli 3 F1val 1.0000 (250 arbres, 20s) | total 4350s
+config 16 pli 4 F1val 0.9999 (250 arbres, 20s) | total 4370s
+config 16 pli 5 F1val 0.9996 (250 arbres, 20s) | total 4390s
+config 17 pli 1 F1val 0.9995 (1900 arbres, 98s) | total 4488s
+config 17 pli 2 F1val 0.9998 (1875 arbres, 98s) | total 4587s
+config 17 pli 3 F1val 0.9999 (1900 arbres, 99s) | total 4685s
+config 17 pli 4 F1val 0.9996 (1950 arbres, 109s) | total 4794s
+config 17 pli 5 F1val 0.9988 (1950 arbres, 101s) | total 4895s
+config 18 pli 1 F1val 0.9988 (1150 arbres, 70s) | total 4964s
+config 18 pli 2 F1val 0.9993 (925 arbres, 58s) | total 5023s
+config 18 pli 3 F1val 0.9985 (1400 arbres, 83s) | total 5106s
+config 18 pli 4 F1val 0.9993 (1400 arbres, 84s) | total 5190s
+config 18 pli 5 F1val 0.9986 (1000 arbres, 62s) | total 5252s
+config 19 pli 1 F1val 0.9991 (525 arbres, 41s) | total 5293s
+config 19 pli 2 F1val 0.9987 (400 arbres, 32s) | total 5325s
+config 19 pli 3 F1val 0.9970 (400 arbres, 31s) | total 5357s
+config 19 pli 4 F1val 0.9988 (625 arbres, 49s) | total 5406s
+config 19 pli 5 F1val 0.9986 (675 arbres, 51s) | total 5457s
+config 20 pli 1 F1val 0.9994 (350 arbres, 27s) | total 5484s
+config 20 pli 2 F1val 1.0000 (450 arbres, 33s) | total 5516s
+config 20 pli 3 F1val 0.9995 (475 arbres, 36s) | total 5552s
+config 20 pli 4 F1val 0.9993 (325 arbres, 25s) | total 5577s
+config 20 pli 5 F1val 0.9994 (400 arbres, 29s) | total 5606s
+config 21 pli 1 F1val 0.9997 (475 arbres, 33s) | total 5640s
+config 21 pli 2 F1val 0.9999 (300 arbres, 24s) | total 5663s
+config 21 pli 3 F1val 0.9998 (400 arbres, 31s) | total 5694s
+config 21 pli 4 F1val 0.9999 (400 arbres, 29s) | total 5722s
+config 21 pli 5 F1val 0.9991 (325 arbres, 25s) | total 5747s
+config 22 pli 1 F1val 0.9962 (2000 arbres, 86s) | total 5833s
+config 22 pli 2 F1val 0.9978 (2000 arbres, 87s) | total 5920s
+config 22 pli 3 F1val 0.9937 (2000 arbres, 85s) | total 6006s
+config 22 pli 4 F1val 0.9961 (2000 arbres, 86s) | total 6092s
+config 22 pli 5 F1val 0.9934 (1925 arbres, 91s) | total 6183s
+config 23 pli 1 F1val 0.9993 (400 arbres, 26s) | total 6209s
+config 23 pli 2 F1val 0.9999 (325 arbres, 23s) | total 6231s
+config 23 pli 3 F1val 0.9989 (650 arbres, 41s) | total 6272s
+config 23 pli 4 F1val 0.9995 (350 arbres, 24s) | total 6297s
+config 23 pli 5 F1val 0.9990 (400 arbres, 26s) | total 6323s
+config 24 pli 1 F1val 0.9993 (600 arbres, 46s) | total 6369s
+config 24 pli 2 F1val 1.0000 (600 arbres, 45s) | total 6414s
+config 24 pli 3 F1val 0.9944 (200 arbres, 19s) | total 6433s
+config 24 pli 4 F1val 0.9989 (625 arbres, 46s) | total 6480s
+config 24 pli 5 F1val 0.9976 (400 arbres, 33s) | total 6513s
+config 25 pli 1 F1val 0.9986 (1675 arbres, 84s) | total 6597s
+config 25 pli 2 F1val 0.9994 (1625 arbres, 81s) | total 6678s
+config 25 pli 3 F1val 0.9986 (2000 arbres, 91s) | total 6769s
+config 25 pli 4 F1val 0.9992 (1975 arbres, 90s) | total 6860s
+config 25 pli 5 F1val 0.9973 (1225 arbres, 66s) | total 6926s
+config 26 pli 1 F1val 0.9997 (1175 arbres, 78s) | total 7003s
+config 26 pli 2 F1val 0.9997 (700 arbres, 49s) | total 7052s
+config 26 pli 3 F1val 0.9998 (1050 arbres, 70s) | total 7122s
+config 26 pli 4 F1val 0.9998 (1000 arbres, 74s) | total 7197s
+config 26 pli 5 F1val 0.9986 (650 arbres, 47s) | total 7243s
+config 27 pli 1 F1val 0.9991 (375 arbres, 38s) | total 7281s
+config 27 pli 2 F1val 0.9993 (325 arbres, 32s) | total 7313s
+config 27 pli 3 F1val 0.9972 (175 arbres, 21s) | total 7334s
+config 27 pli 4 F1val 0.9988 (325 arbres, 32s) | total 7365s
+config 27 pli 5 F1val 0.9979 (225 arbres, 24s) | total 7389s
+config 28 pli 1 F1val 0.9994 (325 arbres, 26s) | total 7415s
+config 28 pli 2 F1val 1.0000 (375 arbres, 29s) | total 7444s
+config 28 pli 3 F1val 0.9994 (325 arbres, 26s) | total 7470s
+config 28 pli 4 F1val 0.9999 (375 arbres, 32s) | total 7502s
+config 28 pli 5 F1val 0.9996 (350 arbres, 27s) | total 7530s
+config 29 pli 1 F1val 0.9997 (150 arbres, 17s) | total 7546s
+config 29 pli 2 F1val 0.9999 (100 arbres, 15s) | total 7561s
+config 29 pli 3 F1val 0.9996 (125 arbres, 15s) | total 7576s
+config 29 pli 4 F1val 0.9999 (175 arbres, 18s) | total 7594s
+config 29 pli 5 F1val 0.9997 (250 arbres, 22s) | total 7616s
+config 30 pli 1 F1val 0.9994 (325 arbres, 29s) | total 7645s
+config 30 pli 2 F1val 0.9998 (325 arbres, 28s) | total 7673s
+config 30 pli 3 F1val 0.9989 (250 arbres, 23s) | total 7696s
+config 30 pli 4 F1val 0.9985 (300 arbres, 26s) | total 7723s
+config 30 pli 5 F1val 0.9993 (625 arbres, 50s) | total 7773s
+config 31 pli 1 F1val 0.9894 (2000 arbres, 87s) | total 7860s
+config 31 pli 2 F1val 0.9917 (1950 arbres, 87s) | total 7946s
+config 31 pli 3 F1val 0.9863 (2000 arbres, 87s) | total 8033s
+config 31 pli 4 F1val 0.9896 (1975 arbres, 87s) | total 8120s
+config 31 pli 5 F1val 0.9891 (1950 arbres, 88s) | total 8208s
+config 32 pli 1 F1val 0.9980 (875 arbres, 57s) | total 8266s
+config 32 pli 2 F1val 0.9997 (1075 arbres, 72s) | total 8337s
+config 32 pli 3 F1val 0.9977 (1100 arbres, 71s) | total 8409s
+config 32 pli 4 F1val 0.9972 (1025 arbres, 66s) | total 8474s
+config 32 pli 5 F1val 0.9978 (800 arbres, 53s) | total 8528s
+config 33 pli 1 F1val 0.9991 (1800 arbres, 93s) | total 8621s
+config 33 pli 2 F1val 0.9994 (1950 arbres, 89s) | total 8710s
+config 33 pli 3 F1val 0.9984 (1825 arbres, 86s) | total 8796s
+config 33 pli 4 F1val 0.9994 (1925 arbres, 92s) | total 8888s
+config 33 pli 5 F1val 0.9981 (1575 arbres, 81s) | total 8969s
+config 34 pli 1 F1val 0.9988 (725 arbres, 50s) | total 9019s
+config 34 pli 2 F1val 0.9999 (800 arbres, 60s) | total 9079s
+config 34 pli 3 F1val 0.9996 (950 arbres, 67s) | total 9146s
+config 34 pli 4 F1val 0.9999 (1075 arbres, 72s) | total 9218s
+config 34 pli 5 F1val 0.9992 (900 arbres, 60s) | total 9279s
+config 35 pli 1 F1val 0.9997 (625 arbres, 37s) | total 9316s
+config 35 pli 2 F1val 0.9998 (475 arbres, 29s) | total 9345s
+config 35 pli 3 F1val 0.9998 (475 arbres, 29s) | total 9375s
+config 35 pli 4 F1val 0.9997 (450 arbres, 28s) | total 9403s
+config 35 pli 5 F1val 0.9996 (475 arbres, 29s) | total 9432s
+config 36 pli 1 F1val 0.9997 (850 arbres, 54s) | total 9486s
+config 36 pli 2 F1val 1.0000 (825 arbres, 52s) | total 9538s
+config 36 pli 3 F1val 1.0000 (975 arbres, 64s) | total 9603s
+config 36 pli 4 F1val 0.9999 (1000 arbres, 62s) | total 9664s
+config 36 pli 5 F1val 0.9992 (675 arbres, 45s) | total 9709s
+config 37 pli 1 F1val 0.9993 (275 arbres, 21s) | total 9730s
+config 37 pli 2 F1val 0.9999 (550 arbres, 38s) | total 9769s
+config 37 pli 3 F1val 0.9990 (350 arbres, 27s) | total 9796s
+config 37 pli 4 F1val 0.9996 (375 arbres, 26s) | total 9822s
+config 37 pli 5 F1val 0.9988 (500 arbres, 34s) | total 9856s
+config 38 pli 1 F1val 0.9991 (700 arbres, 42s) | total 9898s
+config 38 pli 2 F1val 0.9996 (725 arbres, 42s) | total 9940s
+config 38 pli 3 F1val 0.9970 (750 arbres, 47s) | total 9987s
+config 38 pli 4 F1val 0.9991 (925 arbres, 52s) | total 10040s
+config 38 pli 5 F1val 0.9969 (425 arbres, 29s) | total 10068s
+config 39 pli 1 F1val 0.9931 (1050 arbres, 64s) | total 10132s
+config 39 pli 2 F1val 0.9956 (750 arbres, 47s) | total 10179s
+config 39 pli 3 F1val 0.9926 (1000 arbres, 60s) | total 10240s
+config 39 pli 4 F1val 0.9936 (950 arbres, 57s) | total 10297s
+config 39 pli 5 F1val 0.9960 (1000 arbres, 60s) | total 10357s
+== 4/6 evaluation XGBoost : Thu Nov  5 10:59:39 WAT 2026
+Traceback (most recent call last):
+  File "/home/mouna/projet_memoire/Model_v8_7_9_10/scripts/evaluer_arbres_imbrique_v1.py", line 63, in <module>
+    main()
+  File "/home/mouna/projet_memoire/Model_v8_7_9_10/scripts/evaluer_arbres_imbrique_v1.py", line 25, in main
+    final, folds = pc.decouper(d['groups'], y); niv = niveau_par_medicament(); drug_niv = np.array([niv[m] for m in d['meds']])
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mouna/projet_memoire/Model_v8_7_9_10/scripts/evaluer_dl_imbrique_v5.py", line 20, in niveau_par_medicament
+    r = pd.read_csv('../data/regles_v14_monogene.csv'); m = pd.read_csv('../data/regles_v13_multigene.csv')
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mouna/miniforge3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mouna/miniforge3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mouna/miniforge3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mouna/miniforge3/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/mouna/miniforge3/lib/python3.12/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../data/regles_v13_multigene.csv'

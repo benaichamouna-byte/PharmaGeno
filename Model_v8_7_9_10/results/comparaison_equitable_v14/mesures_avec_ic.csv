@@ -1,0 +1,41 @@
+statistique,modele,mesure,estimation,ic95_bas,ic95_haut
+moyenne_graines,DL,f1_macro,0.99676,0.99545,0.99783
+moyenne_graines,DL,EVITER_manques,64.4,38.0,96.405
+moyenne_graines,DL,faux_EVITER,18.8,9.8,30.4
+moyenne_graines,DL,erreurs,187.2,132.0,261.605
+moyenne_graines,DL,precision_EVITER,0.99738,0.99581,0.99865
+moyenne_graines,XGBoost,f1_macro,0.99941,0.99907,0.99968
+moyenne_graines,XGBoost,EVITER_manques,17.4,7.595,29.8
+moyenne_graines,XGBoost,faux_EVITER,1.4,0.0,4.2
+moyenne_graines,XGBoost,erreurs,41.8,27.195,58.2
+moyenne_graines,XGBoost,precision_EVITER,0.99981,0.9994,1.0
+moyenne_graines,Forêt aléatoire,f1_macro,0.99333,0.99177,0.99477
+moyenne_graines,Forêt aléatoire,EVITER_manques,150.0,106.8,197.4
+moyenne_graines,Forêt aléatoire,faux_EVITER,5.0,0.0,15.0
+moyenne_graines,Forêt aléatoire,erreurs,525.6,419.19,645.61
+moyenne_graines,Forêt aléatoire,precision_EVITER,0.99929,0.99783,1.0
+moyenne_graines,DL c35 fige (modele de l'application),f1_macro,0.99787,0.9971,0.99852
+moyenne_graines,DL c35 fige (modele de l'application),EVITER_manques,60.2,37.6,86.2
+moyenne_graines,DL c35 fige (modele de l'application),faux_EVITER,8.4,3.0,15.2
+moyenne_graines,DL c35 fige (modele de l'application),erreurs,113.0,83.995,146.4
+moyenne_graines,DL c35 fige (modele de l'application),precision_EVITER,0.99883,0.99789,0.99958
+ensemble_graines,DL,f1_macro,0.99689,0.99526,0.99816
+ensemble_graines,DL,EVITER_manques,64.0,36.0,98.0
+ensemble_graines,DL,faux_EVITER,13.0,5.0,23.0
+ensemble_graines,DL,erreurs,172.0,106.0,263.0
+ensemble_graines,DL,precision_EVITER,0.99819,0.99676,0.99931
+ensemble_graines,XGBoost,f1_macro,0.99941,0.99907,0.99969
+ensemble_graines,XGBoost,EVITER_manques,17.0,7.0,29.0
+ensemble_graines,XGBoost,faux_EVITER,1.0,0.0,3.0
+ensemble_graines,XGBoost,erreurs,44.0,27.0,63.0
+ensemble_graines,XGBoost,precision_EVITER,0.99986,0.99957,1.0
+ensemble_graines,Forêt aléatoire,f1_macro,0.99339,0.99177,0.99485
+ensemble_graines,Forêt aléatoire,EVITER_manques,147.0,104.0,195.0
+ensemble_graines,Forêt aléatoire,faux_EVITER,5.0,0.0,15.0
+ensemble_graines,Forêt aléatoire,erreurs,522.0,411.0,644.0
+ensemble_graines,Forêt aléatoire,precision_EVITER,0.99929,0.99783,1.0
+ensemble_graines,DL c35 fige (modele de l'application),f1_macro,0.99805,0.99725,0.99872
+ensemble_graines,DL c35 fige (modele de l'application),EVITER_manques,59.0,36.0,85.025
+ensemble_graines,DL c35 fige (modele de l'application),faux_EVITER,7.0,1.0,15.0
+ensemble_graines,DL c35 fige (modele de l'application),erreurs,98.0,69.0,132.0
+ensemble_graines,DL c35 fige (modele de l'application),precision_EVITER,0.99902,0.99793,0.99986

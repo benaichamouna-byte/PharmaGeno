@@ -1,0 +1,49 @@
+statistique,modele,mesure,estimation,ic95_bas,ic95_haut
+moyenne_graines,DL,f1_macro,0.996763,0.995447,0.997828
+moyenne_graines,DL,EVITER_manques,64.4,38.0,96.405
+moyenne_graines,DL,faux_EVITER,18.8,9.8,30.4
+moyenne_graines,DL,erreurs,187.2,132.0,261.605
+moyenne_graines,DL,precision_EVITER,0.997382,0.995809,0.99865
+moyenne_graines,DL,taux_EVITER_manques,0.008911,0.005296,0.013279
+moyenne_graines,XGBoost,f1_macro,0.999414,0.999072,0.999678
+moyenne_graines,XGBoost,EVITER_manques,17.4,7.595,29.8
+moyenne_graines,XGBoost,faux_EVITER,1.4,0.0,4.2
+moyenne_graines,XGBoost,erreurs,41.8,27.195,58.2
+moyenne_graines,XGBoost,precision_EVITER,0.999806,0.999401,1.0
+moyenne_graines,XGBoost,taux_EVITER_manques,0.002408,0.001039,0.004176
+moyenne_graines,Forêt aléatoire,f1_macro,0.993332,0.991771,0.994773
+moyenne_graines,Forêt aléatoire,EVITER_manques,150.0,106.8,197.4
+moyenne_graines,Forêt aléatoire,faux_EVITER,5.0,0.0,15.0
+moyenne_graines,Forêt aléatoire,erreurs,525.6,419.19,645.61
+moyenne_graines,Forêt aléatoire,precision_EVITER,0.999294,0.997827,1.0
+moyenne_graines,Forêt aléatoire,taux_EVITER_manques,0.020756,0.014995,0.02691
+moyenne_graines,DL c35 fige (modele de l'application),f1_macro,0.997867,0.997097,0.998518
+moyenne_graines,DL c35 fige (modele de l'application),EVITER_manques,60.2,37.6,86.2
+moyenne_graines,DL c35 fige (modele de l'application),faux_EVITER,8.4,3.0,15.2
+moyenne_graines,DL c35 fige (modele de l'application),erreurs,113.0,83.995,146.4
+moyenne_graines,DL c35 fige (modele de l'application),precision_EVITER,0.998829,0.997893,0.99958
+moyenne_graines,DL c35 fige (modele de l'application),taux_EVITER_manques,0.00833,0.005227,0.011875
+ensemble_graines,DL,f1_macro,0.996892,0.995259,0.998155
+ensemble_graines,DL,EVITER_manques,64.0,36.0,98.0
+ensemble_graines,DL,faux_EVITER,13.0,5.0,23.0
+ensemble_graines,DL,erreurs,172.0,106.0,263.0
+ensemble_graines,DL,precision_EVITER,0.998188,0.996763,0.99931
+ensemble_graines,DL,taux_EVITER_manques,0.008856,0.005036,0.013562
+ensemble_graines,XGBoost,f1_macro,0.999411,0.999067,0.999686
+ensemble_graines,XGBoost,EVITER_manques,17.0,7.0,29.0
+ensemble_graines,XGBoost,faux_EVITER,1.0,0.0,3.0
+ensemble_graines,XGBoost,erreurs,44.0,27.0,63.0
+ensemble_graines,XGBoost,precision_EVITER,0.999861,0.999572,1.0
+ensemble_graines,XGBoost,taux_EVITER_manques,0.002352,0.000967,0.004114
+ensemble_graines,Forêt aléatoire,f1_macro,0.993385,0.991768,0.994846
+ensemble_graines,Forêt aléatoire,EVITER_manques,147.0,104.0,195.0
+ensemble_graines,Forêt aléatoire,faux_EVITER,5.0,0.0,15.0
+ensemble_graines,Forêt aléatoire,erreurs,522.0,411.0,644.0
+ensemble_graines,Forêt aléatoire,precision_EVITER,0.999294,0.997828,1.0
+ensemble_graines,Forêt aléatoire,taux_EVITER_manques,0.02034,0.014526,0.02661
+ensemble_graines,DL c35 fige (modele de l'application),f1_macro,0.998046,0.997251,0.998717
+ensemble_graines,DL c35 fige (modele de l'application),EVITER_manques,59.0,36.0,85.025
+ensemble_graines,DL c35 fige (modele de l'application),faux_EVITER,7.0,1.0,15.0
+ensemble_graines,DL c35 fige (modele de l'application),erreurs,98.0,69.0,132.0
+ensemble_graines,DL c35 fige (modele de l'application),precision_EVITER,0.999024,0.997927,0.999858
+ensemble_graines,DL c35 fige (modele de l'application),taux_EVITER_manques,0.008164,0.005081,0.011803

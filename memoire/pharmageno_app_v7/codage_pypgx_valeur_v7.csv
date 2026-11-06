@@ -1,0 +1,17 @@
+phenotype_pypgx,valeur
+Poor Metabolizer,0.0
+Likely Poor Metabolizer,0.0
+Poor Function,0.0
+Unfavorable Response,0.0
+Intermediate Metabolizer,0.5
+Likely Intermediate Metabolizer,0.5
+Possible Intermediate Metabolizer,0.5
+Decreased Function,0.5
+Possible Decreased Function,0.5
+Normal Metabolizer,1.0
+Normal Function,1.0
+Favorable Response,1.0
+Rapid Metabolizer,1.5
+Increased Function,1.5
+Ultrarapid Metabolizer,2.0
+Indeterminate,

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block corps %}
+<h1>Analyse en cours</h1>
+<div class="carte">
+{% if j.etat == 'refuse' %}
+<div class="erreur"><b>Fichier refusé.</b><br>{{ j.message }}</div><a class="btn" href="{{ url_for('index') }}">Revenir à l'accueil</a>
+{% elif j.etat == 'erreur' %}
+<div class="erreur">{{ j.message }}</div><a class="btn" href="{{ url_for('index') }}">Revenir à l'accueil</a>
+{% else %}
+<p id="msg">{{ j.message }}</p>
+<div class="barre" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ j.pct }}"><div id="b" style="width:{{ j.pct }}%">{{ j.pct }} %</div></div>
+<p class="petit gris">Ne fermez pas cette page. L'analyse prend quelques minutes.</p>
+<script>
+async function tick(){
+  try{
+    const r = await fetch("{{ url_for('etat', jid=j.id) }}"); const d = await r.json();
+    document.getElementById('msg').textContent = d.message;
+    const b = document.getElementById('b'); b.style.width = d.pct + '%'; b.textContent = d.pct + ' %';
+    if(d.etat !== 'en_cours'){ location.href = "{{ url_for('progression', jid=j.id) }}"; return; }
+  }catch(e){}
+  setTimeout(tick, 1500);
+}
+tick();
+</script>
+{% endif %}
+</div>
+{% endblock %}

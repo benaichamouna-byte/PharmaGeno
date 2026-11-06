@@ -1,0 +1,45 @@
+{
+ "modele": "DL",
+ "protocole": "StratifiedGroupKFold(5) groupes=family_id graine=42",
+ "n_lignes": 76028,
+ "genes": [
+  "ABCG2",
+  "CYP2B6",
+  "CYP2C19",
+  "CYP2C9",
+  "CYP2D6",
+  "CYP3A5",
+  "DPYD",
+  "F5",
+  "NUDT15",
+  "SLCO1B1",
+  "TPMT",
+  "UGT1A1"
+ ],
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "f1_macro_moy": 0.9329600000000001,
+ "f1_macro_std": 0.010293415371002958,
+ "CER_strict_moy": 0.0331,
+ "ECE_moy": 0.02016,
+ "f1_macro_oof": 0.932831152224151,
+ "f1_macro_oof_confiance_haute": 0.9248915239672655,
+ "attention_moyenne_par_gene": {
+  "ABCG2": 0.07850000262260437,
+  "CYP2B6": 0.07660000026226044,
+  "CYP2C19": 0.10000000149011612,
+  "CYP2C9": 0.07660000026226044,
+  "CYP2D6": 0.10790000110864639,
+  "CYP3A5": 0.07739999890327454,
+  "DPYD": 0.08389999717473984,
+  "F5": 0.07909999787807465,
+  "NUDT15": 0.08070000261068344,
+  "SLCO1B1": 0.07840000092983246,
+  "TPMT": 0.08160000294446945,
+  "UGT1A1": 0.07930000126361847
+ }
+}

@@ -1,0 +1,87 @@
+specialite,code_atc,niveau_atc,nom_atc_officiel,description_fr,nb_medicaments_corpus_avec_empreinte,statut
+Oncologie,L01,3,antineoplastic agents,antinéoplasiques,40,"proposé (choix de conception, à valider)"
+Oncologie,L02,3,endocrine therapy,thérapie endocrine (ex. tamoxifène),6,"proposé (choix de conception, à valider)"
+Oncologie,A04,3,antiemetics and antinauseants,antiémétiques (soutien),4,"proposé (choix de conception, à valider)"
+Oncologie,V03AF,4,detoxifying agents for antineoplastic treatment,détoxifiants des traitements antinéoplasiques,1,"proposé (choix de conception, à valider)"
+Oncologie,TOTAL,,,médicaments distincts de la spécialité,51,
+Psychiatrie,N05,3,psycholeptics,psycholeptiques,22,"proposé (choix de conception, à valider)"
+Psychiatrie,N06,3,psychoanaleptics,psychoanaleptiques,38,"proposé (choix de conception, à valider)"
+Psychiatrie,N07B,3,drugs used in addictive disorders,médicaments des addictions,5,"proposé (choix de conception, à valider)"
+Psychiatrie,TOTAL,,,médicaments distincts de la spécialité,65,
+Neurologie,N03,3,antiepileptics,antiépileptiques,15,"proposé (choix de conception, à valider)"
+Neurologie,N04,3,anti-parkinson drugs,antiparkinsoniens,1,"proposé (choix de conception, à valider)"
+Neurologie,N07,3,other nervous system drugs,autres médicaments du système nerveux,7,"proposé (choix de conception, à valider)"
+Neurologie,N02C,3,antimigraine preparations,antimigraineux,1,"proposé (choix de conception, à valider)"
+Neurologie,TOTAL,,,médicaments distincts de la spécialité,24,
+Douleur et anesthésie-réanimation,N01,3,anesthetics,anesthésiques,9,"proposé (choix de conception, à valider)"
+Douleur et anesthésie-réanimation,N02,3,analgesics,analgésiques,16,"proposé (choix de conception, à valider)"
+Douleur et anesthésie-réanimation,M03,3,muscle relaxants,myorelaxants,4,"proposé (choix de conception, à valider)"
+Douleur et anesthésie-réanimation,TOTAL,,,médicaments distincts de la spécialité,28,
+Cardiologie,C01,3,cardiac therapy,thérapie cardiaque,11,"proposé (choix de conception, à valider)"
+Cardiologie,C02,3,antihypertensives,antihypertenseurs,3,"proposé (choix de conception, à valider)"
+Cardiologie,C03,3,diuretics,diurétiques,0,"proposé (choix de conception, à valider)"
+Cardiologie,C04,3,peripheral vasodilators,vasodilatateurs périphériques,1,"proposé (choix de conception, à valider)"
+Cardiologie,C05,3,vasoprotectives,vasoprotecteurs,1,"proposé (choix de conception, à valider)"
+Cardiologie,C07,3,beta blocking agents,bêta-bloquants,15,"proposé (choix de conception, à valider)"
+Cardiologie,C08,3,calcium channel blockers,inhibiteurs calciques,5,"proposé (choix de conception, à valider)"
+Cardiologie,C09,3,agents acting on the renin-angiotensin system,système rénine-angiotensine,5,"proposé (choix de conception, à valider)"
+Cardiologie,C10,3,lipid modifying agents,hypolipémiants,9,"proposé (choix de conception, à valider)"
+Cardiologie,B01,3,antithrombotic agents,antithrombotiques,14,"proposé (choix de conception, à valider)"
+Cardiologie,TOTAL,,,médicaments distincts de la spécialité,64,
+Hématologie,B01,3,antithrombotic agents,antithrombotiques,14,"proposé (choix de conception, à valider)"
+Hématologie,B02,3,antihemorrhagics,antihémorragiques,1,"proposé (choix de conception, à valider)"
+Hématologie,B03,3,antianemic preparations,antianémiques,0,"proposé (choix de conception, à valider)"
+Hématologie,TOTAL,,,médicaments distincts de la spécialité,15,
+Maladies infectieuses,J01,3,antibacterials for systemic use,antibactériens systémiques,22,"proposé (choix de conception, à valider)"
+Maladies infectieuses,J02,3,antimycotics for systemic use,antimycosiques systémiques,3,"proposé (choix de conception, à valider)"
+Maladies infectieuses,J04,3,antimycobacterials,antimycobactériens,3,"proposé (choix de conception, à valider)"
+Maladies infectieuses,J05,3,antivirals for systemic use,antiviraux systémiques,17,"proposé (choix de conception, à valider)"
+Maladies infectieuses,J07,3,vaccines,vaccins,0,"proposé (choix de conception, à valider)"
+Maladies infectieuses,P01,3,antiprotozoals,antiprotozoaires,9,"proposé (choix de conception, à valider)"
+Maladies infectieuses,P02,3,anthelmintics,anthelminthiques,1,"proposé (choix de conception, à valider)"
+Maladies infectieuses,TOTAL,,,médicaments distincts de la spécialité,54,
+Gastro-entérologie,A02,3,drugs for acid related disorders,troubles liés à l'acidité,12,"proposé (choix de conception, à valider)"
+Gastro-entérologie,A03,3,drugs for functional gastrointestinal disorders,troubles fonctionnels gastro-intestinaux,1,"proposé (choix de conception, à valider)"
+Gastro-entérologie,A04,3,antiemetics and antinauseants,antiémétiques,4,"proposé (choix de conception, à valider)"
+Gastro-entérologie,A05,3,bile and liver therapy,bile et foie,1,"proposé (choix de conception, à valider)"
+Gastro-entérologie,A06,3,drugs for constipation,laxatifs,1,"proposé (choix de conception, à valider)"
+Gastro-entérologie,A07,3,"antidiarrheals, intestinal antiinflammatory/antiinfective agents",antidiarrhéiques et anti-inflammatoires intestinaux,5,"proposé (choix de conception, à valider)"
+Gastro-entérologie,TOTAL,,,médicaments distincts de la spécialité,24,
+Endocrinologie et diabète,A10,3,drugs used in diabetes,antidiabétiques,13,"proposé (choix de conception, à valider)"
+Endocrinologie et diabète,H02,3,corticosteroids for systemic use,corticoïdes systémiques,1,"proposé (choix de conception, à valider)"
+Endocrinologie et diabète,H03,3,thyroid therapy,thérapie thyroïdienne,0,"proposé (choix de conception, à valider)"
+Endocrinologie et diabète,G03,3,sex hormones and modulators of the genital system,hormones sexuelles,3,"proposé (choix de conception, à valider)"
+Endocrinologie et diabète,TOTAL,,,médicaments distincts de la spécialité,17,
+Rhumatologie,M01,3,antiinflammatory and antirheumatic products,anti-inflammatoires et antirhumatismaux,15,"proposé (choix de conception, à valider)"
+Rhumatologie,M02,3,topical products for joint and muscular pain,topiques douleurs articulaires et musculaires,8,"proposé (choix de conception, à valider)"
+Rhumatologie,M04,3,antigout preparations,antigoutteux,3,"proposé (choix de conception, à valider)"
+Rhumatologie,M05,3,drugs for treatment of bone diseases,maladies osseuses,0,"proposé (choix de conception, à valider)"
+Rhumatologie,TOTAL,,,médicaments distincts de la spécialité,18,
+Immunologie et transplantation,L04,3,immunosuppressants,immunosuppresseurs,13,"proposé (choix de conception, à valider)"
+Immunologie et transplantation,TOTAL,,,médicaments distincts de la spécialité,13,
+Urologie,G04,3,urologicals,urologiques,10,"proposé (choix de conception, à valider)"
+Urologie,TOTAL,,,médicaments distincts de la spécialité,10,
+Gynécologie-obstétrique,G01,3,gynecological antiinfectives and antiseptics,anti-infectieux gynécologiques,4,"proposé (choix de conception, à valider)"
+Gynécologie-obstétrique,G02,3,other gynecologicals,autres gynécologiques,2,"proposé (choix de conception, à valider)"
+Gynécologie-obstétrique,G03,3,sex hormones and modulators of the genital system,hormones sexuelles,3,"proposé (choix de conception, à valider)"
+Gynécologie-obstétrique,TOTAL,,,médicaments distincts de la spécialité,9,
+Ophtalmologie,S01,3,ophthalmologicals,ophtalmologiques,27,"proposé (choix de conception, à valider)"
+Ophtalmologie,S03,3,ophthalmological and otological preparations,préparations ophtalmologiques et otologiques,5,"proposé (choix de conception, à valider)"
+Ophtalmologie,TOTAL,,,médicaments distincts de la spécialité,27,
+ORL,S02,3,otologicals,otologiques,6,"proposé (choix de conception, à valider)"
+ORL,S03,3,ophthalmological and otological preparations,préparations ophtalmologiques et otologiques,5,"proposé (choix de conception, à valider)"
+ORL,R01,3,nasal preparations,préparations nasales,1,"proposé (choix de conception, à valider)"
+ORL,R02,3,throat preparations,préparations pour la gorge,3,"proposé (choix de conception, à valider)"
+ORL,TOTAL,,,médicaments distincts de la spécialité,8,
+Dermatologie,D01,3,antifungals for dermatological use,antifongiques dermatologiques,2,"proposé (choix de conception, à valider)"
+Dermatologie,D04,3,"antipruritics, incl. antihistamines, anesthetics, etc.",antiprurigineux,2,"proposé (choix de conception, à valider)"
+Dermatologie,D06,3,antibiotics and chemotherapeutics for dermatological use,antibiotiques et chimiothérapie dermatologiques,8,"proposé (choix de conception, à valider)"
+Dermatologie,D07,3,"corticosteroids, dermatological preparations",corticoïdes dermatologiques,1,"proposé (choix de conception, à valider)"
+Dermatologie,D10,3,anti-acne preparations,anti-acnéiques,5,"proposé (choix de conception, à valider)"
+Dermatologie,D11,3,other dermatological preparations,autres dermatologiques,3,"proposé (choix de conception, à valider)"
+Dermatologie,TOTAL,,,médicaments distincts de la spécialité,19,
+Pneumologie et allergologie,R03,3,drugs for obstructive airway diseases,maladies obstructives des voies aériennes,3,"proposé (choix de conception, à valider)"
+Pneumologie et allergologie,R05,3,cough and cold preparations,toux et rhume,5,"proposé (choix de conception, à valider)"
+Pneumologie et allergologie,R06,3,antihistamines for systemic use,antihistaminiques systémiques,1,"proposé (choix de conception, à valider)"
+Pneumologie et allergologie,R07,3,other respiratory system products,autres produits respiratoires,1,"proposé (choix de conception, à valider)"
+Pneumologie et allergologie,TOTAL,,,médicaments distincts de la spécialité,10,

@@ -1,0 +1,28 @@
+=== ETAPE 1/4 : WSL -> Windows (/mnt/c/Users/MSI/Desktop/memoire/Model_v8_7_9_10)
+  copie terminee (fichiers plus recents seulement ; rien n'est supprime ni remplace par plus ancien)
+=== ETAPE 2/4 : controle des fichiers copies (sha256 sur les fichiers legers)
+  scripts/docs/journal : 289 identiques, 0 differents
+=== ETAPE 3/4 : preparation du depot Drive (/mnt/c/Users/MSI/Desktop/memoire/A_deposer_sur_Drive) — fichiers modifies depuis 2026-10-23
+  536 fichier(s) prepares dans /mnt/c/Users/MSI/Desktop/memoire/A_deposer_sur_Drive
+  (liste : /mnt/c/Users/MSI/Desktop/memoire/A_deposer_sur_Drive/_LISTE_DES_FICHIERS_A_DEPOSER.txt ; exclus : /mnt/c/Users/MSI/Desktop/memoire/A_deposer_sur_Drive/_EXCLUS_et_pourquoi.txt)
+=== ETAPE 4/4 : GitHub
+?? Model_v8_7_9_10/MANIFESTE_app_v8o_29oct2026.sha256
+?? Model_v8_7_9_10/data/regles_v13_multigene.csv
+?? Model_v8_7_9_10/docs_protocole/
+?? Model_v8_7_9_10/results/comparaison_equitable_v14/
+?? Model_v8_7_9_10/results/dl_hp_v14/
+?? Model_v8_7_9_10/results/dl_hp_v14_DOUBLON_5nov_0737/
+?? Model_v8_7_9_10/results/dl_imbrique_v14_equitable/
+?? Model_v8_7_9_10/results/eval_arbres_v14_rf/
+?? Model_v8_7_9_10/results/eval_arbres_v14_xgb/
+?? Model_v8_7_9_10/results/hp_arbres_v14_rf/
+?? Model_v8_7_9_10/results/hp_arbres_v14_xgb/
+?? Model_v8_7_9_10/results/log_comparaison_equitable_v14.txt
+?? Model_v8_7_9_10/results/log_comparaison_equitable_v14_v2.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part0.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part1.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part2.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part3.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part4.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part5.txt
+?? Model_v8_7_9_10/results/log_dl_eval_v14_part6.txt

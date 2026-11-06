@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% macro badge(a, t) %}<span class="badge {{ a or 'NE' }}">{{ t }}</span>{% endmacro %}
+{% block corps %}
+<h1>Résultats - {{ spec }}</h1>
+<div class="alerte"><b>Important.</b> {{ avertissement }}</div>
+{% if j.mode == 'demo' %}<div class="info"><b>Profil de démonstration</b> (issu du corpus d'entraînement) : aucun patient réel.</div>
+{% else %}<div class="info">Fichier : {{ j.nom_fichier }} - assemblage {{ j.assemblage }}.</div>{% endif %}
+
+<div class="carte"><h2>Résumé</h2><p>{{ resume }}</p>
+{% if manq %}<div class="alerte">Gènes non déterminés qui bloquent des médicaments : {% for g, n in manq|dictsort %}<b>{{ g }}</b> ({{ n }} médicament{{ 's' if n > 1 }}){% if not loop.last %}, {% endif %}{% endfor %}. Un médicament dont un gène n'est pas lu n'est jamais « supposé normal » : il est déclaré non évalué.</div>{% endif %}
+<form method="get" style="display:flex;gap:10px;flex-wrap:wrap;align-items:end">
+<div style="flex:1;min-width:220px"><label for="sp">Changer de spécialité</label><select id="sp" name="specialite" onchange="this.form.submit()">
+{% for s, n in specialites %}<option value="{{ s }}" {% if s == spec %}selected{% endif %} {% if n == 0 %}disabled{% endif %}>{{ s }} ({{ n }})</option>{% endfor %}</select></div>
+<div style="flex:1;min-width:220px"><label for="q">Rechercher un médicament</label><input type="text" id="q" name="q" list="meds" value="{{ q }}" placeholder="nom de la substance active, ex. warfarin">
+<datalist id="meds">{% for m in noms %}<option value="{{ m }}">{% endfor %}</datalist></div>
+<div><button type="submit">Rechercher</button></div>
+<div><a class="btn sec" href="{{ url_for('pdf', jid=j.id, specialite=spec, q=q) }}">Télécharger le PDF</a></div>
+</form></div>
+
+{% if fiche %}
+<div class="carte"><h2>Médicament recherché : {{ fiche.medicament if fiche.trouve else q }}</h2>
+{% if not fiche.trouve %}<div class="erreur">{{ fiche.message }}</div>
+{% else %}
+<p>{{ badge(fiche.action, fiche.libelle) }}</p>
+<div class="patient">{{ fiche.texte_patient }}</div>
+{% if fiche.explication %}<table><tr><th>Gène pris en compte</th><th>Lecture</th></tr>{% for e in fiche.explication %}<tr><td>{{ e.gene }}</td><td>{{ e.lecture }}</td></tr>{% endfor %}</table>{% endif %}
+{% if fiche.resultat.genes_regle_hors_modele %}<div class="alerte">Ce médicament dépend aussi du gène {{ fiche.resultat.genes_regle_hors_modele|join(', ') }}, qui n'est pas analysé par l'outil.</div>{% endif %}
+{% if fiche.alternatives is defined %}<p><b>Alternatives de la même classe</b> (sans adaptation génétique pour ce profil ; équivalence clinique non affirmée) : {{ fiche.alternatives|map(attribute='medicament')|join(', ') or 'aucune parmi les médicaments pris en charge' }}.</p>{% endif %}
+{% endif %}</div>
+{% endif %}
+
+<div class="carte"><h2>Médicaments proposés (compatibilité génétique uniquement)</h2>
+{% if reco.proposes %}
+<table><tr><th>Rang</th><th>Médicament</th><th>Conclusion</th><th>Confiance</th><th>Gènes pris en compte</th></tr>
+{% for p in reco.proposes %}<tr><td>{{ p.rang }}</td><td><b>{{ p.medicament }}</b></td><td>{{ badge(p.action, p.libelle) }}</td><td>{{ '%.1f'|format(100 * p.confiance) }} %</td>
+<td>{% for e in p.explication %}{{ e.gene }} : {{ e.lecture }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% if p.alerte_gene_hors_modele %}<br><span class="petit">+ gène non analysé : {{ p.alerte_gene_hors_modele|join(', ') }}</span>{% endif %}</td></tr>
+<tr><td colspan="5"><div class="patient"><b>En langage simple :</b> {{ p.texte_patient }}</div></td></tr>{% endfor %}</table>
+<p class="petit gris">{{ reco.note_ordre }} Plusieurs médicaments ont une confiance quasi identique : l'écart entre eux n'est pas significatif.{% if reco.autres_compatibles %} {{ reco.autres_compatibles }} autre(s) médicament(s) compatible(s) non affichés.{% endif %}</p>
+{% else %}<p>Aucun médicament de cette spécialité n'a pu être proposé pour ce profil.</p>{% endif %}</div>
+
+<div class="carte"><h2>Médicaments à éviter</h2>
+{% if reco.a_eviter %}
+<table><tr><th>Médicament</th><th>Conclusion</th><th>Avis des modèles</th><th>Alternatives possibles (même classe ATC)</th></tr>
+{% for a in reco.a_eviter %}<tr><td><b>{{ a.medicament }}</b></td><td>{{ badge('EVITER', 'À éviter') }}</td>
+<td>Réseau de neurones : {{ a.action_dl }} ; XGBoost : {{ a.action_xgboost }}{% if a.avis_divergent %}<br><span class="petit">avis divergents : à vérifier</span>{% endif %}</td>
+<td>{{ a.alternatives|map(attribute='medicament')|join(', ') or 'aucune parmi les médicaments pris en charge' }}</td></tr>
+<tr><td colspan="4"><div class="patient" style="background:#fdf1f0;border-color:var(--rouge)">{{ a.texte_patient }}</div></td></tr>{% endfor %}</table>
+<p class="petit gris">Un seul des deux modèles suffit à signaler « à éviter » (par prudence). Les alternatives partagent la même classe pharmacologique ; leur équivalence clinique n'est pas affirmée.</p>
+{% else %}<p>Aucun médicament de la spécialité n'est signalé « à éviter » pour ce profil.</p>{% endif %}</div>
+
+<div class="carte"><h2>Médicaments non évalués ({{ reco.non_evalues|length }})</h2>
+{% if reco.non_evalues %}<table><tr><th>Médicament</th><th>Motif</th></tr>{% for x in reco.non_evalues %}<tr><td>{{ x.medicament }}</td><td>{{ x.motif }}{% if x.regles_non_apprises %}<br><span class="petit gris">Règle de référence pour la combinaison non vue : {% for r in x.regles_non_apprises %}{{ r.gene }} = {{ r.valeur }} → {{ r.action_regle }}{% if not loop.last %} ; {% endif %}{% endfor %}. Information donnée à titre indicatif : le modèle n'a pas été entraîné sur cette combinaison.</span>{% endif %}</td></tr>{% endfor %}</table>
+{% else %}<p>Tous les médicaments de la spécialité ont pu être évalués.</p>{% endif %}</div>
+
+<div class="carte"><h2>Gènes analysés</h2>
+<table><tr><th>Gène</th><th>Lecture</th><th>Phénotype PyPGx</th><th>Remarque</th></tr>
+{% for g in genes %}<tr><td>{{ g.gene }}</td><td>{{ g.lecture }}</td><td>{{ g.phenotype or '-' }}</td><td>{{ g.motif or '' }}</td></tr>{% endfor %}</table></div>
+
+<div class="carte"><details><summary>Les 76 médicaments pris en charge et leur statut pour ce profil</summary>
+<table><tr><th>Médicament</th><th>Statut</th><th>Détail</th></tr>
+{% for x in tous %}<tr><td>{{ x.medicament }}</td>
+<td>{% if x.statut == 'ok' %}{{ badge(x.action, libelle_pro[x.action]) }}{% elif x.statut == 'desaccord' %}Avis divergents{% elif x.statut == 'hors_domaine' %}Hors domaine du modèle{% elif x.statut == 'non_determine_gene' %}Non évalué (gène manquant){% else %}{{ x.statut }}{% endif %}</td>
+<td class="petit">{{ x.message or '' }}</td></tr>{% endfor %}</table></details></div>
+
+<div class="carte"><form action="{{ url_for('supprimer', jid=j.id) }}" method="post"><button class="sec" type="submit">Supprimer mes données</button>
+<a class="btn sec" href="{{ url_for('index') }}">Nouvelle analyse</a></form></div>
+{% endblock %}

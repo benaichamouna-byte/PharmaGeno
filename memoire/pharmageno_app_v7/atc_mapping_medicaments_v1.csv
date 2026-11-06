@@ -1,0 +1,531 @@
+medicament,principe_actif,lignes_corpus,a_empreinte,atc_codes,noms_atc,nb_codes_atc,match_type,fiabilite,nom_utilise_pour_la_recherche,categorie_si_non_trouve,remarque,source_atc
+warfarin,warfarin,2032,True,B01AA03,warfarin,1,exact,élevée,warfarin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desflurane,desflurane,1381,True,N01AB07,desflurane,1,exact,élevée,desflurane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+isoflurane,isoflurane,1380,True,N01AB06,isoflurane,1,exact,élevée,isoflurane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sevoflurane,sevoflurane,1380,True,N01AB08,sevoflurane,1,exact,élevée,sevoflurane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+succinylcholine,suxamethonium,1380,True,M03AB01,suxamethonium,1,synonyme_INN_a_valider,à valider,suxamethonium,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ribavirin,ribavirin,1284,True,J05AP01,ribavirin,1,exact,élevée,ribavirin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tacrolimus,tacrolimus,1157,True,D11AH01;L04AD02,tacrolimus | tacrolimus,2,exact,élevée,tacrolimus,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+cyclosporine,ciclosporin,1153,True,L04AD01;S01XA18,ciclosporin | ciclosporin,2,synonyme_INN_a_valider,à valider,ciclosporin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+phenprocoumon,phenprocoumon,1153,True,B01AA04,phenprocoumon,1,exact,élevée,phenprocoumon,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+acenocoumarol,acenocoumarol,1152,True,B01AA07,acenocoumarol,1,exact,élevée,acenocoumarol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clomipramine,clomipramine,1115,True,N06AA04,clomipramine,1,exact,élevée,clomipramine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+imipramine,imipramine,1115,True,N06AA02,imipramine,1,exact,élevée,imipramine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amitriptyline,amitriptyline,1114,True,N06AA09,amitriptyline,1,exact,élevée,amitriptyline,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydralazine,hydralazine,1072,True,C02DB02,hydralazine,1,exact,élevée,hydralazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+isoniazid,isoniazid,1072,True,J04AC01,isoniazid,1,exact,élevée,isoniazid,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfamethoxazole,sulfamethoxazole,1070,True,J01EC01,sulfamethoxazole,1,exact,élevée,sulfamethoxazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clopidogrel,clopidogrel,907,True,B01AC04,clopidogrel,1,exact,élevée,clopidogrel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lansoprazole,lansoprazole,907,True,A02BC03,lansoprazole,1,exact,élevée,lansoprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pantoprazole,pantoprazole,907,True,A02BC02,pantoprazole,1,exact,élevée,pantoprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+voriconazole,voriconazole,907,True,J02AC03,voriconazole,1,exact,élevée,voriconazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+escitalopram,escitalopram,906,True,N06AB10,escitalopram,1,exact,élevée,escitalopram,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sertraline,sertraline,905,True,N06AB06,sertraline,1,exact,élevée,sertraline,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+citalopram,citalopram,904,True,N06AB04,citalopram,1,exact,élevée,citalopram,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+esomeprazole,esomeprazole,903,True,A02BC05,esomeprazole,1,exact,élevée,esomeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+omeprazole,omeprazole,903,True,A02BC01,omeprazole,1,exact,élevée,omeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methadone,methadone,873,True,N07BC02,methadone,1,exact,élevée,methadone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atazanavir,atazanavir,870,True,J05AE08,atazanavir,1,exact,élevée,atazanavir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+irinotecan,irinotecan,870,True,L01CE02,irinotecan,1,exact,élevée,irinotecan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+bupropion,bupropion,868,True,N06AX12,bupropion,1,exact,élevée,bupropion,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nevirapine,nevirapine,868,True,J05AG01,nevirapine,1,exact,élevée,nevirapine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+efavirenz,efavirenz,867,True,J05AG03,efavirenz,1,exact,élevée,efavirenz,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rosuvastatin,rosuvastatin,696,True,C10AA07,rosuvastatin,1,exact,élevée,rosuvastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atorvastatin,atorvastatin,694,True,C10AA05,atorvastatin,1,exact,élevée,atorvastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atomoxetine,atomoxetine,638,True,N06BA09,atomoxetine,1,exact,élevée,atomoxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+paroxetine,paroxetine,638,True,N06AB05,paroxetine,1,exact,élevée,paroxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fluoxetine,fluoxetine,637,True,N06AB03,fluoxetine,1,exact,élevée,fluoxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tramadol,tramadol,637,True,N02AX02,tramadol,1,exact,élevée,tramadol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+risperidone,risperidone,636,True,N05AX08,risperidone,1,exact,élevée,risperidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tamoxifen,tamoxifen,636,True,L02BA01,tamoxifen,1,exact,élevée,tamoxifen,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+codeine,codeine,635,True,R05DA04,codeine,1,exact,élevée,codeine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+haloperidol,haloperidol,634,True,N05AD01,haloperidol,1,exact,élevée,haloperidol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metoprolol,metoprolol,634,True,C07AB02,metoprolol,1,exact,élevée,metoprolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+simvastatin,simvastatin,487,True,C10AA01,simvastatin,1,exact,élevée,simvastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pravastatin,pravastatin,485,True,C10AA03,pravastatin,1,exact,élevée,pravastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+phenytoin,phenytoin,404,True,N03AB02,phenytoin,1,exact,élevée,phenytoin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+celecoxib,celecoxib,400,True,L01XX33;M01AH01,celecoxib | celecoxib,2,exact,élevée,celecoxib,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ibuprofen,ibuprofen,399,True,C01EB16;G02CC01;M01AE01;M02AA13;R02AX02,ibuprofen | ibuprofen | ibuprofen | ibuprofen | ibuprofen,5,exact,élevée,ibuprofen,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+losartan,losartan,398,True,C09CA01,losartan,1,exact,élevée,losartan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mercaptopurine,mercaptopurine,330,True,L01BB02,mercaptopurine,1,exact,élevée,mercaptopurine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+azathioprine,azathioprine,329,True,L04AX01,azathioprine,1,exact,élevée,azathioprine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thioguanine,tioguanine,328,True,L01BB03,tioguanine,1,synonyme_INN_a_valider,à valider,tioguanine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+allopurinol,allopurinol,301,True,M04AA01,allopurinol,1,exact,élevée,allopurinol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fluorouracil,fluorouracil,115,True,L01BC02,fluorouracil,1,exact,élevée,fluorouracil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+capecitabine,capecitabine,114,True,L01BC06,capecitabine,1,exact,élevée,capecitabine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tegafur,tegafur,114,True,L01BC03,tegafur,1,exact,élevée,tegafur,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+primaquine,primaquine,93,True,P01BA03,primaquine,1,exact,élevée,primaquine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+chloroquine,chloroquine,91,True,P01BA01,chloroquine,1,exact,élevée,chloroquine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dapsone,dapsone,91,True,D10AX05;J04BA02,dapsone | dapsone,2,exact,élevée,dapsone,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nitrofurantoin,nitrofurantoin,91,True,J01XE01,nitrofurantoin,1,exact,élevée,nitrofurantoin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+carbamazepine,carbamazepine,11,True,N03AF01,carbamazepine,1,exact,élevée,carbamazepine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clobazam,clobazam,9,True,N05BA09,clobazam,1,exact,élevée,clobazam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clozapine,clozapine,9,True,N05AH02,clozapine,1,exact,élevée,clozapine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fentanyl,fentanyl,9,True,N01AH01;N02AB03,fentanyl | fentanyl,2,exact,élevée,fentanyl,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+abrocitinib,abrocitinib,8,True,D11AH08,abrocitinib,1,exact,élevée,abrocitinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fluvastatin,fluvastatin,8,True,C10AA04,fluvastatin,1,exact,élevée,fluvastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lurasidone hydrochloride,lurasidone,8,True,N05AE05,lurasidone,1,sel_ou_forme_retire,moyenne,lurasidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metaxalone,metaxalone,8,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mirabegron,mirabegron,8,True,G04BD12,mirabegron,1,exact,élevée,mirabegron,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+paliperidone,paliperidone,8,True,N05AX13,paliperidone,1,exact,élevée,paliperidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pitavastatin,pitavastatin,8,True,C10AA08,pitavastatin,1,exact,élevée,pitavastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+venlafaxine,venlafaxine,8,True,N06AX16,venlafaxine,1,exact,élevée,venlafaxine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+belzutifan,belzutifan,7,True,L01XX74,belzutifan,1,exact,élevée,belzutifan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lovastatin,lovastatin,7,True,C10AA02,lovastatin,1,exact,élevée,lovastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+modafinil,modafinil,7,True,N06BA07,modafinil,1,exact,élevée,modafinil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+n-desmethylclozapine,n-desmethylclozapine,7,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+oxycodone,oxycodone,7,True,N02AA05,oxycodone,1,exact,élevée,oxycodone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rivastigmine tartrate,rivastigmine,7,True,N06DA03,rivastigmine,1,sel_ou_forme_retire,moyenne,rivastigmine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+valproic acid,valproic acid,7,True,N03AG01,valproic acid,1,exact,élevée,valproic acid,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-hydroxytamoxifen,4-hydroxytamoxifen,6,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+apixaban,apixaban,6,True,B01AF02,apixaban,1,exact,élevée,apixaban,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+carvedilol,carvedilol,6,True,C07AG02,carvedilol,1,exact,élevée,carvedilol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dexlansoprazole,dexlansoprazole,6,True,A02BC06,dexlansoprazole,1,exact,élevée,dexlansoprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+imatinib,imatinib,6,True,L01EA01,imatinib,1,exact,élevée,imatinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lamotrigine,lamotrigine,6,True,N03AX09,lamotrigine,1,exact,élevée,lamotrigine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+midazolam,midazolam,6,True,N05CD08,midazolam,1,exact,élevée,midazolam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pantoprazole sodium,pantoprazole,6,True,A02BC02,pantoprazole,1,sel_ou_forme_retire,moyenne,pantoprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+quetiapine,quetiapine,6,True,N05AH04,quetiapine,1,exact,élevée,quetiapine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tadalafil,tadalafil,6,True,G04BE08,tadalafil,1,exact,élevée,tadalafil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tamoxifen citrate,tamoxifen,6,True,L02BA01,tamoxifen,1,sel_ou_forme_retire,moyenne,tamoxifen,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+trimipramine,trimipramine,6,True,N06AA06,trimipramine,1,exact,élevée,trimipramine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atomoxetine hydrochloride,atomoxetine,5,True,N06BA09,atomoxetine,1,sel_ou_forme_retire,moyenne,atomoxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+cisplatin,cisplatin,5,True,L01XA01,cisplatin,1,exact,élevée,cisplatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+citalopram hydrobromide,citalopram,5,True,N06AB04,citalopram,1,sel_ou_forme_retire,moyenne,citalopram,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clopidogrel bisulfate,clopidogrel,5,True,B01AC04,clopidogrel,1,sel_ou_forme_retire,moyenne,clopidogrel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+codeine sulfate,codeine,5,True,R05DA04,codeine,1,sel_ou_forme_retire,moyenne,codeine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+cyclophosphamide,cyclophosphamide,5,True,L01AA01,cyclophosphamide,1,exact,élevée,cyclophosphamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+diazepam,diazepam,5,True,N05BA01,diazepam,1,exact,élevée,diazepam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+doxepin,doxepin,5,True,D04AX01;N06AA12,doxepin | doxepin,2,exact,élevée,doxepin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+doxepin hydrochloride,doxepin,5,True,D04AX01;N06AA12,doxepin | doxepin,2,sel_ou_forme_retire,moyenne,doxepin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+duloxetine hydrochloride,duloxetine,5,True,N06AX21,duloxetine,1,sel_ou_forme_retire,moyenne,duloxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+endoxifen,endoxifen,5,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+galantamine hydrobromide,galantamine,5,True,N06DA04,galantamine,1,sel_ou_forme_retire,moyenne,galantamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+gefitinib,gefitinib,5,True,L01EB01,gefitinib,1,exact,élevée,gefitinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lacosamide,lacosamide,5,True,N03AX18,lacosamide,1,exact,élevée,lacosamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nitisinone,nitisinone,5,True,A16AX04,nitisinone,1,exact,élevée,nitisinone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nortriptyline,nortriptyline,5,True,N06AA10,nortriptyline,1,exact,élevée,nortriptyline,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+primaquine phosphate,primaquine,5,True,P01BA03,primaquine,1,sel_ou_forme_retire,moyenne,primaquine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rabeprazole sodium,rabeprazole,5,True,A02BC04,rabeprazole,1,sel_ou_forme_retire,moyenne,rabeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+s-methadone,s-methadone,5,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ticagrelor,ticagrelor,5,True,B01AC24,ticagrelor,1,exact,élevée,ticagrelor,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+warfarin sodium,warfarin,5,True,B01AA03,warfarin,1,sel_ou_forme_retire,moyenne,warfarin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+aripiprazole,aripiprazole,4,True,N05AX12,aripiprazole,1,exact,élevée,aripiprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+aspirin,acetylsalicylic acid,4,True,A01AD05;B01AC06;N02BA01,acetylsalicylic acid | acetylsalicylic acid | acetylsalicylic acid,3,synonyme_INN_a_valider,à valider,acetylsalicylic acid,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atorvastatin lactone,atorvastatin lactone,4,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+bisoprolol,bisoprolol,4,True,C07AB07,bisoprolol,1,exact,élevée,bisoprolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clonazepam,clonazepam,4,True,N03AE01,clonazepam,1,exact,élevée,clonazepam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+deferasirox,deferasirox,4,True,V03AC03,deferasirox,1,exact,élevée,deferasirox,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dipyrone,metamizole sodium,4,True,N02BB02,metamizole sodium,1,synonyme_INN_a_valider,à valider,metamizole sodium,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+docetaxel,docetaxel,4,True,L01CD02,docetaxel,1,exact,élevée,docetaxel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dolutegravir,dolutegravir,4,True,J05AJ03,dolutegravir,1,exact,élevée,dolutegravir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fesoterodine,fesoterodine,4,True,G04BD11,fesoterodine,1,exact,élevée,fesoterodine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fluconazole,fluconazole,4,True,D01AC15;J02AC01,fluconazole | fluconazole,2,exact,élevée,fluconazole,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fluvoxamine,fluvoxamine,4,True,N06AB08,fluvoxamine,1,exact,élevée,fluvoxamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+gliclazide,gliclazide,4,True,A10BB09,gliclazide,1,exact,élevée,gliclazide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lopinavir,lopinavir,4,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lumefantrine,lumefantrine,4,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+meperidine,pethidine,4,True,N02AB02,pethidine,1,synonyme_source_wikipedia,élevée,pethidine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mirtazapine,mirtazapine,4,True,N06AX11,mirtazapine,1,exact,élevée,mirtazapine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+n-desmethyltramadol,n-desmethyltramadol,4,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nicotine,nicotine,4,True,N07BA01,nicotine,1,exact,élevée,nicotine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+o-desmethyltramadol,o-desmethyltramadol,4,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+olanzapine,olanzapine,4,True,N05AH03,olanzapine,1,exact,élevée,olanzapine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ondansetron,ondansetron,4,True,A04AA01,ondansetron,1,exact,élevée,ondansetron,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ondansetron hydrochloride,ondansetron,4,True,A04AA01,ondansetron,1,sel_ou_forme_retire,moyenne,ondansetron,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+oxcarbazepine,oxcarbazepine,4,True,N03AF02,oxcarbazepine,1,exact,élevée,oxcarbazepine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+paclitaxel,paclitaxel,4,True,L01CD01,paclitaxel,1,exact,élevée,paclitaxel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+praziquantel,praziquantel,4,True,P02BA01,praziquantel,1,exact,élevée,praziquantel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+primidone,primidone,4,True,N03AA03,primidone,1,exact,élevée,primidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rabeprazole,rabeprazole,4,True,A02BC04,rabeprazole,1,exact,élevée,rabeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rivaroxaban,rivaroxaban,4,True,B01AF01,rivaroxaban,1,exact,élevée,rivaroxaban,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sunitinib,sunitinib,4,True,L01EX01,sunitinib,1,exact,élevée,sunitinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tropisetron,tropisetron,4,True,A04AA03,tropisetron,1,exact,élevée,tropisetron,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+2-hydroxyatorvastatin,2-hydroxyatorvastatin,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+7-carboxycannabidiol,7-carboxycannabidiol,3,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amlodipine,amlodipine,3,True,C08CA01,amlodipine,1,exact,élevée,amlodipine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+anastrozole,anastrozole,3,True,L02BG03,anastrozole,1,exact,élevée,anastrozole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+apatinib,apatinib,3,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+azathioprine sodium,azathioprine,3,True,L04AX01,azathioprine,1,sel_ou_forme_retire,moyenne,azathioprine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+brexpiprazole,brexpiprazole,3,True,N05AX16,brexpiprazole,1,exact,élevée,brexpiprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dabigatran,dabigatran,3,True,B01AE07,dabigatran etexilate,1,candidat_a_valider,à valider,dabigatran etexilate,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dehydroaripiprazole,dehydroaripiprazole,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desethylchloroquine,desethylchloroquine,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desvenlafaxine,desvenlafaxine,3,True,N06AX23,desvenlafaxine,1,exact,élevée,desvenlafaxine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dexmedetomidine,dexmedetomidine,3,True,N05CM18,dexmedetomidine,1,exact,élevée,dexmedetomidine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dextromethorphan,dextromethorphan,3,True,R05DA09,dextromethorphan,1,exact,élevée,dextromethorphan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+duloxetine,duloxetine,3,True,N06AX21,duloxetine,1,exact,élevée,duloxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+esomeprazole magnesium,esomeprazole,3,True,A02BC05,esomeprazole,1,sel_ou_forme_retire,moyenne,esomeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+esomeprazole magnesium delayed release capsules,esomeprazole,3,True,A02BC05,esomeprazole,1,sel_ou_forme_retire,moyenne,esomeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+esomeprazole sodium,esomeprazole,3,True,A02BC05,esomeprazole,1,sel_ou_forme_retire,moyenne,esomeprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+everolimus,everolimus,3,True,L01EG02;L04AH02,everolimus | everolimus,2,exact,élevée,everolimus,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+extended phenytoin sodium,phenytoin,3,True,N03AB02,phenytoin,1,sel_ou_forme_retire,moyenne,phenytoin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+felodipine,felodipine,3,True,C08CA02,felodipine,1,exact,élevée,felodipine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fluindione,fluindione,3,True,B01AA12,fluindione,1,exact,élevée,fluindione,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+flurbiprofen,flurbiprofen,3,True,M01AE09;M02AA19;R02AX01;S01BC04,flurbiprofen | flurbiprofen | flurbiprofen | flurbiprofen,4,exact,élevée,flurbiprofen,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fosphenytoin,fosphenytoin,3,True,N03AB05,fosphenytoin,1,exact,élevée,fosphenytoin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+glimepiride,glimepiride,3,True,A10BB12,glimepiride,1,exact,élevée,glimepiride,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydrocodone,hydrocodone,3,True,R05DA03,hydrocodone,1,exact,élevée,hydrocodone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydromorphone,hydromorphone,3,True,N02AA03,hydromorphone,1,exact,élevée,hydromorphone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydroxybupropion,hydroxybupropion,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydroxychloroquine,hydroxychloroquine,3,True,P01BA02,hydroxychloroquine,1,exact,élevée,hydroxychloroquine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ibrutinib,ibrutinib,3,True,L01EL01,ibrutinib,1,exact,élevée,ibrutinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+iguratimod,iguratimod,3,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lamivudine,lamivudine,3,True,J05AF05,lamivudine,1,exact,élevée,lamivudine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+letermovir,letermovir,3,True,J05AX18,letermovir,1,exact,élevée,letermovir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+letrozole,letrozole,3,True,L02BG04,letrozole,1,exact,élevée,letrozole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+levomethadone,levomethadone,3,True,N07BC05,levomethadone,1,exact,élevée,levomethadone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lornoxicam,lornoxicam,3,True,M01AC05,lornoxicam,1,exact,élevée,lornoxicam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lurbinectedin,lurbinectedin,3,True,L01XX69,lurbinectedin,1,exact,élevée,lurbinectedin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+maraviroc,maraviroc,3,True,J05AX09,maraviroc,1,exact,élevée,maraviroc,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+meloxicam,meloxicam,3,True,M01AC06,meloxicam,1,exact,élevée,meloxicam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methotrexate,methotrexate,3,True,L01BA01;L04AX03,methotrexate | methotrexate,2,exact,élevée,methotrexate,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+milsaperidone,milsaperidone,3,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+morphine,morphine,3,True,N02AA01,morphine,1,exact,élevée,morphine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+moxifloxacin,moxifloxacin,3,True,J01MA14;S01AE07,moxifloxacin | moxifloxacin,2,exact,élevée,moxifloxacin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mycophenolic acid,mycophenolic acid,3,True,L04AA06,mycophenolic acid,1,exact,élevée,mycophenolic acid,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+n-desmethyltamoxifen,n-desmethyltamoxifen,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+noroxycodone,noroxycodone,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+opioids,opioids,3,True,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+paroxetine hydrochloride hemihydrate,paroxetine,3,True,N06AB05,paroxetine,1,sel_ou_forme_retire,moyenne,paroxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+perampanel,perampanel,3,True,N03AX22,perampanel,1,exact,élevée,perampanel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+phenytoin sodium,phenytoin,3,True,N03AB02,phenytoin,1,sel_ou_forme_retire,moyenne,phenytoin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pimozide,pimozide,3,True,N05AG02,pimozide,1,exact,élevée,pimozide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+piroxicam,piroxicam,3,True,M01AC01;M02AA07;S01BC06,piroxicam | piroxicam | piroxicam,3,exact,élevée,piroxicam,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+propafenone,propafenone,3,True,C01BC03,propafenone,1,exact,élevée,propafenone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+propofol,propofol,3,True,N01AX10,propofol,1,exact,élevée,propofol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+propranolol hydrochloride,propranolol,3,True,C07AA05,propranolol,1,sel_ou_forme_retire,moyenne,propranolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+purixan,purixan,3,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ramipril,ramipril,3,True,C09AA05,ramipril,1,exact,élevée,ramipril,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rifampin,rifampicin,3,True,J04AB02,rifampicin,1,synonyme_source_wikipedia,élevée,rifampicin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sirolimus,sirolimus,3,True,L01EG04;L04AH01;S01XA23,sirolimus | sirolimus | sirolimus,3,exact,élevée,sirolimus,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sn-38,sn-38,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sufentanil,sufentanil,3,True,N01AH03,sufentanil,1,exact,élevée,sufentanil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfasalazine,sulfasalazine,3,True,A07EC01,sulfasalazine,1,exact,élevée,sulfasalazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tamsulosin,tamsulosin,3,True,G04CA02,tamsulosin,1,exact,élevée,tamsulosin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tamsulosin hydrochloride,tamsulosin,3,True,G04CA02,tamsulosin,1,sel_ou_forme_retire,moyenne,tamsulosin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tenofovir,tenofovir,3,True,J05AF07;J05AF13,tenofovir disoproxil | tenofovir alafenamide,2,candidat_a_valider,à valider,tenofovir disoproxil | tenofovir alafenamide,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thioguanosine triphosphate,thioguanosine triphosphate,3,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thiopurine,thiopurine,3,True,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tramadol hydrochloride,tramadol,3,True,N02AX02,tramadol,1,sel_ou_forme_retire,moyenne,tramadol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+varenicline,varenicline,3,True,N07BA03;S01XA28,varenicline | varenicline,2,exact,élevée,varenicline,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+vortioxetine,vortioxetine,3,True,N06AX26,vortioxetine,1,exact,élevée,vortioxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+zuclopenthixol,zuclopenthixol,3,True,N05AF05,zuclopenthixol,1,exact,élevée,zuclopenthixol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+1-hydroxymidazolam,1-hydroxymidazolam,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+3-aminoisobutyrate,3-aminoisobutyrate,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+3-hydroxycotinine,3-hydroxycotinine,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+3-hydroxycotinine glucuronide,3-hydroxycotinine glucuronide,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-hydroxyatorvastatin,4-hydroxyatorvastatin,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-hydroxybupropion,4-hydroxybupropion,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-hydroxycyclophosphamide,4-hydroxycyclophosphamide,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+7-hydroxycannabidiol,7-hydroxycannabidiol,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+abacavir,abacavir,2,True,J05AF06,abacavir,1,exact,élevée,abacavir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+acebutolol,acebutolol,2,True,C07AB04,acebutolol,1,exact,élevée,acebutolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+aceclofenac,aceclofenac,2,True,M01AB16;M02AA25,aceclofenac | aceclofenac,2,exact,élevée,aceclofenac,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+acetylisoniazid,acetylisoniazid,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+acyclovir,aciclovir,2,True,D06BB03;J05AB01;S01AD03,aciclovir | aciclovir | aciclovir,3,synonyme_INN_a_valider,à valider,aciclovir,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+alectinib,alectinib,2,True,L01ED03,alectinib,1,exact,élevée,alectinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+alpha-hydroxymetoprolol,alpha-hydroxymetoprolol,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+alprazolam,alprazolam,2,True,N05BA12,alprazolam,1,exact,élevée,alprazolam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amiodarone,amiodarone,2,True,C01BD01,amiodarone,1,exact,élevée,amiodarone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amphetamine,amphetamine,2,True,N06BA01,amfetamine,1,candidat_a_valider,à valider,amfetamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amprenavir,amprenavir,2,True,J05AE05,amprenavir,1,exact,élevée,amprenavir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+apatinib metabolite m1-1,apatinib metabolite m1-1,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+apremilast,apremilast,2,True,L04AA32,apremilast,1,exact,élevée,apremilast,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+artemether,artemether,2,True,P01BE02,artemether,1,exact,élevée,artemether,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atenolol,atenolol,2,True,C07AB03,atenolol,1,exact,élevée,atenolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atrasentan,atrasentan,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+avatrombopag,avatrombopag,2,True,B02BX08,avatrombopag,1,exact,élevée,avatrombopag,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+axitinib,axitinib,2,True,L01EK01,axitinib,1,exact,élevée,axitinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+belinostat,belinostat,2,True,L01XH04,belinostat,1,exact,élevée,belinostat,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+benzbromarone,benzbromarone,2,True,M04AB03,benzbromarone,1,exact,élevée,benzbromarone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+berberine,berberine,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+betaxolol,betaxolol,2,True,C07AB05;S01ED02,betaxolol | betaxolol,2,exact,élevée,betaxolol,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+bilirubin,bilirubin,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+buprenorphine,buprenorphine,2,True,N02AE01;N07BC01,buprenorphine | buprenorphine,2,exact,élevée,buprenorphine,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+cannabidiol,cannabidiol,2,True,N03AX24,cannabidiol,1,exact,élevée,cannabidiol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+carisoprodol,carisoprodol,2,True,M03BA02,carisoprodol,1,exact,élevée,carisoprodol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ceftriaxone,ceftriaxone,2,True,J01DD04,ceftriaxone,1,exact,élevée,ceftriaxone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+chlorpropamide,chlorpropamide,2,True,A10BB02,chlorpropamide,1,exact,élevée,chlorpropamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clonidine,clonidine,2,True,C02AC01;N02CX02;S01EA04,clonidine | clonidine | clonidine,3,exact,élevée,clonidine,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clopidogrel thiol metabolite h4,clopidogrel thiol metabolite h4,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+conjugated estrogens,conjugated estrogens,2,True,G03CA57,conjugated estrogens,1,exact,élevée,conjugated estrogens,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+coumarin,coumarin,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dabrafenib,dabrafenib,2,True,L01EC02,dabrafenib,1,exact,élevée,dabrafenib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dapoxetine,dapoxetine,2,True,G04BX14,dapoxetine,1,exact,élevée,dapoxetine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+daunorubicin,daunorubicin,2,True,L01DB02,daunorubicin,1,exact,élevée,daunorubicin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+debrisoquine,debrisoquine,2,True,C02CC04,debrisoquine,1,exact,élevée,debrisoquine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+deoxy-thioguanosine triphosphate,deoxy-thioguanosine triphosphate,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desbutyl lumefantrine,desbutyl lumefantrine,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desipramine,desipramine,2,True,N06AA01,desipramine,1,exact,élevée,desipramine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desmethylsertraline,desmethylsertraline,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dexamethasone,dexamethasone,2,True,A01AC02;C05AA09;D07AB19;D07XB05;D10AA03;H02AB02;R01AD03;S01BA01;S01CB01;S02BA06;S03BA01,dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone | dexamethasone,11,exact,élevée,dexamethasone,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dextropropoxyphene,dextropropoxyphene,2,True,N02AC04,dextropropoxyphene,1,exact,élevée,dextropropoxyphene,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+diclofenac,diclofenac,2,True,D11AX18;M01AB05;M02AA15;S01BC03,diclofenac | diclofenac | diclofenac | diclofenac,4,exact,élevée,diclofenac,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dihydroartemisinin,dihydroartemisinin,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+disopyramide,disopyramide,2,True,C01BA03,disopyramide,1,exact,élevée,disopyramide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+doxorubicin,doxorubicin,2,True,L01DB01,doxorubicin,1,exact,élevée,doxorubicin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+edoxaban,edoxaban,2,True,B01AF03,edoxaban,1,exact,élevée,edoxaban,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+eliglustat,eliglustat,2,True,A16AX10,eliglustat,1,exact,élevée,eliglustat,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+erlotinib,erlotinib,2,True,L01EB02,erlotinib,1,exact,élevée,erlotinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+erythromycin,erythromycin,2,True,D10AF02;J01FA01;S01AA17,erythromycin | erythromycin | erythromycin,3,exact,élevée,erythromycin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+estrone,estrone,2,True,G03CA07;G03CC04,estrone | estrone,2,exact,élevée,estrone,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+estrone sulfate,estrone,2,True,G03CA07;G03CC04,estrone | estrone,2,sel_ou_forme_retire,à valider,estrone,,"sulfate = conjugué de l'estrone, pas un sel : correspondance douteuse",WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+exemestane,exemestane,2,True,L02BG06,exemestane,1,exact,élevée,exemestane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+famotidine,famotidine,2,True,A02BA03,famotidine,1,exact,élevée,famotidine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+flecainide,flecainide,2,True,C01BC04,flecainide,1,exact,élevée,flecainide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+flucloxacillin,flucloxacillin,2,True,J01CF05,flucloxacillin,1,exact,élevée,flucloxacillin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+flucytosine,flucytosine,2,True,D01AE21;J02AX01,flucytosine | flucytosine,2,exact,élevée,flucytosine,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fludarabine,fludarabine,2,True,L01BB05,fludarabine,1,exact,élevée,fludarabine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+flupenthixol,flupenthixol,2,True,N05AF01,flupentixol,1,candidat_a_valider,à valider,flupentixol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+folfiri,folfiri,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fulvestrant,fulvestrant,2,True,L02BA03,fulvestrant,1,exact,élevée,fulvestrant,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+glipizide,glipizide,2,True,A10BB07,glipizide,1,exact,élevée,glipizide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+glucose,glucose,2,True,B05CX01;V04CA02;V06DC01,glucose | glucose | glucose,3,exact,élevée,glucose,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+glyburide,glibenclamide,2,True,A10BB01,glibenclamide,1,synonyme_source_wikipedia,élevée,glibenclamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+granisetron,granisetron,2,True,A04AA02,granisetron,1,exact,élevée,granisetron,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+grazoprevir,grazoprevir,2,True,J05AP11,grazoprevir,1,exact,élevée,grazoprevir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+halothane,halothane,2,True,N01AB01,halothane,1,exact,élevée,halothane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydroxyamitriptyline,hydroxyamitriptyline,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydroxyphenytoin,hydroxyphenytoin,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hydroxyurea,hydroxycarbamide,2,True,L01XX05,hydroxycarbamide,1,synonyme_INN_a_valider,à valider,hydroxycarbamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ibogaine,ibogaine,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+icotinib,icotinib,2,True,L01EB08,icotinib,1,exact,élevée,icotinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+iloperidone,iloperidone,2,True,N05AX14,iloperidone,1,exact,élevée,iloperidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+iloperidone metabolite p88,iloperidone metabolite p88,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+indomethacin,indometacin,2,True,C01EB03;M01AB01;M02AA23;S01BC01,indometacin | indometacin | indometacin | indometacin,4,synonyme_INN_a_valider,à valider,indometacin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+irbesartan,irbesartan,2,True,C09CA04,irbesartan,1,exact,élevée,irbesartan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ketamine,ketamine,2,True,N01AX03,ketamine,1,exact,élevée,ketamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ketoprofen,ketoprofen,2,True,M01AE03;M02AA10,ketoprofen | ketoprofen,2,exact,élevée,ketoprofen,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ketorolac,ketorolac,2,True,M01AB15;S01BC05,ketorolac | ketorolac,2,exact,élevée,ketorolac,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+labetalol,labetalol,2,True,C07AG01,labetalol,1,exact,élevée,labetalol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+leucovorin,calcium folinate,2,True,V03AF03,calcium folinate,1,synonyme_INN_a_valider,à valider,calcium folinate,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lisdexamfetamine,lisdexamfetamine,2,True,N06BA12,lisdexamfetamine,1,exact,élevée,lisdexamfetamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+loratadine,loratadine,2,True,R06AX13,loratadine,1,exact,élevée,loratadine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lovastatin acid,lovastatin acid,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lumiracoxib,lumiracoxib,2,True,M01AH06,lumiracoxib,1,exact,élevée,lumiracoxib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+maprotiline,maprotiline,2,True,N06AA21,maprotiline,1,exact,élevée,maprotiline,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mavacamten,mavacamten,2,True,C01EB24,mavacamten,1,exact,élevée,mavacamten,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mephenytoin,mephenytoin,2,True,N03AB04,mephenytoin,1,exact,élevée,mephenytoin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mesalazine,mesalazine,2,True,A07EC02,mesalazine,1,exact,élevée,mesalazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methamphetamine,methamphetamine,2,True,N06BA03,metamfetamine,1,candidat_a_valider,à valider,metamfetamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methylphenidate,methylphenidate,2,True,N06BA04,methylphenidate,1,exact,élevée,methylphenidate,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metoclopramide,metoclopramide,2,True,A03FA01,metoclopramide,1,exact,élevée,metoclopramide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metoprolol succinate,metoprolol,2,True,C07AB02,metoprolol,1,sel_ou_forme_retire,moyenne,metoprolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metoprolol succinate er,metoprolol,2,True,C07AB02,metoprolol,1,sel_ou_forme_retire,moyenne,metoprolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metoprolol succinate er tablets,metoprolol,2,True,C07AB02,metoprolol,1,sel_ou_forme_retire,moyenne,metoprolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metoprolol tartrate,metoprolol,2,True,C07AB02,metoprolol,1,sel_ou_forme_retire,moyenne,metoprolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+metronidazole,metronidazole,2,True,A01AB17;D06BX01;G01AF01;J01XD01;P01AB01,metronidazole | metronidazole | metronidazole | metronidazole | metronidazole,5,exact,élevée,metronidazole,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mexiletine,mexiletine,2,True,C01BB02,mexiletine,1,exact,élevée,mexiletine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mianserin,mianserin,2,True,N06AX03,mianserin,1,exact,élevée,mianserin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+n,n,2,True,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nabumetone,nabumetone,2,True,M01AX01,nabumetone,1,exact,élevée,nabumetone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+naldemedine,naldemedine,2,True,A06AH05,naldemedine,1,exact,élevée,naldemedine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+naproxen,naproxen,2,True,G02CC02;M01AE02;M02AA12,naproxen | naproxen | naproxen,3,exact,élevée,naproxen,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nateglinide,nateglinide,2,True,A10BX03,nateglinide,1,exact,élevée,nateglinide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nebivolol,nebivolol,2,True,C07AB12,nebivolol,1,exact,élevée,nebivolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nicorandil,nicorandil,2,True,C01DX16,nicorandil,1,exact,élevée,nicorandil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nifedipine,nifedipine,2,True,C08CA05,nifedipine,1,exact,élevée,nifedipine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nilotinib,nilotinib,2,True,L01EA03,nilotinib,1,exact,élevée,nilotinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nimodipine,nimodipine,2,True,C08CA06,nimodipine,1,exact,élevée,nimodipine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nitrofurazone,nitrofurazone,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+norclobazam,norclobazam,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+noroxymorphone,noroxymorphone,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+odevixibat,odevixibat,2,True,A05AX05,odevixibat,1,exact,élevée,odevixibat,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+olmesartan,olmesartan,2,True,C09CA08,olmesartan medoxomil,1,candidat_a_valider,à valider,olmesartan medoxomil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+opipramol,opipramol,2,True,N06AA05,opipramol,1,exact,élevée,opipramol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+oxymorphone,oxymorphone,2,True,N02AA11,oxymorphone,1,exact,élevée,oxymorphone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pazopanib,pazopanib,2,True,L01EX03,pazopanib,1,exact,élevée,pazopanib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pentoxifylline,pentoxifylline,2,True,C04AD03,pentoxifylline,1,exact,élevée,pentoxifylline,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+perphenazine,perphenazine,2,True,N05AB03,perphenazine,1,exact,élevée,perphenazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pilocarpine,pilocarpine,2,True,N07AX01;S01EB01,pilocarpine | pilocarpine,2,exact,élevée,pilocarpine,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pioglitazone,pioglitazone,2,True,A10BG03,pioglitazone,1,exact,élevée,pioglitazone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pitavastatin lactone,pitavastatin lactone,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+prasugrel,prasugrel,2,True,B01AC22,prasugrel,1,exact,élevée,prasugrel,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pregabalin,pregabalin,2,True,N02BF02,pregabalin,1,exact,élevée,pregabalin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pridopidine,pridopidine,2,True,N07XX26,pridopidine,1,exact,élevée,pridopidine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+probenecid,probenecid,2,True,M04AB01,probenecid,1,exact,élevée,probenecid,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+proguanil,proguanil,2,True,P01BB01,proguanil,1,exact,élevée,proguanil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+propranolol,propranolol,2,True,C07AA05,propranolol,1,exact,élevée,propranolol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+quinacrine,quinacrine,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+quinidine,quinidine,2,True,C01BA01,quinidine,1,exact,élevée,quinidine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+raloxifene 6-glucuronide,raloxifene 6-glucuronide,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ranolazine,ranolazine,2,True,C01EB18,ranolazine,1,exact,élevée,ranolazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+repaglinide,repaglinide,2,True,A10BX02,repaglinide,1,exact,élevée,repaglinide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ritonavir,ritonavir,2,True,J05AE03,ritonavir,1,exact,élevée,ritonavir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rocuronium,rocuronium,2,True,M03AC09,rocuronium bromide,1,candidat_a_valider,à valider,rocuronium bromide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rosiglitazone,rosiglitazone,2,True,A10BG02,rosiglitazone,1,exact,élevée,rosiglitazone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sildenafil,sildenafil,2,True,G04BE03,sildenafil,1,exact,élevée,sildenafil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+silodosin,silodosin,2,True,G04CA04,silodosin,1,exact,élevée,silodosin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+simvastatin acid,simvastatin acid,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+siponimod,siponimod,2,True,L04AE03,siponimod,1,exact,élevée,siponimod,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sitagliptin,sitagliptin,2,True,A10BH01,sitagliptin,1,exact,élevée,sitagliptin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sodium nitrate,sodium nitrate,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+solanidine,solanidine,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sotalol,sotalol,2,True,C07AA07,sotalol,1,exact,élevée,sotalol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+stavudine,stavudine,2,True,J05AF04,stavudine,1,exact,élevée,stavudine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfacetamide,sulfacetamide,2,True,D10AF06;S01AB04,sulfacetamide | sulfacetamide,2,exact,élevée,sulfacetamide,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfapyridine,sulfapyridine,2,True,J01EB04,sulfapyridine,1,exact,élevée,sulfapyridine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+temsirolimus,temsirolimus,2,True,L01EG01,temsirolimus,1,exact,élevée,temsirolimus,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+teneligliptin,teneligliptin,2,True,A10BH08,teneligliptin,1,exact,élevée,teneligliptin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tenofovir alafenamide,tenofovir alafenamide,2,True,J05AF13,tenofovir alafenamide,1,exact,élevée,tenofovir alafenamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tenoxicam,tenoxicam,2,True,M01AC02,tenoxicam,1,exact,élevée,tenoxicam,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thalidomide,thalidomide,2,True,L04AX02,thalidomide,1,exact,élevée,thalidomide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+theophylline,theophylline,2,True,R03DA04,theophylline,1,exact,élevée,theophylline,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thioguanosine monophosphate,thioguanosine monophosphate,2,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thioridazine,thioridazine,2,True,N05AC02,thioridazine,1,exact,élevée,thioridazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tolazamide,tolazamide,2,True,A10BB05,tolazamide,1,exact,élevée,tolazamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tolbutamide,tolbutamide,2,True,A10BB03;V04CA01,tolbutamide | tolbutamide,2,exact,élevée,tolbutamide,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+topotecan,topotecan,2,True,L01CE01,topotecan,1,exact,élevée,topotecan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+trametinib,trametinib,2,True,L01EE01,trametinib,1,exact,élevée,trametinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+uracil,uracil,2,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+venetoclax,venetoclax,2,True,L01XX52,venetoclax,1,exact,élevée,venetoclax,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+zafirlukast,zafirlukast,2,True,R03DC01,zafirlukast,1,exact,élevée,zafirlukast,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amikacin,amikacin,1,True,D06AX12;J01GB06;S01AA21,amikacin | amikacin | amikacin,3,exact,élevée,amikacin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+aminosalicylic acid,aminosalicylic acid,1,True,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amphetamine sulfate,amphetamine sulfate,1,True,N06BA01,amfetamine,1,candidat_a_valider,à valider,amfetamine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+arformoterol tartrate,arformoterol tartrate,1,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+azacitidine for,azacitidine for,1,True,L01BC07,azacitidine,1,candidat_a_valider,à valider,azacitidine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+bupropion hydrochloride,bupropion,1,True,N06AX12,bupropion,1,sel_ou_forme_retire,moyenne,bupropion,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+captopril,captopril,1,True,C09AA01,captopril,1,exact,élevée,captopril,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+chloramphenicol,chloramphenicol,1,True,D06AX02;D10AF03;G01AA05;J01BA01;S01AA01;S02AA01;S03AA08,chloramphenicol | chloramphenicol | chloramphenicol | chloramphenicol | chloramphenicol | chloramphenicol | chloramphenicol,7,exact,élevée,chloramphenicol,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ciprofloxacin,ciprofloxacin,1,True,J01MA02;S01AE03;S02AA15;S03AA07,ciprofloxacin | ciprofloxacin | ciprofloxacin | ciprofloxacin,4,exact,élevée,ciprofloxacin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+clarithromycin,clarithromycin,1,True,J01FA09,clarithromycin,1,exact,élevée,clarithromycin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dimercaprol,dimercaprol,1,True,V03AB09,dimercaprol,1,exact,élevée,dimercaprol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+doxorubicin hydrochloride,doxorubicin,1,True,L01DB01,doxorubicin,1,sel_ou_forme_retire,moyenne,doxorubicin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+enflurane,enflurane,1,True,N01AB04,enflurane,1,exact,élevée,enflurane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+fenofibrate,fenofibrate,1,True,C10AB05,fenofibrate,1,exact,élevée,fenofibrate,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+furazolidone,furazolidone,1,True,G01AX06,furazolidone,1,exact,élevée,furazolidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+gabapentin,gabapentin,1,True,N02BF01,gabapentin,1,exact,élevée,gabapentin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+gentamicin,gentamicin,1,True,D06AX07;J01GB03;S01AA11;S02AA14;S03AA06,gentamicin | gentamicin | gentamicin | gentamicin | gentamicin,5,exact,élevée,gentamicin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ivacaftor,ivacaftor,1,True,R07AX02,ivacaftor,1,exact,élevée,ivacaftor,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+kanamycin,kanamycin,1,True,A07AA08;J01GB04;S01AA24,kanamycin | kanamycin | kanamycin,3,exact,élevée,kanamycin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+leflunomide,leflunomide,1,True,L04AK01,leflunomide,1,exact,élevée,leflunomide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+lorlatinib,lorlatinib,1,True,L01ED05,lorlatinib,1,exact,élevée,lorlatinib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mafenide,mafenide,1,True,D06BA03,mafenide,1,exact,élevée,mafenide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methazolamide,methazolamide,1,True,S01EC05,methazolamide,1,exact,élevée,methazolamide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methoxyflurane,methoxyflurane,1,True,N02BG09,methoxyflurane,1,exact,élevée,methoxyflurane,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+methylene blue,methylthioninium chloride,1,True,V03AB17;V04CG05,methylthioninium chloride | methylthioninium chloride,2,synonyme_INN_a_valider,à valider,methylthioninium chloride,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+moclobemide,moclobemide,1,True,N06AG02,moclobemide,1,exact,élevée,moclobemide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nalidixic acid,nalidixic acid,1,True,J01MB02,nalidixic acid,1,exact,élevée,nalidixic acid,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+neomycin,neomycin,1,True,A01AB08;A07AA01;B05CA09;D06AX04;J01GB05;R02AB01;S01AA03;S02AA07;S03AA01,neomycin | neomycin | neomycin | neomycin | neomycin | neomycin | neomycin | neomycin | neomycin,9,exact,élevée,neomycin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+norfloxacin,norfloxacin,1,True,J01MA06;S01AE02,norfloxacin | norfloxacin,2,exact,élevée,norfloxacin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+noscapine,noscapine,1,True,R05DA07,noscapine,1,exact,élevée,noscapine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ofloxacin,ofloxacin,1,True,J01MA01;S01AE01;S02AA16,ofloxacin | ofloxacin | ofloxacin,3,exact,élevée,ofloxacin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+paramethoxymethamphetamine,paramethoxymethamphetamine,1,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pazopanib hydrochloride,pazopanib,1,True,L01EX03,pazopanib,1,sel_ou_forme_retire,moyenne,pazopanib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+phenazopyridine,phenazopyridine,1,True,G04BX06,phenazopyridine,1,exact,élevée,phenazopyridine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pomalidomide,pomalidomide,1,True,L04AX06,pomalidomide,1,exact,élevée,pomalidomide,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pramipexole dihydrochloride,pramipexole,1,True,N04BC05,pramipexole,1,sel_ou_forme_retire,moyenne,pramipexole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+quinine,quinine,1,True,P01BC01,quinine,1,exact,élevée,quinine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ramelteon,ramelteon,1,True,N05CH02,ramelteon,1,exact,élevée,ramelteon,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rosuvastatin calcium,rosuvastatin,1,True,C10AA07,rosuvastatin,1,sel_ou_forme_retire,moyenne,rosuvastatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+salmeterol,salmeterol,1,True,R03AC12,salmeterol,1,exact,élevée,salmeterol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sildenafil citrate,sildenafil,1,True,G04BE03,sildenafil,1,sel_ou_forme_retire,moyenne,sildenafil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+streptomycin,streptomycin,1,True,A07AA04;J01GA01,streptomycin | streptomycin,2,exact,élevée,streptomycin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+succinylcholine chloride,suxamethonium,1,True,M03AB01,suxamethonium,1,synonyme_INN_a_valider,à valider,suxamethonium,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfadiazine,sulfadiazine,1,True,J01EC02,sulfadiazine,1,exact,élevée,sulfadiazine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfamethazine,sulfamethazine,1,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfanilamide,sulfanilamide,1,True,D06BA05;J01EB06,sulfanilamide | sulfanilamide,2,exact,élevée,sulfanilamide,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfisoxazole,sulfisoxazole,1,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tafenoquine,tafenoquine,1,True,P01BA07,tafenoquine,1,exact,élevée,tafenoquine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+telaprevir,telaprevir,1,True,J05AP02,telaprevir,1,exact,élevée,telaprevir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tobramycin,tobramycin,1,True,J01GB01;S01AA12,tobramycin | tobramycin,2,exact,élevée,tobramycin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+toluidine blue,toluidine blue,1,True,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+topiramate,topiramate,1,True,N03AX11,topiramate,1,exact,élevée,topiramate,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+verapamil hydrochloride,verapamil,1,True,C08DA01,verapamil,1,sel_ou_forme_retire,moyenne,verapamil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+vitamin c,ascorbic acid,1,True,G01AD03;S01XA15,ascorbic acid | ascorbic acid,2,synonyme_INN_a_valider,à valider,ascorbic acid,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ziprasidone,ziprasidone,1,True,N05AE04,ziprasidone,1,exact,élevée,ziprasidone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+heparin,heparin,29,False,B01AB01;C05BA03;S01XA14,heparin | heparin | heparin,3,exact,élevée,heparin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mirvetuximab soravtansine,mirvetuximab soravtansine,7,False,L01FX26,mirvetuximab soravtansine,1,exact,élevée,mirvetuximab soravtansine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tocilizumab,tocilizumab,7,False,L04AC07,tocilizumab,1,exact,élevée,tocilizumab,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pantoprazole sodium granules,pantoprazole,6,False,A02BC02,pantoprazole,1,sel_ou_forme_retire,moyenne,pantoprazole,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+3,3,5,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+antidepressants,antidepressants,5,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+hmg-coa reductase inhibitors,hmg-coa reductase inhibitors,5,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-methylenedioxymethamphetamine,4-methylenedioxymethamphetamine,4,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+antipsychotics,antipsychotics,4,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+atazanavir / ritonavir,atazanavir / ritonavir,4,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+caffeine,caffeine,4,False,D11AX26;N06BC01,caffeine | caffeine,2,exact,élevée,caffeine,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tegafur / gimeracil / oteracil,tegafur / gimeracil / oteracil,4,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+2-hydroxyatorvastatin lactone,2-hydroxyatorvastatin lactone,3,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-hydroxyatorvastatin lactone,4-hydroxyatorvastatin lactone,3,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+alpha-hydroxy sertraline ketone,alpha-hydroxy sertraline ketone,3,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+anesthesiques,anesthesiques,3,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+bcr-abl tyrosine kinase inhibitors,bcr-abl tyrosine kinase inhibitors,3,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+cilostazol,cilostazol,3,False,B01AC23,cilostazol,1,exact,élevée,cilostazol,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+cotinine,cotinine,3,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+donepezil,donepezil,3,False,N06DA02,donepezil,1,exact,élevée,donepezil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+levonorgestrel,levonorgestrel,3,False,G03AC03;G03AD01,levonorgestrel | levonorgestrel,2,exact,élevée,levonorgestrel,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+n-desalkylquetiapine,n-desalkylquetiapine,3,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+omeprazole/sodiium bicarbonate,omeprazole/sodiium bicarbonate,3,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+oxaliplatin,oxaliplatin,3,False,L01XA03,oxaliplatin,1,exact,élevée,oxaliplatin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+peginterferon alfa-2a,peginterferon alfa-2a,3,False,L03AB11,peginterferon alfa-2a,1,exact,élevée,peginterferon alfa-2a,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+peginterferon alfa-2b,peginterferon alfa-2b,3,False,L03AB10,peginterferon alfa-2b,1,exact,élevée,peginterferon alfa-2b,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+s-eddp,s-eddp,3,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+serdexmethylphenidate and dexmethylphenidate,serdexmethylphenidate and dexmethylphenidate,3,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sorafenib,sorafenib,3,False,L01EX02,sorafenib,1,exact,élevée,sorafenib,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfonamides,sulfonamides,3,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tolperisone,tolperisone,3,False,M02AX06;M03BX04,tolperisone | tolperisone,2,exact,élevée,tolperisone,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tolterodine,tolterodine,3,False,G04BD07,tolterodine,1,exact,élevée,tolterodine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+urea derivatives,urea derivatives,3,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"""1","""1",2,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"""caffeine""","""caffeine""",2,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"""interferon alfa-2a","""interferon alfa-2a",2,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"""ribavirin""","""ribavirin""",2,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+4-dehydrocilostazol,4-dehydrocilostazol,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+6-orthoquinone,6-orthoquinone,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"7-dimethylxanthine""","7-dimethylxanthine""",2,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ambrisentan,ambrisentan,2,False,C02KX02,ambrisentan,1,exact,élevée,ambrisentan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+amoxicillin,amoxicillin,2,False,J01CA04,amoxicillin,1,exact,élevée,amoxicillin,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+antineoplastic agents,antineoplastic agents,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+bepridil,bepridil,2,False,C08EA02,bepridil,1,exact,élevée,bepridil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+desethyl hydroxychloroquine,desethyl hydroxychloroquine,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dihydropyridine derivatives,dihydropyridine derivatives,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+dimolegin,dimolegin,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+drugs used in nicotine dependence,drugs used in nicotine dependence,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+erythro-4-hydroxyhydrobupropion,erythro-4-hydroxyhydrobupropion,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+etanercept,etanercept,2,False,L04AB01,etanercept,1,exact,élevée,etanercept,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+interferon beta-1a,interferon beta-1a,2,False,L03AB07,interferon beta-1a,1,exact,élevée,interferon beta-1a,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+losartan e-3174,losartan e-3174,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+measles vaccines,measles vaccines,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+mephedrone,mephedrone,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+n-didesmethyltramadol,n-didesmethyltramadol,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+nelfinavir,nelfinavir,2,False,J05AE04,nelfinavir,1,exact,élevée,nelfinavir,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+non-nucleoside reverse transcriptase inhibitors,non-nucleoside reverse transcriptase inhibitors,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+opioid anesthetics,opioid anesthetics,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+other general anesthetics,other general anesthetics,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pentoxifylline m5,pentoxifylline m5,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+phenazepam,phenazepam,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+primaquine 5,primaquine 5,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+progesterone,progesterone,2,False,G03DA04,progesterone,1,exact,élevée,progesterone,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+proton pump inhibitors,proton pump inhibitors,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+purine analogues,purine analogues,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+r-eddp,r-eddp,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+r-methylphenobarbital,r-methylphenobarbital,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+r-norfluoxetine,r-norfluoxetine,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+raloxifene-4′-glucuronide,raloxifene-4′-glucuronide,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"recombinant""","recombinant""",2,False,,,0,non_trouve,aucune,,nom_corrompu (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rubella vaccines,rubella vaccines,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+s-norfluoxetine,s-norfluoxetine,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+selective serotonin reuptake inhibitors,selective serotonin reuptake inhibitors,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+tebentafusp,tebentafusp,2,False,L01XX75,tebentafusp,1,exact,élevée,tebentafusp,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+thioguanosine diphosphate,thioguanosine diphosphate,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+threo-4-hydroxyhydrobupropion,threo-4-hydroxyhydrobupropion,2,False,,,0,non_trouve,aucune,,metabolite_probable (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+vardenafil,vardenafil,2,False,G04BE09,vardenafil,1,exact,élevée,vardenafil,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+vincristine,vincristine,2,False,L01CA02,vincristine,1,exact,élevée,vincristine,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+vitamin k1,vitamin k1,2,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+volatile anesthetics,volatile anesthetics,2,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+aminoglycoside antibacterials,aminoglycoside antibacterials,1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+antiepileptics,antiepileptics,1,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+"dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate","dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate and amphetamine sulfate",1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+elexacaftor / tezacaftor / ivacaftor,elexacaftor / tezacaftor / ivacaftor,1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ivacaftor / lumacaftor,ivacaftor / lumacaftor,1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ivacaftor / tezacaftor,ivacaftor / tezacaftor,1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+ivermectin,ivermectin,1,False,D11AX22;P02CF01,ivermectin | ivermectin,2,exact,élevée,ivermectin,,plusieurs codes ATC (voies/usages différents),WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+pegloticase,pegloticase,1,False,M04AX02,pegloticase,1,exact,élevée,pegloticase,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+rasburicase,rasburicase,1,False,V03AF07,rasburicase,1,exact,élevée,rasburicase,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sacituzumab govitecan,sacituzumab govitecan,1,False,L01FX17,sacituzumab govitecan,1,exact,élevée,sacituzumab govitecan,,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sitagliptin and metformin hydrochloride,sitagliptin and metformin hydrochloride,1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+sulfamethoxazole / trimethoprim,sulfamethoxazole / trimethoprim,1,False,,,0,non_trouve,aucune,,a_examiner,,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
+vitamin k and analogues,vitamin k and analogues,1,False,,,0,non_trouve,aucune,,classe_de_medicaments (heuristique),,WHO ATC/DDD index (snapshot 2026-04-25) via github.com/fabkury/atcd
