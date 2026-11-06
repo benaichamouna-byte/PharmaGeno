@@ -26,3 +26,14 @@
 ?? Model_v8_7_9_10/results/log_dl_eval_v14_part4.txt
 ?? Model_v8_7_9_10/results/log_dl_eval_v14_part5.txt
 ?? Model_v8_7_9_10/results/log_dl_eval_v14_part6.txt
+ scripts/preparer_envoi.sh                          |    20 +
+ scripts/sauvegarde.sh                              |    41 +
+ scripts/save_plan.sh                               |    39 +
+ scripts/test_moteur_v7.py                          |    79 +
+ 272 files changed, 167818 insertions(+)
+  commit cree
+To https://github.com/benaichamouna-byte/PharmaGeno.git
+   ec391da..853fd81  HEAD -> sauvegarde-2026-11-02
+Branch 'sauvegarde-2026-11-02' set up to track remote branch 'sauvegarde-2026-11-02' from 'origin'.
+  push OK
+=== FIN. Reste a faire par toi : deposer le contenu de /mnt/c/Users/MSI/Desktop/memoire/A_deposer_sur_Drive sur le Drive (voir procedure).

@@ -1,0 +1,38 @@
+classes (indice : nom) : {0: 'ADAPTER_DOSE', 1: 'EVITER', 2: 'STANDARD', 3: 'SURVEILLER'}
+
+==============================================================================
+NIVEAU EMA-etiquette : 2440 lignes, 2 médicaments
+classes vraies présentes   : {'ADAPTER_DOSE': 1, 'STANDARD': 2186, 'SURVEILLER': 253}
+
+-- DL
+classes prédites présentes : {'STANDARD': 2187, 'SURVEILLER': 253}
+F1 macro (labels = présentes dans vrai OU prédit, comme le script v1) : 0.6666 ; labels : ['ADAPTER_DOSE', 'STANDARD', 'SURVEILLER']
+F1 par classe : {'ADAPTER_DOSE': 0.0, 'STANDARD': 0.9998, 'SURVEILLER': 1.0}
+confusion (lignes = vrai, colonnes = prédit ; ordre ['ADAPTER_DOSE', 'STANDARD', 'SURVEILLER']) :
+[[   0    1    0]
+ [   0 2186    0]
+ [   0    0  253]]
+
+-- XGBoost
+classes prédites présentes : {'STANDARD': 2187, 'SURVEILLER': 253}
+F1 macro (labels = présentes dans vrai OU prédit, comme le script v1) : 0.6666 ; labels : ['ADAPTER_DOSE', 'STANDARD', 'SURVEILLER']
+F1 par classe : {'ADAPTER_DOSE': 0.0, 'STANDARD': 0.9998, 'SURVEILLER': 1.0}
+confusion (lignes = vrai, colonnes = prédit ; ordre ['ADAPTER_DOSE', 'STANDARD', 'SURVEILLER']) :
+[[   0    1    0]
+ [   0 2186    0]
+ [   0    0  253]]
+
+-- Forêt aléatoire
+classes prédites présentes : {'STANDARD': 2187, 'SURVEILLER': 253}
+F1 macro (labels = présentes dans vrai OU prédit, comme le script v1) : 0.6666 ; labels : ['ADAPTER_DOSE', 'STANDARD', 'SURVEILLER']
+F1 par classe : {'ADAPTER_DOSE': 0.0, 'STANDARD': 0.9998, 'SURVEILLER': 1.0}
+confusion (lignes = vrai, colonnes = prédit ; ordre ['ADAPTER_DOSE', 'STANDARD', 'SURVEILLER']) :
+[[   0    1    0]
+ [   0 2186    0]
+ [   0    0  253]]
+
+médicaments du niveau (lignes par classe vraie) :
+col_0       ADAPTER_DOSE  STANDARD  SURVEILLER
+row_0                                         
+erlotinib              0       987         253
+lonafarnib             1      1199           0
