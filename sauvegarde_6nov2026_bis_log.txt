@@ -11,3 +11,14 @@
 ?? Model_v8_7_9_10/results/dl_hp_v14_DOUBLON_5nov_0737/
 ?? Model_v8_7_9_10/scripts/diagnostic_niveau_source_v1.py
 ?? sauvegarde_6nov2026_bis_log.txt
+ .../results/diagnostic_niveau_source_v1_sortie.txt | 38 +++++++++++++++++
+ .../scripts/diagnostic_niveau_source_v1.py         | 48 ++++++++++++++++++++++
+ sauvegarde_6nov2026_bis_log.txt                    | 13 ++++++
+ sauvegarde_6nov2026_log.txt                        | 11 +++++
+ 4 files changed, 110 insertions(+)
+  commit cree
+To https://github.com/benaichamouna-byte/PharmaGeno.git
+   853fd81..7107269  HEAD -> sauvegarde-2026-11-02
+Branch 'sauvegarde-2026-11-02' set up to track remote branch 'sauvegarde-2026-11-02' from 'origin'.
+  push OK
+=== FIN. Reste a faire par toi : deposer le contenu de /mnt/c/Users/MSI/Desktop/memoire/A_deposer_sur_Drive sur le Drive (voir procedure).

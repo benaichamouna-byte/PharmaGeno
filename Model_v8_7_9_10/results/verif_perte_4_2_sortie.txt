@@ -1,0 +1,11 @@
+torch 2.11.0+cu130
+float64 graine 0 PyTorch 3.360631142 formule 3.360631142 écart 8.88e-16 OK
+float64 graine 1 PyTorch 3.385584147 formule 3.385584147 écart 8.88e-16 OK
+float64 graine 2 PyTorch 3.402842324 formule 3.402842324 écart 0.00e+00 OK
+float64 graine 3 PyTorch 3.372970760 formule 3.372970760 écart 8.88e-16 OK
+float64 graine 4 PyTorch 3.401060881 formule 3.401060881 écart 4.44e-16 OK
+float32 graine 0 PyTorch 3.360630989 formule 3.360630989 écart 0.00e+00 OK
+float32 graine 1 PyTorch 3.385584116 formule 3.385583878 écart 2.38e-07 OK
+float32 graine 2 PyTorch 3.402842283 formule 3.402841806 écart 4.77e-07 OK
+float32 graine 3 PyTorch 3.372970104 formule 3.372970581 écart 4.77e-07 OK
+float32 graine 4 PyTorch 3.401060820 formule 3.401060581 écart 2.38e-07 OK

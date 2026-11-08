@@ -1,0 +1,7 @@
+Partie 1 de la validation : génotype de l'application (PyPGx) et de PharmCAT contre la référence GeT-RM, 104 personnes hors corpus. 7 nov. 2026.
+regle_partie1_v1.md + liste_104_gelee.txt : règle et liste figées AVANT le calcul.
+comparer_getrm_v1.py : script v1.0 (règle telle que figée) ; sortie_getrm_v1_0.txt, getrm_detail_v1_0.csv : ses résultats.
+comparer_getrm_v1_2.py : v1.2 = v1.0 + fonction norm_ecriture ajoutée APRÈS lecture des résultats v1.0 (écriture des sorties d'outils seulement) ; sortie_getrm_v1_2.txt, getrm_detail_v1_2.csv, getrm_resume_v1_2.csv : ses résultats.
+lancer_pypgx.sh et construire_vcf_104.py : traces des commandes (chemins de mon espace de travail, non rejouables tels quels).
+Versions : PyPGx 0.27.0 ; PharmCAT 3.4.0 ; référence GeT-RM : Consolidated_PGx-HLA_table_1-22-25-V4.xlsx (sha256 c66174befa7a7bbb...).
+VCF multi-échantillons des 104 personnes (non joint, 23 Mo, reconstructible) : sha256 a94152dd418d06aa...
