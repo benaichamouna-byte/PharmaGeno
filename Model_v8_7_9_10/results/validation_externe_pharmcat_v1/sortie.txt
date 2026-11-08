@@ -1,0 +1,28 @@
+   gene  profils  comparables  concordants  discordants  pharmcat_indetermine  pharmcat_ambigu_ou_sans_score  pharmcat_no_call_ou_vide
+  ABCG2      150          150          150            0                     0                              0                         0
+   CFTR      150            0            0            0                   147                              0                         3
+ CYP2B6      150          143          143            0                     5                              0                         2
+CYP2C19      150          147          147            0                     2                              0                         1
+ CYP2C9      150          134          134            0                     0                             16                         0
+ CYP3A4      150          144          144            0                     0                              0                         6
+ CYP3A5      150          150          150            0                     0                              0                         0
+ CYP4F2      150            0            0            0                     0                              0                       150
+   DPYD      150          106          106            0                    44                              0                         0
+   NAT2      150            0            0            0                     0                              0                       150
+ NUDT15      150          145          145            0                     1                              0                         0
+   RYR1      150            0            0            0                   139                              0                        11
+SLCO1B1      150           73           73            0                    76                              0                         1
+   TPMT      150          148          148            0                     2                              0                         0
+ UGT1A1      150           54           54            0                    93                              0                         3
+ VKORC1      150            0            0            0                     0                              0                       150
+
+TOTAL : comparables 1394, concordants 1394, discordants 0
+
+CAS « PharmCAT Indeterminate » : valeur que le corpus (lecteur PyPGx) attribue à ces mêmes profils
+  DPYD      44 cas ; valeurs corpus {1.0: 34, 0.5: 10} ; génotypes PharmCAT fréquents {'Reference/[c.85T>C (*9A) + c.496A>G]': 6, 'c.1627A>G (*5)/[c.85T>C (*9A) + c.496A>G]': 3}
+  SLCO1B1   76 cas ; valeurs corpus {1.0: 68, nan: 4, 0.5: 3, 0.0: 1} ; génotypes PharmCAT fréquents {'*1/*37 OR *1/*42': 33, '*37/*37 OR *37/*42 OR *42/*42': 26}
+  UGT1A1    93 cas ; valeurs corpus {0.5: 57, 0.0: 36} ; génotypes PharmCAT fréquents {'*1/*80': 53, '*80/*80': 33}
+  CYP2B6     5 cas ; valeurs corpus {nan: 2, 1.5: 2, 2.0: 1} ; génotypes PharmCAT fréquents {'*10/*15': 1, '*6/*10 OR *9/*10 OR *10/*37 OR *10/*38 OR *10/*39 OR *10/*40 OR *10/*41 OR *10/*42': 1}
+  CYP2C19    2 cas ; valeurs corpus {nan: 2} ; génotypes PharmCAT fréquents {'*1/*39': 2}
+  TPMT       2 cas ; valeurs corpus {1.0: 1, nan: 1} ; génotypes PharmCAT fréquents {'*1/*8': 1, '*1/*24': 1}
+  NUDT15     1 cas ; valeurs corpus {1.0: 1} ; génotypes PharmCAT fréquents {'*1/*5': 1}

@@ -1,0 +1,5 @@
+multi104.vcf.gz = VCF multi-echantillons des 104 personnes de la liste gelee (liste_104_gelee.txt), GRCh38.
+Construit par construire_vcf_104.py a partir du bundle pypgx 1KGP GRCh38 (genotypes copies sans modification).
+multi104.vcf.gz.tbi = son index (necessaire pour PyPGx).
+Verification : sha256 du .gz commence par 8f4e59f7a66c78bf ; sha256 du contenu decompresse (zcat) commence par a94152dd418d06aa (= celui de multi104.vcf du 7 nov.).
+Usage : fichier d'entree de lancer_pypgx.sh (PyPGx) et de PharmCAT pour reproduire la Partie 1.
