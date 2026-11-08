@@ -1,0 +1,249 @@
+id,uid,sample,source,drug,population,label,mixte,indication,alt,ambigu,cue
+L000,U000,NA19472,CPIC,amitriptyline,general,EVITER,,,,,Avoid tertiary amine use
+L001,U001,NA19472,CPIC,atazanavir,general,AUCUNE,,,,,No recommendation
+L002,U002,NA19472,CPIC,atorvastatin,general,STANDARD,,,,,
+L003,U003,NA19472,CPIC,atorvastatin,general,AUCUNE,,,,,No recommendation
+L004,U004,NA19472,CPIC,azathioprine,general,ADAPTER_DOSE,,,,,starting doses (30
+L005,U005,NA19472,CPIC,capecitabine,general,STANDARD,,,,,
+L006,U006,NA19472,CPIC,celecoxib,general,STANDARD,,,,,
+L007,U007,NA19472,CPIC,citalopram,general,STANDARD,,,ADAPTER_DOSE,,Initiate therapy with recommended starting dose
+L008,U008,NA19472,CPIC,clomipramine,general,EVITER,,,,,Avoid tertiary amine use
+L009,U009,NA19472,CPIC,clopidogrel,CVI ACS PCI,STANDARD,,,,,
+L010,U010,NA19472,CPIC,clopidogrel,CVI non-ACS non-PCI,AUCUNE,,,,,No recommendation
+L011,U011,NA19472,CPIC,clopidogrel,NVI,AUCUNE,,,,,No recommendation
+L012,U012,NA19472,CPIC,dapsone,general,AUCUNE,,,,,enzyme activity must be measured
+L013,U013,NA19472,CPIC,dexlansoprazole,general,ADAPTER_DOSE,oui,oui,,,Consider increasing dose by 50-100%
+L014,U014,NA19472,CPIC,doxepin,general,EVITER,,,,,Avoid tertiary amine use
+L015,U015,NA19472,CPIC,escitalopram,general,STANDARD,,,ADAPTER_DOSE,,Initiate therapy with recommended starting dose
+L016,U016,NA19472,CPIC,fluorouracil,general,STANDARD,,,,,
+L017,U017,NA19472,CPIC,flurbiprofen,general,STANDARD,,,,,
+L018,U018,NA19472,CPIC,fluvastatin,general,ADAPTER_DOSE,,,,,prescribe
+L019,U019,NA19472,CPIC,fluvastatin,general,ADAPTER_DOSE,,,,,prescribe
+L020,U020,NA19472,CPIC,fosphenytoin,PHT naive,STANDARD,,,,,No adjustments needed
+L021,U021,NA19472,CPIC,fosphenytoin,PHT use >3mos,STANDARD,,,,,No adjustments needed
+L022,U022,NA19472,CPIC,hydralazine,general,ADAPTER_DOSE,,,,,total daily dose of 40 to 75 mg
+L023,U023,NA19472,CPIC,ibuprofen,general,STANDARD,,,,,
+L024,U024,NA19472,CPIC,imipramine,general,EVITER,,,,,Avoid tertiary amine use
+L025,U025,NA19472,CPIC,ivacaftor,general,EVITER,,,,,Ivacaftor is not recommended
+L026,U026,NA19472,CPIC,lansoprazole,general,ADAPTER_DOSE,oui,oui,,,Consider increasing dose by 50-100%
+L027,U027,NA19472,CPIC,lornoxicam,general,STANDARD,,,,,
+L028,U028,NA19472,CPIC,lovastatin,general,STANDARD,,,,,
+L029,U029,NA19472,CPIC,lovastatin,general,AUCUNE,,,,,No recommendation
+L030,U030,NA19472,CPIC,meloxicam,general,STANDARD,,,,,
+L031,U031,NA19472,CPIC,mercaptopurine,general,ADAPTER_DOSE,,,,,starting doses (30
+L032,U032,NA19472,CPIC,methylene blue,general,AUCUNE,,,,,enzyme activity must be measured
+L033,U033,NA19472,CPIC,nitrofurantoin,general,AUCUNE,,,,,enzyme activity must be measured
+L034,U034,NA19472,CPIC,omeprazole,general,ADAPTER_DOSE,oui,oui,,,Consider increasing dose by 50-100%
+L035,U035,NA19472,CPIC,pantoprazole,general,ADAPTER_DOSE,oui,oui,,,Consider increasing dose by 50-100%
+L036,U036,NA19472,CPIC,pegloticase,general,AUCUNE,,,,,enzyme activity must be measured
+L037,U037,NA19472,CPIC,phenytoin,PHT naive,STANDARD,,,,,No adjustments needed
+L038,U038,NA19472,CPIC,phenytoin,PHT use >3mos,STANDARD,,,,,No adjustments needed
+L039,U039,NA19472,CPIC,piroxicam,general,STANDARD,,,,,
+L040,U040,NA19472,CPIC,pitavastatin,general,STANDARD,,,,,
+L041,U041,NA19472,CPIC,pitavastatin,general,AUCUNE,,,,,No recommendation
+L042,U042,NA19472,CPIC,pravastatin,general,STANDARD,,,,,
+L043,U043,NA19472,CPIC,pravastatin,general,AUCUNE,,,,,No recommendation
+L044,U044,NA19472,CPIC,primaquine,general,AUCUNE,,,,,enzyme activity must be measured
+L045,U045,NA19472,CPIC,rasburicase,general,AUCUNE,,,,,enzyme activity must be measured
+L046,U046,NA19472,CPIC,rosuvastatin,general,STANDARD,,,,,
+L047,U047,NA19472,CPIC,rosuvastatin,general,STANDARD,,,,,
+L048,U048,NA19472,CPIC,sertraline,general,STANDARD,,,,,
+L049,U049,NA19472,CPIC,simvastatin,general,STANDARD,,,,,
+L050,U050,NA19472,CPIC,simvastatin,general,AUCUNE,,,,,No recommendation
+L051,U051,NA19472,CPIC,tacrolimus,general,ADAPTER_DOSE,,,,,Increase starting dose 1.5 to 2 times
+L052,U052,NA19472,CPIC,tafenoquine,general,AUCUNE,,,,,enzyme activity must be measured
+L053,U053,NA19472,CPIC,tenoxicam,general,STANDARD,,,,,
+L054,U054,NA19472,CPIC,thioguanine,general,ADAPTER_DOSE,,,,,starting doses (30
+L055,U055,NA19472,CPIC,toluidine blue,general,AUCUNE,,,,,enzyme activity must be measured
+L056,U056,NA19472,CPIC,trimipramine,general,EVITER,,,,,Avoid tertiary amine use
+L057,U057,NA19472,CPIC,voriconazole,adults,EVITER,,,,,Choose an alternative agent
+L058,U058,NA19472,CPIC,voriconazole,pediatrics,STANDARD,,,SURVEILLER,,standard of care dosing
+L059,U059,NA19472,CPIC,warfarin,n/a,AUCUNE,,,,,(texte vide)
+L060,U060,NA19472,DPWG,acenocoumarol,,AUCUNE,,,,,does not provide a recommendation
+L061,U061,NA19472,DPWG,allopurinol,,AUCUNE,,,,,does not provide a recommendation
+L062,U062,NA19472,DPWG,atazanavir,,AUCUNE,,,,,No recommendation
+L063,U063,NA19472,DPWG,atorvastatin,,AUCUNE,,,,,does not provide a recommendation
+L064,U064,NA19472,DPWG,atorvastatin,,AUCUNE,,,,,No recommendation
+L065,U065,NA19472,DPWG,azathioprine,,AUCUNE,,,,,does not provide a recommendation
+L066,U066,NA19472,DPWG,azathioprine,,ADAPTER_DOSE,,,,,50% of the
+L067,U067,NA19472,DPWG,capecitabine,,AUCUNE,,,,,does not provide a recommendation
+L068,U068,NA19472,DPWG,citalopram,,AUCUNE,,,,,does not provide a recommendation
+L069,U069,NA19472,DPWG,clomipramine,,AUCUNE,,,,,does not provide a recommendation
+L070,U070,NA19472,DPWG,clopidogrel,,AUCUNE,,,,,does not provide a recommendation
+L071,U071,NA19472,DPWG,escitalopram,,AUCUNE,,,,,does not provide a recommendation
+L072,U072,NA19472,DPWG,flucytosine,,AUCUNE,,,,,does not provide a recommendation
+L073,U073,NA19472,DPWG,fluorouracil,,AUCUNE,,,,,does not provide a recommendation
+L074,U074,NA19472,DPWG,imipramine,,AUCUNE,,,,,does not provide a recommendation
+L075,U075,NA19472,DPWG,irinotecan,,AUCUNE,,,,,No recommendation
+L076,U076,NA19472,DPWG,lansoprazole,,AUCUNE,,,,,does not provide a recommendation
+L077,U077,NA19472,DPWG,mavacamten,,AUCUNE,,,,,does not provide a recommendation
+L078,U078,NA19472,DPWG,mercaptopurine,,AUCUNE,,,,,does not provide a recommendation
+L079,U079,NA19472,DPWG,mercaptopurine,,ADAPTER_DOSE,,,,,50% of the
+L080,U080,NA19472,DPWG,omeprazole,,AUCUNE,,,,,does not provide a recommendation
+L081,U081,NA19472,DPWG,pantoprazole,,AUCUNE,,,,,does not provide a recommendation
+L082,U082,NA19472,DPWG,phenprocoumon,,AUCUNE,,,,,does not provide a recommendation
+L083,U083,NA19472,DPWG,phenytoin,,ADAPTER_DOSE,oui,,,,70-75% of the standard dose
+L084,U084,NA19472,DPWG,quetiapine,,AUCUNE,,,,,does not provide a recommendation
+L085,U085,NA19472,DPWG,rosuvastatin,,AUCUNE,,,,,does not provide a recommendation
+L086,U086,NA19472,DPWG,rosuvastatin,,AUCUNE,,,,,No recommendation
+L087,U087,NA19472,DPWG,sacituzumab govitecan,,AUCUNE,,,,,No recommendation
+L088,U088,NA19472,DPWG,simvastatin,,AUCUNE,,,,,does not provide a recommendation
+L089,U089,NA19472,DPWG,simvastatin,,AUCUNE,,,,,No recommendation
+L090,U090,NA19472,DPWG,siponimod,,ADAPTER_DOSE,,,,,Use 50% of the normal maintenance dose
+L091,U091,NA19472,DPWG,tacrolimus,,ADAPTER_DOSE,,,,,Use 1.5 times the normal initial dose
+L092,U092,NA19472,DPWG,tegafur,,AUCUNE,,,,,does not provide a recommendation
+L093,U093,NA19472,DPWG,thioguanine,,AUCUNE,,,,,does not provide a recommendation
+L094,U094,NA19472,DPWG,thioguanine,,ADAPTER_DOSE,,,,,75% of the standard
+L095,U095,NA19472,DPWG,voriconazole,,AUCUNE,,,,,does not provide a recommendation
+L096,U096,NA19472,DPWG,warfarin,,ADAPTER_DOSE,,,,,use 65% of the standard initial dose
+L097,U097,NA19472,DPWG,warfarin,,AUCUNE,,,,,does not provide a recommendation
+L098,U098,NA19472,FDA,amifampridine,pediatrics,ADAPTER_DOSE,,,,,starting dosage
+L099,U099,NA19472,FDA,amifampridine phosphate,adults,ADAPTER_DOSE,,,,,starting dosage
+L100,U100,NA19472,FDA,articaine / epinephrine,,SURVEILLER,,,,,close monitoring
+L101,U101,NA19472,FDA,"ascorbic acid (vitamin c), plain",,ADAPTER_DOSE,oui,,,,use a reduced dose
+L102,U102,NA19472,FDA,azathioprine,,ADAPTER_DOSE,,,,,dosage reduction is recommended
+L103,U103,NA19472,FDA,bupivacaine,,SURVEILLER,,,,,close monitoring
+L104,U104,NA19472,FDA,chloroquine,,SURVEILLER,,,,,onitor
+L105,U105,NA19472,FDA,chlorpropamide,,EVITER,oui,,SURVEILLER,,non-sulfonylurea alternative
+L106,U106,NA19472,FDA,dabrafenib,,SURVEILLER,,,,,onitor
+L107,U107,NA19472,FDA,dapsone,,SURVEILLER,,,,,caution
+L108,U108,NA19472,FDA,dronabinol,,SURVEILLER,,,,,onitor
+L109,U109,NA19472,FDA,flutamide,,SURVEILLER,,,,,onitor
+L110,U110,NA19472,FDA,fosphenytoin,,ADAPTER_DOSE,oui,,,,consider starting at the low end of the dosage range
+L111,U111,NA19472,FDA,glimepiride,,EVITER,oui,,SURVEILLER,,non-sulfonylurea alternative
+L112,U112,NA19472,FDA,glipizide,,EVITER,oui,,SURVEILLER,,non-sulfonylurea alternative
+L113,U113,NA19472,FDA,glyburide,,EVITER,oui,,SURVEILLER,,non-sulfonylurea alternative
+L114,U114,NA19472,FDA,hydralazine,,ADAPTER_DOSE,,,,oui,require lower doses
+L115,U115,NA19472,FDA,hydroxychloroquine,,SURVEILLER,,,,,onitor
+L116,U116,NA19472,FDA,lidocaine / prilocaine,,SURVEILLER,,,,,close monitoring
+L117,U117,NA19472,FDA,lidocaine and tetracaine,,SURVEILLER,,,,,close monitoring
+L118,U118,NA19472,FDA,mepivacaine,,SURVEILLER,,,,,close monitoring
+L119,U119,NA19472,FDA,mercaptopurine,,ADAPTER_DOSE,,,,oui,Reduce the
+L120,U120,NA19472,FDA,methylene blue,,EVITER,,,,,contraindicated
+L121,U121,NA19472,FDA,moviprep,,SURVEILLER,,,,,caution
+L122,U122,NA19472,FDA,nalidixic acid,,SURVEILLER,,,,,caution
+L123,U123,NA19472,FDA,nitrofurantoin,,SURVEILLER,,,EVITER,oui,indication for discontinuing
+L124,U124,NA19472,FDA,oxymetazoline and tetracaine,,SURVEILLER,,,,,close monitoring
+L125,U125,NA19472,FDA,pegloticase,,EVITER,,,,,contraindicated
+L126,U126,NA19472,FDA,phenytoin,,ADAPTER_DOSE,,,,oui,require lower doses
+L127,U127,NA19472,FDA,primaquine,,SURVEILLER,,,,,risks and benefits
+L128,U128,NA19472,FDA,rasburicase,,EVITER,,,,,contraindicated
+L129,U129,NA19472,FDA,ropivacaine,,SURVEILLER,,,,,close monitoring
+L130,U130,NA19472,FDA,sodium nitrite,,EVITER,,,SURVEILLER,,alternative therapeutic approaches should be considered
+L131,U131,NA19472,FDA,sulfasalazine,,SURVEILLER,,,,,observed closely
+L132,U132,NA19472,FDA,tafenoquine,,EVITER,,,,,contraindicated
+L133,U133,NA19472,FDA,thioguanine,,ADAPTER_DOSE,,,,oui,Reduce the
+L134,U134,NA19472,FDA,tolazamide,,EVITER,oui,,SURVEILLER,,non-sulfonylurea alternative
+L135,U135,NA19472,FDA,tolbutamide,,EVITER,oui,,SURVEILLER,,non-sulfonylurea alternative
+L136,U136,NA19085,CPIC,amitriptyline,general,STANDARD,,,,,
+L137,U001,NA19085,CPIC,atazanavir,general,AUCUNE,,,,,No recommendation
+L138,U002,NA19085,CPIC,atorvastatin,general,STANDARD,,,,,
+L139,U003,NA19085,CPIC,atorvastatin,general,AUCUNE,,,,,No recommendation
+L140,U004,NA19085,CPIC,azathioprine,general,ADAPTER_DOSE,,,,,starting doses (30
+L141,U005,NA19085,CPIC,capecitabine,general,STANDARD,,,,,
+L142,U006,NA19085,CPIC,celecoxib,general,STANDARD,,,,,
+L143,U137,NA19085,CPIC,citalopram,general,ADAPTER_DOSE,oui,,,,lower maintenance dose
+L144,U138,NA19085,CPIC,clomipramine,general,STANDARD,,,,,
+L145,U139,NA19085,CPIC,clopidogrel,CVI ACS PCI,EVITER,oui,,,,Avoid standard dose
+L146,U010,NA19085,CPIC,clopidogrel,CVI non-ACS non-PCI,AUCUNE,,,,,No recommendation
+L147,U140,NA19085,CPIC,clopidogrel,NVI,EVITER,,,SURVEILLER,oui,Consider an alternative P2Y12 inhibitor
+L148,U141,NA19085,CPIC,dapsone,general,STANDARD,,,,,
+L149,U142,NA19085,CPIC,dexlansoprazole,general,ADAPTER_DOSE,oui,,,,consider 50% reduction
+L150,U143,NA19085,CPIC,doxepin,general,STANDARD,,,,,
+L151,U144,NA19085,CPIC,efavirenz,child >40kg_adult,ADAPTER_DOSE,,,,,400 mg/day
+L152,U145,NA19085,CPIC,escitalopram,general,ADAPTER_DOSE,oui,,,,lower maintenance dose
+L153,U016,NA19085,CPIC,fluorouracil,general,STANDARD,,,,,
+L154,U017,NA19085,CPIC,flurbiprofen,general,STANDARD,,,,,
+L155,U146,NA19085,CPIC,fluvastatin,general,STANDARD,,,,,
+L156,U147,NA19085,CPIC,fluvastatin,general,STANDARD,,,,,
+L157,U148,NA19085,CPIC,fosphenytoin,PHT naive,STANDARD,,,,,No adjustments needed
+L158,U149,NA19085,CPIC,fosphenytoin,PHT use >3mos,STANDARD,,,,,No adjustments needed
+L159,U150,NA19085,CPIC,hydralazine,general,ADAPTER_DOSE,,,,,starting total daily dose of at least 75 mg
+L160,U151,NA19085,CPIC,hydralazine,general,ADAPTER_DOSE,,,,,starting total daily dose of at least 75 mg
+L161,U022,NA19085,CPIC,hydralazine,general,ADAPTER_DOSE,,,,,total daily dose of 40 to 75 mg
+L162,U152,NA19085,CPIC,hydralazine,general,AUCUNE,,,,,No recommendation
+L163,U023,NA19085,CPIC,ibuprofen,general,STANDARD,,,,,
+L164,U153,NA19085,CPIC,imipramine,general,STANDARD,,,,,
+L165,U025,NA19085,CPIC,ivacaftor,general,EVITER,,,,,Ivacaftor is not recommended
+L166,U154,NA19085,CPIC,lansoprazole,general,ADAPTER_DOSE,oui,,,,consider 50% reduction
+L167,U027,NA19085,CPIC,lornoxicam,general,STANDARD,,,,,
+L168,U028,NA19085,CPIC,lovastatin,general,STANDARD,,,,,
+L169,U029,NA19085,CPIC,lovastatin,general,AUCUNE,,,,,No recommendation
+L170,U155,NA19085,CPIC,meloxicam,general,STANDARD,,,,,
+L171,U031,NA19085,CPIC,mercaptopurine,general,ADAPTER_DOSE,,,,,starting doses (30
+L172,U156,NA19085,CPIC,methylene blue,general,STANDARD,,,,,
+L173,U157,NA19085,CPIC,nitrofurantoin,general,STANDARD,,,,,
+L174,U158,NA19085,CPIC,omeprazole,general,ADAPTER_DOSE,oui,,,,consider 50% reduction
+L175,U159,NA19085,CPIC,pantoprazole,general,ADAPTER_DOSE,oui,,,,consider 50% reduction
+L176,U160,NA19085,CPIC,pegloticase,general,STANDARD,,,,,
+L177,U161,NA19085,CPIC,phenytoin,PHT naive,STANDARD,,,,,No adjustments needed
+L178,U162,NA19085,CPIC,phenytoin,PHT use >3mos,STANDARD,,,,,No adjustments needed
+L179,U039,NA19085,CPIC,piroxicam,general,STANDARD,,,,,
+L180,U040,NA19085,CPIC,pitavastatin,general,STANDARD,,,,,
+L181,U041,NA19085,CPIC,pitavastatin,general,AUCUNE,,,,,No recommendation
+L182,U042,NA19085,CPIC,pravastatin,general,STANDARD,,,,,
+L183,U043,NA19085,CPIC,pravastatin,general,AUCUNE,,,,,No recommendation
+L184,U163,NA19085,CPIC,primaquine,general,STANDARD,,,,,
+L185,U164,NA19085,CPIC,rasburicase,general,STANDARD,,,,,
+L186,U046,NA19085,CPIC,rosuvastatin,general,STANDARD,,,,,
+L187,U165,NA19085,CPIC,rosuvastatin,general,STANDARD,,,,,
+L188,U166,NA19085,CPIC,sertraline,general,ADAPTER_DOSE,oui,,,,lower maintenance dose
+L189,U049,NA19085,CPIC,simvastatin,general,STANDARD,,,,,
+L190,U050,NA19085,CPIC,simvastatin,general,AUCUNE,,,,,No recommendation
+L191,U051,NA19085,CPIC,tacrolimus,general,ADAPTER_DOSE,,,,,Increase starting dose 1.5 to 2 times
+L192,U167,NA19085,CPIC,tafenoquine,general,STANDARD,,,,,
+L193,U053,NA19085,CPIC,tenoxicam,general,STANDARD,,,,,
+L194,U054,NA19085,CPIC,thioguanine,general,ADAPTER_DOSE,,,,,starting doses (30
+L195,U168,NA19085,CPIC,toluidine blue,general,STANDARD,,,,,
+L196,U169,NA19085,CPIC,trimipramine,general,STANDARD,,,,,
+L197,U170,NA19085,CPIC,voriconazole,adults,STANDARD,,,,,
+L198,U171,NA19085,CPIC,voriconazole,pediatrics,STANDARD,,,,,
+L199,U059,NA19085,CPIC,warfarin,n/a,AUCUNE,,,,,(texte vide)
+L200,U172,NA19085,DPWG,acenocoumarol,,STANDARD,,,,,action
+L201,U173,NA19085,DPWG,allopurinol,,ADAPTER_DOSE,,,,,1.25 times the standard dose
+L202,U062,NA19085,DPWG,atazanavir,,AUCUNE,,,,,No recommendation
+L203,U063,NA19085,DPWG,atorvastatin,,AUCUNE,,,,,does not provide a recommendation
+L204,U064,NA19085,DPWG,atorvastatin,,AUCUNE,,,,,No recommendation
+L205,U174,NA19085,DPWG,azathioprine,,ADAPTER_DOSE,,,,,50% of the
+L206,U175,NA19085,DPWG,azathioprine,,AUCUNE,,,,,does not provide a recommendation
+L207,U067,NA19085,DPWG,capecitabine,,AUCUNE,,,,,does not provide a recommendation
+L208,U176,NA19085,DPWG,citalopram,,ADAPTER_DOSE,,,,,Do not exceed
+L209,U177,NA19085,DPWG,clomipramine,,STANDARD,,,,,action
+L210,U178,NA19085,DPWG,clopidogrel,,EVITER,oui,oui,,,choose an alternative or double the dose
+L211,U179,NA19085,DPWG,efavirenz,,SURVEILLER,,,ADAPTER_DOSE,,Determine the efavirenz plasma concentration
+L212,U180,NA19085,DPWG,escitalopram,,ADAPTER_DOSE,,,,,Do not exceed
+L213,U072,NA19085,DPWG,flucytosine,,AUCUNE,,,,,does not provide a recommendation
+L214,U073,NA19085,DPWG,fluorouracil,,AUCUNE,,,,,does not provide a recommendation
+L215,U181,NA19085,DPWG,imipramine,,STANDARD,,,,,action
+L216,U075,NA19085,DPWG,irinotecan,,AUCUNE,,,,,No recommendation
+L217,U182,NA19085,DPWG,lansoprazole,,STANDARD,,,,,action
+L218,U183,NA19085,DPWG,mavacamten,,STANDARD,,,,,action
+L219,U184,NA19085,DPWG,mercaptopurine,,ADAPTER_DOSE,,,,,50% of the
+L220,U185,NA19085,DPWG,mercaptopurine,,AUCUNE,,,,,does not provide a recommendation
+L221,U186,NA19085,DPWG,omeprazole,,STANDARD,,,,,action
+L222,U187,NA19085,DPWG,pantoprazole,,STANDARD,,,,,action
+L223,U188,NA19085,DPWG,phenprocoumon,,STANDARD,,,,,action
+L224,U189,NA19085,DPWG,phenytoin,,AUCUNE,,,,,does not provide a recommendation
+L225,U084,NA19085,DPWG,quetiapine,,AUCUNE,,,,,does not provide a recommendation
+L226,U085,NA19085,DPWG,rosuvastatin,,AUCUNE,,,,,does not provide a recommendation
+L227,U086,NA19085,DPWG,rosuvastatin,,AUCUNE,,,,,No recommendation
+L228,U087,NA19085,DPWG,sacituzumab govitecan,,AUCUNE,,,,,No recommendation
+L229,U190,NA19085,DPWG,sertraline,,STANDARD,,,,,action
+L230,U088,NA19085,DPWG,simvastatin,,AUCUNE,,,,,does not provide a recommendation
+L231,U089,NA19085,DPWG,simvastatin,,AUCUNE,,,,,No recommendation
+L232,U191,NA19085,DPWG,siponimod,,AUCUNE,,,,,does not provide a recommendation
+L233,U091,NA19085,DPWG,tacrolimus,,ADAPTER_DOSE,,,,,Use 1.5 times the normal initial dose
+L234,U092,NA19085,DPWG,tegafur,,AUCUNE,,,,,does not provide a recommendation
+L235,U192,NA19085,DPWG,thioguanine,,ADAPTER_DOSE,,,,,50% of the
+L236,U193,NA19085,DPWG,thioguanine,,AUCUNE,,,,,does not provide a recommendation
+L237,U194,NA19085,DPWG,voriconazole,,SURVEILLER,,,,,Monitor the plasma concentration
+L238,U195,NA19085,DPWG,warfarin,,AUCUNE,,,,,does not provide a recommendation
+L239,U196,NA19085,DPWG,warfarin,,STANDARD,,,,,action
+L240,U098,NA19085,FDA,amifampridine,pediatrics,ADAPTER_DOSE,,,,,starting dosage
+L241,U099,NA19085,FDA,amifampridine phosphate,adults,ADAPTER_DOSE,,,,,starting dosage
+L242,U102,NA19085,FDA,azathioprine,,ADAPTER_DOSE,,,,,dosage reduction is recommended
+L243,U114,NA19085,FDA,hydralazine,,ADAPTER_DOSE,,,,oui,require lower doses
+L244,U119,NA19085,FDA,mercaptopurine,,ADAPTER_DOSE,,,,oui,Reduce the
+L245,U197,NA19085,FDA,siponimod,,STANDARD,,,,,
+L246,U133,NA19085,FDA,thioguanine,,ADAPTER_DOSE,,,,oui,Reduce the
+L247,U198,NA19085,FDA,warfarin,,ADAPTER_DOSE,,,,oui,expected maintenance daily dose

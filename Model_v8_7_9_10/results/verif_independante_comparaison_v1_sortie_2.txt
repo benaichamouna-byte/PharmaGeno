@@ -1,0 +1,53 @@
+corpus : 232664 lignes, 1379 profils ; ensemble final : 138 profils (23249 lignes) ; développement : 209415 lignes ; classes : ['ADAPTER_DOSE', 'EVITER', 'STANDARD', 'SURVEILLER']
+
+CONTRÔLES D'INTÉGRITÉ
+ DL (graines [0, 1, 2, 3, 4])
+  [OK] toutes les lignes de développement présentes une fois 
+  [OK] aucune ligne de l'ensemble final 
+  [OK] étiquettes des fichiers = étiquettes du corpus (toutes graines, tous plis) 
+  [OK] plis des fichiers = plis recalculés indépendamment 
+  [OK] mêmes lignes de test pour toutes les graines 
+  [OK] probabilités : somme par ligne = 1 (tolérance 1e-3) (écart max 1.92e-07)
+  [OK] lignes avec égalité exacte des deux plus grandes probabilités (graine 0) : information 0
+ XGBoost (graines [0, 1, 2, 3, 4])
+  [OK] toutes les lignes de développement présentes une fois 
+  [OK] aucune ligne de l'ensemble final 
+  [OK] étiquettes des fichiers = étiquettes du corpus (toutes graines, tous plis) 
+  [OK] plis des fichiers = plis recalculés indépendamment 
+  [OK] mêmes lignes de test pour toutes les graines 
+  [OK] probabilités : somme par ligne = 1 (tolérance 1e-3) (écart max 4.41e-08)
+  [OK] lignes avec égalité exacte des deux plus grandes probabilités (graine 0) : information 0
+ Forêt aléatoire (graines [0, 1, 2, 3, 4])
+  [OK] toutes les lignes de développement présentes une fois 
+  [OK] aucune ligne de l'ensemble final 
+  [OK] étiquettes des fichiers = étiquettes du corpus (toutes graines, tous plis) 
+  [OK] plis des fichiers = plis recalculés indépendamment 
+  [OK] mêmes lignes de test pour toutes les graines 
+  [OK] probabilités : somme par ligne = 1 (tolérance 1e-3) (écart max 4.47e-08)
+  [OK] lignes avec égalité exacte des deux plus grandes probabilités (graine 0) : information 6
+  [OK] aucun profil dans deux plis de test 
+  [OK] mêmes lignes (même ordre par pli) pour les trois bras 
+
+RECALCUL DU F1 MACRO (scikit-learn, labels = les 4 classes ; moyenne des 5 graines)
+         modele  f1_macro_moy  sd_graines  EVITER_manques_moy  erreurs_moy    pli1    pli2    pli3    pli4    pli5
+             DL       0.99676    0.000235                64.4        187.2 0.99547 0.99887 0.99910 0.99560 0.99477
+        XGBoost       0.99941    0.000050                17.4         41.8 0.99999 0.99907 0.99942 0.99866 0.99993
+Forêt aléatoire       0.99333    0.000085               150.0        525.6 0.99453 0.99517 0.99236 0.99061 0.99396
+
+F1 macro par pli externe : classement des 3 bras pli par pli
+  pli 1 : XGBoost > DL > Forêt aléatoire
+  pli 2 : XGBoost > DL > Forêt aléatoire
+  pli 3 : XGBoost > DL > Forêt aléatoire
+  pli 4 : XGBoost > DL > Forêt aléatoire
+  pli 5 : XGBoost > DL > Forêt aléatoire
+
+BOOTSTRAP PAR PROFIL (5000 rééchantillonnages, graine 7 ; le projet : 2 000, graine 42) — F1 macro, moyenne des graines
+  DL               0.99676 [0.99544 ; 0.99782]
+  XGBoost          0.99941 [0.99909 ; 0.99968]
+  Forêt aléatoire  0.99333 [0.99175 ; 0.99477]
+  DL - XGBoost : -0.00265 [-0.00396 ; -0.00163] -> XGBoost supérieur (pratique, marge 0,001 : XGBoost)
+  DL - Forêt aléatoire : +0.00343 [+0.00201 ; +0.00490] -> DL supérieur (pratique, marge 0,001 : DL)
+  XGBoost - Forêt aléatoire : +0.00608 [+0.00467 ; +0.00762] -> XGBoost supérieur (pratique, marge 0,001 : XGBoost)
+
+BILAN : 23 contrôles, 0 échec(s).
+À comparer aux chiffres de results/log_comparaison_equitable_v14_v2.txt (statistique principale) : DL 0,99676 ; XGBoost 0,99941 ; RF 0,99333 ; différences DL-XGB -0,00265, DL-RF +0,00343, XGB-RF +0,00608.

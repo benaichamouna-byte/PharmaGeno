@@ -1,0 +1,166 @@
+Unités (personne, guide, médicament) : 207 | personnes : ['NA19085', 'NA19472']
+
+========= application = action_dl (DL affiché) =========
+
+TOUTES (n=207)
+  0 aucune action des deux côtés       17
+  1 identique                         100
+  2 mineure                             6
+  3 majeure                            14
+  4 abstention de l'application        30
+  5 application seule                  32
+  6 depend de l'indication              6
+  absent de l'application               2
+
+guide CPIC (n=97)
+  0 aucune action des deux côtés        9
+  1 identique                          60
+  3 majeure                             4
+  4 abstention de l'application        14
+  5 application seule                   3
+  6 depend de l'indication              5
+  absent de l'application               2
+
+guide DPWG (n=64)
+  0 aucune action des deux côtés        8
+  1 identique                          18
+  2 mineure                             2
+  3 majeure                             1
+  4 abstention de l'application         5
+  5 application seule                  29
+  6 depend de l'indication              1
+
+guide FDA (n=46)
+  1 identique                          22
+  2 mineure                             4
+  3 majeure                             9
+  4 abstention de l'application        11
+
+personne NA19085 (n=90)
+  0 aucune action des deux côtés        4
+  1 identique                          51
+  2 mineure                             2
+  3 majeure                             7
+  4 abstention de l'application        13
+  5 application seule                  11
+  6 depend de l'indication              1
+  absent de l'application               1
+
+personne NA19472 (n=117)
+  0 aucune action des deux côtés       13
+  1 identique                          49
+  2 mineure                             4
+  3 majeure                             7
+  4 abstention de l'application        17
+  5 application seule                  21
+  6 depend de l'indication              5
+  absent de l'application               1
+
+guide cité par la règle de l'application (n=121)
+  1 identique                          85
+  3 majeure                            10
+  4 abstention de l'application        11
+  5 application seule                  10
+  6 depend de l'indication              5
+
+guide NON cité par la règle de l'application (n=84)
+  0 aucune action des deux côtés       17
+  1 identique                          15
+  2 mineure                             6
+  3 majeure                             4
+  4 abstention de l'application        19
+  5 application seule                  22
+  6 depend de l'indication              1
+
+========= application = action_cpic (règle) =========
+
+TOUTES (n=207)
+  0 aucune action des deux côtés       15
+  1 identique                         105
+  2 mineure                             6
+  3 majeure                            14
+  4 abstention de l'application        25
+  5 application seule                  34
+  6 depend de l'indication              6
+  absent de l'application               2
+
+guide CPIC (n=97)
+  0 aucune action des deux côtés        9
+  1 identique                          65
+  3 majeure                             4
+  4 abstention de l'application         9
+  5 application seule                   3
+  6 depend de l'indication              5
+  absent de l'application               2
+
+guide DPWG (n=64)
+  0 aucune action des deux côtés        6
+  1 identique                          18
+  2 mineure                             2
+  3 majeure                             1
+  4 abstention de l'application         5
+  5 application seule                  31
+  6 depend de l'indication              1
+
+guide FDA (n=46)
+  1 identique                          22
+  2 mineure                             4
+  3 majeure                             9
+  4 abstention de l'application        11
+
+personne NA19085 (n=90)
+  0 aucune action des deux côtés        4
+  1 identique                          51
+  2 mineure                             2
+  3 majeure                             7
+  4 abstention de l'application        13
+  5 application seule                  11
+  6 depend de l'indication              1
+  absent de l'application               1
+
+personne NA19472 (n=117)
+  0 aucune action des deux côtés       11
+  1 identique                          54
+  2 mineure                             4
+  3 majeure                             7
+  4 abstention de l'application        12
+  5 application seule                  23
+  6 depend de l'indication              5
+  absent de l'application               1
+
+guide cité par la règle de l'application (n=121)
+  1 identique                          90
+  3 majeure                            10
+  4 abstention de l'application         6
+  5 application seule                  10
+  6 depend de l'indication              5
+
+guide NON cité par la règle de l'application (n=84)
+  0 aucune action des deux côtés       15
+  1 identique                          15
+  2 mineure                             6
+  3 majeure                             4
+  4 abstention de l'application        19
+  5 application seule                  24
+  6 depend de l'indication              1
+
+Sensibilité (lecture alternative disponible) : 11 unités
+
+=== Différences majeures (DL) ===
+  NA19085 CPIC  dexlansoprazole          PharmCAT=ADAPTER_DOSE DL=STANDARD     règle=STANDARD     sources_règle=CPIC
+  NA19085 CPIC  lansoprazole             PharmCAT=ADAPTER_DOSE DL=STANDARD     règle=STANDARD     sources_règle=CPIC
+  NA19085 CPIC  omeprazole               PharmCAT=ADAPTER_DOSE DL=STANDARD     règle=STANDARD     sources_règle=CPIC
+  NA19085 CPIC  pantoprazole             PharmCAT=ADAPTER_DOSE DL=STANDARD     règle=STANDARD     sources_règle=CPIC
+  NA19085 DPWG  sertraline               PharmCAT=STANDARD     DL=ADAPTER_DOSE règle=ADAPTER_DOSE sources_règle=CPIC
+  NA19085 FDA   amifampridine            PharmCAT=ADAPTER_DOSE DL=STANDARD     règle=STANDARD     sources_règle=FDA
+  NA19085 FDA   amifampridine phosphate  PharmCAT=ADAPTER_DOSE DL=STANDARD     règle=STANDARD     sources_règle=FDA
+  NA19472 FDA   chlorpropamide           PharmCAT=EVITER       DL=SURVEILLER   règle=SURVEILLER   sources_règle=FDA-etiquette
+  NA19472 FDA   glimepiride              PharmCAT=EVITER       DL=STANDARD     règle=STANDARD     sources_règle=DPWG
+  NA19472 FDA   glipizide                PharmCAT=EVITER       DL=SURVEILLER   règle=SURVEILLER   sources_règle=FDA-etiquette
+  NA19472 FDA   glyburide                PharmCAT=EVITER       DL=STANDARD     règle=STANDARD     sources_règle=CPIC+HCSC-etiquette
+  NA19472 FDA   sodium nitrite           PharmCAT=EVITER       DL=SURVEILLER   règle=SURVEILLER   sources_règle=FDA-etiquette
+  NA19472 FDA   tolazamide               PharmCAT=EVITER       DL=SURVEILLER   règle=SURVEILLER   sources_règle=FDA-etiquette
+  NA19472 FDA   tolbutamide              PharmCAT=EVITER       DL=STANDARD     règle=STANDARD     sources_règle=CPIC
+
+=== Médicaments PharmCAT absents de l'application ===
+   ['ivacaftor']

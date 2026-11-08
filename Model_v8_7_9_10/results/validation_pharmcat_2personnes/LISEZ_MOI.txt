@@ -1,0 +1,6 @@
+Etape A et B de la grille v1.1 (verification d'implementation application PharmaGeno v8s vs PharmCAT 3.4.0) pour NA19472 et NA19085.
+etapeA_textes_pharmcat.csv : 248 textes de recommandation PharmCAT (CPIC, DPWG, FDA), sans reponse de l'application.
+etapeA_etiquettes_lignes.csv : categorie ecrite a la main pour chaque ligne (fichier fige avant l'etape B). etapeA_etiquettage.py : le script qui le produit et verifie chaque extrait.
+etapeB_jointure_v1.py : jointure avec les reponses de l'application ; etapeB_detail_v1.csv : une ligne par (personne, guide, medicament) ; etapeB_sortie.txt : effectifs.
+sortie_v8s_*.json : fiches JSON de l'application v8s ; lancer_test_vcf_reel_v4.py : script qui les produit (copie de v3, application v8s).
+controle_qualite_10_paires_A_RELIRE.csv : 10 paires tirees au hasard (graine 20261108) a categoriser SANS voir mes categories ; remplis la colonne TA_CATEGORIE.

@@ -1,0 +1,208 @@
+sample,guide,drug,pharmcat,indication,mixte,app_statut,app_dl,app_regle,sources_regle,guide_dans_regle,issue_dl,issue_regle,issue_dl_alt,texte_cue
+NA19085,CPIC,amitriptyline,STANDARD,False,False,non_determine_gene,,,CPIC,True,4 abstention de l'application,4 abstention de l'application,,
+NA19085,CPIC,atazanavir,AUCUNE,False,False,ok,EVITER,EVITER,CPIC,True,5 application seule,5 application seule,,No recommendation
+NA19085,CPIC,atorvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,azathioprine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,starting doses (30
+NA19085,CPIC,capecitabine,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,celecoxib,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,citalopram,ADAPTER_DOSE,False,True,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,lower maintenance dose
+NA19085,CPIC,clomipramine,STANDARD,False,False,non_determine_gene,,,CPIC,True,4 abstention de l'application,4 abstention de l'application,,
+NA19085,CPIC,clopidogrel,EVITER,False,True,ok,EVITER,EVITER,CPIC,True,1 identique,1 identique,1 identique | 3 majeure,Avoid standard dose
+NA19085,CPIC,dapsone,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,dexlansoprazole,ADAPTER_DOSE,False,True,ok,STANDARD,STANDARD,CPIC,True,3 majeure,3 majeure,,consider 50% reduction
+NA19085,CPIC,doxepin,STANDARD,False,False,non_determine_gene,,,CPIC,True,4 abstention de l'application,4 abstention de l'application,,
+NA19085,CPIC,efavirenz,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,400 mg/day
+NA19085,CPIC,escitalopram,ADAPTER_DOSE,False,True,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,lower maintenance dose
+NA19085,CPIC,fluorouracil,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,flurbiprofen,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,fluvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,fosphenytoin,STANDARD,False,False,non_determine_gene,,,,False,4 abstention de l'application,4 abstention de l'application,,No adjustments needed
+NA19085,CPIC,hydralazine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,starting total daily dose of at least 75 mg
+NA19085,CPIC,ibuprofen,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,imipramine,STANDARD,False,False,non_determine_gene,,,CPIC,True,4 abstention de l'application,4 abstention de l'application,,
+NA19085,CPIC,ivacaftor,EVITER,False,False,ABSENT,,,,,absent de l'application,absent de l'application,,Ivacaftor is not recommended
+NA19085,CPIC,lansoprazole,ADAPTER_DOSE,False,True,ok,STANDARD,STANDARD,CPIC,True,3 majeure,3 majeure,,consider 50% reduction
+NA19085,CPIC,lornoxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,lovastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,meloxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,mercaptopurine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,starting doses (30
+NA19085,CPIC,methylene blue,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,nitrofurantoin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,omeprazole,ADAPTER_DOSE,False,True,ok,STANDARD,STANDARD,CPIC,True,3 majeure,3 majeure,,consider 50% reduction
+NA19085,CPIC,pantoprazole,ADAPTER_DOSE,False,True,ok,STANDARD,STANDARD,CPIC,True,3 majeure,3 majeure,,consider 50% reduction
+NA19085,CPIC,pegloticase,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,phenytoin,STANDARD,False,False,non_determine_gene,,,,False,4 abstention de l'application,4 abstention de l'application,,No adjustments needed
+NA19085,CPIC,piroxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,pitavastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,pravastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,primaquine,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,rasburicase,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,rosuvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,sertraline,ADAPTER_DOSE,False,True,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,lower maintenance dose
+NA19085,CPIC,simvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,tacrolimus,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,Increase starting dose 1.5 to 2 times
+NA19085,CPIC,tafenoquine,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,tenoxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,thioguanine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,starting doses (30
+NA19085,CPIC,toluidine blue,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,trimipramine,STANDARD,False,False,non_determine_gene,,,CPIC,True,4 abstention de l'application,4 abstention de l'application,,
+NA19085,CPIC,voriconazole,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19085,CPIC,warfarin,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,(texte vide)
+NA19085,DPWG,acenocoumarol,STANDARD,False,False,ok,STANDARD,STANDARD,DPWG,True,1 identique,1 identique,,action
+NA19085,DPWG,allopurinol,ADAPTER_DOSE,False,False,non_determine_gene,,,,False,4 abstention de l'application,4 abstention de l'application,,1.25 times the standard dose
+NA19085,DPWG,atazanavir,AUCUNE,False,False,ok,EVITER,EVITER,CPIC,False,5 application seule,5 application seule,,No recommendation
+NA19085,DPWG,atorvastatin,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,azathioprine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,50% of the
+NA19085,DPWG,capecitabine,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,citalopram,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,1 identique,1 identique,,Do not exceed
+NA19085,DPWG,clomipramine,STANDARD,False,False,non_determine_gene,,,CPIC,False,4 abstention de l'application,4 abstention de l'application,,action
+NA19085,DPWG,clopidogrel,EVITER,True,True,ok,EVITER,EVITER,CPIC,False,6 depend de l'indication,6 depend de l'indication,,choose an alternative or double the dose
+NA19085,DPWG,efavirenz,SURVEILLER,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,2 mineure,2 mineure,1 identique | 2 mineure,Determine the efavirenz plasma concentration
+NA19085,DPWG,escitalopram,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,1 identique,1 identique,,Do not exceed
+NA19085,DPWG,flucytosine,AUCUNE,False,False,ok,STANDARD,STANDARD,DPWG,True,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,fluorouracil,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,imipramine,STANDARD,False,False,non_determine_gene,,,CPIC,False,4 abstention de l'application,4 abstention de l'application,,action
+NA19085,DPWG,irinotecan,AUCUNE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,DPWG,True,5 application seule,5 application seule,,No recommendation
+NA19085,DPWG,lansoprazole,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,False,1 identique,1 identique,,action
+NA19085,DPWG,mavacamten,STANDARD,False,False,ok,STANDARD,STANDARD,DPWG,True,1 identique,1 identique,,action
+NA19085,DPWG,mercaptopurine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,50% of the
+NA19085,DPWG,omeprazole,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,False,1 identique,1 identique,,action
+NA19085,DPWG,pantoprazole,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,False,1 identique,1 identique,,action
+NA19085,DPWG,phenprocoumon,STANDARD,False,False,ok,STANDARD,STANDARD,DPWG,True,1 identique,1 identique,,action
+NA19085,DPWG,phenytoin,AUCUNE,False,False,non_determine_gene,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,does not provide a recommendation
+NA19085,DPWG,quetiapine,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,does not provide a recommendation
+NA19085,DPWG,rosuvastatin,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,sacituzumab govitecan,AUCUNE,False,False,ok,SURVEILLER,SURVEILLER,DPWG,True,5 application seule,5 application seule,,No recommendation
+NA19085,DPWG,sertraline,STANDARD,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,3 majeure,3 majeure,,action
+NA19085,DPWG,simvastatin,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,siponimod,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,does not provide a recommendation
+NA19085,DPWG,tacrolimus,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,1 identique,1 identique,,Use 1.5 times the normal initial dose
+NA19085,DPWG,tegafur,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19085,DPWG,thioguanine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,50% of the
+NA19085,DPWG,voriconazole,SURVEILLER,False,False,ok,STANDARD,STANDARD,CPIC,False,2 mineure,2 mineure,,Monitor the plasma concentration
+NA19085,DPWG,warfarin,STANDARD,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,does not provide a recommendation
+NA19085,FDA,amifampridine,ADAPTER_DOSE,False,False,ok,STANDARD,STANDARD,FDA,True,3 majeure,3 majeure,,starting dosage
+NA19085,FDA,amifampridine phosphate,ADAPTER_DOSE,False,False,ok,STANDARD,STANDARD,FDA,True,3 majeure,3 majeure,,starting dosage
+NA19085,FDA,azathioprine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,False,1 identique,1 identique,,dosage reduction is recommended
+NA19085,FDA,hydralazine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,1 identique,1 identique,,require lower doses
+NA19085,FDA,mercaptopurine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,False,1 identique,1 identique,,Reduce the
+NA19085,FDA,siponimod,STANDARD,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,
+NA19085,FDA,thioguanine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,False,1 identique,1 identique,,Reduce the
+NA19085,FDA,warfarin,ADAPTER_DOSE,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,expected maintenance daily dose
+NA19472,CPIC,amitriptyline,EVITER,False,False,non_determine_gene,,EVITER,CPIC,True,4 abstention de l'application,1 identique,,Avoid tertiary amine use
+NA19472,CPIC,atazanavir,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,True,5 application seule,5 application seule,,No recommendation
+NA19472,CPIC,atorvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,azathioprine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,starting doses (30
+NA19472,CPIC,capecitabine,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,celecoxib,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,citalopram,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,1 identique | 3 majeure,Initiate therapy with recommended starting dose
+NA19472,CPIC,clomipramine,EVITER,False,False,non_determine_gene,,EVITER,CPIC,True,4 abstention de l'application,1 identique,,Avoid tertiary amine use
+NA19472,CPIC,clopidogrel,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,dapsone,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,dexlansoprazole,ADAPTER_DOSE,True,True,ok,STANDARD,STANDARD,CPIC,True,6 depend de l'indication,6 depend de l'indication,,Consider increasing dose by 50-100%
+NA19472,CPIC,doxepin,EVITER,False,False,non_determine_gene,,EVITER,CPIC,True,4 abstention de l'application,1 identique,,Avoid tertiary amine use
+NA19472,CPIC,escitalopram,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,1 identique | 3 majeure,Initiate therapy with recommended starting dose
+NA19472,CPIC,fluorouracil,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,flurbiprofen,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,fluvastatin,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,prescribe
+NA19472,CPIC,fosphenytoin,STANDARD,False,False,non_determine_gene,,,,False,4 abstention de l'application,4 abstention de l'application,,No adjustments needed
+NA19472,CPIC,hydralazine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,total daily dose of 40 to 75 mg
+NA19472,CPIC,ibuprofen,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,imipramine,EVITER,False,False,non_determine_gene,,EVITER,CPIC,True,4 abstention de l'application,1 identique,,Avoid tertiary amine use
+NA19472,CPIC,ivacaftor,EVITER,False,False,ABSENT,,,,,absent de l'application,absent de l'application,,Ivacaftor is not recommended
+NA19472,CPIC,lansoprazole,ADAPTER_DOSE,True,True,ok,STANDARD,STANDARD,CPIC,True,6 depend de l'indication,6 depend de l'indication,,Consider increasing dose by 50-100%
+NA19472,CPIC,lornoxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,lovastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,meloxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,mercaptopurine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,starting doses (30
+NA19472,CPIC,methylene blue,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,nitrofurantoin,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,omeprazole,ADAPTER_DOSE,True,True,ok,STANDARD,STANDARD,CPIC,True,6 depend de l'indication,6 depend de l'indication,,Consider increasing dose by 50-100%
+NA19472,CPIC,pantoprazole,ADAPTER_DOSE,True,True,ok,STANDARD,STANDARD,CPIC,True,6 depend de l'indication,6 depend de l'indication,,Consider increasing dose by 50-100%
+NA19472,CPIC,pegloticase,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,phenytoin,STANDARD,False,False,non_determine_gene,,,DPWG,False,4 abstention de l'application,4 abstention de l'application,,No adjustments needed
+NA19472,CPIC,piroxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,pitavastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,pravastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,primaquine,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,rasburicase,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,rosuvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,sertraline,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,simvastatin,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,tacrolimus,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,True,1 identique,1 identique,,Increase starting dose 1.5 to 2 times
+NA19472,CPIC,tafenoquine,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,tenoxicam,STANDARD,False,False,ok,STANDARD,STANDARD,CPIC,True,1 identique,1 identique,,
+NA19472,CPIC,thioguanine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,starting doses (30
+NA19472,CPIC,toluidine blue,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,enzyme activity must be measured
+NA19472,CPIC,trimipramine,EVITER,False,False,non_determine_gene,,EVITER,CPIC,True,4 abstention de l'application,1 identique,,Avoid tertiary amine use
+NA19472,CPIC,voriconazole,EVITER,True,False,ok,EVITER,EVITER,CPIC,True,6 depend de l'indication,6 depend de l'indication,,Choose an alternative agent
+NA19472,CPIC,warfarin,AUCUNE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,DPWG,False,5 application seule,5 application seule,,(texte vide)
+NA19472,DPWG,acenocoumarol,AUCUNE,False,False,ok,STANDARD,STANDARD,DPWG,True,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,allopurinol,AUCUNE,False,False,non_determine_gene,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,does not provide a recommendation
+NA19472,DPWG,atazanavir,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,No recommendation
+NA19472,DPWG,atorvastatin,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,azathioprine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,does not provide a recommendation
+NA19472,DPWG,capecitabine,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,citalopram,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,clomipramine,AUCUNE,False,False,non_determine_gene,,EVITER,CPIC,False,0 aucune action des deux côtés,5 application seule,,does not provide a recommendation
+NA19472,DPWG,clopidogrel,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,escitalopram,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,flucytosine,AUCUNE,False,False,ok,STANDARD,STANDARD,DPWG,True,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,fluorouracil,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,imipramine,AUCUNE,False,False,non_determine_gene,,EVITER,CPIC,False,0 aucune action des deux côtés,5 application seule,,does not provide a recommendation
+NA19472,DPWG,irinotecan,AUCUNE,False,False,ok,STANDARD,STANDARD,DPWG,True,5 application seule,5 application seule,,No recommendation
+NA19472,DPWG,lansoprazole,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,mavacamten,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,does not provide a recommendation
+NA19472,DPWG,mercaptopurine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,does not provide a recommendation
+NA19472,DPWG,omeprazole,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,pantoprazole,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,phenprocoumon,AUCUNE,False,False,ok,STANDARD,STANDARD,DPWG,True,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,phenytoin,ADAPTER_DOSE,False,True,non_determine_gene,,,DPWG,True,4 abstention de l'application,4 abstention de l'application,,70-75% of the standard dose
+NA19472,DPWG,quetiapine,AUCUNE,False,False,hors_domaine,,,,False,0 aucune action des deux côtés,0 aucune action des deux côtés,,does not provide a recommendation
+NA19472,DPWG,rosuvastatin,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,sacituzumab govitecan,AUCUNE,False,False,ok,STANDARD,STANDARD,DPWG,True,5 application seule,5 application seule,,No recommendation
+NA19472,DPWG,simvastatin,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,siponimod,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,DPWG,True,1 identique,1 identique,,Use 50% of the normal maintenance dose
+NA19472,DPWG,tacrolimus,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,1 identique,1 identique,,Use 1.5 times the normal initial dose
+NA19472,DPWG,tegafur,AUCUNE,False,False,ok,STANDARD,STANDARD,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,thioguanine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,True,1 identique,1 identique,,does not provide a recommendation
+NA19472,DPWG,voriconazole,AUCUNE,False,False,ok,EVITER,EVITER,CPIC,False,5 application seule,5 application seule,,does not provide a recommendation
+NA19472,DPWG,warfarin,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,DPWG,True,1 identique,1 identique,,use 65% of the standard initial dose
+NA19472,FDA,amifampridine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,FDA,True,1 identique,1 identique,,starting dosage
+NA19472,FDA,amifampridine phosphate,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,FDA,True,1 identique,1 identique,,starting dosage
+NA19472,FDA,articaine / epinephrine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,"ascorbic acid (vitamin c), plain",ADAPTER_DOSE,False,True,ok,ADAPTER_DOSE,ADAPTER_DOSE,FDA-etiquette,True,1 identique,1 identique,,use a reduced dose
+NA19472,FDA,azathioprine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,False,1 identique,1 identique,,dosage reduction is recommended
+NA19472,FDA,bupivacaine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,chloroquine,SURVEILLER,False,False,ok,STANDARD,STANDARD,CPIC,False,2 mineure,2 mineure,,onitor
+NA19472,FDA,chlorpropamide,EVITER,False,True,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,3 majeure,3 majeure,1 identique | 3 majeure,non-sulfonylurea alternative
+NA19472,FDA,dabrafenib,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,onitor
+NA19472,FDA,dapsone,SURVEILLER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,caution
+NA19472,FDA,dronabinol,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA,True,1 identique,1 identique,,onitor
+NA19472,FDA,flutamide,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,onitor
+NA19472,FDA,fosphenytoin,ADAPTER_DOSE,False,True,non_determine_gene,,,,False,4 abstention de l'application,4 abstention de l'application,,consider starting at the low end of the dosage range
+NA19472,FDA,glimepiride,EVITER,False,True,ok,STANDARD,STANDARD,DPWG,False,3 majeure,3 majeure,2 mineure | 3 majeure,non-sulfonylurea alternative
+NA19472,FDA,glipizide,EVITER,False,True,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,3 majeure,3 majeure,1 identique | 3 majeure,non-sulfonylurea alternative
+NA19472,FDA,glyburide,EVITER,False,True,ok,STANDARD,STANDARD,CPIC+HCSC-etiquette,False,3 majeure,3 majeure,2 mineure | 3 majeure,non-sulfonylurea alternative
+NA19472,FDA,hydralazine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC,False,1 identique,1 identique,,require lower doses
+NA19472,FDA,hydroxychloroquine,SURVEILLER,False,False,ok,STANDARD,STANDARD,CPIC,False,2 mineure,2 mineure,,onitor
+NA19472,FDA,lidocaine / prilocaine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,lidocaine and tetracaine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,mepivacaine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,mercaptopurine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,False,1 identique,1 identique,,Reduce the
+NA19472,FDA,methylene blue,EVITER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,contraindicated
+NA19472,FDA,moviprep,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,caution
+NA19472,FDA,nalidixic acid,SURVEILLER,False,False,ok,STANDARD,STANDARD,CPIC,False,2 mineure,2 mineure,,caution
+NA19472,FDA,nitrofurantoin,SURVEILLER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,indication for discontinuing
+NA19472,FDA,oxymetazoline and tetracaine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,pegloticase,EVITER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,contraindicated
+NA19472,FDA,phenytoin,ADAPTER_DOSE,False,False,non_determine_gene,,,DPWG,False,4 abstention de l'application,4 abstention de l'application,,require lower doses
+NA19472,FDA,primaquine,SURVEILLER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,risks and benefits
+NA19472,FDA,rasburicase,EVITER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,contraindicated
+NA19472,FDA,ropivacaine,SURVEILLER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,1 identique,1 identique,,close monitoring
+NA19472,FDA,sodium nitrite,EVITER,False,False,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,3 majeure,3 majeure,1 identique | 3 majeure,alternative therapeutic approaches should be considered
+NA19472,FDA,sulfasalazine,SURVEILLER,False,False,ok,STANDARD,STANDARD,CPIC,False,2 mineure,2 mineure,,observed closely
+NA19472,FDA,tafenoquine,EVITER,False,False,hors_domaine,,,,False,4 abstention de l'application,4 abstention de l'application,,contraindicated
+NA19472,FDA,thioguanine,ADAPTER_DOSE,False,False,ok,ADAPTER_DOSE,ADAPTER_DOSE,CPIC+DPWG,False,1 identique,1 identique,,Reduce the
+NA19472,FDA,tolazamide,EVITER,False,True,ok,SURVEILLER,SURVEILLER,FDA-etiquette,True,3 majeure,3 majeure,1 identique | 3 majeure,non-sulfonylurea alternative
+NA19472,FDA,tolbutamide,EVITER,False,True,ok,STANDARD,STANDARD,CPIC,False,3 majeure,3 majeure,2 mineure | 3 majeure,non-sulfonylurea alternative
