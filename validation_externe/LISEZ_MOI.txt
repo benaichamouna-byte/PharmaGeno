@@ -1,0 +1,15 @@
+DOSSIER validation_externe (9 nov. 2026) - PharmaGeno
+A mettre dans : C:\Users\MSI\Desktop\memoire\validation_externe\   (puis WSL -> GitHub -> Drive PharmaGeno_Memoire/)
+
+1_genotype_et_profil_complet_104_personnes : app v8s contre GeT-RM (genotype) et PharmCAT 3.4.0 (recommandations, profil complet), 104 personnes hors corpus du DL.
+   - comparaison_app_vs_pharmcat_104_8nov2026.zip : scripts, regles figees, resultats, analyse DL
+   - validation_externe_v1_1_8nov2026.zip : protocole et comparaison avec des etudes publiees (8 nov.)
+2_patients_publies_PMC12639823 : 11 patients du Tableau S3 (Kidney Int Rep 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12639823/) passes dans le moteur de l'application.
+   - COMPARAISON_11_patients_article_vs_application_9nov2026.xlsx : resultat ligne par ligne
+   - patients_S3.py, etape1_pgx.py (phenotypes PyPGx), etape2_app.py (moteur), sortie_app_S3.json, phen_pypgx.json
+   - A AJOUTER par toi : le PDF original mmc1.pdf (supplement) dans un sous-dossier references/
+3_test_6_lignes_et_kit : grille v2 (classe attendue, DL, directive) et kit de 5 VCF (HG02087, NA07019, NA07029, NA18855, NA06993).
+4_documents_de_resultat : notes de resultat (copies des documents du projet Claude). Les notes du 9 nov. (6 lignes, 11 patients) sont dans le projet Claude.
+
+Chiffres a retenir : 70/104 personnes sans aucune ligne en desaccord avec PharmCAT ; 11 patients publies : regle 36/36, DL 34 conformes + 1 compatible + 1 erreur (patient 7, tacrolimus) ; DL fragile sur profils partiels (8,0 % de divergence contre 0,1 % sur profils complets).
+Limites : guides identiques (CPIC) cote application et references ; un seul lecteur ; 11 patients ; hypotheses SLCO1B1 *1B->*37 a confirmer.
