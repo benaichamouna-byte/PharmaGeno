@@ -264,7 +264,7 @@ Cette grille **existe déjà** dans `regles_v13_multigene.csv`. Le défaut n'est
 | 1 | Warfarine × VKORC1 | ajout | 3 lignes | **oui** |
 | 2 | CYP2C9 warfarine et siponimod | modification + ajout | 436 lignes modifiées, valeur 1,0 à créer | **oui** |
 | 3 | G6PD, 3 annotations | ajout | 8 médicaments × 3 valeurs | oui, sous réserve des 2 points du § 3.2 |
-| 4 | Thiopurines | grille bi-génique | 27 lignes | **oui** |
+| 4 | Thiopurines | grille bi-génique | 27 lignes, dont 9 passant de `EVITER` à `ADAPTER_DOSE` (thioguanine) | **oui** |
 | 5 | Fluvastatine | priorité du moteur | 0 ligne, 1 correction de code | **oui** |
 
 Aucun texte n'est écrit de mémoire : chaque citation provient des archives du projet, extractions tracées dans `model_v2/docs/sources_v15/`.
@@ -319,13 +319,13 @@ Le changement est faible. Le réentraînement est à faible risque, la comparais
 
 Les 24 médicaments à risque faible (PA166279741) reçoivent une ligne pour **les trois** phénotypes G6PD, y compris « variable » → `STANDARD`. Les 8 médicaments à risque élevé, la primaquine et la nitrofurantoïne n'en reçoivent que pour « normal » et « déficient ». Le phénotype variable est donc traité pour une partie du corpus seulement. L'ajout des 432 lignes rétablit la cohérence.
 
-### 7.5 Point restant à trancher : thioguanine, 9 lignes
+### 7.5 Thioguanine, 9 lignes — tranché le 12 novembre 2026
 
 Pour TPMT normal × NUDT15 lent, le corpus donne `EVITER` (DPWG PA166184612, « avoid tioguanine ») alors que la grille bi-génique CPIC 2025 donne `ADAPTER_DOSE` (« reduce starting dose by 10-fold »).
 
 **Les deux sources prescrivent la même posologie : 10 % de la dose standard.** La divergence est de formulation, non de contenu clinique.
 
-Recommandation : suivre CPIC 2025, en application du principe déjà retenu pour la fluvastatine au § 5 — une grille multi-gènes prime sur les règles mono-gènes des mêmes gènes. La règle DPWG porte sur NUDT15 seul et ignore que TPMT est normal ; la grille CPIC est construite pour ce croisement. La règle la plus spécifique l'emporte.
+**Décision : suivre CPIC 2025 → `ADAPTER_DOSE`.** En application du principe déjà retenu pour la fluvastatine au § 5 — une grille multi-gènes prime sur les règles mono-gènes des mêmes gènes. La règle DPWG porte sur NUDT15 seul et ignore que TPMT est normal ; la grille CPIC est construite pour ce croisement. La règle la plus spécifique l'emporte.
 
 Ce principe ne contredit pas celui du § 2.3 (« ne jamais désescalader depuis `EVITER` ») : ce dernier gouverne l'**ambiguïté d'encodage**, où l'on ignore quel diplotype on a devant soi. Ici le génotype est entièrement connu et le problème est une **hiérarchie de sources**. Deux problèmes distincts, deux principes distincts.
 
