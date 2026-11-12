@@ -35,6 +35,20 @@ PA166279741 est l'annotation des médicaments **à risque faible ou nul** : « T
 
 Vérification sur la table DPWG PA166104984 : pour la phénytoïne, le diplotype \*1/\*2 reçoit « use 75% of the standard dose » = `ADAPTER_DOSE`, et le métaboliseur normal « no recommendation » = `STANDARD`. **Le corpus est déjà juste pour la phénytoïne.** La correction ne concerne que la warfarine et le siponimod.
 
+### 0.4 « G6PD : trois annotations absentes du corpus » — RETIRÉ pour deux d'entre elles
+
+Ce diagnostic portait sur `phenotype_drug_dataset_complet_v2.csv` (46 371 lignes), non sur le corpus v14. Vérification sur le corpus v14 réel (232 664 lignes) :
+
+| Annotation | Médicaments | État dans le v14 |
+| --- | --- | --- |
+| PA166119846 | rasburicase, dapsone, bleu de méthylène, pegloticase, tafénoquine, bleu de toluidine | **déjà codée** : G6PD déficient → `EVITER`, 39 lignes par médicament |
+| PA166279721 | nitrofurantoïne | **déjà codée** : G6PD déficient → `SURVEILLER`, 39 lignes |
+| PA166279621 | primaquine | **absente** : aucune ligne pour les profils déficients |
+| PA166279741 | 24 médicaments à risque faible | **déjà codée**, et couvre les trois phénotypes G6PD |
+
+Le traitement de la nitrofurantoïne sur le phénotype `Deficient` → `SURVEILLER`, proposé au § 3.2 comme choix de conception, était **déjà en place**. Seule la primaquine manque.
+
+
 ---
 
 ## 1. Warfarine × VKORC1 — règle à ajouter
@@ -201,13 +215,13 @@ Chaque directive porte 35 combinaisons dans PharmCAT. Restreintes aux trois phé
 | --- | --- | --- | --- | --- |
 | normal | normal | `STANDARD` | `STANDARD` | `STANDARD` |
 | normal | intermédiaire | `ADAPTER_DOSE` | `ADAPTER_DOSE` | `ADAPTER_DOSE` |
-| normal | lent | `EVITER` | `EVITER` | `ADAPTER_DOSE` |
+| normal | lent | `EVITER` | `EVITER` | `ADAPTER_DOSE` (voir § 4.1) |
 | intermédiaire | normal | `ADAPTER_DOSE` | `ADAPTER_DOSE` | `ADAPTER_DOSE` |
 | intermédiaire | intermédiaire | `ADAPTER_DOSE` | `ADAPTER_DOSE` | `ADAPTER_DOSE` |
 | intermédiaire | lent | `EVITER` | `EVITER` | `ADAPTER_DOSE` |
-| lent | normal | `EVITER` | `EVITER` | `ADAPTER_DOSE` |
-| lent | intermédiaire | `EVITER` | `EVITER` | `ADAPTER_DOSE` |
-| lent | lent | `EVITER` | `EVITER` | `ADAPTER_DOSE` |
+| lent | normal | `EVITER` | `ADAPTER_DOSE` (branche malignité, § 0.1) | `ADAPTER_DOSE` |
+| lent | intermédiaire | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
+| lent | lent | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
 
 Codage : TPMT et NUDT15 à 0.0 (lent), 0.5 (intermédiaire), 1.0 (normal). 27 lignes au total.
 
@@ -266,3 +280,55 @@ Le classement automatique des textes en quatre classes a produit trois résultat
 ### Étape suivante
 
 Étape 2 de la méthode validée : construire le corpus v15 sans toucher au v14, et mesurer combien d'étiquettes changent, médicament par médicament, avant tout réentraînement.
+
+---
+
+## 7. Étape 2 — mesure du passage v14 → v15
+
+Mesure effectuée le 12 novembre 2026 sur `Model_v8_7_9_10/data/corpus_v14/phenotype_drug_dataset_v14.csv`, **sans modification de ce fichier**.
+
+Corpus v14 : **232 664 lignes, 189 médicaments, 1 379 profils.**
+
+Distribution actuelle des actions : `STANDARD` 199 133 · `ADAPTER_DOSE` 20 426 · `EVITER` 8 049 · `SURVEILLER` 5 056.
+
+### 7.1 Lignes dont l'étiquette change : 415
+
+| Changement | Lignes | Détail |
+| --- | --- | --- |
+| Warfarine, CYP2C9 = 0,75 → `STANDARD` | **197** | 218 lignes concernées, dont 21 restent `ADAPTER_DOSE` parce que VKORC1 = 0,0 impose l'action la plus sévère |
+| Siponimod, CYP2C9 = 0,75 → `STANDARD` | **218** | aucune règle VKORC1 pour ce médicament |
+
+L'interaction entre la nouvelle règle VKORC1 et la correction CYP2C9 est donc réelle et chiffrée : elle annule la correction sur 21 lignes de warfarine. Répartition de VKORC1 parmi les 218 lignes à CYP2C9 = 0,75 : référence 129, hétérozygote 68, homozygote variant 21.
+
+### 7.2 Lignes ajoutées : 2 441
+
+| Ajout | Lignes | Motif |
+| --- | --- | --- |
+| Warfarine, CYP2C9 = 1,0 | **+985** | 985 profils sur 1 379 n'ont aujourd'hui aucune ligne warfarine |
+| Siponimod, CYP2C9 = 1,0 | **+985** | idem |
+| G6PD « variable » → `SURVEILLER`, 8 médicaments × 54 profils | **+432** | les profils G6PD = 0,5 ne reçoivent aucune ligne pour ces médicaments |
+| Primaquine, G6PD déficient → `EVITER` | **+39** | seule annotation G6PD réellement absente |
+
+### 7.3 Bilan
+
+**232 664 → 235 105 lignes : +1,05 % de volume, 0,18 % d'étiquettes modifiées.**
+
+Le changement est faible. Le réentraînement est à faible risque, la comparaison avec le v14 reste interprétable, et l'échéance du 18 novembre est tenable.
+
+### 7.4 Incohérence interne relevée dans le v14
+
+Les 24 médicaments à risque faible (PA166279741) reçoivent une ligne pour **les trois** phénotypes G6PD, y compris « variable » → `STANDARD`. Les 8 médicaments à risque élevé, la primaquine et la nitrofurantoïne n'en reçoivent que pour « normal » et « déficient ». Le phénotype variable est donc traité pour une partie du corpus seulement. L'ajout des 432 lignes rétablit la cohérence.
+
+### 7.5 Point restant à trancher : thioguanine, 9 lignes
+
+Pour TPMT normal × NUDT15 lent, le corpus donne `EVITER` (DPWG PA166184612, « avoid tioguanine ») alors que la grille bi-génique CPIC 2025 donne `ADAPTER_DOSE` (« reduce starting dose by 10-fold »).
+
+**Les deux sources prescrivent la même posologie : 10 % de la dose standard.** La divergence est de formulation, non de contenu clinique.
+
+Recommandation : suivre CPIC 2025, en application du principe déjà retenu pour la fluvastatine au § 5 — une grille multi-gènes prime sur les règles mono-gènes des mêmes gènes. La règle DPWG porte sur NUDT15 seul et ignore que TPMT est normal ; la grille CPIC est construite pour ce croisement. La règle la plus spécifique l'emporte.
+
+Ce principe ne contredit pas celui du § 2.3 (« ne jamais désescalader depuis `EVITER` ») : ce dernier gouverne l'**ambiguïté d'encodage**, où l'on ignore quel diplotype on a devant soi. Ici le génotype est entièrement connu et le problème est une **hiérarchie de sources**. Deux problèmes distincts, deux principes distincts.
+
+### 7.6 Étape suivante
+
+Construire le corpus v15 en appliquant les cinq règles, vérifier que les écarts constatés correspondent exactement aux 415 modifications et 2 441 ajouts prévus ci-dessus, puis réentraîner avec le protocole inchangé.
