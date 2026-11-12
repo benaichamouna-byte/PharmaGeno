@@ -274,7 +274,9 @@ Restreinte aux valeurs du corpus :
 
 Cette grille **existe déjà** dans `regles_v13_multigene.csv`. Le défaut n'est pas une règle manquante : les règles mono-gènes de `regles_v14_monogene.csv` donnent `ADAPTER_DOSE` là où la grille bi-génique donne `EVITER`, et la priorité entre les deux tables n'est pas définie explicitement.
 
-**Correction** : poser dans le moteur la règle « pour un médicament couvert par une grille multi-gènes, la grille prime sur les règles mono-gènes des mêmes gènes ». Principe déjà implicite via la colonne `guideline_multigene`, à rendre explicite et à vérifier dans le code. Aucune nouvelle ligne à écrire.
+**Vérification du 12 novembre 2026 : aucune correction n'est nécessaire.** Le moteur `construire_corpus_v3.py` applique déjà cette priorité. Sa documentation l'énonce — « si une règle multi-gènes correspond aux deux valeurs, elle remplace les règles mono-gène de ses deux gènes » — et le code l'exécute : les gènes couverts par une règle multi-gènes sont marqués (`couverts |= {ga, gb}`) puis leurs règles mono-gènes sont ignorées (`if g in couverts: continue`).
+
+Conséquence constatée à l'étape 3 : l'ajout de la grille TPMT × NUDT15 a suffi à faire disparaître les 18 lignes `EVITER` issues des règles DPWG mono-gènes, sans toucher au moteur.
 
 ---
 
@@ -353,3 +355,76 @@ Ce principe ne contredit pas celui du § 2.3 (« ne jamais désescalader depuis 
 ### 7.6 Étape suivante
 
 Construire le corpus v15 en appliquant les cinq règles, vérifier que les écarts constatés correspondent exactement aux 415 modifications et 2 441 ajouts prévus ci-dessus, puis réentraîner avec le protocole inchangé.
+
+
+---
+
+## 8. Étape 3 — construction et vérification du corpus v15
+
+Réalisée le 12 novembre 2026.
+
+### 8.1 Validation préalable du pipeline
+
+Avant de construire le v15, le corpus v14 a été reconstruit à partir de ses propres règles pour vérifier que le pipeline était correctement reproduit.
+
+Première tentative avec `profils_genes_v6.csv` : 232 664 lignes, effectif correct, mais **20 lignes de distribution divergentes** sur la capécitabine, la flucytosine, le fluorouracil et le tégafur. Cause identifiée : cinq profils (HG00613, HG01631, HG03115, NA18956, NA19711) portent DPYD = 0,5 dans `profils_genes_v6.csv` et DPYD = 1,0 dans `profils_genes_v6_complet.csv`.
+
+Avec `profils_genes_v6_complet.csv`, la reconstruction est **exacte** : 199 133 `STANDARD`, 20 426 `ADAPTER_DOSE`, 8 049 `EVITER`, 5 056 `SURVEILLER`.
+
+**Le corpus v14 provient donc de `profils_genes_v6_complet.csv`.** Les deux fichiers de profils coexistent dans `data/` et ne produisent pas le même corpus ; ce point est à mentionner dans le mémoire.
+
+### 8.2 Construction
+
+```
+python3 -I construire_corpus_v8.py \
+    --profils      ../data/profils_genes_v6_complet.csv \
+    --regles_mono  ../data/regles_v15_monogene.csv \
+    --regles_multi ../data/regles_v15_multigene.csv \
+    --sortie       ../data/corpus_v15
+```
+
+Résultat : **234 632 lignes, 189 médicaments, 1 379 profils.** Le corpus v14 reste intact.
+
+### 8.3 Vérification des écarts
+
+| | Prévu § 7 | Obtenu | |
+| --- | --- | --- | --- |
+| Lignes ajoutées | 1 968 | **1 968** | conforme |
+| Lignes supprimées | 0 | **0** | conforme |
+| Lignes modifiées | 415 + 18 thiopurines | **433** | conforme |
+
+**Détail des 433 modifications**
+
+| Médicament | Transition | Lignes |
+| --- | --- | --- |
+| warfarine | `ADAPTER_DOSE` → `STANDARD` | 197 |
+| siponimod | `ADAPTER_DOSE` → `STANDARD` | 218 |
+| mercaptopurine | `EVITER` → `ADAPTER_DOSE` | 9 |
+| thioguanine | `EVITER` → `ADAPTER_DOSE` | 9 |
+
+Les 18 lignes thiopurines résultent de la seule introduction de la grille bi-génique : le moteur cesse d'appliquer les règles DPWG mono-gènes sur TPMT et NUDT15 dès qu'une règle multi-gènes couvre les deux. Aucune modification du moteur n'a été faite.
+
+**Détail des 1 968 ajouts**
+
+| Médicament | Action | Lignes |
+| --- | --- | --- |
+| siponimod | `STANDARD` | 984 |
+| warfarine | `STANDARD` | 741 |
+| warfarine | `ADAPTER_DOSE` | 243 |
+
+Les 243 lignes de warfarine en `ADAPTER_DOSE` sont des profils CYP2C9 normal porteurs du variant VKORC1 homozygote : la règle VKORC1 ajoutée impose son action, plus sévère. C'est l'interaction annoncée au § 7.1, vérifiée en sens inverse — elle retire 21 lignes à la correction CYP2C9 et en ajoute 243 parmi les nouvelles.
+
+### 8.4 Équilibre des classes
+
+| Classe | v14 | v15 | Écart |
+| --- | --- | --- | --- |
+| `STANDARD` | 199 133 — 85,59 % | 201 273 — 85,78 % | +2 140 |
+| `ADAPTER_DOSE` | 20 426 — 8,78 % | 20 272 — 8,64 % | −154 |
+| `EVITER` | 8 049 — 3,46 % | 8 031 — 3,42 % | −18 |
+| `SURVEILLER` | 5 056 — 2,17 % | 5 056 — 2,15 % | 0 |
+
+Le déséquilibre entre classes est inchangé. Le réentraînement s'effectuera dans les mêmes conditions que le v14, ce qui rend la comparaison entre les deux corpus directement interprétable.
+
+### 8.5 Étape suivante
+
+Réentraîner DL, XGBoost et Random Forest sur le corpus v15 avec le protocole inchangé — mêmes plis, mêmes réglages, mêmes mesures — et rédiger l'amendement écrit au protocole de comparaison équitable.
