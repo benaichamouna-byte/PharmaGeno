@@ -11,7 +11,7 @@ Sources de tous les textes cités :
 
 ---
 
-## 0. Trois signalements antérieurs retirés
+## 0. Cinq signalements antérieurs retirés
 
 ### 0.1 « Incohérence TPMT lent entre les trois thiopurines » — RETIRÉ
 
@@ -47,6 +47,27 @@ Ce diagnostic portait sur `phenotype_drug_dataset_complet_v2.csv` (46 371 lignes
 | PA166279741 | 24 médicaments à risque faible | **déjà codée**, et couvre les trois phénotypes G6PD |
 
 Le traitement de la nitrofurantoïne sur le phénotype `Deficient` → `SURVEILLER`, proposé au § 3.2 comme choix de conception, était **déjà en place**. Seule la primaquine manque.
+
+
+### 0.5 « Trois annotations G6PD à ajouter » — RETIRÉ en totalité
+
+Vérification sur `regles_v14_monogene.csv` (704 règles) croisée avec le corpus v14 : **exactement cinq règles ne produisent aucune ligne**, et toutes portent `conditionnel = True`.
+
+| Règle | Pourquoi exclue |
+| --- | --- |
+| mavacamten × CYP2C19 lent | dose selon la comédication par inhibiteur du CYP3A4 |
+| éliglustat × CYP2D6 lent | contre-indiqué avec un inhibiteur fort du CYP3A, sinon non |
+| flécaïnide × CYP2D6 intermédiaire | 75 % de la dose, sauf test de provocation du syndrome de Brugada |
+| quétiapine × CYP3A4 lent | alternative si dépression, 30 % de la dose sinon |
+| **primaquine × G6PD déficient** | « Avoid primaquine, **except in the following cases** » — schémas d'exception OMS et CDC |
+
+La règle primaquine **existe donc déjà** et est écartée pour la même raison que les quatre autres. Rien ne manque : le corpus applique une politique uniforme — *une règle dont l'action dépend d'une information absente du VCF n'est pas étiquetée*.
+
+**Conséquence pour le phénotype G6PD « variable ».** Sa recommandation CPIC est « To ascertain G6PD status, enzyme activity must be measured ». Après le dosage, le patient se révèle normal (`STANDARD`) ou déficient (`EVITER`) : l'action branche selon une information extérieure au VCF, exactement comme les cinq règles ci-dessus. Lui attribuer `SURVEILLER` reviendrait à inventer une action que CPIC ne prescrit pas.
+
+**Décision du 12 novembre 2026 : le phénotype « variable » est exclu de l'étiquetage**, par application de la même politique et sans dérogation. Cette décision révise celle prise plus tôt le même jour au § 3.2, qui avait été arrêtée avant que la politique d'exclusion des règles conditionnelles ne soit identifiée.
+
+**Séparation à inscrire dans le mémoire** : le corpus porte des étiquettes, l'application porte de l'information. Rien n'empêche l'application d'afficher le texte CPIC du dosage enzymatique pour un profil G6PD variable ; ce n'est pas une étiquette d'entraînement.
 
 
 ---
@@ -153,7 +174,7 @@ Justification de l'asymétrie : les deux erreurs n'ont pas le même coût. Sur-a
 
 ---
 
-## 3. G6PD — trois annotations à ajouter
+## 3. G6PD — aucune règle à ajouter (voir § 0.5)
 
 Six annotations CPIC couvrent G6PD ; une seule est codée.
 
@@ -195,7 +216,7 @@ Six annotations CPIC couvrent G6PD ; une seule est codée.
 | Deficient with CNSHA | « Avoid » | — | `EVITER`, non dérivable (§ 3.2) |
 | Variable / Indeterminate | test enzymatique | 0.5 | voir § 3.2 |
 
-### 3.2 Deux points de conception
+### 3.2 Deux points de conception — RÉVISÉS, voir § 0.5
 
 **Phénotype « variable » (valeur 0,5).** CPIC n'y prescrit pas une action mais un examen : « enzyme activity must be measured ». Ce n'est aucune des quatre classes. Proposition : `SURVEILLER`, avec le texte du test enzymatique affiché tel quel dans la recommandation. À valider.
 
@@ -215,11 +236,11 @@ Chaque directive porte 35 combinaisons dans PharmCAT. Restreintes aux trois phé
 | --- | --- | --- | --- | --- |
 | normal | normal | `STANDARD` | `STANDARD` | `STANDARD` |
 | normal | intermédiaire | `ADAPTER_DOSE` | `ADAPTER_DOSE` | `ADAPTER_DOSE` |
-| normal | lent | `EVITER` | `EVITER` | `ADAPTER_DOSE` (voir § 4.1) |
+| normal | lent | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
 | intermédiaire | normal | `ADAPTER_DOSE` | `ADAPTER_DOSE` | `ADAPTER_DOSE` |
 | intermédiaire | intermédiaire | `ADAPTER_DOSE` | `ADAPTER_DOSE` | `ADAPTER_DOSE` |
-| intermédiaire | lent | `EVITER` | `EVITER` | `ADAPTER_DOSE` |
-| lent | normal | `EVITER` | `ADAPTER_DOSE` (branche malignité, § 0.1) | `ADAPTER_DOSE` |
+| intermédiaire | lent | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
+| lent | normal | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
 | lent | intermédiaire | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
 | lent | lent | `EVITER` | `ADAPTER_DOSE` (branche malignité) | `ADAPTER_DOSE` |
 
@@ -263,7 +284,7 @@ Cette grille **existe déjà** dans `regles_v13_multigene.csv`. Le défaut n'est
 | --- | --- | --- | --- | --- |
 | 1 | Warfarine × VKORC1 | ajout | 3 lignes | **oui** |
 | 2 | CYP2C9 warfarine et siponimod | modification + ajout | 436 lignes modifiées, valeur 1,0 à créer | **oui** |
-| 3 | G6PD, 3 annotations | ajout | 8 médicaments × 3 valeurs | oui, sous réserve des 2 points du § 3.2 |
+| 3 | G6PD | **aucune ligne** | règles existantes, « variable » et primaquine exclus comme conditionnels (§ 0.5) | **sans objet** |
 | 4 | Thiopurines | grille bi-génique | 27 lignes, dont 9 passant de `EVITER` à `ADAPTER_DOSE` (thioguanine) | **oui** |
 | 5 | Fluvastatine | priorité du moteur | 0 ligne, 1 correction de code | **oui** |
 
@@ -300,18 +321,18 @@ Distribution actuelle des actions : `STANDARD` 199 133 · `ADAPTER_DOSE` 20 426 
 
 L'interaction entre la nouvelle règle VKORC1 et la correction CYP2C9 est donc réelle et chiffrée : elle annule la correction sur 21 lignes de warfarine. Répartition de VKORC1 parmi les 218 lignes à CYP2C9 = 0,75 : référence 129, hétérozygote 68, homozygote variant 21.
 
-### 7.2 Lignes ajoutées : 2 441
+### 7.2 Lignes ajoutées : 1 970
 
 | Ajout | Lignes | Motif |
 | --- | --- | --- |
 | Warfarine, CYP2C9 = 1,0 | **+985** | 985 profils sur 1 379 n'ont aujourd'hui aucune ligne warfarine |
 | Siponimod, CYP2C9 = 1,0 | **+985** | idem |
-| G6PD « variable » → `SURVEILLER`, 8 médicaments × 54 profils | **+432** | les profils G6PD = 0,5 ne reçoivent aucune ligne pour ces médicaments |
-| Primaquine, G6PD déficient → `EVITER` | **+39** | seule annotation G6PD réellement absente |
+| ~~G6PD « variable »~~ | **0** | écarté : règle conditionnelle, voir § 0.5 |
+| ~~Primaquine, G6PD déficient~~ | **0** | écartée : la règle existe déjà et est exclue comme conditionnelle, voir § 0.5 |
 
 ### 7.3 Bilan
 
-**232 664 → 235 105 lignes : +1,05 % de volume, 0,18 % d'étiquettes modifiées.**
+**232 664 → 234 634 lignes : +0,85 % de volume, 0,18 % d'étiquettes modifiées.**
 
 Le changement est faible. Le réentraînement est à faible risque, la comparaison avec le v14 reste interprétable, et l'échéance du 18 novembre est tenable.
 
