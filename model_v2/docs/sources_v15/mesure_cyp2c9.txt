@@ -1,0 +1,49 @@
+======================================================================
+# PARTIE 1 — IMPACT DU CHOIX A/B SUR LE CORPUS v14
+======================================================================
+Corpus : /home/mouna/projet_memoire/Model_v8_7_9_10/data/corpus_v14/phenotype_drug_dataset_v14.csv
+Lignes totales : 232664
+
+--- Repartition de CYP2C9 sur tout le corpus ---
+CYP2C9
+0.00       856
+0.25      4127
+0.50     24774
+0.75     37077
+1.00    165679
+NaN        151
+
+Lignes avec CYP2C9 a 0.5 ou 0.75 : 61851 (26.6 %)
+
+--- Les 3 medicaments DPWG concernes ---
+
+warfarin : 394 lignes
+action  ADAPTER_DOSE
+CYP2C9              
+0.00               5
+0.25              25
+0.50             146
+0.75             218
+
+siponimod : 394 lignes
+action  ADAPTER_DOSE  EVITER
+CYP2C9                      
+0.00               0       5
+0.25               0      25
+0.50             146       0
+0.75             218       0
+
+phenytoin : 670 lignes
+action  ADAPTER_DOSE  EVITER  STANDARD
+CYP2C9                                
+0.00               1       0         1
+0.25               7       0         7
+0.50              54       0        54
+0.75              94       0        94
+1.00               0      12       346
+
+
+======================================================================
+# PARTIE 2 — OU SONT LES TABLES PHARMCAT
+======================================================================
+  32,292,707 o  /home/mouna/pharmcat_test/pharmcat-3.4.0-all.jar
