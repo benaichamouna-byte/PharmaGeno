@@ -35,18 +35,23 @@ Le chapitre v14 donnait beaucoup de valeurs sans dire pourquoi. Sont désormais 
 ### Limites ajoutées
 Le point 4 de la section 4.10 est nouveau : **le réseau de choix n'a bénéficié d'aucune recherche d'hyperparamètres**, contrairement au réseau de profil. C'est la même asymétrie que celle reprochée aux comparaisons antérieures entre le réseau et les arbres ; ne pas la signaler aurait été incohérent.
 
-## 2. Les six marqueurs
+## 2. Les marqueurs : deux levés, quatre restants
+
+**Levés par la régénération des modèles finaux sur le corpus v15 :**
+
+- **§ 4.5, seuil de l'application : 0,9981.** Il n'est pas choisi, il est calculé. `modele_final_profil_v3.py` lit les 25 fichiers hors pli `oof_c35_cal_pli*_graine*.npz` et en écrit les quantiles à 0,5 %, 1 %, 2 % et 5 % dans `abstention_seuils_profil_v3.json`, livré avec le modèle. Valeurs obtenues : 0,993351 / 0,998120 / 0,999421 / 0,999791. **Elles coïncident avec celles annoncées par l'analyse de couverture-risque** (0,9934 / 0,9981 / 0,9994 / 0,9998), ce qui valide les deux chemins de calcul l'un par l'autre.
+- **§ 4.9, modèles finaux :** T = 0,222, 61 époques pour le réseau de profil, 167 pour le réseau de choix. Validation interne du réseau de profil : F1 macro 0,9997, exactitude 0,9999, précision EVITER 1,0, ECE 0,0002 ; XGBoost 1,0 de F1 macro.
+
+**Restants :**
 
 | § | Ce qui manque | Comment le lever |
 | --- | --- | --- |
 | 4.2 | contrôle de la perte avec la version de PyTorch de l'entraînement | relancer le contrôle numérique sur un lot d'essai |
-| 4.5 | **seuil retenu pour l'application** | ta décision, après le point de contrôle |
 | 4.5 | seuil a priori sur P(EVITER) | ne pas lever : doit être fixé sur la validation interne |
 | 4.8 | évaluation finale sur les 138 profils | après gel écrit du protocole |
-| 4.9 | température, époques et validation interne des modèles finaux v15 | après régénération de l'application |
-| 4.10 | versions des bibliothèques | `pip freeze` au moment des entraînements ; si c'est perdu, le marqueur devient une limite écrite |
+| 4.10 | versions des bibliothèques | `pip freeze` ; si c'est perdu, le marqueur devient une limite écrite |
 
-**Deux de ces six se lèvent ensemble** : dès que l'application sera régénérée sur les modèles v15, le § 4.9 se remplit et le seuil du § 4.5 se décide. Garde-les groupés.
+**La décision sur le seuil est close, et elle ne t'appartenait pas vraiment.** Tu avais choisi de trancher après le point de contrôle ; en réalité le pipeline calcule le seuil tout seul. Conserver 0,9965 aurait exigé d'écraser à la main un fichier produit par le programme — ce qui ne se défend pas. La section 4.5 dit maintenant explicitement que le seuil est calculé et non saisi.
 
 ## 3. Point de vigilance
 

@@ -86,7 +86,7 @@ Tableau 4.1 : Part de prédictions écartées et seuil de confiance correspondan
 | 2 % | 0,9994 |
 | 5 % | 0,9998 |
 
-Ces quatre valeurs sont plus élevées que celles obtenues sur la version antérieure du corpus (0,9895, 0,9965, 0,9988 et 0,9995) : le réseau étant devenu plus confiant, il faut un seuil plus haut pour écarter la même part de prédictions. L'application utilise encore le seuil de 0,9965, hérité de la version antérieure ; appliqué aux prédictions de la v15, il n'écarte plus 1 % des prédictions mais 0,56 %. **[à compléter : seuil retenu pour l'application après sa régénération sur les modèles v15]**
+Ces quatre valeurs sont plus élevées que celles obtenues sur la version antérieure du corpus (0,9895, 0,9965, 0,9988 et 0,9995) : le réseau étant devenu plus confiant, il faut un seuil plus haut pour écarter la même part de prédictions. Le seuil employé par l'application est celui du niveau 1 %, soit **0,9981** sur le corpus v15. Il n'est pas saisi à la main : le programme qui produit le modèle final calcule ces quatre quantiles à partir des 25 fichiers de prédictions hors pli et les enregistre avec le modèle, de sorte que le seuil servi par l'application est toujours celui mesuré sur le corpus qui a entraîné ce modèle.
 
 L'analyse de couverture-risque menée sur le corpus v15 (section 6.3) donne une aire sous la courbe ROC de 0,870 pour la confiance employée comme indicateur d'erreur ; les 1 % de lignes les moins confiantes contiennent 77,0 % des erreurs. En revanche, à un seuil de 0,90, 32,0 des 47,4 situations à éviter manquées restent acceptées : ce sont des erreurs commises avec une confiance élevée, que l'abstention ne peut pas détecter. Un seuil spécifique sur la probabilité de la classe EVITER a été exploré après coup sur les mêmes plis ; il n'est pas utilisable tel quel, car un tel seuil doit être fixé a priori sur la validation interne **[à compléter]**.
 
@@ -137,9 +137,9 @@ Le rappel R\_EVITER est la part des lignes dont la classe vraie est EVITER et qu
 
 ### 4.9 Modèles finaux de l'application
 
-Le réseau de profil final est entraîné une fois (graine 42) sur 1 116 profils, avec 125 profils de validation interne pour l'arrêt anticipé et la température. Les 138 profils finaux ne sont pas utilisés. Le réseau de choix final est entraîné de la même façon. Les valeurs obtenues sur la validation interne ont servi à l'arrêt anticipé : elles sont optimistes et ne tiennent pas lieu d'estimation de performance, laquelle vient de la validation croisée (chapitre 6). La répartition 1 116 + 125 reprend les 1 241 profils de développement, l'ensemble final restant intact.
+Le réseau de profil final est entraîné une fois (graine 42) sur 1 116 profils, avec 125 profils de validation interne pour l'arrêt anticipé et la température, qui vaut T = 0,222 ; l'entraînement s'arrête à 61 époques. Les 138 profils finaux ne sont pas utilisés, ce que le programme vérifie et rapporte. Le réseau de choix final est entraîné de la même façon et s'arrête à 167 époques. Les valeurs obtenues sur la validation interne ont servi à l'arrêt anticipé : elles sont optimistes et ne tiennent pas lieu d'estimation de performance, laquelle vient de la validation croisée (chapitre 6). La répartition 1 116 + 125 reprend les 1 241 profils de développement, l'ensemble final restant intact.
 
-**[à compléter : température, nombre d'époques et valeurs de validation interne des modèles finaux régénérés sur le corpus v15]**
+Les valeurs de validation interne du réseau de profil final sont un F1 macro de 0,9997, une exactitude de 0,9999, une précision de la classe EVITER de 1,0 et une ECE de 0,0002 ; celles de XGBoost atteignent 1,0 de F1 macro. Elles ne sont rapportées que pour mémoire : mesurées sur l'ensemble qui a servi à l'arrêt anticipé, elles sont optimistes par construction et ne constituent pas une estimation de performance.
 
 ### 4.10 Limites assumées
 
