@@ -1,0 +1,46 @@
+{
+ "choix_dans_S_informatifs": {
+  "moy": 0.9999743754003845,
+  "std": 5.1249199231273586e-05
+ },
+ "defaut_dans_S_informatifs": {
+  "moy": 0.9908409623709895,
+  "std": 0.0
+ },
+ "choix_dans_S_si_defaut_faux": {
+  "moy": 1.0,
+  "std": 0.0
+ },
+ "ensemble_exact_informatifs": {
+  "moy": 0.9891740694233349,
+  "std": 0.0007939216363428988
+ },
+ "defaut_ensemble_exact_informatifs": {
+  "moy": 0.3434711831853489,
+  "std": 0.0
+ },
+ "jaccard_informatifs": {
+  "moy": 0.9970646724518957,
+  "std": 0.00034330707929451296
+ },
+ "defaut_jaccard_informatifs": {
+  "moy": 0.7144060680420076,
+  "std": 0.0
+ },
+ "choix_EVITER_si_EVITER_possible": {
+  "moy": 0.0,
+  "std": 0.0
+ },
+ "defaut_EVITER_si_EVITER_possible": {
+  "moy": 0.0007327580422208205,
+  "std": 0.0
+ },
+ "hasard_dans_S_informatifs": {
+  "moy": 0.5513662577165894,
+  "std": 0.0
+ },
+ "graines": 5,
+ "plis": 5,
+ "classes": 44,
+ "n_lignes_final_non_utilisees": 23455
+}
