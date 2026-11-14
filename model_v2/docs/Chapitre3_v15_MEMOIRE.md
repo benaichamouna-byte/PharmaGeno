@@ -17,7 +17,7 @@ Tableau 3.1 : Éléments du corpus v15
 | Profils génétiques | 1 379 (1 070 d'identifiant HG et 309 d'identifiant NA, issus du projet 1000 Genomes) |
 | Lignes (profil × médicament) | 234 632 |
 | Doublons (profil, médicament) | 0 |
-| Lignes par profil | minimum \[à compléter\], médiane \[à compléter\], maximum \[à compléter\] |
+| Lignes par profil | minimum 118, médiane 170, maximum 178 |
 | Statut d'étiquette | « ok » pour toutes les lignes |
 
 **Pourquoi ces effectifs.** Aucun de ces nombres n'est un réglage choisi librement : chacun découle d'une règle de construction, indiquée ci-dessous avec ce qui empêche d'en avoir plus ou moins.
@@ -25,7 +25,7 @@ Tableau 3.1 : Éléments du corpus v15
 - **189 médicaments.** Ce sont les médicaments pour lesquels les sources retenues fournissent au moins une règle applicable aux gènes du corpus (709 règles à un gène et 124 règles à plusieurs gènes, section 3.3). Il n'y en a pas davantage parce que les autres médicaments n'ont pas de règle dans ces sources, ou que leur règle porte sur un gène inexploitable dans le corpus (21 médicaments, section 3.3). Ce nombre n'est donc pas fixé d'avance : il change quand une source ajoute ou retire une règle. Il est resté identique entre les versions 14 et 15 du corpus, les corrections apportées ayant porté sur des règles de médicaments déjà couverts.
 - **1 379 profils.** Les fichiers source contiennent 3 202 échantillons ; le corpus en utilise 1 379, repris du jeu de données initial du projet. La règle qui a retenu ces échantillons n'a pas été retrouvée. L'examen de la liste montre que ce n'est pas un tirage au hasard : les enfants des trios en sont presque absents (4 sur 608), et la part d'échantillons retenus décroît dans l'ordre des identifiants (80 % des 200 premiers, puis entre 26 % et 56 % selon les tranches de 200). Ce nombre n'est donc pas justifié par un calcul de taille d'échantillon ; c'est une limite (section 3.8, point 2). \[à compléter : courbe d'apprentissage selon le nombre de profils\]
 - **234 632 lignes.** Les 1 379 profils et les 189 médicaments forment 260 631 couples possibles. 25 999 couples n'ont pas de ligne, parce que le moteur ne produit une étiquette que si une règle s'applique à la valeur du gène du profil et si ce gène est typé. Le corpus v15 compte 1 968 lignes de plus que le v14, l'ajout de la règle fondée sur VKORC1 pour la warfarine et de la grille à deux gènes des thiopurines ayant rendu étiquetables des couples qui ne l'étaient pas.
-- **Lignes par profil.** C'est la conséquence du point précédent : un profil dont certains gènes ne sont pas typés est étiqueté pour moins de médicaments.
+- **118 à 178 lignes par profil.** C'est la conséquence du point précédent : un profil dont certains gènes ne sont pas typés est étiqueté pour moins de médicaments. Ainsi, 46 médicaments ont une ligne pour chacun des 1 379 profils, alors que la warfarine en a 1 378 (les profils dont le CYP2C9 ou le VKORC1 n'est pas de référence) et l'abacavir 508 (les profils disposant d'un typage HLA).
 - **0 doublon et statut « ok ».** Ce sont des résultats de contrôle, non des choix : chaque couple (profil, médicament) n'apparaît qu'une fois, et seules les lignes dont l'étiquette a pu être calculée sans ambiguïté sont conservées.
 
 Répartition des classes :
@@ -52,7 +52,7 @@ Le corpus est donc fortement déséquilibré en faveur de STANDARD ; ce déséqu
 Figure 3.1 : Répartition des classes d'action dans le corpus v15 (234 632 lignes).
 :::
 
-Chaque ligne porte aussi un niveau de confiance attribué par le moteur d'étiquetage : « haute » pour \[à compléter\] lignes et « moyenne » pour \[à compléter\] lignes. Une ou deux règles s'appliquent à chaque ligne (une règle : \[à compléter\] lignes ; deux règles : \[à compléter\] lignes). \[à compléter : définition des niveaux de confiance\]
+Chaque ligne porte aussi un niveau de confiance attribué par le moteur d'étiquetage : « haute » pour 145 078 lignes et « moyenne » pour 89 554 lignes. Une ou deux règles s'appliquent à chaque ligne (une règle : 222 318 lignes ; deux règles : 12 314 lignes). \[à compléter : définition des niveaux de confiance\]
 
 ### 3.2 Profils génétiques
 
@@ -72,7 +72,7 @@ Chaque ligne porte aussi un niveau de confiance attribué par le moteur d'étiqu
 
 **Sources.** Les règles proviennent de directives pharmacogénétiques publiées : CPIC (Relling et Klein, 2011), DPWG (Swen et al., 2011) et RNPGx (Abdullah-Koolmees et al., 2021), complétées par les informations de pharmacogénétique des étiquettes de médicaments de la FDA, de l'EMA et de Health Canada (HCSC). Les tables CPIC utilisées pour six gènes ont été prises dans PharmCAT (Sangkuhl et al., 2020), version du 25 septembre 2026 (commit 27ea1bc). Les tables FDA proviennent du fichier prescribing\_guidance.json de PharmCAT (commit 8e6f81b9372da54f9281d452cd171253c6a8974f, 16 octobre 2026). Les fiches de directives CPIC et DPWG proviennent de ClinPGx (Whirl-Carrillo et al., 2021) : 220 fichiers JSON téléchargés le 5 avril 2026, sous licence CC BY-SA 4.0.
 
-**Règles mono-gène.** La table v15 contient 709 règles mono-gène. \[à compléter : répartition par source\] Elles concernent 19 gènes : CYP2B6, CYP2C19, CYP2C9, CYP2D6, CYP3A4, CYP3A5, DPYD, F5, G6PD, HLA-A\*31:01, HLA-B\*15:02, HLA-B\*57:01, HLA-B\*58:01, NAT2, NUDT15, SLCO1B1, TPMT, UGT1A1 et VKORC1.
+**Règles mono-gène.** La table v15 contient 709 règles mono-gène, réparties par source : CPIC 363, DPWG 145, FDA 95, FDA-étiquette 84, HCSC-étiquette 8, RNPGx 8, EMA-étiquette 6. Elles concernent 19 gènes : CYP2B6, CYP2C19, CYP2C9, CYP2D6, CYP3A4, CYP3A5, DPYD, F5, G6PD, HLA-A\*31:01, HLA-B\*15:02, HLA-B\*57:01, HLA-B\*58:01, NAT2, NUDT15, SLCO1B1, TPMT, UGT1A1 et VKORC1.
 
 **Règles multi-gènes.** 124 règles CPIC portent sur des combinaisons de gènes :
 
@@ -90,7 +90,7 @@ Tableau 3.3 : Règles multi-gènes, paires de gènes et médicaments concernés
 | CYP2C9 + SLCO1B1 | fluvastatine |
 | TPMT + NUDT15 | azathioprine, mercaptopurine, thioguanine |
 
-\[à compléter : vérifier l'exhaustivité du tableau 3.3 sur la table de règles v15\]
+Ce tableau est exhaustif : la table des règles multi-gènes v15 ne contient aucune autre paire de gènes ni aucun autre médicament. Les 124 règles s'y répartissent ainsi : TPMT + NUDT15, 27 règles ; CYP2B6 + CYP2C19, 25 ; CYP2C19 + CYP2D6, 20 ; CYP2C9 + HLA-B, 20 ; CYP2C9 + SLCO1B1, 20 ; ABCG2 + SLCO1B1, 12. Le nombre de règles d'une paire est le produit du nombre de valeurs retenues pour chacun des deux gènes, multiplié par le nombre de médicaments de la paire : c'est donc la taille de la grille que la directive décrit, et non un choix. Les neuf médicaments cités portent tous aussi au moins une règle à un gène, sauf la rosuvastatine ; l'union des 188 médicaments à règle mono-gène et des 9 à règle multi-gènes donne les 189 médicaments du corpus.
 
 **Médicaments « règle seule ».** 21 médicaments ont une règle mais aucune ligne d'entraînement, car le gène concerné n'est pas exploitable dans le corpus (CACNA1S, RYR1, CFTR, MT-RNR1, certains allèles HLA). Ils sont traités par le moteur de règles seul dans l'application (chapitre 5).
 
@@ -131,7 +131,7 @@ Le codage du médicament, l'architecture et l'entraînement sont décrits au cha
 
 **Unité de découpage.** Tous les découpages se font par profil : toutes les lignes d'un même profil sont dans le même groupe, afin d'éviter qu'un profil apparaisse à la fois en apprentissage et en test. La validation croisée utilise StratifiedGroupKFold à 5 plis (scikit-learn ; Pedregosa et al., 2011), avec la graine 42. Le regroupement se fait par identifiant de profil ; la parenté entre profils est examinée en section 3.8, point 3.
 
-**Ensemble final.** 138 profils (\[à compléter\] lignes), soit 10 % des 1 379 profils, sont réservés à une évaluation finale unique. Ils ont été tirés une fois, puis leur liste a été figée pour que l'ensemble reste le même d'une version du corpus à l'autre. Ils ne servent ni à l'entraînement, ni au réglage, ni au choix des modèles, et ils n'ont jamais été lus pour évaluer un modèle. Ce n'est toutefois pas un ensemble vierge de toute exposition : 125 de ces profils ont participé à la validation croisée d'essais antérieurs du projet (section 3.8, point 9). Les 1 241 profils restants (\[à compléter\] lignes) servent au développement : choix des hyperparamètres, validation croisée et calibration (sur 10 % de validation interne).
+**Ensemble final.** 138 profils (23 455 lignes), soit 10 % des 1 379 profils, sont réservés à une évaluation finale unique. Ils ont été tirés une fois, puis leur liste a été figée pour que l'ensemble reste le même d'une version du corpus à l'autre. Ils ne servent ni à l'entraînement, ni au réglage, ni au choix des modèles, et ils n'ont jamais été lus pour évaluer un modèle. Ce n'est toutefois pas un ensemble vierge de toute exposition : 125 de ces profils ont participé à la validation croisée d'essais antérieurs du projet (section 3.8, point 9). Les 1 241 profils restants (211 177 lignes) servent au développement : choix des hyperparamètres, validation croisée et calibration (sur 10 % de validation interne).
 
 ### 3.7 Médicaments et métadonnées
 
@@ -149,7 +149,7 @@ Les classes ATC des médicaments proviennent d'une copie du dépôt public fabku
 8. **CNSHA.** Le phénotype d'anémie hémolytique non sphérocytaire congénitale, que la recommandation sur G6PD distingue, n'est pas dérivable d'un fichier de variants. L'outil assigne le phénotype déficient et affiche la réserve clinique correspondante.
 9. **Règles révisées après observation.** Certaines règles ont été revues après l'examen d'erreurs de validation : l'évaluation sur les profils de développement n'est donc pas indépendante des règles.
 10. **Ensemble final.** 125 des 138 profils actuels ont été utilisés dans la validation croisée d'essais antérieurs. Ils n'ont toutefois jamais été lus pour une évaluation. L'ensemble final est donc réservé, sans être vierge de toute exposition méthodologique.
-11. **Règles non étiquetées.** Six règles ne reçoivent pas d'étiquette parce que leur action dépend d'une information absente du fichier VCF (section 3.3). \[à compléter : nombre de règles portant le drapeau « conditionnel » dans la table v15\]
+11. **Règles non étiquetées.** Six règles ne reçoivent pas d'étiquette parce que leur action dépend d'une information absente du fichier VCF (section 3.3). Dans la table v15, 18 des 709 règles à un gène portent le drapeau « conditionnel » et 2 le drapeau « ambigu ». Ces drapeaux signalent une règle dont l'action dépend d'une information que le corpus ne porte pas ; ils servent à délimiter ce que l'étiquette recouvre, et non à écarter des lignes.
 12. **Références générales.** L'application affiche pour chaque source la référence générale (CPIC : Relling et Klein, 2011 ; DPWG : Swen et al., 2011 ; RNPGx : Abdullah-Koolmees et al., 2021) ; l'association de chaque directive à sa publication précise (environ 152 identifiants PA) reste à faire.
 
 ### 3.9 Origine des principaux effectifs
@@ -167,6 +167,7 @@ Tableau 3.4 : Origine des principaux effectifs du corpus
 | 508 | Profils avec typage HLA | Profils pour lesquels un typage HLA publié est disponible (Gourraud et al., 2014) ; valeur manquante pour les 871 autres |
 | 189 | Médicaments | Médicaments couverts par au moins une règle applicable aux gènes du corpus (section 3.3) |
 | 234 632 | Lignes | Couples (profil, médicament) pour lesquels une règle s'applique et le gène est typé, sur 260 631 couples possibles (section 3.1) |
+| 211 177 | Lignes de développement | 234 632 lignes moins les 23 455 des 138 profils de l'ensemble final (section 3.6) |
 | 4 | Classes d'action | STANDARD, ADAPTER\_DOSE, SURVEILLER, EVITER : actions produites par le moteur de règles (section 3.4) |
 | 20 | Variables génétiques | 31 gènes et 4 allèles HLA du corpus, moins les colonnes vides, constantes ou exclues (section 3.5) |
 | 34 | Colonnes d'entrée du modèle | 20 variables et 14 indicateurs de valeur manquante (section 3.5) |
