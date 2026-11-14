@@ -77,9 +77,26 @@ Figure 6.1 : Effet de l'abstention sur les erreurs restantes et sur les EVITER m
 
 ### 6.4 Réseau de choix au sein d'une classe
 
-Le réseau de choix n'a pas été réentraîné sur le corpus v15 **[à compléter]**. Les résultats de sa validation croisée portent donc sur la version antérieure du corpus et ne sont pas transposables telles quelles : les règles révisées en v15 touchent trois médicaments de la classe des thiopurines et deux statines, qui entrent dans la cible du réseau de choix, et sa cible est construite à partir des actions du moteur de règles (chapitre 4). Ce point est repris parmi les limites (section 6.8).
+Le réseau de choix a été réentraîné sur le corpus v15 selon le protocole du chapitre 4 : 44 classes ATC de niveau 4 contenant au moins deux médicaments étiquetés, 5 plis groupés par identifiant de profil et 5 graines, soit 25 entraînements. L'ensemble final de 138 profils (23 455 lignes) n'est pas utilisé, ce que le programme vérifie et rapporte. Deux références encadrent les résultats : une référence qui ignore le profil du patient et propose pour tous les mêmes médicaments, à savoir ceux qui appartiennent le plus souvent à l'ensemble acceptable à l'entraînement, et un choix au hasard. Ces références sont déterministes, d'où leur écart-type nul.
 
-Ce que la version antérieure a mesuré reste utile sur un point, indépendant du corpus : la métrique « choix dans l'ensemble des médicaments acceptables » atteint déjà 99,09 % avec une référence qui ignore le profil du patient et propose les mêmes médicaments pour tous. Cette métrique ne discrimine donc pas et ne doit pas être présentée comme un résultat. Les deux mesures informatives sont l'ensemble exact retrouvé et l'indice de Jaccard, parce que la référence sans profil y descend respectivement à 38,9 % et 0,7275.
+::: {custom-style="LegendeTableau"}
+Tableau 6.3 : Réseau de choix au sein d'une classe ATC4, validation croisée (44 classes, 5 plis × 5 graines, corpus v15)
+:::
+
+| Mesure | Réseau de choix | Référence sans profil | Hasard |
+| --- | --- | --- | --- |
+| Choix dans l'ensemble acceptable (cas informatifs) | 99,997 % ± 0,005 | 99,08 % | 55,14 % |
+| Ensemble exact retrouvé | 98,92 % ± 0,08 | 34,35 % | — |
+| Indice de Jaccard | 0,99706 ± 0,00034 | 0,71441 | — |
+| Médicament EVITER choisi quand il en existe un dans la classe | 0,000 % ± 0,000 | 0,073 % | — |
+
+**Ce que ces chiffres disent, et ce qu'ils ne disent pas.** La mesure « choix dans l'ensemble acceptable » ne discrimine pas : la référence qui ignore entièrement le profil atteint déjà 99,08 %, parce que dans la plupart des classes le même médicament convient à presque tous les patients. Elle est rapportée pour cette raison même, et non comme un résultat. Les deux mesures informatives sont l'ensemble exact retrouvé et l'indice de Jaccard, où la référence sans profil descend respectivement à 34,35 % et 0,714 : c'est là que la lecture du profil se voit.
+
+Une mesure répond plus directement à la question de l'apport du profil. Parmi les cas informatifs, la référence sans profil propose un médicament hors de l'ensemble acceptable dans 72 cas répartis sur les cinq plis ; sur ces 72 cas, **le réseau choisit correctement dans la totalité d'entre eux, et pour les cinq graines**. Autrement dit, là où ignorer le profil conduit à une proposition inadéquate, la lecture du profil la corrige systématiquement. Le nombre de cas concernés est petit, ce qui limite la portée du constat, mais il est obtenu sans aucune exception.
+
+Sur le critère de sécurité propre à cette tâche, le réseau n'a jamais proposé un médicament étiqueté EVITER, dans aucun pli et avec aucune graine, alors que la référence sans profil le fait dans 0,073 % des cas où un tel médicament existe dans la classe. C'est le seul chiffre de cette section qui porte une conséquence clinique directe.
+
+**Limite de principe.** Tous ces résultats mesurent un accord avec la cible définie au chapitre 4, qui est une convention du projet : parmi les médicaments étiquetés de la classe, retenir ceux de la meilleure action disponible, et leur attribuer une probabilité uniforme. Aucune ligne directrice ne départage les médicaments de cet ensemble. Un score élevé signifie donc que le réseau reproduit fidèlement cette convention, et non qu'il désigne le meilleur médicament pour le patient. S'y ajoute le fait que ce réseau n'a bénéficié d'aucune recherche d'hyperparamètres, contrairement au réseau de profil (section 4.10).
 
 ### 6.5 Comparaison avec XGBoost et Random Forest
 
@@ -90,7 +107,7 @@ Le deuxième amendement justifie deux points propres au corpus v15. D'abord, les
 La statistique principale est la moyenne sur les graines : la mesure est calculée sur l'ensemble des prédictions hors pli de chaque graine, puis moyennée. Les intervalles sont obtenus par bootstrap sur les identifiants de profil (2 000 tirages), les profils apparentés étant traités comme indépendants.
 
 ::: {custom-style="LegendeTableau"}
-Tableau 6.3 : Comparaison du réseau, de XGBoost et de Random Forest (corpus v15, moyenne de 5 graines)
+Tableau 6.4 : Comparaison du réseau, de XGBoost et de Random Forest (corpus v15, moyenne de 5 graines)
 :::
 
 | Modèle | F1 macro | EVITER manqués (n) | Taux d'EVITER manqués | Erreurs (n) | ECE |
@@ -136,7 +153,7 @@ Figure 6.2 : Comparaison du réseau, de XGBoost et de Random Forest sur le corpu
 Pour 8 couples gène-médicament, le sens de l'avis du réseau a été comparé à une étude clinique indépendante de CPIC et de DPWG. Cette analyse est exploratoire pour trois raisons, énoncées avant son résultat : le réseau a été interrogé avec des profils construits (tous les gènes à la valeur normale, un seul modifié) et non avec des patients ; les modèles utilisés sont ceux d'une version antérieure du corpus et le test n'a pas été refait avec les modèles v15 **[à compléter]** ; seuls les résumés des articles ont été lus. Les huit couples ont été retenus parce qu'ils sont les seuls pour lesquels une étude clinique de référence a pu être identifiée et lue ; ce n'est pas un échantillon des 189 médicaments.
 
 ::: {custom-style="LegendeTableau"}
-Tableau 6.4 : Concordance de sens entre l'avis du réseau et une étude indépendante, par couple gène–médicament
+Tableau 6.5 : Concordance de sens entre l'avis du réseau et une étude indépendante, par couple gène–médicament
 :::
 
 | Couple | Étude (type, effectif) | Concordance de sens |
@@ -164,13 +181,12 @@ La conclusion est que la description du médicament ne permet pas de prédire l'
 
 ### 6.8 Synthèse et limites des résultats
 
-**Mesuré.** Sur 211 177 lignes hors pli, le réseau de profil déployé reproduit les étiquettes issues des règles avec un F1 macro de 0,99820 ± 0,00075 et manque 0,66 % des situations à éviter. Ses probabilités sont bien calibrées globalement (ECE 0,00029) après mise à l'échelle de la température. La confiance repère les erreurs de façon partielle (AUROC 0,870) et protège moins bien les EVITER manqués que les autres erreurs. Sous un protocole identique, le réseau et XGBoost ne sont pas départagés sur le F1 macro, et sont déclarés équivalents pour la configuration déployée ; les deux dominent nettement Random Forest. XGBoost conserve un avantage démontré sur le critère de sécurité, avec 38 EVITER manqués de moins. Les erreurs des deux modèles se recouvrent très peu, 9 lignes sur environ 90 de chaque côté. Le sens des avis concorde avec 8 études pour les 8 couples testés.
+**Mesuré.** Sur 211 177 lignes hors pli, le réseau de profil déployé reproduit les étiquettes issues des règles avec un F1 macro de 0,99820 ± 0,00075 et manque 0,66 % des situations à éviter. Ses probabilités sont bien calibrées globalement (ECE 0,00029) après mise à l'échelle de la température. La confiance repère les erreurs de façon partielle (AUROC 0,870) et protège moins bien les EVITER manqués que les autres erreurs. Sous un protocole identique, le réseau et XGBoost ne sont pas départagés sur le F1 macro, et sont déclarés équivalents pour la configuration déployée ; les deux dominent nettement Random Forest. XGBoost conserve un avantage démontré sur le critère de sécurité, avec 38 EVITER manqués de moins. Les erreurs des deux modèles se recouvrent très peu, 9 lignes sur environ 90 de chaque côté. Le réseau de choix retrouve exactement l'ensemble de la convention de cible dans 98,92 % des cas, contre 34,35 % pour une référence qui ignore le profil, et ne propose jamais de médicament à éviter. Le sens des avis concorde avec 8 études pour les 8 couples testés.
 
 **Non mesuré ou non démontré.**
 
 - La justesse clinique des avis. Toutes les mesures de ce chapitre portent sur l'accord avec des règles ; une seule règle est confrontée à des patients réels (chapitre 7).
 - La supériorité du réseau sur les modèles à base d'arbres. Elle n'est pas établie : la comparaison conclut à une différence non tranchée sur le F1 macro, à l'équivalence pour la configuration déployée, et à un désavantage du réseau sur la sécurité. L'hypothèse principale du mémoire n'est donc pas confirmée par cette mesure.
-- Les performances du réseau de choix sur le corpus v15, celui-ci n'ayant pas été réentraîné (section 6.4).
 - Les performances sur l'ensemble final de 138 profils, volontairement non lu à ce stade.
 - Les performances de la chaîne complète depuis un fichier VCF : les valeurs de ce chapitre portent sur des profils du corpus, non sur des profils lus dans un VCF. Cette question est traitée au chapitre 8.
 - La généralisation à un médicament jamais vu (résultat négatif, section 6.7) et à une combinaison de gènes jamais observée, dont le cas du lonafarnib donne un exemple (section 6.1).

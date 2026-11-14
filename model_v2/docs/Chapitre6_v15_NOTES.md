@@ -30,21 +30,22 @@ La méthode du chapitre 4 définit le seuil comme **le quantile à 1 % de la con
 
 Le chapitre 6 rédigé **ne dépend pas de cette décision** : il rapporte les quantiles mesurés sans choisir. La décision s'écrit en 4.5 et 5.4.
 
-### Décision 2 — réseau de choix (§ 6.4) : réentraîner ou déclarer la limite ?
+### Décision 2 — réseau de choix : TRANCHÉE, réentraîné
 
-Il n'a pas été réentraîné sur la v15, et ses résultats v14 ne sont pas transposables : la cible du réseau de choix est construite à partir des actions du moteur de règles, et les règles révisées touchent trois thiopurines et deux statines, qui entrent dans des classes ATC4 à plusieurs médicaments.
+Le réseau a été réentraîné sur le corpus v15 et la section 6.4 porte désormais ses chiffres. Aucune copie `v4` du script n'a été nécessaire : `train_dl_choix_v3.py` prend déjà `--data` et `--out` en arguments, et la seule table écrite en dur, `atc_mapping_medicaments_v14.csv`, reste valable parce que **les 189 médicaments sont rigoureusement identiques entre v14 et v15** — vérifié, pas supposé. C'est la différence avec `evaluer_dl_imbrique_v5.py`, dont le fichier en dur était la table des *règles*, qui a changé.
 
-**Ma recommandation : réentraîner.** Le réseau de choix est petit (2 couches de 256, contre 2 × 1 024 pour le réseau de profil) et le bras c35 du réseau de profil a demandé sept minutes pour ses 25 entraînements. L'ordre de grandeur est donc l'heure, pas la nuit. Le coût de ne pas le faire est une section de résultats vide dans un chapitre de résultats, ce qui se voit.
+Résultats : choix dans l'ensemble acceptable 99,997 % ± 0,005 ; ensemble exact 98,92 % ± 0,08 ; Jaccard 0,99706 ± 0,00034 ; **médicament EVITER choisi 0,000 % ± 0,000** sur les 25 entraînements. Références sans profil : 99,08 %, 34,35 %, 0,714 et 0,073 %.
 
-Avant de lancer, vérifie que le script existe et accepte un chemin de corpus :
+Deux points à vérifier avant le dépôt :
 
-```bash
-cd ~/projet_memoire/Model_v8_7_9_10/scripts
-ls -la *choix*
-grep -n "add_argument\|--data\|v14\|v13" train_dl_choix_v3.py | head -20
-```
+1. **Les 72 cas où la référence sans profil se trompe.** Le chiffre vient de la somme des `n_defaut_faux` des cinq plis de la graine 1 (15, 19, 16, 11, 11). La référence étant déterministe, il doit être identique pour les cinq graines, mais je ne l'ai pas lu sur les autres graines. À confirmer :
+   ```bash
+   python3 -c "import pandas as pd; d=pd.read_csv('$HOME/projet_memoire/Model_v8_7_9_10/results/dl_choix_v15/resultats_par_graine_et_pli.csv'); print(d.groupby('graine').n_defaut_faux.sum())"
+   ```
+   Les cinq lignes doivent afficher 72. Si ce n'est pas le cas, corriger la phrase de la section 6.4.
+2. **`n_lignes_final_non_utilisees` vaut 23 455**, exactement l'effectif de l'ensemble final recalculé sur le corpus. Le programme confirme donc de lui-même que les 138 profils réservés n'ont pas été touchés. Ce contrôle est à citer si le jury interroge l'étanchéité de l'ensemble final.
 
-S'il lit le corpus v14 en dur, il faut une copie `v4` paramétrée, exactement comme pour `evaluer_dl_imbrique_v6.py` : v3 reste intacte, le diff se limite à l'argument de chemin, et l'empreinte du nouveau fichier est vérifiée. Si le script n'existe pas ou ne tourne pas, la section 6.4 telle qu'elle est rédigée tient : elle déclare la limite et ne présente aucun chiffre v14 comme s'il était v15.
+**À sauvegarder** : `resultats_par_graine_et_pli.csv` et `resume.json` du dossier `results/dl_choix_v15` sont les pièces justificatives de la section 6.4.
 
 ## 3. Marqueurs `[à compléter]` du chapitre et comment les lever
 
