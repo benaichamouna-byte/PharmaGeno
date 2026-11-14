@@ -1,0 +1,3 @@
+profils entraînement : 1116 | validation interne : 125 | ensemble final NON LU : 138 profils (23455 lignes)
+validation interne : {'n_cas': 4556, 'n_informatifs': 786, 'n_defaut_faux': 5, 'n_avec_EVITER_dans_la_classe': 279, 'choix_dans_S_informatifs': 1.0, 'defaut_dans_S_informatifs': 0.9936, 'choix_dans_S_si_defaut_faux': 1.0, 'ensemble_exact_informatifs': 0.9885, 'defaut_ensemble_exact_informatifs': 0.3919, 'jaccard_informatifs': 0.9961, 'defaut_jaccard_informatifs': 0.734, 'choix_EVITER_si_EVITER_possible': 0.0, 'defaut_EVITER_si_EVITER_possible': 0.0, 'hasard_dans_S_informatifs': 0.554} | 167 époques | 41s
+Fichiers écrits dans ../modeles_v15
