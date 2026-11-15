@@ -1,0 +1,337 @@
+{
+ "donnees": "phenotype_drug_dataset_v15.csv",
+ "sha256_donnees": "68b564ce265728b6",
+ "modeles": "../modeles_v15_eval",
+ "n_lignes": 23455,
+ "n_profils": 138,
+ "classes": [
+  "ADAPTER_DOSE",
+  "EVITER",
+  "STANDARD",
+  "SURVEILLER"
+ ],
+ "protocole": "claude/Protocole_fige_evaluation_finale_138_15nov2026.md",
+ "bras": {
+  "DL_calibre": {
+   "f1_macro": 0.994,
+   "f1_hors_surveiller": 0.9942,
+   "exactitude": 0.9985,
+   "CER_strict": 0.0123,
+   "precision_EVITER": 0.989,
+   "logloss": 0.0096,
+   "ECE": 0.0013,
+   "rappel_ADAPTER_DOSE": 0.9952,
+   "rappel_EVITER": 0.9877,
+   "rappel_STANDARD": 0.9995,
+   "rappel_SURVEILLER": 0.9926,
+   "EVITER_manques": 10,
+   "EVITER_total": 816,
+   "IC_f1_macro": [
+    0.9838982677744141,
+    0.99924367646788
+   ],
+   "IC_EVITER_manques": [
+    3.0,
+    20.0
+   ]
+  },
+  "XGBoost": {
+   "f1_macro": 0.9989,
+   "f1_hors_surveiller": 0.9991,
+   "exactitude": 0.9998,
+   "CER_strict": 0.0037,
+   "precision_EVITER": 1.0,
+   "logloss": 0.0183,
+   "ECE": 0.0172,
+   "rappel_ADAPTER_DOSE": 1.0,
+   "rappel_EVITER": 0.9963,
+   "rappel_STANDARD": 0.9999,
+   "rappel_SURVEILLER": 1.0,
+   "EVITER_manques": 3,
+   "EVITER_total": 816,
+   "IC_f1_macro": [
+    0.9976036256686804,
+    0.9997951448182097
+   ],
+   "IC_EVITER_manques": [
+    0.0,
+    7.0
+   ]
+  },
+  "Foret_aleatoire": {
+   "f1_macro": 0.93,
+   "f1_hors_surveiller": 0.9273,
+   "exactitude": 0.9752,
+   "CER_strict": 0.0453,
+   "precision_EVITER": 0.7973,
+   "logloss": 0.2349,
+   "ECE": 0.162,
+   "rappel_ADAPTER_DOSE": 0.9338,
+   "rappel_EVITER": 0.9547,
+   "rappel_STANDARD": 0.9805,
+   "rappel_SURVEILLER": 0.9724,
+   "EVITER_manques": 37,
+   "EVITER_total": 816,
+   "IC_f1_macro": [
+    0.9153707213125655,
+    0.9429233157057351
+   ],
+   "IC_EVITER_manques": [
+    20.0,
+    57.0
+   ]
+  }
+ },
+ "comparaisons": {
+  "DL_calibre_moins_XGBoost": {
+   "ecart_f1_macro": -0.0049,
+   "IC_f1": [
+    -0.01516,
+    0.00071
+   ],
+   "ecart_EVITER_manques": 7,
+   "IC_EVITER_manques": [
+    -1.0,
+    17.0
+   ],
+   "regle_delta": 0.001,
+   "verdict": "non tranche"
+  },
+  "DL_calibre_moins_Foret_aleatoire": {
+   "ecart_f1_macro": 0.064,
+   "IC_f1": [
+    0.05186,
+    0.07719
+   ],
+   "ecart_EVITER_manques": -27,
+   "IC_EVITER_manques": [
+    -41.0,
+    -14.0
+   ],
+   "regle_delta": 0.001,
+   "verdict": "tranche en faveur de DL_calibre"
+  },
+  "XGBoost_moins_Foret_aleatoire": {
+   "ecart_f1_macro": 0.0689,
+   "IC_f1": [
+    0.05632,
+    0.08322
+   ],
+   "ecart_EVITER_manques": -34,
+   "IC_EVITER_manques": [
+    -54.0,
+    -18.0
+   ],
+   "regle_delta": 0.001,
+   "verdict": "tranche en faveur de XGBoost"
+  }
+ },
+ "strates": {
+  "34_finaux_avec_apparente_retire": {
+   "n_profils": 34,
+   "n_lignes": 5818,
+   "bras": {
+    "DL_calibre": {
+     "f1_macro": 0.9974,
+     "f1_hors_surveiller": 0.9965,
+     "exactitude": 0.9995,
+     "CER_strict": 0.0142,
+     "precision_EVITER": 1.0,
+     "logloss": 0.0039,
+     "ECE": 0.0005,
+     "rappel_ADAPTER_DOSE": 1.0,
+     "rappel_EVITER": 0.9858,
+     "rappel_STANDARD": 1.0,
+     "rappel_SURVEILLER": 1.0,
+     "EVITER_manques": 3,
+     "EVITER_total": 212
+    },
+    "XGBoost": {
+     "f1_macro": 1.0,
+     "f1_hors_surveiller": 1.0,
+     "exactitude": 1.0,
+     "CER_strict": 0.0,
+     "precision_EVITER": 1.0,
+     "logloss": 0.0176,
+     "ECE": 0.017,
+     "rappel_ADAPTER_DOSE": 1.0,
+     "rappel_EVITER": 1.0,
+     "rappel_STANDARD": 1.0,
+     "rappel_SURVEILLER": 1.0,
+     "EVITER_manques": 0,
+     "EVITER_total": 212
+    },
+    "Foret_aleatoire": {
+     "f1_macro": 0.9474,
+     "f1_hors_surveiller": 0.9463,
+     "exactitude": 0.9823,
+     "CER_strict": 0.0236,
+     "precision_EVITER": 0.8415,
+     "logloss": 0.2351,
+     "ECE": 0.1683,
+     "rappel_ADAPTER_DOSE": 0.9541,
+     "rappel_EVITER": 0.9764,
+     "rappel_STANDARD": 0.9847,
+     "rappel_SURVEILLER": 1.0,
+     "EVITER_manques": 5,
+     "EVITER_total": 212
+    }
+   }
+  },
+  "104_autres": {
+   "n_profils": 104,
+   "n_lignes": 17637,
+   "bras": {
+    "DL_calibre": {
+     "f1_macro": 0.993,
+     "f1_hors_surveiller": 0.9934,
+     "exactitude": 0.9982,
+     "CER_strict": 0.0116,
+     "precision_EVITER": 0.9851,
+     "logloss": 0.0115,
+     "ECE": 0.0016,
+     "rappel_ADAPTER_DOSE": 0.9938,
+     "rappel_EVITER": 0.9884,
+     "rappel_STANDARD": 0.9993,
+     "rappel_SURVEILLER": 0.9907,
+     "EVITER_manques": 7,
+     "EVITER_total": 604
+    },
+    "XGBoost": {
+     "f1_macro": 0.9985,
+     "f1_hors_surveiller": 0.9988,
+     "exactitude": 0.9997,
+     "CER_strict": 0.005,
+     "precision_EVITER": 1.0,
+     "logloss": 0.0185,
+     "ECE": 0.0174,
+     "rappel_ADAPTER_DOSE": 1.0,
+     "rappel_EVITER": 0.995,
+     "rappel_STANDARD": 0.9999,
+     "rappel_SURVEILLER": 1.0,
+     "EVITER_manques": 3,
+     "EVITER_total": 604
+    },
+    "Foret_aleatoire": {
+     "f1_macro": 0.9245,
+     "f1_hors_surveiller": 0.9212,
+     "exactitude": 0.9729,
+     "CER_strict": 0.053,
+     "precision_EVITER": 0.7825,
+     "logloss": 0.2348,
+     "ECE": 0.1599,
+     "rappel_ADAPTER_DOSE": 0.928,
+     "rappel_EVITER": 0.947,
+     "rappel_STANDARD": 0.979,
+     "rappel_SURVEILLER": 0.965,
+     "EVITER_manques": 32,
+     "EVITER_total": 604
+    }
+   }
+  },
+  "2_vecteur_identique_non_retires": {
+   "HG02230": {
+    "n_lignes": 169,
+    "erreurs_par_bras": {
+     "DL_calibre": 0,
+     "XGBoost": 0,
+     "Foret_aleatoire": 0
+    }
+   },
+   "HG02620": {
+    "n_lignes": 168,
+    "erreurs_par_bras": {
+     "DL_calibre": 0,
+     "XGBoost": 0,
+     "Foret_aleatoire": 0
+    }
+   }
+  },
+  "limite_paires_internes": "HG01953/HG01954 et HG02678/HG02679 (apparentees a l'interieur de l'ensemble final) ne sont pas traitees comme dependantes par le bootstrap par profil"
+ },
+ "abstention_DL": {
+  "source": "seuils FIGES de modeles_v15 (quantiles hors-plis de la validation croisee v15)",
+  "0.005": {
+   "seuil": 0.993350625038147,
+   "couverture": 0.9939,
+   "n_abstentions": 143,
+   "metriques_sur_lignes_gardees": {
+    "f1_macro": 0.9963,
+    "f1_hors_surveiller": 0.9966,
+    "exactitude": 0.9992,
+    "CER_strict": 0.0037,
+    "precision_EVITER": 0.9889,
+    "logloss": 0.0073,
+    "ECE": 0.0007,
+    "rappel_ADAPTER_DOSE": 0.9971,
+    "rappel_EVITER": 0.9963,
+    "rappel_STANDARD": 0.9996,
+    "rappel_SURVEILLER": 0.9963,
+    "EVITER_manques": 3,
+    "EVITER_total": 804
+   }
+  },
+  "0.010": {
+   "seuil": 0.9981200695037842,
+   "couverture": 0.9888,
+   "n_abstentions": 263,
+   "metriques_sur_lignes_gardees": {
+    "f1_macro": 0.9974,
+    "f1_hors_surveiller": 0.9975,
+    "exactitude": 0.9995,
+    "CER_strict": 0.0025,
+    "precision_EVITER": 0.9913,
+    "logloss": 0.0056,
+    "ECE": 0.0005,
+    "rappel_ADAPTER_DOSE": 0.9976,
+    "rappel_EVITER": 0.9975,
+    "rappel_STANDARD": 0.9997,
+    "rappel_SURVEILLER": 1.0,
+    "EVITER_manques": 2,
+    "EVITER_total": 800
+   }
+  },
+  "0.020": {
+   "seuil": 0.9994212985038757,
+   "couverture": 0.9807,
+   "n_abstentions": 452,
+   "metriques_sur_lignes_gardees": {
+    "f1_macro": 0.9981,
+    "f1_hors_surveiller": 0.9977,
+    "exactitude": 0.9996,
+    "CER_strict": 0.0025,
+    "precision_EVITER": 0.9925,
+    "logloss": 0.0047,
+    "ECE": 0.0003,
+    "rappel_ADAPTER_DOSE": 0.9976,
+    "rappel_EVITER": 0.9975,
+    "rappel_STANDARD": 0.9999,
+    "rappel_SURVEILLER": 1.0,
+    "EVITER_manques": 2,
+    "EVITER_total": 797
+   }
+  },
+  "0.050": {
+   "seuil": 0.9997906684875488,
+   "couverture": 0.963,
+   "n_abstentions": 867,
+   "metriques_sur_lignes_gardees": {
+    "f1_macro": 0.9981,
+    "f1_hors_surveiller": 0.9977,
+    "exactitude": 0.9996,
+    "CER_strict": 0.0025,
+    "precision_EVITER": 0.9925,
+    "logloss": 0.0048,
+    "ECE": 0.0004,
+    "rappel_ADAPTER_DOSE": 0.9975,
+    "rappel_EVITER": 0.9975,
+    "rappel_STANDARD": 0.9999,
+    "rappel_SURVEILLER": 1.0,
+    "EVITER_manques": 2,
+    "EVITER_total": 794
+   }
+  },
+  "niveau_application": "0.010"
+ },
+ "duree_s": 7
+}

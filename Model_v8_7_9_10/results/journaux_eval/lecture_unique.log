@@ -1,0 +1,5 @@
+LECTURE UNIQUE : 23455 lignes, 138 profils
+DL_calibre : {"f1_macro": 0.994, "f1_hors_surveiller": 0.9942, "exactitude": 0.9985, "CER_strict": 0.0123, "precision_EVITER": 0.989, "logloss": 0.0096, "ECE": 0.0013, "rappel_ADAPTER_DOSE": 0.9952, "rappel_EVITER": 0.9877, "rappel_STANDARD": 0.9995, "rappel_SURVEILLER": 0.9926, "EVITER_manques": 10, "EVITER_total": 816}
+XGBoost : {"f1_macro": 0.9989, "f1_hors_surveiller": 0.9991, "exactitude": 0.9998, "CER_strict": 0.0037, "precision_EVITER": 1.0, "logloss": 0.0183, "ECE": 0.0172, "rappel_ADAPTER_DOSE": 1.0, "rappel_EVITER": 0.9963, "rappel_STANDARD": 0.9999, "rappel_SURVEILLER": 1.0, "EVITER_manques": 3, "EVITER_total": 816}
+Foret_aleatoire : {"f1_macro": 0.93, "f1_hors_surveiller": 0.9273, "exactitude": 0.9752, "CER_strict": 0.0453, "precision_EVITER": 0.7973, "logloss": 0.2349, "ECE": 0.162, "rappel_ADAPTER_DOSE": 0.9338, "rappel_EVITER": 0.9547, "rappel_STANDARD": 0.9805, "rappel_SURVEILLER": 0.9724, "EVITER_manques": 37, "EVITER_total": 816}
+Fichiers écrits dans ../results/evaluation_finale_138 | durée 7s
