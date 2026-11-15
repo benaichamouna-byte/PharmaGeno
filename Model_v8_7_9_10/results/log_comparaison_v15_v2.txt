@@ -1,0 +1,260 @@
+lignes 211177, familles 1241, graines {'DL': 5, 'XGBoost': 5, 'Forêt aléatoire': 5, "DL c35 fige (modele de l'application)": 5}
+     statistique                                modele              mesure  estimation   ic95_bas  ic95_haut
+ moyenne_graines                                    DL            f1_macro    0.997943   0.997316   0.998484
+ moyenne_graines                                    DL      EVITER_manques   51.800000  35.200000  70.800000
+ moyenne_graines                                    DL         faux_EVITER    9.600000   5.000000  15.600000
+ moyenne_graines                                    DL             erreurs  123.600000  96.800000 154.005000
+ moyenne_graines                                    DL    precision_EVITER    0.998662   0.997821   0.999312
+ moyenne_graines                                    DL taux_EVITER_manques    0.007179   0.004900   0.009826
+ moyenne_graines                               XGBoost            f1_macro    0.998288   0.997676   0.998828
+ moyenne_graines                               XGBoost      EVITER_manques   13.800000   5.800000  25.200000
+ moyenne_graines                               XGBoost         faux_EVITER    3.600000   0.000000   8.600000
+ moyenne_graines                               XGBoost             erreurs   82.000000  59.600000 106.800000
+ moyenne_graines                               XGBoost    precision_EVITER    0.999500   0.998818   1.000000
+ moyenne_graines                               XGBoost taux_EVITER_manques    0.001913   0.000803   0.003502
+ moyenne_graines                       Forêt aléatoire            f1_macro    0.992687   0.990923   0.994187
+ moyenne_graines                       Forêt aléatoire      EVITER_manques  108.200000  74.200000 149.405000
+ moyenne_graines                       Forêt aléatoire         faux_EVITER    6.400000   0.000000  19.200000
+ moyenne_graines                       Forêt aléatoire             erreurs  655.600000 534.790000 795.405000
+ moyenne_graines                       Forêt aléatoire    precision_EVITER    0.999100   0.997286   1.000000
+ moyenne_graines                       Forêt aléatoire taux_EVITER_manques    0.014997   0.010303   0.020357
+ moyenne_graines DL c35 fige (modele de l'application)            f1_macro    0.998197   0.997651   0.998674
+ moyenne_graines DL c35 fige (modele de l'application)      EVITER_manques   47.400000  32.400000  65.800000
+ moyenne_graines DL c35 fige (modele de l'application)         faux_EVITER    8.800000   4.400000  14.400000
+ moyenne_graines DL c35 fige (modele de l'application)             erreurs  103.200000  80.400000 128.800000
+ moyenne_graines DL c35 fige (modele de l'application)    precision_EVITER    0.998774   0.998001   0.999392
+ moyenne_graines DL c35 fige (modele de l'application) taux_EVITER_manques    0.006570   0.004516   0.009102
+ensemble_graines                                    DL            f1_macro    0.998312   0.997694   0.998833
+ensemble_graines                                    DL      EVITER_manques   45.000000  29.000000  64.000000
+ensemble_graines                                    DL         faux_EVITER    6.000000   1.000000  14.000000
+ensemble_graines                                    DL             erreurs   94.000000  68.000000 123.000000
+ensemble_graines                                    DL    precision_EVITER    0.999164   0.998041   0.999863
+ensemble_graines                                    DL taux_EVITER_manques    0.006237   0.004052   0.008876
+ensemble_graines                               XGBoost            f1_macro    0.998325   0.997717   0.998858
+ensemble_graines                               XGBoost      EVITER_manques   13.000000   5.000000  24.000000
+ensemble_graines                               XGBoost         faux_EVITER    3.000000   0.000000   8.000000
+ensemble_graines                               XGBoost             erreurs   80.000000  58.000000 105.000000
+ensemble_graines                               XGBoost    precision_EVITER    0.999584   0.998896   1.000000
+ensemble_graines                               XGBoost taux_EVITER_manques    0.001802   0.000693   0.003375
+ensemble_graines                       Forêt aléatoire            f1_macro    0.992698   0.990923   0.994198
+ensemble_graines                       Forêt aléatoire      EVITER_manques  108.000000  73.000000 150.000000
+ensemble_graines                       Forêt aléatoire         faux_EVITER    5.000000   0.000000  15.000000
+ensemble_graines                       Forêt aléatoire             erreurs  650.000000 525.975000 790.025000
+ensemble_graines                       Forêt aléatoire    precision_EVITER    0.999297   0.997817   1.000000
+ensemble_graines                       Forêt aléatoire taux_EVITER_manques    0.014969   0.010201   0.020519
+ensemble_graines DL c35 fige (modele de l'application)            f1_macro    0.998533   0.997974   0.998987
+ensemble_graines DL c35 fige (modele de l'application)      EVITER_manques   42.000000  28.000000  60.000000
+ensemble_graines DL c35 fige (modele de l'application)         faux_EVITER    6.000000   1.000000  14.000000
+ensemble_graines DL c35 fige (modele de l'application)             erreurs   76.000000  54.000000 101.000000
+ensemble_graines DL c35 fige (modele de l'application)    precision_EVITER    0.999164   0.998041   0.999864
+ensemble_graines DL c35 fige (modele de l'application) taux_EVITER_manques    0.005821   0.003797   0.008314
+
+     statistique                                             comparaison              mesure  difference    ic95_bas   ic95_haut                  decision                  lecture_statistique               lecture_pratique
+ moyenne_graines                                            DL - XGBoost            f1_macro   -0.000345   -0.001060    0.000338               non tranché différence statistique non démontrée                    non tranché
+ moyenne_graines                                            DL - XGBoost      EVITER_manques   38.000000   23.200000   54.405000                                                                                              
+ moyenne_graines                                            DL - XGBoost         faux_EVITER    6.000000   -1.005000   13.400000                                                                                              
+ moyenne_graines                                            DL - XGBoost             erreurs   41.600000   10.595000   75.600000                                                                                              
+ moyenne_graines                                            DL - XGBoost    precision_EVITER   -0.000838   -0.001847    0.000137                                                                                              
+ moyenne_graines                                            DL - XGBoost taux_EVITER_manques    0.005267    0.003210    0.007590                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire            f1_macro    0.005256    0.003882    0.006921              DL supérieur         DL statistiquement supérieur      DL pratiquement supérieur
+ moyenne_graines                                    DL - Forêt aléatoire      EVITER_manques  -56.400000  -93.400000  -24.000000                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire         faux_EVITER    3.200000  -10.400000   13.200000                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire             erreurs -532.000000 -667.805000 -412.590000                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire    precision_EVITER   -0.000438   -0.001832    0.001457                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire taux_EVITER_manques   -0.007817   -0.012854   -0.003383                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)            f1_macro   -0.000254   -0.000563   -0.000033                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)      EVITER_manques    4.400000   -1.200000   12.205000                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)         faux_EVITER    0.800000   -2.200000    4.000000                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)             erreurs   20.400000    8.000000   36.800000                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)    precision_EVITER   -0.000112   -0.000549    0.000299                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application) taux_EVITER_manques    0.000610   -0.000170    0.001708                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire            f1_macro    0.005601    0.004134    0.007270         XGBoost supérieur    XGBoost statistiquement supérieur XGBoost pratiquement supérieur
+ moyenne_graines                               XGBoost - Forêt aléatoire      EVITER_manques  -94.400000 -134.805000  -60.995000                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire         faux_EVITER   -2.800000  -15.800000    6.600000                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire             erreurs -573.600000 -710.610000 -451.795000                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire    precision_EVITER    0.000400   -0.000899    0.002221                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire taux_EVITER_manques   -0.013084   -0.018519   -0.008611                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)            f1_macro    0.000091   -0.000522    0.000756                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)      EVITER_manques  -33.600000  -48.605000  -20.795000                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)         faux_EVITER   -5.200000  -12.000000    1.405000                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)             erreurs  -21.200000  -51.200000    6.605000                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)    precision_EVITER    0.000726   -0.000196    0.001671                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application) taux_EVITER_manques   -0.004657   -0.006767   -0.002889                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)            f1_macro   -0.005510   -0.007177   -0.004082                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)      EVITER_manques   60.800000   28.200000   97.400000                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)         faux_EVITER   -2.400000  -11.800000   10.600000                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)             erreurs  552.400000  431.770000  687.600000                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)    precision_EVITER    0.000326   -0.001494    0.001646                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application) taux_EVITER_manques    0.008427    0.003977    0.013422                                                                                              
+ensemble_graines                                            DL - XGBoost            f1_macro   -0.000013   -0.000744    0.000662 équivalents (marge 0.001) différence statistique non démontrée      équivalents (marge 0.001)
+ensemble_graines                                            DL - XGBoost      EVITER_manques   32.000000   18.000000   48.000000                                                                                              
+ensemble_graines                                            DL - XGBoost         faux_EVITER    3.000000   -4.000000   12.000000                                                                                              
+ensemble_graines                                            DL - XGBoost             erreurs   14.000000  -18.000000   49.025000                                                                                              
+ensemble_graines                                            DL - XGBoost    precision_EVITER   -0.000420   -0.001643    0.000562                                                                                              
+ensemble_graines                                            DL - XGBoost taux_EVITER_manques    0.004435    0.002454    0.006731                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire            f1_macro    0.005613    0.004152    0.007326              DL supérieur         DL statistiquement supérieur      DL pratiquement supérieur
+ensemble_graines                                    DL - Forêt aléatoire      EVITER_manques  -63.000000 -103.000000  -28.000000                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire         faux_EVITER    1.000000  -13.000000   12.000000                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire             erreurs -556.000000 -696.000000 -431.000000                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire    precision_EVITER   -0.000133   -0.001667    0.001793                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire taux_EVITER_manques   -0.008732   -0.014079   -0.003961                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)            f1_macro   -0.000222   -0.000555    0.000012                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)      EVITER_manques    3.000000   -3.000000   11.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)         faux_EVITER    0.000000    0.000000    0.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)             erreurs   18.000000    5.000000   36.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)    precision_EVITER   -0.000000   -0.000002    0.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application) taux_EVITER_manques    0.000416   -0.000438    0.001553                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire            f1_macro    0.005626    0.004090    0.007299         XGBoost supérieur    XGBoost statistiquement supérieur XGBoost pratiquement supérieur
+ensemble_graines                               XGBoost - Forêt aléatoire      EVITER_manques  -95.000000 -136.000000  -61.000000                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire         faux_EVITER   -2.000000  -15.000000    7.000000                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire             erreurs -570.000000 -706.025000 -445.000000                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire    precision_EVITER    0.000287   -0.000959    0.002107                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire taux_EVITER_manques   -0.013167   -0.018649   -0.008580                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)            f1_macro   -0.000208   -0.000846    0.000461                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)      EVITER_manques  -29.000000  -44.000000  -16.000000                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)         faux_EVITER   -3.000000  -12.000000    4.000000                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)             erreurs    4.000000  -27.000000   32.000000                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)    precision_EVITER    0.000419   -0.000562    0.001641                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application) taux_EVITER_manques   -0.004019   -0.006158   -0.002206                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)            f1_macro   -0.005835   -0.007578   -0.004339                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)      EVITER_manques   66.000000   31.000000  107.000000                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)         faux_EVITER   -1.000000  -12.000000   13.000000                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)             erreurs  574.000000  450.000000  714.000000                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)    precision_EVITER    0.000133   -0.001794    0.001665                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application) taux_EVITER_manques    0.009148    0.004328    0.014549                                                                                              
+
+{
+ "dispersion": [
+  {
+   "modele": "DL",
+   "f1_macro_par_graine": [
+    0.99805,
+    0.9976,
+    0.99799,
+    0.99813,
+    0.99795
+   ],
+   "sd_entre_graines": 0.000183
+  },
+  {
+   "modele": "XGBoost",
+   "f1_macro_par_graine": [
+    0.99828,
+    0.99834,
+    0.9982,
+    0.99833,
+    0.99829
+   ],
+   "sd_entre_graines": 5e-05
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "f1_macro_par_graine": [
+    0.99266,
+    0.9927,
+    0.99271,
+    0.99288,
+    0.9925
+   ],
+   "sd_entre_graines": 0.00012
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "f1_macro_par_graine": [
+    0.99831,
+    0.99826,
+    0.99822,
+    0.99814,
+    0.99806
+   ],
+   "sd_entre_graines": 9e-05
+  }
+ ],
+ "calibration": [
+  {
+   "modele": "DL",
+   "logloss_moy": 0.00366,
+   "ECE_moy": 0.00014
+  },
+  {
+   "modele": "XGBoost",
+   "logloss_moy": 0.00234,
+   "ECE_moy": 0.0003
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "logloss_moy": 0.01374,
+   "ECE_moy": 0.00116
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "logloss_moy": 0.0033,
+   "ECE_moy": 0.00016
+  }
+ ],
+ "source": [
+  {
+   "niveau": "CPIC",
+   "n_lignes": 108579,
+   "DL": 0.9983,
+   "XGBoost": 0.9993,
+   "Forêt aléatoire": 0.9949,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "DPWG",
+   "n_lignes": 35649,
+   "DL": 0.9942,
+   "XGBoost": 0.9972,
+   "Forêt aléatoire": 0.9887,
+   "DL c35 fige (modele de l'application)": 0.9944
+  },
+  {
+   "niveau": "EMA-etiquette",
+   "n_lignes": 2440,
+   "DL": 0.6666,
+   "XGBoost": 0.6666,
+   "Forêt aléatoire": 0.6666,
+   "DL c35 fige (modele de l'application)": 0.6665
+  },
+  {
+   "niveau": "FDA",
+   "n_lignes": 27810,
+   "DL": 0.9994,
+   "XGBoost": 0.9976,
+   "Forêt aléatoire": 0.9911,
+   "DL c35 fige (modele de l'application)": 0.9996
+  },
+  {
+   "niveau": "FDA-etiquette",
+   "n_lignes": 34219,
+   "DL": 0.9975,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9869,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "HCSC-etiquette",
+   "n_lignes": 1240,
+   "DL": 1.0,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 1.0,
+   "DL c35 fige (modele de l'application)": 0.9998
+  },
+  {
+   "niveau": "RNPGx",
+   "n_lignes": 1240,
+   "DL": 0.9998,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9889,
+   "DL c35 fige (modele de l'application)": 0.9996
+  }
+ ],
+ "recouvrement": {
+  "erreurs_DL": 94,
+  "erreurs_XGBoost": 80,
+  "erreurs_RF": 650,
+  "communes_DL_XGB": 9,
+  "communes_trois": 8
+ }
+}

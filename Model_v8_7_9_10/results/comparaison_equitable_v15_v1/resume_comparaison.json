@@ -1,0 +1,139 @@
+{
+ "n_lignes": 211177,
+ "n_familles": 1241,
+ "bootstrap": 2000,
+ "delta": 0.001,
+ "dispersion": [
+  {
+   "modele": "DL",
+   "f1_macro_par_graine": [
+    0.99805,
+    0.9976,
+    0.99799,
+    0.99813,
+    0.99795
+   ],
+   "sd_entre_graines": 0.000183
+  },
+  {
+   "modele": "XGBoost",
+   "f1_macro_par_graine": [
+    0.99828,
+    0.99834,
+    0.9982,
+    0.99833,
+    0.99829
+   ],
+   "sd_entre_graines": 5e-05
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "f1_macro_par_graine": [
+    0.99266,
+    0.9927,
+    0.99271,
+    0.99288,
+    0.9925
+   ],
+   "sd_entre_graines": 0.00012
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "f1_macro_par_graine": [
+    0.99831,
+    0.99826,
+    0.99822,
+    0.99814,
+    0.99806
+   ],
+   "sd_entre_graines": 9e-05
+  }
+ ],
+ "calibration": [
+  {
+   "modele": "DL",
+   "logloss_moy": 0.00366,
+   "ECE_moy": 0.00014
+  },
+  {
+   "modele": "XGBoost",
+   "logloss_moy": 0.00234,
+   "ECE_moy": 0.0003
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "logloss_moy": 0.01374,
+   "ECE_moy": 0.00116
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "logloss_moy": 0.0033,
+   "ECE_moy": 0.00016
+  }
+ ],
+ "f1_par_niveau_source": [
+  {
+   "niveau": "CPIC",
+   "n_lignes": 108579,
+   "DL": 0.9983,
+   "XGBoost": 0.9993,
+   "Forêt aléatoire": 0.9949,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "DPWG",
+   "n_lignes": 35649,
+   "DL": 0.9942,
+   "XGBoost": 0.9972,
+   "Forêt aléatoire": 0.9887,
+   "DL c35 fige (modele de l'application)": 0.9944
+  },
+  {
+   "niveau": "EMA-etiquette",
+   "n_lignes": 2440,
+   "DL": 0.6666,
+   "XGBoost": 0.6666,
+   "Forêt aléatoire": 0.6666,
+   "DL c35 fige (modele de l'application)": 0.6665
+  },
+  {
+   "niveau": "FDA",
+   "n_lignes": 27810,
+   "DL": 0.9994,
+   "XGBoost": 0.9976,
+   "Forêt aléatoire": 0.9911,
+   "DL c35 fige (modele de l'application)": 0.9996
+  },
+  {
+   "niveau": "FDA-etiquette",
+   "n_lignes": 34219,
+   "DL": 0.9975,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9869,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "HCSC-etiquette",
+   "n_lignes": 1240,
+   "DL": 1.0,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 1.0,
+   "DL c35 fige (modele de l'application)": 0.9998
+  },
+  {
+   "niveau": "RNPGx",
+   "n_lignes": 1240,
+   "DL": 0.9998,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9889,
+   "DL c35 fige (modele de l'application)": 0.9996
+  }
+ ],
+ "recouvrement_erreurs_ensemble_graines": {
+  "erreurs_DL": 94,
+  "erreurs_XGBoost": 80,
+  "erreurs_RF": 650,
+  "communes_DL_XGB": 9,
+  "communes_trois": 8
+ }
+}

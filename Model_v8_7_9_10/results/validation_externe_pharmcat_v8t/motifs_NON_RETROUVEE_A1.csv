@@ -1,0 +1,22 @@
+medicament,guide,texte_app,regle_app,nb_personnes,exemple
+warfarin,DPWG,metaboliseur normal cyp2c9 1 1 non cite comme sous groupe concerne par la dpwg posologie g,['CYP2C9'][1.0] CYP2C9 Normal Metabolizer,41,HG00325
+warfarin,DPWG,no action is needed for this gene drug interaction,['VKORC1'][0.5] VKORC1 rs9923231 heterozygote (-1639 AG),30,HG00325
+warfarin,DPWG,genotype de reference non cite comme sous groupe concerne posologie generale,['VKORC1'][1.0] VKORC1 reference,12,HG02496
+warfarin,DPWG,1 use 65% of the standard initial dose the genotype specific initial dose and maintenance ,['CYP2C9'][0.5] CYP2C9 IM other a,8,HG00423
+siponimod,DPWG,no action is required for this gene drug interaction,['CYP2C9'][0.75] CYP2C9*1/*2,5,HG02496
+warfarin,DPWG,no action is required for this gene drug interaction,['CYP2C9'][0.75] CYP2C9*1/*2,5,HG02496
+azathioprine,CPIC,initiate therapy with reduced starting doses 30 80% of standard starting dose if standard ,"['TPMT', 'NUDT15'][1.0, 0.5] TPMT Normal Metabolizer ; NUDT15 Interme",4,HG00704
+mercaptopurine,CPIC,initiate therapy with decreased starting doses 30 80% of standard starting dose if startin,"['TPMT', 'NUDT15'][1.0, 0.5] TPMT Normal Metabolizer ; NUDT15 Interme",4,HG00704
+thioguanine,CPIC,initiate therapy with decreased starting doses 30 80% of standard starting dose if standar,"['TPMT', 'NUDT15'][1.0, 0.5] TPMT Normal Metabolizer ; NUDT15 Interme",4,HG00704
+flucytosine,DPWG,score 1 ou 1 5 rester attentif aux effets graves leucop nie neutrop nie thrombop nie diarr,['DPYD'][0.5] règle v8 groupe A,4,NA06991
+azathioprine,CPIC,initiate therapy with standard starting dose e g 2 mg kg day for autoimmune diseases durin,"['TPMT', 'NUDT15'][1.0, 1.0] TPMT Normal Metabolizer ; NUDT15 Normal ",2,HG03521
+mercaptopurine,CPIC,initiate therapy with standard starting dose of mecaptopurine e g 75 mg m2 day for maligna,"['TPMT', 'NUDT15'][1.0, 1.0] TPMT Normal Metabolizer ; NUDT15 Normal ",2,HG03521
+thioguanine,CPIC,initiate therapy with standard starting dose of thioguanine e g 40 mg m2 day for malignanc,"['TPMT', 'NUDT15'][1.0, 1.0] TPMT Normal Metabolizer ; NUDT15 Normal ",2,HG03521
+siponimod,DPWG,avoid siponimod,['CYP2C9'][0.25] CYP2C9 PM other a,2,NA10855
+warfarin,DPWG,1 use 20% of the standard initial dose the genotype specific initial dose and maintenance ,['CYP2C9'][0.25] CYP2C9 PM other a,2,NA10855
+azathioprine,CPIC,initiate therapy with standard starting dose e g 2 mg kg day for autoimmune diseases durin,['TPMT'][1.0] TPMT Normal Metabolizer (TPMT Normal + N,2,NA18978
+mercaptopurine,CPIC,initiate therapy with standard starting dose of mecaptopurine e g 75 mg m2 day for maligna,['TPMT'][1.0] TPMT Normal Metabolizer (TPMT Normal + N,2,NA18978
+thioguanine,CPIC,initiate therapy with standard starting dose of thioguanine e g 40 mg m2 day for malignanc,['TPMT'][1.0] TPMT Normal Metabolizer (TPMT Normal + N,2,NA18978
+fluvastatin,CPIC,prescribe desired starting dose and adjust doses of fluvastatin based on disease specific ,['CYP2C9'][1.0] CYP2C9 Normal Metabolizer,1,NA06991
+siponimod,DPWG,use 50% of the normal maintenance dose reconsider the choice and the potential benefit of ,['CYP2C9'][0.5] CYP2C9 IM other a,1,NA10854
+sertraline,CPIC,consider lower starting dose slower titration schedule and 50% reduction of standard maint,"['CYP2B6', 'CYP2C19'][0.0, 0.5] CYP2C19 likely intermediate or intermedi",1,NA19226

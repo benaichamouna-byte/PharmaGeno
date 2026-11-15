@@ -1,0 +1,1331 @@
+nohup: ignoring input
+===================== 0/7 VERIFICATIONS BLOQUANTES : Thu Nov 12 22:25:03 WAT 2026 =====================
+config 35 CONFORME : 2 couches, 1024, sans BatchNorm, dropout 0.1, lissage 0.05
+  -> identique a celle de la v13, telle que documentee dans recherche_hp_dl_v4.configs_tour2
+lignes du corpus v15 (en-tete comprise) : 234633   [attendu 234633]
+scripts REUTILISES SANS MODIFICATION, empreintes du protocole du 4 nov. (doivent afficher OK) :
+arbres_coeur_v1.py: OK
+recherche_hp_arbres_v1.py: OK
+evaluer_arbres_imbrique_v1.py: OK
+comparaison_equitable_v14_v1.py: OK
+dl_coeur_v4.py: OK
+protocole_commun_v10.py: OK
+evaluer_dl_imbrique_v5.py: OK
+recherche_hp_dl_v4.py: OK
+empreintes des fichiers NOUVEAUX de la v15, enregistrees AVANT execution (tracabilite) :
+68b564ce265728b6f800929032df3f4e046710e47f3cbe311beedbd2c830d2b5  ../data/corpus_v15/phenotype_drug_dataset_v15.csv
+9d5512543016cb89c612e6213326f4b0662444b79f2dd9aec31acd877ac80728  ../data/regles_v15_monogene.csv
+1cb99ff63246669c1a2438f9776b93b00538c67981d89ef92d7cf6d51f28dfc6  ../data/regles_v15_multigene.csv
+8e7b302fd95c0625ebfca2a94e129d5575f01e4f07d1648baa58daa3e63ba1d0  evaluer_dl_imbrique_v6.py
+26acdf3b962a627f58fcf19b374356c78ed5453567e2c9bb52375358830c7b28  comparaison_equitable_v14_v2.py
+f0bcb993e6621e3a5a60c6ff79eeba6d1f38f299554176ff41643d233595b871  lancer_comparaison_equitable_v15.sh
+numpy 2.4.3 | pandas 3.0.2 | scipy 1.17.1 | scikit-learn 1.8.0 | xgboost 3.3.0 | torch 2.11.0+cu130
+coeurs : 8 | memoire libre (Go) : 7 | disque libre (Go) : 912
+===================== 1/7 DL config 35 figee = MODELE DE L'APPLICATION : Thu Nov 12 22:25:09 WAT 2026 =====================
+===================== 2/7 recherche DL (40 configurations x 5 plis) sur v15 : Thu Nov 12 22:32:04 WAT 2026 =====================
+===================== 3/7 evaluation DL (config choisie par pli, 5 graines, calibration) : Thu Nov 12 23:06:58 WAT 2026 =====================
+===================== 4/7 recherche XGBoost : Thu Nov 12 23:15:50 WAT 2026 =====================
+config 0 pli 1 F1val 0.9985 (825 arbres, 38s) | total 38s
+config 0 pli 2 F1val 1.0000 (1125 arbres, 48s) | total 86s
+config 0 pli 3 F1val 0.9999 (1050 arbres, 46s) | total 132s
+config 0 pli 4 F1val 0.9984 (800 arbres, 36s) | total 168s
+config 0 pli 5 F1val 0.9997 (1050 arbres, 45s) | total 213s
+config 1 pli 1 F1val 0.9990 (350 arbres, 24s) | total 237s
+config 1 pli 2 F1val 0.9999 (400 arbres, 28s) | total 265s
+config 1 pli 3 F1val 0.9998 (400 arbres, 26s) | total 291s
+config 1 pli 4 F1val 1.0000 (325 arbres, 24s) | total 316s
+config 1 pli 5 F1val 0.9997 (300 arbres, 22s) | total 338s
+config 2 pli 1 F1val 0.8958 (2000 arbres, 71s) | total 409s
+config 2 pli 2 F1val 0.9130 (2000 arbres, 72s) | total 481s
+config 2 pli 3 F1val 0.9218 (2000 arbres, 73s) | total 554s
+config 2 pli 4 F1val 0.8963 (2000 arbres, 73s) | total 627s
+config 2 pli 5 F1val 0.9282 (2000 arbres, 71s) | total 698s
+config 3 pli 1 F1val 0.9985 (1175 arbres, 54s) | total 752s
+config 3 pli 2 F1val 0.9999 (1450 arbres, 66s) | total 818s
+config 3 pli 3 F1val 0.9995 (1150 arbres, 55s) | total 873s
+config 3 pli 4 F1val 0.9995 (1200 arbres, 55s) | total 927s
+config 3 pli 5 F1val 0.9995 (1250 arbres, 59s) | total 987s
+config 4 pli 1 F1val 0.9983 (475 arbres, 32s) | total 1019s
+config 4 pli 2 F1val 0.9993 (525 arbres, 36s) | total 1056s
+config 4 pli 3 F1val 0.9989 (325 arbres, 24s) | total 1080s
+config 4 pli 4 F1val 0.9995 (375 arbres, 27s) | total 1106s
+config 4 pli 5 F1val 0.9993 (425 arbres, 30s) | total 1136s
+config 5 pli 1 F1val 0.9989 (125 arbres, 13s) | total 1149s
+config 5 pli 2 F1val 1.0000 (225 arbres, 18s) | total 1168s
+config 5 pli 3 F1val 0.9999 (125 arbres, 13s) | total 1181s
+config 5 pli 4 F1val 1.0000 (175 arbres, 16s) | total 1197s
+config 5 pli 5 F1val 0.9998 (200 arbres, 17s) | total 1214s
+config 6 pli 1 F1val 0.9985 (375 arbres, 36s) | total 1251s
+config 6 pli 2 F1val 0.9995 (250 arbres, 27s) | total 1278s
+config 6 pli 3 F1val 0.9991 (200 arbres, 23s) | total 1301s
+config 6 pli 4 F1val 0.9989 (125 arbres, 17s) | total 1318s
+config 6 pli 5 F1val 0.9993 (225 arbres, 26s) | total 1344s
+config 7 pli 1 F1val 0.9859 (2000 arbres, 82s) | total 1426s
+config 7 pli 2 F1val 0.9863 (2000 arbres, 80s) | total 1506s
+config 7 pli 3 F1val 0.9892 (2000 arbres, 85s) | total 1591s
+config 7 pli 4 F1val 0.9886 (1975 arbres, 80s) | total 1672s
+config 7 pli 5 F1val 0.9883 (2000 arbres, 80s) | total 1751s
+config 8 pli 1 F1val 0.9989 (775 arbres, 37s) | total 1789s
+config 8 pli 2 F1val 1.0000 (900 arbres, 42s) | total 1831s
+config 8 pli 3 F1val 0.9997 (750 arbres, 37s) | total 1869s
+config 8 pli 4 F1val 0.9999 (800 arbres, 38s) | total 1906s
+config 8 pli 5 F1val 0.9997 (625 arbres, 31s) | total 1938s
+config 9 pli 1 F1val 0.9989 (325 arbres, 23s) | total 1961s
+config 9 pli 2 F1val 0.9999 (375 arbres, 25s) | total 1986s
+config 9 pli 3 F1val 0.9999 (325 arbres, 24s) | total 2010s
+config 9 pli 4 F1val 1.0000 (350 arbres, 24s) | total 2034s
+config 9 pli 5 F1val 0.9997 (400 arbres, 27s) | total 2061s
+config 10 pli 1 F1val 0.9986 (1325 arbres, 85s) | total 2146s
+config 10 pli 2 F1val 0.9992 (1150 arbres, 75s) | total 2221s
+config 10 pli 3 F1val 0.9991 (975 arbres, 65s) | total 2286s
+config 10 pli 4 F1val 0.9994 (1175 arbres, 76s) | total 2362s
+config 10 pli 5 F1val 0.9988 (1150 arbres, 75s) | total 2437s
+config 11 pli 1 F1val 0.9986 (125 arbres, 14s) | total 2451s
+config 11 pli 2 F1val 0.9999 (150 arbres, 16s) | total 2467s
+config 11 pli 3 F1val 0.9999 (200 arbres, 19s) | total 2486s
+config 11 pli 4 F1val 0.9999 (150 arbres, 16s) | total 2501s
+config 11 pli 5 F1val 0.9995 (150 arbres, 16s) | total 2517s
+config 12 pli 1 F1val 0.9762 (1975 arbres, 76s) | total 2594s
+config 12 pli 2 F1val 0.9791 (1975 arbres, 77s) | total 2671s
+config 12 pli 3 F1val 0.9785 (2000 arbres, 75s) | total 2746s
+config 12 pli 4 F1val 0.9754 (1975 arbres, 76s) | total 2822s
+config 12 pli 5 F1val 0.9792 (2000 arbres, 76s) | total 2898s
+config 13 pli 1 F1val 0.9981 (1325 arbres, 61s) | total 2959s
+config 13 pli 2 F1val 0.9975 (1200 arbres, 55s) | total 3013s
+config 13 pli 3 F1val 0.9997 (1825 arbres, 81s) | total 3094s
+config 13 pli 4 F1val 0.9997 (1925 arbres, 80s) | total 3174s
+config 13 pli 5 F1val 0.9997 (1775 arbres, 79s) | total 3253s
+config 14 pli 1 F1val 0.9829 (2000 arbres, 76s) | total 3329s
+config 14 pli 2 F1val 0.9901 (1950 arbres, 77s) | total 3405s
+config 14 pli 3 F1val 0.9855 (1975 arbres, 77s) | total 3482s
+config 14 pli 4 F1val 0.9842 (1550 arbres, 65s) | total 3547s
+config 14 pli 5 F1val 0.9902 (2000 arbres, 75s) | total 3622s
+config 15 pli 1 F1val 0.9987 (325 arbres, 26s) | total 3648s
+config 15 pli 2 F1val 0.9995 (425 arbres, 31s) | total 3680s
+config 15 pli 3 F1val 0.9995 (450 arbres, 33s) | total 3712s
+config 15 pli 4 F1val 0.9997 (575 arbres, 41s) | total 3754s
+config 15 pli 5 F1val 0.9997 (500 arbres, 36s) | total 3789s
+config 16 pli 1 F1val 0.9989 (300 arbres, 20s) | total 3809s
+config 16 pli 2 F1val 0.9997 (225 arbres, 16s) | total 3825s
+config 16 pli 3 F1val 0.9995 (275 arbres, 19s) | total 3844s
+config 16 pli 4 F1val 0.9999 (375 arbres, 23s) | total 3867s
+config 16 pli 5 F1val 0.9997 (225 arbres, 16s) | total 3883s
+config 17 pli 1 F1val 0.9981 (1825 arbres, 85s) | total 3968s
+config 17 pli 2 F1val 0.9975 (1425 arbres, 69s) | total 4037s
+config 17 pli 3 F1val 0.9990 (1950 arbres, 86s) | total 4124s
+config 17 pli 4 F1val 0.9996 (1950 arbres, 87s) | total 4210s
+config 17 pli 5 F1val 0.9991 (2000 arbres, 88s) | total 4298s
+config 18 pli 1 F1val 0.9981 (875 arbres, 48s) | total 4347s
+config 18 pli 2 F1val 0.9995 (1225 arbres, 66s) | total 4413s
+config 18 pli 3 F1val 0.9994 (1200 arbres, 63s) | total 4476s
+config 18 pli 4 F1val 0.9999 (1350 arbres, 70s) | total 4547s
+config 18 pli 5 F1val 0.9997 (1325 arbres, 71s) | total 4617s
+config 19 pli 1 F1val 0.9983 (425 arbres, 30s) | total 4647s
+config 19 pli 2 F1val 0.9988 (425 arbres, 29s) | total 4676s
+config 19 pli 3 F1val 0.9993 (500 arbres, 35s) | total 4711s
+config 19 pli 4 F1val 0.9992 (575 arbres, 39s) | total 4750s
+config 19 pli 5 F1val 0.9994 (450 arbres, 31s) | total 4781s
+config 20 pli 1 F1val 0.9987 (300 arbres, 21s) | total 4801s
+config 20 pli 2 F1val 1.0000 (525 arbres, 33s) | total 4835s
+config 20 pli 3 F1val 0.9995 (375 arbres, 25s) | total 4859s
+config 20 pli 4 F1val 0.9997 (375 arbres, 25s) | total 4884s
+config 20 pli 5 F1val 0.9997 (500 arbres, 31s) | total 4915s
+config 21 pli 1 F1val 0.9990 (350 arbres, 24s) | total 4939s
+config 21 pli 2 F1val 1.0000 (475 arbres, 29s) | total 4968s
+config 21 pli 3 F1val 0.9998 (300 arbres, 21s) | total 4989s
+config 21 pli 4 F1val 0.9998 (350 arbres, 23s) | total 5012s
+config 21 pli 5 F1val 0.9996 (325 arbres, 22s) | total 5034s
+config 22 pli 1 F1val 0.9954 (1975 arbres, 77s) | total 5111s
+config 22 pli 2 F1val 0.9960 (1975 arbres, 78s) | total 5188s
+config 22 pli 3 F1val 0.9965 (2000 arbres, 76s) | total 5265s
+config 22 pli 4 F1val 0.9943 (2000 arbres, 78s) | total 5342s
+config 22 pli 5 F1val 0.9981 (2000 arbres, 75s) | total 5417s
+config 23 pli 1 F1val 0.9987 (350 arbres, 22s) | total 5439s
+config 23 pli 2 F1val 0.9998 (350 arbres, 22s) | total 5460s
+config 23 pli 3 F1val 0.9995 (300 arbres, 19s) | total 5479s
+config 23 pli 4 F1val 0.9997 (400 arbres, 25s) | total 5504s
+config 23 pli 5 F1val 0.9997 (400 arbres, 23s) | total 5527s
+config 24 pli 1 F1val 0.9984 (650 arbres, 42s) | total 5569s
+config 24 pli 2 F1val 0.9997 (750 arbres, 49s) | total 5617s
+config 24 pli 3 F1val 0.9995 (675 arbres, 44s) | total 5661s
+config 24 pli 4 F1val 0.9997 (700 arbres, 45s) | total 5706s
+config 24 pli 5 F1val 0.9994 (700 arbres, 45s) | total 5751s
+config 25 pli 1 F1val 0.9971 (1500 arbres, 67s) | total 5818s
+config 25 pli 2 F1val 0.9978 (1525 arbres, 67s) | total 5885s
+config 25 pli 3 F1val 0.9989 (2000 arbres, 80s) | total 5964s
+config 25 pli 4 F1val 0.9956 (1150 arbres, 52s) | total 6017s
+config 25 pli 5 F1val 0.9979 (1525 arbres, 67s) | total 6084s
+config 26 pli 1 F1val 0.9979 (750 arbres, 47s) | total 6130s
+config 26 pli 2 F1val 0.9995 (875 arbres, 53s) | total 6183s
+config 26 pli 3 F1val 0.9995 (1225 arbres, 70s) | total 6253s
+config 26 pli 4 F1val 0.9999 (975 arbres, 59s) | total 6312s
+config 26 pli 5 F1val 0.9997 (1075 arbres, 64s) | total 6376s
+config 27 pli 1 F1val 0.9985 (275 arbres, 24s) | total 6400s
+config 27 pli 2 F1val 0.9995 (300 arbres, 27s) | total 6427s
+config 27 pli 3 F1val 0.9993 (250 arbres, 23s) | total 6449s
+config 27 pli 4 F1val 0.9997 (500 arbres, 39s) | total 6489s
+config 27 pli 5 F1val 0.9992 (275 arbres, 25s) | total 6514s
+config 28 pli 1 F1val 0.9987 (325 arbres, 23s) | total 6537s
+config 28 pli 2 F1val 1.0000 (350 arbres, 24s) | total 6561s
+config 28 pli 3 F1val 0.9995 (325 arbres, 22s) | total 6583s
+config 28 pli 4 F1val 0.9999 (400 arbres, 27s) | total 6610s
+config 28 pli 5 F1val 0.9997 (350 arbres, 24s) | total 6634s
+config 29 pli 1 F1val 0.9989 (125 arbres, 13s) | total 6647s
+config 29 pli 2 F1val 1.0000 (250 arbres, 20s) | total 6667s
+config 29 pli 3 F1val 0.9999 (125 arbres, 13s) | total 6679s
+config 29 pli 4 F1val 1.0000 (150 arbres, 15s) | total 6694s
+config 29 pli 5 F1val 0.9997 (175 arbres, 16s) | total 6710s
+config 30 pli 1 F1val 0.9986 (325 arbres, 25s) | total 6735s
+config 30 pli 2 F1val 0.9996 (400 arbres, 30s) | total 6765s
+config 30 pli 3 F1val 0.9998 (400 arbres, 30s) | total 6795s
+config 30 pli 4 F1val 0.9997 (350 arbres, 26s) | total 6821s
+config 30 pli 5 F1val 0.9997 (400 arbres, 30s) | total 6851s
+config 31 pli 1 F1val 0.9906 (2000 arbres, 79s) | total 6930s
+config 31 pli 2 F1val 0.9914 (1850 arbres, 75s) | total 7005s
+config 31 pli 3 F1val 0.9911 (2000 arbres, 77s) | total 7082s
+config 31 pli 4 F1val 0.9865 (1950 arbres, 76s) | total 7158s
+config 31 pli 5 F1val 0.9903 (1950 arbres, 76s) | total 7234s
+config 32 pli 1 F1val 0.9969 (875 arbres, 50s) | total 7284s
+config 32 pli 2 F1val 0.9994 (1125 arbres, 63s) | total 7347s
+config 32 pli 3 F1val 0.9978 (1025 arbres, 58s) | total 7405s
+config 32 pli 4 F1val 0.9988 (850 arbres, 48s) | total 7453s
+config 32 pli 5 F1val 0.9982 (775 arbres, 46s) | total 7499s
+config 33 pli 1 F1val 0.9984 (1825 arbres, 76s) | total 7575s
+config 33 pli 2 F1val 0.9994 (1975 arbres, 77s) | total 7653s
+config 33 pli 3 F1val 0.9995 (1850 arbres, 77s) | total 7729s
+config 33 pli 4 F1val 0.9996 (1750 arbres, 73s) | total 7803s
+config 33 pli 5 F1val 0.9992 (1900 arbres, 77s) | total 7879s
+config 34 pli 1 F1val 0.9989 (975 arbres, 58s) | total 7937s
+config 34 pli 2 F1val 0.9997 (775 arbres, 46s) | total 7983s
+config 34 pli 3 F1val 0.9993 (800 arbres, 49s) | total 8032s
+config 34 pli 4 F1val 0.9999 (900 arbres, 53s) | total 8085s
+config 34 pli 5 F1val 0.9997 (825 arbres, 50s) | total 8135s
+config 35 pli 1 F1val 0.9989 (500 arbres, 27s) | total 8162s
+config 35 pli 2 F1val 0.9994 (575 arbres, 30s) | total 8192s
+config 35 pli 3 F1val 0.9995 (600 arbres, 32s) | total 8224s
+config 35 pli 4 F1val 0.9999 (500 arbres, 27s) | total 8251s
+config 35 pli 5 F1val 0.9997 (550 arbres, 29s) | total 8280s
+config 36 pli 1 F1val 0.9988 (650 arbres, 37s) | total 8317s
+config 36 pli 2 F1val 0.9994 (700 arbres, 40s) | total 8356s
+config 36 pli 3 F1val 0.9997 (725 arbres, 41s) | total 8398s
+config 36 pli 4 F1val 0.9999 (800 arbres, 49s) | total 8446s
+config 36 pli 5 F1val 0.9995 (750 arbres, 43s) | total 8489s
+config 37 pli 1 F1val 0.9986 (400 arbres, 24s) | total 8514s
+config 37 pli 2 F1val 0.9994 (525 arbres, 31s) | total 8545s
+config 37 pli 3 F1val 0.9998 (400 arbres, 24s) | total 8569s
+config 37 pli 4 F1val 0.9997 (400 arbres, 26s) | total 8595s
+config 37 pli 5 F1val 0.9996 (350 arbres, 22s) | total 8618s
+config 38 pli 1 F1val 0.9973 (550 arbres, 31s) | total 8648s
+config 38 pli 2 F1val 0.9992 (925 arbres, 47s) | total 8695s
+config 38 pli 3 F1val 0.9991 (675 arbres, 36s) | total 8731s
+config 38 pli 4 F1val 0.9995 (700 arbres, 38s) | total 8769s
+config 38 pli 5 F1val 0.9990 (775 arbres, 39s) | total 8808s
+config 39 pli 1 F1val 0.9950 (850 arbres, 45s) | total 8853s
+config 39 pli 2 F1val 0.9967 (825 arbres, 44s) | total 8897s
+config 39 pli 3 F1val 0.9933 (800 arbres, 44s) | total 8941s
+config 39 pli 4 F1val 0.9976 (1225 arbres, 62s) | total 9004s
+config 39 pli 5 F1val 0.9962 (900 arbres, 49s) | total 9053s
+===================== 5/7 evaluation XGBoost : Fri Nov 13 01:46:48 WAT 2026 =====================
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 1, 'graine': 0, 'arbres': 525, 'f1_macro': 0.9998, 'CER_strict': 0.0014} 37s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 1, 'graine': 1, 'arbres': 375, 'f1_macro': 0.9998, 'CER_strict': 0.0014} 65s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 1, 'graine': 2, 'arbres': 425, 'f1_macro': 0.9998, 'CER_strict': 0.0014} 95s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 1, 'graine': 3, 'arbres': 375, 'f1_macro': 0.9998, 'CER_strict': 0.0014} 123s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 1, 'graine': 4, 'arbres': 350, 'f1_macro': 0.9997, 'CER_strict': 0.0021} 150s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 2, 'graine': 0, 'arbres': 625, 'f1_macro': 0.9951, 'CER_strict': 0.0034} 181s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 2, 'graine': 1, 'arbres': 625, 'f1_macro': 0.9951, 'CER_strict': 0.0034} 214s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 2, 'graine': 2, 'arbres': 625, 'f1_macro': 0.9951, 'CER_strict': 0.0034} 247s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 2, 'graine': 3, 'arbres': 625, 'f1_macro': 0.9951, 'CER_strict': 0.0034} 280s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 2, 'graine': 4, 'arbres': 625, 'f1_macro': 0.9951, 'CER_strict': 0.0034} 313s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 3, 'graine': 0, 'arbres': 750, 'f1_macro': 0.997, 'CER_strict': 0.0035} 351s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 3, 'graine': 1, 'arbres': 750, 'f1_macro': 0.997, 'CER_strict': 0.0035} 388s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 3, 'graine': 2, 'arbres': 750, 'f1_macro': 0.997, 'CER_strict': 0.0035} 424s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 3, 'graine': 3, 'arbres': 750, 'f1_macro': 0.997, 'CER_strict': 0.0035} 462s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 0, 'pli': 3, 'graine': 4, 'arbres': 750, 'f1_macro': 0.997, 'CER_strict': 0.0035} 498s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 4, 'graine': 0, 'arbres': 325, 'f1_macro': 0.9998, 'CER_strict': 0.0} 524s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 4, 'graine': 1, 'arbres': 300, 'f1_macro': 1.0, 'CER_strict': 0.0} 548s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 4, 'graine': 2, 'arbres': 300, 'f1_macro': 0.9999, 'CER_strict': 0.0007} 572s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 4, 'graine': 3, 'arbres': 325, 'f1_macro': 1.0, 'CER_strict': 0.0} 597s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 1, 'pli': 4, 'graine': 4, 'arbres': 325, 'f1_macro': 0.9999, 'CER_strict': 0.0} 622s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 5, 'pli': 5, 'graine': 0, 'arbres': 225, 'f1_macro': 0.9998, 'CER_strict': 0.0014} 642s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 5, 'pli': 5, 'graine': 1, 'arbres': 275, 'f1_macro': 1.0, 'CER_strict': 0.0} 665s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 5, 'pli': 5, 'graine': 2, 'arbres': 125, 'f1_macro': 0.9993, 'CER_strict': 0.0021} 679s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 5, 'pli': 5, 'graine': 3, 'arbres': 200, 'f1_macro': 0.9999, 'CER_strict': 0.0007} 698s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:310: UserWarning: The y_prob values do not sum to one. Make sure to pass probabilities.
+  warnings.warn(
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'xgb', 'quoi': 'choisie_cal', 'config': 5, 'pli': 5, 'graine': 4, 'arbres': 150, 'f1_macro': 0.9999, 'CER_strict': 0.0007} 713s
+===================== 6/7 recherche puis evaluation Random Forest : Fri Nov 13 01:58:45 WAT 2026 =====================
+config 0 pli 1 F1val 0.9665 (500 arbres, 195s) | total 195s
+config 0 pli 2 F1val 0.9687 (500 arbres, 191s) | total 385s
+config 0 pli 3 F1val 0.9688 (500 arbres, 203s) | total 588s
+config 0 pli 4 F1val 0.9730 (500 arbres, 213s) | total 802s
+config 0 pli 5 F1val 0.9684 (500 arbres, 201s) | total 1002s
+config 1 pli 1 F1val 0.4973 (500 arbres, 289s) | total 1291s
+config 1 pli 2 F1val 0.5226 (500 arbres, 284s) | total 1575s
+config 1 pli 3 F1val 0.5317 (500 arbres, 276s) | total 1852s
+config 1 pli 4 F1val 0.5348 (500 arbres, 458s) | total 2310s
+config 1 pli 5 F1val 0.5292 (500 arbres, 278s) | total 2588s
+config 2 pli 1 F1val 0.8623 (500 arbres, 820s) | total 3409s
+config 2 pli 2 F1val 0.8861 (500 arbres, 822s) | total 4231s
+config 2 pli 3 F1val 0.8694 (500 arbres, 820s) | total 5050s
+config 2 pli 4 F1val 0.8572 (500 arbres, 1004s) | total 6054s
+config 2 pli 5 F1val 0.8713 (500 arbres, 820s) | total 6874s
+config 3 pli 1 F1val 0.7098 (500 arbres, 42s) | total 6915s
+config 3 pli 2 F1val 0.7152 (500 arbres, 41s) | total 6956s
+config 3 pli 3 F1val 0.7312 (500 arbres, 41s) | total 6997s
+config 3 pli 4 F1val 0.7150 (500 arbres, 42s) | total 7039s
+config 3 pli 5 F1val 0.7214 (500 arbres, 42s) | total 7081s
+config 4 pli 1 F1val 0.9088 (500 arbres, 187s) | total 7268s
+config 4 pli 2 F1val 0.9118 (500 arbres, 181s) | total 7448s
+config 4 pli 3 F1val 0.8957 (500 arbres, 184s) | total 7632s
+config 4 pli 4 F1val 0.9180 (500 arbres, 192s) | total 7824s
+config 4 pli 5 F1val 0.9128 (500 arbres, 185s) | total 8009s
+config 5 pli 1 F1val 0.7141 (500 arbres, 107s) | total 8116s
+config 5 pli 2 F1val 0.7202 (500 arbres, 103s) | total 8219s
+config 5 pli 3 F1val 0.6966 (500 arbres, 102s) | total 8321s
+config 5 pli 4 F1val 0.7338 (500 arbres, 107s) | total 8428s
+config 5 pli 5 F1val 0.7240 (500 arbres, 106s) | total 8534s
+config 6 pli 1 F1val 0.6350 (500 arbres, 35s) | total 8569s
+config 6 pli 2 F1val 0.6469 (500 arbres, 35s) | total 8604s
+config 6 pli 3 F1val 0.6523 (500 arbres, 36s) | total 8640s
+config 6 pli 4 F1val 0.6591 (500 arbres, 37s) | total 8677s
+config 6 pli 5 F1val 0.6497 (500 arbres, 35s) | total 8712s
+config 7 pli 1 F1val 0.7714 (500 arbres, 494s) | total 9206s
+config 7 pli 2 F1val 0.8161 (500 arbres, 491s) | total 9697s
+config 7 pli 3 F1val 0.7850 (500 arbres, 490s) | total 10187s
+config 7 pli 4 F1val 0.7851 (500 arbres, 483s) | total 10670s
+config 7 pli 5 F1val 0.7833 (500 arbres, 503s) | total 11173s
+config 8 pli 1 F1val 0.5734 (500 arbres, 56s) | total 11230s
+config 8 pli 2 F1val 0.5691 (500 arbres, 56s) | total 11286s
+config 8 pli 3 F1val 0.5897 (500 arbres, 56s) | total 11341s
+config 8 pli 4 F1val 0.5858 (500 arbres, 56s) | total 11398s
+config 8 pli 5 F1val 0.5743 (500 arbres, 56s) | total 11454s
+config 9 pli 1 F1val 0.6311 (500 arbres, 94s) | total 11548s
+config 9 pli 2 F1val 0.6420 (500 arbres, 91s) | total 11639s
+config 9 pli 3 F1val 0.6377 (500 arbres, 91s) | total 11730s
+config 9 pli 4 F1val 0.6457 (500 arbres, 97s) | total 11827s
+config 9 pli 5 F1val 0.6464 (500 arbres, 96s) | total 11923s
+config 10 pli 1 F1val 0.2188 (500 arbres, 31s) | total 11954s
+config 10 pli 2 F1val 0.2251 (500 arbres, 32s) | total 11986s
+config 10 pli 3 F1val 0.2243 (500 arbres, 31s) | total 12017s
+config 10 pli 4 F1val 0.2314 (500 arbres, 31s) | total 12048s
+config 10 pli 5 F1val 0.2417 (500 arbres, 31s) | total 12080s
+config 11 pli 1 F1val 0.8589 (500 arbres, 297s) | total 12377s
+config 11 pli 2 F1val 0.8653 (500 arbres, 299s) | total 12676s
+config 11 pli 3 F1val 0.8659 (500 arbres, 299s) | total 12975s
+config 11 pli 4 F1val 0.8544 (500 arbres, 308s) | total 13282s
+config 11 pli 5 F1val 0.8647 (500 arbres, 300s) | total 13583s
+config 12 pli 1 F1val 0.9759 (500 arbres, 282s) | total 13865s
+config 12 pli 2 F1val 0.9769 (500 arbres, 277s) | total 14142s
+config 12 pli 3 F1val 0.9771 (500 arbres, 286s) | total 14428s
+config 12 pli 4 F1val 0.9810 (500 arbres, 298s) | total 14726s
+config 12 pli 5 F1val 0.9743 (500 arbres, 295s) | total 15020s
+config 13 pli 1 F1val 0.9904 (500 arbres, 1232s) | total 16253s
+config 13 pli 2 F1val 0.9924 (500 arbres, 1183s) | total 17436s
+config 13 pli 3 F1val 0.9940 (500 arbres, 1184s) | total 18620s
+config 13 pli 4 F1val 0.9925 (500 arbres, 1170s) | total 19790s
+config 13 pli 5 F1val 0.9912 (500 arbres, 1189s) | total 20979s
+config 14 pli 1 F1val 0.5089 (500 arbres, 61s) | total 21040s
+config 14 pli 2 F1val 0.5185 (500 arbres, 59s) | total 21099s
+config 14 pli 3 F1val 0.5162 (500 arbres, 58s) | total 21158s
+config 14 pli 4 F1val 0.5144 (500 arbres, 58s) | total 21216s
+config 14 pli 5 F1val 0.5393 (500 arbres, 58s) | total 21274s
+config 15 pli 1 F1val 0.7957 (500 arbres, 92s) | total 21366s
+config 15 pli 2 F1val 0.8070 (500 arbres, 90s) | total 21456s
+config 15 pli 3 F1val 0.7997 (500 arbres, 91s) | total 21547s
+config 15 pli 4 F1val 0.8040 (500 arbres, 91s) | total 21638s
+config 15 pli 5 F1val 0.8014 (500 arbres, 91s) | total 21729s
+config 16 pli 1 F1val 0.7532 (500 arbres, 482s) | total 22211s
+config 16 pli 2 F1val 0.8127 (500 arbres, 487s) | total 22698s
+config 16 pli 3 F1val 0.8424 (500 arbres, 503s) | total 23201s
+config 16 pli 4 F1val 0.7657 (500 arbres, 446s) | total 23647s
+config 16 pli 5 F1val 0.7717 (500 arbres, 448s) | total 24095s
+config 17 pli 1 F1val 0.5996 (500 arbres, 91s) | total 24185s
+config 17 pli 2 F1val 0.6054 (500 arbres, 91s) | total 24277s
+config 17 pli 3 F1val 0.6064 (500 arbres, 91s) | total 24368s
+config 17 pli 4 F1val 0.6262 (500 arbres, 92s) | total 24460s
+config 17 pli 5 F1val 0.6222 (500 arbres, 91s) | total 24551s
+config 18 pli 1 F1val 0.7077 (500 arbres, 159s) | total 24709s
+config 18 pli 2 F1val 0.7115 (500 arbres, 151s) | total 24860s
+config 18 pli 3 F1val 0.7059 (500 arbres, 146s) | total 25006s
+config 18 pli 4 F1val 0.7287 (500 arbres, 157s) | total 25163s
+config 18 pli 5 F1val 0.7174 (500 arbres, 155s) | total 25318s
+config 19 pli 1 F1val 0.7462 (500 arbres, 59s) | total 25376s
+config 19 pli 2 F1val 0.7594 (500 arbres, 55s) | total 25432s
+config 19 pli 3 F1val 0.7625 (500 arbres, 60s) | total 25492s
+config 19 pli 4 F1val 0.7634 (500 arbres, 57s) | total 25549s
+config 19 pli 5 F1val 0.7569 (500 arbres, 65s) | total 25614s
+config 20 pli 1 F1val 0.9184 (500 arbres, 216s) | total 25829s
+config 20 pli 2 F1val 0.9347 (500 arbres, 200s) | total 26030s
+config 20 pli 3 F1val 0.9213 (500 arbres, 212s) | total 26241s
+config 20 pli 4 F1val 0.9230 (500 arbres, 236s) | total 26477s
+config 20 pli 5 F1val 0.9277 (500 arbres, 232s) | total 26709s
+config 21 pli 1 F1val 0.7974 (500 arbres, 107s) | total 26816s
+config 21 pli 2 F1val 0.8015 (500 arbres, 105s) | total 26921s
+config 21 pli 3 F1val 0.8025 (500 arbres, 106s) | total 27027s
+config 21 pli 4 F1val 0.7918 (500 arbres, 105s) | total 27131s
+config 21 pli 5 F1val 0.8069 (500 arbres, 116s) | total 27248s
+config 22 pli 1 F1val 0.6561 (500 arbres, 102s) | total 27349s
+config 22 pli 2 F1val 0.6656 (500 arbres, 93s) | total 27442s
+config 22 pli 3 F1val 0.6640 (500 arbres, 95s) | total 27537s
+config 22 pli 4 F1val 0.6966 (500 arbres, 94s) | total 27631s
+config 22 pli 5 F1val 0.6797 (500 arbres, 92s) | total 27724s
+config 23 pli 1 F1val 0.9696 (500 arbres, 181s) | total 27905s
+config 23 pli 2 F1val 0.9620 (500 arbres, 178s) | total 28083s
+config 23 pli 3 F1val 0.9664 (500 arbres, 200s) | total 28283s
+config 23 pli 4 F1val 0.9659 (500 arbres, 205s) | total 28488s
+config 23 pli 5 F1val 0.9635 (500 arbres, 197s) | total 28684s
+config 24 pli 1 F1val 0.9599 (500 arbres, 170s) | total 28854s
+config 24 pli 2 F1val 0.9609 (500 arbres, 174s) | total 29028s
+config 24 pli 3 F1val 0.9589 (500 arbres, 171s) | total 29199s
+config 24 pli 4 F1val 0.9618 (500 arbres, 174s) | total 29373s
+config 24 pli 5 F1val 0.9603 (500 arbres, 169s) | total 29542s
+config 25 pli 1 F1val 0.9844 (500 arbres, 509s) | total 30052s
+config 25 pli 2 F1val 0.9898 (500 arbres, 485s) | total 30537s
+config 25 pli 3 F1val 0.9836 (500 arbres, 463s) | total 31000s
+config 25 pli 4 F1val 0.9893 (500 arbres, 516s) | total 31516s
+config 25 pli 5 F1val 0.9868 (500 arbres, 479s) | total 31994s
+config 26 pli 1 F1val 0.9883 (500 arbres, 467s) | total 32461s
+config 26 pli 2 F1val 0.9903 (500 arbres, 454s) | total 32915s
+config 26 pli 3 F1val 0.9895 (500 arbres, 455s) | total 33370s
+config 26 pli 4 F1val 0.9917 (500 arbres, 437s) | total 33807s
+config 26 pli 5 F1val 0.9885 (500 arbres, 430s) | total 34237s
+config 27 pli 1 F1val 0.9368 (500 arbres, 94s) | total 34331s
+config 27 pli 2 F1val 0.9248 (500 arbres, 92s) | total 34423s
+config 27 pli 3 F1val 0.9273 (500 arbres, 133s) | total 34556s
+config 27 pli 4 F1val 0.9386 (500 arbres, 101s) | total 34657s
+config 27 pli 5 F1val 0.9418 (500 arbres, 133s) | total 34791s
+config 28 pli 1 F1val 0.9892 (500 arbres, 810s) | total 35601s
+config 28 pli 2 F1val 0.9924 (500 arbres, 726s) | total 36328s
+config 28 pli 3 F1val 0.9912 (500 arbres, 777s) | total 37105s
+config 28 pli 4 F1val 0.9936 (500 arbres, 760s) | total 37864s
+config 28 pli 5 F1val 0.9891 (500 arbres, 757s) | total 38621s
+config 29 pli 1 F1val 0.2846 (500 arbres, 61s) | total 38682s
+config 29 pli 2 F1val 0.2846 (500 arbres, 143s) | total 38825s
+config 29 pli 3 F1val 0.3107 (500 arbres, 156s) | total 38981s
+config 29 pli 4 F1val 0.3098 (500 arbres, 59s) | total 39040s
+config 29 pli 5 F1val 0.3091 (500 arbres, 59s) | total 39099s
+config 30 pli 1 F1val 0.8256 (500 arbres, 59s) | total 39158s
+config 30 pli 2 F1val 0.8341 (500 arbres, 59s) | total 39217s
+config 30 pli 3 F1val 0.8449 (500 arbres, 59s) | total 39275s
+config 30 pli 4 F1val 0.8376 (500 arbres, 59s) | total 39334s
+config 30 pli 5 F1val 0.8459 (500 arbres, 59s) | total 39393s
+config 31 pli 1 F1val 0.7550 (500 arbres, 370s) | total 39762s
+config 31 pli 2 F1val 0.7504 (500 arbres, 362s) | total 40124s
+config 31 pli 3 F1val 0.7597 (500 arbres, 363s) | total 40487s
+config 31 pli 4 F1val 0.7612 (500 arbres, 378s) | total 40865s
+config 31 pli 5 F1val 0.7605 (500 arbres, 421s) | total 41286s
+config 32 pli 1 F1val 0.9889 (500 arbres, 637s) | total 41923s
+config 32 pli 2 F1val 0.9919 (500 arbres, 624s) | total 42547s
+config 32 pli 3 F1val 0.9909 (500 arbres, 587s) | total 43134s
+config 32 pli 4 F1val 0.9920 (500 arbres, 564s) | total 43699s
+config 32 pli 5 F1val 0.9870 (500 arbres, 587s) | total 44285s
+config 33 pli 1 F1val 0.9388 (500 arbres, 709s) | total 44994s
+config 33 pli 2 F1val 0.9394 (500 arbres, 674s) | total 45668s
+config 33 pli 3 F1val 0.8846 (500 arbres, 684s) | total 46352s
+config 33 pli 4 F1val 0.9157 (500 arbres, 645s) | total 46998s
+config 33 pli 5 F1val 0.9418 (500 arbres, 692s) | total 47690s
+config 34 pli 1 F1val 0.6162 (500 arbres, 262s) | total 47952s
+config 34 pli 2 F1val 0.6308 (500 arbres, 255s) | total 48207s
+config 34 pli 3 F1val 0.6435 (500 arbres, 249s) | total 48456s
+config 34 pli 4 F1val 0.6635 (500 arbres, 246s) | total 48702s
+config 34 pli 5 F1val 0.6481 (500 arbres, 248s) | total 48950s
+config 35 pli 1 F1val 0.7245 (500 arbres, 761s) | total 49711s
+config 35 pli 2 F1val 0.7628 (500 arbres, 693s) | total 50404s
+config 35 pli 3 F1val 0.7593 (500 arbres, 804s) | total 51209s
+config 35 pli 4 F1val 0.7998 (500 arbres, 716s) | total 51925s
+config 35 pli 5 F1val 0.7709 (500 arbres, 5928s) | total 57853s
+config 36 pli 1 F1val 0.7212 (500 arbres, 168s) | total 58021s
+config 36 pli 2 F1val 0.7333 (500 arbres, 162s) | total 58183s
+config 36 pli 3 F1val 0.7374 (500 arbres, 170s) | total 58353s
+config 36 pli 4 F1val 0.7100 (500 arbres, 183s) | total 58536s
+config 36 pli 5 F1val 0.7319 (500 arbres, 176s) | total 58712s
+config 37 pli 1 F1val 0.6956 (500 arbres, 100s) | total 58812s
+config 37 pli 2 F1val 0.6915 (500 arbres, 99s) | total 58911s
+config 37 pli 3 F1val 0.6999 (500 arbres, 95s) | total 59005s
+config 37 pli 4 F1val 0.6902 (500 arbres, 97s) | total 59102s
+config 37 pli 5 F1val 0.7023 (500 arbres, 93s) | total 59195s
+config 38 pli 1 F1val 0.5976 (500 arbres, 176s) | total 59371s
+config 38 pli 2 F1val 0.6132 (500 arbres, 167s) | total 59538s
+config 38 pli 3 F1val 0.6038 (500 arbres, 154s) | total 59692s
+config 38 pli 4 F1val 0.6020 (500 arbres, 152s) | total 59844s
+config 38 pli 5 F1val 0.6297 (500 arbres, 159s) | total 60003s
+config 39 pli 1 F1val 0.5748 (500 arbres, 58s) | total 60061s
+config 39 pli 2 F1val 0.5882 (500 arbres, 59s) | total 60120s
+config 39 pli 3 F1val 0.5964 (500 arbres, 59s) | total 60179s
+config 39 pli 4 F1val 0.5805 (500 arbres, 59s) | total 60238s
+config 39 pli 5 F1val 0.5971 (500 arbres, 59s) | total 60296s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 1, 'graine': 0, 'arbres': 500, 'f1_macro': 0.9936, 'CER_strict': 0.0112} 1288s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 1, 'graine': 1, 'arbres': 500, 'f1_macro': 0.9934, 'CER_strict': 0.0112} 2621s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 1, 'graine': 2, 'arbres': 500, 'f1_macro': 0.9935, 'CER_strict': 0.0112} 3793s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 1, 'graine': 3, 'arbres': 500, 'f1_macro': 0.9933, 'CER_strict': 0.0112} 5129s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 1, 'graine': 4, 'arbres': 500, 'f1_macro': 0.9936, 'CER_strict': 0.0112} 6373s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 2, 'graine': 0, 'arbres': 500, 'f1_macro': 0.9898, 'CER_strict': 0.0179} 7235s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 2, 'graine': 1, 'arbres': 500, 'f1_macro': 0.9901, 'CER_strict': 0.0185} 8116s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 2, 'graine': 2, 'arbres': 500, 'f1_macro': 0.9899, 'CER_strict': 0.0172} 8943s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 2, 'graine': 3, 'arbres': 500, 'f1_macro': 0.9904, 'CER_strict': 0.0172} 10040s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 2, 'graine': 4, 'arbres': 500, 'f1_macro': 0.99, 'CER_strict': 0.0179} 10814s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 3, 'graine': 0, 'arbres': 500, 'f1_macro': 0.9903, 'CER_strict': 0.0318} 12214s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 3, 'graine': 1, 'arbres': 500, 'f1_macro': 0.9904, 'CER_strict': 0.0311} 13652s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 3, 'graine': 2, 'arbres': 500, 'f1_macro': 0.9901, 'CER_strict': 0.0311} 15048s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 3, 'graine': 3, 'arbres': 500, 'f1_macro': 0.9902, 'CER_strict': 0.0325} 16430s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 3, 'graine': 4, 'arbres': 500, 'f1_macro': 0.99, 'CER_strict': 0.0325} 17813s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 4, 'graine': 0, 'arbres': 500, 'f1_macro': 0.9943, 'CER_strict': 0.0062} 18853s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 4, 'graine': 1, 'arbres': 500, 'f1_macro': 0.9946, 'CER_strict': 0.0062} 19885s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 4, 'graine': 2, 'arbres': 500, 'f1_macro': 0.9944, 'CER_strict': 0.0069} 20899s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 4, 'graine': 3, 'arbres': 500, 'f1_macro': 0.9945, 'CER_strict': 0.0062} 21919s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 28, 'pli': 4, 'graine': 4, 'arbres': 500, 'f1_macro': 0.9944, 'CER_strict': 0.0062} 23161s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 5, 'graine': 0, 'arbres': 500, 'f1_macro': 0.9952, 'CER_strict': 0.0069} 24567s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 5, 'graine': 1, 'arbres': 500, 'f1_macro': 0.995, 'CER_strict': 0.009} 25702s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 5, 'graine': 2, 'arbres': 500, 'f1_macro': 0.9957, 'CER_strict': 0.0069} 27125s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 5, 'graine': 3, 'arbres': 500, 'f1_macro': 0.9959, 'CER_strict': 0.0069} 28537s
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+/home/mouna/miniforge3/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1833: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+{'modele': 'rf', 'quoi': 'choisie_cal', 'config': 13, 'pli': 5, 'graine': 4, 'arbres': 500, 'f1_macro': 0.9945, 'CER_strict': 0.009} 29930s
+===================== 7/7 analyse (v1 du protocole ET v2 de l'amendement 1) : Sat Nov 14 03:02:59 WAT 2026 =====================
+lignes 211177, familles 1241, graines {'DL': 5, 'XGBoost': 5, 'Forêt aléatoire': 5, "DL c35 fige (modele de l'application)": 5}
+     statistique                                modele           mesure  estimation  ic95_bas  ic95_haut
+ moyenne_graines                                    DL         f1_macro     0.99794   0.99732    0.99848
+ moyenne_graines                                    DL   EVITER_manques    51.80000  35.20000   70.80000
+ moyenne_graines                                    DL      faux_EVITER     9.60000   5.00000   15.60000
+ moyenne_graines                                    DL          erreurs   123.60000  96.80000  154.00500
+ moyenne_graines                                    DL precision_EVITER     0.99866   0.99782    0.99931
+ moyenne_graines                               XGBoost         f1_macro     0.99829   0.99768    0.99883
+ moyenne_graines                               XGBoost   EVITER_manques    13.80000   5.80000   25.20000
+ moyenne_graines                               XGBoost      faux_EVITER     3.60000   0.00000    8.60000
+ moyenne_graines                               XGBoost          erreurs    82.00000  59.60000  106.80000
+ moyenne_graines                               XGBoost precision_EVITER     0.99950   0.99882    1.00000
+ moyenne_graines                       Forêt aléatoire         f1_macro     0.99269   0.99092    0.99419
+ moyenne_graines                       Forêt aléatoire   EVITER_manques   108.20000  74.20000  149.40500
+ moyenne_graines                       Forêt aléatoire      faux_EVITER     6.40000   0.00000   19.20000
+ moyenne_graines                       Forêt aléatoire          erreurs   655.60000 534.79000  795.40500
+ moyenne_graines                       Forêt aléatoire precision_EVITER     0.99910   0.99729    1.00000
+ moyenne_graines DL c35 fige (modele de l'application)         f1_macro     0.99820   0.99765    0.99867
+ moyenne_graines DL c35 fige (modele de l'application)   EVITER_manques    47.40000  32.40000   65.80000
+ moyenne_graines DL c35 fige (modele de l'application)      faux_EVITER     8.80000   4.40000   14.40000
+ moyenne_graines DL c35 fige (modele de l'application)          erreurs   103.20000  80.40000  128.80000
+ moyenne_graines DL c35 fige (modele de l'application) precision_EVITER     0.99877   0.99800    0.99939
+ensemble_graines                                    DL         f1_macro     0.99831   0.99769    0.99883
+ensemble_graines                                    DL   EVITER_manques    45.00000  29.00000   64.00000
+ensemble_graines                                    DL      faux_EVITER     6.00000   1.00000   14.00000
+ensemble_graines                                    DL          erreurs    94.00000  68.00000  123.00000
+ensemble_graines                                    DL precision_EVITER     0.99916   0.99804    0.99986
+ensemble_graines                               XGBoost         f1_macro     0.99832   0.99772    0.99886
+ensemble_graines                               XGBoost   EVITER_manques    13.00000   5.00000   24.00000
+ensemble_graines                               XGBoost      faux_EVITER     3.00000   0.00000    8.00000
+ensemble_graines                               XGBoost          erreurs    80.00000  58.00000  105.00000
+ensemble_graines                               XGBoost precision_EVITER     0.99958   0.99890    1.00000
+ensemble_graines                       Forêt aléatoire         f1_macro     0.99270   0.99092    0.99420
+ensemble_graines                       Forêt aléatoire   EVITER_manques   108.00000  73.00000  150.00000
+ensemble_graines                       Forêt aléatoire      faux_EVITER     5.00000   0.00000   15.00000
+ensemble_graines                       Forêt aléatoire          erreurs   650.00000 525.97500  790.02500
+ensemble_graines                       Forêt aléatoire precision_EVITER     0.99930   0.99782    1.00000
+ensemble_graines DL c35 fige (modele de l'application)         f1_macro     0.99853   0.99797    0.99899
+ensemble_graines DL c35 fige (modele de l'application)   EVITER_manques    42.00000  28.00000   60.00000
+ensemble_graines DL c35 fige (modele de l'application)      faux_EVITER     6.00000   1.00000   14.00000
+ensemble_graines DL c35 fige (modele de l'application)          erreurs    76.00000  54.00000  101.00000
+ensemble_graines DL c35 fige (modele de l'application) precision_EVITER     0.99916   0.99804    0.99986
+
+     statistique                                             comparaison           mesure  difference   ic95_bas  ic95_haut                  decision
+ moyenne_graines                                            DL - XGBoost         f1_macro    -0.00034   -0.00106    0.00034               non tranché
+ moyenne_graines                                            DL - XGBoost   EVITER_manques    38.00000   23.20000   54.40500                          
+ moyenne_graines                                            DL - XGBoost      faux_EVITER     6.00000   -1.00500   13.40000                          
+ moyenne_graines                                            DL - XGBoost          erreurs    41.60000   10.59500   75.60000                          
+ moyenne_graines                                            DL - XGBoost precision_EVITER    -0.00084   -0.00185    0.00014                          
+ moyenne_graines                                    DL - Forêt aléatoire         f1_macro     0.00526    0.00388    0.00692              DL supérieur
+ moyenne_graines                                    DL - Forêt aléatoire   EVITER_manques   -56.40000  -93.40000  -24.00000                          
+ moyenne_graines                                    DL - Forêt aléatoire      faux_EVITER     3.20000  -10.40000   13.20000                          
+ moyenne_graines                                    DL - Forêt aléatoire          erreurs  -532.00000 -667.80500 -412.59000                          
+ moyenne_graines                                    DL - Forêt aléatoire precision_EVITER    -0.00044   -0.00183    0.00146                          
+ moyenne_graines              DL - DL c35 fige (modele de l'application)         f1_macro    -0.00025   -0.00056   -0.00003                          
+ moyenne_graines              DL - DL c35 fige (modele de l'application)   EVITER_manques     4.40000   -1.20000   12.20500                          
+ moyenne_graines              DL - DL c35 fige (modele de l'application)      faux_EVITER     0.80000   -2.20000    4.00000                          
+ moyenne_graines              DL - DL c35 fige (modele de l'application)          erreurs    20.40000    8.00000   36.80000                          
+ moyenne_graines              DL - DL c35 fige (modele de l'application) precision_EVITER    -0.00011   -0.00055    0.00030                          
+ moyenne_graines                               XGBoost - Forêt aléatoire         f1_macro     0.00560    0.00413    0.00727         XGBoost supérieur
+ moyenne_graines                               XGBoost - Forêt aléatoire   EVITER_manques   -94.40000 -134.80500  -60.99500                          
+ moyenne_graines                               XGBoost - Forêt aléatoire      faux_EVITER    -2.80000  -15.80000    6.60000                          
+ moyenne_graines                               XGBoost - Forêt aléatoire          erreurs  -573.60000 -710.61000 -451.79500                          
+ moyenne_graines                               XGBoost - Forêt aléatoire precision_EVITER     0.00040   -0.00090    0.00222                          
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)         f1_macro     0.00009   -0.00052    0.00076                          
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)   EVITER_manques   -33.60000  -48.60500  -20.79500                          
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)      faux_EVITER    -5.20000  -12.00000    1.40500                          
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)          erreurs   -21.20000  -51.20000    6.60500                          
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application) precision_EVITER     0.00073   -0.00020    0.00167                          
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)         f1_macro    -0.00551   -0.00718   -0.00408                          
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)   EVITER_manques    60.80000   28.20000   97.40000                          
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)      faux_EVITER    -2.40000  -11.80000   10.60000                          
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)          erreurs   552.40000  431.77000  687.60000                          
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application) precision_EVITER     0.00033   -0.00149    0.00165                          
+ensemble_graines                                            DL - XGBoost         f1_macro    -0.00001   -0.00074    0.00066 équivalents (marge 0.001)
+ensemble_graines                                            DL - XGBoost   EVITER_manques    32.00000   18.00000   48.00000                          
+ensemble_graines                                            DL - XGBoost      faux_EVITER     3.00000   -4.00000   12.00000                          
+ensemble_graines                                            DL - XGBoost          erreurs    14.00000  -18.00000   49.02500                          
+ensemble_graines                                            DL - XGBoost precision_EVITER    -0.00042   -0.00164    0.00056                          
+ensemble_graines                                    DL - Forêt aléatoire         f1_macro     0.00561    0.00415    0.00733              DL supérieur
+ensemble_graines                                    DL - Forêt aléatoire   EVITER_manques   -63.00000 -103.00000  -28.00000                          
+ensemble_graines                                    DL - Forêt aléatoire      faux_EVITER     1.00000  -13.00000   12.00000                          
+ensemble_graines                                    DL - Forêt aléatoire          erreurs  -556.00000 -696.00000 -431.00000                          
+ensemble_graines                                    DL - Forêt aléatoire precision_EVITER    -0.00013   -0.00167    0.00179                          
+ensemble_graines              DL - DL c35 fige (modele de l'application)         f1_macro    -0.00022   -0.00055    0.00001                          
+ensemble_graines              DL - DL c35 fige (modele de l'application)   EVITER_manques     3.00000   -3.00000   11.00000                          
+ensemble_graines              DL - DL c35 fige (modele de l'application)      faux_EVITER     0.00000    0.00000    0.00000                          
+ensemble_graines              DL - DL c35 fige (modele de l'application)          erreurs    18.00000    5.00000   36.00000                          
+ensemble_graines              DL - DL c35 fige (modele de l'application) precision_EVITER    -0.00000   -0.00000    0.00000                          
+ensemble_graines                               XGBoost - Forêt aléatoire         f1_macro     0.00563    0.00409    0.00730         XGBoost supérieur
+ensemble_graines                               XGBoost - Forêt aléatoire   EVITER_manques   -95.00000 -136.00000  -61.00000                          
+ensemble_graines                               XGBoost - Forêt aléatoire      faux_EVITER    -2.00000  -15.00000    7.00000                          
+ensemble_graines                               XGBoost - Forêt aléatoire          erreurs  -570.00000 -706.02500 -445.00000                          
+ensemble_graines                               XGBoost - Forêt aléatoire precision_EVITER     0.00029   -0.00096    0.00211                          
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)         f1_macro    -0.00021   -0.00085    0.00046                          
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)   EVITER_manques   -29.00000  -44.00000  -16.00000                          
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)      faux_EVITER    -3.00000  -12.00000    4.00000                          
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)          erreurs     4.00000  -27.00000   32.00000                          
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application) precision_EVITER     0.00042   -0.00056    0.00164                          
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)         f1_macro    -0.00583   -0.00758   -0.00434                          
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)   EVITER_manques    66.00000   31.00000  107.00000                          
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)      faux_EVITER    -1.00000  -12.00000   13.00000                          
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)          erreurs   574.00000  450.00000  714.00000                          
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application) precision_EVITER     0.00013   -0.00179    0.00167                          
+
+{
+ "dispersion": [
+  {
+   "modele": "DL",
+   "f1_macro_par_graine": [
+    0.99805,
+    0.9976,
+    0.99799,
+    0.99813,
+    0.99795
+   ],
+   "sd_entre_graines": 0.000183
+  },
+  {
+   "modele": "XGBoost",
+   "f1_macro_par_graine": [
+    0.99828,
+    0.99834,
+    0.9982,
+    0.99833,
+    0.99829
+   ],
+   "sd_entre_graines": 5e-05
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "f1_macro_par_graine": [
+    0.99266,
+    0.9927,
+    0.99271,
+    0.99288,
+    0.9925
+   ],
+   "sd_entre_graines": 0.00012
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "f1_macro_par_graine": [
+    0.99831,
+    0.99826,
+    0.99822,
+    0.99814,
+    0.99806
+   ],
+   "sd_entre_graines": 9e-05
+  }
+ ],
+ "calibration": [
+  {
+   "modele": "DL",
+   "logloss_moy": 0.00366,
+   "ECE_moy": 0.00014
+  },
+  {
+   "modele": "XGBoost",
+   "logloss_moy": 0.00234,
+   "ECE_moy": 0.0003
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "logloss_moy": 0.01374,
+   "ECE_moy": 0.00116
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "logloss_moy": 0.0033,
+   "ECE_moy": 0.00016
+  }
+ ],
+ "source": [
+  {
+   "niveau": "CPIC",
+   "n_lignes": 108579,
+   "DL": 0.9983,
+   "XGBoost": 0.9993,
+   "Forêt aléatoire": 0.9949,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "DPWG",
+   "n_lignes": 35649,
+   "DL": 0.9942,
+   "XGBoost": 0.9972,
+   "Forêt aléatoire": 0.9887,
+   "DL c35 fige (modele de l'application)": 0.9944
+  },
+  {
+   "niveau": "EMA-etiquette",
+   "n_lignes": 2440,
+   "DL": 0.6666,
+   "XGBoost": 0.6666,
+   "Forêt aléatoire": 0.6666,
+   "DL c35 fige (modele de l'application)": 0.6665
+  },
+  {
+   "niveau": "FDA",
+   "n_lignes": 27810,
+   "DL": 0.9994,
+   "XGBoost": 0.9976,
+   "Forêt aléatoire": 0.9911,
+   "DL c35 fige (modele de l'application)": 0.9996
+  },
+  {
+   "niveau": "FDA-etiquette",
+   "n_lignes": 34219,
+   "DL": 0.9975,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9869,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "HCSC-etiquette",
+   "n_lignes": 1240,
+   "DL": 1.0,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 1.0,
+   "DL c35 fige (modele de l'application)": 0.9998
+  },
+  {
+   "niveau": "RNPGx",
+   "n_lignes": 1240,
+   "DL": 0.9998,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9889,
+   "DL c35 fige (modele de l'application)": 0.9996
+  }
+ ],
+ "recouvrement": {
+  "erreurs_DL": 94,
+  "erreurs_XGBoost": 80,
+  "erreurs_RF": 650,
+  "communes_DL_XGB": 9,
+  "communes_trois": 8
+ }
+}
+lignes 211177, familles 1241, graines {'DL': 5, 'XGBoost': 5, 'Forêt aléatoire': 5, "DL c35 fige (modele de l'application)": 5}
+     statistique                                modele              mesure  estimation   ic95_bas  ic95_haut
+ moyenne_graines                                    DL            f1_macro    0.997943   0.997316   0.998484
+ moyenne_graines                                    DL      EVITER_manques   51.800000  35.200000  70.800000
+ moyenne_graines                                    DL         faux_EVITER    9.600000   5.000000  15.600000
+ moyenne_graines                                    DL             erreurs  123.600000  96.800000 154.005000
+ moyenne_graines                                    DL    precision_EVITER    0.998662   0.997821   0.999312
+ moyenne_graines                                    DL taux_EVITER_manques    0.007179   0.004900   0.009826
+ moyenne_graines                               XGBoost            f1_macro    0.998288   0.997676   0.998828
+ moyenne_graines                               XGBoost      EVITER_manques   13.800000   5.800000  25.200000
+ moyenne_graines                               XGBoost         faux_EVITER    3.600000   0.000000   8.600000
+ moyenne_graines                               XGBoost             erreurs   82.000000  59.600000 106.800000
+ moyenne_graines                               XGBoost    precision_EVITER    0.999500   0.998818   1.000000
+ moyenne_graines                               XGBoost taux_EVITER_manques    0.001913   0.000803   0.003502
+ moyenne_graines                       Forêt aléatoire            f1_macro    0.992687   0.990923   0.994187
+ moyenne_graines                       Forêt aléatoire      EVITER_manques  108.200000  74.200000 149.405000
+ moyenne_graines                       Forêt aléatoire         faux_EVITER    6.400000   0.000000  19.200000
+ moyenne_graines                       Forêt aléatoire             erreurs  655.600000 534.790000 795.405000
+ moyenne_graines                       Forêt aléatoire    precision_EVITER    0.999100   0.997286   1.000000
+ moyenne_graines                       Forêt aléatoire taux_EVITER_manques    0.014997   0.010303   0.020357
+ moyenne_graines DL c35 fige (modele de l'application)            f1_macro    0.998197   0.997651   0.998674
+ moyenne_graines DL c35 fige (modele de l'application)      EVITER_manques   47.400000  32.400000  65.800000
+ moyenne_graines DL c35 fige (modele de l'application)         faux_EVITER    8.800000   4.400000  14.400000
+ moyenne_graines DL c35 fige (modele de l'application)             erreurs  103.200000  80.400000 128.800000
+ moyenne_graines DL c35 fige (modele de l'application)    precision_EVITER    0.998774   0.998001   0.999392
+ moyenne_graines DL c35 fige (modele de l'application) taux_EVITER_manques    0.006570   0.004516   0.009102
+ensemble_graines                                    DL            f1_macro    0.998312   0.997694   0.998833
+ensemble_graines                                    DL      EVITER_manques   45.000000  29.000000  64.000000
+ensemble_graines                                    DL         faux_EVITER    6.000000   1.000000  14.000000
+ensemble_graines                                    DL             erreurs   94.000000  68.000000 123.000000
+ensemble_graines                                    DL    precision_EVITER    0.999164   0.998041   0.999863
+ensemble_graines                                    DL taux_EVITER_manques    0.006237   0.004052   0.008876
+ensemble_graines                               XGBoost            f1_macro    0.998325   0.997717   0.998858
+ensemble_graines                               XGBoost      EVITER_manques   13.000000   5.000000  24.000000
+ensemble_graines                               XGBoost         faux_EVITER    3.000000   0.000000   8.000000
+ensemble_graines                               XGBoost             erreurs   80.000000  58.000000 105.000000
+ensemble_graines                               XGBoost    precision_EVITER    0.999584   0.998896   1.000000
+ensemble_graines                               XGBoost taux_EVITER_manques    0.001802   0.000693   0.003375
+ensemble_graines                       Forêt aléatoire            f1_macro    0.992698   0.990923   0.994198
+ensemble_graines                       Forêt aléatoire      EVITER_manques  108.000000  73.000000 150.000000
+ensemble_graines                       Forêt aléatoire         faux_EVITER    5.000000   0.000000  15.000000
+ensemble_graines                       Forêt aléatoire             erreurs  650.000000 525.975000 790.025000
+ensemble_graines                       Forêt aléatoire    precision_EVITER    0.999297   0.997817   1.000000
+ensemble_graines                       Forêt aléatoire taux_EVITER_manques    0.014969   0.010201   0.020519
+ensemble_graines DL c35 fige (modele de l'application)            f1_macro    0.998533   0.997974   0.998987
+ensemble_graines DL c35 fige (modele de l'application)      EVITER_manques   42.000000  28.000000  60.000000
+ensemble_graines DL c35 fige (modele de l'application)         faux_EVITER    6.000000   1.000000  14.000000
+ensemble_graines DL c35 fige (modele de l'application)             erreurs   76.000000  54.000000 101.000000
+ensemble_graines DL c35 fige (modele de l'application)    precision_EVITER    0.999164   0.998041   0.999864
+ensemble_graines DL c35 fige (modele de l'application) taux_EVITER_manques    0.005821   0.003797   0.008314
+
+     statistique                                             comparaison              mesure  difference    ic95_bas   ic95_haut                  decision                  lecture_statistique               lecture_pratique
+ moyenne_graines                                            DL - XGBoost            f1_macro   -0.000345   -0.001060    0.000338               non tranché différence statistique non démontrée                    non tranché
+ moyenne_graines                                            DL - XGBoost      EVITER_manques   38.000000   23.200000   54.405000                                                                                              
+ moyenne_graines                                            DL - XGBoost         faux_EVITER    6.000000   -1.005000   13.400000                                                                                              
+ moyenne_graines                                            DL - XGBoost             erreurs   41.600000   10.595000   75.600000                                                                                              
+ moyenne_graines                                            DL - XGBoost    precision_EVITER   -0.000838   -0.001847    0.000137                                                                                              
+ moyenne_graines                                            DL - XGBoost taux_EVITER_manques    0.005267    0.003210    0.007590                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire            f1_macro    0.005256    0.003882    0.006921              DL supérieur         DL statistiquement supérieur      DL pratiquement supérieur
+ moyenne_graines                                    DL - Forêt aléatoire      EVITER_manques  -56.400000  -93.400000  -24.000000                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire         faux_EVITER    3.200000  -10.400000   13.200000                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire             erreurs -532.000000 -667.805000 -412.590000                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire    precision_EVITER   -0.000438   -0.001832    0.001457                                                                                              
+ moyenne_graines                                    DL - Forêt aléatoire taux_EVITER_manques   -0.007817   -0.012854   -0.003383                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)            f1_macro   -0.000254   -0.000563   -0.000033                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)      EVITER_manques    4.400000   -1.200000   12.205000                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)         faux_EVITER    0.800000   -2.200000    4.000000                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)             erreurs   20.400000    8.000000   36.800000                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application)    precision_EVITER   -0.000112   -0.000549    0.000299                                                                                              
+ moyenne_graines              DL - DL c35 fige (modele de l'application) taux_EVITER_manques    0.000610   -0.000170    0.001708                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire            f1_macro    0.005601    0.004134    0.007270         XGBoost supérieur    XGBoost statistiquement supérieur XGBoost pratiquement supérieur
+ moyenne_graines                               XGBoost - Forêt aléatoire      EVITER_manques  -94.400000 -134.805000  -60.995000                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire         faux_EVITER   -2.800000  -15.800000    6.600000                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire             erreurs -573.600000 -710.610000 -451.795000                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire    precision_EVITER    0.000400   -0.000899    0.002221                                                                                              
+ moyenne_graines                               XGBoost - Forêt aléatoire taux_EVITER_manques   -0.013084   -0.018519   -0.008611                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)            f1_macro    0.000091   -0.000522    0.000756                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)      EVITER_manques  -33.600000  -48.605000  -20.795000                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)         faux_EVITER   -5.200000  -12.000000    1.405000                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)             erreurs  -21.200000  -51.200000    6.605000                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application)    precision_EVITER    0.000726   -0.000196    0.001671                                                                                              
+ moyenne_graines         XGBoost - DL c35 fige (modele de l'application) taux_EVITER_manques   -0.004657   -0.006767   -0.002889                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)            f1_macro   -0.005510   -0.007177   -0.004082                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)      EVITER_manques   60.800000   28.200000   97.400000                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)         faux_EVITER   -2.400000  -11.800000   10.600000                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)             erreurs  552.400000  431.770000  687.600000                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application)    precision_EVITER    0.000326   -0.001494    0.001646                                                                                              
+ moyenne_graines Forêt aléatoire - DL c35 fige (modele de l'application) taux_EVITER_manques    0.008427    0.003977    0.013422                                                                                              
+ensemble_graines                                            DL - XGBoost            f1_macro   -0.000013   -0.000744    0.000662 équivalents (marge 0.001) différence statistique non démontrée      équivalents (marge 0.001)
+ensemble_graines                                            DL - XGBoost      EVITER_manques   32.000000   18.000000   48.000000                                                                                              
+ensemble_graines                                            DL - XGBoost         faux_EVITER    3.000000   -4.000000   12.000000                                                                                              
+ensemble_graines                                            DL - XGBoost             erreurs   14.000000  -18.000000   49.025000                                                                                              
+ensemble_graines                                            DL - XGBoost    precision_EVITER   -0.000420   -0.001643    0.000562                                                                                              
+ensemble_graines                                            DL - XGBoost taux_EVITER_manques    0.004435    0.002454    0.006731                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire            f1_macro    0.005613    0.004152    0.007326              DL supérieur         DL statistiquement supérieur      DL pratiquement supérieur
+ensemble_graines                                    DL - Forêt aléatoire      EVITER_manques  -63.000000 -103.000000  -28.000000                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire         faux_EVITER    1.000000  -13.000000   12.000000                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire             erreurs -556.000000 -696.000000 -431.000000                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire    precision_EVITER   -0.000133   -0.001667    0.001793                                                                                              
+ensemble_graines                                    DL - Forêt aléatoire taux_EVITER_manques   -0.008732   -0.014079   -0.003961                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)            f1_macro   -0.000222   -0.000555    0.000012                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)      EVITER_manques    3.000000   -3.000000   11.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)         faux_EVITER    0.000000    0.000000    0.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)             erreurs   18.000000    5.000000   36.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application)    precision_EVITER   -0.000000   -0.000002    0.000000                                                                                              
+ensemble_graines              DL - DL c35 fige (modele de l'application) taux_EVITER_manques    0.000416   -0.000438    0.001553                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire            f1_macro    0.005626    0.004090    0.007299         XGBoost supérieur    XGBoost statistiquement supérieur XGBoost pratiquement supérieur
+ensemble_graines                               XGBoost - Forêt aléatoire      EVITER_manques  -95.000000 -136.000000  -61.000000                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire         faux_EVITER   -2.000000  -15.000000    7.000000                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire             erreurs -570.000000 -706.025000 -445.000000                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire    precision_EVITER    0.000287   -0.000959    0.002107                                                                                              
+ensemble_graines                               XGBoost - Forêt aléatoire taux_EVITER_manques   -0.013167   -0.018649   -0.008580                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)            f1_macro   -0.000208   -0.000846    0.000461                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)      EVITER_manques  -29.000000  -44.000000  -16.000000                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)         faux_EVITER   -3.000000  -12.000000    4.000000                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)             erreurs    4.000000  -27.000000   32.000000                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application)    precision_EVITER    0.000419   -0.000562    0.001641                                                                                              
+ensemble_graines         XGBoost - DL c35 fige (modele de l'application) taux_EVITER_manques   -0.004019   -0.006158   -0.002206                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)            f1_macro   -0.005835   -0.007578   -0.004339                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)      EVITER_manques   66.000000   31.000000  107.000000                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)         faux_EVITER   -1.000000  -12.000000   13.000000                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)             erreurs  574.000000  450.000000  714.000000                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application)    precision_EVITER    0.000133   -0.001794    0.001665                                                                                              
+ensemble_graines Forêt aléatoire - DL c35 fige (modele de l'application) taux_EVITER_manques    0.009148    0.004328    0.014549                                                                                              
+
+{
+ "dispersion": [
+  {
+   "modele": "DL",
+   "f1_macro_par_graine": [
+    0.99805,
+    0.9976,
+    0.99799,
+    0.99813,
+    0.99795
+   ],
+   "sd_entre_graines": 0.000183
+  },
+  {
+   "modele": "XGBoost",
+   "f1_macro_par_graine": [
+    0.99828,
+    0.99834,
+    0.9982,
+    0.99833,
+    0.99829
+   ],
+   "sd_entre_graines": 5e-05
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "f1_macro_par_graine": [
+    0.99266,
+    0.9927,
+    0.99271,
+    0.99288,
+    0.9925
+   ],
+   "sd_entre_graines": 0.00012
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "f1_macro_par_graine": [
+    0.99831,
+    0.99826,
+    0.99822,
+    0.99814,
+    0.99806
+   ],
+   "sd_entre_graines": 9e-05
+  }
+ ],
+ "calibration": [
+  {
+   "modele": "DL",
+   "logloss_moy": 0.00366,
+   "ECE_moy": 0.00014
+  },
+  {
+   "modele": "XGBoost",
+   "logloss_moy": 0.00234,
+   "ECE_moy": 0.0003
+  },
+  {
+   "modele": "Forêt aléatoire",
+   "logloss_moy": 0.01374,
+   "ECE_moy": 0.00116
+  },
+  {
+   "modele": "DL c35 fige (modele de l'application)",
+   "logloss_moy": 0.0033,
+   "ECE_moy": 0.00016
+  }
+ ],
+ "source": [
+  {
+   "niveau": "CPIC",
+   "n_lignes": 108579,
+   "DL": 0.9983,
+   "XGBoost": 0.9993,
+   "Forêt aléatoire": 0.9949,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "DPWG",
+   "n_lignes": 35649,
+   "DL": 0.9942,
+   "XGBoost": 0.9972,
+   "Forêt aléatoire": 0.9887,
+   "DL c35 fige (modele de l'application)": 0.9944
+  },
+  {
+   "niveau": "EMA-etiquette",
+   "n_lignes": 2440,
+   "DL": 0.6666,
+   "XGBoost": 0.6666,
+   "Forêt aléatoire": 0.6666,
+   "DL c35 fige (modele de l'application)": 0.6665
+  },
+  {
+   "niveau": "FDA",
+   "n_lignes": 27810,
+   "DL": 0.9994,
+   "XGBoost": 0.9976,
+   "Forêt aléatoire": 0.9911,
+   "DL c35 fige (modele de l'application)": 0.9996
+  },
+  {
+   "niveau": "FDA-etiquette",
+   "n_lignes": 34219,
+   "DL": 0.9975,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9869,
+   "DL c35 fige (modele de l'application)": 0.9985
+  },
+  {
+   "niveau": "HCSC-etiquette",
+   "n_lignes": 1240,
+   "DL": 1.0,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 1.0,
+   "DL c35 fige (modele de l'application)": 0.9998
+  },
+  {
+   "niveau": "RNPGx",
+   "n_lignes": 1240,
+   "DL": 0.9998,
+   "XGBoost": 1.0,
+   "Forêt aléatoire": 0.9889,
+   "DL c35 fige (modele de l'application)": 0.9996
+  }
+ ],
+ "recouvrement": {
+  "erreurs_DL": 94,
+  "erreurs_XGBoost": 80,
+  "erreurs_RF": 650,
+  "communes_DL_XGB": 9,
+  "communes_trois": 8
+ }
+}
+===================== TERMINE : Sat Nov 14 03:03:30 WAT 2026 =====================

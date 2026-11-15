@@ -1,0 +1,21 @@
+Comparaison application v8t (corpus v15) contre PharmCAT 3.4.0, 104 personnes GeT-RM hors corpus.
+
+Entrees
+- multi104.vcf.gz (data/getrm_104/multi104_getrm_8nov2026/, sha256 8f4e59f7a66c78bf..., contenu a94152dd418d06aa...).
+- Liste figee data/liste_104_gelee.txt (sha256 730c05b908641075...).
+- Rapports PharmCAT REGENERES (non stockes, 200 Mo) :  java -jar pharmcat-3.4.0-all.jar -vcf multi104.vcf.gz -o pc104 -reporterJson
+  Leurs empreintes sont dans EMPREINTES_rapports_PharmCAT_3.4.0_104.sha256.
+- Cote application : profils lus dans les VCF par la v8s (sorties archivees du 8 nov.), rejoues dans la v8t par scripts/rejouer_moteur_104_v1.py
+  (la lecture du VCF est identique entre v8s et v8t ; seuls regles, domaine et modeles changent).
+
+Validations faites avant le calcul v8t
+1. Rapports regeneres + sorties v8s archivees -> comparer_reco_v1 / agreger_reco_v1_1 redonnent EXACTEMENT les chiffres du 8 nov.
+   (4 635 regles ; 3 455 / 3 534 = 97,8 % ; CPIC 98,8 % ; DPWG 85,8 % ; 79 non retrouvees ; 3 191 / 3 264).
+2. Rejeu des profils dans la v8s -> 19 656 lignes du moteur identiques aux sorties archivees (0 difference hors avis Random Forest,
+   absent du lot du 8 nov.).
+3. dl_vs_pharmcat_v1 sur la v8s -> 2 598 / 2 600 (99,92 %), comme le 8 nov.
+Scripts figes non modifies (empreintes comparer_reco_v1 da14708d..., agreger_reco_v1 f8c0d455..., lancer_lot_v1 351532e9...).
+
+Fichiers
+detail_A1_centre_app_104.csv, motifs_NON_RETROUVEE_A1.csv, desaccords_DL_vs_PharmCAT_104.csv : sorties des scripts figes sur la v8t.
+sorties_application_v8t_104.zip : les 104 fiches JSON de la v8t.
