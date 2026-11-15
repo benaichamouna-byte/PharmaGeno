@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block corps %}
+<h1>Références scientifiques</h1>
+<p class="petit gris">Chaque référence a été vérifiée (titre, auteurs, revue, année, DOI) avant d'être listée. Cliquer sur un lien ouvre la page de l'éditeur ou du projet.</p>
+{% for g in references %}<div class="carte"><h2>{{ g.groupe }}</h2><ol>
+{% for it in g['items'] %}<li style="margin:6px 0">{{ it.texte }} <a href="{{ it.lien }}" target="_blank" rel="noopener">{{ it.etiquette }}</a></li>{% endfor %}</ol></div>{% endfor %}
+<div class="info petit">{{ note }}</div>
+<p class="petit gris">Outil de recherche (mémoire de master), non validé cliniquement.</p>
+{% endblock %}

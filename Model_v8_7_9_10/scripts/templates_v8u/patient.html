@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block titre %}PharmaGeno - vue patient{% endblock %}
+{% block corps %}
+<h1 style="font-size:1.9rem">Vos résultats pharmacogénétiques</h1>
+<div class="alerte" style="font-size:1.1rem"><b>À lire d'abord.</b> Ces résultats sont à discuter avec votre médecin ou votre pharmacien. N'arrêtez et ne changez aucun traitement de votre propre initiative.</div>
+{% if j.mode == 'demo' %}<div class="info">Profil de démonstration : aucun patient réel.</div>{% endif %}
+<div class="carte" style="font-size:1.1rem"><h2 style="font-size:1.4rem">Médicaments à éviter ou à discuter en priorité</h2>
+{% if globaux %}{% for f in globaux %}<div class="danger"><b>{{ f.medicament }}</b><br>{{ f.texte_patient }}</div>{% endfor %}
+{% else %}<p>Aucun des médicaments analysés n'est signalé « à éviter » pour vos gènes. Cela ne couvre pas les médicaments « non analysés » ci-dessous.</p>{% endif %}</div>
+<div class="carte" style="font-size:1.1rem"><h2 style="font-size:1.4rem">Médicaments de la spécialité « {{ spec }} »</h2>
+{% if reco.proposes %}{% for f in reco.proposes %}<div class="patient"><b>{{ f.medicament }}</b> - {{ f.libelle }}<br>{{ f.texte_patient }}</div>{% endfor %}
+<p class="petit gris">Ce n'est pas une prescription : votre médecin tient compte de votre maladie, de vos autres médicaments et de votre âge.</p>
+{% else %}<p>Aucun médicament de cette spécialité n'a pu être proposé pour vos gènes.</p>{% endif %}
+{% if reco.a_verifier %}<h2 style="font-size:1.2rem;margin-top:16px">À vérifier avec un professionnel</h2>
+<p>{{ reco.a_verifier|map(attribute='medicament')|join(', ') }}. Les analyses ne donnent pas une réponse assez sûre : demandez l'avis de votre médecin ou de votre pharmacien.</p>{% endif %}
+{% if reco.non_evalues %}<h2 style="font-size:1.2rem;margin-top:16px">Médicaments non analysés</h2>
+<p>{{ reco.non_evalues|map(attribute='medicament')|join(', ') }}. Ces médicaments n'ont pas pu être analysés pour votre profil. Cela ne veut pas dire qu'ils vous conviennent : demandez l'avis de votre médecin ou de votre pharmacien.</p>{% endif %}</div>
+{% for b in bloquants %}<div class="alerte">{{ b }}</div>{% endfor %}
+<p class="petit gris">{{ avertissement }}</p>
+<p class="nopr"><button onclick="window.print()">Imprimer cette page</button> <a class="btn sec" href="{{ url_for('resultats', jid=j.id, specialite=spec) }}">Retour à la vue professionnelle</a></p>
+{% endblock %}
