@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-test_app_v8u.py = test_app_v8t.py (reste INTACT) pointe sur app_pharmageno_v8u. Trois tests ADAPTES parce que le texte attendu a change par decision validee (15 nov. 2026) : T39 (bandeau version 8u au lieu de 8r), T45 (formulation de l'accord) et T62 (le libelle « pas d'interaction gene-medicament selon la directive » etait faux pour 4 regles et n'est plus affiche). Trois tests AJOUTES : T79 (VKORC1 = 0 : la page et le PDF montrent la directive « 50 % de la dose » pour l'acenocoumarol, jamais « pas d'interaction »), T80 (bandeau version 8u), T81 (domaine construit sur les 1 241 profils de developpement : fluvastatine [0 ; 0,5] absente). Aucun autre test modifie ou retire.
+test_app_v8u.py = test_app_v8t.py (reste INTACT) pointe sur app_pharmageno_v8u. Quatre tests ADAPTES parce que le texte attendu a change par decision validee (15 nov. 2026) : T39 (bandeau version 8u au lieu de 8r), T63 (titre du PDF v8u au lieu de v8s), T45 (formulation de l'accord) et T62 (le libelle « pas d'interaction gene-medicament selon la directive » etait faux pour 4 regles et n'est plus affiche). Huit tests AJOUTES : T84 a T86 (revision 3 : lecture du patient, medicaments evalues visibles, libelles), T82 et T83 (revision 2 : textes du PDF), T79 (VKORC1 = 0 : la page et le PDF montrent la directive « 50 % de la dose » pour l'acenocoumarol, jamais « pas d'interaction »), T80 (bandeau version 8u), T81 (domaine construit sur les 1 241 profils de developpement : fluvastatine [0 ; 0,5] absente). Aucun autre test modifie ou retire.
 test_app_v8t.py = test_app_v8s.py (reste INTACT) pointe sur app_pharmageno_v8t et sur le corpus v15 : les quatre modeles dans ../modeles_v15, les etiquettes du test T27 lues dans corpus_v15. Aucun test n'est ajoute, retire ni modifie.
 test_app_v8s.py (5 nov. 2026) = test_app_v8r.py (INTACT) adapté au lecteur v9 + tests T64-T67 ; ancien en-tête : test_app_v8r.py (3 nov. 2026, copie de test_app_v8q.py (INTACT) + tests T47-T53 : Random Forest, références, écrans sans pourcentages) ; ancien en-tête : test_app_v8q.py (3 nov. 2026, copie de test_app_v8p.py adaptée au corpus v14 ; v8p reste intact) : tests de l application web v8q (v8p sur le corpus v14) (v8m + références, liens de directive, lecture des règles à plusieurs gènes) (client de test Flask ; aucun entraînement ; ensemble final non lu).
 À lancer depuis le dossier scripts/ :  python3 test_app_v8h.py   (variables facultatives PHARMAGENO_MODELES_V10 pour indiquer d'autres dossiers que ../modeles_v9)
@@ -305,8 +305,8 @@ verdict("T62 v8u : ni libellé interne « règle v8 groupe A » ni « pas d'inte
 import subprocess as _sp
 _pdf = c2.get('/pdf/' + j5 + '?specialite=Cardiologie'); open(os.path.join(TRAV2, 'rapport_test.pdf'), 'wb').write(_pdf.data)
 _pt = _sp.run(['pdftotext', '-layout', os.path.join(TRAV2, 'rapport_test.pdf'), '-'], capture_output=True, text=True).stdout
-verdict("T63 v8r : le PDF a les 4 avis (DL, directive, XGBoost, Random Forest) avec score, aucun « confiance x % », la section des directives (PA…) et les références (DOI), titre v8s",
-        _pdf.data[:5] == b'%PDF-' and 'Random Forest' in _pt and 'score' in _pt and not re.search(r'confiance\s+\d', _pt) and 'Directives utilisées' in _pt and 'Références scientifiques' in _pt and 'doi.org' in _pt and '(v8s)' in _pt and 'PA1661' in _pt)
+verdict("T63 v8r : le PDF a les 4 avis (DL, directive, XGBoost, Random Forest) avec score, aucun « confiance x % », la section des directives (PA…) et les références (DOI), titre v8u (adapté en v8u)",
+        _pdf.data[:5] == b'%PDF-' and 'Random Forest' in _pt and 'score' in _pt and not re.search(r'confiance\s+\d', _pt) and 'Directives utilisées' in _pt and 'Références scientifiques' in _pt and 'doi.org' in _pt and '(v8u)' in _pt and 'PA1661' in _pt)
 
 # --- v8s (5 nov. 2026) : lecteur CYP2C9 v9 branché, table des allèles dans le paquet, textes à jour
 _cas = {'*1/*1': 1.0, '*1/*2': 0.75, '*1/*3': 0.5, '*2/*2': 0.5, '*2/*3': 0.25, '*3/*3': 0.0}
@@ -338,6 +338,40 @@ verdict("T79 v8u : VKORC1 = 0 -> acénocoumarol : la directive affichée est « 
 verdict("T80 v8u : bandeau « version 8u »", 'outil de recherche, version 8u' in x6 and 'version 8r' not in x6)
 _dom = json.load(open(os.path.join(ICI, '..', 'data', 'domaine_v15_dev.json'), encoding='utf-8'))['medicaments']
 verdict("T81 v8u : domaine construit sur les 1 241 profils de développement (fluvastatine [0 ; 0,5] absente, vue seulement dans l'ensemble final)", [0.0, 0.5] not in _dom['fluvastatin']['combos_vues'] and app2.mo is not None)
+
+# --- v8u révision 2 : textes du rapport PDF
+_titres = [int(m) for m in re.findall(r'(?m)^\s*(\d+)\. [A-ZÀ-Ý]', _sp.run(['pdftotext', os.path.join(TRAV2, 'rapport_vk0.pdf'), '-'], capture_output=True, text=True).stdout)]
+verdict("T82 v8u : PDF titré (v8u), sections numérotées sans saut (1, 2, 3...)", '(v8u)' in _pt6 and '(v8s)' not in _pt6 and len(_titres) >= 8 and _titres[:len(_titres)] == list(range(1, len(_titres) + 1)), 'titres : %s' % _titres)
+verdict("T83 v8u : PDF sans phrases périmées ou fausses (patients réels, anglais sans traduction, ancien modèle, F1 0,467, « ci-dessous ») ; nom de fichier v8u",
+        not any(k in _pt6 for k in ('Pas de test sur des patients réels', 'en anglais, sans traduction', 'ancien modèle', '0,467', 'saisir ci-dessous')) and 'PharmCAT 3.4.0 pour 104 personnes' in _pt6
+        and 'rapport_pharmageno_v8u_' in _p6.headers.get('Content-Disposition', ''))
+
+# --- v8u révision 3 : lecture du patient, médicaments évalués tous visibles, libellés
+def faux_lecteur_r3(chemin, bundle, workdir, codage, tables, hla, assemblage, echantillon, **kw):
+    r_ = faux_lecteur(chemin, bundle, workdir, codage, tables, hla, assemblage, echantillon, **kw)
+    r_['profil']['CYP2C9'] = 0.75; r_['detail']['CYP2C9'].update(valeur=0.75, phenotype_utilise="score d'activité 1.5", genotype='*1/*8')
+    r_['profil']['CYP2C19'] = 1.5; r_['detail']['CYP2C19'].update(valeur=1.5, phenotype_utilise='Rapid Metabolizer', genotype='*1/*17')
+    r_['profil']['NAT2'] = 0.0; r_['detail']['NAT2'].update(valeur=0.0, phenotype_utilise='Poor Metabolizer', genotype='*5/*6')
+    return r_
+L.lire_vcf = faux_lecteur_r3
+r = c2.post('/analyser', data={'specialite': 'Cardiologie', 'vcf': (io.BytesIO(b'##fileformat=VCFv4.2\n'), 'p7.vcf')}, content_type='multipart/form-data'); j7 = jid_de(r.headers['Location'])
+for _ in range(40):
+    if c2.get('/etat/' + j7).get_json()['etat'] != 'en_cours': break
+    time.sleep(0.25)
+L.lire_vcf = L_orig
+x7 = _txt(c2.get('/resultats/' + j7 + '?specialite=Cardiologie').get_data(as_text=True))
+verdict("T84 v8u : « Gènes regardés » montre le génotype LU (CYP2C9 score 1,5, *1/*8) ; quand la règle appliquée vise un autre diplotype, la page le dit",
+        "CYP2C9 : score d'activité 1,5 (*1/*8)" in x7 and 'génotype lu chez ce patient : *1/*8' in x7, 'note diplotype présente : %s' % ('génotype lu chez ce patient : *1/*8' in x7))
+_inv = []
+for sp in specs:
+    d = c2.get('/json/' + j7 + '?specialite=' + sp).get_json(); s_ = d['synthese']
+    vus = {m for g in s_['vert'] for m in g['meds']} | {o['med'] for o in s_['orange']} | {o['med'] for o in s_['rouge']} | {o['med'] for o in s_.get('verifier', [])}
+    rco = d['recommandation']; vus |= {x['medicament'] for x in rco['non_evalues']} | set(d['a_eviter_toutes_specialites'])
+    if not d['choix']: vus |= {x['medicament'] for x in rco['proposes']} | set(rco.get('autres_noms', [])) | {x['medicament'] for x in rco.get('a_verifier', [])}
+    _inv += [(sp, m) for m in sorted(set(rc2.medicaments_de_specialite(sp)) & {x['medicament'] for x in d['moteur']}) if m not in vus]
+verdict("T85 v8u : dans toutes les spécialités, chaque médicament ÉVALUÉ apparaît (carte, à vérifier, à éviter ou non évalué) ; hydralazine visible en cardiologie (NAT2 lent)", not _inv and 'hydralazine' in x7, 'invisibles : %s' % _inv[:6])
+x7e = x7.split('Tableau complet pour vérification')[0]   # le tableau de vérification garde volontairement la sortie BRUTE du lecteur (traçabilité)
+verdict("T86 v8u : libellés traduits hors tableau de vérification brut, sans renvoi de note (« of patients ») ni « Rapid metabolizer » ; virgule décimale", 'Tableau complet pour vérification' in x7 and 'of patients' not in x7e and 'Rapid metabolizer' not in x7e and 'Rapid Metabolizer' not in x7e and "score d'activité 1.5" not in x7e and 'métaboliseur rapide (*1/*17)' in x7e)
 
 print('\nRÉSULTAT GLOBAL :', 'TOUT PASSE' if OK else 'ÉCHEC')
 sys.exit(0 if OK else 1)

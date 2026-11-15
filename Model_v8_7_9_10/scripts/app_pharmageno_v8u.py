@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-app_pharmageno_v8u.py = app_pharmageno_v8t.py (reste INTACTE) + 4 corrections issues du test manuel de l'application (15 nov. 2026), validées par Mouna : (1) le libellé interne « règle v8 groupe A » n'est plus traduit par « pas d'interaction gène-médicament selon la directive » (faux pour 4 règles qui ont une action : acénocoumarol et phenprocoumon VKORC1 AA, flucytosine DPYD 0 et 0,5) : la page et le PDF affichent le texte de la directive ; (2) domaine reconstruit sur les 1 241 profils de développement (domaine_v15_dev.json ; seule différence : fluvastatine [0 ; 0,5] retirée) ; (3) bandeau « version 8u » ; (4) « Les avis du DL, de la directive et de XGBoost sont d'accord » (Random Forest, informatif, est hors de cet accord par conception). Gabarits templates_v8u, PDF rapport_pdf_v8u. Modèles et moteur inchangés.
+app_pharmageno_v8u.py = app_pharmageno_v8t.py (reste INTACTE) + corrections issues du test manuel de l'application (15 nov. 2026), validées par Mouna. Révision 3 (même jour) : (a) « Gènes regardés » et bloc rouge affichent ce qui a été LU chez le patient (et non l'étiquette de la règle appliquée, qui pouvait nommer un autre diplotype, ex. CYP2C9*1/*2 pour un patient *1/*8) ; note quand la règle appliquée vise un autre diplotype ; (b) tout médicament évalué de la spécialité apparaît dans la carte (avant : ceux hors groupe de choix disparaissaient, ex. hydralazine « adapter la dose ») ; bloc « À faire vérifier » ; (c) libellés de phénotype traduits, renvois de notes retirés, virgule décimale. Révision 2 (même jour) : 9 corrections de texte du rapport PDF (titre v8u, numérotation continue des sections, phrase CYP2D6 valable pour le PDF, limite « pas de test sur des patients réels » remplacée, langue des textes de directive, XGBoost « modèle de contrôle », SLCO1B1 non retenu affiché comme tel, nom du fichier, mesure périmée « F1 0,467 » retirée). Révision 1 : (1) le libellé interne « règle v8 groupe A » n'est plus traduit par « pas d'interaction gène-médicament selon la directive » (faux pour 4 règles qui ont une action : acénocoumarol et phenprocoumon VKORC1 AA, flucytosine DPYD 0 et 0,5) : la page et le PDF affichent le texte de la directive ; (2) domaine reconstruit sur les 1 241 profils de développement (domaine_v15_dev.json ; seule différence : fluvastatine [0 ; 0,5] retirée) ; (3) bandeau « version 8u » ; (4) « Les avis du DL, de la directive et de XGBoost sont d'accord » (Random Forest, informatif, est hors de cet accord par conception). Gabarits templates_v8u, PDF rapport_pdf_v8u. Modèles et moteur inchangés.
 app_pharmageno_v8t.py = app_pharmageno_v8s.py (reste INTACTE) branchee sur le corpus v15 : regles_v15_monogene.csv, regles_v15_multigene.csv, domaine_v15.json, et les quatre modeles finaux v15 (profil, choix, XGBoost, Random Forest) dans ../modeles_v15. Aucune autre modification : code, moteur, gabarits et rapport PDF sont ceux de la v8s.
 app_pharmageno_v8r.py (3 nov. 2026) = app_pharmageno_v8q.py (reste INTACTE) + avis Random Forest informatif (moteur_v10j.py, modeles_v10rf), références complétées (references_v8r.py), écrans sans nombre de gènes ni pourcentages du DL (templates_v8r).
 app_pharmageno_v8q.py (3 nov. 2026) = app_pharmageno_v8p.py (reste intacte) branchée sur le corpus v14 : 189 médicaments, DL profil (configuration 35, calibré par température) et DL choix réentraînés, second avis réentraîné (moteur_v10i.py ; modeles_v10, modeles_v10x ; domaine_v10.json ; regles_v14_monogene.csv ; regles_v13_multigene.csv ; atc_mapping_medicaments_v14.csv ; profils_genes_v6_complet.csv).
@@ -215,7 +215,7 @@ def creer_app(cfg):
         for f in prop: f['gene_intervient'] = intervient(f)
         prop.sort(key=lambda f: (ORDRE_PROPOSITION[f['action']], -f['gene_intervient'], -(f['proba_dl'] or {}).get(f['action'], 0)))
         for i, f in enumerate(prop, 1): f['rang'] = i
-        reco['autres_compatibles'] = max(0, len(prop) - 3); reco['proposes'] = prop[:3]
+        reco['autres_compatibles'] = max(0, len(prop) - 3); reco['autres_noms'] = [f['medicament'] for f in prop[3:]]; reco['proposes'] = prop[:3]  # v8u rév. 3 : noms gardés
         reco['note_ordre'] = "Classement : à action égale, les médicaments dont un gène du patient intervient passent d'abord, puis la probabilité du DL. C'est une règle d'affichage, pas une validation clinique."
         return reco
 
@@ -231,7 +231,7 @@ def creer_app(cfg):
                 f = rc.chercher_medicament(m, res); _vocab(f); f['proba_choix'] = d['proba_choix']; f['rang'] = len(fiches) + 1; f['action_dl'] = par[m].get('action_dl')
                 f['genes_decisifs'] = mo.genes_decisifs(j['profil'], m)
                 ex = {e['gene']: e['lecture'] for e in (f.get('explication') or []) if isinstance(e, dict) and 'gene' in e and e.get('lecture')}
-                for dd in f['genes_decisifs']: dd['lectures'] = [(g, ex.get(g) or lect.get(g, '-')) for g in dd['genes']]
+                for dd in f['genes_decisifs']: dd['lectures'] = [(g, lect.get(g) or ex.get(g, '-')) for g in dd['genes']]  # v8u rév. 3 : lecture du patient d'abord
                 fiches.append(f)
             else:
                 ecartes.append(dict(medicament=m, proba_choix=d['proba_choix'], action=par[m].get('action_dl'), a_eviter=(cat[m] == 'a_eviter')))
@@ -241,9 +241,52 @@ def creer_app(cfg):
 
     PHENO_FR = {'règle v8 groupe a': "voir le texte de la directive", 'decreased function': 'fonction diminuée', 'normal function': 'fonction normale', 'poor function': 'fonction très diminuée', 'increased function': 'fonction augmentée',
                 'normal metabolizer': 'métaboliseur normal', 'poor metabolizer': 'métaboliseur lent', 'intermediate metabolizer': 'métaboliseur intermédiaire', 'rapid metabolizer': 'métaboliseur rapide',
-                'ultrarapid metabolizer': 'métaboliseur ultra-rapide', 'likely poor metabolizer': 'métaboliseur probablement lent', 'likely intermediate metabolizer': 'métaboliseur probablement intermédiaire'}
+                'ultrarapid metabolizer': 'métaboliseur ultra-rapide', 'likely poor metabolizer': 'métaboliseur probablement lent', 'likely intermediate metabolizer': 'métaboliseur probablement intermédiaire',
+                # v8u rév. 3 : libellés restés en anglais
+                'possible intermediate metabolizer': 'métaboliseur possiblement intermédiaire', 'ultrarapid or rapid metabolizer': 'métaboliseur ultra-rapide ou rapide', 'favorable response': 'réponse favorable',
+                'g6pd variable': 'G6PD variable', 'g6pd normal': 'G6PD normal', 'g6pd deficient': 'G6PD déficient', 'reference': 'référence', 'indeterminate': 'indéterminé'}
 
-    def pheno_fr(s): return PHENO_FR.get(str(s).strip().lower(), s)
+    def pheno_fr(s):
+        """v8u rév. 3 : retire les renvois de notes des tables sources (« (~2-30% of patients) d ») et le nom du gène répété, traduit, virgule décimale"""
+        t = re.sub(r'\s*\(~?[\d.,\-–]+\s*%\s*of patients\)', '', str(s)).strip()
+        t = re.sub(r'\s+[a-e]\)?$', '', t).strip()
+        m = re.match(r'^(CYP\w+|G6PD|VKORC1|SLCO1B1|TPMT|NUDT15|UGT1A1|DPYD|NAT2|ABCG2)\s+(.+)$', t)
+        if m and m.group(2).strip().lower() in PHENO_FR: t = m.group(2).strip()
+        t = PHENO_FR.get(t.lower(), t)
+        return re.sub(r"(score d'activité \d)\.(\d)", r'\1,\2', t)
+
+    CYP2D6_LIB = {0.0: 'métaboliseur lent', 0.5: 'métaboliseur intermédiaire', 1.0: 'métaboliseur normal', 2.0: 'métaboliseur ultra-rapide'}
+
+    def lecture_patient(tg):
+        """v8u rév. 3 : ce qui a été LU chez le patient, gène par gène (phénotype + génotype lu ; valeur saisie signalée comme telle)"""
+        out = {}
+        for g in tg:
+            v = g['valeur']
+            if v is None: out[g['gene']] = 'non testé'; continue
+            if g['gene'].startswith('HLA-'): out[g['gene']] = g['lecture'] + (" (saisi par l'utilisateur)" if g.get('origine') and 'utilisateur' in str(g.get('origine')).lower() else ''); continue
+            if g['lecture'] == "fourni par l'utilisateur": out[g['gene']] = CYP2D6_LIB.get(float(v), 'valeur %g' % v) + " (saisi par l'utilisateur)"; continue
+            base = pheno_fr(g['lecture']) if g['lecture'] not in ('-', None) else VAL_FR.get(g['valeur_txt'], 'valeur %s' % g['valeur_txt'])
+            geno = g.get('genotype')
+            out[g['gene']] = base + ((' (%s)' % geno) if geno and geno not in base else '')
+        return out
+
+    def completer_synthese(synthese, spec, res, cat, reco):
+        """v8u rév. 3 : tout médicament ÉVALUÉ de la spécialité apparaît dans la carte. Avant, ceux qui n'étaient dans aucun groupe de choix (ou seuls évaluables de leur groupe)
+        n'apparaissaient nulle part (ex. hydralazine « adapter la dose » en cardiologie pour NA19472). Les médicaments à éviter restent dans le bloc rouge commun."""
+        par = {r['medicament']: r for r in res}
+        montres = {m for g in synthese['vert'] for m in g['meds']} | {o['med'] for o in synthese['orange']} | {o['med'] for o in synthese['rouge']}
+        nonev = {f['medicament'] for f in reco.get('non_evalues', [])}
+        vert_hg, verifier = [], []
+        for m in sorted(set(rc.medicaments_de_specialite(spec)) & set(par)):
+            if m in montres or m in nonev: continue
+            c = cat.get(m); a = par[m].get('action_dl')
+            if c == 'a_eviter': synthese['rouge'].append(dict(med=m, groupe='hors groupe de choix'))
+            elif c == 'proposable' and a == 'STANDARD': vert_hg.append(m)
+            elif c == 'proposable' and a in ('ADAPTER_DOSE', 'SURVEILLER'): synthese['orange'].append(dict(med=m, groupe='hors groupe de choix', action=a))
+            elif c in ('a_verifier', 'reference_seule'): verifier.append(dict(med=m, motif=('règle de la directive seule' if c == 'reference_seule' else 'les avis ne concordent pas ou la confiance du modèle est insuffisante')))
+        if vert_hg: synthese['vert'].append(dict(groupe='autres médicaments de la spécialité (hors groupe de choix)', meds=vert_hg, hors_groupe=True))
+        synthese['verifier'] = verifier
+        return synthese
     app.jinja_env.filters['pheno_fr'] = pheno_fr
 
     def pheno_multi(s):
@@ -327,7 +370,7 @@ def creer_app(cfg):
         for g, ms in sorted(manq.items()):
             if g == 'CYP2D6':
                 txt = ("CYP2D6 n'est pas lisible depuis un VCF de variants ponctuels (délétions et duplications du gène) : %d médicament(s) qui en dépendent sont non évalués. "
-                       "Si vous disposez d'un test CYP2D6 externe, vous pouvez le saisir ci-dessous (facultatif)." % len(ms))
+                       "Si vous disposez d'un test CYP2D6 externe, il peut être saisi dans le formulaire de laboratoire de l'application (facultatif)." % len(ms))
             elif g.startswith('HLA-'):
                 txt = ("L'allèle %s n'a pas été renseigné (il ne se lit pas dans un VCF de variants ponctuels) : %d médicament(s) qui en dépendent sont non évalués (%s)."
                        % (g, len(ms), ', '.join(ms)))
@@ -351,13 +394,13 @@ def creer_app(cfg):
         "ces règles : sa fiabilité mesurée est celle d'un accord avec les règles, pas une exactitude clinique.",
         "Seuls les gènes et médicaments listés sont couverts ; les autres médicaments, les interactions, les maladies, l'âge et les doses ne sont pas pris en compte.",
         "CYP2D6 et les allèles HLA ne se lisent pas dans un VCF de variants ponctuels ; sans saisie, les médicaments concernés sont « non évalués ».",
-        "Un médicament absent de l'entraînement n'a pas de sortie dans le DL « profil -> médicaments » : l'application affiche « non évalué » (mesure faite avec l'ancien DL à identifiant de médicament : F1 macro 0,467, 63 à 70 % des cas à éviter manqués selon le modèle).",
-        "Pas de test sur des patients réels : les tests de l'application portent sur des profils du corpus d'entraînement, qui vérifient la logique, pas la performance.",
+        "Un médicament absent de l'entraînement n'a pas de sortie dans le DL « profil -> médicaments » : l'application affiche « non évalué ». Les essais de prédiction pour un médicament jamais vu n'ont pas fait mieux que des références simples ; cette fonction n'est donc pas proposée.",
+        "Validation : les recommandations ont été comparées à celles de PharmCAT 3.4.0 pour 104 personnes de référence (GeT-RM) et à des cas de patients publiés ; ces comparaisons mesurent l'accord avec les directives, non l'issue clinique des patients. Les tests automatiques de l'application vérifient la logique, pas la performance.",
     ]
-    METHODE = ("Méthode : réseau de neurones « profil génétique -> médicaments » (le profil est la seule entrée, un conseil par médicament en sortie) = moteur de la recommandation ; XGBoost (ancien modèle) = second avis ; règle CPIC/DPWG "
+    METHODE = ("Méthode : réseau de neurones « profil génétique -> médicaments » (le profil est la seule entrée, un conseil par médicament en sortie) = moteur de la recommandation ; XGBoost (modèle de contrôle) = second avis ; règle CPIC/DPWG "
                "affichée comme référence, avec sa source ; alerte en cas de désaccord ; abstention si la confiance du modèle est au plus égale au seuil fixé sur la validation croisée "
-               "(1 % des prédictions les moins sûres). Les génotypes du VCF sont convertis en phénotypes par PyPGx 0.27.0 puis par les tables CPIC. Le texte des guidelines est donné "
-               "en anglais, sans traduction, pour ne pas le déformer.")
+               "(1 % des prédictions les moins sûres). Les génotypes du VCF sont convertis en phénotypes par PyPGx 0.27.0 puis par les tables CPIC. Le texte affiché pour chaque directive est "
+               "celui de la table de règles du projet, en anglais ou en français selon la règle ; la fiche de la directive, liée, fait foi.")
 
     @app.after_request
     def entetes(r):
@@ -452,12 +495,12 @@ def creer_app(cfg):
         spec = choisir_spec(j); q = request.args.get('q', '').strip()
         res, reco, fiche, resume, manq, bloquants, globaux, cat = calculer(j, spec, q)
         choix_liste = construire_choix_spec(j, spec, res); reco['proposes'] = [f for c in choix_liste for f in c['fiches']] or reco['proposes']
-        synthese = synthese_feux(choix_liste)
+        synthese = completer_synthese(synthese_feux(choix_liste), spec, res, cat, reco)
         tg = table_genes(j); lect = {g['gene']: (g['lecture'] if g['lecture'] != '-' else VAL_FR.get(g['valeur_txt'], 'valeur %s' % g['valeur_txt'])) for g in tg}
         for f in list(globaux):
             f['genes_decisifs'] = mo.genes_decisifs(j['profil'], f['medicament'])
             ex = {e['gene']: e['lecture'] for e in (f.get('explication') or []) if isinstance(e, dict) and 'gene' in e and e.get('lecture')}
-            for d in f['genes_decisifs']: d['lectures'] = [(g, ex.get(g) or lect.get(g, '-')) for g in d['genes']]
+            for d in f['genes_decisifs']: d['lectures'] = [(g, lect.get(g) or ex.get(g, '-')) for g in d['genes']]  # v8u rév. 3 : lecture du patient d'abord
         sortie = mo.sortie_complete(j['profil'])
         masques = sum(1 for r in res if r['statut'] in ('non_determine_gene', 'hors_domaine'))
         apercu = dict(genes=tg, n_variables=len(mo.features), n_lus=sum(1 for g in tg if g['valeur'] is not None), n_med=sortie['n_medicaments'], comptes=sortie['comptes'], masques=masques)
@@ -469,7 +512,8 @@ def creer_app(cfg):
         for f in reco['non_evalues']:
             for e in (f.get('explication') or []):
                 if e.get('valeur_codage') is None and (e['gene'] == 'CYP2D6' or e['gene'].startswith('HLA-')): attend.setdefault(e['gene'], []).append(f['medicament'])
-        return render_template('resultats.html', attend=attend, legende_scores=LEGENDE_SCORES, j=j, spec=spec, specialites=specialites_liste(), choix_liste=choix_liste, synthese=synthese, reco=reco, fiche=fiche, q=q, genes=table_genes(j), resume=resume, bloquants=bloquants,
+        lu = lecture_patient(tg); geno = {g['gene']: g['genotype'] for g in tg if g.get('genotype') and g['valeur'] is not None}
+        return render_template('resultats.html', lu=lu, geno=geno, attend=attend, legende_scores=LEGENDE_SCORES, j=j, spec=spec, specialites=specialites_liste(), choix_liste=choix_liste, synthese=synthese, reco=reco, fiche=fiche, q=q, genes=table_genes(j), resume=resume, bloquants=bloquants,
                                hla=HLA, hla_meds=hla_meds, hla_absents=[a for a in HLA if j['profil'].get(a) is None], cyp_absent=j['profil'].get('CYP2D6') is None,
                                erreur=request.args.get('erreur'), apercu=apercu,
                                globaux=globaux, tous=tous, noms=sorted(rc.meds), avertissement=AVERTISSEMENT_GENERAL, limites=LIMITES, methode=METHODE, court=ACTION_COURT, n_med=len(res),
@@ -515,7 +559,7 @@ def creer_app(cfg):
         res, reco, fiche, resume, manq, bloquants, globaux, cat = calculer(j, spec, request.args.get('q', '').strip())
         choix_liste = construire_choix_spec(j, spec, res); reco['proposes'] = [f for c in choix_liste for f in c['fiches']] or reco['proposes']
         buf = construire_pdf(j, reco, table_genes(j), fiche, resume, AVERTISSEMENT_GENERAL, globaux, bloquants, LIMITES, METHODE)
-        return send_file(buf, mimetype='application/pdf', as_attachment=True, download_name='rapport_pharmageno_v8m_%s.pdf' % jid)
+        return send_file(buf, mimetype='application/pdf', as_attachment=True, download_name='rapport_pharmageno_v8u_%s.pdf' % jid)
 
     @app.route('/json/<jid>')
     def json_fiche(jid):
@@ -526,7 +570,7 @@ def creer_app(cfg):
         res, reco, fiche, resume, manq, bloquants, globaux, cat = calculer(j, spec, '')
         choix_liste = construire_choix_spec(j, spec, res); reco['proposes'] = [f for c in choix_liste for f in c['fiches']] or reco['proposes']
         out = dict(id=jid, mode=j['mode'], assemblage=j.get('assemblage'), specialite=spec, profil=j['profil'], lecture_vcf=j['detail'], resume=resume, bloquants=bloquants,
-                   a_eviter_toutes_specialites=[f['medicament'] for f in globaux], recommandation=reco, choix=choix_liste, synthese=synthese_feux(choix_liste), moteur=res)
+                   a_eviter_toutes_specialites=[f['medicament'] for f in globaux], recommandation=reco, choix=choix_liste, synthese=completer_synthese(synthese_feux(choix_liste), spec, res, cat, reco), moteur=res)
         return app.response_class(json.dumps(out, ensure_ascii=False, indent=1, default=str), mimetype='application/json',
                                   headers={'Content-Disposition': 'attachment; filename=fiche_pharmageno_v8_%s.json' % jid})
 
