@@ -1,0 +1,17 @@
+{
+ "arbres": 100,
+ "metriques_validation_interne": {
+  "f1_macro": 0.9358,
+  "f1_hors_surveiller": 0.9301,
+  "exactitude": 0.9773,
+  "CER_strict": 0.0297,
+  "precision_EVITER": 0.7939,
+  "logloss": 0.2183,
+  "ECE": 0.1544,
+  "rappel_ADAPTER_DOSE": 0.9435,
+  "rappel_EVITER": 0.9703,
+  "rappel_STANDARD": 0.981,
+  "rappel_SURVEILLER": 0.9698
+ },
+ "duree_s": 60
+}
