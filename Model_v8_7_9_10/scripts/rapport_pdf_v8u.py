@@ -74,24 +74,27 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
                        [2.7 * cm, 2.8 * cm, 2.8 * cm, 2.8 * cm, 2.8 * cm, 3.5 * cm])
 
     # --- en-tête
-    S.append(Paragraph("PharmaGeno - Rapport d'analyse pharmacogénétique (v8s)", h1))
+    S.append(Paragraph("PharmaGeno - Rapport d'analyse pharmacogénétique (v8u)", h1))
     origine = ("Profil de démonstration (profil réel du corpus d'entraînement : ne concerne aucun patient)" if job['mode'] == 'demo'
                else 'Fichier VCF : %s (assemblage %s)' % (job.get('nom_fichier', ''), job.get('assemblage', '?')))
     S.append(Paragraph('%s<br/>Spécialité choisie : <b>%s</b><br/>Date du rapport : %s' % (_e(origine), _e(reco['specialite']), datetime.now().strftime('%d/%m/%Y %H:%M')), n))
     S.append(Spacer(1, 6))
     S.append(Paragraph('<b>Important.</b> ' + _e(avertissement), n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('1. Résumé', h2))
+    _num = [0]
+    def _sec():  # v8u : numérotation continue (plus de saut quand une section facultative est absente)
+        _num[0] += 1; return '%d. ' % _num[0]
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Résumé', h2))
     S.append(Paragraph(_e(resume), n))
     for b in bloquants:
         S.append(Spacer(1, 3)); S.append(Paragraph('<b>Attention.</b> ' + _e(b), n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('2. Gènes analysés', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Gènes analysés', h2))
     S.append(tableau(['Gène', 'Valeur de codage', 'Phénotype / génotype lu', 'Origine', 'Remarque'],
-                     [[g['gene'], g['valeur_txt'], g['lecture'] + ((' (' + g['genotype'] + ')') if g.get('genotype') else ''), g['origine'], g['motif'] or ''] for g in genes_table],
+                     [[g['gene'], g['valeur_txt'], (('non retenu (PyPGx : ' + g['lecture'] + ((', ' + g['genotype']) if g.get('genotype') else '') + ')') if (g.get('valeur') is None and g['lecture'] not in ('non testé', '-') and g.get('genotype')) else (g['lecture'] + ((' (' + g['genotype'] + ')') if g.get('genotype') else ''))), g['origine'], g['motif'] or ''] for g in genes_table],  # v8u : un phénotype écarté n'est pas présenté comme lu
                      [2.4 * cm, 2.0 * cm, 4.2 * cm, 3.4 * cm, 5.4 * cm]))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('3. Médicaments à éviter pour ce profil (toutes spécialités)', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Médicaments à éviter pour ce profil (toutes spécialités)', h2))
     if globaux:
         lignes = []
         for f in globaux:
@@ -104,7 +107,7 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
     else:
         S.append(Paragraph("Aucun des médicaments évalués n'est signalé « à éviter ». Cette conclusion ne couvre pas les médicaments non évalués (voir ci-dessous).", n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('4. Spécialité « %s » : médicaments proposés (compatibilité génétique uniquement)' % _e(reco['specialite']), h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Spécialité « %s » : médicaments proposés (compatibilité génétique uniquement)' % _e(reco['specialite']), h2))
     if reco['proposes']:
         S.append(table_fiches(reco['proposes']))
         S.append(Spacer(1, 3))
@@ -115,13 +118,13 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
     else:
         S.append(Paragraph("Aucun médicament de cette spécialité n'a pu être proposé pour ce profil.", n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('5. À vérifier par un professionnel', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'À vérifier par un professionnel', h2))
     if reco['a_verifier']:
         S.append(table_fiches(reco['a_verifier']))
     else:
         S.append(Paragraph('Aucun médicament de la spécialité dans cette catégorie.', n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('6. Médicaments non évalués', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Médicaments non évalués', h2))
     S.append(Paragraph("« Non évalué » ne veut pas dire « sans risque » : le modèle ne peut pas répondre de façon fiable pour ces médicaments.", petit))
     if reco['non_evalues']:
         S.append(tableau(['Médicament', 'Motif', 'Règle CPIC/DPWG (référence)'],
@@ -131,12 +134,12 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
         S.append(Paragraph('Tous les médicaments de la spécialité ont pu être évalués.', n))
 
     if reco['reference_seule']:
-        S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('7. Règle de guideline seule (pas de prédiction du modèle)', h2))
+        S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Règle de guideline seule (pas de prédiction du modèle)', h2))
         S.append(tableau(['Médicament', 'Règle CPIC/DPWG'], [[f['medicament'], etiquette(f.get('avis', {}).get('règle CPIC/DPWG'))] for f in reco['reference_seule']],
                          [6.0 * cm, 11.4 * cm]))
 
     if fiche:
-        S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('8. Médicament recherché%s' % ((' : ' + _e(fiche['medicament'])) if fiche.get('trouve') else ''), h2))
+        S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Médicament recherché%s' % ((' : ' + _e(fiche['medicament'])) if fiche.get('trouve') else ''), h2))
         if fiche.get('trouve'):
             S.append(table_fiches([fiche]))
             S.append(Spacer(1, 3)); S.append(Paragraph(_e(fiche['texte_patient']), n))
@@ -145,7 +148,7 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
         else:
             S.append(Paragraph(_e(fiche['message']), n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('9. Explication en langage simple (pour le patient)', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Explication en langage simple (pour le patient)', h2))
     simples = list(globaux) + [f for f in reco['proposes'] if f['medicament'] not in {g['medicament'] for g in globaux}]
     for p in simples:
         S.append(KeepTogether([Paragraph('<b>%s</b> - %s' % (_e(p['medicament']), _e(p['libelle'])), n), Paragraph(_e(p['texte_patient']), n), Spacer(1, 4)]))
@@ -154,10 +157,10 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
         S.append(Paragraph("Les médicaments « non évalués » n'ont pas pu être analysés pour votre profil : cela ne veut pas dire qu'ils vous conviennent. "
                            "Demandez l'avis de votre médecin ou de votre pharmacien.", n))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('10. Lire les scores 0-1', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Lire les scores 0-1', h2))
     S.append(Paragraph(_e(LEGENDE_SCORES), petit))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('11. Directives utilisées pour les médicaments de ce rapport', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Directives utilisées pour les médicaments de ce rapport', h2))
     vus, lignes_dir = set(), []
     for f in list(reco['proposes']) + list(reco['a_verifier']) + list(globaux) + list(reco['non_evalues']) + list(reco['reference_seule']) + ([fiche] if fiche and fiche.get('trouve') else []):
         for r_ in f.get('regle', []):
@@ -174,13 +177,13 @@ def construire_pdf(job, reco, genes_table, fiche, resume, avertissement, globaux
     else: S.append(Paragraph("Aucune règle de directive à citer pour ces médicaments.", petit))
     S.append(Paragraph("La publication précise de chaque directive par médicament n'est pas encore associée ; la référence générale de la source et la fiche ClinPGx sont indiquées.", petit))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('12. Références scientifiques', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Références scientifiques', h2))
     for g in REFERENCES:
         S.append(Paragraph('<b>%s</b>' % _e(g['groupe']), petit))
         for it in g['items']:
             S.append(Paragraph('- %s <link href="%s" color="blue">%s</link>' % (_e(it['texte']), it['lien'], _e(it['etiquette'])), petit))
 
-    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph('13. Méthode et limites', h2))
+    S.append(CondPageBreak(3.5 * cm)); S.append(Paragraph(_sec() + 'Méthode et limites', h2))
     S.append(Paragraph(_e(methode), petit))
     for l in limites:
         S.append(Paragraph('- ' + _e(l), petit))
