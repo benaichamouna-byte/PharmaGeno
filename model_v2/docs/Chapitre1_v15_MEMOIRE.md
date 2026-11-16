@@ -14,63 +14,16 @@ Le Clinical Pharmacogenetics Implementation Consortium (CPIC) publie des recomma
 
 Ces ressources ne suppriment pas toutes les difficultés. CYP2D6 et certaines régions HLA exigent des appels spécialisés (variations du nombre de copies, structures hybrides) que ne résout pas une simple lecture de SNP et d'indels dans un VCF ; la documentation PharmCAT recommande des appels externes pour CYP2D6, HLA-A et HLA-B (documentation PharmCAT, mode recherche). Le problème étudié ne tient donc pas à l'absence de recommandations, mais à la manière d'exploiter simultanément plusieurs composantes du profil d'un patient dans un modèle unique, pour de nombreux médicaments, avec une traçabilité vers les connaissances de référence.
 
-### 1.3 Positionnement de PharmaGeno
+### 1.3 PharmaGeno et problématique
 
-PharmaGeno est un prototype expérimental d'aide à la décision pharmacogénomique fondé principalement sur le Deep Learning. L'entrée réelle est un fichier VCF patient et la spécialité choisie par le clinicien. Le système en extrait un profil multi-gènes ; un réseau de neurones lit ce profil en une fois et produit, pour chacun des 189 médicaments de son périmètre, une classe d'action parmi quatre : EVITER, ADAPTER\_DOSE, SURVEILLER, STANDARD. L'application web présente les résultats médicament par médicament, par spécialité, en les mettant en regard de la règle officielle CPIC/DPWG.
+Ce travail conçoit et évalue PharmaGeno, un prototype expérimental d'aide à la décision pharmacogénomique. À partir du fichier VCF d'un patient et de la spécialité choisie par le clinicien, le système construit un profil multi-gènes ; un réseau de neurones lit ce profil en une passe et produit, pour chacun des 189 médicaments de son périmètre, une classe d'action parmi quatre (EVITER, ADAPTER\_DOSE, SURVEILLER, STANDARD), présentée en regard de la recommandation officielle. PharmaGeno ne remplace ni CPIC, ni DPWG, ni PharmCAT : lorsqu'une recommandation explicite existe, elle reste la référence.
 
-Dans le corpus v15, le profil compte 20 variables génétiques (16 gènes et 4 allèles HLA). Quatorze d'entre elles peuvent être non déterminées et reçoivent chacune un indicateur d'absence, de sorte que le réseau reçoit 34 entrées (20 variables et 14 indicateurs). Un gène non déterminé n'est jamais assimilé à un résultat normal.
-
-Le médicament n'est pas une entrée du réseau : c'est une sortie. Le réseau possède, pour chaque médicament, un groupe de quatre probabilités ; le médicament interrogé sélectionne le groupe. Ce choix résulte d'une étape antérieure à deux branches (profil génétique et description chimique du médicament : empreinte de Morgan de 512 bits et six descripteurs physico-chimiques) qui n'a pas amélioré les performances et n'a pas permis de prédire l'action pour un médicament absent de l'entraînement (chapitre 6). Un second réseau, dit « choix », classe les médicaments évaluables d'une même classe ATC de niveau 4 par une probabilité de type softmax ; sa cible est une convention du projet, non une recommandation de guideline, et sa probabilité n'est pas une probabilité clinique de succès.
-
-Le jeu de données est désigné par le terme « corpus » : un tableau dont chaque ligne associe un profil patient et un médicament à une action. La version actuelle, le corpus v15, combine 1 379 profils génétiques réels du 1000 Genomes Project avec des étiquettes calculées à partir de règles extraites des lignes directrices CPIC, DPWG, RNPGx et d'étiquettes réglementaires. Il compte 234 632 lignes portant sur 189 médicaments : STANDARD 201 273, ADAPTER\_DOSE 20 272, EVITER 8 031, SURVEILLER 5 056. Il ne s'agit pas d'une cohorte clinique : les étiquettes étant déterministes, **les métriques mesurent la fidélité des modèles aux lignes directrices, non un résultat clinique**. Le chapitre 7 y ajoute un contrôle sur de vrais patients.
-
-### 1.4 Pourquoi étudier le Deep Learning ?
-
-Le recours au Deep Learning est l'hypothèse principale du mémoire, non une conclusion posée à l'avance. Son intérêt potentiel repose sur deux propriétés à évaluer : l'intégration d'un profil multi-gènes et la prédiction simultanée, par un seul réseau, de l'action pour de nombreux médicaments avec des probabilités calibrées.
-
-**Profil multi-gènes.** Un patient peut porter plusieurs particularités et certaines décisions dépendent de plusieurs gènes. Dans le corpus v15, 57 médicaments ont une action constante pour tous les profils — 52 toujours STANDARD, 4 toujours ADAPTER\_DOSE et 1 toujours EVITER — et 132 une action qui varie selon le profil. Un audit de déterminisme mené sur le corpus v15 précise cette répartition. Un médicament y est dit déterminé par un seul gène lorsque, pour l'une des colonnes génétiques du corpus, toutes les lignes qui partagent la même valeur de ce gène portent la même action. L'action est constante pour 57 médicaments et déterminée par un seul gène pour 118 autres, soit 175 des 189 médicaments ; elle dépend de la combinaison de plusieurs gènes pour 14 médicaments seulement (amitriptyline, azathioprine, carbamazépine, clomipramine, doxépine, fluindione, fluvastatine, imipramine, mercaptopurine, rosuvastatine, sertraline, thioguanine, trimipramine et warfarine). Le bénéfice attendu d'une lecture globale du profil se concentre donc sur cette minorité. Sur le corpus v12, le même audit donnait 121 médicaments sur 133 et les mêmes douze médicaments à plusieurs gènes ; la fluindione et la warfarine s'y ajoutent dans le corpus v15, par leur règle fondée sur VKORC1.
-
-**Représentation moléculaire du médicament (étape antérieure).** Elle devait permettre de généraliser à des médicaments absents de l'entraînement. Testée sur le corpus v7 avec des plis groupés par médicament, elle donne un F1 macro de 0,467 (DL), 0,502 (Random Forest) et 0,454 (XGBoost), avec 63 à 70 % des situations à éviter manquées : aucune généralisation fiable n'est démontrée. Un nouveau test, mené sur une version ultérieure du corpus (chapitre 6), conduit à la même conclusion.
-
-**Attention.** Le mécanisme d'attention de l'étape antérieure (modulation FiLM par le médicament) n'existe plus dans le réseau actuel ; aucune ablation ne l'a isolé et aucun apport n'est revendiqué. Les poids d'attention ne sont pas utilisés comme explication (Jain et Wallace, 2019).
-
-### 1.5 Verrou scientifique et positionnement
-
-PharmaGeno ne remplace ni CPIC, ni DPWG, ni PharmGKB/ClinPGx, ni PharmCAT. Le verrou étudié est de déterminer si un modèle prédictif peut exploiter l'ensemble du profil multi-gènes d'un patient pour produire, en une lecture, une classe d'action pour de nombreux médicaments, avec une traçabilité vers les connaissances de référence. Il faut aussi vérifier que le Deep Learning est justifié par des données surtout structurées et de volume limité : Random Forest et XGBoost sont donc des comparateurs. Dans la comparaison à protocole identique sur le corpus v15, où les trois modèles reçoivent le même réglage, aucune supériorité du réseau sur XGBoost n'est établie — les deux modèles sont déclarés équivalents pour la configuration déployée dans l'application — et tous deux reproduisent les règles mieux que Random Forest ; XGBoost conserve en revanche un avantage sur le nombre de situations à éviter manquées. L'évaluation unique sur un ensemble final de 138 profils réservés confirme ce classement (chapitre 6). Lorsqu'une recommandation explicite existe, elle reste la référence clinique.
-
-### 1.6 Problématique et questions de recherche
+Deux précautions encadrent tout le travail. D'abord, les étiquettes d'apprentissage sont calculées par un moteur de règles à partir des recommandations publiées, et non observées chez des patients : les performances mesurent une fidélité aux recommandations, non une justesse clinique, et seule une règle, celle de la warfarine, est confrontée à des patients réels (chapitre 7). Ensuite, le recours à l'apprentissage profond est l'hypothèse à éprouver, non une conclusion posée à l'avance : sur des données tabulaires, les modèles à base d'arbres sont des concurrents sérieux (section 2.5), et ils servent ici de comparateurs sous un protocole identique.
 
 > Dans quelle mesure un réseau de Deep Learning lisant le profil pharmacogénomique multi-gènes complet d'un patient peut-il prédire une classe d'action individualisée pour de nombreux médicaments, et quel avantage apporte-t-il par rapport aux approches classiques et aux représentations limitées à un seul gène ?
 
-- **RQ1 — Profil multi-gènes.** Le profil complet améliore-t-il la prédiction par rapport au seul gène associé au médicament ?
-- **RQ2 — Deep Learning.** Le réseau est-il plus performant que Random Forest et XGBoost, en F1 macro et en situations à éviter manquées ?
-- **RQ3 — Calibration.** Les probabilités sont-elles calibrées et un seuil de confiance signale-t-il les cas incertains ?
-- **RQ4 — Représentation moléculaire.** La description du médicament améliore-t-elle la prédiction, notamment pour un médicament jamais vu ?
-- **RQ5 — Généralisation.** Les performances se conservent-elles sur des profils non utilisés à l'entraînement, des médicaments absents de l'entraînement et des combinaisons de gènes jamais observées ?
-- **RQ6 — Concordance.** Les actions produites sont-elles concordantes avec l'interprétation attendue des références ?
-- **RQ7 — Validité hors règles.** Les règles qui servent d'étiquettes sont-elles cohérentes avec des données de patients réels (cas de la warfarine) ?
+Cette problématique est déclinée en sept questions de recherche et sept objectifs, présentés dans la section « Objectifs » qui suit l'état de l'art.
 
-### 1.7 Objectifs
+### 1.4 Organisation du mémoire
 
-L'objectif général est de concevoir, entraîner, évaluer et intégrer dans une application web un système expérimental d'aide à la décision combinant VCF, profil multi-gènes, Deep Learning et connaissances de référence.
-
-1. Construire et auditer un corpus multi-source (traçabilité des étiquettes, valeurs manquantes, conflits entre sources).
-2. Développer un réseau qui lit le profil complet et prédit l'action pour chaque médicament, avec probabilités calibrées, et documenter l'étape à deux branches qui l'a précédé.
-3. Comparer le Deep Learning à Random Forest et XGBoost sous un protocole identique (validation croisée à 5 plis groupés par identifiant de profil) et réserver un ensemble final de 138 profils à une évaluation unique.
-4. Mesurer l'apport du profil multi-gènes (comparaison single-gene / multi-gènes).
-5. Évaluer la généralisation à des médicaments et à des combinaisons de gènes non vus.
-6. Confronter les règles du corpus à des données de patients réels.
-7. Déployer le pipeline dans une application Flask qui analyse un VCF et affiche une sortie structurée, sourcée et interprétable.
-
-### 1.8 Contributions
-
-Elles sont formulées comme contributions méthodologiques et expérimentales, y compris lorsque les résultats sont négatifs.
-
-1. Un corpus pharmacogénomique de 189 médicaments et 1 379 profils réels, audité et traçable (règles, hypothèses et limites documentées).
-2. Un réseau qui lit le profil entier et prédit l'action pour 189 médicaments avec des probabilités calibrées, et un second réseau de choix au sein des classes ATC4.
-3. Une évaluation honnête : comparaison à des modèles d'arbres sous protocole identique, dont la conclusion est rapportée telle quelle y compris lorsqu'elle ne confirme pas l'hypothèse du mémoire ; évaluation unique sur un ensemble final de 138 profils réservés ; résultat négatif sur la généralisation à des médicaments non vus ; contrôle de la règle warfarine sur 5 774 patients réels.
-4. Une application web reproductible reliant VCF, profil, inférence, références et restitution.
-
-### 1.9 Organisation du mémoire
-
-Le chapitre 2 présente l'état de l'art. Le chapitre 3 décrit les données et le corpus v15. Le chapitre 4 décrit les méthodes (modèles, entraînement, calibration, protocole). Le chapitre 5 décrit l'application web. Le chapitre 6 rapporte les résultats. Le chapitre 7 présente la validation externe d'une règle isolée (la warfarine) sur des patients réels. Le chapitre 8 présente la validation externe sur profil complet (génotype, recommandation, patients publiés). Le chapitre 9 discute les limites, les perspectives et conclut.
+Le chapitre 2 présente l'état de l'art, puis la section « Objectifs » précise le verrou étudié, les questions de recherche et les objectifs. Les chapitres 3 à 5 décrivent le matériel et les méthodes : les données et le corpus v15 (chapitre 3), les modèles, la calibration et le protocole d'évaluation (chapitre 4), et l'application web (chapitre 5). Les chapitres 6 à 9 présentent les résultats et leur discussion : les résultats des modèles, dont l'évaluation unique sur l'ensemble final (chapitre 6), la validation d'une règle sur des patients réels (chapitre 7), la validation externe sur profil complet (chapitre 8), puis la discussion, les limites, les perspectives et la conclusion (chapitre 9). Les annexes rassemblent les essais négatifs ou abandonnés (annexe A) et des écrans complémentaires de l'application (annexe B).
