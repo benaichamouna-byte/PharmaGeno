@@ -24,12 +24,14 @@ Tableau A.1 : Essais abandonnés, négatifs ou corrigés
 | Second tour de recherche d'hyperparamètres | Interrompu, jamais utilisé | section 4.3 |
 | Niveau « association » | Signal faible ; une loi a priori simple fait aussi bien ou mieux sur les couples jamais vus | section 6.7 |
 | Généralisation à un médicament jamais vu | Négatif : le réseau ne dépasse pas des références simples ; architecture non intégrée à l'application | section 6.7 |
-| Règle warfarine : génotype \*1/\*2 et VKORC1 | \*1/\*2 non soutenu en analyse brute ; VKORC1 explique environ six fois plus de variance de la dose que CYP2C9 | chapitre 7 |
+| Règle warfarine : génotype \*1/\*2 et VKORC1 | \*1/\*2 non soutenu en analyse brute ; VKORC1 explique environ six fois plus de variance de la dose que CYP2C9. Règle corrigée en v15 ; en analyse post hoc, elle sépare mieux les doses, mais le classement STANDARD de \*1/\*2 n'est pas soutenu par les doses | chapitre 7 |
 | Corpus v14 provisoire (183 médicaments) et v14b | Remplacés par le corpus gelé de 189 médicaments | — |
 | Réseau contre XGBoost sur étiquettes de règles | Sur les corpus v12 et v14, XGBoost reproduisait les règles mieux que le réseau (F1 0,9996 contre 0,9974 en v12). **Sur le corpus v15, la différence n'est plus tranchée et les deux modèles sont déclarés équivalents pour la configuration déployée** ; XGBoost conserve l'avantage sur les situations à éviter manquées | section 6.5 |
 | Règles du corpus corrigées en v15 | Trois corrections à partir du texte des directives (règle VKORC1 de la warfarine, actions DPWG des diplotypes CYP2C9, grille à deux gènes TPMT × NUDT15 des thiopurines) ; 433 lignes modifiées et 1 968 ajoutées, aucune supprimée. La conclusion de la comparaison des modèles en est changée | sections 3.3 et 6.5 |
 | Programme d'analyse de couverture-risque perdu | Réécrit, puis accepté seulement après avoir reproduit exactement les valeurs publiées sur la version antérieure du corpus | section 6.3 |
 | Répertoire de la recherche d'hyperparamètres de la v13 perdu | Le dossier définissant la configuration 35 n'existe plus ; la configuration a été retrouvée dans le dossier de la version suivante et son contenu vérifié avant tout lancement de calcul | section 4.3 |
+| Évaluation finale : un profil atypique | Un seul des 138 profils porte 26 des 35 erreurs du réseau ; le contrôle de domaine par médicament ne l'aurait pas signalé | section 6.7 |
+| Concordance avec PharmCAT après les corrections v15 | Baisse de 97,8 % à 95,9 %, due à la nouvelle règle de la warfarine (formulation et structure des textes) ; écart réel restant : codage de CYP2C9 par score d'activité | section 8.3 |
 | Réseau de choix non réentraîné sur la v15 | Ses résultats portent sur une version antérieure du corpus et ne sont pas transposables, la cible étant construite à partir des actions du moteur de règles | section 6.4 |
 
 ### A.2 Versions de l'application
@@ -50,6 +52,8 @@ Tableau A.2 : Versions de l'application
 | v8q | Corpus v14 (189 médicaments), configuration 35 calibrée |
 | v8r | Quatre avis avec score, références, rapport PDF refondu, archive d'installation |
 | v8s | Lecture de CYP2C9 conforme au codage du corpus ; textes d'information corrigés |
+| v8t | Corpus v15 : règles, domaine et modèles v15 ; seuil d'abstention 0,9981 ; code et tests de la v8s inchangés |
+| v8u | Domaine construit sur les seuls profils de développement ; génotype lu et diplotype affichés pour expliquer un avis ; aucun médicament évalué ne disparaît de l'écran ; rapport PDF corrigé ; 76 tests (86 contrôles) |
 
 ### A.3 Erreurs de méthode relevées et corrigées
 

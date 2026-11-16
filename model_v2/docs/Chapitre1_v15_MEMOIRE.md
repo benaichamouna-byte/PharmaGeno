@@ -36,7 +36,7 @@ Le recours au Deep Learning est l'hypothèse principale du mémoire, non une con
 
 ### 1.5 Verrou scientifique et positionnement
 
-PharmaGeno ne remplace ni CPIC, ni DPWG, ni PharmGKB/ClinPGx, ni PharmCAT. Le verrou étudié est de déterminer si un modèle prédictif peut exploiter l'ensemble du profil multi-gènes d'un patient pour produire, en une lecture, une classe d'action pour de nombreux médicaments, avec une traçabilité vers les connaissances de référence. Il faut aussi vérifier que le Deep Learning est justifié par des données surtout structurées et de volume limité : Random Forest et XGBoost sont donc des comparateurs. Dans la comparaison à protocole identique sur le corpus v15, où les trois modèles reçoivent le même réglage, aucune supériorité du réseau sur XGBoost n'est établie — les deux modèles sont déclarés équivalents pour la configuration déployée dans l'application — et tous deux reproduisent les règles mieux que Random Forest ; XGBoost conserve en revanche un avantage sur le nombre de situations à éviter manquées (chapitre 6). Lorsqu'une recommandation explicite existe, elle reste la référence clinique.
+PharmaGeno ne remplace ni CPIC, ni DPWG, ni PharmGKB/ClinPGx, ni PharmCAT. Le verrou étudié est de déterminer si un modèle prédictif peut exploiter l'ensemble du profil multi-gènes d'un patient pour produire, en une lecture, une classe d'action pour de nombreux médicaments, avec une traçabilité vers les connaissances de référence. Il faut aussi vérifier que le Deep Learning est justifié par des données surtout structurées et de volume limité : Random Forest et XGBoost sont donc des comparateurs. Dans la comparaison à protocole identique sur le corpus v15, où les trois modèles reçoivent le même réglage, aucune supériorité du réseau sur XGBoost n'est établie — les deux modèles sont déclarés équivalents pour la configuration déployée dans l'application — et tous deux reproduisent les règles mieux que Random Forest ; XGBoost conserve en revanche un avantage sur le nombre de situations à éviter manquées. L'évaluation unique sur un ensemble final de 138 profils réservés confirme ce classement (chapitre 6). Lorsqu'une recommandation explicite existe, elle reste la référence clinique.
 
 ### 1.6 Problématique et questions de recherche
 
@@ -68,7 +68,7 @@ Elles sont formulées comme contributions méthodologiques et expérimentales, y
 
 1. Un corpus pharmacogénomique de 189 médicaments et 1 379 profils réels, audité et traçable (règles, hypothèses et limites documentées).
 2. Un réseau qui lit le profil entier et prédit l'action pour 189 médicaments avec des probabilités calibrées, et un second réseau de choix au sein des classes ATC4.
-3. Une évaluation honnête : comparaison à des modèles d'arbres sous protocole identique, dont la conclusion est rapportée telle quelle y compris lorsqu'elle ne confirme pas l'hypothèse du mémoire ; résultat négatif sur la généralisation à des médicaments non vus ; contrôle de la règle warfarine sur 5 774 patients réels.
+3. Une évaluation honnête : comparaison à des modèles d'arbres sous protocole identique, dont la conclusion est rapportée telle quelle y compris lorsqu'elle ne confirme pas l'hypothèse du mémoire ; évaluation unique sur un ensemble final de 138 profils réservés ; résultat négatif sur la généralisation à des médicaments non vus ; contrôle de la règle warfarine sur 5 774 patients réels.
 4. Une application web reproductible reliant VCF, profil, inférence, références et restitution.
 
 ### 1.9 Organisation du mémoire

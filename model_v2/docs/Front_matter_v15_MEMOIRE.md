@@ -13,21 +13,17 @@ Je remercie les membres du jury d'avoir accepté d'évaluer ce mémoire et de co
 Je remercie enfin ma famille et mes proches pour leur soutien constant tout au long de cette année.
 
 ::: {custom-style="TitreFront"}
-Résumé / Abstract
+Résumé
 :::
 
-PharmaGeno est un prototype d'aide à la décision pharmacogénomique. À partir d'un fichier VCF et d'une spécialité, un réseau de neurones lit le profil génétique en une passe et prédit, pour 189 médicaments, une action parmi quatre : EVITER, ADAPTER\_DOSE, SURVEILLER, STANDARD. Une application web locale les affiche avec la recommandation officielle.
+PharmaGeno est un prototype d'aide à la décision pharmacogénomique. À partir du fichier VCF d'un patient, il construit un profil multi-gènes qu'un réseau de neurones lit en une passe pour prédire, pour 189 médicaments, une action parmi quatre : éviter, adapter la dose, surveiller, dose standard. Une application web affiche chaque avis à côté de la recommandation officielle. Les étiquettes du corpus (1 379 profils du projet 1000 Genomes, 234 632 lignes) sont produites par des règles tirées des recommandations CPIC et DPWG : les scores mesurent la fidélité à ces règles, non la justesse clinique. En validation croisée groupée par profil, le réseau obtient un F1 macro de 0,9982 ; sous protocole identique, sa différence avec XGBoost n'est pas tranchée, et XGBoost manque moins de situations à éviter. Sur 138 profils réservés et lus une seule fois, le F1 macro est de 0,9940, la baisse étant portée par un profil atypique. Sur 104 personnes hors corpus, 95,9 % des recommandations affichées sont retrouvées chez PharmCAT. Sur 5 774 patients réels traités par warfarine, la règle du corpus va dans le bon sens. Le réseau se dégrade sur des profils partiels.
 
-Le corpus associe 1 379 profils du projet 1000 Genomes à 189 médicaments (234 632 lignes). Les étiquettes sont calculées par un moteur de règles d'après CPIC, DPWG, RNPGx et des étiquettes réglementaires. Ce ne sont pas des réponses cliniques : toutes les mesures expriment une fidélité aux règles, non une justesse clinique.
+**Mots-clés :** pharmacogénomique, apprentissage profond, aide à la décision, recommandations CPIC, fichier VCF.
 
-En validation croisée par profil, le réseau atteint un F1 macro de 0,9982 et manque 0,66 % des situations à éviter. Sous protocole identique, aucune supériorité du réseau sur XGBoost n'est établie ; les deux sont équivalents pour la configuration déployée, et XGBoost manque moins de situations à éviter. Sur 104 personnes hors corpus, la recommandation affichée est retrouvée chez PharmCAT pour 97,8 % des lignes. Sur 5 774 patients traités à la warfarine, la règle va dans le bon sens mais ignore VKORC1, principal déterminant de la dose. Les 138 profils réservés n'ont pas encore été évalués \[à compléter\].
+::: {custom-style="TitreFront"}
+Abstract
+:::
 
-**Mots-clés :** pharmacogénomique, apprentissage profond, aide à la décision, calibration, VCF.
+PharmaGeno is a pharmacogenomic decision-support prototype. From a patient's VCF file, it builds a multi-gene profile that a neural network reads in a single pass to predict, for 189 drugs, one of four actions: avoid, adjust dose, monitor, standard dose. A web application, run locally, calls 18 genes with PyPGx, displays each prediction next to the official recommendation and flags uncertain or conflicting predictions for review. The corpus labels (1,379 profiles from the 1000 Genomes Project, 234,632 rows) are produced by rules derived from CPIC and DPWG guidelines: scores measure agreement with these rules, not clinical correctness. In cross-validation grouped by profile, the network reaches a macro-F1 of 0.9982; under an identical protocol, its difference from XGBoost is inconclusive, and XGBoost misses fewer avoid situations. On 138 held-out profiles evaluated once, macro-F1 is 0.9940, the drop being driven by one atypical profile. On 104 individuals outside the corpus, 95.9% of the displayed recommendations are found in PharmCAT output. On 5,774 real warfarin patients, the corpus rule points in the right direction. The network degrades on partial profiles.
 
-**Abstract.** PharmaGeno is a pharmacogenomic decision-support prototype. From a patient VCF file and a medical specialty, it builds a multi-gene profile; a neural network reads it in a single pass and predicts, for 189 drugs, one action among four: AVOID, ADJUST DOSE, MONITOR, STANDARD. A local web application displays them alongside the official recommendation.
-
-The corpus pairs 1,379 profiles from the 1000 Genomes Project with 189 drugs, yielding 234,632 rows. Labels are computed by a rule engine from CPIC, DPWG, RNPGx and regulatory drug labels: they are not observed clinical responses, so all measurements express agreement with the rules, not clinical correctness.
-
-In cross-validation grouped by profile, the network reaches a macro-F1 of 0.9982 and misses 0.66 % of situations to avoid. Under an identical protocol, no superiority of the network over XGBoost is established; the two are equivalent for the deployed configuration, and XGBoost misses fewer situations to avoid. On 104 individuals outside the corpus, the displayed recommendation is found in PharmCAT output for 97.8 % of rows. On 5,774 patients treated with warfarin, the corpus rule points in the right direction but omits VKORC1, the main genetic determinant of dose. The 138 reserved profiles have not yet been evaluated \[à compléter\].
-
-**Keywords:** pharmacogenomics, deep learning, decision support, calibration, VCF.
+**Keywords:** pharmacogenomics, deep learning, clinical decision support, CPIC guidelines, VCF file.
