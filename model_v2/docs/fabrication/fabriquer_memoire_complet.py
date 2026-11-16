@@ -6,7 +6,7 @@ Ordre (formulaire ISBST) :
   -> Remerciements, Resume, Abstract (Front_matter_v15_MEMOIRE.md)
   -> Sommaire, Liste des figures, Liste des tableaux, Liste des abreviations
   -> Chapitre 1 -> Chapitre 2 -> Objectifs -> Chapitres 3 a 9
-  -> References -> Annexe A -> Annexe B
+  -> References -> Annexes A a F (une annexe absente est ignoree)
 
 Usage : python3 fabriquer_memoire_complet.py <dossier_md> <dossier_contenant_fig> <reference_v6.docx> <sortie_sans_extension>
   <dossier_contenant_fig> est le dossier qui contient le sous-dossier fig/ (images appelees fig/xxx.png).
@@ -20,7 +20,8 @@ from docxcompose.composer import Composer
 
 ORDRE = ["Front_matter_v15_MEMOIRE.md", "@LISTES", "Chapitre1_v15_MEMOIRE.md", "Chapitre2_MEMOIRE.md",
          "Objectifs_v15_MEMOIRE.md"] + [f"Chapitre{i}_v15_MEMOIRE.md" for i in range(3, 10)] + \
-        ["Bibliographie_v15_MEMOIRE.md", "AnnexeA_v15_MEMOIRE.md", "AnnexeB_v15_MEMOIRE.md"]
+        ["Conclusion_v15_MEMOIRE.md", "Bibliographie_v15_MEMOIRE.md"] + \
+        [f"Annexe{x}_v15_MEMOIRE.md" for x in "ABCDEFGH"]
 
 ABREV = [("ATC", "Anatomical Therapeutic Chemical (classification des médicaments)"),
          ("AUROC", "Aire sous la courbe ROC (area under the ROC curve)"),
@@ -89,10 +90,14 @@ def main():
     dmd, dfig, ref, sortie = sys.argv[1:5]
     d6 = docx.Document(ref)
     intro = next(p.text for p in d6.paragraphs if p.text.startswith("Les symboles de gènes"))
+    # les allèles étoile (*1, *2) doivent être échappés, sinon pandoc les lit comme de l'italique
+    intro = intro.replace("*", "\\*")
     parts = []
     for f in ORDRE:
         if f == "@LISTES":
             parts.append(listes(intro)); continue
+        if not os.path.isfile(os.path.join(dmd, f)):
+            print("absent, ignore :", f); continue
         txt = open(os.path.join(dmd, f), encoding="utf-8").read()
         parts.append(txt if f.startswith("Front") else txt)
     md = "\n\n".join(parts)

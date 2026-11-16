@@ -20,11 +20,11 @@ Tableau 8.1 : Niveaux de preuve de la validation externe
 
 Le tableau GeT-RM compte 363 personnes. Les 104 retenues sont celles dont le fichier VCF figure dans le pypgx-bundle (génome GRCh38) et qui n'appartiennent pas aux 1 379 profils du corpus ; aucune autre sélection n'a été faite, et le nombre de 104 découle donc de ces deux conditions. Leur liste a été figée avant la première comparaison.
 
-Deux limites structurelles s'appliquent à tout le chapitre. D'abord, l'application, le réseau, PharmCAT et CPIC reposent sur les mêmes textes de directives, et le réseau a été entraîné sur des étiquettes issues de nos règles : les comparaisons des sections 8.3 à 8.5 montrent une restitution fidèle des directives partagées, non la justesse clinique de ces directives. Ensuite, trois des corrections de règles du corpus v15 (thiopurines, CYP2C9 selon la DPWG, fluvastatine ; section 3.3) ont été identifiées en examinant les écarts avec PharmCAT sur ces mêmes 104 personnes. Pour ces règles, la comparaison de la section 8.3 ne constitue donc plus une validation indépendante : elle vérifie ce que les corrections ont changé, et l'amélioration observée sur ces médicaments ne mesure pas une généralisation.
+Deux limites structurelles s'appliquent à tout le chapitre. D'abord, l'application, le réseau, PharmCAT et CPIC reposent sur les mêmes textes de directives, et le réseau a été entraîné sur des étiquettes issues de nos règles : les comparaisons des sections 8.3 à 8.5 montrent une restitution fidèle des directives partagées, non la justesse clinique de ces directives. Ensuite, deux corrections de règles du corpus v15 (thiopurines, CYP2C9 selon la DPWG ; section 3.3) et la vérification de la fluvastatine ont été décidées en examinant les écarts avec PharmCAT sur ces mêmes 104 personnes : pour ces règles, la comparaison de la section 8.3 ne constitue plus une validation indépendante, puisqu'elle vérifie ce que les corrections ont changé.
 
 ### 8.2 Génotype contre GeT-RM
 
-Cette section valide la première étape de la chaîne, le parseur du fichier VCF. Pour les 104 personnes, le génotype que le parseur obtient par PyPGx a été comparé à celui du tableau GeT-RM, gène par gène. GeT-RM est retenu comme référence parce que ses génotypes sont publiés par un programme de référence (CDC) et ont été établis indépendamment de notre chaîne. Le parseur n'a pas changé entre les deux versions du corpus en ce qui concerne l'appel des génotypes : seul le codage de CYP2C9 a été modifié (section 5.3). Les résultats ci-dessous valent donc pour l'application actuelle ; le génotype lu pour la personne de la section 8.7 a d'ailleurs été relu directement par la version actuelle, avec un résultat identique pour les 22 gènes.
+Cette section valide la première étape de la chaîne, le parseur du fichier VCF. Pour les 104 personnes, le génotype que le parseur obtient par PyPGx a été comparé à celui du tableau GeT-RM, gène par gène. GeT-RM est retenu comme référence parce que ses génotypes sont publiés par un programme de référence (CDC) et ont été établis indépendamment de notre chaîne. Le parseur n'a pas changé entre les deux versions du corpus en ce qui concerne l'appel des génotypes : seul le codage de CYP2C9 a été modifié (section 5.3). Les résultats ci-dessous valent donc pour l'application actuelle ; le génotype lu pour la personne de l'annexe B.2 a d'ailleurs été relu directement par la version actuelle, avec un résultat identique pour les 22 gènes.
 
 ::: {custom-style="LegendeTableau"}
 Tableau 8.2 : Concordance du génotype appelé par PyPGx avec GeT-RM, par gène
@@ -71,13 +71,7 @@ Tableau 8.3 : Recommandations affichées par l'application et retrouvées chez P
 
 Avec le corpus v14, la proportion retrouvée était de 97,8 % (3 455 sur 3 534) et 70 personnes sur 104 n'avaient aucune ligne en désaccord. **La concordance globale baisse.** La baisse est entièrement due à la warfarine : avec la règle VKORC1 ajoutée au corpus v15, la warfarine a désormais une règle DPWG pour chaque personne, et ses lignes non retrouvées passent de 22 à 98.
 
-**Lecture des 136 lignes non retrouvées.** Chaque motif a été lu après le calcul.
-
-- **Warfarine (98 lignes).** 91 lignes ne portent aucune différence d'action ou de dose. Elles viennent de la formulation (texte du projet en français, « no action is needed » contre « no action is required », numérotation « 1. » en tête du texte) ou de la structure : l'application affiche une règle par gène (CYP2C9 et VKORC1), alors que PharmCAT n'affiche que la recommandation du gène qui demande une action, de sorte que la règle « aucune action » de l'autre gène n'a pas de vis-à-vis. Les 7 autres lignes sont des écarts réels, tous liés au codage de CYP2C9 par score d'activité : chez 5 personnes de génotype \*1/\*5, \*1/\*8 ou \*1/\*11, l'application applique la règle DPWG de \*1/\*2 (aucune action), qui a le même score d'activité, alors que PharmCAT, qui lit la directive allèle par allèle, recommande 65 % de la dose initiale ; chez 2 personnes métaboliseurs lents, l'application affiche 20 % de la dose et PharmCAT 45 %, ce qui reste la même classe d'action.
-- **Siponimod (8 lignes).** Les 8 écarts ont la même cause que ceux de la warfarine : le codage par score d'activité applique à des génotypes rares la règle d'un génotype fréquent de même score.
-- **Thiopurines (8 lignes pour chacun des trois médicaments).** Pour 6 personnes, PyPGx et PharmCAT n'appellent pas le même phénotype NUDT15 ; pour 2 personnes, l'application n'applique que la règle TPMT. Ce sont des différences d'appel de génotype, non de règle.
-- **Flucytosine (4 lignes).** Le texte du projet est une traduction française de la recommandation DPWG (« rester attentif aux effets graves »), absente de la liste d'équivalences ; le contenu est le même.
-- **Fluvastatine (1 ligne)** et **sertraline (1 ligne).** Pour la fluvastatine, l'application déclare SLCO1B1 non déterminé et n'applique que la règle CYP2C9 (cas détaillé en section 8.7) ; pour la sertraline, la règle combinée CYP2B6 et CYP2C19 diffère de celle de PharmCAT pour une personne.
+**Lecture des 136 lignes non retrouvées.** Chaque motif a été lu après le calcul. La warfarine en porte 98, dont 91 sans aucune différence d'action ou de dose : elles viennent de la formulation ou de la structure des textes. Les écarts de contenu ont deux causes seulement. La première est le codage de CYP2C9 par score d'activité, qui applique à des génotypes rares la règle d'un génotype fréquent de même score : c'est le cas de 7 lignes de warfarine et des 8 lignes de siponimod. La seconde tient à des différences d'appel de génotype, non de règle : pour les trois thiopurines, PyPGx et PharmCAT n'appellent pas le même phénotype NUDT15 chez 6 personnes. Les lignes restantes concernent la flucytosine, où le texte du projet est une traduction française absente de la liste d'équivalences, ainsi qu'une ligne de fluvastatine, pour laquelle l'application déclare SLCO1B1 non déterminé (cas détaillé en annexe B.2), et une ligne de sertraline. Le détail motif par motif est en annexe G.10.
 
 **Action finale de la warfarine.** Une analyse décidée après le résultat compare l'action affichée par l'application à l'action DPWG la plus forte de PharmCAT. L'action est la même pour 65 des 70 personnes comparables (34 personnes n'ont pas de recommandation PharmCAT pour la warfarine). Les 5 écarts sont les 5 personnes citées plus haut, toutes avec un VKORC1 de référence : l'application affiche « dose standard », PharmCAT « 65 % de la dose initiale ». La correction de la règle de \*1/\*2 (section 3.3) a donc déplacé l'erreur vers des allèles plus rares de même score d'activité. Cette limite est la conséquence directe du choix de coder CYP2C9 par son score d'activité (section 3.2) ; elle est désormais mesurée.
 
@@ -150,88 +144,18 @@ Tableau 8.6 : Verdicts des 285 règles confrontées aux études publiées (analy
 | Non appariées | 51 |
 | Aucune étude | 70 |
 
-Le verdict automatique a été corrigé à la main pour 4 règles sur 30 d'un échantillon aléatoire (13 %). Ces chiffres sont donc provisoires : les 51 règles non appariées et les règles EVITER à « signal non orienté » doivent encore être relues à la main, et une relecture par un second lecteur, pharmacologue, est prévue. Cette analyse a été faite sur la table de règles du corpus v14 ; les règles modifiées dans le corpus v15 (warfarine, siponimod, thiopurines) n'ont pas été confrontées de nouveau aux études, ce qui reste une limite.
+Le verdict automatique a été corrigé à la main pour 4 règles sur 30 d'un échantillon aléatoire (13 %). Ces chiffres doivent donc être lus comme ceux d'une analyse exploratoire : les 51 règles non appariées et les règles EVITER à « signal non orienté » n'ont pas été relues une à une, et aucune relecture par un second lecteur pharmacologue n'a été conduite dans le cadre de ce travail. Cette analyse a été faite sur la table de règles du corpus v14 ; les règles modifiées dans le corpus v15 (warfarine, siponimod, thiopurines) n'ont pas été confrontées de nouveau aux études, ce qui reste une limite. La définition exacte de chaque verdict est donnée en annexe G.8.
 
-Les verdicts sont définis par le protocole figé, en comptant les articles (PMID) distincts. Une ligne d'étude est concordante si l'effet publié va dans le sens de l'alerte (toxicité accrue, efficacité diminuée, ou dose et exposition dans le sens de la recommandation) ; elle compte contre la règle si l'effet va en sens inverse ou si l'étude ne trouve pas d'association. Une règle est **soutenue** si au moins un article est concordant et qu'aucun autre ne compte contre elle ; **mixte** si elle a à la fois des articles concordants et des articles contre ; **non soutenue** si elle n'a que des articles contre. Le **signal non orienté** regroupe les règles dont les seuls résultats positifs ne peuvent pas être orientés, par exemple un effet pharmacocinétique pour une règle qui ne donne pas de sens de dose. **Non tranchable** désigne les règles que la relecture manuelle n'a pas permis de classer. Les règles **non appariées** ont des études pour leur couple gène–médicament, mais aucune n'a pu être rattachée automatiquement à l'état métaboliseur de la règle ; **aucune étude** signifie qu'aucune ligne n'existe pour le couple.
 
-### 8.7 Illustration sur une personne de validation
+### 8.7 Limites
 
-Cette section montre, sur une personne, ce que l'application lit et prédit, et comment chaque sortie est confrontée à sa référence. La personne est NA06991. Elle est choisie par une règle fixe, pour ne pas sélectionner un cas favorable : parmi les 104 personnes, huit ont le plus grand nombre de gènes comparables à GeT-RM (11 gènes), et NA06991 est la première dans l'ordre des identifiants. Elle a un lien parent-enfant avec un profil du corpus ; c'est l'une des 18 personnes de la section 8.3. Un seul cas illustre la méthode ; les résultats d'ensemble sont ceux des sections 8.2 à 8.4. Les écrans ci-dessous ont été produits par l'application actuelle à partir du fichier VCF de cette personne (spécialité Cardiologie, analyse en environ 85 secondes).
+1. Les textes des directives sont les mêmes dans l'application et chez PharmCAT, et le réseau a été entraîné sur des étiquettes issues des mêmes règles : la comparaison mesure une restitution fidèle, non la justesse clinique.
+2. Deux corrections du corpus v15 et la vérification de la fluvastatine ont été décidées sur ces 104 personnes : pour les médicaments concernés, la comparaison n'est plus indépendante (section 8.1).
+3. Le codage de CYP2C9 par score d'activité applique à des génotypes rares la règle d'un génotype fréquent de même score ; l'écart est mesuré pour la warfarine et le siponimod.
+4. Les génotypes des 11 patients ont été saisis à la main, et leurs recommandations viennent d'un panel fondé sur CPIC ; l'appel de génotype est par ailleurs incertain pour SLCO1B1, UGT1A1, CYP2B6 et DPYD (section 8.2).
+5. 79 textes de directive sur 709 sont tronqués dans la table de règles, sans effet sur la classe prédite.
+6. La lecture de la littérature a été faite par un seul lecteur, la parenté n'est contrôlée que par le pedigree déclaré, et aucun essai clinique de profil complet, par exemple PREPARE, n'a été lu en détail.
 
-**Étape 1 : sortie du parseur, comparée à GeT-RM.** La figure 8.3 montre le tableau « Gènes lus chez ce patient » produit par l'application. Le tableau 8.7 compare ces génotypes à la référence GeT-RM.
+### 8.8 Synthèse
 
-::: {custom-style="FigureImg"}
-![](fig/cap8_genes.png){width=14.2cm}
-:::
-
-::: {custom-style="LegendeFigure"}
-Figure 8.3 : Sortie du parseur pour NA06991 : gènes lus dans le fichier VCF.
-:::
-
-::: {custom-style="LegendeTableau"}
-Tableau 8.7 : Génotypes lus par le parseur pour NA06991, comparés à GeT-RM
-:::
-
-| Gène | GeT-RM | Parseur (PyPGx) | Résultat |
-| --- | --- | --- | --- |
-| CYP2C19 | \*1/\*1 | \*1/\*1 | Identique |
-| CYP2C9 | \*1/\*1 | \*1/\*1 | Identique |
-| CYP3A4 | \*1/\*1 | \*1/\*1 | Identique |
-| CYP3A5 | \*3/\*3 | \*3/\*3 | Identique |
-| CYP4F2 (hors modèle) | \*1/\*1 | \*1/\*1 | Identique |
-| TPMT | \*1/\*1 | \*1/\*1 | Identique |
-| DPYD | c.1601G>A / c.2846A>T | c.1601G>A (\*4)/c.2846A>T | Référence écrite autrement qu'en diplotype : non comptée |
-| NAT2 | \*4/\*5 ou \*5/\*6 | \*5/\*6 | Référence incertaine : non comptée |
-| CYP2B6 | \*1/\*6 | \*1/\*9 | Discordant |
-| SLCO1B1 | \*15/\*15 | \*15/\*46 | Discordant |
-| UGT1A1 | \*60/\*60 | \*1/\*1 | Discordant |
-
-Pour cette personne, six gènes sont identiques, deux ont une référence incertaine et trois sont discordants. Les trois gènes discordants sont parmi ceux dont la concordance d'ensemble est faible (tableau 8.2). Pour SLCO1B1, les trois sources s'accordent pourtant sur la fonction : GeT-RM donne \*15/\*15, PyPGx \*15/\*46 avec le phénotype « Poor Function », et PharmCAT \*15/\*45, lui aussi « Poor Function ». Le génotype \*15/\*46 étant absent de la table CPIC utilisée par le parseur, l'application déclare le gène « non déterminé » au lieu de le supposer normal, et les médicaments qui en dépendent ne reçoivent pas d'avis (figure 8.5). C'est la règle de prudence de la section 5.3 : elle évite une erreur, au prix d'un avis manquant.
-
-**Étape 2 : avis du réseau et des deux modèles de contrôle.** La figure 8.4 montre les avis pour la spécialité Cardiologie, retenue pour rester comparable à l'exemple du chapitre 5. Sur les 31 médicaments de la spécialité, 9 sont évalués et 22 ne le sont pas, principalement faute de CYP2D6 et de SLCO1B1. Pour les 7 médicaments des groupes de choix, le réseau donne le même avis que la directive, avec un score supérieur ou égal à 0,999 : « adapter la dose » pour la phenprocoumone, l'acénocoumarol, la warfarine et la fluindione, en raison des deux allèles rs9923231 de VKORC1 ; dose standard pour le clopidogrel, le prasugrel et le ticagrélor (CYP2C19 \*1/\*1). XGBoost donne les sept mêmes avis, avec des scores de 0,891 à 0,998. Random Forest s'écarte de la directive pour la phenprocoumone et l'acénocoumarol (dose standard, scores 0,490 et 0,477), ce qui est cohérent avec son F1 plus faible (section 6.5). Les deux autres médicaments évalués sont l'hydralazine (adapter la dose, NAT2 \*5/\*6) et l'ibuprofène (dose standard).
-
-::: {custom-style="FigureImg"}
-![](fig/cap8_modeles.png){width=15.5cm}
-:::
-
-::: {custom-style="LegendeFigure"}
-Figure 8.4 : Avis et scores du réseau, de la directive, de XGBoost et de Random Forest pour NA06991 (Cardiologie).
-:::
-
-::: {custom-style="FigureImg"}
-![](fig/cap8_fluvastatine.png){width=15.5cm}
-:::
-
-::: {custom-style="LegendeFigure"}
-Figure 8.5 : Fluvastatine pour NA06991 : médicament non évalué, car le gène SLCO1B1 est non déterminé.
-:::
-
-**Étape 3 : la warfarine, cas corrigé par le corpus v15.** Avec le corpus v14, la warfarine n'apparaissait pas dans les avis de cette personne : son CYP2C9 est normal, et la règle du corpus ne lisait que ce gène, alors que la directive DPWG recommande 60 % de la dose initiale pour deux allèles rs9923231 de VKORC1 (section 7.2). Avec la règle VKORC1 ajoutée au corpus v15, l'application affiche « adapter la dose », et le volet « Pourquoi ? » montre les deux règles DPWG appliquées : celle de CYP2C9 (aucune action) et celle de VKORC1 (60 % de la dose initiale), qui fixe l'avis (figure 8.6). Le réseau, XGBoost et Random Forest donnent tous les trois cet avis.
-
-::: {custom-style="FigureImg"}
-![](fig/cap8_warfarine.png){width=15.5cm}
-:::
-
-::: {custom-style="LegendeFigure"}
-Figure 8.6 : Warfarine pour NA06991 : avis « adapter la dose » fondé sur la règle DPWG de VKORC1 (deux allèles rs9923231).
-:::
-
-**Étape 4 : recommandations affichées, comparées à PharmCAT.** Pour NA06991, l'application affiche 39 recommandations CPIC ou DPWG. PharmCAT n'a pas de recommandation pour 10 d'entre elles ; sur les 29 comparables, 26 sont retrouvées et 3 ne le sont pas. Pour la flucytosine, le texte du projet est la traduction française de la recommandation DPWG que donne PharmCAT : le contenu est le même. Pour la warfarine, la ligne non retrouvée est la règle CYP2C9 « aucune action », qui n'a pas de vis-à-vis chez PharmCAT, lequel n'affiche que la recommandation VKORC1 ; celle-ci est retrouvée. Pour la fluvastatine, la règle CPIC appliquée par l'application ne lit que CYP2C9 (dose de départ habituelle), parce que SLCO1B1 est non déterminé, alors que PharmCAT, qui appelle SLCO1B1 « Poor Function », limite la dose de départ à 40 mg par jour. L'écran principal ne donne d'ailleurs aucun avis pour ce médicament (figure 8.5).
-
-**Ce que ce cas montre.** Il réunit les types d'écart mesurés dans ce chapitre : des génotypes discordants avec la référence, un médicament non évalué par prudence, et des écarts de comparaison dus à la formulation ou à la structure plutôt qu'au contenu. Il montre aussi l'effet d'une correction de règle : la warfarine, absente des avis avec le corpus v14, reçoit maintenant l'avis que donne la directive DPWG.
-
-### 8.8 Limites
-
-1. Les textes des directives sont les mêmes dans l'application et chez PharmCAT : la comparaison mesure une restitution fidèle, non la justesse clinique.
-2. Le réseau a été entraîné sur des étiquettes issues des mêmes règles : il reproduit le moteur.
-3. Trois corrections du corpus v15 ont été identifiées sur ces 104 personnes : pour les médicaments concernés, la comparaison n'est plus indépendante (section 8.1).
-4. Le codage de CYP2C9 par score d'activité applique à des génotypes rares la règle d'un génotype fréquent de même score ; l'écart est mesuré pour la warfarine (5 personnes sur 70 comparables) et le siponimod (8 lignes).
-5. Les génotypes des 11 patients ont été saisis à la main ; leurs recommandations viennent d'un panel fondé sur CPIC.
-6. L'appel de génotype est incertain pour SLCO1B1, UGT1A1, CYP2B6 et DPYD (section 8.2).
-7. 79 textes de directive sur 709 sont tronqués dans la table de règles, sans effet sur la classe prédite par le réseau.
-8. La lecture de la littérature a été faite par un seul lecteur ; la parenté n'est contrôlée que par le pedigree déclaré.
-9. Aucun essai clinique de profil complet, par exemple PREPARE, n'a été lu en détail.
-
-### 8.9 Synthèse
-
-Pour un profil complet lu dans un VCF, l'application restitue les recommandations CPIC presque sans écart (99,1 % retrouvées chez PharmCAT) et les recommandations DPWG avec des écarts surtout dus à la formulation et à la structure des textes (71,1 %), soit 95,9 % au total. Le seul écart de contenu systématique tient au codage de CYP2C9 par score d'activité. Le réseau prédit la même action que la référence dans 99,73 % des cas, et cinq de ses sept désaccords seraient signalés « à vérifier ». Sur 11 patients publiés, les règles de l'application sont toutes conformes, mais le réseau diverge davantage sur des profils partiels (11,4 % des lignes), ce qui confirme qu'il ne doit pas être utilisé sans la règle à côté. La justesse clinique des directives elles-mêmes n'est pas démontrée par ce travail ; elle reste appuyée sur les études primaires citées.
+Pour un profil complet lu dans un VCF, l'application restitue les recommandations CPIC presque sans écart (99,1 %) et les recommandations DPWG avec des écarts surtout dus à la formulation et à la structure des textes (71,1 %), soit 95,9 % au total. Le seul écart de contenu systématique tient au codage de CYP2C9 par score d'activité. Le réseau prédit la même action que la référence dans 99,73 % des cas, et cinq de ses sept désaccords seraient signalés « à vérifier ». Sur 11 patients publiés, les règles de l'application sont toutes conformes, mais le réseau diverge davantage sur des profils partiels (11,4 % des lignes), ce qui confirme qu'il ne doit pas être utilisé sans la règle à côté. La justesse clinique des directives elles-mêmes n'est pas démontrée par ce travail ; elle reste appuyée sur les études primaires citées.

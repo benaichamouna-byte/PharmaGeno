@@ -1,0 +1,9 @@
+## Conclusion
+
+Ce travail a conçu, entraîné, évalué et déployé un système expérimental d'aide à la décision pharmacogénomique fondé sur l'apprentissage profond. À partir du fichier VCF d'un patient, le système construit un profil multi-gènes, qu'un réseau de neurones lit en une seule passe pour produire, pour 189 médicaments, une action parmi quatre, assortie d'une probabilité calibrée et de la recommandation officielle correspondante.
+
+Les résultats établissent que cette tâche est apprenable avec une fidélité élevée, y compris sur un ensemble final de profils lu une seule fois, que la chaîne complète restitue les recommandations de référence depuis un fichier de variants, et que la seule règle confrontée à des patients réels va dans le bon sens. Ils établissent aussi, et le mémoire les rapporte sans les atténuer, qu'aucune supériorité du réseau sur les modèles à base d'arbres n'est démontrée sous protocole identique et qu'il manque davantage de situations à éviter que XGBoost, que la description moléculaire du médicament ne permet pas de généraliser à un médicament jamais vu, et que le réseau se dégrade sensiblement sur des profils partiels.
+
+La contribution de ce travail ne réside donc pas dans la supériorité d'une famille de modèles, mais dans la construction d'un corpus pharmacogénomique tracé et auditable, dans l'évaluation honnête d'une architecture lisant le profil entier, et dans une chaîne complète et reproductible allant du fichier de variants à une recommandation sourcée. Les résultats négatifs y ont été conservés et analysés, car ils délimitent ce que l'approche permet.
+
+Le système demeure un prototype de recherche. Il n'est pas un dispositif médical, n'a fait l'objet d'aucune validation clinique, et ne remplace ni les recommandations publiées ni le jugement du prescripteur. Lorsqu'une recommandation explicite existe, elle reste la référence.

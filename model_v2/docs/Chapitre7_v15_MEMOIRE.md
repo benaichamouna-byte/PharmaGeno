@@ -6,9 +6,9 @@ Le chapitre est placé avant la validation sur profil complet (chapitre 8) parce
 
 ### 7.1 Données
 
-Le jeu de données est le fichier « Ethnicity Data Set 2009 » de l'International Warfarin Pharmacogenetics Consortium (IWPC ; Klein et al., 2009), diffusé par ClinPGx sous l'identifiant PS215192 : 6 922 sujets. Le fichier « Combined Data Set 2008 » (5 700 sujets) y est inclus en totalité (5 700 identifiants sur 5 700 retrouvés) ; il n'a pas été utilisé, pour ne pas compter deux fois les mêmes patients. La grandeur étudiée est la dose d'entretien de warfarine en mg par semaine, analysée en logarithme, de sorte que les différences entre groupes s'expriment en rapports de dose.
+Le jeu de données est le fichier « Ethnicity Data Set 2009 » de l'International Warfarin Pharmacogenetics Consortium (IWPC ; Klein et al., 2009), diffusé par ClinPGx sous l'identifiant PS215192 : 6 922 sujets. Le fichier « Combined Data Set 2008 » y est inclus en totalité et n'a pas été utilisé séparément, pour ne pas compter deux fois les mêmes patients. La grandeur étudiée est la dose d'entretien de warfarine en mg par semaine, analysée en logarithme, de sorte que les différences entre groupes s'expriment en rapports de dose.
 
-La population principale comprend les sujets ayant atteint une dose stable, avec une dose renseignée et un génotype CYP2C9 parmi \*1/\*1, \*1/\*2, \*1/\*3, \*2/\*2, \*2/\*3 et \*3/\*3. Elle compte **5 774 patients** : 4 351 \*1/\*1 et 1 423 porteurs d'un autre de ces génotypes (772 \*1/\*2, 503 \*1/\*3, 59 \*2/\*2, 69 \*2/\*3 et 20 \*3/\*3). Ont été exclus 128 patients sans génotype CYP2C9 et 17 porteurs d'un autre génotype (\*5, \*6, \*11, \*13, \*14), parce que ces génotypes n'ont pas de valeur dans le codage du corpus utilisé pour cette analyse. Le nombre de 5 774 résulte donc entièrement de ces critères ; il n'a pas été choisi.
+La population principale comprend les sujets ayant atteint une dose stable, avec une dose renseignée et un génotype CYP2C9 parmi \*1/\*1, \*1/\*2, \*1/\*3, \*2/\*2, \*2/\*3 et \*3/\*3. Elle compte **5 774 patients** : 4 351 \*1/\*1 et 1 423 porteurs d'un autre de ces génotypes, dont le détail figure au tableau 7.2. Ont été exclus 128 patients sans génotype CYP2C9 et 17 porteurs d'un allèle rare (\*5, \*6, \*11, \*13, \*14) sans valeur dans le codage du corpus. Le nombre de 5 774 résulte donc entièrement de ces critères ; il n'a pas été choisi.
 
 ### 7.2 Règle confrontée aux patients
 
@@ -36,18 +36,7 @@ Correspondance entre génotype IWPC et valeur de profil (score d'activité divis
 
 ### 7.3 Protocole
 
-Le protocole a été écrit et enregistré avec son empreinte (e5be689f130bb8af) avant toute comparaison de dose entre groupes génétiques. Hypothèse principale H1 : les patients étiquetés ADAPTER\_DOSE ont une dose d'entretien plus basse que les \*1/\*1. L'estimateur est le rapport des moyennes géométriques (exponentielle de la différence des moyennes de log-dose), avec un intervalle à 95 % par bootstrap sur les patients (2 000 tirages, graine 0). H1 est soutenue si la borne haute de l'intervalle est inférieure à 1. Le nombre de tirages et la graine ont été fixés dans le protocole avant le calcul ; la graine assure la reproductibilité, Le nombre de tirages n'avait pas été justifié par un calcul de précision ; il a été contrôlé après coup : avec 10 000 tirages, l'intervalle de H1 devient \[0,8038 ; 0,8569\] avec la même graine et \[0,8037 ; 0,8570\] avec une autre, contre \[0,8039 ; 0,8572\] avec 2 000 tirages. Les bornes sont identiques à la troisième décimale, la seule rapportée.
-
-Analyses secondaires déclarées d'avance :
-
-- S1, rapport par classe et par génotype ;
-- S2, comparaison descriptive avec les pourcentages DPWG ;
-- S3, régression de la log-dose ajustée sur l'âge, la taille, le poids, l'amiodarone, VKORC1 (-1639, nombre d'allèles A) et l'origine, avec erreurs robustes HC3, avec et sans VKORC1 ;
-- S4, patients d'origine « White » seulement ;
-- S5, proportion de doses basses (≤ 21 mg par semaine), sensibilité et spécificité de l'étiquette ;
-- S6, exploratoire, part de variance (R²) de la log-dose expliquée par CYP2C9, par VKORC1 et par les deux.
-
-Les résultats devaient être rapportés tels quels, y compris négatifs ; toute analyse ajoutée après coup est signalée comme post hoc. Les chiffres principaux ont été recoupés par un second calcul indépendant (pandas ; scikit-learn pour les R²).
+Le protocole a été écrit et enregistré avec son empreinte (e5be689f130bb8af) avant toute comparaison de dose entre groupes génétiques. Hypothèse principale H1 : les patients étiquetés ADAPTER\_DOSE ont une dose d'entretien plus basse que les \*1/\*1. L'estimateur est le rapport des moyennes géométriques, avec un intervalle à 95 % par bootstrap sur les patients (2 000 tirages, graine 0) ; H1 est soutenue si la borne haute de l'intervalle est inférieure à 1. Six analyses secondaires ont été déclarées d'avance : rapport par génotype (S1), comparaison aux pourcentages DPWG (S2), régression ajustée sur l'âge, la taille, le poids, l'amiodarone, VKORC1 et l'origine (S3), patients d'origine « White » seulement (S4), proportion de doses basses et pouvoir de discrimination (S5), et part de variance expliquée par chaque gène (S6, exploratoire). Les résultats devaient être rapportés tels quels, y compris négatifs ; toute analyse ajoutée après coup est signalée comme post hoc. Les chiffres principaux ont été recoupés par un second calcul indépendant, et le nombre de tirages a été contrôlé après coup sans changer les bornes rapportées (annexe G.7).
 
 ### 7.4 Résultats favorables
 
