@@ -32,7 +32,7 @@ Tableau 7.1 : Directives sur la warfarine présentes dans les sources et usage d
 
 Correspondance entre génotype IWPC et valeur de profil (score d'activité divisé par 2, section 3.2) : \*1/\*1 = 1,0 ; \*1/\*2 = 0,75 ; \*1/\*3 et \*2/\*2 = 0,5 ; \*2/\*3 = 0,25 ; \*3/\*3 = 0. Classes : lent (0 ; 0,25) et intermédiaire (0,5 ; 0,75).
 
-**La règle du corpus v15.** Le corpus v15 a modifié cette règle sur deux points (section 3.3). Le génotype \*1/\*2 reçoit désormais l'action que lui donne le texte DPWG, « aucune action » (STANDARD), et la directive DPWG fondée sur VKORC1 a été ajoutée : un patient porteur de deux allèles rs9923231 reçoit ADAPTER\_DOSE quel que soit son CYP2C9, et l'action la plus prudente des deux règles s'applique. La warfarine compte désormais une ligne pour chacun des 1 378 profils dont CYP2C9 est typé : 938 STANDARD et 440 ADAPTER\_DOSE. Les résultats des sections 7.4 à 7.6 portent sur la règle du corpus v14 ; la section 7.6 indique ce qu'ils disent de la règle du corpus v15.
+**La règle du corpus v15.** Le corpus v15 a modifié cette règle sur deux points (section 3.3). Le génotype \*1/\*2 reçoit désormais l'action que lui donne le texte DPWG, « aucune action » (STANDARD), et la directive DPWG fondée sur VKORC1 a été ajoutée : un patient porteur de deux allèles rs9923231 reçoit ADAPTER\_DOSE quel que soit son CYP2C9, et l'action la plus prudente des deux règles s'applique. La warfarine compte désormais une ligne pour chacun des 1 378 profils dont CYP2C9 est typé : 938 STANDARD et 440 ADAPTER\_DOSE. Les sections 7.4 à 7.6 portent sur la règle du corpus v14, celle du protocole ; la section 7.7 confronte la règle du corpus v15 aux mêmes patients, dans une analyse post hoc.
 
 ### 7.3 Protocole
 
@@ -81,18 +81,41 @@ La médiane des 4 351 patients \*1/\*1 est de 30,0 mg par semaine. Le gradient e
 
 La règle de la warfarine du corpus v14 n'utilisait que CYP2C9, alors que VKORC1 figure parmi les 20 variables génétiques d'entrée du réseau (section 3.5). Dans ces données, la part de variance de la log-dose (S6, exploratoire, n = 4 629) est de **R² = 0,048** pour CYP2C9 seul, **0,294** pour VKORC1 (-1639) seul et 0,356 pour les deux. Le rapport de dose est de 0,724 \[0,702 ; 0,748\] pour A/G contre G/G et de 0,478 \[0,463 ; 0,494\] pour A/A. VKORC1 explique ainsi environ six fois plus de variance que CYP2C9 : l'étiquette du corpus v14 passait à côté du déterminant génétique principal de la dose. C'était une limite de la règle du corpus, non du réseau, qui ne fait que la reproduire, et elle ne venait pas de la source, puisque la DPWG publie une recommandation fondée sur VKORC1 pour la warfarine (section 7.2).
 
-**Ce que ces résultats disent de la règle du corpus v15.** Les deux modifications du corpus v15 vont dans le sens de deux constats de ce chapitre. L'ajout de la règle VKORC1 intègre le déterminant principal de la dose, au moins pour les patients porteurs de deux allèles A, ceux dont la dose est la plus basse (rapport 0,478). Le classement de \*1/\*2 en STANDARD suit le texte DPWG et correspond au rapport brut proche de 1 ; il ne correspond pas au rapport post hoc de 0,833 observé chez les patients « White », de sorte que ce choix est conforme à la directive sans être démontré par les doses. Deux réserves s'imposent. La règle v15 reste une règle à quatre classes : elle ne distingue pas les hétérozygotes A/G, dont la dose est pourtant réduite d'environ un quart, parce que la directive DPWG ne prévoit aucune action pour ce génotype. Et la règle v15 n'a pas elle-même été confrontée aux patients de l'IWPC ; un tel test, fait après avoir vu les résultats ci-dessus, serait post hoc. \[à compléter : H1 et S5 recalculés avec l'étiquette du corpus v15, présentés comme analyse post hoc\] Des algorithmes de dose combinant données cliniques et pharmacogénétiques sont décrits par le consortium (Klein et al., 2009) ; ils sortent du cadre des quatre classes d'action.
+**Ce que ces résultats ont changé.** Les deux constats de cette section et de la précédente correspondent aux deux modifications de la règle dans le corpus v15 : l'ajout de la règle DPWG fondée sur VKORC1, et le classement de \*1/\*2 selon le texte de la directive (section 7.2). Des algorithmes de dose combinant données cliniques et pharmacogénétiques sont décrits par le consortium (Klein et al., 2009) ; ils sortent du cadre des quatre classes d'action.
 
-### 7.7 Portée et limites
+### 7.7 Analyse post hoc : la règle du corpus v15 sur les mêmes patients
+
+**Nature de l'analyse.** Cette analyse n'était pas prévue au protocole : elle a été décidée après les résultats des sections 7.4 à 7.6, et la règle qu'elle examine a été modifiée après que ces résultats ont montré le rôle de VKORC1. Elle n'est donc pas une validation indépendante de la règle v15 : elle mesure ce que la correction change sur les patients mêmes qui l'ont motivée. Elle reprend la population, l'estimateur et le bootstrap du protocole (2 000 tirages, graine 0) ; seule l'étiquette change. Le même fichier redonne à l'identique les résultats des sections 7.4 à 7.6, ce qui garantit que les données sont les mêmes.
+
+**Étiquette v15.** Un patient est ADAPTER\_DOSE si son CYP2C9 vaut au plus 0,5 (\*1/\*3, \*2/\*2, \*2/\*3, \*3/\*3) ou s'il porte deux allèles A de VKORC1 (-1639) ; sinon il est STANDARD. Pour 991 des 5 774 patients (CYP2C9 \*1/\*1 ou \*1/\*2, VKORC1 non renseigné), l'étiquette v15 ne peut pas être calculée : ils sont exclus, et il reste 4 783 patients, dont 2 011 ADAPTER\_DOSE et 2 772 STANDARD. Parmi les 2 011, 1 360 le sont par VKORC1 seul. L'étiquette v14 a été recalculée sur ces mêmes 4 783 patients pour comparer les deux règles à population égale.
+
+::: {custom-style="LegendeTableau"}
+Tableau 7.3 : Règle du corpus v14 et règle du corpus v15 sur les mêmes 4 783 patients (analyse post hoc)
+:::
+
+| Mesure | Règle v14 (CYP2C9 seul) | Règle v15 (CYP2C9 et VKORC1) |
+| --- | --- | --- |
+| Patients ADAPTER\_DOSE / STANDARD | 1 233 / 3 550 | 2 011 / 2 772 |
+| Rapport de dose ADAPTER\_DOSE contre STANDARD | 0,828 \[0,799 ; 0,858\] | 0,559 \[0,545 ; 0,575\] |
+| Médianes (mg par semaine) | 25,0 contre 29,8 | 21,0 contre 35,0 |
+| Patients « White » seulement | 0,724 \[0,695 ; 0,755\] | 0,603 \[0,578 ; 0,629\] |
+| Sensibilité pour les doses basses (≤ 21 mg/sem) | 0,318 \[0,294 ; 0,341\] | 0,749 \[0,729 ; 0,769\] |
+| Spécificité | 0,772 \[0,758 ; 0,787\] | 0,745 \[0,730 ; 0,761\] |
+
+**Résultat.** Avec la règle v15, l'écart de dose entre les deux groupes est beaucoup plus marqué : les patients ADAPTER\_DOSE reçoivent en moyenne 0,559 fois la dose des patients STANDARD, contre 0,828 avec la règle v14. L'étiquette détecte 75 % des doses basses au lieu de 32 %, pour une spécificité presque inchangée (0,745 contre 0,772). Le gain vient des 1 290 patients \*1/\*1 porteurs de deux allèles A, que la règle v14 classait STANDARD et dont la dose est de 0,533 \[0,517 ; 0,549\] fois celle des patients STANDARD dans les deux versions.
+
+**Un résultat défavorable à la règle v15.** Les 512 patients \*1/\*2 sans deux allèles A, que la règle v15 classe désormais STANDARD, ont une dose de 0,837 \[0,805 ; 0,875\] fois celle des patients STANDARD dans les deux versions (\*1/\*1 sans deux allèles A). Une fois l'effet de VKORC1 A/A écarté, le génotype \*1/\*2 est donc associé à une dose plus basse d'environ 16 %, du même ordre que le rapport de 0,833 observé chez les patients « White » (section 7.5). Le classement STANDARD de \*1/\*2 est conforme au texte de la directive DPWG, qui ne prévoit aucune action pour ce génotype, mais il n'est pas soutenu par ces doses. La règle v15 ne distingue pas non plus les hétérozygotes A/G, dont la dose est réduite d'environ un quart (section 7.6), parce que la directive ne prévoit pas d'action pour eux.
+
+### 7.8 Portée et limites
 
 - Une seule molécule est validée, la warfarine, sur 189 médicaments ; ce résultat ne se transfère pas aux autres règles.
-- La règle testée est celle du corpus v14 ; la règle du corpus v15, qui la remplace, n'a pas été testée sur ces patients (section 7.6).
+- La règle du protocole est celle du corpus v14 ; la règle du corpus v15 n'est examinée que dans une analyse post hoc, sur les patients mêmes qui ont motivé sa correction, et sans 991 patients dont VKORC1 n'est pas renseigné (section 7.7).
 - Le réseau n'est pas testé directement : il reproduit les étiquettes, et valider la règle revient à valider ce qu'il reproduit. Un test direct, comparant la probabilité du réseau à la dose observée, n'a pas été fait.
 - Les associations sont observationnelles ; les doses viennent de plusieurs centres ; l'analyse ajustée porte sur les cas complets.
 - L'origine des patients confond les comparaisons : les fréquences alléliques de CYP2C9 et de VKORC1 diffèrent selon l'origine, d'où l'écart entre l'analyse brute et l'analyse restreinte aux patients « White ».
 - Les patients porteurs d'allèles CYP2C9 rares (\*5, \*6, \*11, \*13, \*14) sont exclus ; or c'est précisément pour des génotypes de ce type que le codage par score d'activité produit un écart avec la directive (section 8.3).
 - Ce chapitre valide une règle, non la chaîne complète depuis un VCF, qui est examinée au chapitre 8.
 
-### 7.8 Synthèse
+### 7.9 Synthèse
 
-Sur 5 774 patients réels, la règle de la warfarine du corpus v14 va dans le bon sens : la dose d'entretien est inférieure de 17 % en moyenne chez les patients étiquetés ADAPTER\_DOSE (H1 soutenue), avec un gradient cohérent selon le génotype. Elle est cependant imprécise : le génotype \*1/\*2 n'est pas distinguable des \*1/\*1 dans la population complète, l'étiquette ne détecte qu'environ 31 % des doses basses, et elle ignorait VKORC1, qui explique davantage de variance que CYP2C9. Le corpus v15 corrige les deux défauts liés au texte de la directive (\*1/\*2 et VKORC1), sans que la règle corrigée ait été confrontée à son tour aux patients. Ces résultats défavorables sont conservés tels quels.
+Sur 5 774 patients réels, la règle de la warfarine du corpus v14 va dans le bon sens : la dose d'entretien est inférieure de 17 % en moyenne chez les patients étiquetés ADAPTER\_DOSE (H1 soutenue), avec un gradient cohérent selon le génotype. Elle est cependant imprécise : le génotype \*1/\*2 n'est pas distinguable des \*1/\*1 dans la population complète, l'étiquette ne détecte qu'environ 31 % des doses basses, et elle ignorait VKORC1, qui explique davantage de variance que CYP2C9. Le corpus v15 ajoute la règle VKORC1 et classe \*1/\*2 selon la directive. Sur les mêmes patients, dans une analyse post hoc, l'étiquette v15 sépare beaucoup mieux les doses (rapport 0,559 au lieu de 0,828 ; 75 % des doses basses détectées au lieu de 32 %), mais le classement STANDARD de \*1/\*2 n'est pas soutenu par les doses observées. Ces résultats défavorables sont conservés tels quels.

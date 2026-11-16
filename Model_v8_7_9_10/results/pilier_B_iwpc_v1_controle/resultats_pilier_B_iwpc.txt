@@ -1,0 +1,44 @@
+Sujets (fichier 2009) : 6922 | identifiants uniques : 6922
+stable==1 : 5934 | avec dose : 5919
+exclus (génotype CYP2C9 absent) : 128 | exclus (génotype hors correspondance) : 17
+Population principale : 5774 | ADAPTER_DOSE (corpus) : 1423 | *1/*1 : 4351
+
+== H1 (principale) ==
+H1 ADAPTER_DOSE vs *1/*1           n=1423 vs 4351 | ratio 0.830 [0.804 ; 0.857] | médianes 25.0 vs 30.0 mg/sem
+
+== S1 par classe et par génotype ==
+S1 classe lent                     n=  89 vs 4351 | ratio 0.486 [0.422 ; 0.558] | médianes 14.0 vs 30.0 mg/sem
+S1 classe intermediaire            n=1334 vs 4351 | ratio 0.860 [0.833 ; 0.887] | médianes 26.2 vs 30.0 mg/sem
+S1 génotype *1/*2                  n= 772 vs 4351 | ratio 0.972 [0.937 ; 1.008] | médianes 28.0 vs 30.0 mg/sem
+S1 génotype *1/*3                  n= 503 vs 4351 | ratio 0.727 [0.689 ; 0.762] | médianes 21.0 vs 30.0 mg/sem
+S1 génotype *2/*2                  n=  59 vs 4351 | ratio 0.728 [0.633 ; 0.837] | médianes 22.8 vs 30.0 mg/sem
+S1 génotype *2/*3                  n=  69 vs 4351 | ratio 0.534 [0.461 ; 0.619] | médianes 15.0 vs 30.0 mg/sem
+S1 génotype *3/*3                  n=  20 vs 4351 | ratio 0.350 [0.254 ; 0.477] | médianes 11.0 vs 30.0 mg/sem
+
+== S4 sensibilité : patients White seulement ==
+S4 White: n=1126 vs 1988 | ratio 0.735 [0.709 ; 0.764]
+
+== S3 régression ajustée (log-dose ; coefficient = effet multiplicatif exp(b)) ==
+S3 sans VKORC1 : n=3641 | ADAPTER_DOSE vs *1/*1 : x0.771 [0.747 ; 0.795] | R2=0.300
+S3 avec VKORC1 : n=3095 | ADAPTER_DOSE vs *1/*1 : x0.770 [0.747 ; 0.794] | R2=0.451
+   VKORC1 par allèle A : x0.743 [0.727 ; 0.759]
+
+== S5 dose basse (<= 21 mg/semaine) ==
+sensibilité (ADAPTER parmi doses basses)     0.307 [0.286 ; 0.328]
+spécificité (non-ADAPTER parmi autres)       0.782 [0.769 ; 0.794]
+part de doses basses chez ADAPTER_DOSE       0.396 [0.371 ; 0.420]
+part de doses basses chez *1/*1              0.293 [0.279 ; 0.306]
+
+== S6 exploratoire : part de variance de log-dose (R2) ==
+S6 CYP2C9 seul          n=4629 R2=0.048
+S6 VKORC1 -1639 seul    n=4629 R2=0.294
+S6 CYP2C9 + VKORC1      n=4629 R2=0.356
+S6 VKORC1 A/G vs G/G : n=1623 vs 1514 | ratio 0.724 [0.702 ; 0.748]
+S6 VKORC1 A/A vs G/G : n=1492 vs 1514 | ratio 0.478 [0.463 ; 0.494]
+
+== POST HOC (non prévu au protocole du 2 nov. 18 h 19 ; ajouté après avoir vu S1/S4) : génotype vs *1/*1 chez les patients White ==
+POST HOC White *1/*2 : n=644 vs 1988 | ratio 0.833 [0.800 ; 0.869]
+POST HOC White *1/*3 : n=350 vs 1988 | ratio 0.678 [0.640 ; 0.718]
+POST HOC White *2/*2 : n=53 vs 1988 | ratio 0.636 [0.549 ; 0.733]
+POST HOC White *2/*3 : n=64 vs 1988 | ratio 0.470 [0.400 ; 0.545]
+POST HOC White *3/*3 : n=15 vs 1988 | ratio 0.259 [0.179 ; 0.380]

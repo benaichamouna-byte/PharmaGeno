@@ -1,0 +1,28 @@
+ANALYSE POST HOC : regle warfarine du corpus v15 (CYP2C9 DPWG + VKORC1 DPWG)
+Population de la v1 (memes criteres) : 5774 (attendu : 5774)
+Exclus (CYP2C9 > 0,5 et VKORC1 inconnu, etiquette v15 indeterminee) : 991
+Population analysee : 4783 | v15 ADAPTER_DOSE : 2011 | v15 STANDARD : 2772
+Tableau croise v14 (lignes) x v15 (colonnes), 1 = ADAPTER_DOSE :
+v15     0     1
+v14            
+0    2260  1290
+1     512   721
+Detail ADAPTER_DOSE v15 : CYP2C9 <= 0,5 : 651 | VKORC1 A/A avec CYP2C9 > 0,5 : 1360
+
+== H1 post hoc : ADAPTER_DOSE contre STANDARD ==
+v15 ADAPTER_DOSE vs v15 STANDARD               n=2011 vs 2772 | ratio 0.559 [0.545 ; 0.575] | medianes 21.0 vs 35.0 mg/sem
+v14 ADAPTER_DOSE vs v14 (*1/*1), memes patients n=1233 vs 3550 | ratio 0.828 [0.799 ; 0.858] | medianes 25.0 vs 29.8 mg/sem
+
+== Groupes qui changent entre v14 et v15 (reference : STANDARD dans les deux versions) ==
+v14 ADAPTER -> v15 STANDARD (*1/*2 sans A/A)   n= 512 vs 2260 | ratio 0.837 [0.805 ; 0.875] | medianes 31.5 vs 35.2 mg/sem
+v14 STANDARD -> v15 ADAPTER (*1/*1 et A/A)     n=1290 vs 2260 | ratio 0.533 [0.517 ; 0.549] | medianes 21.0 vs 35.2 mg/sem
+
+== Patients White seulement ==
+White v15 ADAPTER_DOSE vs v15 STANDARD         n= 780 vs 1759 | ratio 0.603 [0.578 ; 0.629] | medianes 21.0 vs 35.0 mg/sem
+White v14 ADAPTER_DOSE vs *1/*1                n= 983 vs 1556 | ratio 0.724 [0.695 ; 0.755] | medianes 26.0 vs 35.0 mg/sem
+
+== Dose basse (<= 21 mg/semaine) : sensibilite et specificite de l etiquette ==
+v15 sensibilite  0.749 [0.729 ; 0.769]
+v15 specificite  0.745 [0.730 ; 0.761]
+v14 sensibilite  0.318 [0.294 ; 0.341]
+v14 specificite  0.772 [0.758 ; 0.787]
