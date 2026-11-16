@@ -14,7 +14,7 @@ Tableau 8.1 : Niveaux de preuve de la validation externe
 | --- | --- | --- |
 | Génotype | GeT-RM (CDC), tableau consolidé V4 du 22 janvier 2025 | Appel des allèles à partir du VCF, 104 personnes hors corpus |
 | Profil complet | PharmCAT 3.4.0 (logiciel de référence) | Recommandation par personne et par médicament (CPIC, DPWG) |
-| Patients publiés | Étude pilote de 11 patients, Kidney Int Rep 2025, tableau S3 | Génotypes multi-gènes avec recommandations publiées |
+| Patients publiés | Étude pilote de 11 patients (Lim et al., 2025), tableau S3 | Génotypes multi-gènes avec recommandations publiées |
 | Associations publiées | Fichiers bruts ClinPGx (annotations de variants) | Concordance du sens de chaque règle avec les études |
 | Effet clinique | IWPC (chapitre 7) | Sens d'une règle chez des patients réels, pas la prédiction sur profil complet |
 
@@ -41,7 +41,7 @@ Tableau 8.2 : Concordance du génotype appelé par PyPGx avec GeT-RM, par gène
 | UGT1A1 | 11 / 41 |
 | DPYD | 18 / 58 (plus 17 sous-allèles) |
 
-Le nombre de personnes comparées varie d'un gène à l'autre parce que GeT-RM ne publie pas un génotype pour chaque personne et chaque gène. La concordance est élevée pour CYP2C9 (65/65) et CYP3A5 (61/61), élevée mais imparfaite pour TPMT (63/66) et CYP2C19 (59/65), et faible pour CYP2B6, SLCO1B1, UGT1A1 et DPYD. Les causes des désaccords n'ont pas été établies cas par cas. Les hypothèses, appuyées par les notes du tableau GeT-RM mais non vérifiées, sont une nomenclature publiée à des dates différentes et des allèles récents absents des panels testés par GeT-RM : un désaccord ne prouve donc pas une erreur de l'outil. \[à compléter : attribuer la cause de chaque désaccord\]
+Le nombre de personnes comparées varie d'un gène à l'autre parce que GeT-RM ne publie pas un génotype pour chaque personne et chaque gène. La concordance est élevée pour CYP2C9 (65/65) et CYP3A5 (61/61), élevée mais imparfaite pour TPMT (63/66) et CYP2C19 (59/65), et faible pour CYP2B6, SLCO1B1, UGT1A1 et DPYD. Les causes des désaccords n'ont pas été établies cas par cas. Les hypothèses, appuyées par les notes du tableau GeT-RM mais non vérifiées, sont une nomenclature publiée à des dates différentes et des allèles récents absents des panels testés par GeT-RM : un désaccord ne prouve donc pas une erreur de l'outil. Attribuer la cause de chaque désaccord demanderait de reprendre cas par cas la définition des allèles dans les deux nomenclatures ; ce travail n'a pas été fait et reste une limite (section 8.8).
 
 ::: {custom-style="FigureImg"}
 ![](fig/fig_8_1.png){width=15cm}
@@ -150,7 +150,9 @@ Tableau 8.6 : Verdicts des 285 règles confrontées aux études publiées (analy
 | Non appariées | 51 |
 | Aucune étude | 70 |
 
-Le verdict automatique a été corrigé à la main pour 4 règles sur 30 d'un échantillon aléatoire (13 %). Ces chiffres sont donc provisoires : les 51 règles non appariées et les règles EVITER à « signal non orienté » doivent encore être relues à la main, et une relecture par un second lecteur, pharmacologue, est prévue. Cette analyse a été faite sur la table de règles du corpus v14 ; les règles modifiées dans le corpus v15 (warfarine, siponimod, thiopurines) n'ont pas été confrontées de nouveau aux études. \[à compléter : définition de chaque verdict, tirée du protocole figé ; analyse refaite sur les règles v15\]
+Le verdict automatique a été corrigé à la main pour 4 règles sur 30 d'un échantillon aléatoire (13 %). Ces chiffres sont donc provisoires : les 51 règles non appariées et les règles EVITER à « signal non orienté » doivent encore être relues à la main, et une relecture par un second lecteur, pharmacologue, est prévue. Cette analyse a été faite sur la table de règles du corpus v14 ; les règles modifiées dans le corpus v15 (warfarine, siponimod, thiopurines) n'ont pas été confrontées de nouveau aux études, ce qui reste une limite.
+
+Les verdicts sont définis par le protocole figé, en comptant les articles (PMID) distincts. Une ligne d'étude est concordante si l'effet publié va dans le sens de l'alerte (toxicité accrue, efficacité diminuée, ou dose et exposition dans le sens de la recommandation) ; elle compte contre la règle si l'effet va en sens inverse ou si l'étude ne trouve pas d'association. Une règle est **soutenue** si au moins un article est concordant et qu'aucun autre ne compte contre elle ; **mixte** si elle a à la fois des articles concordants et des articles contre ; **non soutenue** si elle n'a que des articles contre. Le **signal non orienté** regroupe les règles dont les seuls résultats positifs ne peuvent pas être orientés, par exemple un effet pharmacocinétique pour une règle qui ne donne pas de sens de dose. **Non tranchable** désigne les règles que la relecture manuelle n'a pas permis de classer. Les règles **non appariées** ont des études pour leur couple gène–médicament, mais aucune n'a pu être rattachée automatiquement à l'état métaboliseur de la règle ; **aucune étude** signifie qu'aucune ligne n'existe pour le couple.
 
 ### 8.7 Illustration sur une personne de validation
 

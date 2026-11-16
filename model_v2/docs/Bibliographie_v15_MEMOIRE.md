@@ -1,0 +1,57 @@
+## Références bibliographiques
+
+Les références sont classées par ordre alphabétique du premier auteur et citées dans le texte selon le style auteur–année.
+
+- Abdullah-Koolmees H, van Keulen AM, Nijenhuis M, Deneer VHM. Pharmacogenetics guidelines: overview and comparison of the DPWG, CPIC, CPNDS, and RNPGx guidelines. Front Pharmacol 2021;11:595219. doi:10.3389/fphar.2020.595219
+- Bergstra J, Bengio Y. Random search for hyper-parameter optimization. J Mach Learn Res 2012;13:281-305.
+- Breiman L. Random forests. Mach Learn 2001;45(1):5-32.
+- Caudle KE, Whirl-Carrillo M, Relling MV, et al. Advancing clinical pharmacogenomics worldwide through the Clinical Pharmacogenetics Implementation Consortium (CPIC). Clin Pharmacol Ther 2025;118(6):1512-1519. doi:10.1002/cpt.70005
+- Cawley GC, Talbot NLC. On over-fitting in model selection and subsequent selection bias in performance evaluation. J Mach Learn Res 2010;11:2079-2107.
+- CDC, Genetic Testing Reference Material Coordination Program (GeT-RM). Consolidated table of all GeT-RM pharmacogenetic and HLA reference material genotypes, version 4 (22 janvier 2025). https://www.cdc.gov/lab-quality/php/get-rm/reference-materials.html (consulté le 16 novembre 2026)
+- Chanfreau-Coffinier C, Hull LE, Lynch JA, et al. Projected prevalence of actionable pharmacogenetic variants and level A drugs prescribed among US Veterans Health Administration pharmacy users. JAMA Netw Open 2019;2(6):e195345. doi:10.1001/jamanetworkopen.2019.5345
+- Chen P, Lin JJ, Lu CS, et al. Carbamazepine-induced toxic effects and HLA-B\*1502 screening in Taiwan. N Engl J Med 2011;364(12):1126-1133. doi:10.1056/NEJMoa1009717
+- Chen T, Guestrin C. XGBoost: a scalable tree boosting system. In: Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '16). 2016. doi:10.1145/2939672.2939785
+- Collins GS, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ 2024;385:e078378. doi:10.1136/bmj-2023-078378
+- Farmaki A, Manolopoulos E, Natsiavas P. Will precision medicine meet digital health? A systematic review of pharmacogenomics clinical decision support systems used in clinical practice. OMICS 2024;28(9):442-460. PMID 39136110
+- Gasche Y, Daali Y, Fathi M, et al. Codeine intoxication associated with ultrarapid CYP2D6 metabolism. N Engl J Med 2004;351(27):2827-2831. doi:10.1056/NEJMoa041888
+- Geifman Y, El-Yaniv R. Selective classification for deep neural networks. In: Advances in Neural Information Processing Systems 30 (NeurIPS 2017). 2017:4878-4887.
+- Gourraud P-A, Khankhanian P, Cereb N, et al. HLA diversity in the 1000 Genomes dataset. PLoS ONE 2014;9(7):e97282. doi:10.1371/journal.pone.0097282
+- Grinsztajn L, Oyallon E, Varoquaux G. Why do tree-based models still outperform deep learning on typical tabular data? In: Advances in Neural Information Processing Systems 35 (NeurIPS 2022), Datasets and Benchmarks Track. 2022.
+- Guo C, Pleiss G, Sun Y, Weinberger KQ. On calibration of modern neural networks. In: Proceedings of the 34th International Conference on Machine Learning. PMLR 2017;70:1321-1330.
+- Haidar CE, Crews KR, Hoffman JM, Relling MV, Caudle KE. Advancing pharmacogenomics from single-gene to preemptive testing. Annu Rev Genomics Hum Genet 2022;23:449-473. doi:10.1146/annurev-genom-111621-102737
+- Henricks LM, Lunenburg CATC, de Man FM, et al. DPYD genotype-guided dose individualisation of fluoropyrimidine therapy in patients with cancer: a prospective safety analysis. Lancet Oncol 2018;19(11):1459-1467. doi:10.1016/S1470-2045(18)30686-7
+- Hodel F, De Min MB, Thorball CW, Redin C, Vollenweider P, Girardin F, Fellay J. Prevalence of actionable pharmacogenetic variants and high-risk drug prescriptions: a Swiss hospital-based cohort study. Clin Transl Sci 2024;17(9). PMID 39263940
+- Hung SI, Chung WH, Liou LB, et al. HLA-B\*5801 allele as a genetic marker for severe cutaneous adverse reactions caused by allopurinol. Proc Natl Acad Sci USA 2005;102(11):4134-4139. doi:10.1073/pnas.0409500102
+- International Warfarin Pharmacogenetics Consortium, Klein TE, Altman RB, Eriksson N, et al. Estimation of the warfarin dose with clinical and pharmacogenetic data. N Engl J Med 2009;360(8):753-764. doi:10.1056/NEJMoa0809329
+- Ioffe S, Szegedy C. Batch normalization: accelerating deep network training by reducing internal covariate shift. arXiv:1502.03167, 2015.
+- Jain S, Wallace BC. Attention is not explanation. In: Proceedings of NAACL-HLT 2019. 2019:3543-3556. doi:10.18653/v1/N19-1357
+- Jithesh PV, Abuhaliqa M, Syed N, et al. A population study of clinically actionable genetic variation affecting drug response from the Middle East. npj Genom Med 2022;7. doi:10.1038/s41525-022-00281-5
+- Kalinin AA, Higgins GA, Reamaroon N, et al. Deep learning in pharmacogenomics: from gene regulation to patient stratification. Pharmacogenomics 2018;19(7):629-650. PMID 29697304
+- Kapoor S, Narayanan A. Leakage and the reproducibility crisis in machine-learning-based science. Patterns 2023. doi:10.1016/j.patter.2023.100804
+- Kingma DP, Ba J. Adam: a method for stochastic optimization. In: 3rd International Conference on Learning Representations (ICLR 2015). arXiv:1412.6980
+- Lim RS, Chung YL, Biros E, et al. A pilot study of pharmacogenomics in patients with kidney failure of an unknown cause. Kidney Int Rep 2025;10:4065-4068. doi:10.1016/j.ekir.2025.08.015
+- Mallal S, Phillips E, Carosi G, et al. HLA-B\*5701 screening for hypersensitivity to abacavir. N Engl J Med 2008;358(6):568-579. doi:10.1056/NEJMoa0706135
+- Mega JL, Simon T, Collet JP, et al. Reduced-function CYP2C19 genotype and risk of adverse clinical outcomes among patients treated with clopidogrel predominantly for PCI: a meta-analysis. JAMA 2010;304(16):1821. doi:10.1001/jama.2010.1543
+- Müller R, Kornblith S, Hinton G. When does label smoothing help? arXiv:1906.02629, 2019.
+- Niculescu-Mizil A, Caruana R. Predicting good probabilities with supervised learning. In: Proceedings of the 22nd International Conference on Machine Learning (ICML 2005). 2005:625-632. doi:10.1145/1102351.1102430
+- Pallets. Flask documentation (version 3.1.x). https://flask.palletsprojects.com/ (consulté le 3 novembre 2026)
+- Paszke A, Gross S, Massa F, et al. PyTorch: an imperative style, high-performance deep learning library. arXiv:1912.01703, 2019.
+- Pedregosa F, Varoquaux G, Gramfort A, et al. Scikit-learn: machine learning in Python. J Mach Learn Res 2011;12:2825-2830.
+- PharmCAT. Research mode: CYP2D6 calling from VCF. https://pharmcat.clinpgx.org/using/Research-Mode/ (consulté le 6 octobre 2026)
+- Probst P, Boulesteix A-L. To tune or not to tune the number of trees in random forest. J Mach Learn Res 2018;18(181):1-18.
+- Province MA, Goetz MP, Brauch H, et al. CYP2D6 genotype and adjuvant tamoxifen: meta-analysis of heterogeneous study populations. Clin Pharmacol Ther 2014;95(2):216-227. doi:10.1038/clpt.2013.186
+- Relling MV, Klein TE. CPIC: Clinical Pharmacogenetics Implementation Consortium of the Pharmacogenomics Research Network. Clin Pharmacol Ther 2011;89(3):464-467. doi:10.1038/clpt.2010.279
+- ReportLab. reportlab, bibliothèque Python de génération de PDF. https://pypi.org/project/reportlab/ (consulté le 3 novembre 2026)
+- Sangkuhl K, Whirl-Carrillo M, Whaley RM, et al. Pharmacogenomics Clinical Annotation Tool (PharmCAT). Clin Pharmacol Ther 2020;107(1):203-210. doi:10.1002/cpt.1568
+- SEARCH Collaborative Group. SLCO1B1 variants and statin-induced myopathy: a genomewide study. N Engl J Med 2008;359(8):789-799. doi:10.1056/NEJMoa0801936
+- Sherman CA, Claw KG, Lee S. Pharmacogenetic analysis of structural variation in the 1000 genomes project using whole genome sequences. Sci Rep 2024;14:22774. doi:10.1038/s41598-024-73748-3
+- Shwartz-Ziv R, Armon A. Tabular data: deep learning is not all you need. Inf Fusion 2022;81:84-90.
+- Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R. Dropout: a simple way to prevent neural networks from overfitting. J Mach Learn Res 2014;15(56):1929-1958.
+- Suarez-Kurtz G. Pharmacogenomics in clinical practice: biomarker information in Brazilian drug labels. Br J Clin Pharmacol 2026;92(1):109-118. doi:10.1002/bcp.70278
+- Swen JJ, Nijenhuis M, de Boer A, et al. Pharmacogenetics: from bench to byte, an update of guidelines. Clin Pharmacol Ther 2011;89(5):662-673. doi:10.1038/clpt.2011.34
+- Swen JJ, et al. A 12-gene pharmacogenetic panel to prevent adverse drug reactions: an open-label, multicentre, controlled, cluster-randomised crossover implementation study. Lancet 2023;401(10374):347-356. doi:10.1016/S0140-6736(22)01841-4
+- Szegedy C, Vanhoucke V, Ioffe S, Shlens J, Wojna Z. Rethinking the Inception architecture for computer vision. arXiv:1512.00567, 2015.
+- Tremmel R, Honore A, Park Y, Zhou Y, Xiao M, Lauschke VM. Machine learning models for pharmacogenomic variant effect predictions: recent developments and future frontiers. Pharmacogenomics 2025;26(5-6):171-182. doi:10.1080/14622416.2025.2504863
+- Truda G, Marais P. Evaluating warfarin dosing models on multiple datasets with a novel software framework and evolutionary optimisation. J Biomed Inform 2021;113:103634. doi:10.1016/j.jbi.2020.103634
+- Walsh I, Fishman D, Garcia-Gasulla D, et al. DOME: recommendations for supervised machine learning validation in biology. Nat Methods 2021;18(10):1122-1127. doi:10.1038/s41592-021-01205-4
+- Whirl-Carrillo M, Huddart R, Gong L, et al. An evidence-based framework for evaluating pharmacogenomics knowledge for personalized medicine. Clin Pharmacol Ther 2021;110(3):563-572. doi:10.1002/cpt.2350

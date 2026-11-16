@@ -30,7 +30,7 @@ Pour un lot de cases étiquetées indicées par n, soit z\_n les quatre logits d
 
 $$\mathcal{L} = \frac{1}{\sum_{n} w_{y_n}} \sum_{n} \left[ -(1-\varepsilon)\, w_{y_n} \log p_{n,y_n} \;-\; \frac{\varepsilon}{K} \sum_{c=1}^{K} w_c \log p_{n,c} \right] \qquad (4.2)$$
 
-Cette écriture est celle de la fonction d'entropie croisée de PyTorch avec poids de classes et lissage d'étiquettes ; son égalité avec le calcul de la fonction a été vérifiée numériquement sur un lot d'essai (PyTorch 2.14.1) **[à compléter : contrôle avec la version de PyTorch utilisée pour l'entraînement]**.
+Cette écriture est celle de la fonction d'entropie croisée de PyTorch avec poids de classes et lissage d'étiquettes ; son égalité avec le calcul de la fonction a été vérifiée numériquement sur un lot d'essai de 512 cases, avec la version de PyTorch de l'environnement d'entraînement (2.11.0) : l'écart entre les deux calculs est nul en double précision.
 
 **Optimisation.** Adam (Kingma et Ba, 2015), pas d'apprentissage 10⁻³, décroissance des poids 10⁻⁴, lots de 64 profils, 300 époques au maximum. Les poids retenus sont ceux de l'époque dont le F1 macro sur la validation interne est le meilleur ; l'entraînement s'arrête après 25 époques sans amélioration d'au moins 10⁻⁴. La validation interne regroupe 10 % des profils du jeu d'entraînement du pli, sans recouvrement avec lui. Le plafond de 300 époques n'a jamais été atteint : l'arrêt anticipé intervient en moyenne à 81,4 époques (section 6.1), de sorte que c'est la patience de 25 époques, et non le plafond, qui termine l'entraînement.
 
@@ -88,7 +88,7 @@ Tableau 4.1 : Part de prédictions écartées et seuil de confiance correspondan
 
 Ces quatre valeurs sont plus élevées que celles obtenues sur la version antérieure du corpus (0,9895, 0,9965, 0,9988 et 0,9995) : le réseau étant devenu plus confiant, il faut un seuil plus haut pour écarter la même part de prédictions. Le seuil employé par l'application est celui du niveau 1 %, soit **0,9981** sur le corpus v15. Il n'est pas saisi à la main : le programme qui produit le modèle final calcule ces quatre quantiles à partir des 25 fichiers de prédictions hors pli et les enregistre avec le modèle, de sorte que le seuil servi par l'application est toujours celui mesuré sur le corpus qui a entraîné ce modèle.
 
-L'analyse de couverture-risque menée sur le corpus v15 (section 6.3) donne une aire sous la courbe ROC de 0,870 pour la confiance employée comme indicateur d'erreur ; les 1 % de lignes les moins confiantes contiennent 77,0 % des erreurs. En revanche, à un seuil de 0,90, 32,0 des 47,4 situations à éviter manquées restent acceptées : ce sont des erreurs commises avec une confiance élevée, que l'abstention ne peut pas détecter. Un seuil spécifique sur la probabilité de la classe EVITER a été exploré après coup sur les mêmes plis ; il n'est pas utilisable tel quel, car un tel seuil doit être fixé a priori sur la validation interne **[à compléter]**.
+L'analyse de couverture-risque menée sur le corpus v15 (section 6.3) donne une aire sous la courbe ROC de 0,870 pour la confiance employée comme indicateur d'erreur ; les 1 % de lignes les moins confiantes contiennent 77,0 % des erreurs. En revanche, à un seuil de 0,90, 32,0 des 47,4 situations à éviter manquées restent acceptées : ce sont des erreurs commises avec une confiance élevée, que l'abstention ne peut pas détecter. Un seuil spécifique sur la probabilité de la classe EVITER a été exploré après coup sur les mêmes plis ; il n'est pas utilisable tel quel, car un tel seuil doit être fixé a priori sur la validation interne ; il n'a pas été fixé de cette façon dans ce travail, et l'application n'en comporte pas.
 
 L'aire sous la courbe ROC de la confiance, comme indicateur d'erreur, est calculée ainsi :
 
@@ -127,7 +127,7 @@ Les arbres reçoivent une ligne par couple (profil, médicament), avec les 34 co
 - **Répétitions :** 5 graines d'initialisation × 5 plis = 25 entraînements par condition. Les résultats sont donnés en moyenne ± écart-type sur ces 25 entraînements ; cet écart-type mesure la variabilité d'entraînement, non un intervalle de confiance sur les patients, car les graines partagent les mêmes lignes. Pour comparer deux modèles, un bootstrap par identifiant de profil (2 000 tirages ; les profils apparentés sont traités comme indépendants) fournit des intervalles de confiance à 95 %. Le rééchantillonnage porte sur les profils et non sur les lignes, parce que les lignes d'un même profil ne sont pas indépendantes.
 - **Métriques :** F1 macro (moyenne non pondérée des quatre classes) ; exactitude ; « EVITER manqués » = 1 − rappel de la classe EVITER ; précision de la classe EVITER ; log-loss ; ECE ; F1 macro par niveau de source. Le F1 macro est la métrique principale parce que le corpus est fortement déséquilibré et que l'exactitude y serait trompeuse : prédire STANDARD partout donnerait déjà plus de 85 % d'exactitude. « EVITER manqués » est la mesure de sécurité, parce que c'est la seule erreur dont la conséquence clinique serait grave.
 - **Règle de décision :** la comparaison de deux modèles porte sur la différence de F1 macro et sur son intervalle de confiance, lus au regard d'une marge d'équivalence pratique de 0,001 fixée avant toute mesure. Un modèle est déclaré supérieur si la borne basse dépasse 0 ; les deux modèles sont déclarés équivalents si l'intervalle entier tient dans ±0,001 ; la différence est déclarée non tranchée sinon. Cette règle est écrite avant les résultats pour que la conclusion ne dépende pas de ce qu'ils montrent.
-- **Évaluation finale :** les 138 profils ne sont lus qu'une seule fois, après gel du protocole **[à compléter]**.
+- **Évaluation finale :** les 138 profils ne sont lus qu'une seule fois, après gel du protocole ; cette lecture unique et ses résultats sont présentés en section 6.7.
 
 Pour chaque classe c, soit P\_c la précision et R\_c le rappel, calculés sur les lignes hors pli. Les métriques principales sont :
 
@@ -149,7 +149,7 @@ Les valeurs de validation interne du réseau de profil final sont un F1 macro de
 4. Le réseau de choix n'a bénéficié d'aucune recherche d'hyperparamètres, contrairement au réseau de profil.
 5. La cible du réseau de choix est une convention du projet.
 6. Les étiquettes viennent de règles : tout accord mesuré est un accord avec ces règles (chapitre 3).
-7. Les versions exactes des bibliothèques (PyTorch, scikit-learn, XGBoost) n'ont pas été enregistrées pour chaque entraînement **[à compléter]**.
+7. Les versions des bibliothèques n'ont pas été enregistrées au moment de chaque entraînement. Celles de l'environnement d'entraînement, relevées après coup, sont PyTorch 2.11.0, scikit-learn 1.8.0 et XGBoost 3.3.0 ; rien n'indique qu'elles aient changé pendant les entraînements du corpus v15, mais ce n'est pas démontré.
 
 ### 4.11 Origine des valeurs numériques du protocole
 

@@ -61,7 +61,15 @@ La température ajustée sur la validation interne de chaque entraînement vaut 
 
 Une température inférieure à 1 rend les probabilités plus tranchées : le réseau brut est donc sous-confiant sur ses prédictions correctes. Le lissage d'étiquettes de 0,05 (chapitre 4) y contribue vraisemblablement, puisqu'il interdit à la cible d'atteindre 1 ; cette interprétation n'a pas été vérifiée par une ablation du lissage et reste une hypothèse.
 
-Deux réserves portent sur ce résultat. D'abord, le minimum observé, 0,05, est exactement la borne inférieure de l'intervalle de recherche fixé au chapitre 4 : pour au moins un entraînement, l'optimum se trouve à la borne ou au-delà, et la valeur retenue est alors contrainte par l'intervalle et non par les données. Élargir l'intervalle aurait rendu ces entraînements comparables aux autres ; l'intervalle n'a pas été modifié, parce qu'il avait été fixé avant les mesures et que le modifier après coup aurait transformé un réglage a priori en réglage choisi au vu des résultats. Ensuite, une ECE aussi basse s'obtient en partie parce que presque toutes les lignes sont correctes et très confiantes : la mesure est dominée par les lignes faciles et ne démontre pas que les probabilités sont bien calibrées sur les lignes rares, là où se trouvent les erreurs. C'est la section 6.3 qui examine ce point. Aucun diagramme de fiabilité n'est présenté **[à compléter]**.
+Deux réserves portent sur ce résultat. D'abord, le minimum observé, 0,05, est exactement la borne inférieure de l'intervalle de recherche fixé au chapitre 4 : pour au moins un entraînement, l'optimum se trouve à la borne ou au-delà, et la valeur retenue est alors contrainte par l'intervalle et non par les données. Élargir l'intervalle aurait rendu ces entraînements comparables aux autres ; l'intervalle n'a pas été modifié, parce qu'il avait été fixé avant les mesures et que le modifier après coup aurait transformé un réglage a priori en réglage choisi au vu des résultats. Ensuite, une ECE aussi basse s'obtient en partie parce que presque toutes les lignes sont correctes et très confiantes : la mesure est dominée par les lignes faciles et ne démontre pas que les probabilités sont bien calibrées sur les lignes rares, là où se trouvent les erreurs. C'est la section 6.3 qui examine ce point. Le diagramme de fiabilité (figure 6.1) le montre directement. Il regroupe les prédictions hors pli des 25 entraînements, soit 1 055 885 lignes (211 177 lignes pour chacune des 5 graines), dans les 15 intervalles de confiance employés pour l'ECE. Les 1 054 765 lignes du dernier intervalle, soit 99,89 %, ont une confiance moyenne de 0,9999 et une exactitude de 0,9998 : c'est leur poids qui fixe l'ECE. Les 1 120 lignes restantes se répartissent dans huit intervalles, de confiance moyenne comprise entre 0,39 et 0,91. Dans sept d'entre eux, l'exactitude est inférieure à la confiance, avec un écart qui atteint 0,18 dans l'intervalle \]0,600 ; 0,667\] (88 lignes, confiance moyenne 0,64, exactitude 0,45). Sur ces lignes rares, le réseau est donc trop confiant, ce que l'ECE globale ne laisse pas voir ; leur petit nombre rend cependant chaque point imprécis.
+
+::: {custom-style="FigureImg"}
+![](fig/fig_6_calibration.png){width=13cm}
+:::
+
+::: {custom-style="LegendeFigure"}
+Figure 6.1 : Diagramme de fiabilité du réseau de profil (prédictions hors pli calibrées, 25 entraînements, 15 intervalles ; n = nombre de lignes par intervalle).
+:::
 
 ### 6.3 Abstention
 
@@ -94,7 +102,7 @@ Un seuil portant spécifiquement sur la probabilité de la classe EVITER n'est p
 :::
 
 ::: {custom-style="LegendeFigure"}
-Figure 6.1 : Effet de l'abstention sur les erreurs restantes et sur les EVITER manqués acceptés, selon le seuil de confiance (corpus v15, développement).
+Figure 6.2 : Effet de l'abstention sur les erreurs restantes et sur les EVITER manqués acceptés, selon le seuil de confiance (corpus v15, développement).
 :::
 
 ### 6.4 Réseau de choix au sein d'une classe
@@ -167,7 +175,7 @@ Ce résultat ne doit pas être lu comme une supériorité du réseau. « Non tra
 :::
 
 ::: {custom-style="LegendeFigure"}
-Figure 6.2 : Comparaison du réseau, de XGBoost et de Random Forest sur le corpus v15 : F1 macro et taux d'EVITER manqués (développement, moyenne de 5 graines, intervalle de confiance à 95 % par bootstrap sur les profils).
+Figure 6.3 : Comparaison du réseau, de XGBoost et de Random Forest sur le corpus v15 : F1 macro et taux d'EVITER manqués (développement, moyenne de 5 graines, intervalle de confiance à 95 % par bootstrap sur les profils).
 :::
 
 **Limites de cette comparaison.** L'accord est mesuré avec les règles, non avec la clinique. La parenté entre profils n'est pas contrôlée dans le bootstrap. Quatre comparaisons sont rapportées sans correction de multiplicité ; la première, celle du réseau et de XGBoost, est la comparaison principale désignée par le protocole, les autres sont secondaires. XGBoost et Random Forest sont un modèle unique recevant l'identifiant du médicament comme variable, alors que le réseau est multitâche et prédit les 189 médicaments d'un seul coup : l'égalité de protocole porte sur les plis, le réglage et la calibration, non sur la forme du problème posé à chaque modèle. Ces constats de développement sont confrontés à l'ensemble final en section 6.7.
